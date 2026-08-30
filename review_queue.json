@@ -1,57 +1,144 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47863_CUTIX_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "CUTIX PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+    "title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
     "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "971dc26c607714de",
+      "ticker": "",
+      "company": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2026-08-28",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+      "source_title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
+      "last_verified": "2026-08-30",
+      "confidence": "review"
+    },
+    "classification": "review"
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47845_NIGERIAN_ENAMELWARE_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
+    "title": "NIGERIAN ENAMELWARE PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share",
       "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "848386875f65e2fe",
-      "ticker": "CUTIX",
-      "company": "CUTIX PLC.",
-      "dividend_per_share": 0.1,
+      "event_id": "c7179a343e0a28ea",
+      "ticker": "",
+      "company": "NIGERIAN ENAMELWARE PLC.",
+      "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "distribution",
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2026-07-31",
+      "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47863_CUTIX_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-      "source_title": "CUTIX PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47845_NIGERIAN_ENAMELWARE_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
+      "source_title": "NIGERIAN ENAMELWARE PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
+      "last_verified": "2026-08-30",
+      "confidence": "review"
+    },
+    "classification": "review"
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47850_PRESCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+    "title": "PRESCO PLC- NOTICE OF ANNUAL GENERAL MEETING (AGM)",
+    "errors": [
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "54afa9244c1ec8c5",
+      "ticker": "PRESCO",
+      "company": "PRESCO PLC- NOTICE OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 14.66,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47850_PRESCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+      "source_title": "PRESCO PLC- NOTICE OF ANNUAL GENERAL MEETING (AGM)",
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
     "classification": "pending_dividend"
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47862_P_Z_CUSSONS_NIGERIA_PLC.-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "P Z CUSSONS NIGERIA PLC.- QUARTER 5 - FINANCIAL STATEMENT FOR 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47854_P_Z_CUSSONS_NIGERIA_PLC.-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+    "title": "P Z CUSSONS NIGERIA PLC.-POST BOARD MEETING NOTIFICATION",
     "errors": [
+      "missing/invalid dividend per share",
       "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "fbd011005c52e9af",
+      "event_id": "e0a831ac94f166c0",
       "ticker": "PZ",
       "company": "P Z CUSSONS NIGERIA PLC.",
-      "dividend_per_share": 2.5,
+      "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "final",
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2026-05-31",
+      "announcement_date": "2026-08-28",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47862_P_Z_CUSSONS_NIGERIA_PLC.-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-      "source_title": "P Z CUSSONS NIGERIA PLC.- QUARTER 5 - FINANCIAL STATEMENT FOR 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47854_P_Z_CUSSONS_NIGERIA_PLC.-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "source_title": "P Z CUSSONS NIGERIA PLC.-POST BOARD MEETING NOTIFICATION",
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "pending_dividend"
+    "classification": "review"
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47855_JULI_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
+    "title": "JULI PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026",
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "cdd40847ef39bf17",
+      "ticker": "",
+      "company": "JULI PLC.",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47855_JULI_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
+      "source_title": "JULI PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026",
+      "last_verified": "2026-08-30",
+      "confidence": "review"
+    },
+    "classification": "review"
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47856_RED_STAR_EXPRESS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
@@ -110,145 +197,57 @@
     "classification": "pending_dividend"
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47855_JULI_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "JULI PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47862_P_Z_CUSSONS_NIGERIA_PLC.-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
+    "title": "P Z CUSSONS NIGERIA PLC.- QUARTER 5 - FINANCIAL STATEMENT FOR 2026",
     "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share",
       "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "cdd40847ef39bf17",
-      "ticker": "",
-      "company": "JULI PLC.",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47855_JULI_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-      "source_title": "JULI PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026",
-      "last_verified": "2026-08-30",
-      "confidence": "review"
-    },
-    "classification": "review"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47854_P_Z_CUSSONS_NIGERIA_PLC.-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "P Z CUSSONS NIGERIA PLC.-POST BOARD MEETING NOTIFICATION",
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "e0a831ac94f166c0",
+      "event_id": "fbd011005c52e9af",
       "ticker": "PZ",
       "company": "P Z CUSSONS NIGERIA PLC.",
-      "dividend_per_share": 0.0,
+      "dividend_per_share": 2.5,
       "currency": "NGN",
       "dividend_type": "final",
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2026-08-28",
+      "announcement_date": "2026-05-31",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47854_P_Z_CUSSONS_NIGERIA_PLC.-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-      "source_title": "P Z CUSSONS NIGERIA PLC.-POST BOARD MEETING NOTIFICATION",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47862_P_Z_CUSSONS_NIGERIA_PLC.-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
+      "source_title": "P Z CUSSONS NIGERIA PLC.- QUARTER 5 - FINANCIAL STATEMENT FOR 2026",
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "review"
+    "classification": "pending_dividend"
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47850_PRESCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-    "title": "PRESCO PLC- NOTICE OF ANNUAL GENERAL MEETING (AGM)",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47863_CUTIX_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
+    "title": "CUTIX PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
     "errors": [
-      "missing/invalid dividend per share",
       "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "78336f18fe45a95a",
-      "ticker": "PRESCO",
-      "company": "PRESCO PLC- NOTICE OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47850_PRESCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-      "source_title": "PRESCO PLC- NOTICE OF ANNUAL GENERAL MEETING (AGM)",
-      "last_verified": "2026-08-30",
-      "confidence": "review"
-    },
-    "classification": "review"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-    "title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "971dc26c607714de",
-      "ticker": "",
-      "company": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2026-08-28",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-      "source_title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
-      "last_verified": "2026-08-30",
-      "confidence": "review"
-    },
-    "classification": "review"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47845_NIGERIAN_ENAMELWARE_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "NIGERIAN ENAMELWARE PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "c7179a343e0a28ea",
-      "ticker": "",
-      "company": "NIGERIAN ENAMELWARE PLC.",
-      "dividend_per_share": 0.0,
+      "event_id": "848386875f65e2fe",
+      "ticker": "CUTIX",
+      "company": "CUTIX PLC.",
+      "dividend_per_share": 0.1,
       "currency": "NGN",
       "dividend_type": "distribution",
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "",
+      "announcement_date": "2026-07-31",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47845_NIGERIAN_ENAMELWARE_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-      "source_title": "NIGERIAN ENAMELWARE PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47863_CUTIX_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
+      "source_title": "CUTIX PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "review"
+    "classification": "pending_dividend"
   }
 ]
