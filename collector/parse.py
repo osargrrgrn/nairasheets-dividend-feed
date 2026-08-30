@@ -61,13 +61,6 @@ def first_match(patterns, text, flags=re.I | re.S):
     return ""
 
 def infer_currency_and_dps(text: str):
-    """
-    Extract dividend per share, not the aggregate dividend amount.
-
-    Prefer patterns where the amount is close to 'per ordinary share' / 'per share'.
-    """
-
-    # Naira amount directly tied to per-share wording.
     naira_patterns = [
         r"(?:final|interim|special|proposed)?\s*dividend"
         r"[^.\n]{0,260}?(?:that\s+is|equivalent\s+to|amounting\s+to)?\s*"
@@ -84,7 +77,6 @@ def infer_currency_and_dps(text: str):
         if m:
             return "NGN", float(m.group(1))
 
-    # Kobo per share.
     kobo_patterns = [
         r"(?:final|interim|special|proposed)?\s*dividend"
         r"[^.\n]{0,260}?([0-9]+(?:\.[0-9]+)?)\s*kobo"
@@ -99,7 +91,6 @@ def infer_currency_and_dps(text: str):
         if m:
             return "NGN", float(m.group(1)) / 100.0
 
-    # USD/US cents per share.
     usd_patterns = [
         r"(?:final|interim|special)?\s*dividend"
         r"[^.\n]{0,260}?(?:USD|US\$|US\s*)?\s*"
@@ -143,6 +134,34 @@ def extract_labeled_date(label: str, text: str) -> str:
           rf"|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?[,]?\s+\d{{4}})"
 
     return iso_date(first_match([pat], text))
+
+def extract_qualification_date(text: str) -> str:
+    # 1) Best case: the filing explicitly labels the date.
+    explicit = extract_labeled_date(
+        r"(?:qualification\s+date|record\s+date)",
+        text
+    )
+    if explicit:
+        return explicit
+
+    # 2) Fallback only when the wording is explicitly about dividend entitlement.
+    # This avoids treating "financial year ended 31 May 2026" or balance-sheet
+    # "shareholders as at 31 May 2026" wording as a qualification date.
+    entitlement_patterns = [
+        rf"(?:dividend|distribution)[\s\S]{{0,500}}?"
+        rf"(?:shareholders?\s+whose\s+names\s+appear\s+in\s+the\s+register"
+        rf"|register\s+of\s+members)[\s\S]{{0,260}}?"
+        rf"(?:close\s+of\s+business\s+on|as\s+at|on)\s+"
+        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+
+        rf"(?:shareholders?\s+whose\s+names\s+appear\s+in\s+the\s+register"
+        rf"|register\s+of\s+members)[\s\S]{{0,260}}?"
+        rf"(?:close\s+of\s+business\s+on|as\s+at|on)\s+"
+        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})"
+        rf"[\s\S]{{0,400}}?(?:dividend|distribution)",
+    ]
+
+    return iso_date(first_match(entitlement_patterns, text))
 
 def clean_company_name(raw: str) -> str:
     raw = re.sub(r"\s+", " ", raw).strip(" :-")
@@ -188,7 +207,6 @@ def infer_status(text: str) -> str:
     if "cancelled dividend" in low or "dividend has been cancelled" in low:
         return "cancelled"
 
-    # Proposed/recommended dividends should not be called fully declared/paid.
     if (
         "subject to shareholders' approval" in low
         or "subject to shareholders’ approval" in low
@@ -207,10 +225,7 @@ def infer_status(text: str) -> str:
 def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticker: str = ""):
     currency, dps = infer_currency_and_dps(text)
 
-    qualification = extract_labeled_date(
-        r"(?:qualification\s+date|record\s+date)",
-        text
-    )
+    qualification = extract_qualification_date(text)
 
     payment = extract_labeled_date(
         r"(?:payment\s+date|dividend\s+payment\s+date)",
@@ -222,19 +237,10 @@ def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticke
         text
     )
 
-    if not qualification:
-        qualification = iso_date(first_match([
-            rf"(?:register\s+of\s+members|shareholders?)[^.\n]{{0,220}}?"
-            rf"(?:close\s+of\s+business\s+on|as\s+at)\s+"
-            rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})"
-        ], text))
-
     company = infer_company(text, source_title)
     dtype = infer_dividend_type(text)
     status = infer_status(text)
 
-    # Keep incomplete but genuine dividend notices in review until later filings
-    # provide qualification/payment dates.
     confidence = "high"
     if dps is None or not qualification or not payment:
         confidence = "review"
