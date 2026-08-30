@@ -1,11 +1,13 @@
-from urllib.parse import urljoin
-from pathlib import Path
+import html
 import json
 import re
-import time
-from playwright.sync_api import sync_playwright
+from pathlib import Path
+from urllib.parse import quote, urljoin
 
-NGX_DISCLOSURES_URL = "https://ngxgroup.com/exchange/data/corporate-disclosures/"
+import requests
+
+DOC_ROOT = "https://doclib.ngxgroup.com"
+NEWS_FOLDER = "/Financial_NewsDocs"
 OFFICIAL_DOC_HOST = "doclib.ngxgroup.com"
 PDF_PATH_MARKER = "/Financial_NewsDocs/"
 
@@ -32,218 +34,296 @@ PDF_URL_RE = re.compile(
     re.I,
 )
 
-def _clean_pdf_url(url: str) -> str:
+RELATIVE_PDF_RE = re.compile(
+    r'(?:/)?Financial_NewsDocs/[^"\'<>\s]+?\.pdf',
+    re.I,
+)
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/128.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json;odata=verbose, application/xml;q=0.9, text/html;q=0.8, */*;q=0.7",
+}
+
+def _clean_url(url: str) -> str:
     if not url:
         return ""
-    url = url.replace("\\/", "/").replace("&amp;", "&")
-    m = re.match(r"(.+?\.pdf)(?:\?.*)?$", url, re.I)
-    return m.group(1) if m else url
+
+    url = html.unescape(url).replace("\\/", "/")
+    url = url.strip(" '\"\t\r\n")
+
+    if url.startswith("/"):
+        url = urljoin(DOC_ROOT, url)
+
+    m = re.search(
+        r"(https?://doclib\.ngxgroup\.com/Financial_NewsDocs/.+?\.pdf)",
+        url,
+        re.I,
+    )
+    if m:
+        url = m.group(1)
+
+    return url
 
 def _title_from_url(url: str) -> str:
     name = url.rsplit("/", 1)[-1]
     name = re.sub(r"\.pdf(?:\?.*)?$", "", name, flags=re.I)
     name = re.sub(r"^\d+_", "", name)
-    return re.sub(r"_+", " ", name).strip()
+    name = name.replace("%20", " ")
+    name = re.sub(r"_+", " ", name)
+    return name.strip()
 
-def _add_url(found, url, title=""):
-    url = _clean_pdf_url(url)
-    if OFFICIAL_DOC_HOST not in url:
+def _add(found, url, title=""):
+    url = _clean_url(url)
+
+    if OFFICIAL_DOC_HOST not in url.lower():
         return
-    if PDF_PATH_MARKER not in url:
+    if PDF_PATH_MARKER.lower() not in url.lower():
         return
-    if ".pdf" not in url.lower():
+    if not url.lower().endswith(".pdf"):
         return
+
     found[url] = {
         "url": url,
         "title": (title or _title_from_url(url)).strip(),
     }
 
-def _collect_from_text(text, found):
+def _extract_from_text(text: str, found):
     if not text:
         return
-    text = text.replace("\\/", "/")
+
+    text = html.unescape(text).replace("\\/", "/")
+
     for match in PDF_URL_RE.findall(text):
-        _add_url(found, match)
+        _add(found, match)
 
-def _collect_dom(page, found):
-    try:
-        links = page.locator("a")
-        for i in range(links.count()):
-            a = links.nth(i)
-            try:
-                href = a.get_attribute("href")
-                label = (a.inner_text(timeout=500) or "").strip()
-            except Exception:
-                continue
-            if href:
-                _add_url(found, urljoin(page.url, href), label)
-    except Exception:
-        pass
+    for match in RELATIVE_PDF_RE.findall(text):
+        _add(found, "/" + match.lstrip("/"))
+
+def _extract_json_paths(obj, found):
+    """
+    Walk arbitrary SharePoint JSON because result shape differs by SharePoint
+    version/configuration.
+    """
+    if isinstance(obj, dict):
+        # Common SharePoint property cells look like:
+        # {"Key":"Path","Value":"https://...pdf"}
+        key = str(obj.get("Key", "")).lower()
+        value = obj.get("Value")
+
+        if key in {"path", "serverrelativeurl", "url"} and isinstance(value, str):
+            _add(found, value)
+
+        # Folder API may return Name + ServerRelativeUrl.
+        server_url = obj.get("ServerRelativeUrl")
+        name = obj.get("Name", "")
+        if isinstance(server_url, str):
+            _add(found, server_url, name if isinstance(name, str) else "")
+
+        for value in obj.values():
+            _extract_json_paths(value, found)
+
+    elif isinstance(obj, list):
+        for value in obj:
+            _extract_json_paths(value, found)
+
+    elif isinstance(obj, str):
+        _extract_from_text(obj, found)
+
+def _request(session, url, debug, label, params=None):
+    item = {
+        "label": label,
+        "url": url,
+        "params": params or {},
+    }
 
     try:
-        _collect_from_text(page.content(), found)
-    except Exception:
-        pass
+        response = session.get(
+            url,
+            params=params,
+            headers=HEADERS,
+            timeout=(8, 18),
+            allow_redirects=True,
+        )
 
-def _safe_post_data(request):
-    try:
-        data = request.post_data
-        if data and len(data) > 5000:
-            data = data[:5000] + "...[truncated]"
-        return data
-    except Exception:
+        item["status"] = response.status_code
+        item["final_url"] = response.url
+        item["content_type"] = response.headers.get("content-type", "")
+        item["bytes"] = len(response.content)
+        item["preview"] = response.text[:1500]
+
+        debug["attempts"].append(item)
+        return response
+
+    except Exception as exc:
+        item["error"] = repr(exc)
+        debug["attempts"].append(item)
         return None
 
-def _interesting_request(url: str) -> bool:
-    low = (url or "").lower()
-    hints = (
-        "ajax",
-        "jet",
-        "filter",
-        "disclosure",
-        "graphql",
-        "api",
-        "wp-json",
-        "admin-ajax",
-        "load",
-        "page",
-    )
-    return "ngxgroup.com" in low and any(h in low for h in hints)
+def _sharepoint_search(session, found, debug):
+    """
+    Preferred method. Query the official SharePoint search interface for PDFs
+    in Financial_NewsDocs modified in 2026.
 
-def _try_one_pagination_action(page):
-    selectors = [
-        'a[rel="next"]',
-        'button[aria-label*="Next" i]',
-        'a[aria-label*="Next" i]',
-        '.next.page-numbers',
-        'a.next',
-        'button.next',
-        '.pagination-next a',
-        '.pagination__next a',
-        '.jet-filters-pagination__next',
-        '.jet-smart-filters-pagination__next',
-        '.dataTables_paginate .next:not(.disabled)',
-        'a:has-text("Next")',
-        'button:has-text("Next")',
-        'a:has-text("Older")',
-        'button:has-text("Older")',
+    Paging is bounded: max 6 x 500 result requests.
+    """
+    endpoint = f"{DOC_ROOT}/_api/search/query"
+
+    query_text = (
+        f'Path:"{DOC_ROOT}{NEWS_FOLDER}" '
+        'AND FileExtension:pdf '
+        'AND LastModifiedTime>=2026-01-01'
+    )
+
+    start_row = 0
+    row_limit = 500
+
+    for page_no in range(6):
+        params = {
+            "querytext": f"'{query_text}'",
+            "rowlimit": str(row_limit),
+            "startrow": str(start_row),
+            "trimduplicates": "false",
+            "selectproperties": "'Title,Path,FileExtension,LastModifiedTime'",
+        }
+
+        response = _request(
+            session,
+            endpoint,
+            debug,
+            f"sharepoint_search_page_{page_no + 1}",
+            params=params,
+        )
+
+        if response is None or response.status_code >= 400:
+            break
+
+        before = len(found)
+
+        try:
+            payload = response.json()
+            _extract_json_paths(payload, found)
+
+            # Try to read TotalRows from any nested location.
+            text = json.dumps(payload)
+            total_match = re.search(r'"TotalRows"\s*:\s*(\d+)', text)
+            total_rows = int(total_match.group(1)) if total_match else None
+
+        except Exception:
+            _extract_from_text(response.text, found)
+            total_rows = None
+
+        added = len(found) - before
+
+        debug["search_pages"].append({
+            "page": page_no + 1,
+            "start_row": start_row,
+            "added_pdfs": added,
+            "running_total": len(found),
+            "reported_total_rows": total_rows,
+        })
+
+        start_row += row_limit
+
+        if total_rows is not None and start_row >= total_rows:
+            break
+
+        # If a whole page returns no new official PDFs, do not keep hammering it.
+        if added == 0 and page_no > 0:
+            break
+
+def _folder_api(session, found, debug):
+    """
+    Fallback for SharePoint installations where search is disabled but the
+    public document folder itself can be enumerated.
+    """
+    encoded_folder = quote(NEWS_FOLDER, safe="/")
+    endpoint = (
+        f"{DOC_ROOT}/_api/web/GetFolderByServerRelativeUrl"
+        f"('{encoded_folder}')/Files"
+    )
+
+    params = {
+        "$select": "Name,ServerRelativeUrl,TimeCreated,TimeLastModified",
+        "$top": "5000",
+    }
+
+    response = _request(
+        session,
+        endpoint,
+        debug,
+        "sharepoint_folder_files",
+        params=params,
+    )
+
+    if response is None or response.status_code >= 400:
+        return
+
+    try:
+        _extract_json_paths(response.json(), found)
+    except Exception:
+        _extract_from_text(response.text, found)
+
+def _library_html(session, found, debug):
+    """
+    Last fallback: the SharePoint document library HTML. Still direct HTTP,
+    still bounded, no browser.
+    """
+    urls = [
+        f"{DOC_ROOT}{NEWS_FOLDER}/Forms/AllItems.aspx",
+        f"{DOC_ROOT}{NEWS_FOLDER}/",
     ]
 
-    for selector in selectors:
-        try:
-            loc = page.locator(selector)
-            for i in range(min(loc.count(), 5)):
-                el = loc.nth(i)
-                if el.is_visible() and not el.is_disabled():
-                    el.scroll_into_view_if_needed()
-                    el.click(timeout=3000)
-                    return selector
-        except Exception:
-            continue
+    for idx, url in enumerate(urls, 1):
+        response = _request(
+            session,
+            url,
+            debug,
+            f"library_html_{idx}",
+        )
 
-    # One scroll only, purely to trigger lazy/infinite loading if present.
-    try:
-        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        return "single_scroll"
-    except Exception:
-        return "none"
+        if response is not None and response.status_code < 400:
+            _extract_from_text(response.text, found)
 
 def discover_official_pdfs():
     found = {}
-    requests_log = []
-    responses_log = []
-
-    started = time.time()
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page(
-            viewport={"width": 1440, "height": 1400},
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/128.0.0.0 Safari/537.36"
-            ),
-        )
-
-        def on_request(request):
-            try:
-                if _interesting_request(request.url):
-                    requests_log.append({
-                        "method": request.method,
-                        "url": request.url,
-                        "resource_type": request.resource_type,
-                        "post_data": _safe_post_data(request),
-                    })
-            except Exception:
-                pass
-
-        def on_response(response):
-            try:
-                url = response.url
-                ctype = (response.headers.get("content-type") or "").lower()
-
-                if OFFICIAL_DOC_HOST in url and ".pdf" in url.lower():
-                    _add_url(found, url)
-
-                if _interesting_request(url):
-                    item = {
-                        "status": response.status,
-                        "url": url,
-                        "content_type": ctype,
-                    }
-
-                    if any(x in ctype for x in ("json", "html", "text", "javascript")):
-                        try:
-                            body = response.text()
-                            item["body_preview"] = body[:4000]
-                            _collect_from_text(body, found)
-                        except Exception as exc:
-                            item["body_error"] = repr(exc)
-
-                    responses_log.append(item)
-            except Exception:
-                pass
-
-        page.on("request", on_request)
-        page.on("response", on_response)
-
-        page.goto(
-            NGX_DISCLOSURES_URL,
-            wait_until="domcontentloaded",
-            timeout=60000,
-        )
-
-        page.wait_for_timeout(5000)
-        _collect_dom(page, found)
-
-        action = _try_one_pagination_action(page)
-
-        page.wait_for_timeout(7000)
-        _collect_dom(page, found)
-
-        # Hard stop: this diagnostic is never allowed to crawl indefinitely.
-        browser.close()
 
     debug = {
-        "page": NGX_DISCLOSURES_URL,
-        "elapsed_seconds": round(time.time() - started, 2),
-        "pagination_action_attempted": action,
-        "pdfs_found": len(found),
-        "requests": requests_log[-100:],
-        "responses": responses_log[-100:],
+        "method": "direct_official_doclib_http",
+        "attempts": [],
+        "search_pages": [],
     }
+
+    with requests.Session() as session:
+        _sharepoint_search(session, found, debug)
+
+        # If search produced a useful result set, don't waste time on fallbacks.
+        if len(found) < 20:
+            _folder_api(session, found, debug)
+
+        if len(found) < 20:
+            _library_html(session, found, debug)
+
+    debug["pdfs_found"] = len(found)
+    debug["sample_pdfs"] = list(found.values())[:20]
 
     DEBUG_FILE.write_text(
         json.dumps(debug, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
 
-    print(f"Discovery diagnostic elapsed seconds: {debug['elapsed_seconds']}")
-    print(f"Discovery diagnostic requests captured: {len(requests_log)}")
-    print(f"Discovery diagnostic responses captured: {len(responses_log)}")
-    print(f"Discovery diagnostic PDFs found: {len(found)}")
-    print(f"Discovery diagnostic pagination action: {action}")
+    print("Direct NGX document-library discovery")
+    print(f"Official PDFs found this run: {len(found)}")
+
+    for page in debug["search_pages"]:
+        print(
+            "Search page "
+            f"{page['page']}: +{page['added_pdfs']} PDFs "
+            f"(running total {page['running_total']})"
+        )
 
     return list(found.values())
 
