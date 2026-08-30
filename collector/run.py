@@ -1,8 +1,8 @@
 from pathlib import Path
 import json
-from .discover import discover_official_pdfs, looks_dividend_related
+from .discover import discover_official_pdfs, title_is_strongly_irrelevant
 from .pdf_extract import download_pdf_text, compact
-from .parse import parse_dividend_pdf
+from .parse import parse_dividend_pdf, has_dividend_evidence
 from .tickers import resolve_ticker
 from .validate import validate_event
 from .publish import read_csv, merge_events, write_csv, write_html
@@ -25,27 +25,43 @@ def main():
     processed = state.setdefault("processed", {})
 
     discovered = discover_official_pdfs()
-    candidates = [d for d in discovered if looks_dividend_related(d["title"], d["url"])]
 
     accepted = []
     review = []
+    rejected_non_dividend = 0
+    inspected = 0
+    dividend_candidates = 0
 
-    for item in candidates:
+    for item in discovered:
         url = item["url"]
+        title = item.get("title", "")
+
+        if title_is_strongly_irrelevant(title, url):
+            rejected_non_dividend += 1
+            continue
+
         if processed.get(url) == "accepted":
             continue
 
         try:
             text = compact(download_pdf_text(url))
+            inspected += 1
+
+            if not has_dividend_evidence(text):
+                rejected_non_dividend += 1
+                processed[url] = "not_dividend"
+                continue
+
+            dividend_candidates += 1
+
             provisional = parse_dividend_pdf(
                 text=text,
                 source_url=url,
-                source_title=item.get("title", ""),
+                source_title=title,
                 ticker="",
             )
-            provisional.ticker = resolve_ticker(provisional.company, item.get("title", ""))
+            provisional.ticker = resolve_ticker(provisional.company, title)
 
-            # Regenerate ID after ticker resolution.
             from .parse import make_event_id
             provisional.event_id = make_event_id(
                 provisional.ticker,
@@ -64,7 +80,7 @@ def main():
             else:
                 review.append({
                     "url": url,
-                    "title": item.get("title", ""),
+                    "title": title,
                     "errors": errors,
                     "parsed": provisional.to_dict(),
                 })
@@ -73,7 +89,7 @@ def main():
         except Exception as exc:
             review.append({
                 "url": url,
-                "title": item.get("title", ""),
+                "title": title,
                 "errors": [repr(exc)],
             })
             processed[url] = "error"
@@ -90,7 +106,9 @@ def main():
     save_state(state)
 
     print(f"Discovered official PDFs: {len(discovered)}")
-    print(f"Dividend candidates: {len(candidates)}")
+    print(f"PDFs inspected: {inspected}")
+    print(f"Rejected as non-dividend: {rejected_non_dividend}")
+    print(f"Dividend candidates after PDF inspection: {dividend_candidates}")
     print(f"Published new events: {len(accepted)}")
     print(f"Review/error items: {len(review)}")
     print(f"Feed total: {len(merged)}")

@@ -8,10 +8,38 @@ MONTHS = (
     "January|February|March|April|May|June|July|August|September|October|November|December"
 )
 
+DIVIDEND_WORD_RE = re.compile(r"\b(dividend|distribution|cash distribution)\b", re.I)
+PER_SHARE_RE = re.compile(
+    r"(?:₦|N|NGN|US\\$|USD|cents?|kobo).{0,60}(?:per\\s+(?:ordinary\\s+)?share|/share)"
+    r"|(?:per\\s+(?:ordinary\\s+)?share|/share).{0,60}(?:₦|N|NGN|US\\$|USD|cents?|kobo)",
+    re.I | re.S,
+)
+DATE_CONTEXT_RE = re.compile(
+    r"\b(qualification\\s+date|record\\s+date|payment\\s+date|closure\\s+of\\s+register|"
+    r"register\\s+of\\s+members|close\\s+of\\s+business)\b",
+    re.I,
+)
+APPROVAL_CONTEXT_RE = re.compile(
+    r"\b(recommended|declared|approved|proposed|payable|will\\s+be\\s+paid)\b",
+    re.I,
+)
+
+def has_dividend_evidence(text: str) -> bool:
+    if not DIVIDEND_WORD_RE.search(text):
+        return False
+    supporting = 0
+    if PER_SHARE_RE.search(text):
+        supporting += 1
+    if DATE_CONTEXT_RE.search(text):
+        supporting += 1
+    if APPROVAL_CONTEXT_RE.search(text):
+        supporting += 1
+    return supporting >= 1
+
 def iso_date(value: str) -> str:
     if not value:
         return ""
-    value = value.strip(" .,:;\n\t")
+    value = value.strip(" .,:;\\n\\t")
     try:
         dt = dateparser.parse(value, dayfirst=True, fuzzy=True)
         return dt.date().isoformat()
@@ -26,28 +54,30 @@ def first_match(patterns, text, flags=re.I | re.S):
     return ""
 
 def infer_currency_and_dps(text: str):
-    """
-    Conservative: prefer phrases tied to dividend wording.
-    Returns (currency, amount) or ("", None).
-    """
-    patterns = [
-        # ₦2 / N2 / N 2.00 per share
-        r"(?:proposed\s+dividend[^.\n]{0,160}?(?:a\s+)?dividend\s+of|dividend\s+of|dividend)[^.\n]{0,80}?[₦N]\s*([0-9]+(?:\.[0-9]+)?)\s*(?:\([^)]*\)\s*)?per\s+(?:ordinary\s+)?share",
-        # 20 kobo per share
-        r"(?:proposed\s+dividend|dividend(?:\s+of)?)[^.\n]{0,120}?([0-9]+(?:\.[0-9]+)?)\s*kobo\s+per\s+(?:ordinary\s+)?share",
-        # USD 8.3 cents per share / 8.3 US cents per share
-        r"(?:dividend(?:\s+of)?)[^.\n]{0,160}?(?:USD|US\$|US\s*)?\s*([0-9]+(?:\.[0-9]+)?)\s*(?:US\s*)?cents?\s+per\s+share",
-    ]
-
-    m = re.search(patterns[0], text, re.I | re.S)
+    m = re.search(
+        r"(?:proposed\\s+dividend|interim\\s+dividend|final\\s+dividend|special\\s+dividend|"
+        r"dividend(?:\\s+of)?)[^.\\n]{0,180}?(?:₦|NGN|N)\\s*([0-9]+(?:\\.[0-9]+)?)"
+        r"\\s*(?:per\\s+(?:ordinary\\s+)?share|/share)?",
+        text, re.I | re.S
+    )
     if m:
         return "NGN", float(m.group(1))
 
-    m = re.search(patterns[1], text, re.I | re.S)
+    m = re.search(
+        r"(?:proposed\\s+dividend|interim\\s+dividend|final\\s+dividend|special\\s+dividend|"
+        r"dividend(?:\\s+of)?)[^.\\n]{0,180}?([0-9]+(?:\\.[0-9]+)?)\\s*kobo"
+        r"(?:\\s+per\\s+(?:ordinary\\s+)?share)?",
+        text, re.I | re.S
+    )
     if m:
         return "NGN", float(m.group(1)) / 100.0
 
-    m = re.search(patterns[2], text, re.I | re.S)
+    m = re.search(
+        r"(?:dividend(?:\\s+of)?)[^.\\n]{0,220}?(?:USD|US\\$|US\\s*)?\\s*"
+        r"([0-9]+(?:\\.[0-9]+)?)\\s*(?:US\\s*)?cents?"
+        r"(?:\\s+per\\s+(?:ordinary\\s+)?share)?",
+        text, re.I | re.S
+    )
     if m:
         return "USD", float(m.group(1)) / 100.0
 
@@ -65,29 +95,34 @@ def infer_dividend_type(text: str) -> str:
         return "interim"
     if "final dividend" in low:
         return "final"
+    if "distribution" in low:
+        return "distribution"
     return "dividend"
 
 def extract_labeled_date(label: str, text: str) -> str:
-    # Capture common NGX date styles following a label.
-    pat = rf"{label}\s*:?\s*(?:is|of|on)?\s*((?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?[,]?\s*\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}}|\d{{1,2}}[/-]\d{{1,2}}[/-]\d{{2,4}}|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?[,]?\s+\d{{4}})"
+    pat = rf"{label}\\s*:?\\s*(?:is|of|on)?\\s*((?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?[,]?\\s*\\d{{1,2}}(?:st|nd|rd|th)?\\s+(?:{MONTHS})\\s+\\d{{4}}|\\d{{1,2}}[/-]\\d{{1,2}}[/-]\\d{{2,4}}|(?:{MONTHS})\\s+\\d{{1,2}}(?:st|nd|rd|th)?[,]?\\s+\\d{{4}})"
     return iso_date(first_match([pat], text))
 
 def clean_company_name(raw: str) -> str:
-    raw = re.sub(r"\s+", " ", raw).strip(" :-")
+    raw = re.sub(r"\\s+", " ", raw).strip(" :-")
+    raw = re.split(
+        r"\\s*-\\s*(?:POST BOARD MEETING|ANNUAL GENERAL MEETING|AGM|ANNOUNCEMENT|"
+        r"BOARD APPROVAL|RESOLUTION|DIVIDEND|CORPORATE ACTION)",
+        raw,
+        maxsplit=1,
+        flags=re.I,
+    )[0]
     return raw[:160]
 
 def infer_company(text: str, source_title: str) -> str:
-    # Source title is normally the safest company-name hint.
     if source_title:
-        title = source_title.replace("_", " ").strip()
-        title = re.split(r"\s+-\s+|-(?:CORPORATE|DIVIDEND|YEAR|QUARTER)", title, maxsplit=1, flags=re.I)[0]
-        if len(title) >= 3:
-            return clean_company_name(title)
+        candidate = clean_company_name(source_title.replace("_", " ").strip())
+        if len(candidate) >= 3:
+            return candidate
 
-    # Fallback to common NGX announcement wording.
     candidate = first_match([
-        r"^\s*([A-Z][A-Z0-9&().,'’ \-]{3,100}?(?:PLC|LIMITED))\b",
-        r"([A-Z][A-Z0-9&().,'’ \-]{3,100}?(?:PLC|LIMITED))\s+(?:hereby|announces?|has announced)",
+        r"^\\s*([A-Z][A-Z0-9&().,'’ \\-]{3,100}?(?:PLC|LIMITED))\\b",
+        r"([A-Z][A-Z0-9&().,'’ \\-]{3,100}?(?:PLC|LIMITED))\\s+(?:hereby|announces?|has announced)",
     ], text, flags=re.I | re.M)
     return clean_company_name(candidate)
 
@@ -105,27 +140,27 @@ def make_event_id(ticker: str, company: str, qual: str, pay: str, dps, dtype: st
 def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticker: str = ""):
     currency, dps = infer_currency_and_dps(text)
 
-    qualification = extract_labeled_date(r"(?:qualification\s+date|record\s+date)", text)
-    payment = extract_labeled_date(r"(?:payment\s+date|dividend\s+payment\s+date)", text)
-    closure = extract_labeled_date(r"(?:closure\s+of\s+register|closure\s+date)", text)
+    qualification = extract_labeled_date(r"(?:qualification\\s+date|record\\s+date)", text)
+    payment = extract_labeled_date(r"(?:payment\\s+date|dividend\\s+payment\\s+date)", text)
+    closure = extract_labeled_date(r"(?:closure\\s+of\\s+register|closure\\s+date)", text)
 
-    # Some announcements use prose instead of a table.
     if not qualification:
         qualification = iso_date(first_match([
-            rf"(?:register\s+of\s+members|shareholders?)[^.\n]{{0,180}}?(?:close\s+of\s+business\s+on|as\s+at)\s+(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})"
+            rf"(?:register\\s+of\\s+members|shareholders?)[^.\\n]{{0,220}}?"
+            rf"(?:close\\s+of\\s+business\\s+on|as\\s+at)\\s+"
+            rf"(\\d{{1,2}}(?:st|nd|rd|th)?\\s+(?:{MONTHS})\\s+\\d{{4}})"
         ], text))
 
     company = infer_company(text, source_title)
     dtype = infer_dividend_type(text)
 
-    status = "declared"
     low = text.lower()
+    status = "declared"
     if "cancelled dividend" in low or "dividend has been cancelled" in low:
         status = "cancelled"
     elif "revised" in low or "amended" in low:
         status = "amended"
 
-    # Don't publish events missing the three fields NairaSheets requires.
     confidence = "high"
     if dps is None or not qualification or not payment:
         confidence = "review"
