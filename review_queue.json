@@ -29,16 +29,17 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47862_P_Z_CUSSONS_NIGERIA_PLC.-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
     "title": "P Z CUSSONS NIGERIA PLC.- QUARTER 5 - FINANCIAL STATEMENT FOR 2026",
     "errors": [
+      "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "21d594bc522d2e0f",
+      "event_id": "fbd011005c52e9af",
       "ticker": "PZ",
       "company": "P Z CUSSONS NIGERIA PLC.",
       "dividend_per_share": 2.5,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2026-05-31",
+      "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
