@@ -1,0 +1,74 @@
+{
+  "method": "focused_direct_ngx_search_patch_12",
+  "searches": [
+    {
+      "term": "dividend",
+      "url": "https://doclib.ngxgroup.com/_api/search/query",
+      "before": 0,
+      "status": 500,
+      "bytes": 250,
+      "content_type": "application/json;odata=verbose;charset=utf-8",
+      "after": 0,
+      "added": 0
+    },
+    {
+      "term": "distribution",
+      "url": "https://doclib.ngxgroup.com/_api/search/query",
+      "before": 0,
+      "status": 500,
+      "bytes": 250,
+      "content_type": "application/json;odata=verbose;charset=utf-8",
+      "after": 0,
+      "added": 0
+    },
+    {
+      "term": "\"annual general meeting\"",
+      "url": "https://doclib.ngxgroup.com/_api/search/query",
+      "before": 0,
+      "status": 500,
+      "bytes": 250,
+      "content_type": "application/json;odata=verbose;charset=utf-8",
+      "after": 0,
+      "added": 0
+    },
+    {
+      "term": "agm",
+      "url": "https://doclib.ngxgroup.com/_api/search/query",
+      "before": 0,
+      "status": 500,
+      "bytes": 250,
+      "content_type": "application/json;odata=verbose;charset=utf-8",
+      "after": 0,
+      "added": 0
+    },
+    {
+      "term": "\"post board meeting\"",
+      "url": "https://doclib.ngxgroup.com/_api/search/query",
+      "before": 0,
+      "status": 500,
+      "bytes": 250,
+      "content_type": "application/json;odata=verbose;charset=utf-8",
+      "after": 0,
+      "added": 0
+    },
+    {
+      "term": "\"board meeting notification\"",
+      "url": "https://doclib.ngxgroup.com/_api/search/query",
+      "before": 0,
+      "status": 500,
+      "bytes": 250,
+      "content_type": "application/json;odata=verbose;charset=utf-8",
+      "after": 0,
+      "added": 0
+    }
+  ],
+  "limits": {
+    "max_results_per_term": 40,
+    "max_returned_pdfs": 24,
+    "max_discovery_seconds": 75
+  },
+  "elapsed_seconds": 6.42,
+  "likely_pdfs_found": 0,
+  "returned_to_parser": 0,
+  "results": []
+}
