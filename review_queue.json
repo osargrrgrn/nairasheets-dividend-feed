@@ -25,36 +25,8 @@
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "review"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47845_NIGERIAN_ENAMELWARE_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "NIGERIAN ENAMELWARE PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "c7179a343e0a28ea",
-      "ticker": "",
-      "company": "NIGERIAN ENAMELWARE PLC.",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47845_NIGERIAN_ENAMELWARE_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-      "source_title": "NIGERIAN ENAMELWARE PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
-      "last_verified": "2026-08-30",
-      "confidence": "review"
-    },
-    "classification": "review"
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47850_PRESCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
@@ -81,21 +53,21 @@
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "pending_dividend"
+    "classification": "pending_dividend",
+    "matched_existing_pending": true
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47854_P_Z_CUSSONS_NIGERIA_PLC.-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_AUGUST_2026.pdf",
     "title": "P Z CUSSONS NIGERIA PLC.-POST BOARD MEETING NOTIFICATION",
     "errors": [
-      "missing/invalid dividend per share",
       "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "e0a831ac94f166c0",
+      "event_id": "fbd011005c52e9af",
       "ticker": "PZ",
       "company": "P Z CUSSONS NIGERIA PLC.",
-      "dividend_per_share": 0.0,
+      "dividend_per_share": 2.5,
       "currency": "NGN",
       "dividend_type": "final",
       "qualification_date": "",
@@ -109,36 +81,8 @@
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "review"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47855_JULI_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "JULI PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026",
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "cdd40847ef39bf17",
-      "ticker": "",
-      "company": "JULI PLC.",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47855_JULI_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-      "source_title": "JULI PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026",
-      "last_verified": "2026-08-30",
-      "confidence": "review"
-    },
-    "classification": "review"
+    "classification": "pending_dividend",
+    "matched_existing_pending": true
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47856_RED_STAR_EXPRESS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
@@ -167,7 +111,8 @@
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "review"
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47857_CUTIX_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
@@ -194,7 +139,8 @@
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "pending_dividend"
+    "classification": "pending_dividend",
+    "matched_existing_pending": true
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47862_P_Z_CUSSONS_NIGERIA_PLC.-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
@@ -221,7 +167,8 @@
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "pending_dividend"
+    "classification": "pending_dividend",
+    "matched_existing_pending": true
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47863_CUTIX_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
@@ -248,6 +195,7 @@
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
-    "classification": "pending_dividend"
+    "classification": "pending_dividend",
+    "matched_existing_pending": true
   }
 ]
