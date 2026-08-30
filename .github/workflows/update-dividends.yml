@@ -11,6 +11,10 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 6
+
+    env:
+      PYTHONUNBUFFERED: "1"
 
     steps:
       - name: Check out repository
@@ -25,7 +29,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Update feed
-        run: python -m collector.run
+        run: python -u -m collector.run
 
       - name: Commit changed feed
         run: |
