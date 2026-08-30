@@ -1,10 +1,16 @@
 from urllib.parse import urljoin
+from pathlib import Path
+import json
 import re
+import time
 from playwright.sync_api import sync_playwright
 
 NGX_DISCLOSURES_URL = "https://ngxgroup.com/exchange/data/corporate-disclosures/"
 OFFICIAL_DOC_HOST = "doclib.ngxgroup.com"
 PDF_PATH_MARKER = "/Financial_NewsDocs/"
+
+ROOT = Path(__file__).resolve().parents[1]
+DEBUG_FILE = ROOT / "discovery_debug.json"
 
 STRONG_NEGATIVE_TITLE_HINTS = (
     "pending litigation",
@@ -30,8 +36,8 @@ def _clean_pdf_url(url: str) -> str:
     if not url:
         return ""
     url = url.replace("\\/", "/").replace("&amp;", "&")
-    url = url.split("#")[0]
-    return url
+    m = re.match(r"(.+?\.pdf)(?:\?.*)?$", url, re.I)
+    return m.group(1) if m else url
 
 def _title_from_url(url: str) -> str:
     name = url.rsplit("/", 1)[-1]
@@ -41,91 +47,70 @@ def _title_from_url(url: str) -> str:
 
 def _add_url(found, url, title=""):
     url = _clean_pdf_url(url)
-
     if OFFICIAL_DOC_HOST not in url:
         return
     if PDF_PATH_MARKER not in url:
         return
     if ".pdf" not in url.lower():
         return
-
-    # Strip common cache/tracking fragments after .pdf but retain real query
-    # strings only if needed. The NGX doclib PDFs normally work without them.
-    m = re.match(r"(.+?\.pdf)(?:\?.*)?$", url, re.I)
-    if m:
-        url = m.group(1)
-
-    previous = found.get(url, {})
-    useful_title = (title or previous.get("title") or _title_from_url(url)).strip()
-
     found[url] = {
         "url": url,
-        "title": useful_title,
+        "title": (title or _title_from_url(url)).strip(),
     }
 
 def _collect_from_text(text, found):
     if not text:
         return
-
-    # JSON responses sometimes escape forward slashes.
     text = text.replace("\\/", "/")
-
     for match in PDF_URL_RE.findall(text):
         _add_url(found, match)
 
-def _collect_from_dom(page, found):
-    # 1. Normal links.
+def _collect_dom(page, found):
     try:
-        anchors = page.locator("a")
-        for i in range(anchors.count()):
-            a = anchors.nth(i)
+        links = page.locator("a")
+        for i in range(links.count()):
+            a = links.nth(i)
             try:
                 href = a.get_attribute("href")
-                label = (a.inner_text(timeout=1000) or "").strip()
+                label = (a.inner_text(timeout=500) or "").strip()
             except Exception:
                 continue
-
-            if not href:
-                continue
-
-            href = urljoin(page.url, href)
-            _add_url(found, href, label)
+            if href:
+                _add_url(found, urljoin(page.url, href), label)
     except Exception:
         pass
 
-    # 2. Raw HTML catches links embedded in scripts, JSON attributes or
-    # JavaScript-rendered card data that are not ordinary anchors.
     try:
         _collect_from_text(page.content(), found)
     except Exception:
         pass
 
-def _click_first_visible(page, selectors):
-    for selector in selectors:
-        try:
-            locator = page.locator(selector)
-            count = locator.count()
+def _safe_post_data(request):
+    try:
+        data = request.post_data
+        if data and len(data) > 5000:
+            data = data[:5000] + "...[truncated]"
+        return data
+    except Exception:
+        return None
 
-            for i in range(min(count, 8)):
-                el = locator.nth(i)
-                if not el.is_visible():
-                    continue
-                if el.is_disabled():
-                    continue
+def _interesting_request(url: str) -> bool:
+    low = (url or "").lower()
+    hints = (
+        "ajax",
+        "jet",
+        "filter",
+        "disclosure",
+        "graphql",
+        "api",
+        "wp-json",
+        "admin-ajax",
+        "load",
+        "page",
+    )
+    return "ngxgroup.com" in low and any(h in low for h in hints)
 
-                el.scroll_into_view_if_needed()
-                el.click(timeout=5000)
-                return True
-        except Exception:
-            pass
-
-    return False
-
-def _click_next_pagination(page):
-    """
-    Cover the common pagination systems used by WordPress/Elementor,
-    JetEngine/JetSmartFilters, DataTables and conventional rel=next links.
-    """
+def _try_one_pagination_action(page):
     selectors = [
         'a[rel="next"]',
         'button[aria-label*="Next" i]',
@@ -135,156 +120,45 @@ def _click_next_pagination(page):
         'button.next',
         '.pagination-next a',
         '.pagination__next a',
-        '.jet-filters-pagination__link[data-value="next"]',
         '.jet-filters-pagination__next',
         '.jet-smart-filters-pagination__next',
         '.dataTables_paginate .next:not(.disabled)',
-    ]
-
-    if _click_first_visible(page, selectors):
-        return True
-
-    # Text-based fallback.
-    text_selectors = [
         'a:has-text("Next")',
         'button:has-text("Next")',
         'a:has-text("Older")',
         'button:has-text("Older")',
-        'a:has-text("›")',
-        'button:has-text("›")',
-        'a:has-text("»")',
-        'button:has-text("»")',
-    ]
-
-    return _click_first_visible(page, text_selectors)
-
-def _click_next_number(page, already_clicked_numbers):
-    """
-    Some NGX/WordPress pagination widgets expose only numbered page links.
-    Click the smallest page number we have not tried yet.
-    """
-    candidates = []
-
-    selectors = [
-        'a.page-numbers',
-        '.pagination a',
-        '.jet-filters-pagination__link',
-        '.jet-smart-filters-pagination__link',
     ]
 
     for selector in selectors:
         try:
             loc = page.locator(selector)
-
-            for i in range(loc.count()):
+            for i in range(min(loc.count(), 5)):
                 el = loc.nth(i)
-
-                try:
-                    text = (el.inner_text(timeout=500) or "").strip()
-                except Exception:
-                    continue
-
-                if not text.isdigit():
-                    continue
-
-                number = int(text)
-
-                if number <= 1 or number in already_clicked_numbers:
-                    continue
-
-                if el.is_visible():
-                    candidates.append((number, el))
+                if el.is_visible() and not el.is_disabled():
+                    el.scroll_into_view_if_needed()
+                    el.click(timeout=3000)
+                    return selector
         except Exception:
-            pass
+            continue
 
-    if not candidates:
-        return False
-
-    candidates.sort(key=lambda item: item[0])
-    number, element = candidates[0]
-
+    # One scroll only, purely to trigger lazy/infinite loading if present.
     try:
-        element.scroll_into_view_if_needed()
-        element.click(timeout=5000)
-        already_clicked_numbers.add(number)
-        return True
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        return "single_scroll"
     except Exception:
-        return False
-
-def _crawl_historical_pages(page, found, max_rounds=120):
-    """
-    Traverse historical disclosure results.
-
-    Stop only after several consecutive rounds reveal no new PDFs and no
-    pagination action succeeds. This is deliberately much deeper than the
-    previous 'load more' crawler.
-    """
-    stagnant_rounds = 0
-    clicked_numbers = set()
-    last_count = len(found)
-    seen_page_signatures = set()
-
-    for _ in range(max_rounds):
-        _collect_from_dom(page, found)
-
-        try:
-            signature = (
-                page.url,
-                page.locator("body").inner_text(timeout=3000)[-3000:],
-            )
-        except Exception:
-            signature = (page.url, str(len(found)))
-
-        if signature in seen_page_signatures:
-            stagnant_rounds += 1
-        else:
-            seen_page_signatures.add(signature)
-
-        moved = False
-
-        # First prefer explicit Next/Older controls.
-        if _click_next_pagination(page):
-            moved = True
-        elif _click_next_number(page, clicked_numbers):
-            moved = True
-        else:
-            # Infinite-scroll fallback.
-            try:
-                old_height = page.evaluate("document.body.scrollHeight")
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                page.wait_for_timeout(1800)
-                new_height = page.evaluate("document.body.scrollHeight")
-                moved = new_height > old_height
-            except Exception:
-                moved = False
-
-        if moved:
-            try:
-                page.wait_for_load_state("networkidle", timeout=12000)
-            except Exception:
-                pass
-            page.wait_for_timeout(1200)
-
-        _collect_from_dom(page, found)
-
-        if len(found) > last_count:
-            stagnant_rounds = 0
-            last_count = len(found)
-        else:
-            stagnant_rounds += 1
-
-        # Five dead rounds is enough evidence that the UI has been exhausted.
-        if stagnant_rounds >= 5 and not moved:
-            break
+        return "none"
 
 def discover_official_pdfs():
     found = {}
+    requests_log = []
+    responses_log = []
+
+    started = time.time()
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-
         page = browser.new_page(
-            viewport={"width": 1440, "height": 1600},
+            viewport={"width": 1440, "height": 1400},
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -292,48 +166,84 @@ def discover_official_pdfs():
             ),
         )
 
-        # Capture dynamically loaded disclosure payloads.
-        def on_response(response):
+        def on_request(request):
             try:
-                ctype = (response.headers.get("content-type") or "").lower()
-                url = response.url
-
-                # Direct PDF response.
-                if OFFICIAL_DOC_HOST in url and ".pdf" in url.lower():
-                    _add_url(found, url)
-                    return
-
-                # AJAX/JSON/HTML responses often contain the document URLs.
-                if (
-                    "json" in ctype
-                    or "text/html" in ctype
-                    or "javascript" in ctype
-                    or "text/plain" in ctype
-                ):
-                    body = response.text()
-                    _collect_from_text(body, found)
+                if _interesting_request(request.url):
+                    requests_log.append({
+                        "method": request.method,
+                        "url": request.url,
+                        "resource_type": request.resource_type,
+                        "post_data": _safe_post_data(request),
+                    })
             except Exception:
                 pass
 
+        def on_response(response):
+            try:
+                url = response.url
+                ctype = (response.headers.get("content-type") or "").lower()
+
+                if OFFICIAL_DOC_HOST in url and ".pdf" in url.lower():
+                    _add_url(found, url)
+
+                if _interesting_request(url):
+                    item = {
+                        "status": response.status,
+                        "url": url,
+                        "content_type": ctype,
+                    }
+
+                    if any(x in ctype for x in ("json", "html", "text", "javascript")):
+                        try:
+                            body = response.text()
+                            item["body_preview"] = body[:4000]
+                            _collect_from_text(body, found)
+                        except Exception as exc:
+                            item["body_error"] = repr(exc)
+
+                    responses_log.append(item)
+            except Exception:
+                pass
+
+        page.on("request", on_request)
         page.on("response", on_response)
 
         page.goto(
             NGX_DISCLOSURES_URL,
             wait_until="domcontentloaded",
-            timeout=90000,
+            timeout=60000,
         )
 
-        try:
-            page.wait_for_load_state("networkidle", timeout=20000)
-        except Exception:
-            pass
+        page.wait_for_timeout(5000)
+        _collect_dom(page, found)
 
-        page.wait_for_timeout(2500)
+        action = _try_one_pagination_action(page)
 
-        _collect_from_dom(page, found)
-        _crawl_historical_pages(page, found)
+        page.wait_for_timeout(7000)
+        _collect_dom(page, found)
 
+        # Hard stop: this diagnostic is never allowed to crawl indefinitely.
         browser.close()
+
+    debug = {
+        "page": NGX_DISCLOSURES_URL,
+        "elapsed_seconds": round(time.time() - started, 2),
+        "pagination_action_attempted": action,
+        "pdfs_found": len(found),
+        "requests": requests_log[-100:],
+        "responses": responses_log[-100:],
+    }
+
+    DEBUG_FILE.write_text(
+        json.dumps(debug, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    print(f"Discovery diagnostic elapsed seconds: {debug['elapsed_seconds']}")
+    print(f"Discovery diagnostic requests captured: {len(requests_log)}")
+    print(f"Discovery diagnostic responses captured: {len(responses_log)}")
+    print(f"Discovery diagnostic PDFs found: {len(found)}")
+    print(f"Discovery diagnostic pagination action: {action}")
 
     return list(found.values())
 
