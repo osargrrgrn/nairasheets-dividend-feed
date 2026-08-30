@@ -16,14 +16,15 @@
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "",
+      "announcement_date": "2026-07-31",
       "registrar": "",
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47863_CUTIX_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
       "source_title": "CUTIX PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
       "last_verified": "2026-08-30",
       "confidence": "review"
-    }
+    },
+    "classification": "pending_dividend"
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47862_P_Z_CUSSONS_NIGERIA_PLC.-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
@@ -42,14 +43,15 @@
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "",
+      "announcement_date": "2026-05-31",
       "registrar": "",
-      "status": "declared",
+      "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47862_P_Z_CUSSONS_NIGERIA_PLC.-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
       "source_title": "P Z CUSSONS NIGERIA PLC.- QUARTER 5 - FINANCIAL STATEMENT FOR 2026",
       "last_verified": "2026-08-30",
       "confidence": "review"
-    }
+    },
+    "classification": "pending_dividend"
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47856_RED_STAR_EXPRESS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
@@ -77,7 +79,8 @@
       "source_title": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
       "last_verified": "2026-08-30",
       "confidence": "review"
-    }
+    },
+    "classification": "review"
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47857_CUTIX_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
@@ -96,14 +99,15 @@
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "",
+      "announcement_date": "2026-07-31",
       "registrar": "",
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47857_CUTIX_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
       "source_title": "CUTIX PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
       "last_verified": "2026-08-30",
       "confidence": "review"
-    }
+    },
+    "classification": "pending_dividend"
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47855_JULI_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
@@ -131,7 +135,8 @@
       "source_title": "JULI PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026",
       "last_verified": "2026-08-30",
       "confidence": "review"
-    }
+    },
+    "classification": "review"
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47854_P_Z_CUSSONS_NIGERIA_PLC.-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_AUGUST_2026.pdf",
@@ -151,14 +156,15 @@
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "",
+      "announcement_date": "2026-08-28",
       "registrar": "",
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47854_P_Z_CUSSONS_NIGERIA_PLC.-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_AUGUST_2026.pdf",
       "source_title": "P Z CUSSONS NIGERIA PLC.-POST BOARD MEETING NOTIFICATION",
       "last_verified": "2026-08-30",
       "confidence": "review"
-    }
+    },
+    "classification": "review"
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47850_PRESCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
@@ -185,7 +191,8 @@
       "source_title": "PRESCO PLC- NOTICE OF ANNUAL GENERAL MEETING (AGM)",
       "last_verified": "2026-08-30",
       "confidence": "review"
-    }
+    },
+    "classification": "review"
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
@@ -212,7 +219,8 @@
       "source_title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
       "last_verified": "2026-08-30",
       "confidence": "review"
-    }
+    },
+    "classification": "review"
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47845_NIGERIAN_ENAMELWARE_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
@@ -240,6 +248,7 @@
       "source_title": "NIGERIAN ENAMELWARE PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027",
       "last_verified": "2026-08-30",
       "confidence": "review"
-    }
+    },
+    "classification": "review"
   }
 ]
