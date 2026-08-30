@@ -1,8 +1,9 @@
 from pathlib import Path
 import json
+
 from .discover import discover_official_pdfs, title_is_strongly_irrelevant
 from .pdf_extract import download_pdf_text, compact
-from .parse import parse_dividend_pdf, has_dividend_evidence
+from .parse import parse_dividend_pdf, has_dividend_evidence, make_event_id
 from .tickers import resolve_ticker
 from .validate import validate_event
 from .publish import read_csv, merge_events, write_csv, write_html
@@ -13,6 +14,24 @@ STATE = ROOT / "collector_state.json"
 ARCHIVE = ROOT / "disclosure_archive.json"
 FEED = DOCS / "dividends.csv"
 PENDING_FEED = DOCS / "pending_dividends.csv"
+
+FINANCIAL_STATEMENT_HINTS = (
+    "financial statement",
+    "financial statements",
+    "quarter 1",
+    "quarter 2",
+    "quarter 3",
+    "quarter 4",
+    "quarter 5",
+    "annual report",
+)
+
+DATE_FIELDS = (
+    "qualification_date",
+    "payment_date",
+    "closure_date",
+    "announcement_date",
+)
 
 def load_json(path, default):
     if not path.exists():
@@ -54,20 +73,150 @@ def merge_archive(existing, newly_discovered):
 
     return sorted(by_url.values(), key=lambda x: x.get("url", ""))
 
+def normalise_type(value):
+    value = (value or "").strip().lower()
+
+    aliases = {
+        "dividend": "",
+        "distribution": "",
+    }
+
+    return aliases.get(value, value)
+
+def same_dividend_type(a, b):
+    a = normalise_type(a)
+    b = normalise_type(b)
+
+    # Generic "dividend"/"distribution" is allowed to match a more specific type.
+    if not a or not b:
+        return True
+
+    return a == b
+
+def amounts_match(a, b):
+    try:
+        a = float(a or 0)
+        b = float(b or 0)
+    except Exception:
+        return False
+
+    if a <= 0 or b <= 0:
+        return False
+
+    return abs(a - b) <= max(0.0001, 0.001 * max(abs(a), abs(b)))
+
+def pending_match_score(candidate, pending):
+    if not candidate.ticker or candidate.ticker.upper() != (pending.get("ticker") or "").upper():
+        return -1
+
+    if not same_dividend_type(candidate.dividend_type, pending.get("dividend_type")):
+        return -1
+
+    candidate_dps = float(candidate.dividend_per_share or 0)
+    pending_dps = float(pending.get("dividend_per_share") or 0)
+
+    score = 0
+
+    if amounts_match(candidate_dps, pending_dps):
+        score += 100
+    elif candidate_dps > 0 and pending_dps > 0:
+        # Both have positive but conflicting dividend amounts: do not merge.
+        return -1
+    else:
+        # One document may contain dates while another contains the amount.
+        score += 15
+
+    candidate_dates = sum(bool(getattr(candidate, field, "")) for field in DATE_FIELDS)
+    pending_dates = sum(bool(pending.get(field)) for field in DATE_FIELDS)
+
+    score += candidate_dates * 5
+    score += pending_dates * 2
+
+    return score
+
+def find_pending_match(candidate, pending_rows):
+    matches = []
+
+    for row in pending_rows:
+        score = pending_match_score(candidate, row)
+        if score >= 0:
+            matches.append((score, row))
+
+    if not matches:
+        return None
+
+    matches.sort(key=lambda x: x[0], reverse=True)
+
+    # For amount-less candidates, avoid guessing between multiple plausible
+    # pending dividends from the same company/type.
+    if float(candidate.dividend_per_share or 0) <= 0:
+        best_score = matches[0][0]
+        equally_good = [row for score, row in matches if score == best_score]
+        if len(equally_good) > 1:
+            return None
+
+    return matches[0][1]
+
+def enrich_from_pending(candidate, pending):
+    if not pending:
+        return candidate
+
+    if float(candidate.dividend_per_share or 0) <= 0:
+        candidate.dividend_per_share = float(pending.get("dividend_per_share") or 0)
+
+    if not candidate.currency:
+        candidate.currency = pending.get("currency") or "NGN"
+
+    if normalise_type(candidate.dividend_type) == "":
+        candidate.dividend_type = pending.get("dividend_type") or candidate.dividend_type
+
+    for field in (
+        "qualification_date",
+        "payment_date",
+        "closure_date",
+        "announcement_date",
+        "registrar",
+    ):
+        if not getattr(candidate, field, "") and pending.get(field):
+            setattr(candidate, field, pending.get(field))
+
+    # Preserve the strongest status. A later approved/declared document
+    # should supersede an older proposed record.
+    if (candidate.status or "").lower() == "proposed":
+        old_status = (pending.get("status") or "").lower()
+        if old_status in {"declared", "approved"}:
+            candidate.status = old_status
+
+    candidate.event_id = make_event_id(
+        candidate.ticker,
+        candidate.company,
+        candidate.qualification_date,
+        candidate.payment_date,
+        candidate.dividend_per_share,
+        candidate.dividend_type,
+    )
+
+    return candidate
+
 def pending_key(row):
     return "|".join([
-        row.get("ticker", "").upper().strip(),
-        row.get("dividend_type", "").lower().strip(),
-        row.get("currency", "").upper().strip(),
-        str(row.get("dividend_per_share", "")).strip(),
+        (row.get("ticker") or "").upper().strip(),
+        (row.get("dividend_type") or "").lower().strip(),
+        (row.get("currency") or "").upper().strip(),
+        str(row.get("dividend_per_share") or "").strip(),
     ])
 
-def merge_pending(existing, incoming):
+def merge_pending(existing, incoming, promoted_keys=None):
+    promoted_keys = promoted_keys or set()
     by_key = {}
 
     for row in existing + incoming:
         key = pending_key(row)
+
         if not row.get("ticker") or not row.get("dividend_per_share"):
+            continue
+
+        if key in promoted_keys:
             continue
 
         current = by_key.get(key)
@@ -98,6 +247,25 @@ def merge_pending(existing, incoming):
         )
     )
 
+def is_obvious_statement_noise(title, provisional):
+    """
+    Financial statements often mention 'distribution' in accounting notes.
+    If we cannot extract an actual dividend amount and there are no
+    shareholder-action dates, keep them out of the review queue.
+    """
+    low_title = (title or "").lower()
+
+    if not any(hint in low_title for hint in FINANCIAL_STATEMENT_HINTS):
+        return False
+
+    if float(provisional.dividend_per_share or 0) > 0:
+        return False
+
+    if provisional.qualification_date or provisional.payment_date:
+        return False
+
+    return True
+
 def main():
     state = load_state()
     processed = state.setdefault("processed", {})
@@ -108,16 +276,20 @@ def main():
     archive = merge_archive(old_archive, current_discovered)
     save_json(ARCHIVE, archive)
 
-    # Process the accumulated archive, not only today's visible NGX batch.
     discovered = archive
+
+    existing_pending = read_csv(PENDING_FEED)
 
     accepted = []
     pending = []
     review = []
+    promoted_pending_keys = set()
 
     rejected_non_dividend = 0
+    rejected_statement_noise = 0
     inspected = 0
     dividend_candidates = 0
+    reconciled_events = 0
 
     for item in discovered:
         url = item["url"]
@@ -153,7 +325,17 @@ def main():
                 title
             )
 
-            from .parse import make_event_id
+            if is_obvious_statement_noise(title, provisional):
+                rejected_statement_noise += 1
+                processed[url] = "statement_noise"
+                continue
+
+            # NEW: try to combine this filing with a dividend we already know.
+            matched_pending = find_pending_match(provisional, existing_pending)
+
+            if matched_pending:
+                provisional = enrich_from_pending(provisional, matched_pending)
+
             provisional.event_id = make_event_id(
                 provisional.ticker,
                 provisional.company,
@@ -169,6 +351,10 @@ def main():
                 accepted.append(provisional.to_dict())
                 processed[url] = "accepted"
 
+                if matched_pending:
+                    promoted_pending_keys.add(pending_key(matched_pending))
+                    reconciled_events += 1
+
             elif (
                 provisional.ticker
                 and provisional.dividend_per_share > 0
@@ -182,6 +368,7 @@ def main():
                     "errors": errors,
                     "parsed": provisional.to_dict(),
                     "classification": "pending_dividend",
+                    "matched_existing_pending": bool(matched_pending),
                 })
 
                 processed[url] = "pending"
@@ -193,6 +380,7 @@ def main():
                     "errors": errors,
                     "parsed": provisional.to_dict(),
                     "classification": "review",
+                    "matched_existing_pending": bool(matched_pending),
                 })
 
                 processed[url] = "review"
@@ -211,8 +399,11 @@ def main():
     write_csv(FEED, merged)
     write_html(DOCS / "index.html", merged)
 
-    existing_pending = read_csv(PENDING_FEED)
-    merged_pending = merge_pending(existing_pending, pending)
+    merged_pending = merge_pending(
+        existing_pending,
+        pending,
+        promoted_keys=promoted_pending_keys,
+    )
     write_csv(PENDING_FEED, merged_pending)
 
     (ROOT / "review_queue.json").write_text(
@@ -226,7 +417,9 @@ def main():
     print(f"Archived official PDFs total: {len(archive)}")
     print(f"PDFs inspected this run: {inspected}")
     print(f"Rejected as non-dividend: {rejected_non_dividend}")
+    print(f"Rejected financial-statement noise: {rejected_statement_noise}")
     print(f"Dividend candidates after PDF inspection: {dividend_candidates}")
+    print(f"Pending dividends reconciled/promoted: {reconciled_events}")
     print(f"Published new complete events: {len(accepted)}")
     print(f"New pending dividend events: {len(pending)}")
     print(f"Pending feed total: {len(merged_pending)}")
