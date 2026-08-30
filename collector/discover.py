@@ -50,8 +50,8 @@ STRONG_NEGATIVE_TITLE_HINTS = (
 )
 
 PDF_URL_RE = re.compile(
-    r'https?://doclib\.ngxgroup\.com/Financial_NewsDocs/[^"\'<>
-\s]+?\.pdf',
+    r'https?://doclib\.ngxgroup\.com/Financial_NewsDocs/[^"\'<>\s]+?\.pdf'
+
     re.I,
 )
 
