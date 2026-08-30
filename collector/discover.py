@@ -36,6 +36,53 @@ MAX_NAIJA_COMPANIES = 150
 NAIJA_WORKERS = 10
 MAX_NEW_PDFS = 80
 
+# Patch 18: NaijaTicker is only a fallback. It should not hand dozens of
+# generic NGX documents to the expensive PDF parser.
+MAX_NAIJA_RETURNED_PDFS = 20
+
+NAIJA_STRONG_POSITIVE_HINTS = (
+    "dividend",
+    "distribution",
+    "qualification_date",
+    "qualification date",
+    "payment_date",
+    "payment date",
+)
+
+# Some real dividends are disclosed under these less explicit document names.
+# They remain eligible, but rank below an explicit dividend announcement.
+NAIJA_SECONDARY_POSITIVE_HINTS = (
+    "post_board_meeting",
+    "post board meeting",
+    "outcome_of_board_meeting",
+    "outcome of board meeting",
+    "annual_general_meeting",
+    "annual general meeting",
+    "agm",
+    "earnings_press_release",
+    "earnings press release",
+)
+
+NAIJA_HARD_NEGATIVE_HINTS = (
+    "financial_statement",
+    "financial statements",
+    "quarter_1",
+    "quarter_2",
+    "quarter_3",
+    "quarter_4",
+    "sustainability_report",
+    "sustainability report",
+    "resignation",
+    "appointment",
+    "transaction_in_own_shares",
+    "transaction in own shares",
+    "director_dealing",
+    "director dealing",
+    "closed_period",
+    "closed period",
+    "litigation",
+)
+
 PDF_URL_RE = re.compile(
     r"https?://doclib\.ngxgroup\.com/Financial_NewsDocs/[^\"'<>\s\\]+?\.pdf",
     re.I,
@@ -226,6 +273,39 @@ def _load_naija_tickers():
             tickers.add(t.lower())
     return sorted(t for t in tickers if re.fullmatch(r"[a-z][a-z0-9]{1,20}",t))[:MAX_NAIJA_COMPANIES]
 
+def _naija_relevance_score(url):
+    """
+    Rank NaijaTicker URLs before PDF download/parsing.
+
+    Explicit dividend/distribution/date language ranks highest.
+    Board/AGM/earnings documents remain eligible because genuine dividends
+    can be announced there, but only a limited number are allowed through.
+    Financial statements and other obvious noise are rejected here.
+    """
+    hay = html.unescape(unquote(url)).lower().replace("-", "_")
+
+    if any(hint in hay for hint in NAIJA_HARD_NEGATIVE_HINTS):
+        return -100
+
+    score = 0
+
+    if "dividend" in hay:
+        score += 100
+    if "distribution" in hay:
+        score += 90
+    if "qualification_date" in hay or "qualification date" in hay:
+        score += 80
+    if "payment_date" in hay or "payment date" in hay:
+        score += 80
+
+    for hint in NAIJA_SECONDARY_POSITIVE_HINTS:
+        if hint in hay:
+            score += 25
+            break
+
+    return score
+
+
 def _fetch_naija(ticker):
     url = f"{NAIJATICKER_BASE}{ticker}"
     try:
@@ -240,49 +320,107 @@ def _fetch_naija(ticker):
         return {"ticker":ticker,"status":0,"pdfs":[],"error":repr(exc)}
 
 def _discover_naija(known, debug, started):
-    found = []
     tickers = _load_naija_tickers()
-    dbg = {"companies_targeted":len(tickers),"companies_completed":0,"new_pdfs":0,"errors":[]}
+    dbg = {
+        "companies_targeted": len(tickers),
+        "companies_completed": 0,
+        "pdfs_seen": 0,
+        "already_known": 0,
+        "filtered_before_parser": 0,
+        "eligible_candidates": 0,
+        "new_pdfs": 0,
+        "errors": [],
+    }
+
     print(f"[NaijaTicker] checking {len(tickers)} pages", flush=True)
 
+    candidates = {}
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=NAIJA_WORKERS) as pool:
-        futs = [pool.submit(_fetch_naija,t) for t in tickers]
+        futs = [pool.submit(_fetch_naija, t) for t in tickers]
+
         for fut in concurrent.futures.as_completed(futs):
             if _time_remaining(started) <= 5:
                 break
+
             res = fut.result()
             dbg["companies_completed"] += 1
+
             if res.get("error"):
                 dbg["errors"].append(res["error"])
-            for u in res.get("pdfs",[]):
+
+            for u in res.get("pdfs", []):
+                dbg["pdfs_seen"] += 1
+
                 if u in known:
+                    dbg["already_known"] += 1
                     continue
-                t = _title_from_url(u)
-                if _looks_strongly_irrelevant(t,u):
+
+                title = _title_from_url(u)
+
+                if _looks_strongly_irrelevant(title, u):
+                    dbg["filtered_before_parser"] += 1
                     continue
-                found.append({
-                    "url":u,"title":t,"source":"naijaticker",
-                    "ticker":res["ticker"].upper()
-                })
-                known.add(u)
-                if len(found) >= MAX_NEW_PDFS:
-                    break
-            if len(found) >= MAX_NEW_PDFS:
-                break
+
+                score = _naija_relevance_score(u)
+
+                if score <= 0:
+                    dbg["filtered_before_parser"] += 1
+                    continue
+
+                current = candidates.get(u)
+                candidate = {
+                    "url": u,
+                    "title": title,
+                    "source": "naijaticker",
+                    "ticker": res["ticker"].upper(),
+                    "_score": score,
+                }
+
+                if current is None or score > current["_score"]:
+                    candidates[u] = candidate
 
         for f in futs:
             if not f.done():
                 f.cancel()
 
+    ranked = sorted(
+        candidates.values(),
+        key=lambda x: (-x["_score"], x["url"])
+    )
+
+    dbg["eligible_candidates"] = len(ranked)
+
+    found = []
+    for item in ranked[:MAX_NAIJA_RETURNED_PDFS]:
+        item.pop("_score", None)
+        found.append(item)
+        known.add(item["url"])
+
     dbg["new_pdfs"] = len(found)
     debug["naijaticker"] = dbg
-    print(f"[NaijaTicker] new official PDFs: {len(found)}", flush=True)
+
+    print(
+        f"[NaijaTicker] filtered before parser: "
+        f"{dbg['filtered_before_parser']}",
+        flush=True,
+    )
+    print(
+        f"[NaijaTicker] eligible candidates: "
+        f"{dbg['eligible_candidates']}",
+        flush=True,
+    )
+    print(
+        f"[NaijaTicker] relevant new official PDFs: {len(found)}",
+        flush=True,
+    )
+
     return found
 
 def discover_official_pdfs():
     started = time.monotonic()
-    debug = {"method":"patch_15_directory_discovery_official_pdf_validation"}
-    print("NGX dividend PDF discovery — Patch 15", flush=True)
+    debug = {"method":"patch_18_filtered_naijaticker_fallback"}
+    print("NGX dividend PDF discovery — Patch 18", flush=True)
 
     known = _load_archive()
     print(f"Known archive URLs: {len(known)}", flush=True)
