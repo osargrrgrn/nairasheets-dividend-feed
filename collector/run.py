@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import re
 
 from .discover import discover_official_pdfs, title_is_strongly_irrelevant
 from .pdf_extract import download_pdf_text, compact
@@ -39,6 +40,28 @@ DATE_FIELDS = (
     "closure_date",
     "announcement_date",
 )
+
+CURRENT_ACTION_PATTERNS = (
+    r"\bboard\b[\s\S]{0,180}\b(?:proposed|recommended|approved|declared)\b[\s\S]{0,180}\b(?:dividend|distribution)\b",
+    r"\b(?:proposed|recommended|approved|declared)\b[\s\S]{0,180}\b(?:interim|final|special)?\s*(?:dividend|distribution)\b",
+    r"\bsubsequent\s+to\s+(?:the\s+)?(?:balance\s+sheet|reporting)\s+date\b[\s\S]{0,300}\b(?:dividend|distribution)\b",
+    r"\b(?:interim|final|special)\s+dividend\b[\s\S]{0,250}\b(?:per\s+(?:ordinary\s+)?share|kobo)\b",
+)
+
+def financial_statement_has_current_dividend_action(text, provisional):
+    """
+    Financial statements often contain historical dividend notes.
+    Keep one only when there is evidence of a current actionable dividend.
+    """
+    low = text.lower()
+
+    if provisional.qualification_date or provisional.payment_date:
+        return True
+
+    if float(provisional.dividend_per_share or 0) <= 0:
+        return False
+
+    return any(re.search(pattern, low, re.I | re.S) for pattern in CURRENT_ACTION_PATTERNS)
 
 def load_json(path, default):
     if not path.exists():
@@ -247,19 +270,13 @@ def merge_pending(existing, incoming, promoted_keys=None):
         )
     )
 
-def is_obvious_statement_noise(title, provisional):
+def is_obvious_statement_noise(title, provisional, text=""):
     low_title = (title or "").lower()
 
     if not any(hint in low_title for hint in FINANCIAL_STATEMENT_HINTS):
         return False
 
-    if float(provisional.dividend_per_share or 0) > 0:
-        return False
-
-    if provisional.qualification_date or provisional.payment_date:
-        return False
-
-    return True
+    return not financial_statement_has_current_dividend_action(text, provisional)
 
 def is_non_actionable_review_noise(title, provisional):
     """
@@ -372,12 +389,12 @@ def main():
                 title
             )
 
-            if is_obvious_statement_noise(title, provisional):
+            if is_obvious_statement_noise(title, provisional, text):
                 rejected_statement_noise += 1
                 processed[url] = "statement_noise"
                 continue
 
-            matched_pending = find_pending_match(provisional, existing_pending)
+            matched_pending = find_pending_match(provisional, existing_pending + pending)
 
             if matched_pending:
                 provisional = enrich_from_pending(provisional, matched_pending)

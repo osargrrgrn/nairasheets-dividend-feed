@@ -66,24 +66,27 @@ def first_match(patterns, text, flags=re.I | re.S):
     return ""
 
 def infer_currency_and_dps(text: str):
+    """
+    Extract dividend per-share amount from common NGX phrasings.
+
+    Requires dividend/distribution or explicit per-share context so arbitrary
+    currency figures in financial statements are not treated as DPS.
+    """
     naira_patterns = [
-        # "final dividend ... that is N2.50 (...) per ordinary share"
-        r"(?:final|interim|special|proposed)?\s*dividend"
-        r"[^.\n]{0,300}?(?:that\s+is|equivalent\s+to|amounting\s+to)?\s*"
+        r"(?:final|interim|special|proposed|gross)?\s*dividend"
+        r"[^.\n]{0,360}?(?:that\s+is|equivalent\s+to|amounting\s+to|of)?\s*"
         r"(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
         r"\s*(?:\([^)]*\)\s*)?"
-        r"per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share",
+        r"(?:per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share"
+        r"|for\s+every\s+(?:ordinary\s+)?share)",
 
-        # "Interim Dividend of N26 per 2 kobo ordinary share"
-        r"(?:final|interim|special|proposed)?\s*dividend"
-        r"[^.\n]{0,220}?(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
-        r"\s*per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share",
-
-        # Amount-first fallback.
         r"(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
         r"\s*(?:\([^)]*\)\s*)?"
-        r"per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share"
-        r"[^.\n]{0,180}?(?:dividend|distribution)",
+        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)"
+        r"[^.\n]{0,220}?(?:dividend|distribution)",
+
+        r"(?:dividend|distribution)\s+per\s+(?:ordinary\s+)?share"
+        r"[^.\n]{0,100}?(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)",
     ]
 
     for pattern in naira_patterns:
@@ -92,12 +95,19 @@ def infer_currency_and_dps(text: str):
             return "NGN", float(m.group(1))
 
     kobo_patterns = [
-        r"(?:final|interim|special|proposed)?\s*dividend"
-        r"[^.\n]{0,260}?([0-9]+(?:\.[0-9]+)?)\s*kobo"
-        r"\s*(?:\([^)]*\)\s*)?per\s+(?:ordinary\s+)?share",
+        r"(?:final|interim|special|proposed|gross)?\s*dividend"
+        r"[^.\n]{0,320}?([0-9]+(?:\.[0-9]+)?)\s*kobo"
+        r"\s*(?:\([^)]*\)\s*)?"
+        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)",
 
         r"([0-9]+(?:\.[0-9]+)?)\s*kobo"
-        r"\s*(?:\([^)]*\)\s*)?per\s+(?:ordinary\s+)?share",
+        r"\s*(?:\([^)]*\)\s*)?"
+        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)"
+        r"[^.\n]{0,220}?(?:dividend|distribution)",
+
+        r"(?:dividend|distribution)"
+        r"[^.\n]{0,320}?([0-9]+(?:\.[0-9]+)?)\s*kobo"
+        r"[^.\n]{0,80}?for\s+every\s+(?:ordinary\s+)?share",
     ]
 
     for pattern in kobo_patterns:
@@ -106,13 +116,16 @@ def infer_currency_and_dps(text: str):
             return "NGN", float(m.group(1)) / 100.0
 
     usd_patterns = [
-        r"(?:final|interim|special)?\s*dividend"
-        r"[^.\n]{0,260}?(?:USD|US\$|US\s*)?\s*"
+        r"(?:final|interim|special|proposed|gross)?\s*dividend"
+        r"[^.\n]{0,320}?(?:USD|US\$|US\s*)?\s*"
         r"([0-9]+(?:\.[0-9]+)?)\s*(?:US\s*)?cents?"
-        r"\s*(?:\([^)]*\)\s*)?per\s+(?:ordinary\s+)?share",
+        r"\s*(?:\([^)]*\)\s*)?"
+        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)",
 
         r"([0-9]+(?:\.[0-9]+)?)\s*(?:US\s*)?cents?"
-        r"\s*(?:\([^)]*\)\s*)?per\s+(?:ordinary\s+)?share",
+        r"\s*(?:\([^)]*\)\s*)?"
+        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)"
+        r"[^.\n]{0,220}?(?:dividend|distribution)",
     ]
 
     for pattern in usd_patterns:
@@ -172,6 +185,35 @@ def extract_qualification_date(text: str) -> str:
     ]
 
     return iso_date(first_match(entitlement_patterns, text))
+
+
+def extract_payment_date(text: str) -> str:
+    explicit = extract_labeled_date(
+        r"(?:payment\s+date|dividend\s+payment\s+date)",
+        text
+    )
+    if explicit:
+        return explicit
+
+    patterns = [
+        rf"(?:dividend|distribution)[\s\S]{{0,500}}?"
+        rf"(?:will\s+be\s+paid|shall\s+be\s+paid|is\s+payable|payable|payment\s+will\s+be\s+made)"
+        rf"[\s\S]{{0,100}}?(?:on\s+)?"
+        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+
+        rf"(?:will\s+be\s+paid|shall\s+be\s+paid|is\s+payable|payable|payment\s+will\s+be\s+made)"
+        rf"[\s\S]{{0,100}}?(?:on\s+)?"
+        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})"
+        rf"[\s\S]{{0,300}}?(?:dividend|distribution)",
+
+        rf"(?:dividend|distribution)[\s\S]{{0,500}}?"
+        rf"(?:will\s+be\s+paid|shall\s+be\s+paid|is\s+payable|payable|payment\s+will\s+be\s+made)"
+        rf"[\s\S]{{0,100}}?"
+        rf"((?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?[,]?\s+\d{{4}})",
+    ]
+
+    return iso_date(first_match(patterns, text))
+
 
 def extract_announcement_date(text: str) -> str:
     head = text[:2500]
@@ -249,10 +291,7 @@ def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticke
 
     qualification = extract_qualification_date(text)
 
-    payment = extract_labeled_date(
-        r"(?:payment\s+date|dividend\s+payment\s+date)",
-        text
-    )
+    payment = extract_payment_date(text)
 
     closure = extract_labeled_date(
         r"(?:closure\s+of\s+register|closure\s+date)",
