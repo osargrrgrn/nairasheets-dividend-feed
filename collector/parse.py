@@ -136,7 +136,6 @@ def extract_labeled_date(label: str, text: str) -> str:
     return iso_date(first_match([pat], text))
 
 def extract_qualification_date(text: str) -> str:
-    # 1) Best case: the filing explicitly labels the date.
     explicit = extract_labeled_date(
         r"(?:qualification\s+date|record\s+date)",
         text
@@ -144,9 +143,6 @@ def extract_qualification_date(text: str) -> str:
     if explicit:
         return explicit
 
-    # 2) Fallback only when the wording is explicitly about dividend entitlement.
-    # This avoids treating "financial year ended 31 May 2026" or balance-sheet
-    # "shareholders as at 31 May 2026" wording as a qualification date.
     entitlement_patterns = [
         rf"(?:dividend|distribution)[\s\S]{{0,500}}?"
         rf"(?:shareholders?\s+whose\s+names\s+appear\s+in\s+the\s+register"
@@ -162,6 +158,18 @@ def extract_qualification_date(text: str) -> str:
     ]
 
     return iso_date(first_match(entitlement_patterns, text))
+
+def extract_announcement_date(text: str) -> str:
+    # Most NGX letters put the document date near the top.
+    head = text[:2500]
+
+    patterns = [
+        rf"(?:^|\n)\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})\s*(?:\n|$)",
+        rf"(?:^|\n)\s*((?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?[,]?\s+\d{{4}})\s*(?:\n|$)",
+        r"(?:^|\n)\s*(\d{1,2}[/-]\d{1,2}[/-]\d{4})\s*(?:\n|$)",
+    ]
+
+    return iso_date(first_match(patterns, head, flags=re.I | re.M))
 
 def clean_company_name(raw: str) -> str:
     raw = re.sub(r"\s+", " ", raw).strip(" :-")
@@ -207,14 +215,15 @@ def infer_status(text: str) -> str:
     if "cancelled dividend" in low or "dividend has been cancelled" in low:
         return "cancelled"
 
-    if (
-        "subject to shareholders' approval" in low
-        or "subject to shareholders’ approval" in low
-        or "for approval at the company" in low
-        or "for approval at the annual general meeting" in low
-        or "proposed dividend" in low
-        or "recommended dividend" in low
-    ):
+    proposed_patterns = [
+        r"dividend[\s\S]{0,400}?proposed\s+to\s+(?:the\s+)?members",
+        r"dividend[\s\S]{0,400}?for\s+approval\s+at",
+        r"dividend[\s\S]{0,400}?subject\s+to\s+shareholders?[’']?\s+approval",
+        r"recommended\s+(?:a\s+)?(?:final|interim|special)?\s*dividend",
+        r"proposed\s+(?:final|interim|special)?\s*dividend",
+    ]
+
+    if any(re.search(p, low, re.I | re.S) for p in proposed_patterns):
         return "proposed"
 
     if "revised dividend" in low or "amended dividend" in low:
@@ -236,6 +245,8 @@ def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticke
         r"(?:closure\s+of\s+register|closure\s+date)",
         text
     )
+
+    announcement = extract_announcement_date(text)
 
     company = infer_company(text, source_title)
     dtype = infer_dividend_type(text)
@@ -264,6 +275,7 @@ def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticke
         qualification_date=qualification,
         payment_date=payment,
         closure_date=closure,
+        announcement_date=announcement,
         status=status,
         source_url=source_url,
         source_title=source_title,
