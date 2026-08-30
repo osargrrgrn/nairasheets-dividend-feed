@@ -1,103 +1,33 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47700_CUSTODIAN_INVESTMENT_PLC-CUSTODIAN_INVESTMENT_PLC_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "CUSTODIAN INVESTMENT PLC-CUSTODIAN INVESTMENT PLC INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+    "title": "BETA GLASS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
     "reason_codes": [
       "ticker_unresolved",
       "dividend_amount_unresolved",
-      "payment_date_missing",
+      "qualification_date_missing",
       "validation_failed"
     ],
     "errors": [
       "missing ticker",
       "missing/invalid dividend per share",
-      "missing payment date"
+      "missing qualification date"
     ],
     "parsed": {
-      "event_id": "e95ed785c2d6b361",
+      "event_id": "58a928d48df12afe",
       "ticker": "",
-      "company": "CUSTODIAN INVESTMENT PLC-CUSTODIAN INVESTMENT PLC INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "company": "BETA GLASS PLC",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2026-08-17",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47700_CUSTODIAN_INVESTMENT_PLC-CUSTODIAN_INVESTMENT_PLC_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "CUSTODIAN INVESTMENT PLC-CUSTODIAN INVESTMENT PLC INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-08-30",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47707_THE_INITIATES_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "THE INITIATES PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "aaa9bdca0d75b45f",
-      "ticker": "",
-      "company": "THE INITIATES PLC",
-      "dividend_per_share": 0.002,
-      "currency": "NGN",
-      "dividend_type": "interim",
+      "dividend_type": "distribution",
       "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47707_THE_INITIATES_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-      "source_title": "THE INITIATES PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-      "last_verified": "2026-08-30",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47727_VFD_GROUP_PLC-OUTCOME_OF_EMERGENCY_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "VFD GROUP PLC-OUTCOME OF EMERGENCY BOARD MEETING CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "ef42199583bb37f8",
-      "ticker": "",
-      "company": "VFD GROUP PLC-OUTCOME OF EMERGENCY BOARD MEETING CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.24,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "",
-      "payment_date": "",
+      "payment_date": "2026-06-30",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47727_VFD_GROUP_PLC-OUTCOME_OF_EMERGENCY_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "VFD GROUP PLC-OUTCOME OF EMERGENCY BOARD MEETING CORPORATE ACTIONS JULY 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "source_title": "BETA GLASS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
@@ -105,8 +35,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47728_ABBEY_BANK_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "ABBEY BANK PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47750_ARADEL_HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_31ST_AGM_HELD_JULY_30TH_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "ARADEL HOLDINGS PLC-RESOLUTIONS PASSED AT 31ST AGM HELD JULY 30TH 2026 CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
       "ticker_unresolved",
       "qualification_date_missing",
@@ -119,53 +49,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "9d5d494441442858",
+      "event_id": "2eb20a619c1bec62",
       "ticker": "",
-      "company": "ABBEY BANK PLC",
-      "dividend_per_share": 0.12,
+      "company": "ARADEL HOLDINGS PLC",
+      "dividend_per_share": 23.0,
       "currency": "NGN",
-      "dividend_type": "dividend",
+      "dividend_type": "final",
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "",
+      "announcement_date": "2026-07-30",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47728_ABBEY_BANK_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-      "source_title": "ABBEY BANK PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-      "last_verified": "2026-08-30",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47740_VFD_GROUP_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "VFD GROUP PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "f027932884136e17",
-      "ticker": "",
-      "company": "VFD GROUP PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2026-08-03",
-      "payment_date": "2026-08-10",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47740_VFD_GROUP_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "VFD GROUP PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47750_ARADEL_HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_31ST_AGM_HELD_JULY_30TH_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "ARADEL HOLDINGS PLC-RESOLUTIONS PASSED AT 31ST AGM HELD JULY 30TH 2026 CORPORATE ACTIONS JULY 2026",
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
@@ -208,34 +105,236 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-    "title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47800_SEPLAT_ENERGY_PLC-CURRENCY_EXCHANGE_RATE_FOR_Q2_2026_DIVIDENDS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+    "title": "SEPLAT ENERGY PLC-CURRENCY EXCHANGE RATE FOR Q2 2026 DIVIDENDS CORPORATE ACTIONS AUGUST 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "9c3c62a271e9aa0f",
+      "ticker": "SEPLAT",
+      "company": "SEPLAT ENERGY PLC-CURRENCY EXCHANGE RATE FOR Q2 2026 DIVIDENDS CORPORATE ACTIONS AUGUST 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim+special",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47800_SEPLAT_ENERGY_PLC-CURRENCY_EXCHANGE_RATE_FOR_Q2_2026_DIVIDENDS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "source_title": "SEPLAT ENERGY PLC-CURRENCY EXCHANGE RATE FOR Q2 2026 DIVIDENDS CORPORATE ACTIONS AUGUST 2026",
+      "last_verified": "2026-08-30",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47811_LEARN_AFRICA_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+    "title": "LEARN AFRICA PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
     "reason_codes": [
       "ticker_unresolved",
       "dividend_amount_unresolved",
-      "payment_date_missing",
+      "qualification_date_missing",
       "validation_failed"
     ],
     "errors": [
       "missing ticker",
       "missing/invalid dividend per share",
-      "missing payment date"
+      "missing qualification date"
     ],
     "parsed": {
-      "event_id": "971dc26c607714de",
+      "event_id": "c5d7629cbf980c1c",
       "ticker": "",
+      "company": "LEARN AFRICA PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "2026-09-25",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47811_LEARN_AFRICA_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+      "source_title": "LEARN AFRICA PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
+      "last_verified": "2026-08-30",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47828_ACADEMY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+    "title": "ACADEMY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing qualification date"
+    ],
+    "parsed": {
+      "event_id": "e3c2b120ebac3384",
+      "ticker": "",
+      "company": "ACADEMY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "2026-09-25",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47828_ACADEMY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+      "source_title": "ACADEMY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
+      "last_verified": "2026-08-30",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+    "title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "6785e5192d6a5377",
+      "ticker": "UPL",
       "company": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
       "qualification_date": "2026-08-28",
-      "payment_date": "",
+      "payment_date": "2026-09-24",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
       "source_title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
+      "last_verified": "2026-08-30",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_2026_Q2_UFS.pdf",
+    "title": "MTN Nigeria 2026 Q2 UFS",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "c133e3843bbb2076",
+      "ticker": "",
+      "company": "MTN Nigeria 2026 Q2 UFS",
+      "dividend_per_share": 26.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-06-30",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_2026_Q2_UFS.pdf",
+      "source_title": "MTN Nigeria 2026 Q2 UFS",
+      "last_verified": "2026-08-30",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/SIAML_Pension_ETF_40_Dividend_Announcement_.pdf",
+    "title": "SIAML Pension ETF 40 Dividend Announcement",
+    "reason_codes": [
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "e6b325751383c7c3",
+      "ticker": "",
+      "company": "SIAML Pension ETF 40 Dividend Announcement",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2026-08-03",
+      "payment_date": "2026-08-06",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/SIAML_Pension_ETF_40_Dividend_Announcement_.pdf",
+      "source_title": "SIAML Pension ETF 40 Dividend Announcement",
+      "last_verified": "2026-08-30",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Stanbic_IBTC_ETF_30_Dividend_Announcement.pdf",
+    "title": "Stanbic IBTC ETF 30 Dividend Announcement",
+    "reason_codes": [
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "2d61c0ca3c0d3703",
+      "ticker": "",
+      "company": "Stanbic IBTC ETF 30 Dividend Announcement",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2026-08-03",
+      "payment_date": "2026-08-06",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Stanbic_IBTC_ETF_30_Dividend_Announcement.pdf",
+      "source_title": "Stanbic IBTC ETF 30 Dividend Announcement",
       "last_verified": "2026-08-30",
       "confidence": "review"
     },
