@@ -34,6 +34,6 @@ jobs:
         run: |
           git config user.name "nairasheets-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/dividends.csv docs/pending_dividends.csv docs/index.html collector_state.json review_queue.json
+          git add docs/dividends.csv docs/pending_dividends.csv docs/index.html disclosure_archive.json collector_state.json review_queue.json
           git diff --cached --quiet || git commit -m "Update NGX dividend feed"
           git push

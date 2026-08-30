@@ -10,9 +10,14 @@ MONTHS = (
 
 DIVIDEND_WORD_RE = re.compile(r"\b(dividend|distribution|cash distribution)\b", re.I)
 
+# Allow NGX wording such as:
+# "N26 per 2 kobo ordinary share"
+# as well as the simpler "N2.50 per ordinary share".
 PER_SHARE_RE = re.compile(
-    r"(?:₦|N|NGN|US\$|USD|cents?|kobo).{0,80}(?:per\s+(?:ordinary\s+)?share|/share)"
-    r"|(?:per\s+(?:ordinary\s+)?share|/share).{0,80}(?:₦|N|NGN|US\$|USD|cents?|kobo)",
+    r"(?:₦|N|NGN|US\$|USD|cents?|kobo).{0,100}"
+    r"(?:per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share|/share)"
+    r"|(?:per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share|/share)"
+    r".{0,100}(?:₦|N|NGN|US\$|USD|cents?|kobo)",
     re.I | re.S,
 )
 
@@ -62,14 +67,23 @@ def first_match(patterns, text, flags=re.I | re.S):
 
 def infer_currency_and_dps(text: str):
     naira_patterns = [
+        # "final dividend ... that is N2.50 (...) per ordinary share"
         r"(?:final|interim|special|proposed)?\s*dividend"
-        r"[^.\n]{0,260}?(?:that\s+is|equivalent\s+to|amounting\s+to)?\s*"
+        r"[^.\n]{0,300}?(?:that\s+is|equivalent\s+to|amounting\s+to)?\s*"
         r"(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
-        r"\s*(?:\([^)]*\)\s*)?per\s+(?:ordinary\s+)?share",
+        r"\s*(?:\([^)]*\)\s*)?"
+        r"per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share",
 
+        # "Interim Dividend of N26 per 2 kobo ordinary share"
+        r"(?:final|interim|special|proposed)?\s*dividend"
+        r"[^.\n]{0,220}?(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
+        r"\s*per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share",
+
+        # Amount-first fallback.
         r"(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
-        r"\s*(?:\([^)]*\)\s*)?per\s+(?:ordinary\s+)?share"
-        r"[^.\n]{0,160}?(?:dividend|distribution)",
+        r"\s*(?:\([^)]*\)\s*)?"
+        r"per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share"
+        r"[^.\n]{0,180}?(?:dividend|distribution)",
     ]
 
     for pattern in naira_patterns:
@@ -160,7 +174,6 @@ def extract_qualification_date(text: str) -> str:
     return iso_date(first_match(entitlement_patterns, text))
 
 def extract_announcement_date(text: str) -> str:
-    # Most NGX letters put the document date near the top.
     head = text[:2500]
 
     patterns = [

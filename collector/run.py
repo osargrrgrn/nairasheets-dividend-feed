@@ -10,16 +10,49 @@ from .publish import read_csv, merge_events, write_csv, write_html
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 STATE = ROOT / "collector_state.json"
+ARCHIVE = ROOT / "disclosure_archive.json"
 FEED = DOCS / "dividends.csv"
 PENDING_FEED = DOCS / "pending_dividends.csv"
 
+def load_json(path, default):
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return default
+
+def save_json(path, value):
+    path.write_text(
+        json.dumps(value, indent=2, ensure_ascii=False, sort_keys=True),
+        encoding="utf-8",
+    )
+
 def load_state():
-    if not STATE.exists():
-        return {"processed": {}}
-    return json.loads(STATE.read_text(encoding="utf-8"))
+    return load_json(STATE, {"processed": {}})
 
 def save_state(state):
-    STATE.write_text(json.dumps(state, indent=2, sort_keys=True), encoding="utf-8")
+    save_json(STATE, state)
+
+def merge_archive(existing, newly_discovered):
+    by_url = {}
+
+    for item in existing:
+        url = item.get("url", "")
+        if url:
+            by_url[url] = item
+
+    for item in newly_discovered:
+        url = item.get("url", "")
+        if not url:
+            continue
+
+        previous = by_url.get(url, {})
+        merged = dict(previous)
+        merged.update(item)
+        by_url[url] = merged
+
+    return sorted(by_url.values(), key=lambda x: x.get("url", ""))
 
 def pending_key(row):
     return "|".join([
@@ -30,10 +63,6 @@ def pending_key(row):
     ])
 
 def merge_pending(existing, incoming):
-    """
-    Keep the newest/best version of the same incomplete dividend event.
-    Matching is intentionally conservative: ticker + type + currency + DPS.
-    """
     by_key = {}
 
     for row in existing + incoming:
@@ -42,11 +71,11 @@ def merge_pending(existing, incoming):
             continue
 
         current = by_key.get(key)
+
         if current is None:
             by_key[key] = row
             continue
 
-        # Prefer whichever record has more useful dates/metadata.
         def score(r):
             return sum(bool(r.get(k)) for k in [
                 "qualification_date",
@@ -73,7 +102,14 @@ def main():
     state = load_state()
     processed = state.setdefault("processed", {})
 
-    discovered = discover_official_pdfs()
+    current_discovered = discover_official_pdfs()
+
+    old_archive = load_json(ARCHIVE, [])
+    archive = merge_archive(old_archive, current_discovered)
+    save_json(ARCHIVE, archive)
+
+    # Process the accumulated archive, not only today's visible NGX batch.
+    discovered = archive
 
     accepted = []
     pending = []
@@ -138,8 +174,6 @@ def main():
                 and provisional.dividend_per_share > 0
                 and provisional.dividend_type
             ):
-                # Genuine dividend, but missing dates or another required field.
-                # Preserve it automatically so a later NGX filing can enrich it.
                 pending.append(provisional.to_dict())
 
                 review.append({
@@ -188,8 +222,9 @@ def main():
 
     save_state(state)
 
-    print(f"Discovered official PDFs: {len(discovered)}")
-    print(f"PDFs inspected: {inspected}")
+    print(f"Visible/current official PDFs found: {len(current_discovered)}")
+    print(f"Archived official PDFs total: {len(archive)}")
+    print(f"PDFs inspected this run: {inspected}")
     print(f"Rejected as non-dividend: {rejected_non_dividend}")
     print(f"Dividend candidates after PDF inspection: {dividend_candidates}")
     print(f"Published new complete events: {len(accepted)}")
