@@ -308,6 +308,151 @@ def is_non_actionable_review_noise(title, provisional):
 
     return False
 
+
+def refresh_confidence(candidate):
+    """
+    Confidence belongs to the merged dividend event, not to the individual PDF.
+
+    A PDF may contain only part of the event. After pending reconciliation has
+    supplied the missing fields, recalculate confidence from the completed
+    event before deciding whether it can be published.
+    """
+    candidate.confidence = "high"
+
+    if not candidate.ticker:
+        candidate.confidence = "review"
+    elif float(candidate.dividend_per_share or 0) <= 0:
+        candidate.confidence = "review"
+    elif not candidate.qualification_date:
+        candidate.confidence = "review"
+    elif not candidate.payment_date:
+        candidate.confidence = "review"
+
+    return candidate
+
+
+def published_event_key(row):
+    """
+    Identify the corporate action itself rather than the source PDF.
+
+    Published events have qualification and payment dates, so these can be
+    used safely with ticker, amount and dividend type to collapse duplicate
+    disclosures such as MTNN's corporate-action notice and earnings release.
+    """
+    try:
+        amount = float(row.get("dividend_per_share") or 0)
+    except Exception:
+        amount = 0.0
+
+    return "|".join([
+        (row.get("ticker") or "").upper().strip(),
+        normalise_type(row.get("dividend_type")),
+        (row.get("currency") or "").upper().strip(),
+        f"{amount:.6f}",
+        (row.get("qualification_date") or "").strip(),
+        (row.get("payment_date") or "").strip(),
+    ])
+
+
+def published_row_score(row):
+    """
+    Prefer the strongest source when several official PDFs describe one event.
+    Corporate-action/dividend notices beat generic earnings releases, while
+    complete metadata still receives the highest weight.
+    """
+    title = (row.get("source_title") or "").lower()
+    score = 0
+
+    for field in (
+        "ticker",
+        "company",
+        "dividend_per_share",
+        "currency",
+        "dividend_type",
+        "qualification_date",
+        "payment_date",
+        "closure_date",
+        "announcement_date",
+        "registrar",
+        "source_url",
+        "source_title",
+    ):
+        if row.get(field):
+            score += 2
+
+    if "dividend" in title:
+        score += 12
+    if "corporate action" in title:
+        score += 8
+    if "distribution" in title:
+        score += 5
+    if "earnings release" in title:
+        score -= 2
+    if (row.get("confidence") or "").lower() == "high":
+        score += 4
+
+    return score
+
+
+def merge_published_rows(primary, secondary):
+    """
+    Merge two rows representing the same published dividend.
+    Keep the better source as the base but fill any missing metadata from the
+    other official document.
+    """
+    if published_row_score(secondary) > published_row_score(primary):
+        primary, secondary = secondary, primary
+
+    merged = dict(primary)
+
+    for field, value in secondary.items():
+        if not merged.get(field) and value:
+            merged[field] = value
+
+    # Stabilise event_id so duplicate source documents cannot create separate
+    # identities for the same corporate action.
+    merged["event_id"] = make_event_id(
+        merged.get("ticker", ""),
+        merged.get("company", ""),
+        merged.get("qualification_date", ""),
+        merged.get("payment_date", ""),
+        float(merged.get("dividend_per_share") or 0),
+        merged.get("dividend_type", ""),
+    )
+
+    merged["confidence"] = "high"
+    return merged
+
+
+def dedupe_published_events(rows):
+    by_event = {}
+
+    for row in rows:
+        key = published_event_key(row)
+
+        # Never collapse malformed rows with no ticker or amount.
+        if not row.get("ticker") or float(row.get("dividend_per_share") or 0) <= 0:
+            fallback_key = "EVENT_ID|" + (row.get("event_id") or row.get("source_url") or repr(row))
+            by_event[fallback_key] = row
+            continue
+
+        current = by_event.get(key)
+
+        if current is None:
+            by_event[key] = dict(row)
+        else:
+            by_event[key] = merge_published_rows(current, row)
+
+    return sorted(
+        by_event.values(),
+        key=lambda r: (
+            r.get("qualification_date", ""),
+            r.get("ticker", ""),
+            r.get("dividend_type", ""),
+        )
+    )
+
+
 def review_reason_codes(provisional, errors):
     reasons = []
 
@@ -408,6 +553,10 @@ def main():
                 provisional.dividend_type,
             )
 
+            # Patch 17: reconciliation may have completed an event that the
+            # original PDF marked "review". Recalculate confidence now.
+            provisional = refresh_confidence(provisional)
+
             errors = validate_event(provisional)
 
             if provisional.confidence == "high" and not errors:
@@ -458,6 +607,13 @@ def main():
 
     existing = read_csv(FEED)
     merged = merge_events(existing, accepted)
+
+    # Patch 17: different official PDFs can describe the same corporate action.
+    # Collapse them into one published dividend event.
+    before_dedupe = len(merged)
+    merged = dedupe_published_events(merged)
+    published_duplicates_removed = before_dedupe - len(merged)
+
     write_csv(FEED, merged)
     write_html(DOCS / "index.html", merged)
 
@@ -484,6 +640,7 @@ def main():
     print(f"Dividend candidates after PDF inspection: {dividend_candidates}")
     print(f"Pending dividends reconciled/promoted: {reconciled_events}")
     print(f"Published new complete events: {len(accepted)}")
+    print(f"Published duplicate events removed: {published_duplicates_removed}")
     print(f"New pending dividend events: {len(pending)}")
     print(f"Pending items omitted from manual review: {pending_omitted_from_review}")
     print(f"Pending feed total: {len(merged_pending)}")
