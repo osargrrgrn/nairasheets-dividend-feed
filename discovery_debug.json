@@ -1,74 +1,162 @@
 {
-  "method": "focused_direct_ngx_search_patch_12",
-  "searches": [
+  "method": "ngx_company_profile_disclosures_patch_13",
+  "elapsed_seconds": 54.59,
+  "candidate_tickers": 59,
+  "profiles_completed": 59,
+  "official_pdf_links_found": 0,
+  "returned_to_parser": 0,
+  "profiles_with_documents": [],
+  "errors": [
     {
-      "term": "dividend",
-      "url": "https://doclib.ngxgroup.com/_api/search/query",
-      "before": 0,
-      "status": 500,
-      "bytes": 250,
-      "content_type": "application/json;odata=verbose;charset=utf-8",
-      "after": 0,
-      "added": 0
+      "ticker": "CADBURY",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
     },
     {
-      "term": "distribution",
-      "url": "https://doclib.ngxgroup.com/_api/search/query",
-      "before": 0,
-      "status": 500,
-      "bytes": 250,
-      "content_type": "application/json;odata=verbose;charset=utf-8",
-      "after": 0,
-      "added": 0
+      "ticker": "BUAFOODS",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
     },
     {
-      "term": "\"annual general meeting\"",
-      "url": "https://doclib.ngxgroup.com/_api/search/query",
-      "before": 0,
-      "status": 500,
-      "bytes": 250,
-      "content_type": "application/json;odata=verbose;charset=utf-8",
-      "after": 0,
-      "added": 0
+      "ticker": "AVA",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
     },
     {
-      "term": "agm",
-      "url": "https://doclib.ngxgroup.com/_api/search/query",
-      "before": 0,
-      "status": 500,
-      "bytes": 250,
-      "content_type": "application/json;odata=verbose;charset=utf-8",
-      "after": 0,
-      "added": 0
+      "ticker": "AIRTELAFRI",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
     },
     {
-      "term": "\"post board meeting\"",
-      "url": "https://doclib.ngxgroup.com/_api/search/query",
-      "before": 0,
-      "status": 500,
-      "bytes": 250,
-      "content_type": "application/json;odata=verbose;charset=utf-8",
-      "after": 0,
-      "added": 0
+      "ticker": "ACCESS",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
     },
     {
-      "term": "\"board meeting notification\"",
-      "url": "https://doclib.ngxgroup.com/_api/search/query",
-      "before": 0,
-      "status": 500,
-      "bytes": 250,
-      "content_type": "application/json;odata=verbose;charset=utf-8",
-      "after": 0,
-      "added": 0
+      "ticker": "AIRTEL",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "BUACEMENT",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "AFRIPRUD",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "AIICO",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "ACCESSCORP",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "FIDELITY",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "FCMB",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "CAP",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "CNIF",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "CUSSONS",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "DANGSUGAR",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "CUTIX",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "CORNERST",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "DANGCEM",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "CONOIL",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "FIRST",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "JAPAULGOLD",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "JAPAUL",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "FIRSTHOLDCO",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "JULI",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "GTCO",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "MTN",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "FIDELITYBK",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "MANSARD",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
+    },
+    {
+      "ticker": "GUINNESS",
+      "status": 0,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='ngxgroup.com', port=443): Read timed out. (read timeout=9)\"))"
     }
   ],
-  "limits": {
-    "max_results_per_term": 40,
-    "max_returned_pdfs": 24,
-    "max_discovery_seconds": 75
-  },
-  "elapsed_seconds": 6.42,
-  "likely_pdfs_found": 0,
-  "returned_to_parser": 0,
   "results": []
 }
