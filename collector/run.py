@@ -26,6 +26,13 @@ FINANCIAL_STATEMENT_HINTS = (
     "annual report",
 )
 
+NON_ACTIONABLE_TITLE_HINTS = (
+    "notice of annual general meeting",
+    "notices of annual general meeting",
+    "agm notice",
+    "notice of meeting",
+)
+
 DATE_FIELDS = (
     "qualification_date",
     "payment_date",
@@ -87,7 +94,6 @@ def same_dividend_type(a, b):
     a = normalise_type(a)
     b = normalise_type(b)
 
-    # Generic "dividend"/"distribution" is allowed to match a more specific type.
     if not a or not b:
         return True
 
@@ -120,10 +126,8 @@ def pending_match_score(candidate, pending):
     if amounts_match(candidate_dps, pending_dps):
         score += 100
     elif candidate_dps > 0 and pending_dps > 0:
-        # Both have positive but conflicting dividend amounts: do not merge.
         return -1
     else:
-        # One document may contain dates while another contains the amount.
         score += 15
 
     candidate_dates = sum(bool(getattr(candidate, field, "")) for field in DATE_FIELDS)
@@ -147,8 +151,6 @@ def find_pending_match(candidate, pending_rows):
 
     matches.sort(key=lambda x: x[0], reverse=True)
 
-    # For amount-less candidates, avoid guessing between multiple plausible
-    # pending dividends from the same company/type.
     if float(candidate.dividend_per_share or 0) <= 0:
         best_score = matches[0][0]
         equally_good = [row for score, row in matches if score == best_score]
@@ -180,8 +182,6 @@ def enrich_from_pending(candidate, pending):
         if not getattr(candidate, field, "") and pending.get(field):
             setattr(candidate, field, pending.get(field))
 
-    # Preserve the strongest status. A later approved/declared document
-    # should supersede an older proposed record.
     if (candidate.status or "").lower() == "proposed":
         old_status = (pending.get("status") or "").lower()
         if old_status in {"declared", "approved"}:
@@ -248,11 +248,6 @@ def merge_pending(existing, incoming, promoted_keys=None):
     )
 
 def is_obvious_statement_noise(title, provisional):
-    """
-    Financial statements often mention 'distribution' in accounting notes.
-    If we cannot extract an actual dividend amount and there are no
-    shareholder-action dates, keep them out of the review queue.
-    """
     low_title = (title or "").lower()
 
     if not any(hint in low_title for hint in FINANCIAL_STATEMENT_HINTS):
@@ -265,6 +260,56 @@ def is_obvious_statement_noise(title, provisional):
         return False
 
     return True
+
+def is_non_actionable_review_noise(title, provisional):
+    """
+    Suppress documents that contain a stray dividend/distribution word but
+    produce no actionable dividend data at all.
+
+    This intentionally does NOT suppress:
+      - any positive dividend amount
+      - any qualification/payment date
+      - any resolved ticker with other useful evidence
+    """
+    dps = float(provisional.dividend_per_share or 0)
+    has_dates = bool(provisional.qualification_date or provisional.payment_date)
+
+    if dps > 0 or has_dates:
+        return False
+
+    low_title = (title or "").lower()
+
+    # No ticker + no amount + no dates is not useful enough for manual review.
+    if not provisional.ticker:
+        return True
+
+    # A plain AGM notice with no extracted dividend amount or dates is also
+    # non-actionable. If it actually contains dividend terms, the parser should
+    # have extracted them and it will not be suppressed by the checks above.
+    if any(hint in low_title for hint in NON_ACTIONABLE_TITLE_HINTS):
+        return True
+
+    return False
+
+def review_reason_codes(provisional, errors):
+    reasons = []
+
+    if not provisional.ticker:
+        reasons.append("ticker_unresolved")
+
+    if float(provisional.dividend_per_share or 0) <= 0:
+        reasons.append("dividend_amount_unresolved")
+
+    if not provisional.qualification_date:
+        reasons.append("qualification_date_missing")
+
+    if not provisional.payment_date:
+        reasons.append("payment_date_missing")
+
+    if errors:
+        reasons.append("validation_failed")
+
+    return reasons
 
 def main():
     state = load_state()
@@ -287,6 +332,8 @@ def main():
 
     rejected_non_dividend = 0
     rejected_statement_noise = 0
+    rejected_non_actionable = 0
+    pending_omitted_from_review = 0
     inspected = 0
     dividend_candidates = 0
     reconciled_events = 0
@@ -330,7 +377,6 @@ def main():
                 processed[url] = "statement_noise"
                 continue
 
-            # NEW: try to combine this filing with a dividend we already know.
             matched_pending = find_pending_match(provisional, existing_pending)
 
             if matched_pending:
@@ -360,23 +406,21 @@ def main():
                 and provisional.dividend_per_share > 0
                 and provisional.dividend_type
             ):
+                # Genuine but incomplete dividends belong in the pending feed,
+                # not in the manual review queue as well.
                 pending.append(provisional.to_dict())
-
-                review.append({
-                    "url": url,
-                    "title": title,
-                    "errors": errors,
-                    "parsed": provisional.to_dict(),
-                    "classification": "pending_dividend",
-                    "matched_existing_pending": bool(matched_pending),
-                })
-
+                pending_omitted_from_review += 1
                 processed[url] = "pending"
+
+            elif is_non_actionable_review_noise(title, provisional):
+                rejected_non_actionable += 1
+                processed[url] = "non_actionable_noise"
 
             else:
                 review.append({
                     "url": url,
                     "title": title,
+                    "reason_codes": review_reason_codes(provisional, errors),
                     "errors": errors,
                     "parsed": provisional.to_dict(),
                     "classification": "review",
@@ -389,6 +433,7 @@ def main():
             review.append({
                 "url": url,
                 "title": title,
+                "reason_codes": ["processing_error"],
                 "errors": [repr(exc)],
                 "classification": "error",
             })
@@ -418,12 +463,14 @@ def main():
     print(f"PDFs inspected this run: {inspected}")
     print(f"Rejected as non-dividend: {rejected_non_dividend}")
     print(f"Rejected financial-statement noise: {rejected_statement_noise}")
+    print(f"Rejected non-actionable review noise: {rejected_non_actionable}")
     print(f"Dividend candidates after PDF inspection: {dividend_candidates}")
     print(f"Pending dividends reconciled/promoted: {reconciled_events}")
     print(f"Published new complete events: {len(accepted)}")
     print(f"New pending dividend events: {len(pending)}")
+    print(f"Pending items omitted from manual review: {pending_omitted_from_review}")
     print(f"Pending feed total: {len(merged_pending)}")
-    print(f"Review/error items: {len(review)}")
+    print(f"Manual review/error items: {len(review)}")
     print(f"Published feed total: {len(merged)}")
 
 if __name__ == "__main__":
