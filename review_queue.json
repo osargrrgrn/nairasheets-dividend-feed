@@ -742,6 +742,41 @@
     "matched_existing_pending": false
   },
   {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47558_UNITED_CAPITAL_PLC-UCAP_H1_2026_EARNINGS_PRESS_RELEASE_-_27072026_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "UNITED CAPITAL PLC-UCAP H1 2026 EARNINGS PRESS RELEASE - 27072026 CORPORATE ACTIONS JULY 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "997d7f0bd3afdedd",
+      "ticker": "",
+      "company": "UNITED CAPITAL PLC-UCAP H1 2026 EARNINGS PRESS RELEASE - 27072026 CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.3,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47558_UNITED_CAPITAL_PLC-UCAP_H1_2026_EARNINGS_PRESS_RELEASE_-_27072026_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "UNITED CAPITAL PLC-UCAP H1 2026 EARNINGS PRESS RELEASE - 27072026 CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
     "title": "BETA GLASS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
     "reason_codes": [
@@ -770,37 +805,6 @@
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
       "source_title": "BETA GLASS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-      "last_verified": "2026-08-31",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47740_VFD_GROUP_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "VFD GROUP PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "e9678ab1d1f03493",
-      "ticker": "VFDGROUP",
-      "company": "VFD GROUP PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2026-08-03",
-      "payment_date": "2026-08-10",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47740_VFD_GROUP_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "VFD GROUP PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
       "last_verified": "2026-08-31",
       "confidence": "review"
     },
@@ -871,6 +875,41 @@
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
       "source_title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47800_SEPLAT_ENERGY_PLC-CURRENCY_EXCHANGE_RATE_FOR_Q2_2026_DIVIDENDS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+    "title": "SEPLAT ENERGY PLC-CURRENCY EXCHANGE RATE FOR Q2 2026 DIVIDENDS CORPORATE ACTIONS AUGUST 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "9c3c62a271e9aa0f",
+      "ticker": "SEPLAT",
+      "company": "SEPLAT ENERGY PLC-CURRENCY EXCHANGE RATE FOR Q2 2026 DIVIDENDS CORPORATE ACTIONS AUGUST 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim+special",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47800_SEPLAT_ENERGY_PLC-CURRENCY_EXCHANGE_RATE_FOR_Q2_2026_DIVIDENDS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "source_title": "SEPLAT ENERGY PLC-CURRENCY EXCHANGE RATE FOR Q2 2026 DIVIDENDS CORPORATE ACTIONS AUGUST 2026",
       "last_verified": "2026-08-31",
       "confidence": "review"
     },
@@ -1040,6 +1079,41 @@
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_Q2_2026_Distribution_Announcement.pdf",
       "source_title": "NIDF Q2 2026 Distribution Announcement",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/OKOMU_-_46TH_AGM_RESOLUTION.pdf",
+    "title": "OKOMU - 46TH AGM RESOLUTION",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "f722d55465e4cdf1",
+      "ticker": "",
+      "company": "OKOMU - 46TH AGM RESOLUTION",
+      "dividend_per_share": 15.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/OKOMU_-_46TH_AGM_RESOLUTION.pdf",
+      "source_title": "OKOMU - 46TH AGM RESOLUTION",
       "last_verified": "2026-08-31",
       "confidence": "review"
     },
