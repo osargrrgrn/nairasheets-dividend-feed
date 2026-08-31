@@ -115,7 +115,11 @@ def dividend_context_windows(text: str):
         r"\bclosure\s+of\s+register\b",
         r"\bregister\s+of\s+members\b",
         r"\bper\s+(?:ordinary\s+)?share\b",
+        r"\bper\s+unit\b",
         r"\bkobo\s+per\s+(?:ordinary\s+)?share\b",
+        r"\bkobo\s+per\s+unit\b",
+        r"\bincome\s+distribution\b",
+        r"\bquarterly\s+distribution\b",
     )
 
     windows = []
@@ -144,7 +148,7 @@ def window_has_current_dividend_evidence(window: str) -> bool:
         return False
 
     has_per_share = bool(re.search(
-        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share|\bkobo\b)",
+        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share|per\s+unit|for\s+every\s+unit|\bkobo\b)",
         low,
         re.I,
     ))
@@ -224,11 +228,11 @@ def first_match(patterns, text, flags=re.I | re.S):
 
 def infer_currency_and_dps(text: str, doc_type: str = "unknown"):
     """
-    Extract DPS from focused dividend context.
+    Extract payout amount from focused dividend/distribution context.
 
-    Financial statements and AGM notices require stronger current-action
-    evidence in the same context window so historical notes do not masquerade
-    as new dividends.
+    Supports company dividends per share and fund/ETF distributions per unit.
+    Financial statements and AGM notices still require current-action evidence
+    in the same context window.
     """
     windows = dividend_context_windows(text)
 
@@ -242,79 +246,86 @@ def infer_currency_and_dps(text: str, doc_type: str = "unknown"):
     if not windows:
         return "", None
 
+    recipient = (
+        r"(?:per\s+(?:ordinary\s+)?share"
+        r"|for\s+every\s+(?:ordinary\s+)?share"
+        r"|per\s+unit"
+        r"|for\s+every\s+unit)"
+    )
+    payout = r"(?:dividend|distribution)"
+
     naira_patterns = [
-        r"(?:final|interim|special|proposed|gross)?\s*dividend"
-        r"[^.\n]{0,360}?(?:that\s+is|equivalent\s+to|amounting\s+to|of)?\s*"
-        r"(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
-        r"\s*(?:\([^)]*\)\s*)?"
-        r"(?:per\s+(?:\d+(?:\.\d+)?\s*kobo\s+)?(?:ordinary\s+)?share"
-        r"|for\s+every\s+(?:ordinary\s+)?share)",
+        rf"(?:final|interim|special|proposed|gross|quarterly|income)?\s*{payout}"
+        rf"[^.\n]{{0,360}}?(?:that\s+is|equivalent\s+to|amounting\s+to|of)?\s*"
+        rf"(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
+        rf"\s*(?:\([^)]*\)\s*)?{recipient}",
 
-        r"(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
-        r"\s*(?:\([^)]*\)\s*)?"
-        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)"
-        r"[^.\n]{0,220}?(?:dividend|distribution)",
+        rf"(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
+        rf"\s*(?:\([^)]*\)\s*)?{recipient}"
+        rf"[^.\n]{{0,220}}?{payout}",
 
-        r"(?:dividend|distribution)\s+per\s+(?:ordinary\s+)?share"
-        r"[^.\n]{0,100}?(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)",
+        rf"{payout}\s+(?:per\s+(?:ordinary\s+)?share|per\s+unit)"
+        rf"[^.\n]{{0,100}}?(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)",
     ]
-
     for window in windows:
         for pattern in naira_patterns:
-            match = re.search(pattern, window, re.I | re.S)
-            if match:
-                value = float(match.group(1))
+            m = re.search(pattern, window, re.I | re.S)
+            if m:
+                value = float(m.group(1))
                 if value > 0:
                     return "NGN", value
 
+    # Kobo conversion happens once: 28 kobo -> N0.28.
     kobo_patterns = [
-        r"(?:final|interim|special|proposed|gross)?\s*dividend"
-        r"[^.\n]{0,320}?([0-9]+(?:\.[0-9]+)?)\s*kobo"
-        r"\s*(?:\([^)]*\)\s*)?"
-        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)",
+        rf"(?:final|interim|special|proposed|gross|quarterly|income)?\s*{payout}"
+        rf"[^.\n]{{0,320}}?([0-9]+(?:\.[0-9]+)?)\s*kobo"
+        rf"\s*(?:\([^)]*\)\s*)?{recipient}",
 
-        r"([0-9]+(?:\.[0-9]+)?)\s*kobo"
-        r"\s*(?:\([^)]*\)\s*)?"
-        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)"
-        r"[^.\n]{0,220}?(?:dividend|distribution)",
+        rf"([0-9]+(?:\.[0-9]+)?)\s*kobo"
+        rf"\s*(?:\([^)]*\)\s*)?{recipient}"
+        rf"[^.\n]{{0,220}}?{payout}",
 
-        r"(?:dividend|distribution)"
-        r"[^.\n]{0,320}?([0-9]+(?:\.[0-9]+)?)\s*kobo"
-        r"[^.\n]{0,80}?for\s+every\s+(?:ordinary\s+)?share",
+        rf"{payout}"
+        rf"[^.\n]{{0,320}}?([0-9]+(?:\.[0-9]+)?)\s*kobo"
+        rf"[^.\n]{{0,100}}?{recipient}",
     ]
-
     for window in windows:
         for pattern in kobo_patterns:
-            match = re.search(pattern, window, re.I | re.S)
-            if match:
-                value = float(match.group(1)) / 100.0
+            m = re.search(pattern, window, re.I | re.S)
+            if m:
+                value = float(m.group(1)) / 100.0
                 if value > 0:
                     return "NGN", value
 
     usd_patterns = [
-        r"(?:final|interim|special|proposed|gross)?\s*dividend"
-        r"[^.\n]{0,320}?(?:USD|US\$|US\s*)?\s*"
-        r"([0-9]+(?:\.[0-9]+)?)\s*(?:US\s*)?cents?"
-        r"\s*(?:\([^)]*\)\s*)?"
-        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)",
+        rf"(?:final|interim|special|proposed|gross)?\s*{payout}"
+        rf"[^.\n]{{0,320}}?(?:USD|US\$|US\s*)?\s*"
+        rf"([0-9]+(?:\.[0-9]+)?)\s*(?:US\s*)?cents?"
+        rf"\s*(?:\([^)]*\)\s*)?{recipient}",
 
-        r"([0-9]+(?:\.[0-9]+)?)\s*(?:US\s*)?cents?"
-        r"\s*(?:\([^)]*\)\s*)?"
-        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share)"
-        r"[^.\n]{0,220}?(?:dividend|distribution)",
+        rf"([0-9]+(?:\.[0-9]+)?)\s*(?:US\s*)?cents?"
+        rf"\s*(?:\([^)]*\)\s*)?{recipient}"
+        rf"[^.\n]{{0,220}}?{payout}",
     ]
-
     for window in windows:
         for pattern in usd_patterns:
-            match = re.search(pattern, window, re.I | re.S)
-            if match:
-                value = float(match.group(1)) / 100.0
+            m = re.search(pattern, window, re.I | re.S)
+            if m:
+                value = float(m.group(1)) / 100.0
                 if value > 0:
                     return "USD", value
 
     return "", None
 
 def infer_dividend_type(text: str) -> str:
+    low = text.lower()
+    if (
+        "distribution announcement" in low
+        or "income distribution" in low
+        or "quarterly distribution" in low
+        or ("distribution" in low and "per unit" in low)
+    ):
+        return "distribution"
     low = text.lower()
 
     if "special dividend" in low and "interim dividend" in low:
