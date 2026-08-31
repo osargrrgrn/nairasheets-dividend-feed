@@ -8,6 +8,163 @@ MONTHS = (
     "January|February|March|April|May|June|July|August|September|October|November|December"
 )
 
+CORPORATE_ACTION_TITLE_HINTS = (
+    "corporate action",
+    "dividend announcement",
+    "interim dividend",
+    "final dividend",
+    "distribution announcement",
+)
+
+FINANCIAL_STATEMENT_TITLE_HINTS = (
+    "financial statement",
+    "financial statements",
+    "quarter 1",
+    "quarter 2",
+    "quarter 3",
+    "quarter 4",
+    "half year",
+    "full year",
+    "annual report",
+    "audited results",
+    "unaudited results",
+)
+
+AGM_TITLE_HINTS = (
+    "annual general meeting",
+    "agm",
+    "notice of annual general meeting",
+    "notice of meeting",
+)
+
+CORPORATE_ACTION_BODY_HINTS = (
+    "qualification date",
+    "payment date",
+    "closure of register",
+    "register of members",
+    "dividend announcement",
+    "corporate action",
+)
+
+CURRENT_ACTION_HINTS = (
+    "recommended",
+    "declared",
+    "approved",
+    "proposed",
+    "payable",
+    "will be paid",
+    "shall be paid",
+    "payment will be made",
+)
+
+
+def classify_document(source_title: str, text: str) -> str:
+    title = (source_title or "").lower().replace("_", " ")
+    body = (text[:6000] or "").lower()
+
+    title_ca = sum(2 for hint in CORPORATE_ACTION_TITLE_HINTS if hint in title)
+    title_fs = sum(2 for hint in FINANCIAL_STATEMENT_TITLE_HINTS if hint in title)
+    title_agm = sum(2 for hint in AGM_TITLE_HINTS if hint in title)
+
+    body_ca = sum(1 for hint in CORPORATE_ACTION_BODY_HINTS if hint in body)
+    body_fs = sum(
+        1 for hint in (
+            "statement of financial position",
+            "statement of comprehensive income",
+            "profit before tax",
+            "earnings per share",
+            "total assets",
+            "revenue",
+        )
+        if hint in body
+    )
+    body_agm = sum(
+        1 for hint in (
+            "annual general meeting",
+            "proxy form",
+            "ordinary business",
+            "special business",
+        )
+        if hint in body
+    )
+
+    ca_score = title_ca + body_ca
+    fs_score = title_fs + body_fs
+    agm_score = title_agm + body_agm
+
+    if ca_score >= 3 and ca_score > fs_score and ca_score > agm_score:
+        return "corporate_action"
+    if fs_score >= 3 and fs_score >= ca_score:
+        return "financial_statement"
+    if agm_score >= 2 and agm_score > ca_score:
+        return "agm"
+    if ca_score > 0:
+        return "mixed"
+    return "unknown"
+
+
+def dividend_context_windows(text: str):
+    anchors = (
+        r"\binterim\s+dividend\b",
+        r"\bfinal\s+dividend\b",
+        r"\bspecial\s+dividend\b",
+        r"\bdividend\s+announcement\b",
+        r"\bcorporate\s+action\b",
+        r"\bqualification\s+date\b",
+        r"\bpayment\s+date\b",
+        r"\bclosure\s+of\s+register\b",
+        r"\bregister\s+of\s+members\b",
+        r"\bper\s+(?:ordinary\s+)?share\b",
+        r"\bkobo\s+per\s+(?:ordinary\s+)?share\b",
+    )
+
+    windows = []
+    seen = set()
+
+    for pattern in anchors:
+        for match in re.finditer(pattern, text, re.I):
+            start = max(0, match.start() - 500)
+            end = min(len(text), match.end() + 500)
+            bucket = start // 250
+            if bucket in seen:
+                continue
+            seen.add(bucket)
+            windows.append(text[start:end])
+
+    if text:
+        windows.insert(0, text[:2500])
+
+    return windows
+
+
+def window_has_current_dividend_evidence(window: str) -> bool:
+    low = window.lower()
+
+    if "dividend" not in low and "distribution" not in low:
+        return False
+
+    has_per_share = bool(re.search(
+        r"(?:per\s+(?:ordinary\s+)?share|for\s+every\s+(?:ordinary\s+)?share|\bkobo\b)",
+        low,
+        re.I,
+    ))
+
+    has_date_context = any(
+        phrase in low
+        for phrase in (
+            "qualification date",
+            "record date",
+            "payment date",
+            "closure of register",
+            "register of members",
+        )
+    )
+
+    has_action_language = any(hint in low for hint in CURRENT_ACTION_HINTS)
+
+    return has_per_share and (has_date_context or has_action_language)
+
+
 DIVIDEND_WORD_RE = re.compile(r"\b(dividend|distribution|cash distribution)\b", re.I)
 
 # Allow NGX wording such as:
@@ -65,13 +222,26 @@ def first_match(patterns, text, flags=re.I | re.S):
             return m.group(1).strip()
     return ""
 
-def infer_currency_and_dps(text: str):
+def infer_currency_and_dps(text: str, doc_type: str = "unknown"):
     """
-    Extract dividend per-share amount from common NGX phrasings.
+    Extract DPS from focused dividend context.
 
-    Requires dividend/distribution or explicit per-share context so arbitrary
-    currency figures in financial statements are not treated as DPS.
+    Financial statements and AGM notices require stronger current-action
+    evidence in the same context window so historical notes do not masquerade
+    as new dividends.
     """
+    windows = dividend_context_windows(text)
+
+    if doc_type in ("financial_statement", "agm"):
+        windows = [
+            window
+            for window in windows
+            if window_has_current_dividend_evidence(window)
+        ]
+
+    if not windows:
+        return "", None
+
     naira_patterns = [
         r"(?:final|interim|special|proposed|gross)?\s*dividend"
         r"[^.\n]{0,360}?(?:that\s+is|equivalent\s+to|amounting\s+to|of)?\s*"
@@ -89,10 +259,13 @@ def infer_currency_and_dps(text: str):
         r"[^.\n]{0,100}?(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)",
     ]
 
-    for pattern in naira_patterns:
-        m = re.search(pattern, text, re.I | re.S)
-        if m:
-            return "NGN", float(m.group(1))
+    for window in windows:
+        for pattern in naira_patterns:
+            match = re.search(pattern, window, re.I | re.S)
+            if match:
+                value = float(match.group(1))
+                if value > 0:
+                    return "NGN", value
 
     kobo_patterns = [
         r"(?:final|interim|special|proposed|gross)?\s*dividend"
@@ -110,10 +283,13 @@ def infer_currency_and_dps(text: str):
         r"[^.\n]{0,80}?for\s+every\s+(?:ordinary\s+)?share",
     ]
 
-    for pattern in kobo_patterns:
-        m = re.search(pattern, text, re.I | re.S)
-        if m:
-            return "NGN", float(m.group(1)) / 100.0
+    for window in windows:
+        for pattern in kobo_patterns:
+            match = re.search(pattern, window, re.I | re.S)
+            if match:
+                value = float(match.group(1)) / 100.0
+                if value > 0:
+                    return "NGN", value
 
     usd_patterns = [
         r"(?:final|interim|special|proposed|gross)?\s*dividend"
@@ -128,10 +304,13 @@ def infer_currency_and_dps(text: str):
         r"[^.\n]{0,220}?(?:dividend|distribution)",
     ]
 
-    for pattern in usd_patterns:
-        m = re.search(pattern, text, re.I | re.S)
-        if m:
-            return "USD", float(m.group(1)) / 100.0
+    for window in windows:
+        for pattern in usd_patterns:
+            match = re.search(pattern, window, re.I | re.S)
+            if match:
+                value = float(match.group(1)) / 100.0
+                if value > 0:
+                    return "USD", value
 
     return "", None
 
@@ -287,7 +466,8 @@ def infer_status(text: str) -> str:
     return "declared"
 
 def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticker: str = ""):
-    currency, dps = infer_currency_and_dps(text)
+    doc_type = classify_document(source_title, text)
+    currency, dps = infer_currency_and_dps(text, doc_type)
 
     qualification = extract_qualification_date(text)
 
@@ -307,6 +487,10 @@ def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticke
     confidence = "high"
     if dps is None or not qualification or not payment:
         confidence = "review"
+    elif doc_type in ("financial_statement", "agm"):
+        confidence = "source_review"
+    elif doc_type == "mixed":
+        confidence = "medium"
 
     event_id = make_event_id(
         ticker,

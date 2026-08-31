@@ -311,25 +311,32 @@ def is_non_actionable_review_noise(title, provisional):
 
 def refresh_confidence(candidate):
     """
-    Confidence belongs to the merged dividend event, not to the individual PDF.
-
-    A PDF may contain only part of the event. After pending reconciliation has
-    supplied the missing fields, recalculate confidence from the completed
-    event before deciding whether it can be published.
+    Recalculate completeness after reconciliation while preserving source
+    quality assigned by the parser.
     """
+    original = (candidate.confidence or "").lower().strip()
+
+    complete = (
+        bool(candidate.ticker)
+        and float(candidate.dividend_per_share or 0) > 0
+        and bool(candidate.qualification_date)
+        and bool(candidate.payment_date)
+    )
+
+    if not complete:
+        candidate.confidence = "review"
+        return candidate
+
+    if original == "source_review":
+        candidate.confidence = "source_review"
+        return candidate
+
+    if original == "medium":
+        candidate.confidence = "medium"
+        return candidate
+
     candidate.confidence = "high"
-
-    if not candidate.ticker:
-        candidate.confidence = "review"
-    elif float(candidate.dividend_per_share or 0) <= 0:
-        candidate.confidence = "review"
-    elif not candidate.qualification_date:
-        candidate.confidence = "review"
-    elif not candidate.payment_date:
-        candidate.confidence = "review"
-
     return candidate
-
 
 def published_event_key(row):
     """
@@ -455,6 +462,10 @@ def dedupe_published_events(rows):
 
 def review_reason_codes(provisional, errors):
     reasons = []
+    if (provisional.confidence or "").lower() == "source_review":
+        reasons.append("lower_quality_source")
+    elif (provisional.confidence or "").lower() == "medium":
+        reasons.append("mixed_source_quality")
 
     if not provisional.ticker:
         reasons.append("ticker_unresolved")
