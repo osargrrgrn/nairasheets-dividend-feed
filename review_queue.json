@@ -1,124 +1,345 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47008_TOTALENERGIES_MARKETING_NIGERIA_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
-    "title": "TOTALENERGIES MARKETING NIGERIA PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47008_TOTALENERGIES_MARKETING_NIGERIA_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47020_UAC__OF_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
     "title": "UAC OF NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47020_UAC__OF_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf')"
+      "missing ticker"
     ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47022_FIRST_HOLDCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
-    "title": "FIRST HOLDCO PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47022_FIRST_HOLDCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf')"
-    ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "61b529a7334b7706",
+      "ticker": "",
+      "company": "UAC OF NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 1.0,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "2026-06-11",
+      "payment_date": "2026-06-26",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47020_UAC__OF_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
+      "source_title": "UAC OF NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47034_SEPLAT_ENERGY_PLC-RESULTS_OF_THE_13TH_AGM_OF_SEPLAT_ENERGY_PLC_CORPORATE_ACTIONS_MAY_2026.pdf",
     "title": "SEPLAT ENERGY PLC-RESULTS OF THE 13TH AGM OF SEPLAT ENERGY PLC CORPORATE ACTIONS MAY 2026",
     "reason_codes": [
-      "processing_error"
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47034_SEPLAT_ENERGY_PLC-RESULTS_OF_THE_13TH_AGM_OF_SEPLAT_ENERGY_PLC_CORPORATE_ACTIONS_MAY_2026.pdf')"
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
     ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47042_BUA_CEMENT_PLC-RESOLUTIONS_PASSED_AT_THE_AGM_OF_BUA_CEMENT_PLC__CORPORATE_ACTIONS_MAY_2026.pdf",
-    "title": "BUA CEMENT PLC-RESOLUTIONS PASSED AT THE AGM OF BUA CEMENT PLC CORPORATE ACTIONS MAY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47042_BUA_CEMENT_PLC-RESOLUTIONS_PASSED_AT_THE_AGM_OF_BUA_CEMENT_PLC__CORPORATE_ACTIONS_MAY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47060_UNITED_BANK_FOR_AFRICA_PLC-UNITED_BANK_FOR_AFRICA_PLC___2026_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2026.pdf",
-    "title": "UNITED BANK FOR AFRICA PLC-UNITED BANK FOR AFRICA PLC 2026 AGM RESOLUTIONS CORPORATE ACTIONS MAY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47060_UNITED_BANK_FOR_AFRICA_PLC-UNITED_BANK_FOR_AFRICA_PLC___2026_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2026.pdf')"
-    ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "0563f86fa7c45dea",
+      "ticker": "SEPLAT",
+      "company": "SEPLAT ENERGY PLC-RESULTS OF THE 13TH AGM OF SEPLAT ENERGY PLC CORPORATE ACTIONS MAY 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47034_SEPLAT_ENERGY_PLC-RESULTS_OF_THE_13TH_AGM_OF_SEPLAT_ENERGY_PLC_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "SEPLAT ENERGY PLC-RESULTS OF THE 13TH AGM OF SEPLAT ENERGY PLC CORPORATE ACTIONS MAY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
     "title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf')"
+      "missing ticker",
+      "missing/invalid dividend per share"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "129389ba0c05d140",
+      "ticker": "",
+      "company": "STANBIC IBTC HOLDINGS PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-05-04",
+      "payment_date": "2026-05-26",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47074_AIICO_INSURANCE_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
-    "title": "AIICO INSURANCE PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47077_BUA_FOODS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
+    "title": "BUA FOODS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47074_AIICO_INSURANCE_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf')"
+      "missing ticker",
+      "missing/invalid dividend per share"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "5802d5e81f46b70d",
+      "ticker": "",
+      "company": "BUA FOODS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2026-06-04",
+      "payment_date": "2026-07-15",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47077_BUA_FOODS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
+      "source_title": "BUA FOODS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
     "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
     "reason_codes": [
-      "processing_error"
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf')"
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "2fad985279b9cb1e",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47125_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_CURRENCY_EXCHANGE_RATE_FOR_Q1_2026_DIVIDEND_CORPORATE_ACTIONS_JUNE_2026.pdf",
     "title": "SEPLAT ENERGY PLC-ANNOUNCEMENT ON CURRENCY EXCHANGE RATE FOR Q1 2026 DIVIDEND CORPORATE ACTIONS JUNE 2026",
     "reason_codes": [
-      "processing_error"
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47125_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_CURRENCY_EXCHANGE_RATE_FOR_Q1_2026_DIVIDEND_CORPORATE_ACTIONS_JUNE_2026.pdf')"
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "6ea1fb295ca8be2e",
+      "ticker": "SEPLAT",
+      "company": "SEPLAT ENERGY PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim+special",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47125_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_CURRENCY_EXCHANGE_RATE_FOR_Q1_2026_DIVIDEND_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "SEPLAT ENERGY PLC-ANNOUNCEMENT ON CURRENCY EXCHANGE RATE FOR Q1 2026 DIVIDEND CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47134_AIICO_INSURANCE_PLC.-RESOLUTIONS_OF_THE_56TH_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "AIICO INSURANCE PLC.-RESOLUTIONS OF THE 56TH ANNUAL GENERAL MEETING CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "4508db860ecff277",
+      "ticker": "",
+      "company": "AIICO INSURANCE PLC.",
+      "dividend_per_share": 0.12,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-06-08",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47134_AIICO_INSURANCE_PLC.-RESOLUTIONS_OF_THE_56TH_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "AIICO INSURANCE PLC.-RESOLUTIONS OF THE 56TH ANNUAL GENERAL MEETING CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47137_FCMB_GROUP_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JUNE_2026.pdf",
+    "title": "FCMB GROUP PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "13413a8a6242f9dd",
+      "ticker": "",
+      "company": "FCMB GROUP PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2026-06-15",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47137_FCMB_GROUP_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JUNE_2026.pdf",
+      "source_title": "FCMB GROUP PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JUNE 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47139_AIICO_INSURANCE_PLC.-RESOLUTIONS_OF_56TH_AGM__CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "AIICO INSURANCE PLC.-RESOLUTIONS OF 56TH AGM CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "4508db860ecff277",
+      "ticker": "",
+      "company": "AIICO INSURANCE PLC.",
+      "dividend_per_share": 0.12,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-06-08",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47139_AIICO_INSURANCE_PLC.-RESOLUTIONS_OF_56TH_AGM__CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "AIICO INSURANCE PLC.-RESOLUTIONS OF 56TH AGM CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47198_CORNERSTONE_INSURANCE_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
     "title": "CORNERSTONE INSURANCE PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JUNE 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47198_CORNERSTONE_INSURANCE_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf')"
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "e0c91f6d8f3bd796",
+      "ticker": "",
+      "company": "CORNERSTONE INSURANCE PLC",
+      "dividend_per_share": 0.0028000000000000004,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47198_CORNERSTONE_INSURANCE_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "CORNERSTONE INSURANCE PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47210_CORNERSTONE_INSURANCE_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
@@ -149,7 +370,244 @@
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47210_CORNERSTONE_INSURANCE_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
       "source_title": "CORNERSTONE INSURANCE PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JUNE 2026",
-      "last_verified": "2026-08-30",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47245_CORNERSTONE_INSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JUNE_2026.pdf",
+    "title": "CORNERSTONE INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "da83780b58fd9709",
+      "ticker": "",
+      "company": "CORNERSTONE INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.28,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47245_CORNERSTONE_INSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JUNE_2026.pdf",
+      "source_title": "CORNERSTONE INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JUNE 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47247_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-RESOLUTIONS_FROM_61ST_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "CHEMICAL AND ALLIED PRODUCTS PLC-RESOLUTIONS FROM 61ST ANNUAL GENERAL MEETING CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "c12f8d186c1b1162",
+      "ticker": "",
+      "company": "CHEMICAL AND ALLIED PRODUCTS PLC",
+      "dividend_per_share": 4.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-06-24",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47247_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-RESOLUTIONS_FROM_61ST_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "CHEMICAL AND ALLIED PRODUCTS PLC-RESOLUTIONS FROM 61ST ANNUAL GENERAL MEETING CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47259_UAC__OF_NIGERIA_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "UAC OF NIGERIA PLC.-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "fa0051e62da52521",
+      "ticker": "",
+      "company": "UAC OF NIGERIA PLC.",
+      "dividend_per_share": 1.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47259_UAC__OF_NIGERIA_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "UAC OF NIGERIA PLC.-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47349_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 13TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS JULY 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date"
+    ],
+    "parsed": {
+      "event_id": "8104cd62d23ab644",
+      "ticker": "",
+      "company": "FCMB GROUP PLC",
+      "dividend_per_share": 0.0034999999999999996,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "2026-06-15",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47349_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 13TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47379_DANGOTE_CEMENT_PLC-OUTCOME_OF_THE_17TH_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "DANGOTE CEMENT PLC-OUTCOME OF THE 17TH AGM CORPORATE ACTIONS JULY 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date"
+    ],
+    "parsed": {
+      "event_id": "4a053159effe2440",
+      "ticker": "",
+      "company": "DANGOTE CEMENT PLC-OUTCOME OF THE 17TH AGM CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 45.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "2026-07-02",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47379_DANGOTE_CEMENT_PLC-OUTCOME_OF_THE_17TH_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "DANGOTE CEMENT PLC-OUTCOME OF THE 17TH AGM CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "ece207ae2cefae03",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47434_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JULY_2026.pdf",
+    "title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JULY 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "6785e5192d6a5377",
+      "ticker": "UPL",
+      "company": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2026-08-28",
+      "payment_date": "2026-09-24",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47434_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JULY_2026.pdf",
+      "source_title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JULY 2026",
+      "last_verified": "2026-08-31",
       "confidence": "review"
     },
     "classification": "review",
@@ -159,254 +617,164 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47501_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
     "title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC - INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47501_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf')"
+      "missing ticker"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "f5bec4188e5fc9e4",
+      "ticker": "",
+      "company": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC - INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.02,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2026-07-31",
+      "payment_date": "2026-08-14",
+      "closure_date": "",
+      "announcement_date": "2026-07-21",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47501_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC - INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47520_GUINNESS_NIG_PLC-GUINNESS_NIGERIA_PLC_-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
     "title": "GUINNESS NIG PLC-GUINNESS NIGERIA PLC - INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47520_GUINNESS_NIG_PLC-GUINNESS_NIGERIA_PLC_-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf')"
+      "missing ticker"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "6d2cb7e78d5c6265",
+      "ticker": "",
+      "company": "GUINNESS NIG PLC-GUINNESS NIGERIA PLC - INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 7.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2026-07-29",
+      "payment_date": "2026-08-10",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47520_GUINNESS_NIG_PLC-GUINNESS_NIGERIA_PLC_-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "GUINNESS NIG PLC-GUINNESS NIGERIA PLC - INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47549_NIGERIAN_EXCHANGE_GROUP_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
     "title": "NIGERIAN EXCHANGE GROUP PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
-      "processing_error"
+      "dividend_amount_unresolved",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47549_NIGERIAN_EXCHANGE_GROUP_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf')"
+      "missing/invalid dividend per share"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "45784ec64aa071e9",
+      "ticker": "NGXGROUP",
+      "company": "NIGERIAN EXCHANGE GROUP PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2026-07-29",
+      "payment_date": "2026-08-05",
+      "closure_date": "2026-07-30",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47549_NIGERIAN_EXCHANGE_GROUP_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "NIGERIAN EXCHANGE GROUP PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47557_UNITED_CAPITAL_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
     "title": "UNITED CAPITAL PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47557_UNITED_CAPITAL_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf')"
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing qualification date"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "a5274746c82e296f",
+      "ticker": "",
+      "company": "UNITED CAPITAL PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "",
+      "payment_date": "2026-07-27",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47557_UNITED_CAPITAL_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "UNITED CAPITAL PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47643_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_Q2_2026_INTERIM_DIVIDEND_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "SEPLAT ENERGY PLC-ANNOUNCEMENT ON Q2 2026 INTERIM DIVIDEND CORPORATE ACTIONS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47558_UNITED_CAPITAL_PLC-UCAP_H1_2026_EARNINGS_PRESS_RELEASE_-_27072026_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "UNITED CAPITAL PLC-UCAP H1 2026 EARNINGS PRESS RELEASE - 27072026 CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47643_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_Q2_2026_INTERIM_DIVIDEND_CORPORATE_ACTIONS_JULY_2026.pdf')"
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
     ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47692_MTN_NIGERIA_COMMUNICATIONS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "MTN NIGERIA COMMUNICATIONS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47692_MTN_NIGERIA_COMMUNICATIONS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47693_AXA_MANSARD_INSURANCE_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "AXA MANSARD INSURANCE PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47693_AXA_MANSARD_INSURANCE_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47695_E-TRANZACT_INTERNATIONAL_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "E-TRANZACT INTERNATIONAL PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47695_E-TRANZACT_INTERNATIONAL_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47696_NIGERIAN_BREWERIES_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "NIGERIAN BREWERIES PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47696_NIGERIAN_BREWERIES_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47697_ELLAH_LAKES_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "ELLAH LAKES PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47697_ELLAH_LAKES_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47699_SUNU_ASSURANCES_NIGERIA_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "SUNU ASSURANCES NIGERIA PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47699_SUNU_ASSURANCES_NIGERIA_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47700_CUSTODIAN_INVESTMENT_PLC-CUSTODIAN_INVESTMENT_PLC_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "CUSTODIAN INVESTMENT PLC-CUSTODIAN INVESTMENT PLC INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47700_CUSTODIAN_INVESTMENT_PLC-CUSTODIAN_INVESTMENT_PLC_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47702_LIVINGTRUST_MORTGAGE_BANK_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2025_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "LIVINGTRUST MORTGAGE BANK PLC- QUARTER 5 - FINANCIAL STATEMENT FOR 2025 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47702_LIVINGTRUST_MORTGAGE_BANK_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2025_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47703_NIGERIAN_BREWERIES_PLC.-HALY_YEAR_EARNINGS_UPDATE__CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "NIGERIAN BREWERIES PLC.-HALY YEAR EARNINGS UPDATE CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47703_NIGERIAN_BREWERIES_PLC.-HALY_YEAR_EARNINGS_UPDATE__CORPORATE_ACTIONS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47704_CWG_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "CWG PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47704_CWG_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47705_DANGOTE_SUGAR_REFINERY_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "DANGOTE SUGAR REFINERY PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47705_DANGOTE_SUGAR_REFINERY_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47706_LEARN_AFRICA_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "LEARN AFRICA PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2027 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47706_LEARN_AFRICA_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47707_THE_INITIATES_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "THE INITIATES PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47707_THE_INITIATES_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47709_THE_INITIATES_PLC-INTERIM_DIVIDEND_OF_THE_INITIATES_PLC_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "THE INITIATES PLC-INTERIM DIVIDEND OF THE INITIATES PLC CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47709_THE_INITIATES_PLC-INTERIM_DIVIDEND_OF_THE_INITIATES_PLC_CORPORATE_ACTIONS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47710_TRANS-NATIONWIDE_EXPRESS_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "TRANS-NATIONWIDE EXPRESS PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47710_TRANS-NATIONWIDE_EXPRESS_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47712_INTERNATIONAL_BREWERIES_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "INTERNATIONAL BREWERIES PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47712_INTERNATIONAL_BREWERIES_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47713_INTERNATIONAL_BREWERIES_PLC.-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "INTERNATIONAL BREWERIES PLC.-POST BOARD MEETING NOTIFICATION CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47713_INTERNATIONAL_BREWERIES_PLC.-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47714_UNIVERSAL_INSURANCE_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "UNIVERSAL INSURANCE PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47714_UNIVERSAL_INSURANCE_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "997d7f0bd3afdedd",
+      "ticker": "",
+      "company": "UNITED CAPITAL PLC-UCAP H1 2026 EARNINGS PRESS RELEASE - 27072026 CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.3,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47558_UNITED_CAPITAL_PLC-UCAP_H1_2026_EARNINGS_PRESS_RELEASE_-_27072026_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "UNITED CAPITAL PLC-UCAP H1 2026 EARNINGS PRESS RELEASE - 27072026 CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
@@ -437,407 +805,81 @@
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
       "source_title": "BETA GLASS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-      "last_verified": "2026-08-30",
+      "last_verified": "2026-08-31",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47732_LIVINGTRUST_MORTGAGE_BANK_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "LIVINGTRUST MORTGAGE BANK PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47732_LIVINGTRUST_MORTGAGE_BANK_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47733_HALDANE_MCCALL_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "HALDANE MCCALL PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47733_HALDANE_MCCALL_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47734_OANDO_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "OANDO PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47734_OANDO_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47735_JAPAUL_GOLD_AND_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "JAPAUL GOLD AND VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47735_JAPAUL_GOLD_AND_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47738_ARADEL_HOLDINGS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "ARADEL HOLDINGS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47738_ARADEL_HOLDINGS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47740_VFD_GROUP_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "VFD GROUP PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47740_VFD_GROUP_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47741_ARADEL_HOLDINGS_PLC-DECISION_FROM_Q2_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "ARADEL HOLDINGS PLC-DECISION FROM Q2 BOARD MEETING CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47741_ARADEL_HOLDINGS_PLC-DECISION_FROM_Q2_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47742_MCNICHOLS_CONSOLIDATED_PLC-BOARD_MEETING_OUTCOME_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "MCNICHOLS CONSOLIDATED PLC-BOARD MEETING OUTCOME CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47742_MCNICHOLS_CONSOLIDATED_PLC-BOARD_MEETING_OUTCOME_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47743_MCNICHOLS_CONSOLIDATED_PLC-RESOLUTION_PASSED_AT_THE_21ST_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "MCNICHOLS CONSOLIDATED PLC-RESOLUTION PASSED AT THE 21ST ANNUAL GENERAL MEETING CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47743_MCNICHOLS_CONSOLIDATED_PLC-RESOLUTION_PASSED_AT_THE_21ST_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47747_ARADEL_HOLDINGS_PLC-PRESS_RELEASE_ON_Q2_UFS__CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "ARADEL HOLDINGS PLC-PRESS RELEASE ON Q2 UFS CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47747_ARADEL_HOLDINGS_PLC-PRESS_RELEASE_ON_Q2_UFS__CORPORATE_ACTIONS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47749_MORISON_INDUSTRIES_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "MORISON INDUSTRIES PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47749_MORISON_INDUSTRIES_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47750_ARADEL_HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_31ST_AGM_HELD_JULY_30TH_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
     "title": "ARADEL HOLDINGS PLC-RESOLUTIONS PASSED AT 31ST AGM HELD JULY 30TH 2026 CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47750_ARADEL_HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_31ST_AGM_HELD_JULY_30TH_2026_CORPORATE_ACTIONS_JULY_2026.pdf')"
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
     ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47752_GUINEA_INSURANCE_PLC.-PRESS_RELEASE-STAKEHOLDER_RECAPITALIZATION_UPDATE__CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "GUINEA INSURANCE PLC.-PRESS RELEASE-STAKEHOLDER RECAPITALIZATION UPDATE CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47752_GUINEA_INSURANCE_PLC.-PRESS_RELEASE-STAKEHOLDER_RECAPITALIZATION_UPDATE__CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "2eb20a619c1bec62",
+      "ticker": "",
+      "company": "ARADEL HOLDINGS PLC",
+      "dividend_per_share": 23.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-07-30",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47750_ARADEL_HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_31ST_AGM_HELD_JULY_30TH_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "ARADEL HOLDINGS PLC-RESOLUTIONS PASSED AT 31ST AGM HELD JULY 30TH 2026 CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
     "title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
     "reason_codes": [
-      "processing_error"
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
     ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47755_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "CAVERTON OFFSHORE SUPPORT GROUP PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47755_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47760_CORONATION_INFRASTRUCTURE_FUND-CORONATION_INFRASTRUCTURE_FUND_SERIES_2_ANNOUNCEMENT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "CORONATION INFRASTRUCTURE FUND-CORONATION INFRASTRUCTURE FUND SERIES 2 ANNOUNCEMENT CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47760_CORONATION_INFRASTRUCTURE_FUND-CORONATION_INFRASTRUCTURE_FUND_SERIES_2_ANNOUNCEMENT_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47761_INTERNATIONAL_BREWERIES_PLC.-RESOLUTIONS_PASSED_AT_THE_49TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "INTERNATIONAL BREWERIES PLC.-RESOLUTIONS PASSED AT THE 49TH ANNUAL GENERAL MEETING CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47761_INTERNATIONAL_BREWERIES_PLC.-RESOLUTIONS_PASSED_AT_THE_49TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47762_SOVEREIGN_TRUST_INSURANCE_PLC-UPDATE_ON_SOVEREIGN_TRUST_INSURANCE_PLC_RECAPITALISATION_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "SOVEREIGN TRUST INSURANCE PLC-UPDATE ON SOVEREIGN TRUST INSURANCE PLC RECAPITALISATION CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47762_SOVEREIGN_TRUST_INSURANCE_PLC-UPDATE_ON_SOVEREIGN_TRUST_INSURANCE_PLC_RECAPITALISATION_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47763_AIRTEL_AFRICA_PLC-TOTAL_VOTING_RIGHTS_AND_CAPITAL_ANNOUNCEMENT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-TOTAL VOTING RIGHTS AND CAPITAL ANNOUNCEMENT CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47763_AIRTEL_AFRICA_PLC-TOTAL_VOTING_RIGHTS_AND_CAPITAL_ANNOUNCEMENT_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47767_REGENCY_ALLIANCE_INSURANCE_PLC-RECAPITALISATION_UPDATE_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "REGENCY ALLIANCE INSURANCE PLC-RECAPITALISATION UPDATE CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47767_REGENCY_ALLIANCE_INSURANCE_PLC-RECAPITALISATION_UPDATE_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47769_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_RIGHTS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "GUARANTY TRUST HOLDING COMPANY PLC-TOTAL VOTING RIGHTS CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47769_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_RIGHTS_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47770_NASCON_ALLIED_INDUSTRIES_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "NASCON ALLIED INDUSTRIES PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47770_NASCON_ALLIED_INDUSTRIES_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47773_VFD_GROUP_PLC-VFD_GROUP-H1-_2026_EARNINGS_PRESS_RELEASE_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "VFD GROUP PLC-VFD GROUP-H1- 2026 EARNINGS PRESS RELEASE CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47773_VFD_GROUP_PLC-VFD_GROUP-H1-_2026_EARNINGS_PRESS_RELEASE_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47774_STACO_INSURANCE_PLC-MARKET_UPDATE_ON_RECAPITALIZATION_STATUS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "STACO INSURANCE PLC-MARKET UPDATE ON RECAPITALIZATION STATUS CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47774_STACO_INSURANCE_PLC-MARKET_UPDATE_ON_RECAPITALIZATION_STATUS_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47776_AUSTIN_LAZ_AND_COMPANY_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "AUSTIN LAZ AND COMPANY PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47776_AUSTIN_LAZ_AND_COMPANY_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47779_OANDO_PLC-H1_2026_UNAUDITED_RESULTS_RELEASE_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "OANDO PLC-H1 2026 UNAUDITED RESULTS RELEASE CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47779_OANDO_PLC-H1_2026_UNAUDITED_RESULTS_RELEASE_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47780_BETA_GLASS_PLC-BETA_GLASS_PLC_-_PRESS_RELEASE_ON_CHANGES_TO_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "BETA GLASS PLC-BETA GLASS PLC - PRESS RELEASE ON CHANGES TO THE BOARD OF DIRECTORS CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47780_BETA_GLASS_PLC-BETA_GLASS_PLC_-_PRESS_RELEASE_ON_CHANGES_TO_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47783_CUTIX_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-    "title": "CUTIX PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47783_CUTIX_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47784_NEM_INSURANCE_PLC.-EXPIRATION_OF_DIRECTORS_TENURE_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "NEM INSURANCE PLC.-EXPIRATION OF DIRECTORS TENURE CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47784_NEM_INSURANCE_PLC.-EXPIRATION_OF_DIRECTORS_TENURE_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47785_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "CAVERTON OFFSHORE SUPPORT GROUP PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47785_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47787_NCR_(NIGERIA)_PLC.-NCR_(NIGERIA)_PLC_-_RESOLUTIONS_PASSED_AT_74TH_AGM_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "NCR (NIGERIA) PLC.-NCR (NIGERIA) PLC - RESOLUTIONS PASSED AT 74TH AGM CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47787_NCR_(NIGERIA)_PLC.-NCR_(NIGERIA)_PLC_-_RESOLUTIONS_PASSED_AT_74TH_AGM_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47789_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_-_JULY_2026_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "ABC TRANSPORT PLC-OUTCOME OF BOARD OF DIRECTORS MEETING - JULY 2026 CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47789_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_-_JULY_2026_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47790_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf",
-    "title": "CAVERTON OFFSHORE SUPPORT GROUP PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47790_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47792__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REIT_DISTRIBUTION_PAYMENT_2026_-_INTERIM_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REIT DISTRIBUTION PAYMENT 2026 - INTERIM CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "ChunkedEncodingError(ProtocolError('Connection broken: IncompleteRead(3656 bytes read, 6584 more expected)', IncompleteRead(3656 bytes read, 6584 more expected)))"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47793_STANBIC_IBTC__HOLDINGS_PLC-NOTICE_OF_POTENTIAL_DELAY_IN_FILING_2026_H1_AFS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "STANBIC IBTC HOLDINGS PLC-NOTICE OF POTENTIAL DELAY IN FILING 2026 H1 AFS CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47793_STANBIC_IBTC__HOLDINGS_PLC-NOTICE_OF_POTENTIAL_DELAY_IN_FILING_2026_H1_AFS_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47795_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-CAVERTON_PRESS_RELEASE__CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "CAVERTON OFFSHORE SUPPORT GROUP PLC-CAVERTON PRESS RELEASE CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47795_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-CAVERTON_PRESS_RELEASE__CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "913261ea3657e103",
+      "ticker": "ACCESSCORP",
+      "company": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "source_title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47800_SEPLAT_ENERGY_PLC-CURRENCY_EXCHANGE_RATE_FOR_Q2_2026_DIVIDENDS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
@@ -868,7 +910,7 @@
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47800_SEPLAT_ENERGY_PLC-CURRENCY_EXCHANGE_RATE_FOR_Q2_2026_DIVIDENDS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
       "source_title": "SEPLAT ENERGY PLC-CURRENCY EXCHANGE RATE FOR Q2 2026 DIVIDENDS CORPORATE ACTIONS AUGUST 2026",
-      "last_verified": "2026-08-30",
+      "last_verified": "2026-08-31",
       "confidence": "review"
     },
     "classification": "review",
@@ -903,55 +945,46 @@
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47811_LEARN_AFRICA_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
       "source_title": "LEARN AFRICA PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
-      "last_verified": "2026-08-30",
+      "last_verified": "2026-08-31",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47825_FTN_COCOA_PROCESSORS_PLC-ANNOUNCEMENT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "FTN COCOA PROCESSORS PLC-ANNOUNCEMENT CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47825_FTN_COCOA_PROCESSORS_PLC-ANNOUNCEMENT_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47828_ACADEMY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
     "title": "ACADEMY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47828_ACADEMY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf')"
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing qualification date"
     ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47829_N_NIG._FLOUR_MILLS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-    "title": "N NIG. FLOUR MILLS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47829_N_NIG._FLOUR_MILLS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47832_GEREGU_POWER_PLC-GPP-NOTICE_OF_BOND_PAYMENT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "GEREGU POWER PLC-GPP-NOTICE OF BOND PAYMENT CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47832_GEREGU_POWER_PLC-GPP-NOTICE_OF_BOND_PAYMENT_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "e3c2b120ebac3384",
+      "ticker": "",
+      "company": "ACADEMY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "2026-09-25",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47828_ACADEMY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+      "source_title": "ACADEMY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
@@ -978,175 +1011,179 @@
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
       "source_title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
-      "last_verified": "2026-08-30",
+      "last_verified": "2026-08-31",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47836_PRESTIGE_ASSURANCE_PLC-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "PRESTIGE ASSURANCE PLC-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47836_PRESTIGE_ASSURANCE_PLC-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47837_PRESTIGE_ASSURANCE_PLC-NOTICE_TO_SHAREHOLDERS_ON_THE_LIST_OF_UNCLAIMED_DIVIDENDS._CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "PRESTIGE ASSURANCE PLC-NOTICE TO SHAREHOLDERS ON THE LIST OF UNCLAIMED DIVIDENDS. CORPORATE ACTIONS AUGUST 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/47837_PRESTIGE_ASSURANCE_PLC-NOTICE_TO_SHAREHOLDERS_ON_THE_LIST_OF_UNCLAIMED_DIVIDENDS._CORPORATE_ACTIONS_AUGUST_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.11.08.2026.pdf",
-    "title": "NOTIFICATION OF DIRECTOR DEALING EMMANUEL OMUOJINE.11.08.2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.11.08.2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_First_HoldCo_Plc-_Notification_of_Insider_Dealing_-_Calvados-_August__24_2026.pdf",
-    "title": "FIRST HOLDCO PLC DIRECTORSDEALINGS",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/65_First_HoldCo_Plc-_Notification_of_Insider_Dealing_-_Calvados-_August__24_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_Notification_of_Insider_Dealing_-_Calvados-_August_07_2026.pdf",
-    "title": "Notification of Insider Dealing - Calvados- August 07 2026",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/65_Notification_of_Insider_Dealing_-_Calvados-_August_07_2026.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/98_Notification_of_Insider_Share_Dealing_-_Hajia_Binta_Bakari.pdf",
-    "title": "Notification of Insider Share Dealing - Hajia Binta Bakari",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/98_Notification_of_Insider_Share_Dealing_-_Hajia_Binta_Bakari.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_-_Publication_of_List_of_Unclaimed_Dividend.pdf",
-    "title": "ACCESS HOLDINGS - Publication of List of Unclaimed Dividend",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_-_Publication_of_List_of_Unclaimed_Dividend.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/CMFC_Plc_-_Q3_June_2026_UFS.pdf",
-    "title": "CMFC Plc - Q3 June 2026 UFS",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/CMFC_Plc_-_Q3_June_2026_UFS.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/First_HoldCo_Plc_-_Notification_on_Dividend_Policy.pdf",
-    "title": "First HoldCo Plc - Notification on Dividend Policy",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/First_HoldCo_Plc_-_Notification_on_Dividend_Policy.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/GEREGU_POWER_PLC_-_RESPONSE_TO_MEDIA_PUBLICATION.pdf",
-    "title": "GEREGU POWER PLC - RESPONSE TO MEDIA PUBLICATION",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/GEREGU_POWER_PLC_-_RESPONSE_TO_MEDIA_PUBLICATION.pdf')"
-    ],
-    "classification": "error"
-  },
-  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_2026_Q2_UFS.pdf",
     "title": "MTN Nigeria 2026 Q2 UFS",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_2026_Q2_UFS.pdf')"
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "c133e3843bbb2076",
+      "ticker": "",
+      "company": "MTN Nigeria 2026 Q2 UFS",
+      "dividend_per_share": 26.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-06-30",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_2026_Q2_UFS.pdf",
+      "source_title": "MTN Nigeria 2026 Q2 UFS",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_Q2_2026_Distribution_Announcement.pdf",
     "title": "NIDF Q2 2026 Distribution Announcement",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_Q2_2026_Distribution_Announcement.pdf')"
+      "missing ticker",
+      "missing/invalid dividend per share"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "3dbaa04c3240d01c",
+      "ticker": "",
+      "company": "NIDF Q2 2026 Distribution Announcement",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "2026-07-17",
+      "payment_date": "2026-07-27",
+      "closure_date": "2026-07-20",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_Q2_2026_Distribution_Announcement.pdf",
+      "source_title": "NIDF Q2 2026 Distribution Announcement",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/OKOMU_-_46TH_AGM_RESOLUTION.pdf",
+    "title": "OKOMU - 46TH AGM RESOLUTION",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "f722d55465e4cdf1",
+      "ticker": "",
+      "company": "OKOMU - 46TH AGM RESOLUTION",
+      "dividend_per_share": 15.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/OKOMU_-_46TH_AGM_RESOLUTION.pdf",
+      "source_title": "OKOMU - 46TH AGM RESOLUTION",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/SIAML_Pension_ETF_40_Dividend_Announcement_.pdf",
     "title": "SIAML Pension ETF 40 Dividend Announcement",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/SIAML_Pension_ETF_40_Dividend_Announcement_.pdf')"
+      "missing ticker",
+      "missing/invalid dividend per share"
     ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "e6b325751383c7c3",
+      "ticker": "",
+      "company": "SIAML Pension ETF 40 Dividend Announcement",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2026-08-03",
+      "payment_date": "2026-08-06",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/SIAML_Pension_ETF_40_Dividend_Announcement_.pdf",
+      "source_title": "SIAML Pension ETF 40 Dividend Announcement",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   },
   {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Stanbic_IBTC_ETF_30_Dividend_Announcement.pdf",
     "title": "Stanbic IBTC ETF 30 Dividend Announcement",
     "reason_codes": [
-      "processing_error"
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "validation_failed"
     ],
     "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/Stanbic_IBTC_ETF_30_Dividend_Announcement.pdf')"
+      "missing ticker",
+      "missing/invalid dividend per share"
     ],
-    "classification": "error"
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/UBA_Potential_Delay_in_Pubication_of_Half-Year_Audited_Financial_Statement.pdf",
-    "title": "UBA Potential Delay in Pubication of Half-Year Audited Financial Statement",
-    "reason_codes": [
-      "processing_error"
-    ],
-    "errors": [
-      "HTTPError('502 Server Error: Bad Gateway for url: https://doclib.ngxgroup.com/Financial_NewsDocs/UBA_Potential_Delay_in_Pubication_of_Half-Year_Audited_Financial_Statement.pdf')"
-    ],
-    "classification": "error"
+    "parsed": {
+      "event_id": "2d61c0ca3c0d3703",
+      "ticker": "",
+      "company": "Stanbic IBTC ETF 30 Dividend Announcement",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2026-08-03",
+      "payment_date": "2026-08-06",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Stanbic_IBTC_ETF_30_Dividend_Announcement.pdf",
+      "source_title": "Stanbic IBTC ETF 30 Dividend Announcement",
+      "last_verified": "2026-08-31",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
   }
 ]

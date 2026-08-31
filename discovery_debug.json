@@ -4,141 +4,106 @@
     "status": 200,
     "detail_pages_found": 50,
     "detail_pages_completed": 50,
-    "new_pdfs": 0,
+    "new_pdfs": 5,
     "errors": []
   },
   "naijaticker": {
     "companies_targeted": 47,
     "companies_completed": 47,
-    "pdfs_seen": 420,
-    "already_known": 69,
+    "pdfs_seen": 425,
+    "already_known": 114,
     "filtered_before_parser": 301,
-    "eligible_candidates": 50,
-    "new_pdfs": 20,
+    "eligible_candidates": 10,
+    "new_pdfs": 10,
     "errors": []
   },
-  "total_new_pdfs": 20,
-  "elapsed_seconds": 11.87,
+  "total_new_pdfs": 15,
+  "elapsed_seconds": 8.29,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "AIRTELAFRI"
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47859_REGENCY_ALLIANCE_INSURANCE_PLC-BOARD_RESOLUTIONS_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "title": "REGENCY ALLIANCE INSURANCE PLC-BOARD RESOLUTIONS CORPORATE ACTIONS AUGUST 2026",
+      "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47125_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_CURRENCY_EXCHANGE_RATE_FOR_Q1_2026_DIVIDEND_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "SEPLAT ENERGY PLC-ANNOUNCEMENT ON CURRENCY EXCHANGE RATE FOR Q1 2026 DIVIDEND CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "SEPLAT"
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47864_P_Z_CUSSONS_NIGERIA_PLC.-FY26_AUDITED_RESULTS_ANNOUNCEMENT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "title": "P Z CUSSONS NIGERIA PLC.-FY26 AUDITED RESULTS ANNOUNCEMENT CORPORATE ACTIONS AUGUST 2026",
+      "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47198_CORNERSTONE_INSURANCE_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "CORNERSTONE INSURANCE PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47865_P_Z_CUSSONS_NIGERIA_PLC.-DIVIDEND_NOTIFICATION_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "title": "P Z CUSSONS NIGERIA PLC.-DIVIDEND NOTIFICATION CORPORATE ACTIONS AUGUST 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47866_PZ_CUSSONS_NIGERIA_PLC-NCCG_COMPLIANCE_REPORT-2025-2026_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "title": "PZ CUSSONS NIGERIA PLC-NCCG COMPLIANCE REPORT-2025-2026 CORPORATE ACTIONS AUGUST 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_N_Seven_Nigeria_Limited.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - N Seven Nigeria Limited",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47508_CORNERSTONE_INSURANCE_PLC-RESOLUTIONS_PASSED_AT_THE_34TH_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "CORNERSTONE INSURANCE PLC-RESOLUTIONS PASSED AT THE 34TH AGM CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
       "ticker": "CORNERST"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47210_CORNERSTONE_INSURANCE_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "CORNERSTONE INSURANCE PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "CORNERST"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47501_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC - INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "UNILEVER"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47520_GUINNESS_NIG_PLC-GUINNESS_NIGERIA_PLC_-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "GUINNESS NIG PLC-GUINNESS NIGERIA PLC - INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47513_GUINNESS_NIG_PLC-GUINNESS_NIGERIA_PLC_-_OUTCOME_OF_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "GUINNESS NIG PLC-GUINNESS NIGERIA PLC - OUTCOME OF BOARD MEETING CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
       "ticker": "GUINNESS"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47549_NIGERIAN_EXCHANGE_GROUP_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "NIGERIAN EXCHANGE GROUP PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47532_JAPAUL_GOLD_AND_VENTURES_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JULY_2026.pdf",
+      "title": "JAPAUL GOLD AND VENTURES PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JULY 2026",
       "source": "naijaticker",
-      "ticker": "NGXGROUP"
+      "ticker": "JAPAULGOLD"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47557_UNITED_CAPITAL_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "UNITED CAPITAL PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47558_UNITED_CAPITAL_PLC-UCAP_H1_2026_EARNINGS_PRESS_RELEASE_-_27072026_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "UNITED CAPITAL PLC-UCAP H1 2026 EARNINGS PRESS RELEASE - 27072026 CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
       "ticker": "UCAP"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47603_PRESCO_PLC-CORPORATE_ACTION_ANNOUNCEMENT_-Q2,_2026_INTERIM_DIVIDENDS_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "PRESCO PLC-CORPORATE ACTION ANNOUNCEMENT -Q2, 2026 INTERIM DIVIDENDS CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47559_OKOMU_OIL_PALM_PLC.-OUTCOME_OF_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "OKOMU OIL PALM PLC.-OUTCOME OF BOARD MEETING CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
-      "ticker": "PRESCO"
+      "ticker": "OKOMUOIL"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47643_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_Q2_2026_INTERIM_DIVIDEND_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "SEPLAT ENERGY PLC-ANNOUNCEMENT ON Q2 2026 INTERIM DIVIDEND CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47615_DANGOTE_CEMENT_PLC-OUTCOME_OF_BOARD_MEETING__CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "DANGOTE CEMENT PLC-OUTCOME OF BOARD MEETING CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
-      "ticker": "SEPLAT"
+      "ticker": "DANGCEM"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_-_Publication_of_List_of_Unclaimed_Dividend.pdf",
-      "title": "ACCESS HOLDINGS - Publication of List of Unclaimed Dividend",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_-_Livestreaming_Link_for_4th_Annual_General_Meeting.pdf",
+      "title": "ACCESS HOLDINGS - Livestreaming Link for 4th Annual General Meeting",
       "source": "naijaticker",
       "ticker": "ACCESSCORP"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_Q2_2026_Distribution_Announcement.pdf",
-      "title": "NIDF Q2 2026 Distribution Announcement",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_AGM_RESOLUTIONS_2026_Final.pdf",
+      "title": "ACCESS HOLDINGS AGM RESOLUTIONS 2026 Final",
       "source": "naijaticker",
-      "ticker": "NIDF"
+      "ticker": "ACCESSCORP"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47008_TOTALENERGIES_MARKETING_NIGERIA_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
-      "title": "TOTALENERGIES MARKETING NIGERIA PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/OKOMU_-_46TH_AGM_RESOLUTION.pdf",
+      "title": "OKOMU - 46TH AGM RESOLUTION",
       "source": "naijaticker",
-      "ticker": "TOTAL"
+      "ticker": "OKOMUOIL"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47020_UAC__OF_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
-      "title": "UAC OF NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/VFD_GROUP_PLC_-_OUTCOME_OF_AGM.pdf",
+      "title": "VFD GROUP PLC - OUTCOME OF AGM",
       "source": "naijaticker",
-      "ticker": "UACN"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47022_FIRST_HOLDCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
-      "title": "FIRST HOLDCO PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
-      "source": "naijaticker",
-      "ticker": "FIRSTHOLDCO"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47034_SEPLAT_ENERGY_PLC-RESULTS_OF_THE_13TH_AGM_OF_SEPLAT_ENERGY_PLC_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "SEPLAT ENERGY PLC-RESULTS OF THE 13TH AGM OF SEPLAT ENERGY PLC CORPORATE ACTIONS MAY 2026",
-      "source": "naijaticker",
-      "ticker": "SEPLAT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47042_BUA_CEMENT_PLC-RESOLUTIONS_PASSED_AT_THE_AGM_OF_BUA_CEMENT_PLC__CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "BUA CEMENT PLC-RESOLUTIONS PASSED AT THE AGM OF BUA CEMENT PLC CORPORATE ACTIONS MAY 2026",
-      "source": "naijaticker",
-      "ticker": "BUACEMENT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47060_UNITED_BANK_FOR_AFRICA_PLC-UNITED_BANK_FOR_AFRICA_PLC___2026_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "UNITED BANK FOR AFRICA PLC-UNITED BANK FOR AFRICA PLC 2026 AGM RESOLUTIONS CORPORATE ACTIONS MAY 2026",
-      "source": "naijaticker",
-      "ticker": "UBA"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
-      "source": "naijaticker",
-      "ticker": "STANBIC"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47074_AIICO_INSURANCE_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
-      "title": "AIICO INSURANCE PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
-      "source": "naijaticker",
-      "ticker": "AIICO"
+      "ticker": "VFDGROUP"
     }
   ]
 }
