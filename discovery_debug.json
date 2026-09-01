@@ -11,135 +11,135 @@
     "companies_targeted": 51,
     "companies_completed": 51,
     "pdfs_seen": 474,
-    "already_known": 179,
+    "already_known": 199,
     "filtered_before_parser": 245,
-    "eligible_candidates": 50,
+    "eligible_candidates": 30,
     "new_pdfs": 20,
     "errors": [],
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 20,
-  "elapsed_seconds": 4.88,
+  "elapsed_seconds": 5.96,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47234_ARADEL_HOLDINGS_PLC-Q1_2026_UFS_-_PRESS_RELEASE_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "ARADEL HOLDINGS PLC-Q1 2026 UFS - PRESS RELEASE CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "ARADEL"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47248_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-NOTICE_OF_CHANGES_IN_MANAGEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "CHEMICAL AND ALLIED PRODUCTS PLC-NOTICE OF CHANGES IN MANAGEMENT CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "CAP"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47255_ACCESS_HOLDINGS_PLC-NOTIFICATION_OF_RETIREMENT_OF_AN_EXECUTIVE_DIRECTOR_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "ACCESS HOLDINGS PLC-NOTIFICATION OF RETIREMENT OF AN EXECUTIVE DIRECTOR CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "ACCESSCORP"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47265_AIRTEL_AFRICA_PLC-MAJOR_SHAREHOLDING_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-MAJOR SHAREHOLDING ANNOUNCEMENT CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "AIRTELAFRI"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47266_AIRTEL_AFRICA_PLC-MAJOR_SHAREHOLDING_ANNOUNCEMENTS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-MAJOR SHAREHOLDING ANNOUNCEMENTS CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "AIRTELAFRI"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47276_VFD_GROUP_PLC-VFD_GROUP_PLC-CHANGES_TO_THE_BOARD_OF_VFD_GROUP_PLC_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "VFD GROUP PLC-VFD GROUP PLC-CHANGES TO THE BOARD OF VFD GROUP PLC CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "VFDGROUP"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47278_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "CUTIX PLC.-CUTIX PLC - RESOLUTION OF MEETING OF THE BOARD OF DIRECTORS CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47408_CUTIX_PLC.-NOTIFICATION_OF_CHANGE_IN_DATE_OF_BOARD_MEETING_OF_CUTIX_PLC__CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "CUTIX PLC.-NOTIFICATION OF CHANGE IN DATE OF BOARD MEETING OF CUTIX PLC CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
       "ticker": "CUTIX"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47282_AIRTEL_AFRICA_PLC-PDMR_SHAREHOLDING_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-PDMR SHAREHOLDING ANNOUNCEMENT CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47426_ACCESS_HOLDINGS_PLC-VESTING_OF_ACCESS_HOLDINGS_PLC’S_SHARES_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "ACCESS HOLDINGS PLC-VESTING OF ACCESS HOLDINGS PLC’S SHARES CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "ACCESSCORP"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47432_AIRTEL_AFRICA_PLC-NOTICE_OF_THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "AIRTEL AFRICA PLC-NOTICE OF THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
       "ticker": "AIRTELAFRI"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47283_AIRTEL_AFRICA_PLC-PDMR_SHAREHOLDING_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-PDMR SHAREHOLDING ANNOUNCEMENT CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47439_JAPAUL_GOLD_AND_VENTURES_PLC-NCCG_2018_REPORT_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "JAPAUL GOLD AND VENTURES PLC-NCCG 2018 REPORT CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "JAPAULGOLD"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47456_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "CUTIX PLC.-CUTIX PLC - RESOLUTION OF MEETING OF THE BOARD OF DIRECTORS CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "CUTIX"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47466_AIRTEL_AFRICA_PLC-CAPITAL_REDEMPTION_RESERVE_CANCELLATION__CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "AIRTEL AFRICA PLC-CAPITAL REDEMPTION RESERVE CANCELLATION CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
       "ticker": "AIRTELAFRI"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47294_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_-_BOARD_CHANGES_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC - BOARD CHANGES CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47468_SEPLAT_ENERGY_PLC-SEPLAT_ENERGY_NOTICE_OF_HY_2026_RESULTS_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "SEPLAT ENERGY PLC-SEPLAT ENERGY NOTICE OF HY 2026 RESULTS CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
-      "ticker": "UNILEVER"
+      "ticker": "SEPLAT"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47302_CORNERSTONE_INSURANCE_PLC-RESOLUTIONS_PASSED_AT_THE_COURT_ORDERED_MEETING._CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "CORNERSTONE INSURANCE PLC-RESOLUTIONS PASSED AT THE COURT ORDERED MEETING. CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47489_AFRICA_PRUDENTIAL_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "AFRICA PRUDENTIAL PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
-      "ticker": "CORNERST"
+      "ticker": "AFRIPRUD"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47305_AIRTEL_AFRICA_PLC-NOTIFICATION_OF_SHARE_BUYBACK_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-NOTIFICATION OF SHARE BUYBACK CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47502_CUTIX_PLC.-NIGERIAN_CODE_OF_CORPORATE_GOVERNANCE_(NCCG)_2018_COMPLIANCE_REPORT_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "CUTIX PLC.-NIGERIAN CODE OF CORPORATE GOVERNANCE (NCCG) 2018 COMPLIANCE REPORT CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "CUTIX"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47511_SUNU_ASSURANCES_NIGERIA_PLC-BOARD_MEETING_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "SUNU ASSURANCES NIGERIA PLC-BOARD MEETING RESOLUTIONS CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "SUNUASSUR"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47518_AIRTEL_AFRICA_PLC-DIRECTORATE_CHANGE_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "AIRTEL AFRICA PLC-DIRECTORATE CHANGE CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
       "ticker": "AIRTELAFRI"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47319_FIDELITY_BANK_PLC-NOTICE_OF_VESTING_OF_SHARES_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "FIDELITY BANK PLC-NOTICE OF VESTING OF SHARES CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "FIDELITYBK"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47333_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_RIGHTS_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "GUARANTY TRUST HOLDING COMPANY PLC-TOTAL VOTING RIGHTS CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "GTCO"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47335_AIRTEL_AFRICA_PLC-PDMR_SHAREHOLDING_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-PDMR SHAREHOLDING ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
       "ticker": "AIRTELAFRI"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47346_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_DISCLOSURE_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "TOTALENERGIES MARKETING NIGERIA PLC-CORPORATE DISCLOSURE CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47550_NIGERIAN_EXCHANGE_GROUP_PLC-NGX_GROUP_-_H1,_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "NIGERIAN EXCHANGE GROUP PLC-NGX GROUP - H1, 2026 EARNINGS RELEASE CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
-      "ticker": "TOTAL"
+      "ticker": "NGXGROUP"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47354_AIRTEL_AFRICA_PLC-TOTAL_VOTING_RIGHTS_AND_CAPITAL_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-TOTAL VOTING RIGHTS AND CAPITAL ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47556_FCMB_GROUP_PLC-FCMB_GROUP_PLC_ANNOUNCES_H1_2026_RESULTS_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "FCMB GROUP PLC-FCMB GROUP PLC ANNOUNCES H1 2026 RESULTS CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
-      "ticker": "AIRTELAFRI"
+      "ticker": "FCMB"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47366_P_Z_CUSSONS_NIGERIA_PLC.-ANNOUNCEMENT_OF_COMPANY_SECRETARY_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "P Z CUSSONS NIGERIA PLC.-ANNOUNCEMENT OF COMPANY SECRETARY CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47572_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-Q2_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "CHEMICAL AND ALLIED PRODUCTS PLC-Q2 2026 EARNINGS RELEASE CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
-      "ticker": "PZ"
+      "ticker": "CAP"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47374_P_Z_CUSSONS_NIGERIA_PLC.-Q4_2026_FINANCIAL_YEAR_EARNINGS_RESULT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "P Z CUSSONS NIGERIA PLC.-Q4 2026 FINANCIAL YEAR EARNINGS RESULT CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47596_BUA_FOODS_PLC-NOTICE_OF_CHANGE_OF_BOARD_MEETING_DATE_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "BUA FOODS PLC-NOTICE OF CHANGE OF BOARD MEETING DATE CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
-      "ticker": "PZ"
+      "ticker": "BUAFOODS"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47390_VFD_GROUP_PLC-OUTCOME_OF_STRATEGY_SESSION_AND_MEETING_OF_THE_BOARD_OF_VFD_GROUP_PLC_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "VFD GROUP PLC-OUTCOME OF STRATEGY SESSION AND MEETING OF THE BOARD OF VFD GROUP PLC CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47602_PRESCO_PLC-CORPORATE_ACTION_FY2025__CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "PRESCO PLC-CORPORATE ACTION FY2025 CORPORATE ACTIONS JULY 2026",
       "source": "naijaticker",
-      "ticker": "VFDGROUP"
+      "ticker": "PRESCO"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47605_PRESCO_PLC-PRESCO_H1_2026_PRESS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "PRESCO PLC-PRESCO H1 2026 PRESS RELEASE CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "PRESCO"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47617_NEM_INSURANCE_PLC.-BOARD_MEETING_RESOLUTION_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "NEM INSURANCE PLC.-BOARD MEETING RESOLUTION CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "NEM"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47626_UAC__OF_NIGERIA_PLC.-EARNINGS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "UAC OF NIGERIA PLC.-EARNINGS RELEASE CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "UACN"
     }
   ]
 }
