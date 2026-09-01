@@ -16,6 +16,8 @@ from .reconcile import (
     has_strong_corroboration,
 )
 
+from .pending_resolver import resolve_pending_events
+
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 STATE = ROOT / "collector_state.json"
@@ -889,6 +891,29 @@ def main():
     pending.extend(demoted_agm_rows)
     pending.extend(demoted_tiny_rows)
 
+    # Patch 32: resolve complementary/duplicate pending evidence already in
+    # the archive. Promotion requires independent official PDFs, matching
+    # ticker/amount/type, non-conflicting fields, complete qualification and
+    # payment dates, strong-source corroboration, and all existing safety rules.
+    resolved_pending, unresolved_pending, pending_resolution_stats = (
+        resolve_pending_events(
+            existing_pending + pending,
+            published_rows=safe_after_tiny + accepted,
+        )
+    )
+
+    for row in resolved_pending:
+        row["event_id"] = make_event_id(
+            row.get("ticker", ""),
+            row.get("company", ""),
+            row.get("qualification_date", ""),
+            row.get("payment_date", ""),
+            row.get("dividend_per_share", 0),
+            row.get("dividend_type", ""),
+        )
+
+    accepted.extend(resolved_pending)
+
     merged = merge_events(safe_after_tiny, accepted)
 
     # Patch 17: different official PDFs can describe the same corporate action.
@@ -901,8 +926,8 @@ def main():
     write_html(DOCS / "index.html", merged)
 
     merged_pending = merge_pending(
-        existing_pending,
-        pending,
+        [],
+        unresolved_pending,
         promoted_keys=promoted_pending_keys,
     )
     write_csv(PENDING_FEED, merged_pending)
@@ -927,6 +952,16 @@ def main():
     print(f"Cross-document reconciliations: {cross_document_reconciliations}")
     print(f"Uncorroborated AGM rows demoted from published: {agm_rows_demoted}")
     print(f"Sub-1-kobo NGN rows held/demoted: {tiny_amount_rows_held}")
+    print(
+        "Pending resolver: "
+        f"promoted={pending_resolution_stats['promoted']} "
+        f"stale_published_removed="
+        f"{pending_resolution_stats['stale_published_duplicates_removed']} "
+        f"conflicts={pending_resolution_stats['blocked_conflict']} "
+        f"incomplete={pending_resolution_stats['blocked_incomplete']} "
+        f"single_source={pending_resolution_stats['blocked_single_source']} "
+        f"safety_holds={pending_resolution_stats['blocked_safety']}"
+    )
     print(f"Published new complete events: {len(accepted)}")
     print(f"Published duplicate events removed: {published_duplicates_removed}")
     print(f"New pending dividend events: {len(pending)}")
