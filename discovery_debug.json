@@ -10,9 +10,9 @@
   "naijaticker": {
     "companies_targeted": 51,
     "companies_completed": 51,
-    "pdfs_seen": 474,
-    "already_known": 229,
-    "filtered_before_parser": 245,
+    "pdfs_seen": 412,
+    "already_known": 199,
+    "filtered_before_parser": 213,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
