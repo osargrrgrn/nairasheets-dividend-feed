@@ -108,18 +108,6 @@ NAIJATICKER_FALLBACK_TICKERS = {
     "nidf","afriprud","honyflour","dangsugar","learnafrca","ngxgroup","ucap",
     "nem","aiico","wapic","cornerst","unilever","uacn","cadbury","cap",
     "conoil","total",
-
-    # Patch 23 benchmark coverage
-    "ikejahotel","redstarex","upl","academy",
-}
-
-BENCHMARK_NAIJA_TICKERS = {
-    "ikejahotel",
-    "honyflour",
-    "redstarex",
-    "upl",
-    "learnafrca",
-    "academy",
 }
 
 def _elapsed(started):
@@ -310,11 +298,6 @@ def _naija_relevance_score(url):
     if "payment_date" in hay or "payment date" in hay:
         score += 80
 
-    # Patch 23: generic NGX corporate-action documents must remain eligible.
-    # HONYFLOUR/UPL-style disclosures often do not put "dividend" in the URL.
-    if "corporate_actions" in hay or "corporate action" in hay:
-        score += 70
-
     for hint in NAIJA_SECONDARY_POSITIVE_HINTS:
         if hint in hay:
             score += 25
@@ -386,16 +369,12 @@ def _discover_naija(known, debug, started):
                     continue
 
                 current = candidates.get(u)
-                benchmark_bonus = (
-                    1000 if res["ticker"].lower() in BENCHMARK_NAIJA_TICKERS else 0
-                )
-
                 candidate = {
                     "url": u,
                     "title": title,
                     "source": "naijaticker",
                     "ticker": res["ticker"].upper(),
-                    "_score": score + benchmark_bonus,
+                    "_score": score,
                 }
 
                 if current is None or score > current["_score"]:
@@ -411,11 +390,6 @@ def _discover_naija(known, debug, started):
     )
 
     dbg["eligible_candidates"] = len(ranked)
-    dbg["benchmark_candidates"] = sum(
-        1
-        for item in ranked
-        if (item.get("ticker") or "").lower() in BENCHMARK_NAIJA_TICKERS
-    )
 
     found = []
     for item in ranked[:MAX_NAIJA_RETURNED_PDFS]:
@@ -438,11 +412,6 @@ def _discover_naija(known, debug, started):
     )
     print(
         f"[NaijaTicker] relevant new official PDFs: {len(found)}",
-        flush=True,
-    )
-    print(
-        f"[NaijaTicker] benchmark candidates: "
-        f"{dbg.get('benchmark_candidates', 0)}",
         flush=True,
     )
 

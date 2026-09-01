@@ -8,7 +8,6 @@ from .parse import parse_dividend_pdf, has_dividend_evidence, make_event_id
 from .tickers import resolve_ticker
 from .validate import validate_event
 from .publish import read_csv, merge_events, write_csv, write_html
-from .reconcile import reconcile_evidence, quarantine_uncorroborated_agm
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
@@ -595,14 +594,6 @@ def main():
     )
 
     existing_pending = read_csv(PENDING_FEED)
-    existing_published = read_csv(FEED)
-
-    prior_review_items = load_json(ROOT / "review_queue.json", [])
-    prior_review_evidence = [
-        item.get("parsed")
-        for item in prior_review_items
-        if isinstance(item, dict) and isinstance(item.get("parsed"), dict)
-    ]
 
     accepted = []
     pending = []
@@ -616,8 +607,6 @@ def main():
     inspected = 0
     dividend_candidates = 0
     reconciled_events = 0
-    cross_document_reconciliations = 0
-    agm_rows_demoted = 0
 
     for item in discovered:
         url = item["url"]
@@ -650,9 +639,9 @@ def main():
                 ticker="",
             )
 
-            provisional.ticker = (
-                resolve_ticker(provisional.company, title)
-                or (item.get("ticker") or "").upper().strip()
+            provisional.ticker = resolve_ticker(
+                provisional.company,
+                title
             )
 
             if is_obvious_statement_noise(title, provisional, text):
@@ -664,33 +653,6 @@ def main():
 
             if matched_pending:
                 provisional = enrich_from_pending(provisional, matched_pending)
-
-            evidence_rows = (
-                existing_pending
-                + pending
-                + existing_published
-                + accepted
-                + prior_review_evidence
-            )
-
-            provisional, cross_match, corroborated = reconcile_evidence(
-                provisional,
-                evidence_rows,
-                title,
-            )
-
-            if cross_match:
-                cross_document_reconciliations += 1
-
-            # A lower-quality AGM/financial-statement source can become
-            # publishable only when independently corroborated by stronger
-            # official evidence.
-            if corroborated and provisional.confidence in {
-                "source_review",
-                "medium",
-                "review",
-            }:
-                provisional.confidence = "high"
 
             provisional.event_id = make_event_id(
                 provisional.ticker,
@@ -753,16 +715,8 @@ def main():
             })
             processed[url] = "error"
 
-    safe_existing, demoted_agm_rows = quarantine_uncorroborated_agm(
-        existing_published,
-        existing_pending + pending + accepted + prior_review_evidence,
-    )
-    agm_rows_demoted = len(demoted_agm_rows)
-
-    # Preserve questionable AGM evidence in pending instead of deleting it.
-    pending.extend(demoted_agm_rows)
-
-    merged = merge_events(safe_existing, accepted)
+    existing = read_csv(FEED)
+    merged = merge_events(existing, accepted)
 
     # Patch 17: different official PDFs can describe the same corporate action.
     # Collapse them into one published dividend event.
@@ -797,8 +751,6 @@ def main():
     print(f"Rejected non-actionable review noise: {rejected_non_actionable}")
     print(f"Dividend candidates after PDF inspection: {dividend_candidates}")
     print(f"Pending dividends reconciled/promoted: {reconciled_events}")
-    print(f"Cross-document reconciliations: {cross_document_reconciliations}")
-    print(f"Uncorroborated AGM rows demoted from published: {agm_rows_demoted}")
     print(f"Published new complete events: {len(accepted)}")
     print(f"Published duplicate events removed: {published_duplicates_removed}")
     print(f"New pending dividend events: {len(pending)}")
