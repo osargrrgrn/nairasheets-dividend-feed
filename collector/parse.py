@@ -355,6 +355,12 @@ def infer_currency_and_dps(text: str, doc_type: str = "unknown"):
 
     kobo_patterns = [
         (
+            130,
+            rf"(?:dividend|distribution)"
+            rf"[^.\n]{{0,180}}?"
+            rf"([0-9](?:\s+[0-9])+)\s*kobo"
+        ),
+        (
             125,
             rf"(?:final|interim|special|gross)?\s*{payout}"
             rf"\s+(?:of\s+)?([0-9]+(?:\.[0-9]+)?)\s*kobo"
@@ -406,7 +412,11 @@ def infer_currency_and_dps(text: str, doc_type: str = "unknown"):
 
         for score, pattern in kobo_patterns:
             for m in re.finditer(pattern, window, re.I | re.S):
-                raw_kobo = float(m.group(1))
+                raw_value = m.group(1)
+                if re.search(r"\s", raw_value):
+                    raw_value = re.sub(r"\s+", "", raw_value)
+
+                raw_kobo = float(raw_value)
 
                 # Patch 25: values below 1 kobo are too easy to confuse with
                 # percentages, par values, or damaged PDF text. Do not turn
@@ -498,6 +508,7 @@ def extract_qualification_date(text: str) -> str:
 
 
 def extract_payment_date(text: str) -> str:
+    # Highest priority: an explicitly labelled payment date.
     explicit = extract_labeled_date(
         r"(?:payment\s+date|dividend\s+payment\s+date)",
         text
@@ -505,24 +516,26 @@ def extract_payment_date(text: str) -> str:
     if explicit:
         return explicit
 
-    patterns = [
-        rf"(?:dividend|distribution)[\s\S]{{0,500}}?"
-        rf"(?:will\s+be\s+paid|shall\s+be\s+paid|is\s+payable|payable|payment\s+will\s+be\s+made)"
-        rf"[\s\S]{{0,100}}?(?:on\s+)?"
-        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+    # NGX often writes:
+    # "Payment Date On Thursday 24th September 2026"
+    # or:
+    # "payment will be made on Thursday, 24th September 2026"
+    payment_patterns = [
+        rf"(?:payment\s+date)\s*(?:on)?\s*"
+        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
+        rf"\s*,?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
 
-        rf"(?:will\s+be\s+paid|shall\s+be\s+paid|is\s+payable|payable|payment\s+will\s+be\s+made)"
-        rf"[\s\S]{{0,100}}?(?:on\s+)?"
-        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})"
-        rf"[\s\S]{{0,300}}?(?:dividend|distribution)",
+        rf"(?:payment\s+will\s+be\s+made|dividend(?:s)?\s+will\s+be\s+paid|will\s+be\s+paid)"
+        rf"[\s\S]{{0,80}}?"
+        rf"(?:on\s+)?(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
+        rf"\s*,?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
 
-        rf"(?:dividend|distribution)[\s\S]{{0,500}}?"
-        rf"(?:will\s+be\s+paid|shall\s+be\s+paid|is\s+payable|payable|payment\s+will\s+be\s+made)"
-        rf"[\s\S]{{0,100}}?"
-        rf"((?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?[,]?\s+\d{{4}})",
+        rf"(?:payable\s+on)\s*"
+        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
+        rf"\s*,?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
     ]
 
-    return iso_date(first_match(patterns, text))
+    return iso_date(first_match(payment_patterns, text))
 
 
 def extract_announcement_date(text: str) -> str:
