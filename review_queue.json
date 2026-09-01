@@ -1,29 +1,33 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47435_UNIVERSITY_PRESS_PLC.-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "UNIVERSITY PRESS PLC.-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+    "title": "BETA GLASS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
     "reason_codes": [
+      "ticker_unresolved",
       "dividend_amount_unresolved",
+      "qualification_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share"
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing qualification date"
     ],
     "parsed": {
-      "event_id": "b3a028c132359721",
-      "ticker": "UPL",
-      "company": "UNIVERSITY PRESS PLC.",
+      "event_id": "58a928d48df12afe",
+      "ticker": "",
+      "company": "BETA GLASS PLC",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-08-28",
-      "payment_date": "2026-08-28",
+      "dividend_type": "distribution",
+      "qualification_date": "",
+      "payment_date": "2026-06-30",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47435_UNIVERSITY_PRESS_PLC.-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "UNIVERSITY PRESS PLC.-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "source_title": "BETA GLASS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
       "last_verified": "2026-09-01",
       "confidence": "review"
     },
@@ -31,8 +35,76 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47353_RED_STAR_EXPRESS_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "RED STAR EXPRESS PLC-CORPORATE ACTION CORPORATE ACTIONS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+    "title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "913261ea3657e103",
+      "ticker": "ACCESSCORP",
+      "company": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "source_title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+      "last_verified": "2026-09-01",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47828_ACADEMY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+    "title": "ACADEMY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date"
+    ],
+    "parsed": {
+      "event_id": "aa57cb459cd227d2",
+      "ticker": "ACADEMY",
+      "company": "ACADEMY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "2026-09-25",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47828_ACADEMY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+      "source_title": "ACADEMY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
+      "last_verified": "2026-09-01",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+    "title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
     "reason_codes": [
       "dividend_amount_unresolved",
       "validation_failed"
@@ -41,20 +113,20 @@
       "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "58bb637bdf8eeb13",
-      "ticker": "REDSTAREX",
-      "company": "RED STAR EXPRESS PLC",
+      "event_id": "6785e5192d6a5377",
+      "ticker": "UPL",
+      "company": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-09-01",
-      "payment_date": "2026-09-18",
+      "dividend_type": "dividend",
+      "qualification_date": "2026-08-28",
+      "payment_date": "2026-09-24",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47353_RED_STAR_EXPRESS_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "RED STAR EXPRESS PLC-CORPORATE ACTION CORPORATE ACTIONS JULY 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47835_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
+      "source_title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) -",
       "last_verified": "2026-09-01",
       "confidence": "review"
     },
@@ -214,173 +286,6 @@
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47077_BUA_FOODS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
       "source_title": "BUA FOODS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
-      "last_verified": "2026-09-01",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "2fad985279b9cb1e",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
-      "last_verified": "2026-09-01",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "ece207ae2cefae03",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-09-01",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47434_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JULY_2026.pdf",
-    "title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "6785e5192d6a5377",
-      "ticker": "UPL",
-      "company": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2026-08-28",
-      "payment_date": "2026-09-24",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47434_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JULY_2026.pdf",
-      "source_title": "UNIVERSITY PRESS PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JULY 2026",
-      "last_verified": "2026-09-01",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47549_NIGERIAN_EXCHANGE_GROUP_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "NIGERIAN EXCHANGE GROUP PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "45784ec64aa071e9",
-      "ticker": "NGXGROUP",
-      "company": "NIGERIAN EXCHANGE GROUP PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2026-07-29",
-      "payment_date": "2026-08-05",
-      "closure_date": "2026-07-30",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47549_NIGERIAN_EXCHANGE_GROUP_PLC-INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "NIGERIAN EXCHANGE GROUP PLC-INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-09-01",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-    "title": "BETA GLASS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share",
-      "missing qualification date"
-    ],
-    "parsed": {
-      "event_id": "58a928d48df12afe",
-      "ticker": "",
-      "company": "BETA GLASS PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "",
-      "payment_date": "2026-06-30",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47720_BETA_GLASS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
-      "source_title": "BETA GLASS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
       "last_verified": "2026-09-01",
       "confidence": "review"
     },
