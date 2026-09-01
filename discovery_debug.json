@@ -4,31 +4,41 @@
     "status": 200,
     "detail_pages_found": 50,
     "detail_pages_completed": 50,
-    "new_pdfs": 2,
+    "new_pdfs": 4,
     "errors": []
   },
   "naijaticker": {
     "companies_targeted": 49,
     "companies_completed": 49,
-    "pdfs_seen": 457,
-    "already_known": 132,
-    "filtered_before_parser": 325,
+    "pdfs_seen": 459,
+    "already_known": 135,
+    "filtered_before_parser": 324,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": []
   },
-  "total_new_pdfs": 2,
-  "elapsed_seconds": 8.79,
+  "total_new_pdfs": 4,
+  "elapsed_seconds": 12.61,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47868_CORONATION_INSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_SEPTEMBER_2026.pdf",
-      "title": "CORONATION INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) SEPTEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Notification_of_Insider_Trading_NGX_-_Esan_Dotun_David.pdf",
+      "title": "Notification of Insider Trading NGX - Esan Dotun David",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_N-Seven_Nigeria_Limited.pdf",
-      "title": "Guinness Nigeria Plc - Share Dealing Notification - N-Seven Nigeria Limited",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47869_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_REPORT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "GUARANTY TRUST HOLDING COMPANY PLC-TOTAL VOTING REPORT CORPORATE ACTIONS SEPTEMBER 2026",
       "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47872_JULI_PLC.-JULI_PLC_NOTICE_OF_AGM_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "JULI PLC.-JULI PLC NOTICE OF AGM CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_-_Board_Meeting_Resolutions_29_July_2026.pdf",
+      "title": "MTN Nigeria - Board Meeting Resolutions 29 July 2026",
+      "source": "abokiforex_detail"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "historical_recheck_cursor": 22,
+  "historical_recheck_cursor": 4,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/176_SIGN-NOTICE_OF_INSIDER_DEALING-PURCHAS-MORENIKEJI_FOLORUNSHO-17.08.2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/176_SIGN-NOTICE_OF_INSIDER_DEALING-SALES-OTUSANYA_TAIWO-17.8.2026.pdf": "not_dividend",
@@ -21,6 +21,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Notification_of_Insider_Trading_NGX_-_Aleje_Shadrack_Odeh.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Notification_of_Insider_Trading_NGX_-_Chidera_Ibenye.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Notification_of_Insider_Trading_NGX_-_Dotun_David.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Notification_of_Insider_Trading_NGX_-_Esan_Dotun_David.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Notification_of_Insider_Trading_NGX_-_Joseph_Waya.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Notification_of_Insider_Trading_NGX_-_Olabisi_Adeyeye.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Notification_of_Insider_Trading_NGX_-_Olatunji_Ayodeji_Iyiola.pdf": "not_dividend",
@@ -209,6 +210,8 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47865_P_Z_CUSSONS_NIGERIA_PLC.-DIVIDEND_NOTIFICATION_CORPORATE_ACTIONS_AUGUST_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47866_PZ_CUSSONS_NIGERIA_PLC-NCCG_COMPLIANCE_REPORT-2025-2026_CORPORATE_ACTIONS_AUGUST_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47868_CORONATION_INSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_SEPTEMBER_2026.pdf": "non_actionable_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/47869_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_REPORT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/47872_JULI_PLC.-JULI_PLC_NOTICE_OF_AGM_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.11.08.2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_Plc_-_Notification_of_Insider_Dealing_-_Calvados-_August_17_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_First_HoldCo_Plc-_Notification_of_Insider_Dealing_-_Calvados-_August__24_2026.pdf": "not_dividend",
@@ -224,6 +227,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/FIDELITY_BANK_PLC_-_PRESS_RELEASE_H1_2026_AFS_DELAY.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/First_HoldCo_Plc_-_Notification_on_Dividend_Policy.pdf": "non_actionable_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/GEREGU_POWER_PLC_-_RESPONSE_TO_MEDIA_PUBLICATION.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_-_Board_Meeting_Resolutions_29_July_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_2026_Q2_UFS.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_Q2_2026_Distribution_Announcement.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/OKOMU_-_46TH_AGM_RESOLUTION.pdf": "pending",
