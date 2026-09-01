@@ -16,6 +16,25 @@ ARCHIVE = ROOT / "disclosure_archive.json"
 FEED = DOCS / "dividends.csv"
 PENDING_FEED = DOCS / "pending_dividends.csv"
 
+# Patch 21: never re-download the entire archive on every run.
+# New PDFs are always processed immediately. Older unresolved documents are
+# revisited in a rotating batch so parser/ticker improvements can still
+# recover them over successive runs.
+MAX_HISTORICAL_RECHECK = 30
+
+RECHECKABLE_STATES = {
+    "pending",
+    "review",
+    "error",
+}
+
+STABLE_SKIP_STATES = {
+    "accepted",
+    "not_dividend",
+    "statement_noise",
+    "non_actionable_noise",
+}
+
 FINANCIAL_STATEMENT_HINTS = (
     "financial statement",
     "financial statements",
@@ -484,6 +503,79 @@ def review_reason_codes(provisional, errors):
 
     return reasons
 
+
+def select_documents_for_run(archive, current_discovered, processed, state):
+    """
+    Process all newly discovered documents plus a bounded rotating sample of
+    older unresolved documents.
+
+    This prevents every workflow run from re-downloading the full archive,
+    while still allowing later parser/ticker patches to improve older pending,
+    review, and error items.
+    """
+    current_urls = {
+        item.get("url", "")
+        for item in current_discovered
+        if item.get("url")
+    }
+
+    by_url = {
+        item.get("url", ""): item
+        for item in archive
+        if item.get("url")
+    }
+
+    selected = []
+    selected_urls = set()
+
+    # 1) New/current discovery always gets first priority.
+    for url in current_urls:
+        item = by_url.get(url)
+        if item and url not in selected_urls:
+            selected.append(item)
+            selected_urls.add(url)
+
+    # 2) Build unresolved historical pool only.
+    historical = []
+    for item in archive:
+        url = item.get("url", "")
+        if not url or url in current_urls:
+            continue
+
+        status = processed.get(url, "")
+
+        # Never waste time reprocessing stable classifications on each run.
+        if status in STABLE_SKIP_STATES:
+            continue
+
+        # Revisit unresolved states and legacy/unclassified URLs.
+        if status in RECHECKABLE_STATES or not status:
+            historical.append(item)
+
+    historical.sort(key=lambda item: item.get("url", ""))
+
+    # 3) Rotate through the historical pool so the same first 30 do not
+    # starve the rest of the archive.
+    if historical:
+        cursor = int(state.get("historical_recheck_cursor", 0) or 0)
+        cursor %= len(historical)
+
+        take = min(MAX_HISTORICAL_RECHECK, len(historical))
+
+        for offset in range(take):
+            item = historical[(cursor + offset) % len(historical)]
+            url = item.get("url", "")
+            if url and url not in selected_urls:
+                selected.append(item)
+                selected_urls.add(url)
+
+        state["historical_recheck_cursor"] = (cursor + take) % len(historical)
+    else:
+        state["historical_recheck_cursor"] = 0
+
+    return selected, len(historical)
+
+
 def main():
     state = load_state()
     processed = state.setdefault("processed", {})
@@ -494,7 +586,12 @@ def main():
     archive = merge_archive(old_archive, current_discovered)
     save_json(ARCHIVE, archive)
 
-    discovered = archive
+    discovered, historical_recheck_pool = select_documents_for_run(
+        archive,
+        current_discovered,
+        processed,
+        state,
+    )
 
     existing_pending = read_csv(PENDING_FEED)
 
@@ -519,7 +616,9 @@ def main():
             rejected_non_dividend += 1
             continue
 
-        if processed.get(url) == "accepted":
+        if processed.get(url) in STABLE_SKIP_STATES and url not in {
+            item.get("url", "") for item in current_discovered
+        }:
             continue
 
         try:
@@ -644,6 +743,8 @@ def main():
 
     print(f"Visible/current official PDFs found: {len(current_discovered)}")
     print(f"Archived official PDFs total: {len(archive)}")
+    print(f"Historical unresolved recheck pool: {historical_recheck_pool}")
+    print(f"Documents selected for this run: {len(discovered)}")
     print(f"PDFs inspected this run: {inspected}")
     print(f"Rejected as non-dividend: {rejected_non_dividend}")
     print(f"Rejected financial-statement noise: {rejected_statement_noise}")
