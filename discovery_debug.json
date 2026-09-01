@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 50,
     "detail_pages_completed": 50,
-    "new_pdfs": 4,
+    "new_pdfs": 0,
     "errors": []
   },
   "naijaticker": {
@@ -17,28 +17,7 @@
     "new_pdfs": 0,
     "errors": []
   },
-  "total_new_pdfs": 4,
-  "elapsed_seconds": 12.61,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Notification_of_Insider_Trading_NGX_-_Esan_Dotun_David.pdf",
-      "title": "Notification of Insider Trading NGX - Esan Dotun David",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47869_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_REPORT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "GUARANTY TRUST HOLDING COMPANY PLC-TOTAL VOTING REPORT CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47872_JULI_PLC.-JULI_PLC_NOTICE_OF_AGM_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "JULI PLC.-JULI PLC NOTICE OF AGM CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_-_Board_Meeting_Resolutions_29_July_2026.pdf",
-      "title": "MTN Nigeria - Board Meeting Resolutions 29 July 2026",
-      "source": "abokiforex_detail"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 4.1,
+  "results": []
 }
