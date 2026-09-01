@@ -8,6 +8,7 @@ from .parse import parse_dividend_pdf, has_dividend_evidence, make_event_id
 from .tickers import resolve_ticker
 from .validate import validate_event
 from .publish import read_csv, merge_events, write_csv, write_html
+from .backfill import discover_2026_backfill
 from .reconcile import (
     reconcile_evidence,
     quarantine_uncorroborated_agm,
@@ -33,6 +34,8 @@ RECHECKABLE_STATES = {
     "review",
     "error",
 }
+
+MAX_BACKFILL_PROCESS_PER_RUN = 40
 
 STABLE_SKIP_STATES = {
     "accepted",
@@ -606,15 +609,70 @@ def main():
     state = load_state()
     processed = state.setdefault("processed", {})
 
+    # Normal live discovery remains unchanged.
     current_discovered = discover_official_pdfs()
 
     old_archive = load_json(ARCHIVE, [])
-    archive = merge_archive(old_archive, current_discovered)
+
+    # Patch 31: one-time historical 2026 backfill.
+    backfill_discovered = []
+
+    if not state.get("backfill_2026_completed"):
+        known_urls = {
+            item.get("url", "")
+            for item in old_archive
+            if isinstance(item, dict) and item.get("url")
+        }
+
+        try:
+            backfill_discovered, backfill_stats = discover_2026_backfill(
+                known_urls
+            )
+
+            state["backfill_2026_completed"] = True
+            state["backfill_2026_candidates_added"] = len(
+                backfill_discovered
+            )
+            state["backfill_2026_stats"] = backfill_stats
+
+            print(
+                f"[Backfill 2026] added {len(backfill_discovered)} "
+                "historical candidate PDFs",
+                flush=True,
+            )
+
+        except Exception as exc:
+            # Do not mark completed on failure; next run may retry.
+            backfill_discovered = []
+            print(
+                f"[Backfill 2026] failed: {repr(exc)}",
+                flush=True,
+            )
+    else:
+        print(
+            "[Backfill 2026] already completed — skipping sweep",
+            flush=True,
+        )
+
+    # Merge live + historical discoveries into the persistent archive.
+    all_new_discovered = current_discovered + backfill_discovered
+    archive = merge_archive(old_archive, all_new_discovered)
     save_json(ARCHIVE, archive)
+
+    # Prioritize a bounded slice of backfill documents immediately.
+    priority_backfill = backfill_discovered[:MAX_BACKFILL_PROCESS_PER_RUN]
+    selection_discovered = current_discovered + priority_backfill
+
+    if priority_backfill:
+        print(
+            f"[Backfill 2026] prioritizing {len(priority_backfill)} "
+            "historical documents this run",
+            flush=True,
+        )
 
     discovered, historical_recheck_pool = select_documents_for_run(
         archive,
-        current_discovered,
+        selection_discovered,
         processed,
         state,
     )
