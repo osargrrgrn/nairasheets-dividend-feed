@@ -30,7 +30,11 @@ jobs:
 
       - name: Update feed
         run: python -u -m collector.run
-
+     
+      - name: Run benchmark diagnostic
+        run: python -u -m collector.diagnose
+        continue-on-error: true
+      
       - name: Commit changed feed
         run: |
           git config user.name "nairasheets-bot"
