@@ -41,6 +41,26 @@ STABLE_SKIP_STATES = {
     "non_actionable_noise",
 }
 
+
+def below_ngn_hard_floor(event) -> bool:
+    """
+    Hard publication floor.
+
+    Any NGN payout below N0.01 is never auto-published, regardless of
+    corroboration. It remains available in pending/review for manual checking.
+    """
+    currency = (getattr(event, "currency", "") or "NGN").upper().strip()
+
+    if currency != "NGN":
+        return False
+
+    try:
+        amount = float(getattr(event, "dividend_per_share", 0) or 0)
+    except Exception:
+        return True
+
+    return 0 <= amount < 0.01
+
 FINANCIAL_STATEMENT_HINTS = (
     "financial statement",
     "financial statements",
@@ -722,18 +742,11 @@ def main():
                 + prior_review_evidence
             )
 
-            tiny_unconfirmed = (
-                suspicious_tiny_ngn(
-                    provisional.dividend_per_share,
-                    provisional.currency,
-                )
-                and not has_strong_corroboration(
-                    provisional.to_dict(),
-                    current_evidence_rows,
-                )
-            )
+            # Patch 26 hard floor:
+            # Any NGN payout below N0.01 can never auto-publish.
+            hard_floor_hold = below_ngn_hard_floor(provisional)
 
-            if tiny_unconfirmed:
+            if hard_floor_hold:
                 provisional.confidence = "review"
                 tiny_amount_rows_held += 1
 
@@ -797,15 +810,17 @@ def main():
     demoted_tiny_rows = []
 
     for row in safe_existing:
-        if (
-            suspicious_tiny_ngn(
-                row.get("dividend_per_share"),
-                row.get("currency"),
-            )
-            and not has_strong_corroboration(row, evidence_for_existing)
-        ):
+        currency = (row.get("currency") or "NGN").upper().strip()
+        try:
+            amount = float(row.get("dividend_per_share") or 0)
+        except Exception:
+            amount = 0.0
+
+        # Patch 26 hard floor applies to existing published rows too.
+        if currency == "NGN" and 0 <= amount < 0.01:
             demoted = dict(row)
             demoted["confidence"] = "review"
+            demoted["hold_reason"] = f"sub_1kobo_ngn:{amount}"
             demoted_tiny_rows.append(demoted)
         else:
             safe_after_tiny.append(row)
@@ -853,7 +868,7 @@ def main():
     print(f"Pending dividends reconciled/promoted: {reconciled_events}")
     print(f"Cross-document reconciliations: {cross_document_reconciliations}")
     print(f"Uncorroborated AGM rows demoted from published: {agm_rows_demoted}")
-    print(f"Suspicious tiny NGN rows held/demoted: {tiny_amount_rows_held}")
+    print(f"Sub-1-kobo NGN rows held/demoted: {tiny_amount_rows_held}")
     print(f"Published new complete events: {len(accepted)}")
     print(f"Published duplicate events removed: {published_duplicates_removed}")
     print(f"New pending dividend events: {len(pending)}")
