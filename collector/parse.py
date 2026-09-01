@@ -103,6 +103,32 @@ def classify_document(source_title: str, text: str) -> str:
     return "unknown"
 
 
+def normalize_ngx_dividend_text(text: str) -> str:
+    """
+    Normalize common NGX/PDF extraction quirks.
+
+    Examples:
+      18k -> 18 kobo
+      18 k -> 18 kobo
+      1 0 kobo -> 10 kobo
+    """
+    text = text or ""
+
+    text = re.sub(
+        r"(?i)\b(\d)\s+(\d)\s+(kobo|kobos|k)\b",
+        lambda m: f"{m.group(1)}{m.group(2)} {m.group(3)}",
+        text,
+    )
+
+    text = re.sub(
+        r"(?i)\b(\d+(?:\.\d+)?)\s*k\b",
+        r"\1 kobo",
+        text,
+    )
+
+    return text
+
+
 def dividend_context_windows(text: str):
     anchors = (
         r"\binterim\s+dividend\b",
@@ -449,13 +475,21 @@ def extract_qualification_date(text: str) -> str:
     entitlement_patterns = [
         rf"(?:dividend|distribution)[\s\S]{{0,500}}?"
         rf"(?:shareholders?\s+whose\s+names\s+appear\s+in\s+the\s+register"
-        rf"|register\s+of\s+members)[\s\S]{{0,260}}?"
-        rf"(?:close\s+of\s+business\s+on|as\s+at|on)\s+"
+        rf"|shareholders?\s+whose\s+names\s+are\s+registered"
+        rf"|names\s+are\s+registered"
+        rf"|register\s+of\s+members)[\s\S]{{0,320}}?"
+        rf"(?:close\s+of\s+business\s+on|as\s+at\s+the\s+close\s+of\s+business\s+on|as\s+at|on)\s+"
+        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
+        rf"\s*,?\s*"
         rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
 
         rf"(?:shareholders?\s+whose\s+names\s+appear\s+in\s+the\s+register"
-        rf"|register\s+of\s+members)[\s\S]{{0,260}}?"
-        rf"(?:close\s+of\s+business\s+on|as\s+at|on)\s+"
+        rf"|shareholders?\s+whose\s+names\s+are\s+registered"
+        rf"|names\s+are\s+registered"
+        rf"|register\s+of\s+members)[\s\S]{{0,320}}?"
+        rf"(?:close\s+of\s+business\s+on|as\s+at\s+the\s+close\s+of\s+business\s+on|as\s+at|on)\s+"
+        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
+        rf"\s*,?\s*"
         rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})"
         rf"[\s\S]{{0,400}}?(?:dividend|distribution)",
     ]
@@ -563,6 +597,7 @@ def infer_status(text: str) -> str:
     return "declared"
 
 def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticker: str = ""):
+    text = normalize_ngx_dividend_text(text)
     doc_type = classify_document(source_title, text)
     currency, dps = infer_currency_and_dps(text, doc_type)
 
