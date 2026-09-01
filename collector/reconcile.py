@@ -90,6 +90,14 @@ def _float(value) -> float:
         return 0.0
 
 
+def suspicious_tiny_ngn(amount, currency="NGN") -> bool:
+    """Tiny NGN values often indicate unit/percentage extraction mistakes."""
+    if (currency or "NGN").upper() != "NGN":
+        return False
+    value = _float(amount)
+    return 0 < value < 0.01
+
+
 def _iso_date(value: str) -> Optional[date]:
     try:
         return date.fromisoformat((value or "").strip())
@@ -277,6 +285,41 @@ def reconcile_evidence(candidate, evidence_rows: Iterable[Mapping], source_title
         corroborated = _candidate_has_strong_source(source_title)
 
     return candidate, best, corroborated
+
+
+def has_strong_corroboration(row: Mapping, evidence_rows) -> bool:
+    ticker = (row.get("ticker") or "").upper().strip()
+    amount = _float(row.get("dividend_per_share"))
+
+    if not ticker or amount <= 0:
+        return False
+
+    for other in evidence_rows or []:
+        if not isinstance(other, Mapping):
+            continue
+
+        if (other.get("ticker") or "").upper().strip() != ticker:
+            continue
+
+        if not compatible_type(
+            row.get("dividend_type"),
+            other.get("dividend_type"),
+        ):
+            continue
+
+        other_amount = _float(other.get("dividend_per_share"))
+        if other_amount <= 0 or not amounts_match(amount, other_amount):
+            continue
+
+        if not _row_has_strong_source(other):
+            continue
+
+        if not date_proximity_ok(row, other):
+            continue
+
+        return True
+
+    return False
 
 
 def quarantine_uncorroborated_agm(published_rows, evidence_rows):

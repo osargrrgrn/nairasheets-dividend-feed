@@ -8,7 +8,12 @@ from .parse import parse_dividend_pdf, has_dividend_evidence, make_event_id
 from .tickers import resolve_ticker
 from .validate import validate_event
 from .publish import read_csv, merge_events, write_csv, write_html
-from .reconcile import reconcile_evidence, quarantine_uncorroborated_agm
+from .reconcile import (
+    reconcile_evidence,
+    quarantine_uncorroborated_agm,
+    suspicious_tiny_ngn,
+    has_strong_corroboration,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
@@ -618,6 +623,7 @@ def main():
     reconciled_events = 0
     cross_document_reconciliations = 0
     agm_rows_demoted = 0
+    tiny_amount_rows_held = 0
 
     for item in discovered:
         url = item["url"]
@@ -707,6 +713,29 @@ def main():
 
             errors = validate_event(provisional)
 
+            current_evidence_rows = (
+                existing_pending
+                + pending
+                + existing_published
+                + accepted
+                + prior_review_evidence
+            )
+
+            tiny_unconfirmed = (
+                suspicious_tiny_ngn(
+                    provisional.dividend_per_share,
+                    provisional.currency,
+                )
+                and not has_strong_corroboration(
+                    provisional.to_dict(),
+                    current_evidence_rows,
+                )
+            )
+
+            if tiny_unconfirmed:
+                provisional.confidence = "review"
+                tiny_amount_rows_held += 1
+
             if provisional.confidence == "high" and not errors:
                 accepted.append(provisional.to_dict())
                 processed[url] = "accepted"
@@ -753,16 +782,40 @@ def main():
             })
             processed[url] = "error"
 
+    evidence_for_existing = (
+        existing_pending + pending + accepted + prior_review_evidence
+    )
+
     safe_existing, demoted_agm_rows = quarantine_uncorroborated_agm(
         existing_published,
-        existing_pending + pending + accepted + prior_review_evidence,
+        evidence_for_existing,
     )
     agm_rows_demoted = len(demoted_agm_rows)
 
-    # Preserve questionable AGM evidence in pending instead of deleting it.
-    pending.extend(demoted_agm_rows)
+    safe_after_tiny = []
+    demoted_tiny_rows = []
 
-    merged = merge_events(safe_existing, accepted)
+    for row in safe_existing:
+        if (
+            suspicious_tiny_ngn(
+                row.get("dividend_per_share"),
+                row.get("currency"),
+            )
+            and not has_strong_corroboration(row, evidence_for_existing)
+        ):
+            demoted = dict(row)
+            demoted["confidence"] = "review"
+            demoted_tiny_rows.append(demoted)
+        else:
+            safe_after_tiny.append(row)
+
+    tiny_amount_rows_held += len(demoted_tiny_rows)
+
+    # Preserve questionable evidence in pending rather than deleting it.
+    pending.extend(demoted_agm_rows)
+    pending.extend(demoted_tiny_rows)
+
+    merged = merge_events(safe_after_tiny, accepted)
 
     # Patch 17: different official PDFs can describe the same corporate action.
     # Collapse them into one published dividend event.
@@ -799,6 +852,7 @@ def main():
     print(f"Pending dividends reconciled/promoted: {reconciled_events}")
     print(f"Cross-document reconciliations: {cross_document_reconciliations}")
     print(f"Uncorroborated AGM rows demoted from published: {agm_rows_demoted}")
+    print(f"Suspicious tiny NGN rows held/demoted: {tiny_amount_rows_held}")
     print(f"Published new complete events: {len(accepted)}")
     print(f"Published duplicate events removed: {published_duplicates_removed}")
     print(f"New pending dividend events: {len(pending)}")
