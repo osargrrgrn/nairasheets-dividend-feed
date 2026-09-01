@@ -11,75 +11,14 @@
     "companies_targeted": 51,
     "companies_completed": 51,
     "pdfs_seen": 474,
-    "already_known": 219,
+    "already_known": 229,
     "filtered_before_parser": 245,
-    "eligible_candidates": 10,
-    "new_pdfs": 10,
+    "eligible_candidates": 0,
+    "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 10,
-  "elapsed_seconds": 6.05,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47629_DANGOTE_CEMENT_PLC-H1_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "DANGOTE CEMENT PLC-H1 2026 EARNINGS RELEASE CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "DANGCEM"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47634_SUNU_ASSURANCES_NIGERIA_PLC-CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "SUNU ASSURANCES NIGERIA PLC-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "SUNUASSUR"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47639_SEPLAT_ENERGY_PLC-NOTICE_OF_DECISION-_Q2_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "SEPLAT ENERGY PLC-NOTICE OF DECISION- Q2 2026 CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "SEPLAT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47640_SEPLAT_ENERGY_PLC-SALE_OF_INTEREST_IN_NNPC-SEPNU__CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "SEPLAT ENERGY PLC-SALE OF INTEREST IN NNPC-SEPNU CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "SEPLAT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47642_SEPLAT_ENERGY_PLC-NOTIFICATION_OF_INED_STEPPING_DOWN_FROM_SEPLAT_BOARD_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "SEPLAT ENERGY PLC-NOTIFICATION OF INED STEPPING DOWN FROM SEPLAT BOARD CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "SEPLAT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47651_VFD_GROUP_PLC-NOTICE_OF_EMERGENCY_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "VFD GROUP PLC-NOTICE OF EMERGENCY BOARD MEETING CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "VFDGROUP"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47659_ZENITH_BANK_PLC-ZENITH_BANK_PLC_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "ZENITH BANK PLC-ZENITH BANK PLC ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "ZENITHBANK"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47666_CORNERSTONE_INSURANCE_PLC-HALF_YEAR_2026-_EARNING_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "CORNERSTONE INSURANCE PLC-HALF YEAR 2026- EARNING RELEASE CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "CORNERST"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47678_NESTLE_NIGERIA_PLC.-PRESS_RELEASE_ON_RESULTS_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "NESTLE NIGERIA PLC.-PRESS RELEASE ON RESULTS CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "NESTLE"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47680_NESTLE_NIGERIA_PLC.-NESTLE_PRESS_RELEASE_ON_PROPOSED_TRANSACTION_WITH_PLATINUM_EQUITY_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "NESTLE NIGERIA PLC.-NESTLE PRESS RELEASE ON PROPOSED TRANSACTION WITH PLATINUM EQUITY CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "NESTLE"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 5.42,
+  "results": []
 }

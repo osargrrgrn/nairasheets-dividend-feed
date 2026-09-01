@@ -1,5 +1,5 @@
 {
-  "historical_recheck_cursor": 42,
+  "historical_recheck_cursor": 17,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/176_SIGN-NOTICE_OF_INSIDER_DEALING-PURCHAS-MORENIKEJI_FOLORUNSHO-17.08.2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/176_SIGN-NOTICE_OF_INSIDER_DEALING-SALES-OTUSANYA_TAIWO-17.8.2026.pdf": "not_dividend",
@@ -32,7 +32,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47020_UAC__OF_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47022_FIRST_HOLDCO_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47027_NESTLE_NIGERIA_PLC.-NOTICE_OF_BOARD_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf": "not_dividend",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/47034_SEPLAT_ENERGY_PLC-RESULTS_OF_THE_13TH_AGM_OF_SEPLAT_ENERGY_PLC_CORPORATE_ACTIONS_MAY_2026.pdf": "review",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/47034_SEPLAT_ENERGY_PLC-RESULTS_OF_THE_13TH_AGM_OF_SEPLAT_ENERGY_PLC_CORPORATE_ACTIONS_MAY_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47038_AIRTEL_AFRICA_PLC-COMMENCEMENT_OF_SHARE_BUYBACK_PROGRAMME_CORPORATE_ACTIONS_MAY_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47042_BUA_CEMENT_PLC-RESOLUTIONS_PASSED_AT_THE_AGM_OF_BUA_CEMENT_PLC__CORPORATE_ACTIONS_MAY_2026.pdf": "non_actionable_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47043_AIRTEL_AFRICA_PLC-CHANGE_OF_REGISTERED_OFFICE_ADDRESS__CORPORATE_ACTIONS_MAY_2026.pdf": "not_dividend",
