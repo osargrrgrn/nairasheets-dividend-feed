@@ -351,7 +351,17 @@ def infer_currency_and_dps(text: str, doc_type: str = "unknown"):
 
         for score, pattern in kobo_patterns:
             for m in re.finditer(pattern, window, re.I | re.S):
-                add("NGN", float(m.group(1)) / 100.0, score, window)
+                raw_kobo = float(m.group(1))
+
+                # Patch 25: values below 1 kobo are too easy to confuse with
+                # percentages, par values, or damaged PDF text. Do not turn
+                # them into a high-confidence naira payout automatically.
+                # A separate official source can still supply the correct
+                # amount through reconciliation.
+                if raw_kobo < 1:
+                    continue
+
+                add("NGN", raw_kobo / 100.0, score, window)
 
         for score, pattern in usd_patterns:
             for m in re.finditer(pattern, window, re.I | re.S):

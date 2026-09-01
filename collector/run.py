@@ -683,6 +683,7 @@ def main():
                 provisional,
                 evidence_rows,
                 title,
+                url,
             )
 
             if cross_match:

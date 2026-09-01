@@ -1,9 +1,9 @@
+
 import csv, json, re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-
 ARCHIVE = ROOT / "disclosure_archive.json"
 STATE = ROOT / "collector_state.json"
 PENDING = DOCS / "pending_dividends.csv"
@@ -19,13 +19,11 @@ BENCHMARKS = {
     "ACADEMY": ["academy press", "academy"],
 }
 
-
 def load_json(path, default):
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except Exception:
         return default
-
 
 def load_csv(path):
     if not path.exists():
@@ -33,15 +31,27 @@ def load_csv(path):
     with path.open("r", encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
-
 def norm(s):
     return re.sub(r"[^a-z0-9]+", " ", str(s).lower()).strip()
 
-
 def matches(blob, aliases):
-    h = norm(blob)
-    return any(norm(a) in h for a in aliases)
+    """
+    Match normalized aliases as whole words/phrases.
 
+    Fixes short tickers such as UPL accidentally matching words like
+    "uploaded".
+    """
+    h = " " + norm(blob) + " "
+
+    for alias in aliases:
+        a = norm(alias)
+        if not a:
+            continue
+
+        if f" {a} " in h:
+            return True
+
+    return False
 
 def main():
     archive = load_json(ARCHIVE, [])
@@ -49,47 +59,26 @@ def main():
     pending = load_csv(PENDING)
     published = load_csv(PUBLISHED)
     review = load_json(REVIEW, [])
-
     processed = state.get("processed", {}) if isinstance(state, dict) else {}
 
-    print("NGX BENCHMARK DIAGNOSTIC — PATCH 22")
+    print("NGX BENCHMARK DIAGNOSTIC — PATCH 25")
     print(f"Archive PDFs: {len(archive)}")
-    print(
-        f"Published: {len(published)} | "
-        f"Pending: {len(pending)} | "
-        f"Review: {len(review) if isinstance(review, list) else 0}"
-    )
+    print(f"Published: {len(published)} | Pending: {len(pending)} | Review: {len(review) if isinstance(review,list) else 0}")
 
     for name, aliases in BENCHMARKS.items():
-        print("\n" + "=" * 70)
+        print("\n" + "="*70)
         print(name)
 
-        pub = [
-            r for r in published
-            if matches(" ".join(map(str, r.values())), aliases)
-        ]
-
-        pen = [
-            r for r in pending
-            if matches(" ".join(map(str, r.values())), aliases)
-        ]
-
+        pub = [r for r in published if matches(" ".join(map(str,r.values())), aliases)]
+        pen = [r for r in pending if matches(" ".join(map(str,r.values())), aliases)]
         rev = []
         if isinstance(review, list):
             for item in review:
-                parsed = item.get("parsed") or {}
-                blob = " ".join([
-                    str(item.get("title", "")),
-                    str(item.get("url", "")),
-                    str(parsed),
-                ])
+                p = item.get("parsed") or {}
+                blob = " ".join([str(item.get("title","")), str(item.get("url","")), str(p)])
                 if matches(blob, aliases):
                     rev.append(item)
-
-        arc = [
-            a for a in archive
-            if matches(" ".join(map(str, a.values())), aliases)
-        ]
+        arc = [a for a in archive if matches(" ".join(map(str,a.values())), aliases)]
 
         if pub:
             status = "PUBLISHED"
@@ -98,26 +87,11 @@ def main():
         elif rev:
             status = "PROCESSED / REVIEW"
         elif arc:
-            states = {
-                processed.get(a.get("url", ""), "")
-                for a in arc
-            }
-
-            if states & {
-                "not_dividend",
-                "statement_noise",
-                "non_actionable_noise",
-            }:
+            states = {processed.get(a.get("url",""), "") for a in arc}
+            if states & {"not_dividend","statement_noise","non_actionable_noise"}:
                 status = "REJECTED AFTER DISCOVERY"
-
-            elif states & {
-                "pending",
-                "review",
-                "error",
-                "",
-            }:
+            elif states & {"pending","review","error",""}:
                 status = "IN ARCHIVE / UNRESOLVED"
-
             else:
                 status = "IN ARCHIVE"
         else:
@@ -125,61 +99,29 @@ def main():
 
         print("STATUS:", status)
         print("Archive matches:", len(arc))
-
         if arc:
             for a in arc[:6]:
-                url = a.get("url", "")
-                print(
-                    " -",
-                    processed.get(url, "<none>"),
-                    a.get("title", "")[:120]
-                )
-
+                u = a.get("url","")
+                print(" -", processed.get(u, "<none>"), a.get("title","")[:120])
         if pen:
             print("Pending matches:")
             for r in pen[:4]:
-                print(
-                    " -",
-                    r.get("dividend_per_share"),
-                    r.get("qualification_date"),
-                    r.get("payment_date"),
-                    r.get("company"),
-                )
-
+                print(" -", r.get("dividend_per_share"), r.get("qualification_date"), r.get("payment_date"), r.get("company"))
         if rev:
             print("Review matches:")
             for item in rev[:4]:
-                parsed = item.get("parsed") or {}
-                print(
-                    " -",
-                    item.get("classification"),
-                    parsed.get("dividend_per_share"),
-                    item.get("reason_codes") or item.get("errors"),
-                )
+                p = item.get("parsed") or {}
+                print(" -", item.get("classification"), p.get("dividend_per_share"), item.get("reason_codes") or item.get("errors"))
 
-    print("\n" + "=" * 70)
+    print("\n" + "="*70)
     print("SUSPECT PUBLISHED EVENTS")
-
-    for ticker in ("FCMB", "UNILEVER"):
-        rows = [
-            r for r in published
-            if (r.get("ticker") or "").upper() == ticker
-        ]
-
+    for ticker in ("FCMB","UNILEVER"):
+        rows = [r for r in published if (r.get("ticker") or "").upper() == ticker]
         if not rows:
             print(ticker, ": not published")
             continue
-
         for r in rows:
-            print(
-                ticker,
-                ":",
-                r.get("dividend_per_share"),
-                r.get("currency"),
-                "|",
-                r.get("source_title", ""),
-            )
-
+            print(ticker, ":", r.get("dividend_per_share"), r.get("currency"), "|", r.get("source_title",""))
 
 if __name__ == "__main__":
     main()

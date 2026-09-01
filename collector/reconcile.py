@@ -90,6 +90,27 @@ def _float(value) -> float:
         return 0.0
 
 
+def normalized_source_url(row: Mapping) -> str:
+    return (row.get("source_url") or "").strip().lower()
+
+
+def independent_source(a: Mapping, b: Mapping) -> bool:
+    """
+    Corroboration must come from a different official document.
+
+    Duplicate rows, re-parses, or review/pending copies of the same PDF do not
+    count as independent evidence.
+    """
+    a_url = normalized_source_url(a)
+    b_url = normalized_source_url(b)
+
+    if a_url and b_url:
+        return a_url != b_url
+
+    # If either URL is missing, do not claim independence automatically.
+    return False
+
+
 def suspicious_tiny_ngn(amount, currency="NGN") -> bool:
     """Tiny NGN values often indicate unit/percentage extraction mistakes."""
     if (currency or "NGN").upper() != "NGN":
@@ -215,7 +236,12 @@ def _candidate_has_strong_source(source_title: str) -> bool:
     }
 
 
-def reconcile_evidence(candidate, evidence_rows: Iterable[Mapping], source_title: str):
+def reconcile_evidence(
+    candidate,
+    evidence_rows: Iterable[Mapping],
+    source_title: str,
+    source_url: str = "",
+):
     """
     Merge the best compatible official evidence row into candidate.
 
@@ -271,23 +297,43 @@ def reconcile_evidence(candidate, evidence_rows: Iterable[Mapping], source_title
         candidate.status = old_status
 
     # Independent strong-source support can rehabilitate an AGM/review source.
+    candidate_row = {
+        "source_title": source_title,
+        "source_url": source_url,
+    }
+
     corroborated = (
-        _candidate_has_strong_source(source_title)
-        or _row_has_strong_source(best)
+        independent_source(candidate_row, best)
+        and (
+            _candidate_has_strong_source(source_title)
+            or _row_has_strong_source(best)
+        )
     )
 
     # Exchange-rate notices are supplementary only and never count as
     # independent dividend-declaration evidence.
     if source_kind(source_title) == "exchange_rate":
-        corroborated = _row_has_strong_source(best)
+        corroborated = (
+            independent_source(candidate_row, best)
+            and _row_has_strong_source(best)
+        )
 
     if source_kind(best.get("source_title", "")) == "exchange_rate":
-        corroborated = _candidate_has_strong_source(source_title)
+        corroborated = (
+            independent_source(candidate_row, best)
+            and _candidate_has_strong_source(source_title)
+        )
 
     return candidate, best, corroborated
 
 
 def has_strong_corroboration(row: Mapping, evidence_rows) -> bool:
+    """
+    Require matching ticker/amount/type from a DIFFERENT official PDF.
+
+    This prevents the same document appearing in published/pending/review from
+    corroborating itself.
+    """
     ticker = (row.get("ticker") or "").upper().strip()
     amount = _float(row.get("dividend_per_share"))
 
@@ -296,6 +342,9 @@ def has_strong_corroboration(row: Mapping, evidence_rows) -> bool:
 
     for other in evidence_rows or []:
         if not isinstance(other, Mapping):
+            continue
+
+        if not independent_source(row, other):
             continue
 
         if (other.get("ticker") or "").upper().strip() != ticker:
@@ -348,6 +397,9 @@ def quarantine_uncorroborated_agm(published_rows, evidence_rows):
 
         for other in all_evidence + published_rows:
             if other is row:
+                continue
+
+            if not independent_source(row, other):
                 continue
 
             if (other.get("ticker") or "").upper().strip() != ticker:
