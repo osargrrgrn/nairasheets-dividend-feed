@@ -260,11 +260,21 @@ def infer_currency_and_dps(text: str, doc_type: str = "unknown"):
     if not windows:
         return "", None
 
+    # NGX uses several equivalent ways to describe the security unit:
+    #   "per ordinary share"
+    #   "per 50 kobo ordinary share"
+    #   "per ordinary share of 50 kobo each"
+    #   "for every share of 50 kobo"
+    # The old regex covered only the first form.
     recipient = (
-        r"(?:per\s+(?:ordinary\s+)?share"
+        r"(?:"
+        r"per\s+(?:(?:\d+(?:\.\d+)?)\s*kobo\s+)?(?:ordinary\s+)?share"
+        r"(?:\s+of\s+(?:\d+(?:\.\d+)?)\s*kobo(?:\s+each)?)?"
         r"|for\s+every\s+(?:ordinary\s+)?share"
+        r"(?:\s+of\s+(?:\d+(?:\.\d+)?)\s*kobo(?:\s+each)?)?"
         r"|per\s+unit"
-        r"|for\s+every\s+unit)"
+        r"|for\s+every\s+unit"
+        r")"
     )
     payout = r"(?:dividend|distribution)"
 
@@ -296,6 +306,12 @@ def infer_currency_and_dps(text: str, doc_type: str = "unknown"):
 
     naira_patterns = [
         (
+            125,
+            rf"(?:final|interim|special|gross)?\s*{payout}"
+            rf"\s+(?:of\s+)?(?:₦|NGN|N)\s*([0-9]+(?:\.[0-9]+)?)"
+            rf"\s*(?:\([^)]*\)\s*)?{recipient}",
+        ),
+        (
             110,
             rf"(?:approved|resolved|recommended|declared|proposed)?"
             rf"[^.\n]{{0,140}}?(?:final|interim|special|gross)?\s*{payout}"
@@ -312,6 +328,19 @@ def infer_currency_and_dps(text: str, doc_type: str = "unknown"):
     ]
 
     kobo_patterns = [
+        (
+            125,
+            rf"(?:final|interim|special|gross)?\s*{payout}"
+            rf"\s+(?:of\s+)?([0-9]+(?:\.[0-9]+)?)\s*kobo"
+            rf"\s*(?:\([^)]*\)\s*)?{recipient}",
+        ),
+        (
+            120,
+            rf"(?:approved|resolved|recommended|declared|proposed)"
+            rf"[^.\n]{{0,180}}?{payout}"
+            rf"[^.\n]{{0,180}}?([0-9]+(?:\.[0-9]+)?)\s*kobo"
+            rf"\s*(?:\([^)]*\)\s*)?{recipient}",
+        ),
         (
             115,
             rf"(?:approved|resolved|recommended|declared|proposed)?"
