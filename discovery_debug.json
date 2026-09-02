@@ -4,46 +4,27 @@
     "status": 200,
     "detail_pages_found": 50,
     "detail_pages_completed": 50,
-    "new_pdfs": 0,
+    "new_pdfs": 1,
     "errors": []
   },
   "naijaticker": {
     "companies_targeted": 57,
     "companies_completed": 57,
-    "pdfs_seen": 491,
-    "already_known": 233,
+    "pdfs_seen": 490,
+    "already_known": 236,
     "filtered_before_parser": 254,
-    "eligible_candidates": 4,
-    "new_pdfs": 4,
+    "eligible_candidates": 0,
+    "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 4,
-  "elapsed_seconds": 11.37,
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 8.66,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47507_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_NOTIFICATION_OF_OUTCOME_OF_BOARD_MEETING__CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - NOTIFICATION OF OUTCOME OF BOARD MEETING CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "TRANSCOHOT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47514_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "TRANSCOHOT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47515_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_PRESS_RELEASE_ON_Q2_2026_FINANCIALS__CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - PRESS RELEASE ON Q2 2026 FINANCIALS CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "TRANSCOHOT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/TNC_-_2026_Post_Board_Meeting_Notification.pdf",
-      "title": "TNC - 2026 Post Board Meeting Notification",
-      "source": "naijaticker",
-      "ticker": "TRANSCORP"
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_N-Seven_Nigeria_Limited_-_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - N-Seven Nigeria Limited - NGX",
+      "source": "abokiforex_listing"
     }
   ]
 }
