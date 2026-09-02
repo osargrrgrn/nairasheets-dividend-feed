@@ -8,17 +8,42 @@
     "errors": []
   },
   "naijaticker": {
-    "companies_targeted": 51,
-    "companies_completed": 51,
-    "pdfs_seen": 474,
+    "companies_targeted": 57,
+    "companies_completed": 57,
+    "pdfs_seen": 491,
     "already_known": 233,
-    "filtered_before_parser": 241,
-    "eligible_candidates": 0,
-    "new_pdfs": 0,
+    "filtered_before_parser": 254,
+    "eligible_candidates": 4,
+    "new_pdfs": 4,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 3.66,
-  "results": []
+  "total_new_pdfs": 4,
+  "elapsed_seconds": 11.37,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47507_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_NOTIFICATION_OF_OUTCOME_OF_BOARD_MEETING__CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - NOTIFICATION OF OUTCOME OF BOARD MEETING CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "TRANSCOHOT"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47514_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "TRANSCOHOT"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47515_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_PRESS_RELEASE_ON_Q2_2026_FINANCIALS__CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - PRESS RELEASE ON Q2 2026 FINANCIALS CORPORATE ACTIONS JULY 2026",
+      "source": "naijaticker",
+      "ticker": "TRANSCOHOT"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/TNC_-_2026_Post_Board_Meeting_Notification.pdf",
+      "title": "TNC - 2026 Post Board Meeting Notification",
+      "source": "naijaticker",
+      "ticker": "TRANSCORP"
+    }
+  ]
 }
