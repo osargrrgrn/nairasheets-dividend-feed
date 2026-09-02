@@ -475,6 +475,7 @@ def extract_labeled_date(label: str, text: str) -> str:
     return iso_date(first_match([pat], text))
 
 def extract_qualification_date(text: str) -> str:
+    # 1. Highest priority: explicit label
     explicit = extract_labeled_date(
         r"(?:qualification\s+date|record\s+date)",
         text
@@ -482,6 +483,7 @@ def extract_qualification_date(text: str) -> str:
     if explicit:
         return explicit
 
+    # 2. Standard NGX register-of-members phrasing near dividend language
     entitlement_patterns = [
         rf"(?:dividend|distribution)[\s\S]{{0,500}}?"
         rf"(?:shareholders?\s+whose\s+names\s+appear\s+in\s+the\s+register"
@@ -504,7 +506,40 @@ def extract_qualification_date(text: str) -> str:
         rf"[\s\S]{{0,400}}?(?:dividend|distribution)",
     ]
 
-    return iso_date(first_match(entitlement_patterns, text))
+    result = iso_date(first_match(entitlement_patterns, text))
+    if result:
+        return result
+
+    # 3. Patch 34: Wider search — register language anywhere in document
+    # without requiring dividend to appear within 500 chars.
+    wider_patterns = [
+        rf"(?:shareholders?\s+whose\s+names\s+appear\s+in\s+the\s+register"
+        rf"|register\s+of\s+members\s+as\s+at"
+        rf"|register\s+of\s+members\s+at\s+the\s+close)"
+        rf"[\s\S]{{0,200}}?"
+        rf"(?:close\s+of\s+business\s+on|as\s+at|on)\s+"
+        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
+        rf"\s*,?\s*"
+        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+
+        rf"paid\s+to\s+shareholders?[\s\S]{{0,200}}?"
+        rf"as\s+of\s+"
+        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
+        rf"\s*,?\s*"
+        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+
+        rf"qualification\s+date[\s|:·]+\s*"
+        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
+        rf"\s*,?\s*"
+        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+
+        rf"(?:close\s+of\s+business\s+on|close\s+of\s+business)\s+"
+        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
+        rf"\s*,?\s*"
+        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+    ]
+
+    return iso_date(first_match(wider_patterns, text))
 
 
 def extract_payment_date(text: str) -> str:
