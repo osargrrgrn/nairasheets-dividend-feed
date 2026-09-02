@@ -46,6 +46,45 @@ STABLE_SKIP_STATES = {
     "non_actionable_noise",
 }
 
+# ---------------------------------------------------------------------------
+# Patch 33: High-value title signals that jump the rotating recheck queue.
+# ---------------------------------------------------------------------------
+HIGH_VALUE_TITLE_SIGNALS = (
+    "CORPORATE_ACTION_ANNOUNCEMENT",
+    "CORPORATE_ACTIONS_ANNOUNCEMENT",
+    "DIVIDEND_ANNOUNCEMENT",
+    "INTERIM_DIVIDEND_ANNOUNCEMENT",
+    "FINAL_DIVIDEND_ANNOUNCEMENT",
+    "CORPORATE_ACTION_CORPORATE_ACTIONS",
+    "CORPORATE_DISCLOSURE_CORPORATE_ACTIONS",
+    "NGX_NOTIFICATION",
+    "NGX_DIV_ANNOUNCEMENT",
+)
+
+MAX_PRIORITY_RECHECK = 20
+
+
+def is_high_value_unprocessed(item, processed):
+    url = item.get("url", "").upper()
+    title = item.get("title", "").upper().replace(" ", "_")
+    status = processed.get(item.get("url", ""), "")
+    if status in STABLE_SKIP_STATES:
+        return False
+    return any(signal in url or signal in title for signal in HIGH_VALUE_TITLE_SIGNALS)
+
+
+def select_priority_documents(archive, processed, already_selected_urls):
+    priority = []
+    for item in archive:
+        url = item.get("url", "")
+        if not url or url in already_selected_urls:
+            continue
+        if is_high_value_unprocessed(item, processed):
+            priority.append(item)
+        if len(priority) >= MAX_PRIORITY_RECHECK:
+            break
+    return priority
+
 
 def below_ngn_hard_floor(event) -> bool:
     """
@@ -566,7 +605,22 @@ def select_documents_for_run(archive, current_discovered, processed, state):
             selected.append(item)
             selected_urls.add(url)
 
-    # 2) Build unresolved historical pool only.
+    # 2) Patch 33: Priority recheck — high-value unprocessed documents jump
+    #    the rotating queue so they are never starved by less useful items.
+    priority_docs = select_priority_documents(archive, processed, selected_urls)
+    for item in priority_docs:
+        url = item.get("url", "")
+        if url and url not in selected_urls:
+            selected.append(item)
+            selected_urls.add(url)
+    if priority_docs:
+        print(
+            f"[Patch 33] Priority recheck: {len(priority_docs)} high-value "
+            "unprocessed documents added to selection",
+            flush=True,
+        )
+
+    # 3) Build unresolved historical pool only.
     historical = []
     for item in archive:
         url = item.get("url", "")
@@ -585,7 +639,7 @@ def select_documents_for_run(archive, current_discovered, processed, state):
 
     historical.sort(key=lambda item: item.get("url", ""))
 
-    # 3) Rotate through the historical pool so the same first 30 do not
+    # 4) Rotate through the historical pool so the same first 30 do not
     # starve the rest of the archive.
     if historical:
         cursor = int(state.get("historical_recheck_cursor", 0) or 0)
@@ -697,6 +751,7 @@ def main():
     rejected_non_dividend = 0
     rejected_statement_noise = 0
     rejected_non_actionable = 0
+    priority_recheck_count = 0
     pending_omitted_from_review = 0
     inspected = 0
     dividend_candidates = 0
@@ -708,6 +763,9 @@ def main():
     for item in discovered:
         url = item["url"]
         title = item.get("title", "")
+
+        if is_high_value_unprocessed(item, processed):
+            priority_recheck_count += 1
 
         if title_is_strongly_irrelevant(title, url):
             rejected_non_dividend += 1
@@ -942,6 +1000,7 @@ def main():
     print(f"Visible/current official PDFs found: {len(current_discovered)}")
     print(f"Archived official PDFs total: {len(archive)}")
     print(f"Historical unresolved recheck pool: {historical_recheck_pool}")
+    print(f"[Patch 33] Priority high-value documents processed: {priority_recheck_count}")
     print(f"Documents selected for this run: {len(discovered)}")
     print(f"PDFs inspected this run: {inspected}")
     print(f"Rejected as non-dividend: {rejected_non_dividend}")
