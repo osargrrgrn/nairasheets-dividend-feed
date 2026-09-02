@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 9,
+  "historical_recheck_cursor": 18,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/176_SIGN-NOTICE_OF_INSIDER_DEALING-PURCHAS-MORENIKEJI_FOLORUNSHO-17.08.2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/176_SIGN-NOTICE_OF_INSIDER_DEALING-SALES-OTUSANYA_TAIWO-17.8.2026.pdf": "not_dividend",
