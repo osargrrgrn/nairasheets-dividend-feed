@@ -4,15 +4,15 @@
     "status": 200,
     "detail_pages_found": 50,
     "detail_pages_completed": 50,
-    "new_pdfs": 2,
+    "new_pdfs": 0,
     "errors": []
   },
   "naijaticker": {
     "companies_targeted": 57,
     "companies_completed": 57,
-    "pdfs_seen": 469,
-    "already_known": 225,
-    "filtered_before_parser": 244,
+    "pdfs_seen": 484,
+    "already_known": 233,
+    "filtered_before_parser": 251,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [
@@ -22,18 +22,7 @@
     ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 2,
-  "elapsed_seconds": 16.35,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47878_DANGOTE_CEMENT_PLC-CAPITAL_MARKETS_DAY_-_PRELIMINARY_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "DANGOTE CEMENT PLC-CAPITAL MARKETS DAY - PRELIMINARY ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47880_TRANSCORP_POWER_PLC-NOTIFICATION_OF_DIRECTOR_APPOINTMENT_-_MRS._MARYAM_BALA_SHEHU_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "TRANSCORP POWER PLC-NOTIFICATION OF DIRECTOR APPOINTMENT - MRS. MARYAM BALA SHEHU CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 16.88,
+  "results": []
 }
