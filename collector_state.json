@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 5,
+  "historical_recheck_cursor": 35,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/176_SIGN-NOTICE_OF_INSIDER_DEALING-PURCHAS-MORENIKEJI_FOLORUNSHO-17.08.2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/176_SIGN-NOTICE_OF_INSIDER_DEALING-SALES-OTUSANYA_TAIWO-17.8.2026.pdf": "not_dividend",
@@ -323,6 +323,8 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47873_AIRTEL_AFRICA_PLC-TOTAL_VOTING_RIGHTS_AND_CAPITAL_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47874_FTN_COCOA_PROCESSORS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_SEPTEMBER_2026.pdf": "non_actionable_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47875_HONEYWELL_FLOUR_MILL_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_SEPTEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/47878_DANGOTE_CEMENT_PLC-CAPITAL_MARKETS_DAY_-_PRELIMINARY_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/47880_TRANSCORP_POWER_PLC-NOTIFICATION_OF_DIRECTOR_APPOINTMENT_-_MRS._MARYAM_BALA_SHEHU_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.11.08.2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_Plc_-_Notification_of_Insider_Dealing_-_Calvados-_August_17_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_First_HoldCo_Plc-_Notification_of_Insider_Dealing_-_Calvados-_August__24_2026.pdf": "not_dividend",
