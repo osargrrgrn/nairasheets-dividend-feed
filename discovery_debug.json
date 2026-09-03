@@ -8,17 +8,17 @@
     "errors": []
   },
   "naijaticker": {
-    "companies_targeted": 51,
-    "companies_completed": 51,
-    "pdfs_seen": 474,
-    "already_known": 233,
-    "filtered_before_parser": 241,
+    "companies_targeted": 57,
+    "companies_completed": 57,
+    "pdfs_seen": 491,
+    "already_known": 237,
+    "filtered_before_parser": 254,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 3.66,
+  "elapsed_seconds": 11.58,
   "results": []
 }
