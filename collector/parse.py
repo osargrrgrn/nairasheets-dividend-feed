@@ -597,15 +597,85 @@ def clean_company_name(raw: str) -> str:
 
     return raw[:160]
 
-def infer_company(text: str, source_title: str) -> str:
+# Patch 35: clean company name lookup from ticker
+_TICKER_TO_COMPANY = {
+    "GTCO": "Guaranty Trust Holding Company Plc",
+    "ZENITHBANK": "Zenith Bank Plc",
+    "MTNN": "MTN Nigeria Communications Plc",
+    "ACCESSCORP": "Access Holdings Plc",
+    "UBA": "United Bank for Africa Plc",
+    "DANGCEM": "Dangote Cement Plc",
+    "BUAFOODS": "BUA Foods Plc",
+    "BUACEMENT": "BUA Cement Plc",
+    "SEPLAT": "Seplat Energy Plc",
+    "AIRTELAFRI": "Airtel Africa Plc",
+    "STANBIC": "Stanbic IBTC Holdings Plc",
+    "FIDELITYBK": "Fidelity Bank Plc",
+    "FCMB": "FCMB Group Plc",
+    "FIRSTHOLDCO": "First HoldCo Plc",
+    "FBNH": "FBN Holdings Plc",
+    "OKOMUOIL": "Okomu Oil Palm Plc",
+    "PRESCO": "Presco Plc",
+    "NESTLE": "Nestle Nigeria Plc",
+    "GUINNESS": "Guinness Nigeria Plc",
+    "NB": "Nigerian Breweries Plc",
+    "UPDCREIT": "UPDC Real Estate Investment Trust",
+    "NIDF": "Nigeria Infrastructure Debt Fund",
+    "AFRIPRUD": "Africa Prudential Plc",
+    "HONYFLOUR": "Honeywell Flour Mill Plc",
+    "DANGSUGAR": "Dangote Sugar Refinery Plc",
+    "WAPCO": "Lafarge Africa Plc",
+    "UACN": "UAC of Nigeria Plc",
+    "TRANSCORP": "Transcorp Plc",
+    "CUSTODIAN": "Custodian Investment Plc",
+    "UCAP": "United Capital Plc",
+    "VFDGROUP": "VFD Group Plc",
+    "CAP": "Chemical and Allied Products Plc",
+    "BETAGLAS": "Beta Glass Plc",
+    "UNILEVER": "Unilever Nigeria Plc",
+    "FLOURMILL": "Flour Mills of Nigeria Plc",
+    "NASCON": "NASCON Allied Industries Plc",
+    "CADBURY": "Cadbury Nigeria Plc",
+    "VITAFOAM": "Vitafoam Nigeria Plc",
+    "CUTIX": "Cutix Plc",
+    "WEMABANK": "Wema Bank Plc",
+    "IKEJAHOTEL": "Ikeja Hotel Plc",
+    "REDSTAREX": "Red Star Express Plc",
+    "UPL": "University Press Plc",
+    "LEARNAFRCA": "Learn Africa Plc",
+    "ACADEMY": "Academy Press Plc",
+    "ARADEL": "Aradel Holdings Plc",
+    "AIICO": "AIICO Insurance Plc",
+    "TIP": "The Initiates Plc",
+    "CORNERST": "Cornerstone Insurance Plc",
+    "MANSARD": "AXA Mansard Insurance Plc",
+    "JAIZBANK": "Jaiz Bank Plc",
+    "STERLINGNG": "Sterling Financial Holdings Company Plc",
+    "MAYBAKER": "May & Baker Nigeria Plc",
+    "FIDSON": "Fidson Healthcare Plc",
+    "PZ": "P.Z. Cussons Nigeria Plc",
+    "NGXGROUP": "Nigerian Exchange Group Plc",
+    "TRANSCOHOT": "Transcorp Hotels Plc",
+    "JBERGER": "Julius Berger Nigeria Plc",
+    "TOTAL": "TotalEnergies Marketing Nigeria Plc",
+}
+
+
+def infer_company(text: str, source_title: str, ticker: str = "") -> str:
+    # Patch 35: prefer clean name from ticker lookup over PDF title
+    if ticker:
+        clean = _TICKER_TO_COMPANY.get(ticker.upper().strip(), "")
+        if clean:
+            return clean
+
     if source_title:
         candidate = clean_company_name(source_title.replace("_", " ").strip())
         if len(candidate) >= 3:
             return candidate
 
     candidate = first_match([
-        r"^\s*([A-Z][A-Z0-9&().,'’ \-]{3,100}?(?:PLC|LIMITED))\b",
-        r"([A-Z][A-Z0-9&().,'’ \-]{3,100}?(?:PLC|LIMITED))\s+(?:hereby|announces?|has announced)",
+        r"^\s*([A-Z][A-Z0-9&().,'' \-]{3,100}?(?:PLC|LIMITED))",
+        r"([A-Z][A-Z0-9&().,'' \-]{3,100}?(?:PLC|LIMITED))\s+(?:hereby|announces?|has announced)",
     ], text, flags=re.I | re.M)
 
     return clean_company_name(candidate)
@@ -660,7 +730,7 @@ def parse_dividend_pdf(text: str, source_url: str, source_title: str = "", ticke
 
     announcement = extract_announcement_date(text)
 
-    company = infer_company(text, source_title)
+    company = infer_company(text, source_title, ticker=ticker)
     dtype = infer_dividend_type(text)
     status = infer_status(text)
 
