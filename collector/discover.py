@@ -29,8 +29,8 @@ NAIJATICKER_BASE = "https://naijaticker.com/stocks/"
 
 CONNECT_TIMEOUT = 5
 READ_TIMEOUT = 10
-MAX_TOTAL_SECONDS = 85
-MAX_ABOKI_DETAIL_PAGES = 50
+MAX_TOTAL_SECONDS = 200
+MAX_ABOKI_DETAIL_PAGES = 100
 ABOKI_WORKERS = 8
 MAX_NAIJA_COMPANIES = 150
 NAIJA_WORKERS = 10
@@ -38,7 +38,7 @@ MAX_NEW_PDFS = 80
 
 # Patch 18: NaijaTicker is only a fallback. It should not hand dozens of
 # generic NGX documents to the expensive PDF parser.
-MAX_NAIJA_RETURNED_PDFS = 20
+MAX_NAIJA_RETURNED_PDFS = 40
 
 NAIJA_STRONG_POSITIVE_HINTS = (
     "dividend",
@@ -450,8 +450,8 @@ def _discover_naija(known, debug, started):
 
 def discover_official_pdfs():
     started = time.monotonic()
-    debug = {"method":"patch_18_filtered_naijaticker_fallback"}
-    print("NGX dividend PDF discovery — Patch 18", flush=True)
+    debug = {"method":"patch_18b_option_b_expanded_discovery"}
+    print("NGX dividend PDF discovery — Patch 18b (Option B expanded)", flush=True)
 
     known = _load_archive()
     print(f"Known archive URLs: {len(known)}", flush=True)
@@ -460,7 +460,8 @@ def discover_official_pdfs():
     with requests.Session() as s:
         all_found.extend(_discover_aboki(s,known,debug,started))
 
-    if len(all_found) < 10 and _time_remaining(started) > 15:
+    # Option B: always run NaijaTicker for maximum coverage
+    if _time_remaining(started) > 15:
         all_found.extend(_discover_naija(known,debug,started))
     else:
         debug["naijaticker"] = {"skipped":True}
