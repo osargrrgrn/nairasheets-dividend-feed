@@ -1,9 +1,9 @@
 {
-  "method": "patch_18_filtered_naijaticker_fallback",
+  "method": "patch_18b_option_b_expanded_discovery",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 50,
-    "detail_pages_completed": 50,
+    "detail_pages_found": 82,
+    "detail_pages_completed": 82,
     "new_pdfs": 0,
     "errors": []
   },
@@ -19,6 +19,6 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 4.24,
+  "elapsed_seconds": 5.72,
   "results": []
 }
