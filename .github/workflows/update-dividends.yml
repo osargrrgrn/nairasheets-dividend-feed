@@ -11,7 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 10
 
     env:
       PYTHONUNBUFFERED: "1"
@@ -25,16 +25,19 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install OCR system dependencies
+        run: sudo apt-get install -y tesseract-ocr poppler-utils
+
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
       - name: Update feed
         run: python -u -m collector.run
-     
+
       - name: Run benchmark diagnostic
         run: python -u -m collector.diagnose
         continue-on-error: true
-      
+
       - name: Commit changed feed
         run: |
           git config user.name "nairasheets-bot"
