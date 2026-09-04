@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 36,
+  "historical_recheck_cursor": 51,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/133_Forecast_for_4th_quarter_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/171_TRANEX_FOURTH_2026_EARNING_FORECAST_NGX.pdf": "not_dividend",
@@ -336,6 +336,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_N-Seven_Nigeria_Limited_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_NSeven_Nigeria_Limited_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_N_Seven_Nigeria_Limited.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_N_Seven_Nigeria_Limited_-_03_September_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/98_Notification_of_Insider_Share_Dealing_-_Hajia_Binta_Bakari.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_-_Livestreaming_Link_for_4th_Annual_General_Meeting.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_-_Publication_of_List_of_Unclaimed_Dividend.pdf": "not_dividend",
@@ -347,6 +348,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/FIDELITY_BANK_PLC_-_PRESS_RELEASE_H1_2026_AFS_DELAY.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/First_HoldCo_Plc_-_Notification_on_Dividend_Policy.pdf": "non_actionable_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/GEREGU_POWER_PLC_-_RESPONSE_TO_MEDIA_PUBLICATION.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/LASACO_ASSURANCE_-_RESOLUTION_AGM_2025.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_-_Board_Meeting_Resolutions_29_July_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_2026_Q2_UFS.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_Q2_2026_Distribution_Announcement.pdf": "accepted",
