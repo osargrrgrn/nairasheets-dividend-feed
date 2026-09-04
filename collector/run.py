@@ -29,7 +29,7 @@ PENDING_FEED = DOCS / "pending_dividends.csv"
 # New PDFs are always processed immediately. Older unresolved documents are
 # revisited in a rotating batch so parser/ticker improvements can still
 # recover them over successive runs.
-MAX_HISTORICAL_RECHECK = 30
+MAX_HISTORICAL_RECHECK = 15  # Reduced from 30 — OCR makes per-PDF processing slower
 
 RECHECKABLE_STATES = {
     "pending",
@@ -37,7 +37,7 @@ RECHECKABLE_STATES = {
     "error",
 }
 
-MAX_BACKFILL_PROCESS_PER_RUN = 40
+MAX_BACKFILL_PROCESS_PER_RUN = 20  # Reduced from 40 — OCR makes per-PDF processing slower
 
 STABLE_SKIP_STATES = {
     "accepted",
@@ -61,7 +61,7 @@ HIGH_VALUE_TITLE_SIGNALS = (
     "NGX_DIV_ANNOUNCEMENT",
 )
 
-MAX_PRIORITY_RECHECK = 20
+MAX_PRIORITY_RECHECK = 10  # Reduced from 20 — OCR makes per-PDF processing slower
 
 
 def is_high_value_unprocessed(item, processed):
