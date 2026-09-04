@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 51,
+  "historical_recheck_cursor": 10,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/133_Forecast_for_4th_quarter_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/171_TRANEX_FOURTH_2026_EARNING_FORECAST_NGX.pdf": "not_dividend",
@@ -327,6 +327,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47875_HONEYWELL_FLOUR_MILL_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47878_DANGOTE_CEMENT_PLC-CAPITAL_MARKETS_DAY_-_PRELIMINARY_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47880_TRANSCORP_POWER_PLC-NOTIFICATION_OF_DIRECTOR_APPOINTMENT_-_MRS._MARYAM_BALA_SHEHU_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/47883_UNIVERSAL_INSURANCE_PLC-UNIVERSAL_INSURANCE_PLC_-_COURT_CASE_UPDATE_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.11.08.2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_Plc_-_Notification_of_Insider_Dealing_-_Calvados-_August_17_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_First_HoldCo_Plc-_Notification_of_Insider_Dealing_-_Calvados-_August__24_2026.pdf": "not_dividend",

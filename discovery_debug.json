@@ -4,34 +4,28 @@
     "status": 200,
     "detail_pages_found": 84,
     "detail_pages_completed": 84,
-    "new_pdfs": 2,
+    "new_pdfs": 0,
     "errors": []
   },
   "naijaticker": {
     "companies_targeted": 57,
     "companies_completed": 57,
-    "pdfs_seen": 479,
-    "already_known": 230,
-    "filtered_before_parser": 249,
-    "eligible_candidates": 0,
-    "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "pdfs_seen": 495,
+    "already_known": 241,
+    "filtered_before_parser": 253,
+    "eligible_candidates": 1,
+    "new_pdfs": 1,
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 2,
-  "elapsed_seconds": 13.56,
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 4.95,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_N_Seven_Nigeria_Limited_-_03_September_2026.pdf",
-      "title": "Guinness Nigeria Plc - Share Dealing Notification - N Seven Nigeria Limited - 03 September 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/LASACO_ASSURANCE_-_RESOLUTION_AGM_2025.pdf",
-      "title": "LASACO ASSURANCE - RESOLUTION AGM 2025",
-      "source": "abokiforex_listing"
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47883_UNIVERSAL_INSURANCE_PLC-UNIVERSAL_INSURANCE_PLC_-_COURT_CASE_UPDATE_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "UNIVERSAL INSURANCE PLC-UNIVERSAL INSURANCE PLC - COURT CASE UPDATE CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "naijaticker",
+      "ticker": "UNIVINSURE"
     }
   ]
 }
