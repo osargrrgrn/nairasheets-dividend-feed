@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 25,
+  "historical_recheck_cursor": 40,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/114_NAHCO_PLC_-_Notication_of_Share_Dealing_by_Insider_-_-_SL.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/133_Forecast_for_4th_quarter_2026.pdf": "not_dividend",
@@ -354,6 +354,8 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_-_Board_Meeting_Resolutions_29_July_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_2026_Q2_UFS.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_Q2_2026_Distribution_Announcement.pdf": "accepted",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/NREIT_Q2_2026_Distribution_.pdf": "review",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/NREIT_Q2_2026_FinancialStatementFull.pdf": "non_actionable_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/OKOMU_-_46TH_AGM_RESOLUTION.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/SIAML_Pension_ETF_40_Dividend_Announcement_.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/Stanbic_IBTC_ETF_30_Dividend_Announcement.pdf": "accepted",
