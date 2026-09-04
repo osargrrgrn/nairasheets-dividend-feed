@@ -2,9 +2,9 @@
   "method": "patch_18b_option_b_expanded_discovery",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 84,
-    "detail_pages_completed": 84,
-    "new_pdfs": 0,
+    "detail_pages_found": 85,
+    "detail_pages_completed": 85,
+    "new_pdfs": 1,
     "errors": []
   },
   "naijaticker": {
@@ -18,7 +18,13 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 10.73,
-  "results": []
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 9.07,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/66_NSE_-_FCMB_GROUP_PLC_4Q2026_EARNINGS_FORECAST.pdf",
+      "title": "NSE - FCMB GROUP PLC 4Q2026 EARNINGS FORECAST",
+      "source": "abokiforex_listing"
+    }
+  ]
 }

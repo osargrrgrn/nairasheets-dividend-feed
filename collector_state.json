@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 21,
+  "historical_recheck_cursor": 36,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/133_Forecast_for_4th_quarter_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/171_TRANEX_FOURTH_2026_EARNING_FORECAST_NGX.pdf": "not_dividend",
@@ -331,6 +331,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_Plc_-_Notification_of_Insider_Dealing_-_Calvados-_August_17_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_First_HoldCo_Plc-_Notification_of_Insider_Dealing_-_Calvados-_August__24_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_Notification_of_Insider_Dealing_-_Calvados-_August_07_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/66_NSE_-_FCMB_GROUP_PLC_4Q2026_EARNINGS_FORECAST.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_N-Seven_Nigeria_Limited.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_N-Seven_Nigeria_Limited_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_NSeven_Nigeria_Limited_NGX.pdf": "not_dividend",
