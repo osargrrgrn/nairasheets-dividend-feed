@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 6,
+  "historical_recheck_cursor": 21,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/133_Forecast_for_4th_quarter_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/171_TRANEX_FOURTH_2026_EARNING_FORECAST_NGX.pdf": "not_dividend",
