@@ -17,6 +17,11 @@ from .reconcile import (
 )
 
 from .pending_resolver import resolve_pending_events
+from .feed_integrity import (
+    assert_no_conflict_markers,
+    validate_published_feed,
+    quality_report,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
@@ -734,6 +739,10 @@ def main():
     )
 
     existing_pending = read_csv(PENDING_FEED)
+
+    # Patch 34: refuse to build on top of an unresolved Git merge.
+    # This catches conflict debris before it can be silently re-published.
+    assert_no_conflict_markers(FEED)
     existing_published = read_csv(FEED)
 
     prior_review_items = load_json(ROOT / "review_queue.json", [])
@@ -979,6 +988,34 @@ def main():
     before_dedupe = len(merged)
     merged = dedupe_published_events(merged)
     published_duplicates_removed = before_dedupe - len(merged)
+
+    # Patch 34: final buyer-feed integrity gate.  Nothing is written unless the
+    # finished feed is structurally sane and economically unique.
+    feed_errors, feed_warnings = validate_published_feed(merged)
+    feed_quality = quality_report(
+        merged,
+        feed_errors,
+        feed_warnings,
+        duplicates_removed=published_duplicates_removed,
+    )
+    save_json(ROOT / "feed_quality.json", feed_quality)
+
+    if feed_errors:
+        print("[Patch 34] FEED INTEGRITY: FAIL", flush=True)
+        for error in feed_errors:
+            print(f"[Patch 34] ERROR: {error}", flush=True)
+        raise RuntimeError(
+            f"Patch 34 blocked publication: {len(feed_errors)} feed integrity error(s)"
+        )
+
+    print(
+        f"[Patch 34] FEED INTEGRITY: PASS | rows={len(merged)} "
+        f"duplicates_removed={published_duplicates_removed} "
+        f"warnings={len(feed_warnings)}",
+        flush=True,
+    )
+    for warning in feed_warnings:
+        print(f"[Patch 34] WARNING: {warning}", flush=True)
 
     write_csv(FEED, merged)
     write_html(DOCS / "index.html", merged)
