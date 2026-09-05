@@ -385,12 +385,8 @@ def resolve_pending_events(pending_rows, published_rows=None):
         # Tier 3: already handled above (needs multi-source)
         merged["confidence"] = "high" if best_tier == 1 else "medium"
         merged["resolution"] = f"tier{best_tier}_auto_publish"
-        # Ensure numeric fields are correct types
-        try:
-            merged["dividend_per_share"] = float(merged.get("dividend_per_share") or 0)
-        except Exception:
-            merged["dividend_per_share"] = 0.0
         promoted.append(merged)
+
     stats = {
         "input_rows": len(list(pending_rows or [])),
         "stale_published_duplicates_removed": stale_published_duplicates,
