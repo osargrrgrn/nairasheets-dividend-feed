@@ -149,8 +149,12 @@ def normalize_ngx_dividend_text(text: str) -> str:
         text,
         flags=re.I,
     )
+        # Patch 44c: fix OCR misreading ₦ symbol as $8
+    text = re.sub(r'\$8(0\.\d+)', r'₦\1', text)
+    text = re.sub(r'\$80\.', r'₦0.', text)
 
-    return text
+    return text 
+
 
 
 def dividend_context_windows(text: str):
