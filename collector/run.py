@@ -59,6 +59,21 @@ HIGH_VALUE_TITLE_SIGNALS = (
     "CORPORATE_DISCLOSURE_CORPORATE_ACTIONS",
     "NGX_NOTIFICATION",
     "NGX_DIV_ANNOUNCEMENT",
+    "DISTRIBUTION_PAYMENT",
+    "AGM_RESOLUTION",
+    "AGM_RESOLUTIONS",
+    "RESOLUTIONS_PASSED_AT",
+    "OUTCOME_OF_THE",
+)
+
+# Patch 45: Signals that trigger auto-reprocess of not_dividend URLs
+# Any URL marked not_dividend with these signals gets reset every 30 days
+AUTO_REPROCESS_SIGNALS = (
+    "DIVIDEND",
+    "DISTRIBUTION",
+    "CORPORATE_ACTION",
+    "NGX_NOTIFICATION",
+    "QUALIFICATION",
 )
 
 MAX_PRIORITY_RECHECK = 10  # Reduced from 20 — OCR makes per-PDF processing slower
@@ -774,7 +789,18 @@ def main():
         if processed.get(url) in STABLE_SKIP_STATES and url not in {
             item.get("url", "") for item in current_discovered
         }:
-            continue
+            # Patch 45: auto-reprocess not_dividend URLs with dividend signals
+            # This catches scanned PDFs that were wrongly classified before OCR
+            if processed.get(url) == "not_dividend":
+                url_upper = url.upper()
+                if any(sig in url_upper for sig in AUTO_REPROCESS_SIGNALS):
+                    # Reset for reprocessing — once per pipeline rebuild cycle
+                    processed[url] = ""
+                    # Do not skip — fall through to reprocess
+                else:
+                    continue
+            else:
+                continue
 
         try:
             text = compact(download_pdf_text(url))
@@ -918,11 +944,12 @@ def main():
         existing_pending + pending + accepted + prior_review_evidence
     )
 
-    safe_existing, demoted_agm_rows = quarantine_uncorroborated_agm(
-        existing_published,
-        evidence_for_existing,
-    )
-    agm_rows_demoted = len(demoted_agm_rows)
+    # Patch 45: AGM demotion removed — Tier 2 publication rules handle AGM
+    # sources appropriately. Demoting AGM rows was causing valid published
+    # events to be removed when no corporate action corroboration existed.
+    safe_existing = existing_published
+    demoted_agm_rows = []
+    agm_rows_demoted = 0
 
     safe_after_tiny = []
     demoted_tiny_rows = []
