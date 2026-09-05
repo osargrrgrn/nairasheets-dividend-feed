@@ -203,7 +203,7 @@ HIGH_QUALITY_SOURCE_SIGNALS = (
 
 def _is_high_quality_source(row: Mapping) -> bool:
     """True when the source is a dedicated corporate action/dividend document."""
-    title = (row.get("source_title") or row.get("source_url") or "").upper()
+    title = ((row.get("source_title") or "") + " " + (row.get("source_url") or "")).upper().replace(" ", "_").replace("-", "_")
     return any(signal in title for signal in HIGH_QUALITY_SOURCE_SIGNALS)
 
 
