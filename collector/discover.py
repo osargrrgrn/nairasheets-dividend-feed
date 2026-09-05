@@ -471,7 +471,7 @@ def _google_queries():
         f"site:doclib.ngxgroup.com final dividend {prev}",
     ]
 
-GOOGLE_SEARCH_QUERIES = _google_queries()
+
 
 DDG_HEADERS = {
     "User-Agent": (
