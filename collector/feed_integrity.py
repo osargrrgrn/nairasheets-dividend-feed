@@ -1,5 +1,5 @@
 """
-collector/feed_integrity.py — Patch 34
+collector/feed_integrity.py — Patch 38
 
 Final publication gate for the buyer-facing dividend feed.
 It validates structural integrity, date logic, currency/amount sanity, and
@@ -36,12 +36,21 @@ def _iso(v):
         return None
 
 def economic_key(row: Mapping) -> tuple:
-    """Identity of the cash distribution, independent of source PDF."""
+    """
+    Identity of the cash distribution, independent of source PDF.
+
+    Patch 38: dividend_type is intentionally excluded — one economic event
+    may be described as 'dividend' in one document and 'interim' in another.
+    Amount is rounded to 4dp to absorb minor floating-point variance across
+    documents (e.g. 0.2499999 vs 0.25).
+    Dates use the ISO string directly — a mismatch of even one day between
+    two documents means they may be different events, so we keep date
+    precision but handle the interim/final label ambiguity via type exclusion.
+    """
     return (
         _text(row.get("ticker")).upper(),
         _text(row.get("currency") or "NGN").upper(),
-        round(_float(row.get("dividend_per_share")), 6),
-        _text(row.get("dividend_type")).lower(),
+        round(_float(row.get("dividend_per_share")), 4),
         _text(row.get("qualification_date")),
         _text(row.get("payment_date")),
     )
@@ -67,6 +76,18 @@ def validate_published_feed(rows: Iterable[Mapping]):
         pd = _iso(row.get("payment_date"))
         ad = _iso(row.get("announcement_date"))
         cd = _iso(row.get("closure_date"))
+
+        # Patch 38: detect polluted company names (source titles leaking in)
+        company = _text(row.get("company") or "")
+        POLLUTION_SIGNALS = (
+            "ANNUAL GENERAL MEETING", "AGM", "EARNINGS RELEASE",
+            "BOARD MEETING", "NOTICES OF", "CORPORATE ACTIONS",
+            "FINANCIAL STATEMENT", "QUARTERLY RESULTS",
+        )
+        if any(signal in company.upper() for signal in POLLUTION_SIGNALS):
+            warnings.append(
+                f"{prefix}: company field contains source-title pollution: {company[:60]}"
+            )
 
         if not ticker:
             errors.append(f"{prefix}: blank ticker")
