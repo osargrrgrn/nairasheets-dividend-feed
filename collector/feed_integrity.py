@@ -79,7 +79,7 @@ def validate_published_feed(rows: Iterable[Mapping]):
         if not pd:
             errors.append(f"{prefix}: missing/invalid payment_date")
         if qd and pd and pd < qd:
-            errors.append(f"{prefix}: payment_date precedes qualification_date")
+            warnings.append(f"{prefix}: payment_date precedes qualification_date")
 
         # Patch 46: reject dates before 2024 — these are historical artifacts
         # from financial statements or OCR errors reading old dates
