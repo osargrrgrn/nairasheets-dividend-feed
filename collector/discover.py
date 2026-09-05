@@ -458,7 +458,7 @@ def _discover_naija(known, debug, started):
 
 def _google_queries():
     """Generate search queries for current and previous year dynamically."""
-    year = date.today().year
+    import datetime; year = datetime.date.today().year
     prev = year - 1
     return [
         f"site:doclib.ngxgroup.com dividend announcement {year}",
