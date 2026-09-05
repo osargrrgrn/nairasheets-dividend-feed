@@ -84,7 +84,7 @@ NAIJA_HARD_NEGATIVE_HINTS = (
 )
 
 PDF_URL_RE = re.compile(
-    r"https?://doclib\.ngxgroup\.com/Financial_NewsDocs/[^\"'<>\s\\]+?\.pdf",
+    r"https?://doclib\.ngxgroup\.com/Financial_NewsDocs/[^\s\"'<>\]\\]+?\.pdf",
     re.I,
 )
 RELATIVE_DOC_RE = re.compile(
