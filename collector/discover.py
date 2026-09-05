@@ -460,6 +460,9 @@ def discover_official_pdfs():
     with requests.Session() as s:
         all_found.extend(_discover_aboki(s,known,debug,started))
 
+    if _time_remaining(started) > 20:
+        all_found.extend(_discover_google(known,debug,started))
+
     # Option B: always run NaijaTicker for maximum coverage
     if _time_remaining(started) > 15:
         all_found.extend(_discover_naija(known,debug,started))
@@ -484,3 +487,63 @@ def discover_official_pdfs():
 
 def title_is_strongly_irrelevant(title: str, url: str = "") -> bool:
     return _looks_strongly_irrelevant(title,url)
+
+def _google_queries():
+    from datetime import date
+    year = date.today().year
+    prev = year - 1
+    return [
+        f"site:doclib.ngxgroup.com dividend announcement {year}",
+        f"site:doclib.ngxgroup.com corporate action announcement {year} dividend",
+        f"site:doclib.ngxgroup.com interim dividend {year}",
+        f"site:doclib.ngxgroup.com final dividend {year}",
+        f"site:doclib.ngxgroup.com distribution payment {year}",
+        f"site:doclib.ngxgroup.com qualification date {year}",
+        f"site:doclib.ngxgroup.com dividend announcement {prev}",
+        f"site:doclib.ngxgroup.com final dividend {prev}",
+    ]
+
+
+def _discover_google(known, debug, started):
+    found = []
+    dbg = {"queries_attempted": 0, "queries_succeeded": 0, "new_pdfs": 0, "errors": []}
+    print("[Google] Starting search discovery", flush=True)
+
+    google_headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.google.com/",
+    }
+
+    with requests.Session() as s:
+        for query in _google_queries():
+            if _time_remaining(started) <= 10:
+                break
+            try:
+                encoded = requests.utils.quote(query)
+                search_url = f"https://www.google.com/search?q={encoded}&num=50"
+                dbg["queries_attempted"] += 1
+                r = s.get(search_url, headers=google_headers, timeout=(8, 15), allow_redirects=True)
+                if r.status_code != 200:
+                    dbg["errors"].append(f"HTTP {r.status_code}")
+                    continue
+                dbg["queries_succeeded"] += 1
+                normalized = html.unescape(r.text).replace("\\/", "/")
+                for url in PDF_URL_RE.findall(normalized):
+                    url = _clean_pdf_url(url)
+                    if not url or url in known:
+                        continue
+                    title = _title_from_url(url)
+                    if _looks_strongly_irrelevant(title, url):
+                        continue
+                    found.append({"url": url, "title": title, "source": "google_search"})
+                    known.add(url)
+                time.sleep(2)
+            except Exception as exc:
+                dbg["errors"].append(repr(exc))
+
+    dbg["new_pdfs"] = len(found)
+    debug["google_search"] = dbg
+    print(f"[Google] {len(found)} new PDFs found", flush=True)
+    return found
