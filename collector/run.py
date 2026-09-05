@@ -29,7 +29,7 @@ PENDING_FEED = DOCS / "pending_dividends.csv"
 # New PDFs are always processed immediately. Older unresolved documents are
 # revisited in a rotating batch so parser/ticker improvements can still
 # recover them over successive runs.
-MAX_HISTORICAL_RECHECK = 15  # Reduced from 30 — OCR makes per-PDF processing slower
+MAX_HISTORICAL_RECHECK = 20  # Patch 45: increased — OCR timeout issues resolved
 
 RECHECKABLE_STATES = {
     "pending",
@@ -64,10 +64,10 @@ HIGH_VALUE_TITLE_SIGNALS = (
     "AGM_RESOLUTIONS",
     "RESOLUTIONS_PASSED_AT",
     "OUTCOME_OF_THE",
+    "NOTICE_OF_DECISION",
 )
 
 # Patch 45: Signals that trigger auto-reprocess of not_dividend URLs
-# Any URL marked not_dividend with these signals gets reset every 30 days
 AUTO_REPROCESS_SIGNALS = (
     "DIVIDEND",
     "DISTRIBUTION",
@@ -76,7 +76,7 @@ AUTO_REPROCESS_SIGNALS = (
     "QUALIFICATION",
 )
 
-MAX_PRIORITY_RECHECK = 10  # Reduced from 20 — OCR makes per-PDF processing slower
+MAX_PRIORITY_RECHECK = 15  # Patch 45: increased — OCR timeout issues resolved
 
 
 def is_high_value_unprocessed(item, processed):
@@ -790,13 +790,11 @@ def main():
             item.get("url", "") for item in current_discovered
         }:
             # Patch 45: auto-reprocess not_dividend URLs with dividend signals
-            # This catches scanned PDFs that were wrongly classified before OCR
             if processed.get(url) == "not_dividend":
                 url_upper = url.upper()
                 if any(sig in url_upper for sig in AUTO_REPROCESS_SIGNALS):
-                    # Reset for reprocessing — once per pipeline rebuild cycle
-                    processed[url] = ""
-                    # Do not skip — fall through to reprocess
+                    processed[url] = ""  # reset for reprocessing
+                    # fall through to reprocess
                 else:
                     continue
             else:
@@ -944,9 +942,7 @@ def main():
         existing_pending + pending + accepted + prior_review_evidence
     )
 
-    # Patch 45: AGM demotion removed — Tier 2 publication rules handle AGM
-    # sources appropriately. Demoting AGM rows was causing valid published
-    # events to be removed when no corporate action corroboration existed.
+    # Patch 45: AGM demotion removed — Tier 2 publication rules handle this
     safe_existing = existing_published
     demoted_agm_rows = []
     agm_rows_demoted = 0
