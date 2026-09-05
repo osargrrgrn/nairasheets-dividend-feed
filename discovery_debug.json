@@ -10,19 +10,15 @@
   "naijaticker": {
     "companies_targeted": 57,
     "companies_completed": 57,
-    "pdfs_seen": 481,
-    "already_known": 233,
-    "filtered_before_parser": 248,
+    "pdfs_seen": 494,
+    "already_known": 242,
+    "filtered_before_parser": 252,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 14.25,
+  "elapsed_seconds": 4.86,
   "results": []
 }
