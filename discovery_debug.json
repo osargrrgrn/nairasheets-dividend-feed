@@ -4,39 +4,26 @@
     "status": 200,
     "detail_pages_found": 84,
     "detail_pages_completed": 84,
-    "new_pdfs": 2,
+    "new_pdfs": 1,
     "errors": []
   },
   "naijaticker": {
     "companies_targeted": 57,
     "companies_completed": 57,
-    "pdfs_seen": 445,
-    "already_known": 213,
-    "filtered_before_parser": 232,
+    "pdfs_seen": 494,
+    "already_known": 242,
+    "filtered_before_parser": 252,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 2,
-  "elapsed_seconds": 17.7,
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 12.71,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NREIT_Q2_2026_Distribution_.pdf",
-      "title": "NREIT Q2 2026 Distribution",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NREIT_Q2_2026_FinancialStatementFull.pdf",
-      "title": "NREIT Q2 2026 FinancialStatementFull",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47886_AFRICAN_ALLIANCE_INSURANCE_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2023_FINANCIAL_STATEMENTS_SEPTEMBER_2026.pdf",
+      "title": "AFRICAN ALLIANCE INSURANCE PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2023 FINANCIAL STATEMENTS SEPTEMBER 2026",
       "source": "abokiforex_listing"
     }
   ]
