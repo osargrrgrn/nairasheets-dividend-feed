@@ -7,6 +7,12 @@
     "new_pdfs": 0,
     "errors": []
   },
+  "google_search": {
+    "queries_attempted": 8,
+    "queries_succeeded": 8,
+    "new_pdfs": 0,
+    "errors": []
+  },
   "naijaticker": {
     "companies_targeted": 57,
     "companies_completed": 57,
@@ -19,6 +25,6 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 6.35,
+  "elapsed_seconds": 21.77,
   "results": []
 }
