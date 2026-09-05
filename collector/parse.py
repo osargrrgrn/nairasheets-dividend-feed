@@ -141,6 +141,15 @@ def normalize_ngx_dividend_text(text: str) -> str:
         text,
     )
 
+    # Patch 44b: join dates split across lines by OCR
+    # "16th day of September,\n2026." -> "16th day of September 2026"
+    text = re.sub(
+        r"((?:January|February|March|April|May|June|July|August|September|October|November|December)),?\s*\n\s*(\d{4})",
+        r"\1 \2",
+        text,
+        flags=re.I,
+    )
+
     return text
 
 
@@ -553,6 +562,20 @@ def extract_qualification_date(text: str) -> str:
         rf"\s*,?\s*"
         rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
     ]
+
+    # Patch 44b: handle "Nth day of Month Year" format from OCR
+    # OCR from scanned PDFs often produces "16th day of September 2026"
+    # after normalization. Standard patterns miss this construction.
+    day_of_patterns = [
+        rf"close\s+of\s+business\s+on\s+(\d{{1,2}}(?:st|nd|rd|th)?\s+day\s+of\s+(?:{MONTHS})\s+\d{{4}})",
+        rf"(\d{{1,2}}(?:st|nd|rd|th)?\s+day\s+of\s+(?:{MONTHS})\s+\d{{4}})",
+        rf"qualification\s+date[\s\n]+.{{0,30}}?(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+        rf"qualification\s+date[\s\n]+.{{0,30}}?(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS}))",
+    ]
+
+    result = iso_date(first_match(day_of_patterns, text))
+    if result:
+        return result
 
     return iso_date(first_match(wider_patterns, text))
 
