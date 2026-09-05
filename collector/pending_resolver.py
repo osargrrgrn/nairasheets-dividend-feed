@@ -33,6 +33,74 @@ from .reconcile import (
     suspicious_tiny_ngn,
 )
 
+# Clean company names keyed by ticker — avoids source-title pollution
+_TICKER_TO_COMPANY = {
+    "UPDCREIT": "UPDC Real Estate Investment Trust",
+    "SEPLAT": "Seplat Energy Plc",
+    "ACADEMY": "Academy Press Plc",
+    "ARADEL": "Aradel Holdings Plc",
+    "UACN": "UAC of Nigeria Plc",
+    "MTNN": "MTN Nigeria Communications Plc",
+    "GTCO": "Guaranty Trust Holding Company Plc",
+    "ZENITHBANK": "Zenith Bank Plc",
+    "ACCESSCORP": "Access Holdings Plc",
+    "UBA": "United Bank for Africa Plc",
+    "DANGCEM": "Dangote Cement Plc",
+    "BUAFOODS": "BUA Foods Plc",
+    "BUACEMENT": "BUA Cement Plc",
+    "AIRTELAFRI": "Airtel Africa Plc",
+    "STANBIC": "Stanbic IBTC Holdings Plc",
+    "FIDELITYBK": "Fidelity Bank Plc",
+    "FCMB": "FCMB Group Plc",
+    "FIRSTHOLDCO": "First HoldCo Plc",
+    "FBNH": "FBN Holdings Plc",
+    "OKOMUOIL": "Okomu Oil Palm Plc",
+    "PRESCO": "Presco Plc",
+    "NESTLE": "Nestle Nigeria Plc",
+    "GUINNESS": "Guinness Nigeria Plc",
+    "NB": "Nigerian Breweries Plc",
+    "NIDF": "Nigeria Infrastructure Debt Fund",
+    "AFRIPRUD": "Africa Prudential Plc",
+    "HONYFLOUR": "Honeywell Flour Mill Plc",
+    "DANGSUGAR": "Dangote Sugar Refinery Plc",
+    "WAPCO": "Lafarge Africa Plc",
+    "TRANSCORP": "Transcorp Plc",
+    "CUSTODIAN": "Custodian Investment Plc",
+    "UCAP": "United Capital Plc",
+    "VFDGROUP": "VFD Group Plc",
+    "CAP": "Chemical and Allied Products Plc",
+    "BETAGLAS": "Beta Glass Plc",
+    "UNILEVER": "Unilever Nigeria Plc",
+    "FLOURMILL": "Flour Mills of Nigeria Plc",
+    "NASCON": "NASCON Allied Industries Plc",
+    "CADBURY": "Cadbury Nigeria Plc",
+    "VITAFOAM": "Vitafoam Nigeria Plc",
+    "CUTIX": "Cutix Plc",
+    "WEMABANK": "Wema Bank Plc",
+    "IKEJAHOTEL": "Ikeja Hotel Plc",
+    "REDSTAREX": "Red Star Express Plc",
+    "UPL": "University Press Plc",
+    "LEARNAFRCA": "Learn Africa Plc",
+    "AIICO": "AIICO Insurance Plc",
+    "TIP": "The Initiates Plc",
+    "CORNERST": "Cornerstone Insurance Plc",
+    "MANSARD": "AXA Mansard Insurance Plc",
+    "JAIZBANK": "Jaiz Bank Plc",
+    "MAYBAKER": "May and Baker Nigeria Plc",
+    "FIDSON": "Fidson Healthcare Plc",
+    "PZ": "P.Z. Cussons Nigeria Plc",
+    "NGXGROUP": "Nigerian Exchange Group Plc",
+    "TRANSCOHOT": "Transcorp Hotels Plc",
+    "JBERGER": "Julius Berger Nigeria Plc",
+    "TOTAL": "TotalEnergies Marketing Nigeria Plc",
+    "ETI": "Ecobank Transnational Incorporated",
+    "MBENEFIT": "Mutual Benefits Assurance Plc",
+    "SUNUASSUR": "Sunu Assurances Nigeria Plc",
+    "JAPAULGOLD": "Japaul Gold and Ventures Plc",
+    "UNIVINSURE": "Universal Insurance Plc",
+    "ABBEYBDS": "Abbey Mortgage Bank Plc",
+}
+
 DATE_FIELDS = (
     "qualification_date",
     "payment_date",
@@ -385,6 +453,15 @@ def resolve_pending_events(pending_rows, published_rows=None):
         # Tier 3: already handled above (needs multi-source)
         merged["confidence"] = "high" if best_tier == 1 else "medium"
         merged["resolution"] = f"tier{best_tier}_auto_publish"
+        # Ensure numeric types
+        try:
+            merged["dividend_per_share"] = float(merged.get("dividend_per_share") or 0)
+        except Exception:
+            merged["dividend_per_share"] = 0.0
+        # Clean company name from ticker lookup
+        clean_name = _TICKER_TO_COMPANY.get(_ticker(merged), "")
+        if clean_name:
+            merged["company"] = clean_name
         promoted.append(merged)
 
     stats = {
