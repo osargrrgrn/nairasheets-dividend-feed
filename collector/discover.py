@@ -448,8 +448,13 @@ def _discover_naija(known, debug, started):
 
     return found
 
+
 # ---------------------------------------------------------------------------
 # Patch 41: Sequential NGX doclib scanner
+# Scans AbokiForex disclosure pages by document number to recover
+# historical dividend PDFs that scrolled off the main listing.
+# Uses the same AbokiForex detail page mechanism that already works
+# in your pipeline — no new sites, no search engines needed.
 # ---------------------------------------------------------------------------
 
 DOCLIB_DIVIDEND_KEYWORDS = (
@@ -465,6 +470,7 @@ DOCLIB_SCAN_BATCH = 50
 
 
 def _get_archive_number_range(known_urls):
+    """Get min and max document numbers from known archive URLs."""
     numbers = []
     num_re = re.compile(r"/Financial_NewsDocs/(\d{4,6})_", re.I)
     for url in known_urls:
@@ -476,12 +482,18 @@ def _get_archive_number_range(known_urls):
     return min(numbers), max(numbers)
 
 
-def _doclib_url_from_aboki_page(session, number, known):
+def _fetch_aboki_detail_by_number(session, number, known):
+    """
+    Fetch AbokiForex detail page for a specific disclosure number.
+    Returns list of new doclib PDF URLs found on that page.
+    AbokiForex detail pages are accessible from GitHub Actions runners.
+    """
     detail_url = f"https://abokiforex.app/ngx-stocks/disclosures/{number}"
     try:
-        r = session.get(detail_url, headers=HEADERS, timeout=(4, 8), allow_redirects=True)
+        r = session.get(detail_url, headers=HEADERS, timeout=(5, 10), allow_redirects=True)
         if r.status_code == 200:
-            return list(_extract_doclib_pdfs(r.text, detail_url) - known)
+            pdfs = _extract_doclib_pdfs(r.text, detail_url)
+            return [u for u in pdfs if u not in known]
     except Exception:
         pass
     return []
@@ -489,17 +501,32 @@ def _doclib_url_from_aboki_page(session, number, known):
 
 def _discover_sequential(known, debug, started):
     """
-    Patch 41: Scan historical AbokiForex disclosure pages by document number.
-    Finds dividend PDFs too old for the main listing page.
+    Patch 41: Recover historical dividend PDFs by scanning AbokiForex
+    disclosure pages by document number.
+
+    AbokiForex only shows ~200 recent disclosures on their listing page.
+    Documents from March-June 2026 (e.g. DANGCEM 46167) have scrolled off.
+    But AbokiForex still has individual detail pages for each disclosure
+    accessible at /ngx-stocks/disclosures/{number}.
+
+    This function finds gap numbers in our archive and fetches those pages.
     """
     import random
+
     found = []
-    dbg = {"numbers_scanned": 0, "pages_fetched": 0, "new_pdfs": 0, "errors": []}
+    dbg = {
+        "numbers_scanned": 0,
+        "pages_fetched": 0,
+        "new_pdfs": 0,
+        "errors": [],
+    }
 
     print("[Sequential] Starting historical doclib scan", flush=True)
 
+    # Find what document number range we already have
     min_num, max_num = _get_archive_number_range(known)
 
+    # Find which numbers we already have
     num_re = re.compile(r"/Financial_NewsDocs/(\d{4,6})_", re.I)
     known_numbers = set()
     for url in known:
@@ -507,16 +534,30 @@ def _discover_sequential(known, debug, started):
         if m:
             known_numbers.add(int(m.group(1)))
 
+    # Scan from 500 below our minimum (historical gap) to 100 above maximum
     scan_start = max(44000, min_num - 500)
     scan_end = max_num + 100
 
-    candidates = [n for n in range(scan_start, scan_end + 1) if n not in known_numbers]
+    # Find gap numbers — not in our archive
+    gap_numbers = [
+        n for n in range(scan_start, scan_end + 1)
+        if n not in known_numbers
+    ]
 
-    print(f"[Sequential] {len(candidates)} document numbers to check", flush=True)
+    print(
+        f"[Sequential] {len(gap_numbers)} gap numbers in range "
+        f"{scan_start}-{scan_end}",
+        flush=True,
+    )
 
-    lower = [n for n in candidates if n < min_num]
-    upper = [n for n in candidates if n >= min_num]
-    batch = lower[:30] + random.sample(upper, min(20, len(upper)))
+    # Prioritize historical gaps (lower numbers = older, more likely missed)
+    historical = sorted([n for n in gap_numbers if n < min_num])
+    recent_gaps = [n for n in gap_numbers if n >= min_num]
+
+    # Take 35 historical + 15 recent gaps per run
+    batch = historical[:35]
+    if recent_gaps:
+        batch += random.sample(recent_gaps, min(15, len(recent_gaps)))
     batch = batch[:DOCLIB_SCAN_BATCH]
 
     dbg["numbers_scanned"] = len(batch)
@@ -525,17 +566,29 @@ def _discover_sequential(known, debug, started):
         for num in batch:
             if _time_remaining(started) <= 10:
                 break
-            pdfs = _doclib_url_from_aboki_page(s, num, known)
+
+            new_pdfs = _fetch_aboki_detail_by_number(s, num, known)
             dbg["pages_fetched"] += 1
-            for url in pdfs:
+
+            for url in new_pdfs:
                 title = _title_from_url(url)
+
                 if _looks_strongly_irrelevant(title, url):
                     continue
+
+                # Only pass dividend-related documents to parser
                 url_upper = url.upper()
                 if any(kw in url_upper for kw in DOCLIB_DIVIDEND_KEYWORDS):
-                    found.append({"url": url, "title": title, "source": "sequential_scan"})
+                    found.append({
+                        "url": url,
+                        "title": title,
+                        "source": "sequential_scan",
+                    })
                     known.add(url)
-                    print(f"[Sequential] Found: {title[:60]}", flush=True)
+                    print(
+                        f"[Sequential] Found: {title[:60]}",
+                        flush=True,
+                    )
 
     dbg["new_pdfs"] = len(found)
     debug["sequential_scan"] = dbg
@@ -546,20 +599,25 @@ def _discover_sequential(known, debug, started):
 def discover_official_pdfs():
     started = time.monotonic()
     debug = {"method": "patch_41_sequential_doclib_scan"}
-    print("NGX dividend PDF discovery — Patch 41 (Sequential + AbokiForex + NaijaTicker)", flush=True)
+    print(
+        "NGX dividend PDF discovery — Patch 41 "
+        "(Sequential + AbokiForex + NaijaTicker)",
+        flush=True,
+    )
 
     known = _load_archive()
     print(f"Known archive URLs: {len(known)}", flush=True)
     all_found = []
 
+    # Primary: AbokiForex listing + detail pages (recent documents)
     with requests.Session() as s:
         all_found.extend(_discover_aboki(s, known, debug, started))
 
-    # Patch 41: Sequential historical scanner
-    if _time_remaining(started) > 20:
+    # Patch 41: Sequential scanner for historical gap documents
+    if _time_remaining(started) > 25:
         all_found.extend(_discover_sequential(known, debug, started))
 
-    # Option B: always run NaijaTicker for maximum coverage
+    # NaijaTicker: company-specific pages as additional coverage
     if _time_remaining(started) > 15:
         all_found.extend(_discover_naija(known, debug, started))
     else:
@@ -574,7 +632,7 @@ def discover_official_pdfs():
 
     DEBUG_FILE.write_text(
         json.dumps(debug, indent=2, ensure_ascii=False),
-        encoding="utf-8"
+        encoding="utf-8",
     )
 
     print(f"Discovery elapsed: {debug['elapsed_seconds']}s", flush=True)
