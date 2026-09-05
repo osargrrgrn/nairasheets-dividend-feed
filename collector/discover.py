@@ -160,6 +160,15 @@ def _extract_doclib_pdfs(html_text, base_url):
     if not html_text:
         return pdfs
     normalized = html.unescape(html_text).replace("\\/", "/").replace("\\u002F", "/")
+    # Patch 42: also scan for partial doclib URLs (catches markdown-format links)
+    DOCLIB_PARTIAL = re.compile(
+        r"https?://doclib\.ngxgroup\.com/Financial_NewsDocs/[^\s\"'<>\]]+?\.pdf",
+        re.I,
+    )
+    for m in DOCLIB_PARTIAL.findall(normalized):
+        u = _clean_pdf_url(m)
+        if u:
+            pdfs.add(u)
     for m in PDF_URL_RE.findall(normalized):
         u = _clean_pdf_url(m)
         if u:
