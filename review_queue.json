@@ -1,33 +1,60 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47272_BETA_GLASS_PLC-BETA_GLASS_PLC_-_FY2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-    "title": "BETA GLASS PLC-BETA GLASS PLC - FY2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
+    "title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
+      "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "4a96c362dc865b9d",
-      "ticker": "BETAGLAS",
-      "company": "BETA GLASS PLC-BETA GLASS PLC - FY2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "event_id": "661457e6240abb1f",
+      "ticker": "STANBIC",
+      "company": "STANBIC IBTC HOLDINGS PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-05-04",
+      "payment_date": "2026-05-26",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "last_verified": "2026-09-05",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47077_BUA_FOODS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
+    "title": "BUA FOODS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "98a54c54f632da51",
+      "ticker": "BUAFOODS",
+      "company": "BUA FOODS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "",
-      "payment_date": "",
+      "qualification_date": "2026-06-04",
+      "payment_date": "2026-07-15",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47272_BETA_GLASS_PLC-BETA_GLASS_PLC_-_FY2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "source_title": "BETA GLASS PLC-BETA GLASS PLC - FY2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47077_BUA_FOODS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
+      "source_title": "BUA FOODS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
       "last_verified": "2026-09-05",
       "confidence": "review"
     },
@@ -35,65 +62,32 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47404_BETA_GLASS_PLC-BETA_GLASS_PLC_-_MANDATARY_TAKEOVER_OFFER_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "BETA GLASS PLC-BETA GLASS PLC - MANDATARY TAKEOVER OFFER CORPORATE ACTIONS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
-      "qualification_date_missing",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
       "missing/invalid dividend per share",
-      "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "43a4b661bb612762",
-      "ticker": "BETAGLAS",
-      "company": "BETA GLASS PLC-BETA GLASS PLC - MANDATARY TAKEOVER OFFER CORPORATE ACTIONS JULY 2026",
+      "event_id": "0516c16e5c0ba6f1",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "",
+      "dividend_type": "final",
+      "qualification_date": "2026-06-19",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47404_BETA_GLASS_PLC-BETA_GLASS_PLC_-_MANDATARY_TAKEOVER_OFFER_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "BETA GLASS PLC-BETA GLASS PLC - MANDATARY TAKEOVER OFFER CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-09-05",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NREIT_Q2_2026_Distribution_.pdf",
-    "title": "NREIT Q2 2026 Distribution",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "4b0c7a484525edd5",
-      "ticker": "",
-      "company": "NREIT Q2 2026 Distribution",
-      "dividend_per_share": 1.72,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-07-29",
-      "payment_date": "2026-09-08",
-      "closure_date": "2026-07-30",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NREIT_Q2_2026_Distribution_.pdf",
-      "source_title": "NREIT Q2 2026 Distribution",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
       "last_verified": "2026-09-05",
       "confidence": "review"
     },

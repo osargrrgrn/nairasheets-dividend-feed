@@ -17,57 +17,14 @@
     "companies_targeted": 65,
     "companies_completed": 65,
     "pdfs_seen": 531,
-    "already_known": 254,
+    "already_known": 261,
     "filtered_before_parser": 270,
-    "eligible_candidates": 7,
-    "new_pdfs": 7,
+    "eligible_candidates": 0,
+    "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 7,
-  "elapsed_seconds": 7.41,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47145_ECOBANK_TRANSNATIONAL_INCORPORATED-AGM_2026_RESOLUTION_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "ECOBANK TRANSNATIONAL INCORPORATED-AGM 2026 RESOLUTION CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "ETI"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47272_BETA_GLASS_PLC-BETA_GLASS_PLC_-_FY2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "BETA GLASS PLC-BETA GLASS PLC - FY2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "BETAGLAS"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47249_VITAFOAM_NIG_PLC.-C,OSED_PERIOD_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "VITAFOAM NIG PLC.-C,OSED PERIOD CORPORATE ACTIONS JUNE 2026",
-      "source": "naijaticker",
-      "ticker": "VITAFOAM"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47403_BETA_GLASS_PLC-BETA_GLASS_PLC_-_NOTICE_OF_PROPOSED_MANDATORY_TAKEOVER_OFFER_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "BETA GLASS PLC-BETA GLASS PLC - NOTICE OF PROPOSED MANDATORY TAKEOVER OFFER CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "BETAGLAS"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47404_BETA_GLASS_PLC-BETA_GLASS_PLC_-_MANDATARY_TAKEOVER_OFFER_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "BETA GLASS PLC-BETA GLASS PLC - MANDATARY TAKEOVER OFFER CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "BETAGLAS"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47496_ECOBANK_TRANSNATIONAL_INCORPORATED-ETIEGM_NOTIFICATION_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "ECOBANK TRANSNATIONAL INCORPORATED-ETIEGM NOTIFICATION MEETING CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "ETI"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47582_ECOBANK_TRANSNATIONAL_INCORPORATED-ECOBANK_1H_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "ECOBANK TRANSNATIONAL INCORPORATED-ECOBANK 1H 2026 EARNINGS RELEASE CORPORATE ACTIONS JULY 2026",
-      "source": "naijaticker",
-      "ticker": "ETI"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 7.82,
+  "results": []
 }
