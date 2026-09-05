@@ -1,5 +1,5 @@
 """
-collector/feed_integrity.py — Patch 38
+collector/feed_integrity.py — Patch 34
 
 Final publication gate for the buyer-facing dividend feed.
 It validates structural integrity, date logic, currency/amount sanity, and
@@ -36,21 +36,12 @@ def _iso(v):
         return None
 
 def economic_key(row: Mapping) -> tuple:
-    """
-    Identity of the cash distribution, independent of source PDF.
-
-    Patch 38: dividend_type is intentionally excluded — one economic event
-    may be described as 'dividend' in one document and 'interim' in another.
-    Amount is rounded to 4dp to absorb minor floating-point variance across
-    documents (e.g. 0.2499999 vs 0.25).
-    Dates use the ISO string directly — a mismatch of even one day between
-    two documents means they may be different events, so we keep date
-    precision but handle the interim/final label ambiguity via type exclusion.
-    """
+    """Identity of the cash distribution, independent of source PDF."""
     return (
         _text(row.get("ticker")).upper(),
         _text(row.get("currency") or "NGN").upper(),
-        round(_float(row.get("dividend_per_share")), 4),
+        round(_float(row.get("dividend_per_share")), 6),
+        _text(row.get("dividend_type")).lower(),
         _text(row.get("qualification_date")),
         _text(row.get("payment_date")),
     )
@@ -77,18 +68,6 @@ def validate_published_feed(rows: Iterable[Mapping]):
         ad = _iso(row.get("announcement_date"))
         cd = _iso(row.get("closure_date"))
 
-        # Patch 38: detect polluted company names (source titles leaking in)
-        company = _text(row.get("company") or "")
-        POLLUTION_SIGNALS = (
-            "ANNUAL GENERAL MEETING", "AGM", "EARNINGS RELEASE",
-            "BOARD MEETING", "NOTICES OF", "CORPORATE ACTIONS",
-            "FINANCIAL STATEMENT", "QUARTERLY RESULTS",
-        )
-        if any(signal in company.upper() for signal in POLLUTION_SIGNALS):
-            warnings.append(
-                f"{prefix}: company field contains source-title pollution: {company[:60]}"
-            )
-
         if not ticker:
             errors.append(f"{prefix}: blank ticker")
         if amount <= 0:
@@ -101,6 +80,15 @@ def validate_published_feed(rows: Iterable[Mapping]):
             errors.append(f"{prefix}: missing/invalid payment_date")
         if qd and pd and pd < qd:
             errors.append(f"{prefix}: payment_date precedes qualification_date")
+
+        # Patch 46: reject dates before 2024 — these are historical artifacts
+        # from financial statements or OCR errors reading old dates
+        from datetime import date as _date
+        min_valid_date = _date(2024, 1, 1)
+        if qd and qd < min_valid_date:
+            errors.append(f"{prefix}: qualification_date {qd} is before 2024 — likely OCR/extraction error")
+        if pd and pd < min_valid_date:
+            errors.append(f"{prefix}: payment_date {pd} is before 2024 — likely OCR/extraction error")
         if ad and pd and pd < ad:
             warnings.append(f"{prefix}: payment_date precedes announcement_date")
         if cd and pd and pd < cd:
