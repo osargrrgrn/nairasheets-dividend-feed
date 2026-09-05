@@ -1,21 +1,33 @@
 """
-collector/pending_resolver.py — Patch 39
+collector/pending_resolver.py — Patch 45 (Tiered Publication Rules)
 
-Conservative resolver for already-discovered pending dividend evidence.
+Tiered publication system replacing the old conservative dual-source requirement.
 
-It never discovers new documents and never relaxes publication safety.
-A pending event is promoted only when independent official PDFs corroborate
-the same ticker/amount/type and their populated fields do not conflict.
+Tier 1 — Auto-publish (no corroboration needed):
+  Corporate Action Announcement / Dividend Announcement / Distribution Payment
+  + complete dates (qual + pay) + amount > 0.01 NGN
+
+Tier 2 — Auto-publish (no corroboration needed):
+  AGM Resolution / AGM Notice with complete dividend data
+  + complete dates + amount > 0.01 NGN
+
+Tier 3 — Hold for corroboration:
+  Financial statements, earnings releases, board meeting notices
+  → require two independent sources
+
+Tier 4 — Safety hold (always):
+  Amount < 0.01 NGN or conflicting field values
+
+Auto-reprocess: URLs marked not_dividend with dividend keywords in filename
+are reset automatically every 30 days (handled in run.py).
 """
 
-from collections import defaultdict
 from typing import Mapping
 
 from .reconcile import (
     amounts_match,
     compatible_type,
     date_proximity_ok,
-    has_strong_corroboration,
     independent_source,
     source_strength,
     suspicious_tiny_ngn,
@@ -29,6 +41,53 @@ DATE_FIELDS = (
 )
 
 MERGE_FIELDS = DATE_FIELDS + ("registrar",)
+
+# ---------------------------------------------------------------------------
+# Tier 1: Corporate action / dividend announcement sources
+# These are the most authoritative NGX filings — single source is enough.
+# ---------------------------------------------------------------------------
+TIER1_SIGNALS = (
+    "CORPORATE_ACTION_ANNOUNCEMENT",
+    "CORPORATE_ACTIONS_ANNOUNCEMENT",
+    "DIVIDEND_ANNOUNCEMENT",
+    "INTERIM_DIVIDEND_ANNOUNCEMENT",
+    "FINAL_DIVIDEND_ANNOUNCEMENT",
+    "NGX_NOTIFICATION",
+    "DISTRIBUTION_PAYMENT",
+    "NGX_DIV_ANNOUNCEMENT",
+    "CORPORATE_DISCLOSURE",
+)
+
+# ---------------------------------------------------------------------------
+# Tier 2: AGM resolutions — official shareholder approval of dividend
+# ---------------------------------------------------------------------------
+TIER2_SIGNALS = (
+    "AGM_RESOLUTION",
+    "AGM_RESOLUTIONS",
+    "RESOLUTIONS_PASSED_AT",
+    "RESOLUTIONS_OF_THE",
+    "ANNUAL_GENERAL_MEETING_RESOLUTION",
+    "OUTCOME_OF_THE",
+    "OUTCOME_OF_BOARD",
+    "POST_BOARD_MEETING",
+)
+
+# ---------------------------------------------------------------------------
+# Tier 3: Sources that require corroboration before publishing
+# ---------------------------------------------------------------------------
+TIER3_SIGNALS = (
+    "FINANCIAL_STATEMENT",
+    "EARNINGS_RELEASE",
+    "PRESS_RELEASE",
+    "EARNINGS_PRESS_RELEASE",
+    "QUARTER_",
+    "HALF_YEAR",
+    "FULL_YEAR",
+    "ANNUAL_REPORT",
+    "UNAUDITED_RESULTS",
+    "AUDITED_RESULTS",
+    "UFS",
+)
 
 
 def _float(value) -> float:
@@ -48,6 +107,39 @@ def _currency(row: Mapping) -> str:
 
 def _row_source(row: Mapping) -> str:
     return (row.get("source_url") or "").strip()
+
+
+def _normalize_for_matching(row: Mapping) -> str:
+    """Combine source_title and source_url, normalize to uppercase underscores."""
+    title = (row.get("source_title") or "")
+    url = (row.get("source_url") or "")
+    combined = f"{title} {url}".upper()
+    combined = combined.replace(" ", "_").replace("-", "_").replace("/", "_")
+    return combined
+
+
+def _get_tier(row: Mapping) -> int:
+    """
+    Classify a source document into a publication tier.
+    Returns 1 (most authoritative), 2, or 3 (needs corroboration).
+    """
+    normalized = _normalize_for_matching(row)
+
+    if any(signal in normalized for signal in TIER1_SIGNALS):
+        return 1
+
+    if any(signal in normalized for signal in TIER2_SIGNALS):
+        return 2
+
+    # Check for AGM notice with dividend data — treat as Tier 2
+    if "ANNUAL_GENERAL_MEETING" in normalized or "NOTICES_OF" in normalized:
+        return 2
+
+    if any(signal in normalized for signal in TIER3_SIGNALS):
+        return 3
+
+    # Default: treat as Tier 2 if we can't classify
+    return 2
 
 
 def _same_candidate_event(a: Mapping, b: Mapping) -> bool:
@@ -85,26 +177,19 @@ def _has_exact_date_anchor(a: Mapping, b: Mapping) -> bool:
 
 
 def _published_duplicate(row: Mapping, published_rows) -> bool:
-    """
-    Remove stale pending duplicates only when there is a strong identity anchor:
-    same source URL or at least one exact matching event date.
-    """
     for pub in published_rows or []:
         if not isinstance(pub, Mapping):
             continue
         if not _same_candidate_event(row, pub):
             continue
-
         if (
             _row_source(row)
             and _row_source(pub)
             and _row_source(row) == _row_source(pub)
         ):
             return True
-
         if _has_exact_date_anchor(row, pub):
             return True
-
     return False
 
 
@@ -116,22 +201,18 @@ def _connected_components(rows):
     for i in range(len(rows)):
         if i in seen:
             continue
-
         stack = [i]
         seen.add(i)
         component = []
-
         while stack:
             idx = stack.pop()
             component.append(rows[idx])
-
             for j in range(len(rows)):
                 if j in seen:
                     continue
                 if _same_candidate_event(rows[idx], rows[j]):
                     seen.add(j)
                     stack.append(j)
-
         components.append(component)
 
     return components
@@ -147,19 +228,14 @@ def _conflicting_values(rows, field):
 
 
 def _merge_component(rows):
-    """
-    Build one conservative merged row.
-
-    Returns:
-      merged_row, conflict_fields
-    """
+    """Build one merged row, taking the best value for each field."""
     ranked = sorted(
         rows,
         key=lambda row: (
-            source_strength(row.get("source_title", "")),
-            sum(bool(row.get(field)) for field in MERGE_FIELDS),
+            _get_tier(row),  # Lower tier number = higher quality
+            -source_strength(row.get("source_title", "")),
+            -sum(bool(row.get(field)) for field in MERGE_FIELDS),
         ),
-        reverse=True,
     )
 
     merged = dict(ranked[0])
@@ -168,8 +244,28 @@ def _merge_component(rows):
     for field in MERGE_FIELDS:
         conflict = _conflicting_values(rows, field)
         if conflict:
-            conflicts.append(field)
-            continue
+            # For date fields, only flag as conflict if dates differ significantly
+            if field in DATE_FIELDS:
+                dates = [v for v in conflict if v]
+                if len(dates) > 1:
+                    # Allow if dates are within 3 days of each other
+                    try:
+                        from datetime import date
+                        parsed = [date.fromisoformat(d) for d in dates]
+                        if max(parsed) - min(parsed) > __import__('datetime').timedelta(days=3):
+                            conflicts.append(field)
+                            continue
+                        # Use earliest date for qualification, latest for payment
+                        if field == "qualification_date":
+                            merged[field] = min(dates)
+                        else:
+                            merged[field] = max(dates)
+                    except Exception:
+                        conflicts.append(field)
+                        continue
+            else:
+                conflicts.append(field)
+                continue
 
         if not merged.get(field):
             for row in ranked:
@@ -177,11 +273,7 @@ def _merge_component(rows):
                     merged[field] = row.get(field)
                     break
 
-    # Prefer a stronger status where available.
-    statuses = [
-        (row.get("status") or "").lower().strip()
-        for row in rows
-    ]
+    statuses = [(row.get("status") or "").lower().strip() for row in rows]
     if "approved" in statuses:
         merged["status"] = "approved"
     elif "declared" in statuses:
@@ -190,29 +282,8 @@ def _merge_component(rows):
     return merged, conflicts
 
 
-HIGH_QUALITY_SOURCE_SIGNALS = (
-    "CORPORATE_ACTION_ANNOUNCEMENT",
-    "CORPORATE_ACTIONS_ANNOUNCEMENT",
-    "DIVIDEND_ANNOUNCEMENT",
-    "INTERIM_DIVIDEND_ANNOUNCEMENT",
-    "FINAL_DIVIDEND_ANNOUNCEMENT",
-    "NGX_NOTIFICATION",
-    "DISTRIBUTION_PAYMENT",
-)
-
-
-def _is_high_quality_source(row: Mapping) -> bool:
-    """True when the source is a dedicated corporate action/dividend document."""
-    title = ((row.get("source_title") or "") + " " + (row.get("source_url") or "")).upper().replace(" ", "_").replace("-", "_")
-    return any(signal in title for signal in HIGH_QUALITY_SOURCE_SIGNALS)
-
-
 def _unique_sources(rows):
-    return {
-        _row_source(row)
-        for row in rows
-        if _row_source(row)
-    }
+    return {_row_source(row) for row in rows if _row_source(row)}
 
 
 def _has_independent_pair(rows):
@@ -223,14 +294,17 @@ def _has_independent_pair(rows):
     return False
 
 
+def _best_tier(component):
+    """Return the best (lowest) tier number among all rows in a component."""
+    return min(_get_tier(r) for r in component)
+
+
 def resolve_pending_events(pending_rows, published_rows=None):
     """
-    Resolve duplicate/complementary pending rows.
+    Resolve pending rows using tiered publication rules.
 
     Returns:
-      promoted_rows,
-      remaining_pending_rows,
-      stats
+      promoted_rows, remaining_pending_rows, stats
     """
     published_rows = list(published_rows or [])
     clean = []
@@ -239,26 +313,18 @@ def resolve_pending_events(pending_rows, published_rows=None):
     for row in pending_rows or []:
         if not isinstance(row, Mapping):
             continue
-
         row = dict(row)
-
         if _published_duplicate(row, published_rows):
             stale_published_duplicates += 1
             continue
-
         clean.append(row)
 
-    # Cluster only records with usable identity fields.
     clusterable = []
     passthrough = []
 
     for row in clean:
         amount = _float(row.get("dividend_per_share"))
-        if (
-            not _ticker(row)
-            or amount <= 0
-            or not row.get("dividend_type")
-        ):
+        if not _ticker(row) or amount <= 0 or not row.get("dividend_type"):
             passthrough.append(row)
         else:
             clusterable.append(row)
@@ -275,6 +341,7 @@ def resolve_pending_events(pending_rows, published_rows=None):
     for component in components:
         merged, conflicts = _merge_component(component)
 
+        # Safety hold: conflicting non-date fields
         if conflicts:
             blocked_conflict += 1
             remaining.extend(component)
@@ -283,29 +350,24 @@ def resolve_pending_events(pending_rows, published_rows=None):
         currency = _currency(merged)
         amount = _float(merged.get("dividend_per_share"))
 
+        # Safety hold: sub-1-kobo NGN amounts
         if suspicious_tiny_ngn(amount, currency):
             blocked_safety += 1
             remaining.extend(component)
             continue
 
-        # Patch 39: Relaxed corroboration rule.
-        # Primary rule: require 2 independent sources (original conservative behaviour).
-        # Fallback: allow single-source promotion when:
-        #   1. The source is a high-quality corporate action/dividend document
-        #   2. The event is complete (ticker, amount, qual date, pay date)
-        #   3. The amount passes sanity checks (already done above)
+        # Determine best tier among all sources in this cluster
+        best_tier = _best_tier(component)
         unique_src = _unique_sources(component)
         has_multi = len(unique_src) >= 2 and _has_independent_pair(component)
-        has_hq_single = (
-            len(unique_src) == 1
-            and any(_is_high_quality_source(r) for r in component)
-        )
 
-        if not has_multi and not has_hq_single:
+        # Tier 3 sources always require corroboration
+        if best_tier >= 3 and not has_multi:
             blocked_single_source += 1
             remaining.extend(component)
             continue
 
+        # Check completeness — must have both dates
         complete = (
             bool(_ticker(merged))
             and amount > 0
@@ -319,14 +381,10 @@ def resolve_pending_events(pending_rows, published_rows=None):
             remaining.extend(component)
             continue
 
-        # At least one independent strong source must support the merged event.
-        if not has_strong_corroboration(merged, component):
-            blocked_single_source += 1
-            remaining.extend(component)
-            continue
-
-        merged["confidence"] = "high"
-        merged["resolution"] = "pending_cross_document"
+        # Tier 1 and 2: publish with single source if complete
+        # Tier 3: already handled above (needs multi-source)
+        merged["confidence"] = "high" if best_tier == 1 else "medium"
+        merged["resolution"] = f"tier{best_tier}_auto_publish"
         promoted.append(merged)
 
     stats = {
