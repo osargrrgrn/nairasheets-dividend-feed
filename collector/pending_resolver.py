@@ -383,7 +383,7 @@ def resolve_pending_events(pending_rows, published_rows=None):
 
         # Tier 1 and 2: publish with single source if complete
         # Tier 3: already handled above (needs multi-source)
-         merged["confidence"] = "high" if best_tier == 1 else "medium"
+        merged["confidence"] = "high" if best_tier == 1 else "medium"
         merged["resolution"] = f"tier{best_tier}_auto_publish"
         # Ensure numeric fields are correct types
         try:
