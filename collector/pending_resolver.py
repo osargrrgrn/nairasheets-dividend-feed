@@ -1,5 +1,5 @@
 """
-collector/pending_resolver.py — Patch 32
+collector/pending_resolver.py — Patch 39
 
 Conservative resolver for already-discovered pending dividend evidence.
 
@@ -190,6 +190,23 @@ def _merge_component(rows):
     return merged, conflicts
 
 
+HIGH_QUALITY_SOURCE_SIGNALS = (
+    "CORPORATE_ACTION_ANNOUNCEMENT",
+    "CORPORATE_ACTIONS_ANNOUNCEMENT",
+    "DIVIDEND_ANNOUNCEMENT",
+    "INTERIM_DIVIDEND_ANNOUNCEMENT",
+    "FINAL_DIVIDEND_ANNOUNCEMENT",
+    "NGX_NOTIFICATION",
+    "DISTRIBUTION_PAYMENT",
+)
+
+
+def _is_high_quality_source(row: Mapping) -> bool:
+    """True when the source is a dedicated corporate action/dividend document."""
+    title = (row.get("source_title") or row.get("source_url") or "").upper()
+    return any(signal in title for signal in HIGH_QUALITY_SOURCE_SIGNALS)
+
+
 def _unique_sources(rows):
     return {
         _row_source(row)
@@ -271,11 +288,20 @@ def resolve_pending_events(pending_rows, published_rows=None):
             remaining.extend(component)
             continue
 
-        # Promotion requires multiple independent official PDFs.
-        if (
-            len(_unique_sources(component)) < 2
-            or not _has_independent_pair(component)
-        ):
+        # Patch 39: Relaxed corroboration rule.
+        # Primary rule: require 2 independent sources (original conservative behaviour).
+        # Fallback: allow single-source promotion when:
+        #   1. The source is a high-quality corporate action/dividend document
+        #   2. The event is complete (ticker, amount, qual date, pay date)
+        #   3. The amount passes sanity checks (already done above)
+        unique_src = _unique_sources(component)
+        has_multi = len(unique_src) >= 2 and _has_independent_pair(component)
+        has_hq_single = (
+            len(unique_src) == 1
+            and any(_is_high_quality_source(r) for r in component)
+        )
+
+        if not has_multi and not has_hq_single:
             blocked_single_source += 1
             remaining.extend(component)
             continue
