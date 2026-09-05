@@ -1,40 +1,7 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "ee46aa287fadc313",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-06-19",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2026-07-23",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-09-05",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47598_NASCON_ALLIED_INDUSTRIES_PLC-NASCON_H1_2026_RESULT_STATEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "NASCON ALLIED INDUSTRIES PLC-NASCON H1 2026 RESULT STATEMENT CORPORATE ACTIONS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+    "title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
       "qualification_date_missing",
@@ -47,20 +14,51 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "ede550a89b0e10d7",
-      "ticker": "NASCON",
-      "company": "NASCON ALLIED INDUSTRIES PLC-NASCON H1 2026 RESULT STATEMENT CORPORATE ACTIONS JULY 2026",
+      "event_id": "913261ea3657e103",
+      "ticker": "ACCESSCORP",
+      "company": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "distribution",
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2026-07-28",
+      "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47598_NASCON_ALLIED_INDUSTRIES_PLC-NASCON_H1_2026_RESULT_STATEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "NASCON ALLIED INDUSTRIES PLC-NASCON H1 2026 RESULT STATEMENT CORPORATE ACTIONS JULY 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "source_title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+      "last_verified": "2026-09-05",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47792__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REIT_DISTRIBUTION_PAYMENT_2026_-_INTERIM_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+    "title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REIT DISTRIBUTION PAYMENT 2026 - INTERIM CORPORATE ACTIONS AUGUST 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "988ae63b970f2772",
+      "ticker": "UPDCREIT",
+      "company": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REIT DISTRIBUTION PAYMENT 2026 - INTERIM CORPORATE ACTIONS AUGUST 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "2026-08-28",
+      "payment_date": "2026-09-04",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47792__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REIT_DISTRIBUTION_PAYMENT_2026_-_INTERIM_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "source_title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REIT DISTRIBUTION PAYMENT 2026 - INTERIM CORPORATE ACTIONS AUGUST 2026",
       "last_verified": "2026-09-05",
       "confidence": "review"
     },
