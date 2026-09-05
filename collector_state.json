@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 1,
+  "historical_recheck_cursor": 16,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/114_NAHCO_PLC_-_Notication_of_Share_Dealing_by_Insider_-_-_SL.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/133_Forecast_for_4th_quarter_2026.pdf": "not_dividend",

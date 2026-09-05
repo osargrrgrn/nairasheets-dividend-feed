@@ -1,5 +1,5 @@
 {
-  "method": "patch_18b_option_b_expanded_discovery",
+  "method": "patch_40_ddg_search_discovery",
   "abokiforex": {
     "status": 200,
     "detail_pages_found": 84,
@@ -7,11 +7,20 @@
     "new_pdfs": 0,
     "errors": []
   },
-  "google_search": {
+  "ddg_search": {
     "queries_attempted": 8,
-    "queries_succeeded": 8,
+    "queries_succeeded": 0,
     "new_pdfs": 0,
-    "errors": []
+    "errors": [
+      "HTTP 202 for query: site:doclib.ngxgroup.com dividend announcement 2026",
+      "HTTP 202 for query: site:doclib.ngxgroup.com corporate action announcement 2026 dividend",
+      "HTTP 202 for query: site:doclib.ngxgroup.com interim dividend 2026",
+      "HTTP 202 for query: site:doclib.ngxgroup.com final dividend 2026",
+      "HTTP 202 for query: site:doclib.ngxgroup.com distribution payment 2026",
+      "HTTP 202 for query: site:doclib.ngxgroup.com qualification date 2026",
+      "HTTP 202 for query: site:doclib.ngxgroup.com dividend announcement 2025",
+      "HTTP 202 for query: site:doclib.ngxgroup.com final dividend 2025"
+    ]
   },
   "naijaticker": {
     "companies_targeted": 57,
@@ -25,6 +34,6 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 21.77,
+  "elapsed_seconds": 13.9,
   "results": []
 }
