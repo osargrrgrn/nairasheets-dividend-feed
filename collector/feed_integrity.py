@@ -1,5 +1,5 @@
 """
-collector/feed_integrity.py — Patch 34
+collector/feed_integrity.py — Patch 46
 
 Final publication gate for the buyer-facing dividend feed.
 It validates structural integrity, date logic, currency/amount sanity, and
@@ -36,12 +36,16 @@ def _iso(v):
         return None
 
 def economic_key(row: Mapping) -> tuple:
-    """Identity of the cash distribution, independent of source PDF."""
+    """
+    Identity of the cash distribution, independent of source PDF.
+    Patch 38: dividend_type excluded — same event may be labelled
+    'dividend', 'final', 'interim' across different source documents.
+    Amount rounded to 4dp to absorb minor float variance.
+    """
     return (
         _text(row.get("ticker")).upper(),
         _text(row.get("currency") or "NGN").upper(),
-        round(_float(row.get("dividend_per_share")), 6),
-        _text(row.get("dividend_type")).lower(),
+        round(_float(row.get("dividend_per_share")), 4),
         _text(row.get("qualification_date")),
         _text(row.get("payment_date")),
     )
@@ -79,7 +83,7 @@ def validate_published_feed(rows: Iterable[Mapping]):
         if not pd:
             errors.append(f"{prefix}: missing/invalid payment_date")
         if qd and pd and pd < qd:
-            warnings.append(f"{prefix}: payment_date precedes qualification_date")
+            warnings.append(f"{prefix}: payment_date precedes qualification_date — possible date extraction error")
 
         # Patch 46: reject dates before 2024 — these are historical artifacts
         # from financial statements or OCR errors reading old dates
