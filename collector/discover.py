@@ -448,141 +448,132 @@ def _discover_naija(known, debug, started):
 
     return found
 
-
 # ---------------------------------------------------------------------------
-# Patch 40: Google search discovery
-# Searches Google for site:doclib.ngxgroup.com PDFs directly.
-# Goes further back in time than AbokiForex/NaijaTicker.
-# No API key needed — uses standard Google search.
+# Patch 41: Sequential NGX doclib scanner
 # ---------------------------------------------------------------------------
 
-def _google_queries():
-    """Generate search queries for current and previous year dynamically."""
-    import datetime; year = datetime.date.today().year
-    prev = year - 1
-    return [
-        f"site:doclib.ngxgroup.com dividend announcement {year}",
-        f"site:doclib.ngxgroup.com corporate action announcement {year} dividend",
-        f"site:doclib.ngxgroup.com interim dividend {year}",
-        f"site:doclib.ngxgroup.com final dividend {year}",
-        f"site:doclib.ngxgroup.com distribution payment {year}",
-        f"site:doclib.ngxgroup.com qualification date {year}",
-        f"site:doclib.ngxgroup.com dividend announcement {prev}",
-        f"site:doclib.ngxgroup.com final dividend {prev}",
-    ]
+DOCLIB_DIVIDEND_KEYWORDS = (
+    "DIVIDEND",
+    "DISTRIBUTION",
+    "CORPORATE_ACTION",
+    "CORPORATE_ACTIONS",
+    "NGX_NOTIFICATION",
+    "QUALIFICATION",
+)
+
+DOCLIB_SCAN_BATCH = 50
 
 
+def _get_archive_number_range(known_urls):
+    numbers = []
+    num_re = re.compile(r"/Financial_NewsDocs/(\d{4,6})_", re.I)
+    for url in known_urls:
+        m = num_re.search(url)
+        if m:
+            numbers.append(int(m.group(1)))
+    if not numbers:
+        return 45000, 48000
+    return min(numbers), max(numbers)
 
-DDG_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/128.0.0.0 Safari/537.36"
-    ),
-    "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9",
-}
+
+def _doclib_url_from_aboki_page(session, number, known):
+    detail_url = f"https://abokiforex.app/ngx-stocks/disclosures/{number}"
+    try:
+        r = session.get(detail_url, headers=HEADERS, timeout=(4, 8), allow_redirects=True)
+        if r.status_code == 200:
+            return list(_extract_doclib_pdfs(r.text, detail_url) - known)
+    except Exception:
+        pass
+    return []
 
 
-def _discover_google(known, debug, started):
+def _discover_sequential(known, debug, started):
     """
-    Patch 40: Use DuckDuckGo HTML search to find official NGX doclib dividend PDFs.
-    DuckDuckGo indexes doclib.ngxgroup.com PDFs and is accessible from GitHub runners
-    unlike Google which blocks automated requests from Azure IP ranges.
-    PDFs found here are passed to the existing parser — no third party data
-    ever enters the feed.
+    Patch 41: Scan historical AbokiForex disclosure pages by document number.
+    Finds dividend PDFs too old for the main listing page.
     """
+    import random
     found = []
-    dbg = {
-        "queries_attempted": 0,
-        "queries_succeeded": 0,
-        "new_pdfs": 0,
-        "errors": [],
-    }
+    dbg = {"numbers_scanned": 0, "pages_fetched": 0, "new_pdfs": 0, "errors": []}
 
-    print("[DDG] Starting DuckDuckGo search discovery", flush=True)
+    print("[Sequential] Starting historical doclib scan", flush=True)
+
+    min_num, max_num = _get_archive_number_range(known)
+
+    num_re = re.compile(r"/Financial_NewsDocs/(\d{4,6})_", re.I)
+    known_numbers = set()
+    for url in known:
+        m = num_re.search(url)
+        if m:
+            known_numbers.add(int(m.group(1)))
+
+    scan_start = max(44000, min_num - 500)
+    scan_end = max_num + 100
+
+    candidates = [n for n in range(scan_start, scan_end + 1) if n not in known_numbers]
+
+    print(f"[Sequential] {len(candidates)} document numbers to check", flush=True)
+
+    lower = [n for n in candidates if n < min_num]
+    upper = [n for n in candidates if n >= min_num]
+    batch = lower[:30] + random.sample(upper, min(20, len(upper)))
+    batch = batch[:DOCLIB_SCAN_BATCH]
+
+    dbg["numbers_scanned"] = len(batch)
 
     with requests.Session() as s:
-        for query in _google_queries():
+        for num in batch:
             if _time_remaining(started) <= 10:
                 break
-
-            try:
-                encoded = requests.utils.quote(query)
-                search_url = f"https://html.duckduckgo.com/html/?q={encoded}"
-                dbg["queries_attempted"] += 1
-
-                r = s.get(
-                    search_url,
-                    headers=DDG_HEADERS,
-                    timeout=(8, 15),
-                    allow_redirects=True,
-                )
-
-                if r.status_code != 200:
-                    dbg["errors"].append(f"HTTP {r.status_code} for query: {query}")
+            pdfs = _doclib_url_from_aboki_page(s, num, known)
+            dbg["pages_fetched"] += 1
+            for url in pdfs:
+                title = _title_from_url(url)
+                if _looks_strongly_irrelevant(title, url):
                     continue
-
-                dbg["queries_succeeded"] += 1
-
-                # Extract all doclib PDF URLs from Google search results
-                normalized = html.unescape(r.text).replace("\\/", "/")
-                for url in PDF_URL_RE.findall(normalized):
-                    url = _clean_pdf_url(url)
-                    if not url or url in known:
-                        continue
-                    title = _title_from_url(url)
-                    if _looks_strongly_irrelevant(title, url):
-                        continue
-                    found.append({
-                        "url": url,
-                        "title": title,
-                        "source": "google_search",
-                    })
+                url_upper = url.upper()
+                if any(kw in url_upper for kw in DOCLIB_DIVIDEND_KEYWORDS):
+                    found.append({"url": url, "title": title, "source": "sequential_scan"})
                     known.add(url)
-
-                # Rate limit — be respectful to Google
-                time.sleep(2)
-
-            except Exception as exc:
-                dbg["errors"].append(repr(exc))
+                    print(f"[Sequential] Found: {title[:60]}", flush=True)
 
     dbg["new_pdfs"] = len(found)
-    debug["ddg_search"] = dbg
-    print(f"[DDG] {len(found)} new PDFs found", flush=True)
+    debug["sequential_scan"] = dbg
+    print(f"[Sequential] {len(found)} new dividend PDFs found", flush=True)
     return found
+
 
 def discover_official_pdfs():
     started = time.monotonic()
-    debug = {"method":"patch_40_ddg_search_discovery"}
-    print("NGX dividend PDF discovery — Patch 40 (DDG + AbokiForex + NaijaTicker)", flush=True)
+    debug = {"method": "patch_41_sequential_doclib_scan"}
+    print("NGX dividend PDF discovery — Patch 41 (Sequential + AbokiForex + NaijaTicker)", flush=True)
 
     known = _load_archive()
     print(f"Known archive URLs: {len(known)}", flush=True)
     all_found = []
 
     with requests.Session() as s:
-        all_found.extend(_discover_aboki(s,known,debug,started))
+        all_found.extend(_discover_aboki(s, known, debug, started))
 
-    # Patch 40: Google search discovery — finds PDFs going back years
+    # Patch 41: Sequential historical scanner
     if _time_remaining(started) > 20:
-        all_found.extend(_discover_google(known, debug, started))
+        all_found.extend(_discover_sequential(known, debug, started))
 
     # Option B: always run NaijaTicker for maximum coverage
     if _time_remaining(started) > 15:
-        all_found.extend(_discover_naija(known,debug,started))
+        all_found.extend(_discover_naija(known, debug, started))
     else:
-        debug["naijaticker"] = {"skipped":True}
+        debug["naijaticker"] = {"skipped": True}
 
-    unique = {x["url"]:x for x in all_found if x.get("url")}
+    unique = {x["url"]: x for x in all_found if x.get("url")}
     results = list(unique.values())[:MAX_NEW_PDFS]
 
     debug["total_new_pdfs"] = len(results)
-    debug["elapsed_seconds"] = round(_elapsed(started),2)
+    debug["elapsed_seconds"] = round(_elapsed(started), 2)
     debug["results"] = results
 
     DEBUG_FILE.write_text(
-        json.dumps(debug,indent=2,ensure_ascii=False),
+        json.dumps(debug, indent=2, ensure_ascii=False),
         encoding="utf-8"
     )
 
@@ -590,5 +581,6 @@ def discover_official_pdfs():
     print(f"New official NGX PDFs discovered: {len(results)}", flush=True)
     return results
 
+
 def title_is_strongly_irrelevant(title: str, url: str = "") -> bool:
-    return _looks_strongly_irrelevant(title,url)
+    return _looks_strongly_irrelevant(title, url)
