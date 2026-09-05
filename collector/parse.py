@@ -105,21 +105,36 @@ def classify_document(source_title: str, text: str) -> str:
 
 def normalize_ngx_dividend_text(text: str) -> str:
     """
-    Normalize common NGX/PDF extraction quirks.
-
-    Examples:
-      18k -> 18 kobo
-      18 k -> 18 kobo
-      1 0 kobo -> 10 kobo
+    Normalize common NGX/PDF extraction quirks including OCR artifacts.
+    Patch 44: fix OCR misreading of ordinal superscripts.
     """
     text = text or ""
 
+    # OCR misreads ordinal superscripts: "16th" -> "16" " or "16'" or "16\u2019"
+    # Fix: 16" September -> 16th September
+    text = re.sub(
+        r'(\d{1,2})[\u201c\u201d\u2018\u2019"\']+\s*(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December)',
+        lambda m: m.group(1) + "th " + m.group(2),
+        text,
+        flags=re.I,
+    )
+
+    # Fix: "16" day of" -> "16th day of"
+    text = re.sub(
+        r'(\d{1,2})[\u201c\u201d\u2018\u2019"\']+\s+day\s+of',
+        lambda m: m.group(1) + "th day of",
+        text,
+        flags=re.I,
+    )
+
+    # Fix split digits: "1 0 kobo" -> "10 kobo"
     text = re.sub(
         r"(?i)\b(\d)\s+(\d)\s+(kobo|kobos|k)\b",
         lambda m: f"{m.group(1)}{m.group(2)} {m.group(3)}",
         text,
     )
 
+    # Fix "18k" -> "18 kobo"
     text = re.sub(
         r"(?i)\b(\d+(?:\.\d+)?)\s*k\b",
         r"\1 kobo",
