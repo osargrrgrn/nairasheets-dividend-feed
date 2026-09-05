@@ -66,8 +66,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47404_BETA_GLASS_PLC-BETA_GLASS_PLC_-_MANDATARY_TAKEOVER_OFFER_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "BETA GLASS PLC-BETA GLASS PLC - MANDATARY TAKEOVER OFFER CORPORATE ACTIONS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+    "title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
       "qualification_date_missing",
@@ -80,9 +80,9 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "43a4b661bb612762",
-      "ticker": "BETAGLAS",
-      "company": "BETA GLASS PLC-BETA GLASS PLC - MANDATARY TAKEOVER OFFER CORPORATE ACTIONS JULY 2026",
+      "event_id": "913261ea3657e103",
+      "ticker": "ACCESSCORP",
+      "company": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "distribution",
@@ -92,74 +92,8 @@
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47404_BETA_GLASS_PLC-BETA_GLASS_PLC_-_MANDATARY_TAKEOVER_OFFER_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "BETA GLASS PLC-BETA GLASS PLC - MANDATARY TAKEOVER OFFER CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-09-05",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "a3298c0867567c80",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-06-19",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-09-05",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "ee46aa287fadc313",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-06-19",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2026-07-23",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
+      "source_title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
       "last_verified": "2026-09-05",
       "confidence": "review"
     },
