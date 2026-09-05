@@ -66,6 +66,7 @@ def download_pdf_text(url: str) -> str:
         ocr_text = _ocr_pdf_bytes(pdf_bytes)
         if ocr_text.strip():
             print(f"[OCR] Success — extracted {len(ocr_text.strip())} chars", flush=True)
+            print(f"[OCR] Preview: {ocr_text.strip()[:600]}", flush=True)
             return ocr_text
         else:
             print("[OCR] No text recovered — returning original extraction", flush=True)
