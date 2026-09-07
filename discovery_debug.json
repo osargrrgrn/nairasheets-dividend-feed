@@ -1,9 +1,14 @@
 {
-  "method": "patch_41_sequential_doclib_scan",
+  "method": "patch_43_kobo_terminal_discovery",
   "abokiforex": {
     "status": 200,
     "detail_pages_found": 84,
     "detail_pages_completed": 84,
+    "new_pdfs": 0,
+    "errors": []
+  },
+  "koboterminal": {
+    "status": 200,
     "new_pdfs": 0,
     "errors": []
   },
@@ -25,6 +30,6 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 11.92,
+  "elapsed_seconds": 11.34,
   "results": []
 }
