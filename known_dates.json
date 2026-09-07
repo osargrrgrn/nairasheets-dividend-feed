@@ -1,0 +1,43 @@
+{
+  "_comment": "Known dividend dates from official NGX sources — used to fill gaps when PDF extraction fails",
+  "_sources": ["TRW Stockbrokers 2026 table", "Nairametrics", "NGX corporate filings"],
+  "AIICO": [
+    {"qualification_date": "2026-05-27", "payment_date": "2026-06-05", "dividend_per_share": 0.12, "currency": "NGN", "type": "final"}
+  ],
+  "AFRIPRUD": [
+    {"qualification_date": "2026-07-20", "payment_date": "2026-07-20", "dividend_per_share": 0.10, "currency": "NGN", "type": "interim"}
+  ],
+  "CAP": [
+    {"qualification_date": "2026-06-03", "payment_date": "2026-06-25", "dividend_per_share": 4.00, "currency": "NGN", "type": "final"}
+  ],
+  "CUSTODIAN": [
+    {"qualification_date": "2026-08-17", "payment_date": "2026-09-08", "dividend_per_share": 0.25, "currency": "NGN", "type": "interim"}
+  ],
+  "DANGCEM": [
+    {"qualification_date": "2026-06-17", "payment_date": "2026-07-02", "dividend_per_share": 45.00, "currency": "NGN", "type": "final"}
+  ],
+  "HONYFLOUR": [
+    {"qualification_date": "2026-08-28", "payment_date": "2026-09-17", "dividend_per_share": 0.20, "currency": "NGN", "type": "final"}
+  ],
+  "IKEJAHOTEL": [
+    {"qualification_date": "2026-07-20", "payment_date": "2026-08-14", "dividend_per_share": 0.15, "currency": "NGN", "type": "final"}
+  ],
+  "MBENEFIT": [
+    {"qualification_date": "2026-07-21", "payment_date": "2026-08-14", "dividend_per_share": 0.04, "currency": "NGN", "type": "final"}
+  ],
+  "OKOMUOIL": [
+    {"qualification_date": "2026-04-24", "payment_date": "2026-05-26", "dividend_per_share": 15.00, "currency": "NGN", "type": "final"}
+  ],
+  "TIP": [
+    {"qualification_date": "2026-08-10", "payment_date": "2026-08-31", "dividend_per_share": 0.20, "currency": "NGN", "type": "interim"}
+  ],
+  "TRANSCOHOT": [
+    {"qualification_date": "2026-07-21", "payment_date": "2026-08-14", "dividend_per_share": 0.10, "currency": "NGN", "type": "interim"}
+  ],
+  "UCAP": [
+    {"qualification_date": "2026-07-13", "payment_date": "2026-07-27", "dividend_per_share": 0.30, "currency": "NGN", "type": "interim"}
+  ],
+  "UPL": [
+    {"qualification_date": "2026-08-28", "payment_date": "2026-09-24", "dividend_per_share": 0.18, "currency": "NGN", "type": "final"}
+  ]
+}
