@@ -19,6 +19,7 @@ from .reconcile import (
 from .pending_resolver import resolve_pending_events
 from .feed_integrity import validate_published_feed, quality_report
 ROOT = Path(__file__).resolve().parents[1]
+KNOWN_DATES_FILE = ROOT / "known_dates.json"
 DOCS = ROOT / "docs"
 STATE = ROOT / "collector_state.json"
 ARCHIVE = ROOT / "disclosure_archive.json"
@@ -29,7 +30,7 @@ PENDING_FEED = DOCS / "pending_dividends.csv"
 # New PDFs are always processed immediately. Older unresolved documents are
 # revisited in a rotating batch so parser/ticker improvements can still
 # recover them over successive runs.
-MAX_HISTORICAL_RECHECK = 20  # Patch 45: increased — OCR timeout issues resolved
+MAX_HISTORICAL_RECHECK = 15  # Reduced from 30 — OCR makes per-PDF processing slower
 
 RECHECKABLE_STATES = {
     "pending",
@@ -59,24 +60,9 @@ HIGH_VALUE_TITLE_SIGNALS = (
     "CORPORATE_DISCLOSURE_CORPORATE_ACTIONS",
     "NGX_NOTIFICATION",
     "NGX_DIV_ANNOUNCEMENT",
-    "DISTRIBUTION_PAYMENT",
-    "AGM_RESOLUTION",
-    "AGM_RESOLUTIONS",
-    "RESOLUTIONS_PASSED_AT",
-    "OUTCOME_OF_THE",
-    "NOTICE_OF_DECISION",
 )
 
-# Patch 45: Signals that trigger auto-reprocess of not_dividend URLs
-AUTO_REPROCESS_SIGNALS = (
-    "DIVIDEND",
-    "DISTRIBUTION",
-    "CORPORATE_ACTION",
-    "NGX_NOTIFICATION",
-    "QUALIFICATION",
-)
-
-MAX_PRIORITY_RECHECK = 15  # Patch 45: increased — OCR timeout issues resolved
+MAX_PRIORITY_RECHECK = 10  # Reduced from 20 — OCR makes per-PDF processing slower
 
 
 def is_high_value_unprocessed(item, processed):
@@ -676,6 +662,55 @@ def select_documents_for_run(archive, current_discovered, processed, state):
     return selected, len(historical)
 
 
+
+def _apply_known_dates(pending_rows):
+    """
+    Patch 47: Fill in missing qualification/payment dates for pending events
+    using a curated known_dates.json file sourced from official NGX disclosures.
+    Only fills gaps — never overwrites existing extracted dates.
+    """
+    if not KNOWN_DATES_FILE.exists():
+        return pending_rows
+
+    try:
+        known = json.loads(KNOWN_DATES_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return pending_rows
+
+    filled = 0
+    for row in pending_rows:
+        ticker = (row.get("ticker") or "").upper().strip()
+        if ticker not in known:
+            continue
+
+        dps = float(row.get("dividend_per_share") or 0)
+        currency = (row.get("currency") or "NGN").upper()
+
+        for entry in known[ticker]:
+            # Match on amount and currency
+            if abs(float(entry.get("dividend_per_share", 0)) - dps) > 0.001:
+                continue
+            if entry.get("currency", "NGN").upper() != currency:
+                continue
+
+            # Fill missing dates only
+            changed = False
+            if not row.get("qualification_date") and entry.get("qualification_date"):
+                row["qualification_date"] = entry["qualification_date"]
+                changed = True
+            if not row.get("payment_date") and entry.get("payment_date"):
+                row["payment_date"] = entry["payment_date"]
+                changed = True
+            if changed:
+                filled += 1
+            break
+
+    if filled:
+        print(f"[KnownDates] Filled missing dates for {filled} pending events", flush=True)
+
+    return pending_rows
+
+
 def main():
     state = load_state()
     processed = state.setdefault("processed", {})
@@ -789,16 +824,7 @@ def main():
         if processed.get(url) in STABLE_SKIP_STATES and url not in {
             item.get("url", "") for item in current_discovered
         }:
-            # Patch 45: auto-reprocess not_dividend URLs with dividend signals
-            if processed.get(url) == "not_dividend":
-                url_upper = url.upper()
-                if any(sig in url_upper for sig in AUTO_REPROCESS_SIGNALS):
-                    processed[url] = ""  # reset for reprocessing
-                    # fall through to reprocess
-                else:
-                    continue
-            else:
-                continue
+            continue
 
         try:
             text = compact(download_pdf_text(url))
@@ -942,10 +968,11 @@ def main():
         existing_pending + pending + accepted + prior_review_evidence
     )
 
-    # Patch 45: AGM demotion removed — Tier 2 publication rules handle this
-    safe_existing = existing_published
-    demoted_agm_rows = []
-    agm_rows_demoted = 0
+    safe_existing, demoted_agm_rows = quarantine_uncorroborated_agm(
+        existing_published,
+        evidence_for_existing,
+    )
+    agm_rows_demoted = len(demoted_agm_rows)
 
     safe_after_tiny = []
     demoted_tiny_rows = []
