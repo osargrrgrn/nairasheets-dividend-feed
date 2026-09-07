@@ -26,6 +26,7 @@ HEADERS = {
 
 ABOKIFOREX_DISCLOSURES = "https://abokiforex.app/ngx-stocks/disclosures"
 NAIJATICKER_BASE = "https://naijaticker.com/stocks/"
+KOBOTERMINAL_DISCLOSURES = "https://koboterminal.com/disclosures"
 
 CONNECT_TIMEOUT = 5
 READ_TIMEOUT = 10
@@ -605,12 +606,62 @@ def _discover_sequential(known, debug, started):
     return found
 
 
+# ---------------------------------------------------------------------------
+# Patch 43: Kobo Terminal disclosure discovery
+# Kobo Terminal (formerly NGX Pulse) publishes NGX corporate disclosures
+# including dividend announcements with links to official doclib PDFs.
+# This provides a second independent discovery source alongside AbokiForex.
+# ---------------------------------------------------------------------------
+
+def _discover_kobo(session, known, debug, started):
+    """
+    Patch 43: Discover new NGX dividend PDFs from Kobo Terminal disclosures.
+    Kobo Terminal shows recent NGX filings with links to official doclib PDFs.
+    """
+    found = []
+    dbg = {"status": None, "new_pdfs": 0, "errors": []}
+
+    print("[KoboTerminal] Starting disclosure discovery", flush=True)
+
+    try:
+        r = session.get(
+            KOBOTERMINAL_DISCLOSURES,
+            headers=HEADERS,
+            timeout=(8, 15),
+            allow_redirects=True,
+        )
+        dbg["status"] = r.status_code
+
+        if r.status_code != 200:
+            print(f"[KoboTerminal] HTTP {r.status_code} — skipping", flush=True)
+            debug["koboterminal"] = dbg
+            return found
+
+        for u in sorted(_extract_doclib_pdfs(r.text, KOBOTERMINAL_DISCLOSURES)):
+            if u in known:
+                continue
+            t = _title_from_url(u)
+            if _looks_strongly_irrelevant(t, u):
+                continue
+            found.append({"url": u, "title": t, "source": "koboterminal"})
+            known.add(u)
+
+    except Exception as exc:
+        dbg["errors"].append(repr(exc))
+        print(f"[KoboTerminal] Error: {exc}", flush=True)
+
+    dbg["new_pdfs"] = len(found)
+    debug["koboterminal"] = dbg
+    print(f"[KoboTerminal] {len(found)} new PDFs found", flush=True)
+    return found
+
+
 def discover_official_pdfs():
     started = time.monotonic()
-    debug = {"method": "patch_41_sequential_doclib_scan"}
+    debug = {"method": "patch_43_kobo_terminal_discovery"}
     print(
-        "NGX dividend PDF discovery — Patch 41 "
-        "(Sequential + AbokiForex + NaijaTicker)",
+        "NGX dividend PDF discovery — Patch 43 "
+        "(AbokiForex + KoboTerminal + Sequential + NaijaTicker)",
         flush=True,
     )
 
@@ -621,6 +672,10 @@ def discover_official_pdfs():
     # Primary: AbokiForex listing + detail pages (recent documents)
     with requests.Session() as s:
         all_found.extend(_discover_aboki(s, known, debug, started))
+
+    # Patch 43: Kobo Terminal disclosures — second independent source
+    if _time_remaining(started) > 30:
+        all_found.extend(_discover_kobo(s, known, debug, started))
 
     # Patch 41: Sequential scanner for historical gap documents
     if _time_remaining(started) > 25:
