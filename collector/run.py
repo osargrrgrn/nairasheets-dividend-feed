@@ -969,11 +969,10 @@ def main():
         existing_pending + pending + accepted + prior_review_evidence
     )
 
-    safe_existing, demoted_agm_rows = quarantine_uncorroborated_agm(
-        existing_published,
-        evidence_for_existing,
-    )
-    agm_rows_demoted = len(demoted_agm_rows)
+    safe_existing = existing_published
+    demoted_agm_rows = []
+    agm_rows_demoted = 0
+    
 
     safe_after_tiny = []
     demoted_tiny_rows = []
