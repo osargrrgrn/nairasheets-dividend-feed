@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 83,
     "detail_pages_completed": 83,
-    "new_pdfs": 5,
+    "new_pdfs": 0,
     "errors": []
   },
   "trw_discovery": {
@@ -21,41 +21,15 @@
   "naijaticker": {
     "companies_targeted": 65,
     "companies_completed": 65,
-    "pdfs_seen": 530,
+    "pdfs_seen": 529,
     "already_known": 289,
-    "filtered_before_parser": 241,
+    "filtered_before_parser": 240,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 5,
-  "elapsed_seconds": 19.57,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47890_LEARN_AFRICA_PLC-CHANGE_IN_BOARD_COMPOSITION_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "LEARN AFRICA PLC-CHANGE IN BOARD COMPOSITION CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47891_PRESCO_PLC-UNCLAIMED_DIVIDENDS_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "PRESCO PLC-UNCLAIMED DIVIDENDS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/50_Notification_of_Insider_Dealing_-_ISMAIL_BALA_MOHAMMED_-_NGX_Approved_-_Signed.pdf",
-      "title": "Notification of Insider Dealing - ISMAIL BALA MOHAMMED - NGX Approved - Signed",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/50_Notification_of_Insider_Dealing_-_OMODE_EMMANUEL_OLADIMEJI_-_NGX_Approved_-_Signed.pdf",
-      "title": "Notification of Insider Dealing - OMODE EMMANUEL OLADIMEJI - NGX Approved - Signed",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/88_Projection.pdf",
-      "title": "Projection",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 16.58,
+  "results": []
 }
