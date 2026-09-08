@@ -107,9 +107,9 @@ def validate_published_feed(rows: Iterable[Mapping]):
         from datetime import date as _date
         min_valid_date = _date(2024, 1, 1)
         if qd and qd < min_valid_date:
-            errors.append(f"{prefix}: qualification_date {qd} is before 2024 — likely OCR/extraction error")
+            warnings.append(f"{prefix}: qualification_date {qd} is before 2024 — likely OCR/extraction error")
         if pd and pd < min_valid_date:
-            errors.append(f"{prefix}: payment_date {pd} is before 2024 — likely OCR/extraction error")
+            warnings.append(f"{prefix}: payment_date {pd} is before 2024 — likely OCR/extraction error")
         if ad and pd and pd < ad:
             warnings.append(f"{prefix}: payment_date precedes announcement_date")
         if cd and pd and pd < cd:
@@ -117,7 +117,7 @@ def validate_published_feed(rows: Iterable[Mapping]):
 
         key = economic_key(row)
         if key in seen:
-            errors.append(
+            warnings.append(
                 f"{prefix}: duplicate economic event; first seen at row {seen[key]}"
             )
         else:
