@@ -9,11 +9,12 @@ from .tickers import resolve_ticker
 from .validate import validate_event
 from .publish import read_csv, merge_events, write_csv, write_html
 from .backfill import discover_2026_backfill
+from .trw_scraper import update_known_dates_from_trw
 from .reconcile import (
     reconcile_evidence,
+    quarantine_uncorroborated_agm,
     suspicious_tiny_ngn,
     has_strong_corroboration,
-    fill_missing_dates_from_archive,
 )
 
 from .pending_resolver import resolve_pending_events
@@ -824,16 +825,7 @@ def main():
         if processed.get(url) in STABLE_SKIP_STATES and url not in {
             item.get("url", "") for item in current_discovered
         }:
-            # Patch 45: auto-reprocess not_dividend URLs with dividend signals
-            if processed.get(url) == "not_dividend":
-                url_upper = url.upper()
-                if any(sig in url_upper for sig in AUTO_REPROCESS_SIGNALS):
-                    processed[url] = ""  # reset for reprocessing
-                    # fall through to reprocess
-                else:
-                    continue
-            else:
-                continue
+            continue
 
         try:
             text = compact(download_pdf_text(url))
@@ -977,10 +969,11 @@ def main():
         existing_pending + pending + accepted + prior_review_evidence
     )
 
-    # Patch 45: AGM demotion removed — tiered publication rules handle this
-    safe_existing = existing_published
-    demoted_agm_rows = []
-    agm_rows_demoted = 0
+    safe_existing, demoted_agm_rows = quarantine_uncorroborated_agm(
+        existing_published,
+        evidence_for_existing,
+    )
+    agm_rows_demoted = len(demoted_agm_rows)
 
     safe_after_tiny = []
     demoted_tiny_rows = []
@@ -1011,20 +1004,23 @@ def main():
     # the archive. Promotion requires independent official PDFs, matching
     # ticker/amount/type, non-conflicting fields, complete qualification and
     # payment dates, strong-source corroboration, and all existing safety rules.
-    # Patch 48: self-healing — fill missing dates from all archive evidence
-    all_pending_combined = existing_pending + pending
-    all_pending_combined, healed_count = fill_missing_dates_from_archive(
-        all_pending_combined, evidence_for_existing
+    # Patch 49: update known_dates.json from TRW dividend table (runs once per pipeline execution)
+    update_known_dates_from_trw(debug)
+
+    # Patch 48: self-healing — fill missing dates from archive evidence
+    all_pending_before_heal = existing_pending + pending
+    all_pending_before_heal, healed_count = fill_missing_dates_from_archive(
+        all_pending_before_heal, evidence_for_existing
     )
     if healed_count:
         print(f"[SelfHeal] Filled missing dates for {healed_count} pending events", flush=True)
 
     # Patch 47: fill known dates from curated known_dates.json
-    all_pending_combined = _apply_known_dates(all_pending_combined)
+    all_pending_healed = _apply_known_dates(all_pending_before_heal)
 
     resolved_pending, unresolved_pending, pending_resolution_stats = (
         resolve_pending_events(
-            all_pending_combined,
+            all_pending_healed,
             published_rows=safe_after_tiny + accepted,
         )
     )
