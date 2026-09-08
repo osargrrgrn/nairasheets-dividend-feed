@@ -13,6 +13,7 @@ from .reconcile import (
     reconcile_evidence,
     suspicious_tiny_ngn,
     has_strong_corroboration,
+    fill_missing_dates_from_archive,
 )
 
 from .pending_resolver import resolve_pending_events
@@ -1010,9 +1011,20 @@ def main():
     # the archive. Promotion requires independent official PDFs, matching
     # ticker/amount/type, non-conflicting fields, complete qualification and
     # payment dates, strong-source corroboration, and all existing safety rules.
+    # Patch 48: self-healing — fill missing dates from all archive evidence
+    all_pending_combined = existing_pending + pending
+    all_pending_combined, healed_count = fill_missing_dates_from_archive(
+        all_pending_combined, list(all_evidence.values())
+    )
+    if healed_count:
+        print(f"[SelfHeal] Filled missing dates for {healed_count} pending events", flush=True)
+
+    # Patch 47: fill known dates from curated known_dates.json
+    all_pending_combined = _apply_known_dates(all_pending_combined)
+
     resolved_pending, unresolved_pending, pending_resolution_stats = (
         resolve_pending_events(
-            existing_pending + pending,
+            all_pending_combined,
             published_rows=safe_after_tiny + accepted,
         )
     )
