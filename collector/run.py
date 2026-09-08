@@ -1005,7 +1005,8 @@ def main():
     # ticker/amount/type, non-conflicting fields, complete qualification and
     # payment dates, strong-source corroboration, and all existing safety rules.
     # Patch 49: update known_dates.json from TRW dividend table (runs once per pipeline execution)
-    update_known_dates_from_trw(debug)
+    _trw_debug = {}
+    update_known_dates_from_trw(_trw_debug)
 
     # Patch 48: self-healing — fill missing dates from archive evidence
     all_pending_before_heal = existing_pending + pending
