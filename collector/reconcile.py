@@ -432,3 +432,91 @@ def quarantine_uncorroborated_agm(published_rows, evidence_rows):
             demoted.append(demoted_row)
 
     return safe, demoted
+
+
+def fill_missing_dates_from_archive(pending_rows, all_evidence_rows):
+    """
+    Patch 48: Self-healing date reconciliation.
+
+    Scans ALL evidence rows in the archive for each incomplete pending event
+    and fills in any missing qualification or payment dates found in other
+    documents for the same ticker and amount.
+
+    This runs after every parse cycle so no event stays permanently stuck
+    due to dates being split across multiple documents.
+
+    Rules:
+    - Only fills missing fields — never overwrites extracted dates
+    - Amount must match within tolerance
+    - Date must be plausible (after 2024-01-01)
+    - Source must not be a financial statement or exchange rate notice
+    - Both rows must have the same ticker
+    """
+    from datetime import date as _date
+    MIN_DATE = _date(2024, 1, 1)
+
+    filled_count = 0
+    evidence_list = list(all_evidence_rows or [])
+
+    for row in pending_rows:
+        ticker = (row.get("ticker") or "").upper().strip()
+        if not ticker:
+            continue
+
+        amount = _float(row.get("dividend_per_share") or 0)
+        if amount <= 0:
+            continue
+
+        # Only process incomplete rows
+        missing_qual = not row.get("qualification_date")
+        missing_pay = not row.get("payment_date")
+        if not missing_qual and not missing_pay:
+            continue
+
+        # Search all evidence for same ticker and matching amount
+        for other in evidence_list:
+            if not isinstance(other, Mapping):
+                continue
+
+            other_ticker = (other.get("ticker") or "").upper().strip()
+            if other_ticker != ticker:
+                continue
+
+            # Skip weak sources
+            sk = source_kind(other.get("source_title", ""))
+            if sk in ("financial_statement", "exchange_rate"):
+                continue
+
+            other_amount = _float(other.get("dividend_per_share") or 0)
+            if other_amount <= 0:
+                continue
+
+            if not amounts_match(amount, other_amount):
+                continue
+
+            changed = False
+
+            # Fill missing qualification date
+            if missing_qual and other.get("qualification_date"):
+                d = _iso_date(other["qualification_date"])
+                if d and d >= MIN_DATE:
+                    row["qualification_date"] = other["qualification_date"]
+                    missing_qual = False
+                    changed = True
+
+            # Fill missing payment date
+            if missing_pay and other.get("payment_date"):
+                d = _iso_date(other["payment_date"])
+                if d and d >= MIN_DATE:
+                    row["payment_date"] = other["payment_date"]
+                    missing_pay = False
+                    changed = True
+
+            if changed:
+                filled_count += 1
+
+            # Stop searching if both dates are now filled
+            if not missing_qual and not missing_pay:
+                break
+
+    return pending_rows, filled_count
