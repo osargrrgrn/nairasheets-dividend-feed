@@ -11,7 +11,6 @@ from .publish import read_csv, merge_events, write_csv, write_html
 from .backfill import discover_2026_backfill
 from .reconcile import (
     reconcile_evidence,
-    quarantine_uncorroborated_agm,
     suspicious_tiny_ngn,
     has_strong_corroboration,
 )
@@ -824,7 +823,16 @@ def main():
         if processed.get(url) in STABLE_SKIP_STATES and url not in {
             item.get("url", "") for item in current_discovered
         }:
-            continue
+            # Patch 45: auto-reprocess not_dividend URLs with dividend signals
+            if processed.get(url) == "not_dividend":
+                url_upper = url.upper()
+                if any(sig in url_upper for sig in AUTO_REPROCESS_SIGNALS):
+                    processed[url] = ""  # reset for reprocessing
+                    # fall through to reprocess
+                else:
+                    continue
+            else:
+                continue
 
         try:
             text = compact(download_pdf_text(url))
@@ -968,11 +976,10 @@ def main():
         existing_pending + pending + accepted + prior_review_evidence
     )
 
-    safe_existing, demoted_agm_rows = quarantine_uncorroborated_agm(
-        existing_published,
-        evidence_for_existing,
-    )
-    agm_rows_demoted = len(demoted_agm_rows)
+    # Patch 45: AGM demotion removed — tiered publication rules handle this
+    safe_existing = existing_published
+    demoted_agm_rows = []
+    agm_rows_demoted = 0
 
     safe_after_tiny = []
     demoted_tiny_rows = []
