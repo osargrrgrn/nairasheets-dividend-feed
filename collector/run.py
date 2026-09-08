@@ -1014,7 +1014,7 @@ def main():
     # Patch 48: self-healing — fill missing dates from all archive evidence
     all_pending_combined = existing_pending + pending
     all_pending_combined, healed_count = fill_missing_dates_from_archive(
-        all_pending_combined, list(all_evidence.values())
+        all_pending_combined, evidence_for_existing
     )
     if healed_count:
         print(f"[SelfHeal] Filled missing dates for {healed_count} pending events", flush=True)
