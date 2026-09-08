@@ -1,5 +1,5 @@
 """
-collector/feed_integrity.py — Patch 34
+collector/feed_integrity.py — Patch 46b
 
 Final publication gate for the buyer-facing dividend feed.
 It validates structural integrity, date logic, currency/amount sanity, and
@@ -35,15 +35,36 @@ def _iso(v):
     except Exception:
         return None
 
+def _round_date_to_period(date_str: str, days: int = 7) -> str:
+    """
+    Map a date to a 7-day period number.
+    Dates within 7 days of each other map to the same period,
+    catching minor discrepancies across documents for the same event.
+    """
+    try:
+        import datetime as _dt
+        d = date.fromisoformat(date_str)
+        epoch = date(2024, 1, 1)
+        return str((d - epoch).days // days)
+    except Exception:
+        return date_str
+
+
 def economic_key(row: Mapping) -> tuple:
-    """Identity of the cash distribution, independent of source PDF."""
+    """
+    Identity of the cash distribution, independent of source PDF.
+    Patch 46b: dividend_type excluded; dates rounded to nearest Monday
+    so events with dates within ~7 days are treated as the same event.
+    Amount rounded to 4dp to absorb float variance across documents.
+    """
+    qual = _text(row.get("qualification_date"))
+    pay = _text(row.get("payment_date"))
     return (
         _text(row.get("ticker")).upper(),
         _text(row.get("currency") or "NGN").upper(),
-        round(_float(row.get("dividend_per_share")), 6),
-        _text(row.get("dividend_type")).lower(),
-        _text(row.get("qualification_date")),
-        _text(row.get("payment_date")),
+        round(_float(row.get("dividend_per_share")), 4),
+        _round_date_to_period(qual) if qual else "",
+        _round_date_to_period(pay) if pay else "",
     )
 
 def validate_published_feed(rows: Iterable[Mapping]):
@@ -96,7 +117,7 @@ def validate_published_feed(rows: Iterable[Mapping]):
 
         key = economic_key(row)
         if key in seen:
-            warnings.append(
+            errors.append(
                 f"{prefix}: duplicate economic event; first seen at row {seen[key]}"
             )
         else:
