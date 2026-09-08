@@ -1,5 +1,5 @@
 {
-  "method": "patch_43_kobo_terminal_discovery",
+  "method": "patch_49_trw_scraper_discovery",
   "abokiforex": {
     "status": 200,
     "detail_pages_found": 84,
@@ -7,9 +7,9 @@
     "new_pdfs": 0,
     "errors": []
   },
-  "koboterminal": {
-    "status": 200,
-    "new_pdfs": 0,
+  "trw_discovery": {
+    "posts_checked": 6,
+    "new_pdfs": 73,
     "errors": []
   },
   "sequential_scan": {
@@ -22,14 +22,380 @@
     "companies_targeted": 65,
     "companies_completed": 65,
     "pdfs_seen": 529,
-    "already_known": 261,
-    "filtered_before_parser": 268,
+    "already_known": 285,
+    "filtered_before_parser": 244,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 11.18,
-  "results": []
+  "total_new_pdfs": 73,
+  "elapsed_seconds": 19.15,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/170_Insider_Dealing_Notification_-_Festus_Izevbizua.pdf",
+      "title": "Insider Dealing Notification - Festus Izevbizua",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47611_ACADEMY_PRESS_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "ACADEMY PRESS PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47612_STERLING_FINANCIAL_HOLDINGS_COMPANY_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "STERLING FINANCIAL HOLDINGS COMPANY PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47610_WEMA_BANK_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "WEMA BANK PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47622_CORNERSTONE_INSURANCE_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "CORNERSTONE INSURANCE PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/206_Insider_Dealing_Notification_-_Patricia_Etido-Akpan.pdf",
+      "title": "Insider Dealing Notification - Patricia Etido-Akpan",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/206_Insider_Dealing_Notification_-_Atinuke_Kolade.pdf",
+      "title": "Insider Dealing Notification - Atinuke Kolade",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/170_Insider_Dealing_Notification_-_Atinuke_Kolade.pdf",
+      "title": "Insider Dealing Notification - Atinuke Kolade",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47601_PRESCO_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "PRESCO PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47599_STACO_INSURANCE_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2021_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "STACO INSURANCE PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2021 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/170_Insider_Dealing_Notification_-_Chinweugo_Nwafor.pdf",
+      "title": "Insider Dealing Notification - Chinweugo Nwafor",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47625_UAC__OF_NIGERIA_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "UAC OF NIGERIA PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47627_DANGOTE_CEMENT_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "DANGOTE CEMENT PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/250_Insider_Dealing_Notification_-_Christopher_Ezeafulukwe.pdf",
+      "title": "Insider Dealing Notification - Christopher Ezeafulukwe",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47620_RED_STAR_EXPRESS_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "RED STAR EXPRESS PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2027 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/250_Insider_Dealing_Notification_-_Atinuke_Kolade.pdf",
+      "title": "Insider Dealing Notification - Atinuke Kolade",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47591_MAY_AND_BAKER-NOTICE_OF_OUTCOME_OF_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "MAY AND BAKER-NOTICE OF OUTCOME OF BOARD MEETING CORPORATE ACTIONS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/250_Insider_Dealing_Notification_-_Charles_Oniha.pdf",
+      "title": "Insider Dealing Notification - Charles Oniha",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47609_ROYAL_EXCHANGE_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "ROYAL EXCHANGE PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47614_UNIVERSITY_PRESS_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "UNIVERSITY PRESS PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2027 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/250_Insider_Dealing_Notification_-_Festus_Izevbizua.pdf",
+      "title": "Insider Dealing Notification - Festus Izevbizua",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/170_Insider_Dealing_Notification_-_Owen_Omogiafo_OON.pdf",
+      "title": "Insider Dealing Notification - Owen Omogiafo OON",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47623_STACO_INSURANCE_PLC-COMPANY_UPDATE_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "title": "STACO INSURANCE PLC-COMPANY UPDATE CORPORATE ACTIONS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47616_MECURE_INDUSTRIES_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "MECURE INDUSTRIES PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47607_DAAR_COMMUNICATIONS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "DAAR COMMUNICATIONS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47619_MAY_AND_BAKER-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "MAY AND BAKER- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47600_HALDANE_MCCALL_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "HALDANE MCCALL PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47624_PRESTIGE_ASSURANCE_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "PRESTIGE ASSURANCE PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/170_Insider_Dealing_Notification_-_Adeshola_Shittu.pdf",
+      "title": "Insider Dealing Notification - Adeshola Shittu",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47621_JULIUS_BERGER_NIGERIA_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JULY_2026.pdf",
+      "title": "JULIUS BERGER NIGERIA PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JULY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.01.06.2026_(TRANS_2).pdf",
+      "title": "NOTIFICATION OF DIRECTOR DEALING EMMANUEL OMUOJINE.01.06.2026 (TRANS 2)",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/215_Notification_of_Share_Dealing_by_Insider-_Johnson_Oyewo_.pdf",
+      "title": "Notification of Share Dealing by Insider- Johnson Oyewo",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/98_Notification_of_Insider_Share_Dealing_-_Learn_Africa_Plc_(C.I_Ojeile).pdf",
+      "title": "Notification of Insider Share Dealing - Learn Africa Plc (C.I Ojeile)",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Directors_Share_Trading_Mr_Kennedy_Okwudili.pdf",
+      "title": "ZBPLC Directors Share Trading Mr Kennedy Okwudili",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/114_NAHCO_PLC_-_Notification_of_Share_Dealing_by_Insider_SL.pdf",
+      "title": "NAHCO PLC - Notification of Share Dealing by Insider SL",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47088_MECURE_INDUSTRIES_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JUNE_2026.pdf",
+      "title": "MECURE INDUSTRIES PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JUNE 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.01.06.2026_(TRANS_1).pdf",
+      "title": "NOTIFICATION OF DIRECTOR DEALING EMMANUEL OMUOJINE.01.06.2026 (TRANS 1)",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/215_Notification_of_Share_Dealing_by_Insider-_Olayinka_Jimoh.pdf",
+      "title": "Notification of Share Dealing by Insider- Olayinka Jimoh",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/98_Notification_of_Insider_Share_Dealing_-_Learn_Africa_Plc_(_Anthony_Ojeile).pdf",
+      "title": "Notification of Insider Share Dealing - Learn Africa Plc ( Anthony Ojeile)",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47101_LEGEND_INTERNET_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_JUNE_2026.pdf",
+      "title": "LEGEND INTERNET PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS JUNE 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/114_NAHCO_PLC_-_Notification_of_Share_Dealing_by_Insider--OPO.pdf",
+      "title": "NAHCO PLC - Notification of Share Dealing by Insider--OPO",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47080_JAIZ_BANK_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JUNE_2026.pdf",
+      "title": "JAIZ BANK PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JUNE 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.01.06.2026_(TRANS_4).pdf",
+      "title": "NOTIFICATION OF DIRECTOR DEALING EMMANUEL OMUOJINE.01.06.2026 (TRANS 4)",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.01.06.2026_(TRANS_3).pdf",
+      "title": "NOTIFICATION OF DIRECTOR DEALING EMMANUEL OMUOJINE.01.06.2026 (TRANS 3)",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47086_HONEYWELL_FLOUR_MILL_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_MAY_2026.pdf",
+      "title": "HONEYWELL FLOUR MILL PLC- QUARTER 5 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS MAY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ARADEL_NOTICE_OF_DELAY_IN_FILING_AFS.pdf",
+      "title": "ARADEL NOTICE OF DELAY IN FILING AFS",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/114_NAHCO_PLC_-_Notification_of_Share_Dealing_by_Insider---AGF.pdf",
+      "title": "NAHCO PLC - Notification of Share Dealing by Insider---AGF",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47069_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_MAY_2026.pdf",
+      "title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) MAY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47073_OANDO_PLC-OANDO_PRESS_RELEASE__CORPORATE_ACTIONS_MAY_2026.pdf",
+      "title": "OANDO PLC-OANDO PRESS RELEASE CORPORATE ACTIONS MAY 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46792_FIDSON_HEALTHCARE_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "FIDSON HEALTHCARE PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46810_VFD_GROUP_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "VFD GROUP PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_PLC_-_Retirement_of_Mrs_Chizoma_Okoli.pdf",
+      "title": "ACCESS HOLDINGS PLC - Retirement of Mrs Chizoma Okoli",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46801_UAC__OF_NIGERIA_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "UAC OF NIGERIA PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46793_INFINITY_TRUST_MORTGAGE_BANK_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "INFINITY TRUST MORTGAGE BANK PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46788_OKOMU_OIL_PALM_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2026.pdf",
+      "title": "OKOMU OIL PALM PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46807_CUSTODIAN_INVESTMENT_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "CUSTODIAN INVESTMENT PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46808_NASCON_ALLIED_INDUSTRIES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "NASCON ALLIED INDUSTRIES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46797_NPF_MICROFINANCE_BANK_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "NPF MICROFINANCE BANK PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46795_TRANSCORP_POWER_PLC-TRANSCORP_POWER_PLC_-_RESOLUTIONS_OF_THE_13TH_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "TRANSCORP POWER PLC-TRANSCORP POWER PLC - RESOLUTIONS OF THE 13TH ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46789_SFS_REAL_ESTATE_INVESTMENT_TRUST-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "SFS REAL ESTATE INVESTMENT TRUST- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46799_VITAFOAM_NIG_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "VITAFOAM NIG PLC.- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_NIGERIA_-_STRUCTURAL_SEPARATION_FAQs.pdf",
+      "title": "MTN NIGERIA - STRUCTURAL SEPARATION FAQs",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46784_SUNU_ASSURANCES_NIGERIA_PLC-BOARD_MEETING_RESOLUTION_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "SUNU ASSURANCES NIGERIA PLC-BOARD MEETING RESOLUTION CORPORATE ACTIONS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46800_HALDANE_MCCALL_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "HALDANE MCCALL PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46804_LIVESTOCK_FEEDS_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "LIVESTOCK FEEDS PLC.- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46806_GUARANTY_TRUST_HOLDING_COMPANY_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "GUARANTY TRUST HOLDING COMPANY PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46798_BUA_CEMENT_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2026.pdf",
+      "title": "BUA CEMENT PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46782_AVA_INFRASTRUCTURE_FUND-AVA_INFRASTRUCTURE_FUND_QUARTERLY_REPORT_-_Q1_2026_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "AVA INFRASTRUCTURE FUND-AVA INFRASTRUCTURE FUND QUARTERLY REPORT - Q1 2026 CORPORATE ACTIONS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46809_OMATEK_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "title": "OMATEK VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46802_UAC__OF_NIGERIA_PLC.-EARNINGS_RELEASE_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "UAC OF NIGERIA PLC.-EARNINGS RELEASE CORPORATE ACTIONS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46796_ECOBANK_TRANSNATIONAL_INCORPORATED-ECOBANK_1Q_2026_EARNINGS_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "ECOBANK TRANSNATIONAL INCORPORATED-ECOBANK 1Q 2026 EARNINGS CORPORATE ACTIONS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46787_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-Q1_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "CHEMICAL AND ALLIED PRODUCTS PLC-Q1 2026 EARNINGS RELEASE CORPORATE ACTIONS APRIL 2026",
+      "source": "trw_disclosure"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46024_INFINITY_TRUST_MORTGAGE_BANK_PLC-ITMB_2026_FEB_BOARD_MEETING_RESOLUTIONS_EXTRACT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "INFINITY TRUST MORTGAGE BANK PLC-ITMB 2026 FEB BOARD MEETING RESOLUTIONS EXTRACT CORPORATE ACTIONS APRIL 2026",
+      "source": "trw_disclosure"
+    }
+  ]
 }
