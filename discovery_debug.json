@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 83,
     "detail_pages_completed": 83,
-    "new_pdfs": 5,
+    "new_pdfs": 0,
     "errors": []
   },
   "trw_discovery": {
@@ -21,43 +21,15 @@
   "naijaticker": {
     "companies_targeted": 65,
     "companies_completed": 65,
-    "pdfs_seen": 525,
-    "already_known": 288,
-    "filtered_before_parser": 237,
+    "pdfs_seen": 528,
+    "already_known": 290,
+    "filtered_before_parser": 238,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 5,
-  "elapsed_seconds": 27.86,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf",
-      "title": "Q4 2026 EARNINGS FORECAST- NGX",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/119_FORECAST_FOR_THE_PERIOD_ENDING_31st_DEC_2026.pdf",
-      "title": "FORECAST FOR THE PERIOD ENDING 31st DEC 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/249_INSIDER_DEALING_--_SEPHINE_EDEFE_NIG_LTD.pdf",
-      "title": "INSIDER DEALING -- SEPHINE EDEFE NIG LTD",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47892_PZ_CUSSONS_NIGERIA_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf",
-      "title": "PZ CUSSONS NIGERIA PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47_Custodian_Investment_Plc_-_Earnings_forecast_Q4_2026.pdf",
-      "title": "Custodian Investment Plc - Earnings forecast Q4 2026",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 22.49,
+  "results": []
 }
