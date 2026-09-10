@@ -2,9 +2,9 @@
   "method": "patch_49_trw_scraper_discovery",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 83,
-    "detail_pages_completed": 83,
-    "new_pdfs": 0,
+    "detail_pages_found": 79,
+    "detail_pages_completed": 79,
+    "new_pdfs": 8,
     "errors": []
   },
   "trw_discovery": {
@@ -21,15 +21,61 @@
   "naijaticker": {
     "companies_targeted": 65,
     "companies_completed": 65,
-    "pdfs_seen": 528,
-    "already_known": 290,
-    "filtered_before_parser": 238,
+    "pdfs_seen": 499,
+    "already_known": 270,
+    "filtered_before_parser": 229,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [],
+    "errors": [
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
+    ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 17.2,
-  "results": []
+  "total_new_pdfs": 8,
+  "elapsed_seconds": 28.35,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf",
+      "title": "CERTIFICATION FOR EARNINGS FORECAST FOR FOURTH QUARTER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/147_Regency-Q42026Forcast.pdf",
+      "title": "Regency-Q42026Forcast",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/15_FY_2026_Earnings_Forecast_IFRS_17_FINAL.pdf",
+      "title": "FY 2026 Earnings Forecast IFRS 17 FINAL",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/188_PROFIT_FORECAST_FOR_DECEMBER_2026.pdf",
+      "title": "PROFIT FORECAST FOR DECEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/242_GPP_2026_Q4_Earning_Forecast.pdf",
+      "title": "GPP 2026 Q4 Earning Forecast",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/60_Earning_Forecasst_2026-4th_Quarter.pdf",
+      "title": "Earning Forecasst 2026-4th Quarter",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/61_Eterna_PLC_Earnings_Forecast_Q4_2026.pdf",
+      "title": "Eterna PLC Earnings Forecast Q4 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/98_Learn_Afria_Plc_-_Q3_Earning_Forecast.pdf",
+      "title": "Learn Afria Plc - Q3 Earning Forecast",
+      "source": "abokiforex_listing"
+    }
+  ]
 }
