@@ -2,9 +2,9 @@
   "method": "patch_49_trw_scraper_discovery",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 78,
-    "detail_pages_completed": 78,
-    "new_pdfs": 3,
+    "detail_pages_found": 77,
+    "detail_pages_completed": 77,
+    "new_pdfs": 1,
     "errors": []
   },
   "trw_discovery": {
@@ -21,30 +21,20 @@
   "naijaticker": {
     "companies_targeted": 65,
     "companies_completed": 65,
-    "pdfs_seen": 528,
-    "already_known": 294,
+    "pdfs_seen": 527,
+    "already_known": 293,
     "filtered_before_parser": 234,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 3,
-  "elapsed_seconds": 14.38,
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 14.68,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38_INSIDER_DEALING-_CREDITVILLE_2A_PURCHASE-APPROVED.pdf",
-      "title": "INSIDER DEALING- CREDITVILLE 2A PURCHASE-APPROVED",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38_INSIDER_DEALING-_CREDITVILLE_2A_SALE-APPROVED.pdf",
-      "title": "INSIDER DEALING- CREDITVILLE 2A SALE-APPROVED",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf",
-      "title": "Cutix Plc - Notification of Share Dealing by an Insider",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/146_3rd_QUARTER_FORECAST__2026-2027_(1).pdf",
+      "title": "3rd QUARTER FORECAST 2026-2027 (1)",
       "source": "abokiforex_listing"
     }
   ]

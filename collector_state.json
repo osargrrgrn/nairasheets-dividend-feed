@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 28,
+  "historical_recheck_cursor": 3,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -22,6 +22,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/114_NAHCO_PLC_-_Notification_of_Share_Dealing_by_Insider_SL.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/119_FORECAST_FOR_THE_PERIOD_ENDING_31st_DEC_2026.pdf": "non_actionable_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/133_Forecast_for_4th_quarter_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/146_3rd_QUARTER_FORECAST__2026-2027_(1).pdf": "non_actionable_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/147_Regency-Q42026Forcast.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/15_FY_2026_Earnings_Forecast_IFRS_17_FINAL.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/170_Insider_Dealing_Notification_-_Adeshola_Shittu.pdf": "not_dividend",
