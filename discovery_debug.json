@@ -13,8 +13,8 @@
     "errors": []
   },
   "deep_scan": {
-    "numbers_scanned": 28,
-    "urls_tried": 140,
+    "companies_scraped": 10,
+    "companies_failed": 0,
     "new_pdfs": 0,
     "errors": []
   },
@@ -28,14 +28,14 @@
     "companies_targeted": 65,
     "companies_completed": 65,
     "pdfs_seen": 527,
-    "already_known": 294,
-    "filtered_before_parser": 233,
+    "already_known": 295,
+    "filtered_before_parser": 232,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 182.17,
+  "elapsed_seconds": 25.45,
   "results": []
 }
