@@ -1,5 +1,5 @@
 {
-  "method": "patch_49_trw_scraper_discovery",
+  "method": "patch_50_deep_scan_discovery",
   "abokiforex": {
     "status": 200,
     "detail_pages_found": 77,
@@ -30,6 +30,6 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 12.98,
+  "elapsed_seconds": 13.83,
   "results": []
 }
