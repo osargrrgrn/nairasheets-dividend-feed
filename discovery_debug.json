@@ -12,6 +12,12 @@
     "new_pdfs": 0,
     "errors": []
   },
+  "deep_scan": {
+    "numbers_scanned": 28,
+    "urls_tried": 140,
+    "new_pdfs": 0,
+    "errors": []
+  },
   "sequential_scan": {
     "numbers_scanned": 50,
     "pages_fetched": 50,
@@ -30,6 +36,6 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 13.83,
+  "elapsed_seconds": 182.17,
   "results": []
 }
