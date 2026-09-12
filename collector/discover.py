@@ -607,10 +607,10 @@ def _discover_sequential(known, debug, started):
 
 def discover_official_pdfs():
     started = time.monotonic()
-    debug = {"method": "patch_49_trw_scraper_discovery"}
+    debug = {"method": "patch_50_deep_scan_discovery"}
     print(
-        "NGX dividend PDF discovery — Patch 49 "
-        "(AbokiForex + TRW + Sequential + NaijaTicker)",
+        "NGX dividend PDF discovery — Patch 50 "
+        "(AbokiForex + TRW + DeepScan + Sequential + NaijaTicker)",
         flush=True,
     )
 
@@ -622,7 +622,7 @@ def discover_official_pdfs():
     with requests.Session() as s:
         all_found.extend(_discover_aboki(s, known, debug, started))
 
-    # Patch 49: TRW disclosure discovery — finds PDFs from daily NGX summaries
+    # Patch 49: TRW disclosure discovery
     if _time_remaining(started) > 30:
         try:
             from .trw_scraper import discover_pdfs_from_trw
@@ -630,8 +630,16 @@ def discover_official_pdfs():
         except Exception as exc:
             print(f"[TRW] Discovery error: {exc}", flush=True)
 
-    # Patch 41: Sequential scanner for historical gap documents
+    # Patch 50: Deep scan for historical range 42000-46023
     if _time_remaining(started) > 25:
+        try:
+            from .deep_scan import discover_historical_pdfs
+            all_found.extend(discover_historical_pdfs(known, debug, started))
+        except Exception as exc:
+            print(f"[DeepScan] Error: {exc}", flush=True)
+
+    # Patch 41: Sequential scanner for recent gap documents
+    if _time_remaining(started) > 15:
         all_found.extend(_discover_sequential(known, debug, started))
 
     # NaijaTicker: company-specific pages as additional coverage
