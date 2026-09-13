@@ -1,5 +1,5 @@
 """
-collector/sharepoint_index.py — Patch 53c
+collector/sharepoint_index.py — Patch 53d
 
 Primary discovery source: NGX's own document library.
 
@@ -64,16 +64,16 @@ CATEGORY_SUFFIX_RE = re.compile(r"_?CORPORATE[_ ]ACTIONS?[_ ][A-Z]+[_ ]20\d\d(?:
 TIER1_RE = re.compile(
     r"DIVIDEND|DISTRIBUTION|NGX[_ ]NOTIFICATION|QUALIFICATION|"
     r"CORPORATE[_ ]ACTIONS?[_ ]ANNOUNCEMENT|CORPORATE[_ ]ACTION[_ ](?:FY|20\d\d|\d{4})|"
-    r"CORPORATE[_ ]ACTION$|"
-    # Some issuers (Zenith Bank among them) title their corporate-action
-    # filings simply "ANNOUNCEMENT". NEGATIVE_RE still screens out the
-    # board/AGM/closed-period notices that also use that word.
-    r"(?:^|[_ ])ANNOUNCEMENT(?:$|[_ ])",
+    r"CORPORATE[_ ]ACTION$",
     re.I,
 )
 TIER2_RE = re.compile(
     r"AGM[_ ]RESOLUTION|RESOLUTIONS?[_ ]PASSED|RESOLUTIONS?[_ ](?:OF|AT)|OUTCOME[_ ]OF|"
-    r"NOTICE[_ ]OF[_ ]DECISION|POST[_ ]BOARD|BOARD[_ ]APPROVAL",
+    r"NOTICE[_ ]OF[_ ]DECISION|POST[_ ]BOARD|BOARD[_ ]APPROVAL|"
+    # Generic "ANNOUNCEMENT" titles (Zenith, GTCO use these for dividends and
+    # for everything else). Fetched after explicit dividend titles so they
+    # never crowd out the budget; the parser discards the non-dividend ones.
+    r"(?:^|[_ ])ANNOUNCEMENT(?:$|[_ ])",
     re.I,
 )
 # Never dividend events, whatever the category says.
