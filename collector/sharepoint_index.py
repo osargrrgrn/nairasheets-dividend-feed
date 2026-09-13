@@ -159,7 +159,7 @@ def discover_from_sharepoint(known: set, debug: dict, started: float) -> list:
                     if _looks_strongly_irrelevant(title, url):
                         dbg["irrelevant"] += 1
                         continue
-                    candidates.append((name, url, title))
+                    candidates.append((name, url, title, row.get("TimeCreated") or ""))
 
                 if len(rows) < PAGE:
                     break
@@ -167,12 +167,13 @@ def discover_from_sharepoint(known: set, debug: dict, started: float) -> list:
     except Exception as exc:
         dbg["errors"].append(repr(exc))
 
-    # Tier-1 names first, then NEWEST document number first, so the current
-    # year's declarations are parsed before last year's backlog.
-    candidates.sort(key=lambda c: (0 if TIER1_NAME_RE.search(c[0]) else 1, -_doc_number(c[0])))
+    # Tier-1 names first, then newest upload first (TimeCreated, ISO string),
+    # so unnumbered filings such as NIDF_Q1_2026_... are ordered correctly.
+    candidates.sort(key=lambda c: c[3], reverse=True)                       # newest upload first
+    candidates.sort(key=lambda c: 0 if TIER1_NAME_RE.search(c[0]) else 1)  # stable: Tier-1 first
 
     found = []
-    for name, url, title in candidates:
+    for name, url, title, _created in candidates:
         found.append({"url": url, "title": title, "source": "sharepoint_index"})
         known.add(url)
 
@@ -183,6 +184,6 @@ def discover_from_sharepoint(known: set, debug: dict, started: float) -> list:
         f"known={dbg['already_known']} irrelevant={dbg['irrelevant']} new={len(found)}",
         flush=True,
     )
-    for name, _, _ in candidates[:8]:
+    for name, _, _, _ in candidates[:8]:
         print(f"[SharePoint]   {name[:85]}", flush=True)
     return found
