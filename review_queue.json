@@ -1,31 +1,33 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43816_MCNICHOLS_CONSOLIDATED_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "MCNICHOLS CONSOLIDATED PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
+      "qualification_date_missing",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
+      "missing ticker",
+      "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "ee46aa287fadc313",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
+      "event_id": "a55c9fa40e1d9888",
+      "ticker": "",
+      "company": "MCNICHOLS CONSOLIDATED PLC",
+      "dividend_per_share": 0.04,
       "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-06-19",
+      "dividend_type": "final",
+      "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2026-07-23",
+      "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43816_MCNICHOLS_CONSOLIDATED_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "MCNICHOLS CONSOLIDATED PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
       "last_verified": "2026-09-13",
       "confidence": "review"
     },
@@ -33,24 +35,928 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-    "title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43658_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-_CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO- CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
     "reason_codes": [
       "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "ea503b93798fa719",
+      "ticker": "GTCO",
+      "company": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-04-15",
+      "payment_date": "2025-04-24",
+      "closure_date": "",
+      "announcement_date": "2024-12-31",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43658_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-_CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO- CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44069__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REITS_DISTRIBUTION_PAYMENT_2024_-_FINAL_CORPORATE_ACTIONS_MAY_2025.pdf",
+    "title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "3cdbcabcaf1eb20d",
+      "ticker": "UPDCREIT",
+      "company": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-05-08",
+      "payment_date": "2025-05-15",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44069__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REITS_DISTRIBUTION_PAYMENT_2024_-_FINAL_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "source_title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43917_MULTIVERSE_MINING_AND_EXPLORATION_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "MULTIVERSE MINING AND EXPLORATION PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+    "reason_codes": [
+      "ticker_unresolved",
       "qualification_date_missing",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
+      "missing ticker",
       "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "913261ea3657e103",
-      "ticker": "ACCESSCORP",
-      "company": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+      "event_id": "575ff7e1ea584a7c",
+      "ticker": "",
+      "company": "MULTIVERSE MINING AND EXPLORATION PLC",
+      "dividend_per_share": 0.1,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43917_MULTIVERSE_MINING_AND_EXPLORATION_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "MULTIVERSE MINING AND EXPLORATION PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43782_BERGER_PAINTS_NIGERIA_PLC-BERGER_PAINTS_NIG_PLC_CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "BERGER PAINTS NIGERIA PLC-BERGER PAINTS NIG PLC CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "aab4df36d4f58a48",
+      "ticker": "",
+      "company": "BERGER PAINTS NIGERIA PLC-BERGER PAINTS NIG PLC CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "dividend_per_share": 1.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-04-24",
+      "payment_date": "2025-05-22",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43782_BERGER_PAINTS_NIGERIA_PLC-BERGER_PAINTS_NIG_PLC_CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "BERGER PAINTS NIGERIA PLC-BERGER PAINTS NIG PLC CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44631_TRANSCORP_POWER_PLC-TRANSCORP_POWER_PLC_-_CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2025.pdf",
+    "title": "TRANSCORP POWER PLC-TRANSCORP POWER PLC - CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "c208c40dd02cf8c1",
+      "ticker": "",
+      "company": "TRANSCORP POWER PLC-TRANSCORP POWER PLC",
+      "dividend_per_share": 0.015,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2025-07-28",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44631_TRANSCORP_POWER_PLC-TRANSCORP_POWER_PLC_-_CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2025.pdf",
+      "source_title": "TRANSCORP POWER PLC-TRANSCORP POWER PLC - CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43987_LIVINGTRUST_MORTGAGE_BANK_PLC-LIVINGTRUST_-_2024_FY_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "LIVINGTRUST MORTGAGE BANK PLC-LIVINGTRUST - 2024 FY DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "payment date before qualification date"
+    ],
+    "parsed": {
+      "event_id": "900baa1ecf0b9ab2",
+      "ticker": "",
+      "company": "LIVINGTRUST MORTGAGE BANK PLC-LIVINGTRUST - 2024 FY DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "dividend_per_share": 0.08,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-07-03",
+      "payment_date": "2025-07-21",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43987_LIVINGTRUST_MORTGAGE_BANK_PLC-LIVINGTRUST_-_2024_FY_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "LIVINGTRUST MORTGAGE BANK PLC-LIVINGTRUST - 2024 FY DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43250_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "8a097f01567f1e35",
+      "ticker": "",
+      "company": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 0.6,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-05-09",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43250_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
+    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "b00df2a13e68c4e9",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
       "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-06-20",
+      "payment_date": "2025-07-25",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
+      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44624_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+    "title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC- INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "c123d7318679fe77",
+      "ticker": "UNILEVER",
+      "company": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC- INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2025-08-08",
+      "payment_date": "2025-08-22",
+      "closure_date": "",
+      "announcement_date": "2025-07-28",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44624_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+      "source_title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC- INTERIM DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44301_STERLING_FINANCIAL_HOLDINGS_COMPANY_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2025.pdf",
+    "title": "STERLING FINANCIAL HOLDINGS COMPANY PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JUNE 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "48524eac1b4c6a76",
+      "ticker": "",
+      "company": "STERLING FINANCIAL HOLDINGS COMPANY PLC",
+      "dividend_per_share": 0.18,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-07-01",
+      "payment_date": "2025-07-11",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44301_STERLING_FINANCIAL_HOLDINGS_COMPANY_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2025.pdf",
+      "source_title": "STERLING FINANCIAL HOLDINGS COMPANY PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JUNE 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43016_GEREGU_POWER_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JANUARY_2025.pdf",
+    "title": "GEREGU POWER PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JANUARY 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "payment date before qualification date"
+    ],
+    "parsed": {
+      "event_id": "e5119468fd1d59f3",
+      "ticker": "",
+      "company": "GEREGU POWER PLC",
+      "dividend_per_share": 8.5,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-03-13",
+      "payment_date": "2025-03-28",
+      "closure_date": "",
+      "announcement_date": "2025-03-28",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43016_GEREGU_POWER_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JANUARY_2025.pdf",
+      "source_title": "GEREGU POWER PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JANUARY 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43678_INFINITY_TRUST_MORTGAGE_BANK_PLC-INFINITY_TRUST_-_DIVIDEND_ANNOUNCEMENT_2025_CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "INFINITY TRUST MORTGAGE BANK PLC-INFINITY TRUST - DIVIDEND ANNOUNCEMENT 2025 CORPORATE ACTIONS APRIL 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "69190b4a9d6766d9",
+      "ticker": "",
+      "company": "INFINITY TRUST MORTGAGE BANK PLC-INFINITY TRUST",
+      "dividend_per_share": 0.21,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-05-21",
+      "payment_date": "2025-05-21",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43678_INFINITY_TRUST_MORTGAGE_BANK_PLC-INFINITY_TRUST_-_DIVIDEND_ANNOUNCEMENT_2025_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "INFINITY TRUST MORTGAGE BANK PLC-INFINITY TRUST - DIVIDEND ANNOUNCEMENT 2025 CORPORATE ACTIONS APRIL 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44461_JAIZ_BANK_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+    "title": "JAIZ BANK PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "c6a270fa5f27b604",
+      "ticker": "",
+      "company": "JAIZ BANK PLC",
+      "dividend_per_share": 0.07,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-07-14",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44461_JAIZ_BANK_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+      "source_title": "JAIZ BANK PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45327_BERGER_PAINTS_NIGERIA_PLC-BERGER_PAINTS_NIG_PLC_CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+    "title": "BERGER PAINTS NIGERIA PLC-BERGER PAINTS NIG PLC CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "22c821c8639cbe1f",
+      "ticker": "",
+      "company": "BERGER PAINTS NIGERIA PLC-BERGER PAINTS NIG PLC CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2025",
+      "dividend_per_share": 0.4,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2025-11-11",
+      "payment_date": "2025-11-19",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45327_BERGER_PAINTS_NIGERIA_PLC-BERGER_PAINTS_NIG_PLC_CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+      "source_title": "BERGER PAINTS NIGERIA PLC-BERGER PAINTS NIG PLC CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44980_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "afecbf3d8444717f",
+      "ticker": "UBA",
+      "company": "UNITED BANK FOR AFRICA PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2025-09-18",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44980_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43975_MEYER_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "MEYER PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "493335a48b6b0877",
+      "ticker": "",
+      "company": "MEYER PLC",
+      "dividend_per_share": 0.3,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43975_MEYER_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "MEYER PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43261_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CLARIFICATION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "b01611f6bfc05e3a",
+      "ticker": "",
+      "company": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 0.06,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-05-09",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43261_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CLARIFICATION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44212_N_NIG._FLOUR_MILLS_PLC.-NORTHERN_NIGERIA_FLOUR_MILLS_PLC_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2025.pdf",
+    "title": "N NIG. FLOUR MILLS PLC.-NORTHERN NIGERIA FLOUR MILLS PLC DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JUNE 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "3250d3b411fc3024",
+      "ticker": "",
+      "company": "N NIG. FLOUR MILLS PLC.-NORTHERN NIGERIA FLOUR MILLS PLC DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JUNE 2025",
+      "dividend_per_share": 0.25,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-09-17",
+      "payment_date": "2025-09-26",
+      "closure_date": "",
+      "announcement_date": "2025-09-25",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44212_N_NIG._FLOUR_MILLS_PLC.-NORTHERN_NIGERIA_FLOUR_MILLS_PLC_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JUNE_2025.pdf",
+      "source_title": "N NIG. FLOUR MILLS PLC.-NORTHERN NIGERIA FLOUR MILLS PLC DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JUNE 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43220_STANBIC_IBTC_ASSET_MANAGEMENT_LIMITED-ETF_30_2024_FINAL_DIVIDEND_DISTRIBUTION_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+    "title": "STANBIC IBTC ASSET MANAGEMENT LIMITED-ETF 30 2024 FINAL DIVIDEND DISTRIBUTION CORPORATE ACTIONS FEBRUARY 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "6377a0a3a6a75807",
+      "ticker": "",
+      "company": "STANBIC IBTC ASSET MANAGEMENT LIMITED-ETF 30 2024 FINAL DIVIDEND DISTRIBUTION CORPORATE ACTIONS FEBRUARY 2025",
+      "dividend_per_share": 1.5,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-02-24",
+      "payment_date": "2025-02-28",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43220_STANBIC_IBTC_ASSET_MANAGEMENT_LIMITED-ETF_30_2024_FINAL_DIVIDEND_DISTRIBUTION_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+      "source_title": "STANBIC IBTC ASSET MANAGEMENT LIMITED-ETF 30 2024 FINAL DIVIDEND DISTRIBUTION CORPORATE ACTIONS FEBRUARY 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44448_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+    "title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "babe331fc7bc5f19",
+      "ticker": "",
+      "company": "C AND I LEASING PLC.",
+      "dividend_per_share": 0.1,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-08-05",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44448_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+      "source_title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43701_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "b7c4120ca3509abb",
+      "ticker": "FCMB",
+      "company": "FCMB GROUP PLC-FCMB GROUP PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-04-16",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43701_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44999_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "32aa9fbe43517953",
+      "ticker": "GTCO",
+      "company": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2025-10-07",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2025-06-30",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44999_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "9eb1e5f104691181",
+      "ticker": "",
+      "company": "E-TRANZACT INTERNATIONAL PLC",
+      "dividend_per_share": 0.125,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-07-08",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44954_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "babe331fc7bc5f19",
+      "ticker": "",
+      "company": "C AND I LEASING PLC.",
+      "dividend_per_share": 0.1,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-08-05",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44954_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44961_REGENCY_ALLIANCE_INSURANCE_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "REGENCY ALLIANCE INSURANCE PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "387fa04e561ea60a",
+      "ticker": "",
+      "company": "REGENCY ALLIANCE INSURANCE PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2025-09-10",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44961_REGENCY_ALLIANCE_INSURANCE_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "REGENCY ALLIANCE INSURANCE PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45160_LEGEND_INTERNET_PLC-LEGEND_INTERNET_PLC_-_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+    "title": "LEGEND INTERNET PLC-LEGEND INTERNET PLC - DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "258daca39da33328",
+      "ticker": "",
+      "company": "LEGEND INTERNET PLC-LEGEND INTERNET PLC",
+      "dividend_per_share": 0.06,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-11-07",
+      "payment_date": "2025-11-07",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45160_LEGEND_INTERNET_PLC-LEGEND_INTERNET_PLC_-_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+      "source_title": "LEGEND INTERNET PLC-LEGEND INTERNET PLC - DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2025",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NREIT_Q2_2026_Distribution_.pdf",
+    "title": "NREIT Q2 2026 Distribution",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "4b0c7a484525edd5",
+      "ticker": "",
+      "company": "NREIT Q2 2026 Distribution",
+      "dividend_per_share": 1.72,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "2026-07-29",
+      "payment_date": "2026-09-08",
+      "closure_date": "2026-07-30",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NREIT_Q2_2026_Distribution_.pdf",
+      "source_title": "NREIT Q2 2026 Distribution",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46024_INFINITY_TRUST_MORTGAGE_BANK_PLC-ITMB_2026_FEB_BOARD_MEETING_RESOLUTIONS_EXTRACT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+    "title": "INFINITY TRUST MORTGAGE BANK PLC-ITMB 2026 FEB BOARD MEETING RESOLUTIONS EXTRACT CORPORATE ACTIONS APRIL 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "9201318d410784f3",
+      "ticker": "",
+      "company": "INFINITY TRUST MORTGAGE BANK PLC-ITMB 2026 FEB BOARD MEETING RESOLUTIONS EXTRACT CORPORATE ACTIONS APRIL 2026",
+      "dividend_per_share": 0.35,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2026-02-10",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46024_INFINITY_TRUST_MORTGAGE_BANK_PLC-ITMB_2026_FEB_BOARD_MEETING_RESOLUTIONS_EXTRACT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "source_title": "INFINITY TRUST MORTGAGE BANK PLC-ITMB 2026 FEB BOARD MEETING RESOLUTIONS EXTRACT CORPORATE ACTIONS APRIL 2026",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46792_FIDSON_HEALTHCARE_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+    "title": "FIDSON HEALTHCARE PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "b6ac28652d04f639",
+      "ticker": "",
+      "company": "FIDSON HEALTHCARE PLC",
+      "dividend_per_share": 0.015,
       "currency": "NGN",
       "dividend_type": "distribution",
       "qualification_date": "",
@@ -59,8 +965,175 @@
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47754_ACCESS_HOLDINGS_PLC-ACCESS_HOLDINGS_PLC_2025_SUSTAINABILITY_REPORT_CORPORATE_ACTIONS_AUGUST_2026.pdf",
-      "source_title": "ACCESS HOLDINGS PLC-ACCESS HOLDINGS PLC 2025 SUSTAINABILITY REPORT CORPORATE ACTIONS AUGUST 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46792_FIDSON_HEALTHCARE_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "source_title": "FIDSON HEALTHCARE PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46795_TRANSCORP_POWER_PLC-TRANSCORP_POWER_PLC_-_RESOLUTIONS_OF_THE_13TH_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_APRIL_2026.pdf",
+    "title": "TRANSCORP POWER PLC-TRANSCORP POWER PLC - RESOLUTIONS OF THE 13TH ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "42f70ec63ec3396d",
+      "ticker": "",
+      "company": "TRANSCORP POWER PLC-TRANSCORP POWER PLC",
+      "dividend_per_share": 0.04,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2026-04-27",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46795_TRANSCORP_POWER_PLC-TRANSCORP_POWER_PLC_-_RESOLUTIONS_OF_THE_13TH_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "source_title": "TRANSCORP POWER PLC-TRANSCORP POWER PLC - RESOLUTIONS OF THE 13TH ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2026",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46809_OMATEK_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+    "title": "OMATEK VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "7ec160db74371616",
+      "ticker": "",
+      "company": "OMATEK VENTURES PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "2026-03-27",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46809_OMATEK_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "source_title": "OMATEK VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
+    "title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "661457e6240abb1f",
+      "ticker": "STANBIC",
+      "company": "STANBIC IBTC HOLDINGS PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-05-04",
+      "payment_date": "2026-05-26",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47080_JAIZ_BANK_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JUNE_2026.pdf",
+    "title": "JAIZ BANK PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share",
+      "missing qualification date"
+    ],
+    "parsed": {
+      "event_id": "88e584fc5f936dca",
+      "ticker": "",
+      "company": "JAIZ BANK PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "2026-06-24",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47080_JAIZ_BANK_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JUNE_2026.pdf",
+      "source_title": "JAIZ BANK PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) JUNE 2026",
+      "last_verified": "2026-09-13",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "0516c16e5c0ba6f1",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-06-19",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-07-23",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
       "last_verified": "2026-09-13",
       "confidence": "review"
     },
