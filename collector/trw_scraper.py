@@ -519,6 +519,19 @@ def _update_known_dates(new_data: dict) -> int:
                         if changed:
                             added += 1
 
+    # Patch 52: never persist an impossible entry (payment on/before qualification).
+    for ticker in list(data.keys()):
+        cleaned = []
+        for e in data[ticker]:
+            q, pmt = e.get("qualification_date"), e.get("payment_date")
+            if q and pmt and pmt <= q:
+                continue
+            cleaned.append(e)
+        if cleaned:
+            data[ticker] = cleaned
+        else:
+            del data[ticker]
+
     # Write back
     output = {
         "_comment": "Auto-generated from TRW Stockbrokers NGX Dividend Table. Do not edit manually.",
