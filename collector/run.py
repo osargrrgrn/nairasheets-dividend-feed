@@ -18,7 +18,7 @@ from .reconcile import (
 )
 
 from .pending_resolver import resolve_pending_events
-from .feed_integrity import validate_published_feed, quality_report
+from .feed_integrity import validate_published_feed, quality_report, finalize_published_rows
 ROOT = Path(__file__).resolve().parents[1]
 KNOWN_DATES_FILE = ROOT / "known_dates.json"
 DOCS = ROOT / "docs"
@@ -1043,6 +1043,8 @@ def main():
     # Collapse them into one published dividend event.
     before_dedupe = len(merged)
     merged = dedupe_published_events(merged)
+    merged, rejected_rows = finalize_published_rows(merged)
+    unresolved_pending.extend(rejected_rows)
     published_duplicates_removed = before_dedupe - len(merged)
     
     # Patch 34: final integrity gate before publishing the buyer-facing feed.
