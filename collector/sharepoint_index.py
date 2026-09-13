@@ -1,5 +1,5 @@
 """
-collector/sharepoint_index.py — Patch 53b
+collector/sharepoint_index.py — Patch 53c
 
 Primary discovery source: NGX's own document library.
 
@@ -64,7 +64,11 @@ CATEGORY_SUFFIX_RE = re.compile(r"_?CORPORATE[_ ]ACTIONS?[_ ][A-Z]+[_ ]20\d\d(?:
 TIER1_RE = re.compile(
     r"DIVIDEND|DISTRIBUTION|NGX[_ ]NOTIFICATION|QUALIFICATION|"
     r"CORPORATE[_ ]ACTIONS?[_ ]ANNOUNCEMENT|CORPORATE[_ ]ACTION[_ ](?:FY|20\d\d|\d{4})|"
-    r"CORPORATE[_ ]ACTION$",
+    r"CORPORATE[_ ]ACTION$|"
+    # Some issuers (Zenith Bank among them) title their corporate-action
+    # filings simply "ANNOUNCEMENT". NEGATIVE_RE still screens out the
+    # board/AGM/closed-period notices that also use that word.
+    r"(?:^|[_ ])ANNOUNCEMENT(?:$|[_ ])",
     re.I,
 )
 TIER2_RE = re.compile(
