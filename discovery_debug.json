@@ -11,10 +11,10 @@
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
     "files_seen": 5636,
-    "dividend_like": 2100,
-    "already_known": 393,
-    "irrelevant": 414,
-    "new_pdfs": 1293,
+    "dividend_like": 440,
+    "already_known": 242,
+    "irrelevant": 0,
+    "new_pdfs": 198,
     "errors": []
   },
   "trw_discovery": {
@@ -34,406 +34,406 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 80,
-  "elapsed_seconds": 26.49,
+  "elapsed_seconds": 28.42,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/FIDSON_-_CORPORATE_ACTION_2025_ACCOUNTS.pdf",
-      "title": "FIDSON - CORPORATE ACTION 2025 ACCOUNTS",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_PLC_-_CLARIFICATION_ON_NON_PAYMENT_OF_DIVIDEND.pdf",
+      "title": "ACCESS HOLDINGS PLC - CLARIFICATION ON NON PAYMENT OF DIVIDEND",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/CORONATION_INFRASTRUCTURE_FUND_-_H1_2026_Distribution_Announcement.pdf",
-      "title": "CORONATION INFRASTRUCTURE FUND - H1 2026 Distribution Announcement",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46882_GUARANTY_TRUST_HOLDING_COMPANY_PLC-NOTIFICATION_OF_EXCHANGE_RATE_FOR_DIVIDEND_PAYMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "GUARANTY TRUST HOLDING COMPANY PLC-NOTIFICATION OF EXCHANGE RATE FOR DIVIDEND PAYMENT CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47451_UPDC_PLC-NOTICE_OF_BOARD_CHANGES_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "UPDC PLC-NOTICE OF BOARD CHANGES CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46871_NESTLE_NIGERIA_PLC.-NOTICE_OF_ONLINE_PUBLICATION_OF_UNCLAIMED_DIVIDENDS_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "NESTLE NIGERIA PLC.-NOTICE OF ONLINE PUBLICATION OF UNCLAIMED DIVIDENDS CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47447_HBM_NIGERIA_PLC-NOTICE_OF_CHANGE_IN_TRADING_SYMBOL_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "HBM NIGERIA PLC-NOTICE OF CHANGE IN TRADING SYMBOL CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46861_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_Q1_2026_DIVIDENDS_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "SEPLAT ENERGY PLC-ANNOUNCEMENT ON Q1 2026 DIVIDENDS CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47446_MECURE_INDUSTRIES_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "MECURE INDUSTRIES PLC-AGM RESOLUTIONS CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46779_MEYER_PLC-DIVIDEND_PAYMENT_ANNOUNCEMENT__CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "MEYER PLC-DIVIDEND PAYMENT ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47445_UPDC_PLC-BOARD_CHANGES_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "UPDC PLC-BOARD CHANGES CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46772_AVA_INFRASTRUCTURE_FUND-AVA_INFRASTRUCTURE_FUND_-_NOTIFICATION_OF_DIVIDEND_PAYMENT__CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "AVA INFRASTRUCTURE FUND-AVA INFRASTRUCTURE FUND - NOTIFICATION OF DIVIDEND PAYMENT CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47440_INTERNATIONAL_BREWERIES_PLC.-PROPOSED_RECONSTRUCTION_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "INTERNATIONAL BREWERIES PLC.-PROPOSED RECONSTRUCTION CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46681_NPF_MICROFINANCE_BANK_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "NPF MICROFINANCE BANK PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47438_CHAMS_HOLDING_COMPANY_PLC-ANUALGENERAL_MEETING_2026_-_RESOLUTIONS_PASSED_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "CHAMS HOLDING COMPANY PLC-ANUALGENERAL MEETING 2026 - RESOLUTIONS PASSED CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_Q1_2026_Distribution_Announcement.pdf",
+      "title": "NIDF Q1 2026 Distribution Announcement",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47417_INTERNATIONAL_BREWERIES_PLC.-NOTICE_OF_PROPOSED_SHARE_CAPITAL_REDUCTION_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "INTERNATIONAL BREWERIES PLC.-NOTICE OF PROPOSED SHARE CAPITAL REDUCTION CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46623_CHAMS_HOLDING_COMPANY_PLC-DECLARATION_OF_DIVIDEND_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "CHAMS HOLDING COMPANY PLC-DECLARATION OF DIVIDEND CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47410_PREMIER_PAINTS_PLC.-UPDATED_MANDATORY_TENDER_OFFER_DOCUMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "PREMIER PAINTS PLC.-UPDATED MANDATORY TENDER OFFER DOCUMENT CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46603_MCNICHOLS_CONSOLIDATED_PLC-PAYMENT_OF_DIVIDEND_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "MCNICHOLS CONSOLIDATED PLC-PAYMENT OF DIVIDEND CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47407_GEREGU_POWER_PLC-GEREGU_POWER_PLC_-_NOTIFICATION_OF_CHANGE_OF_REGISTERED_ADDRESS_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "GEREGU POWER PLC-GEREGU POWER PLC - NOTIFICATION OF CHANGE OF REGISTERED ADDRESS CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46596_ZICHIS_AGRO_ALLIED_INDUSTRIES_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "ZICHIS AGRO ALLIED INDUSTRIES PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47406_INTERNATIONAL_BREWERIES_PLC.-BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "INTERNATIONAL BREWERIES PLC.-BOARD MEETING NOTIFICATION CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46576_MCNICHOLS_CONSOLIDATED_PLC-PAYMENT_OF_DIVIDEND__CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "MCNICHOLS CONSOLIDATED PLC-PAYMENT OF DIVIDEND CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47401_REGENCY_ALLIANCE_INSURANCE_PLC-DEFAULT_FILING_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "REGENCY ALLIANCE INSURANCE PLC-DEFAULT FILING CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46574_AIICO_INSURANCE_PLC.-DIVIDEND_INFORMATION_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "AIICO INSURANCE PLC.-DIVIDEND INFORMATION CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47400_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-CAVERTON_PRESS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "CAVERTON OFFSHORE SUPPORT GROUP PLC-CAVERTON PRESS RELEASE CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46545_NEM_INSURANCE_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "NEM INSURANCE PLC.-CORPORATE ACTION CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47398_R_T_BRISCOE_(NIGERIA)_PLC.-2025_ANNUAL_GENERAL_MEETING_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "R T BRISCOE (NIGERIA) PLC.-2025 ANNUAL GENERAL MEETING RESOLUTIONS CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46553_VFD_GROUP_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "VFD GROUP PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47391_LAFARGE_AFRICA_PLC.-NOTICE_OF_BOARD_CHANGES__CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "LAFARGE AFRICA PLC.-NOTICE OF BOARD CHANGES CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46322_CWG_PLC-DIVIDEND_DECLARATION_CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "title": "CWG PLC-DIVIDEND DECLARATION CORPORATE ACTIONS MARCH 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47389_OANDO_PLC-OANDO_PRESS_RELEASE__CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "OANDO PLC-OANDO PRESS RELEASE CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46182_UNITED_CAPITAL_PLC-UNITED_CAPITAL_PLC_-_CORPORATE_ACTION_2026_[FINAL]_MARCH_2,_2026_CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "title": "UNITED CAPITAL PLC-UNITED CAPITAL PLC - CORPORATE ACTION 2026 [FINAL] MARCH 2, 2026 CORPORATE ACTIONS MARCH 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47373_ELLAH_LAKES_PLC.-ELLAH_LAKES_PLC_-_PUBLIC_DISCLAIMER_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "ELLAH LAKES PLC.-ELLAH LAKES PLC - PUBLIC DISCLAIMER CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46146_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "title": "TOTALENERGIES MARKETING NIGERIA PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47367_AXA_MANSARD_INSURANCE_PLC-AXA_MANSARD_-_CHANGES_TO_THE_BOARD_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "AXA MANSARD INSURANCE PLC-AXA MANSARD - CHANGES TO THE BOARD CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46112_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_FY_2025_FINAL_AND_SPECIAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "title": "SEPLAT ENERGY PLC-ANNOUNCEMENT ON FY 2025 FINAL AND SPECIAL DIVIDEND CORPORATE ACTIONS MARCH 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47371_JAIZ_BANK_PLC-CORPORATE_DISCLOSURE_SUBMISSION_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "JAIZ BANK PLC-CORPORATE DISCLOSURE SUBMISSION CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46083_MORISON_INDUSTRIES_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "title": "MORISON INDUSTRIES PLC.-CORPORATE ACTION CORPORATE ACTIONS MARCH 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47357_GEREGU_POWER_PLC-GEREGU_POWER_PLC_-_OUTCOME_OF_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "GEREGU POWER PLC-GEREGU POWER PLC - OUTCOME OF 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/UNITED_CAPITAL_PLC_-_CORPORATE_ACTION_2026.pdf",
+      "title": "UNITED CAPITAL PLC - CORPORATE ACTION 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47347_VFD_GROUP_PLC-VFD_GROUP_PLC-NOTICE_OF_BOARD_OF_DIRECTOR'S_MEETING_AND_STRATEGY_SESSION_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "VFD GROUP PLC-VFD GROUP PLC-NOTICE OF BOARD OF DIRECTOR'S MEETING AND STRATEGY SESSION CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ZICHIS_AGRO_ALLIED_INDUSTRIES_PLC_-_CORPORATE_ACTION.pdf",
+      "title": "ZICHIS AGRO ALLIED INDUSTRIES PLC - CORPORATE ACTION",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47345_GEREGU_POWER_PLC-GEREGU_POWER_PLC_-_OUTCOME_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "title": "GEREGU POWER PLC-GEREGU POWER PLC - OUTCOME OF MEETING OF THE BOARD OF DIRECTORS CORPORATE ACTIONS JULY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Seplat_Announcement_on_FY_2025_Final_and_Special_Dividend.pdf",
+      "title": "Seplat Announcement on FY 2025 Final and Special Dividend",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47297_TRIPPLE_GEE_AND_COMPANY_PLC.-NCCG_REPORT_FOR_YEAR_ENDED_MARCH_31ST_2026_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "TRIPPLE GEE AND COMPANY PLC.-NCCG REPORT FOR YEAR ENDED MARCH 31ST 2026 CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45313_SEPLAT_ENERGY_PLC-Q3_2025_INTERIM_AND_SPECIAL_DIVIDEND_PAYMENT__CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+      "title": "SEPLAT ENERGY PLC-Q3 2025 INTERIM AND SPECIAL DIVIDEND PAYMENT CORPORATE ACTIONS OCTOBER 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47279_NEIMETH_INTERNATIONAL_PHARMACEUTICALS_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "NEIMETH INTERNATIONAL PHARMACEUTICALS PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45121_VETIVA_FUND_MANAGERS_LIMITED-CORPORATE_ACTIONS_-_2025_INTERIM_DISTRIBUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+      "title": "VETIVA FUND MANAGERS LIMITED-CORPORATE ACTIONS - 2025 INTERIM DISTRIBUTION CORPORATE ACTIONS OCTOBER 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47270_NEWGOLD_EXCHANGE_TRADED_FUND_(ETF)-AVAILABILITY_OF_AFS_31_MARCH_2026_26062026_-_NIGERIA_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "NEWGOLD EXCHANGE TRADED FUND (ETF)-AVAILABILITY OF AFS 31 MARCH 2026 26062026 - NIGERIA CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45106_RONCHESS_GLOBAL_RESOURCES_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+      "title": "RONCHESS GLOBAL RESOURCES PLC-CORPORATE ACTION CORPORATE ACTIONS OCTOBER 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47264_LIVESTOCK_FEEDS_PLC.-2026_ANNUAL_GENERAL_MEETING_RESOLUTIONS__CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "LIVESTOCK FEEDS PLC.-2026 ANNUAL GENERAL MEETING RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45082_PRESTIGE_ASSURANCE_PLC-UNCLAIMED_DIVIDEND_LIST_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+      "title": "PRESTIGE ASSURANCE PLC-UNCLAIMED DIVIDEND LIST CORPORATE ACTIONS OCTOBER 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47262_JAIZ_BANK_PLC-RESOLUTIONS_OF_THE_14TH_AGM_OF_JAIZ_BANK_PLC_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "JAIZ BANK PLC-RESOLUTIONS OF THE 14TH AGM OF JAIZ BANK PLC CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44806_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_AUGUST_2025.pdf",
+      "title": "CONSOLIDATED HALLMARK HOLDINGS PLC-CORPORATE ACTION CORPORATE ACTIONS AUGUST 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47257_NIGERIAN_ENAMELWARE_PLC.-THE_NIGERIAN_CODE_OF_CORPORATE_GOVERNANCE_(NCCG)_2018_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "NIGERIAN ENAMELWARE PLC.-THE NIGERIAN CODE OF CORPORATE GOVERNANCE (NCCG) 2018 CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44141_UH_REAL_ESTATE_INVESTMENT_TRUST_(UHREIT)-UH_REIT_CORPORATE_ACTIONS_FOR_2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "title": "UH REAL ESTATE INVESTMENT TRUST (UHREIT)-UH REIT CORPORATE ACTIONS FOR 2024 FY DISTRIBUTION CORPORATE ACTIONS MAY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MULTIVERSE_-_AGM_RESOLUTIONS_OUTCOME_JUNE2026.pdf",
-      "title": "MULTIVERSE - AGM RESOLUTIONS OUTCOME JUNE2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44139_SUNU_ASSURANCES_NIGERIA_PLC-PUBLICATION_OF_THE_LIST_OF_UNCLAIMED_DIVIDENDS_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "title": "SUNU ASSURANCES NIGERIA PLC-PUBLICATION OF THE LIST OF UNCLAIMED DIVIDENDS CORPORATE ACTIONS MAY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47241_LAFARGE_AFRICA_PLC.-NOTIFICATION_OF_CHANGE_IN_CORPORATE_NAME__CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "LAFARGE AFRICA PLC.-NOTIFICATION OF CHANGE IN CORPORATE NAME CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44110_ACCESS_HOLDINGS_PLC-UNCLAIMED_DIVIDEND_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "title": "ACCESS HOLDINGS PLC-UNCLAIMED DIVIDEND CORPORATE ACTIONS MAY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47240_SKYWAY_AVIATION_HANDLING_COMPANY_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "SKYWAY AVIATION HANDLING COMPANY PLC-AGM RESOLUTION CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44108_BUA_FOODS_PLC-CORPORATE_ANNOUNCEMENT_(DIVIDEND_PAYMENT)_UPDATE_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "title": "BUA FOODS PLC-CORPORATE ANNOUNCEMENT (DIVIDEND PAYMENT) UPDATE CORPORATE ACTIONS MAY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47237_INDUSTRIAL_AND_MEDICAL_GASES_NIGERIA_PLC-2026_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "INDUSTRIAL AND MEDICAL GASES NIGERIA PLC-2026 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44102_NPF_MICROFINANCE_BANK_PLC-NOTICE_TO_SHAREHOLDERS_ON_UNCLAIMED_DIVIDENDS_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "title": "NPF MICROFINANCE BANK PLC-NOTICE TO SHAREHOLDERS ON UNCLAIMED DIVIDENDS CORPORATE ACTIONS MAY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47235_CHAMPION_BREW._PLC.-ANNOUCEMENT_OF_CHANGE_OF_LEADERSHIP_IN_CHAMPION_BREWERIES_PLC_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "CHAMPION BREW. PLC.-ANNOUCEMENT OF CHANGE OF LEADERSHIP IN CHAMPION BREWERIES PLC CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44077_UH_REAL_ESTATE_INVESTMENT_TRUST_(UHREIT)-UH_REIT_CORPORATE_ACTIONS_FOR_2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "title": "UH REAL ESTATE INVESTMENT TRUST (UHREIT)-UH REIT CORPORATE ACTIONS FOR 2024 FY DISTRIBUTION CORPORATE ACTIONS MAY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47229_PREMIER_PAINTS_PLC.-POSTPONEMENT_OF_MANDATORY_TENDER_OFFER_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "PREMIER PAINTS PLC.-POSTPONEMENT OF MANDATORY TENDER OFFER CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44066_NESTLE_NIGERIA_PLC.-NOTICE_OF_PUBLICATION_OF_2024_UNCLAIMED_DIVIDEND_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "title": "NESTLE NIGERIA PLC.-NOTICE OF PUBLICATION OF 2024 UNCLAIMED DIVIDEND CORPORATE ACTIONS MAY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47227_HALDANE_MCCALL_PLC-ANNOUNCEMENT_OF_COMPANY_SECRETARY_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "HALDANE MCCALL PLC-ANNOUNCEMENT OF COMPANY SECRETARY CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43964_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "title": "TOTALENERGIES MARKETING NIGERIA PLC-CORPORATE ACTION CORPORATE ACTIONS MAY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47224_DEAP_CAPITAL_MANAGEMENT_AND_TRUST_PLC-COMPANY_NAME_CHANGE_AND_CHANGE_OF_ADDRESS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "DEAP CAPITAL MANAGEMENT AND TRUST PLC-COMPANY NAME CHANGE AND CHANGE OF ADDRESS CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43990_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "TOTALENERGIES MARKETING NIGERIA PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47226_HALDANE_MCCALL_PLC-HALDANE_MCCALL_PLC_2ND_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "HALDANE MCCALL PLC-HALDANE MCCALL PLC 2ND AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43897_SEPLAT_ENERGY_PLC-CORPORATE_ANNOUNCEMENT_ON_Q1_2025_DIVIDEND_PAYMENT__CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "SEPLAT ENERGY PLC-CORPORATE ANNOUNCEMENT ON Q1 2025 DIVIDEND PAYMENT CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47225_UPDC_PLC-PUBLIC_DISCLAIMER_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "UPDC PLC-PUBLIC DISCLAIMER CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43832_UPDC_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "UPDC PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47191_REGENCY_ALLIANCE_INSURANCE_PLC-PRESS_RELEASE_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "REGENCY ALLIANCE INSURANCE PLC-PRESS RELEASE CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43708_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "TOTALENERGIES MARKETING NIGERIA PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47190_FORTIS_GLOBAL_INSURANCE_PLC-PUBLIC_NOTICE_OF_SHARE_CAPITAL_RECONSTRUCTION_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "FORTIS GLOBAL INSURANCE PLC-PUBLIC NOTICE OF SHARE CAPITAL RECONSTRUCTION CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43676_SUNU_ASSURANCES_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "SUNU ASSURANCES NIGERIA PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47188_C_AND_I_LEASING_PLC.-2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "C AND I LEASING PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43673_FIDSON_HEALTHCARE_PLC-ANNOUNCEMENT_OF_DIVIDEND_RECOMMENDATION_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "FIDSON HEALTHCARE PLC-ANNOUNCEMENT OF DIVIDEND RECOMMENDATION CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Sterling_Financial_Holdings_Company_Plc_-_FY2025_AGM_Resolutions_executed.pdf",
-      "title": "Sterling Financial Holdings Company Plc - FY2025 AGM Resolutions executed",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Industrial_and_Medical_Gases_Nigeria_Plc_Dividend_Information_.pdf",
+      "title": "Industrial and Medical Gases Nigeria Plc Dividend Information",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47176_NPF_MICROFINANCE_BANK_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "NPF MICROFINANCE BANK PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43603_NEM_INSURANCE_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "NEM INSURANCE PLC.-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47180_PREMIER_PAINTS_PLC.-MANDATORY_TENDER_OFFER_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "PREMIER PAINTS PLC.-MANDATORY TENDER OFFER CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43449_THE_INITIATES_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "THE INITIATES PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47178_PREMIER_PAINTS_PLC.-DIRECTORS'_CIRCULAR_OF_PREMIER_PAINTS_PLC_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "PREMIER PAINTS PLC.-DIRECTORS' CIRCULAR OF PREMIER PAINTS PLC CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43438_ZENITH_BANK_PLC-ZENITH_BANK_PLC_-_CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "ZENITH BANK PLC-ZENITH BANK PLC - CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47174_OANDO_PLC-OANDO_PRESS_RELEASE__CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "OANDO PLC-OANDO PRESS RELEASE CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43403_UNITED_BANK_FOR_AFRICA_PLC-UBA_CORPORATE_ACTION_FY2024_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "UNITED BANK FOR AFRICA PLC-UBA CORPORATE ACTION FY2024 CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47146_ZICHIS_AGRO_ALLIED_INDUSTRIES_PLC-ZAAI_ANNOUNCES_2_BILLION_NON-EQUITY_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "ZICHIS AGRO ALLIED INDUSTRIES PLC-ZAAI ANNOUNCES 2 BILLION NON-EQUITY CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43395_MORISON_INDUSTRIES_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "MORISON INDUSTRIES PLC.-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47144_REGENCY_ALLIANCE_INSURANCE_PLC-COMPLIANCE_WITH_STATUTORY_DEPOSIT__CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "REGENCY ALLIANCE INSURANCE PLC-COMPLIANCE WITH STATUTORY DEPOSIT CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43368_CWG_PLC-CORPORATE_ANNOUNCEMENT_-_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "CWG PLC-CORPORATE ANNOUNCEMENT - DIVIDEND CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47135_MAY_AND_BAKER-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "MAY AND BAKER-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43329_UNITED_CAPITAL_PLC-PROPOSED_DIVIDEND__CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "UNITED CAPITAL PLC-PROPOSED DIVIDEND CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47132_GUINEA_INSURANCE_PLC.-PAYMENT_OF_STATUTORY_DEPOSIT_TO_CBN_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "GUINEA INSURANCE PLC.-PAYMENT OF STATUTORY DEPOSIT TO CBN CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43307_TRANSNATIONAL_CORPORATION_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "TRANSNATIONAL CORPORATION PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47126_SOVEREIGN_TRUST_INSURANCE_PLC-STI_STATUTORY_DEPOSIT_WITH_CBN_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "SOVEREIGN TRUST INSURANCE PLC-STI STATUTORY DEPOSIT WITH CBN CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43274_HALDANE_MCCALL_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "HALDANE MCCALL PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47122_TRANS-NATIONWIDE_EXPRESS_PLC.-RESOLUTIONS_PASSED_AT_THE_33RD_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "TRANS-NATIONWIDE EXPRESS PLC.-RESOLUTIONS PASSED AT THE 33RD ANNUAL GENERAL MEETING CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43253_MECURE_INDUSTRIES_PLC-DECLARATION_OF_DIVIDEND_FOR_THE_YEAR_2024_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "MECURE INDUSTRIES PLC-DECLARATION OF DIVIDEND FOR THE YEAR 2024 CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/UH_REITS_-_Corporate_Actions_for_2025_FY_Distribution.pdf",
-      "title": "UH REITS - Corporate Actions for 2025 FY Distribution",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43251_DANGOTE_CEMENT_PLC-DIVIDEND_ANNOUCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "DANGOTE CEMENT PLC-DIVIDEND ANNOUCEMENT CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47111_ABBEY_MORTGAGE_BANK_PLC-ANNOUNCEMENT_OF_CONVERSION_TO_A_REGIONGAL_COMMERCIAL_BANK_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "title": "ABBEY MORTGAGE BANK PLC-ANNOUNCEMENT OF CONVERSION TO A REGIONGAL COMMERCIAL BANK CORPORATE ACTIONS JUNE 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43246_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47087_ARADEL_HOLDINGS_PLC-NOTICE_OF_DELAY_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "ARADEL HOLDINGS PLC-NOTICE OF DELAY CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43245_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47066_JOHN_HOLT_PLC.-RESOLUTIONS_AT_JOHN_HOLT_PLC_64TH_AGM_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "JOHN HOLT PLC.-RESOLUTIONS AT JOHN HOLT PLC 64TH AGM CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43244_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47058_ABBEY_MORTGAGE_BANK_PLC-RESOLUTIONS_PASSED_AT_34TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "ABBEY MORTGAGE BANK PLC-RESOLUTIONS PASSED AT 34TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43136_HALDANE_MCCALL_PLC-DIVIDEND_ANNOUCEMENT_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+      "title": "HALDANE MCCALL PLC-DIVIDEND ANNOUCEMENT CORPORATE ACTIONS FEBRUARY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47053_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-2026_ANNUAL_GENERAL_MEETING_-_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "CONSOLIDATED HALLMARK HOLDINGS PLC-2026 ANNUAL GENERAL MEETING - RESOLUTIONS CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42927_TRANSCORP_POWER_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_JANUARY_2025.pdf",
+      "title": "TRANSCORP POWER PLC-CORPORATE ACTION CORPORATE ACTIONS JANUARY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47051_INFINITY_TRUST_MORTGAGE_BANK_PLC-AGM_RESOLUTION__CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "INFINITY TRUST MORTGAGE BANK PLC-AGM RESOLUTION CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42853_SFS_REAL_ESTATE_INVESTMENT_TRUST-SFS_REIT_ANNOUNCEMENT_OF_LIST_OF_UNCLAIMED_DIVIDEND_CORPORATE_ACTIONS_JANUARY_2025.pdf",
+      "title": "SFS REAL ESTATE INVESTMENT TRUST-SFS REIT ANNOUNCEMENT OF LIST OF UNCLAIMED DIVIDEND CORPORATE ACTIONS JANUARY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47050_MEYER_PLC-2025_AGM__REPORT__CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "MEYER PLC-2025 AGM REPORT CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42852_SFS_REAL_ESTATE_INVESTMENT_TRUST-SFS_REIT_ANNOUNCEMENT_OF_LIST_OF_UNCLAIMED_DIVIDEND_CORPORATE_ACTIONS_JANUARY_2025.pdf",
+      "title": "SFS REAL ESTATE INVESTMENT TRUST-SFS REIT ANNOUNCEMENT OF LIST OF UNCLAIMED DIVIDEND CORPORATE ACTIONS JANUARY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47047_BERGER_PAINTS_NIGERIA_PLC-BERGER_PAINTS_RESOLUTIONS_PASSED_AT_2026_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "BERGER PAINTS NIGERIA PLC-BERGER PAINTS RESOLUTIONS PASSED AT 2026 ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46983_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_-NOTIFICATION_OF_2026_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC -NOTIFICATION OF 2026 AGM RESOLUTIONS CORPORATE ACTIONS MAY 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/VETIVA_FUND_-_Notice_of_VSP_ETF_2025_Final_Distribution.pdf",
-      "title": "VETIVA FUND - Notice of VSP ETF 2025 Final Distribution",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/UPDC_REIT_-_Resolutions_Passed_at_2026_EGM.pdf",
+      "title": "UPDC REIT - Resolutions Passed at 2026 EGM",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47036_JAIZ_BANK_PLC-JAIZ_BANK_PLC_DECLARATION_OF_DIVIDEND_PAYMENT_FOR_2025_FINANCIAL_YEAR_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "JAIZ BANK PLC-JAIZ BANK PLC DECLARATION OF DIVIDEND PAYMENT FOR 2025 FINANCIAL YEAR CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Ellah_Lakes_Plc_-_AGM_Resolutions.pdf",
+      "title": "Ellah Lakes Plc - AGM Resolutions",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47040_CHAMPION_BREW._PLC.-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "CHAMPION BREW. PLC.-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ZICHIS_AGRO_ALLIED_-_AGM_RESOLUTIONS.pdf",
+      "title": "ZICHIS AGRO ALLIED - AGM RESOLUTIONS",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47037_ETERNA_PLC.-NOTICE_OF_RETIREMENT_OF_EXECUTIVE_DIRECTOR_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "ETERNA PLC.-NOTICE OF RETIREMENT OF EXECUTIVE DIRECTOR CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/DAAR_Communications_Plc_-_AGM_Resolutions_2026.pdf",
+      "title": "DAAR Communications Plc - AGM Resolutions 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47030_NIGERIAN_AVIATION_HANDLING_COMPANY_PLC-NAHCO_PLC_45TH_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "NIGERIAN AVIATION HANDLING COMPANY PLC-NAHCO PLC 45TH AGM RESOLUTIONS CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ZENITH_BANK_PLC_-_AGM_RESOLUTIONS_2026.pdf",
+      "title": "ZENITH BANK PLC - AGM RESOLUTIONS 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47028_NPF_MICROFINANCE_BANK_PLC-NOTICE_ON_UNCLAIMED_DIVIDENDS_LIST_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "NPF MICROFINANCE BANK PLC-NOTICE ON UNCLAIMED DIVIDENDS LIST CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46954_LAFARGE_AFRICA_PLC.-LAFARGE_AFRICA_PLC_-_2026_AGM_RESOLUTION_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "title": "LAFARGE AFRICA PLC.-LAFARGE AFRICA PLC - 2026 AGM RESOLUTION CORPORATE ACTIONS MAY 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47026_WEMA_BANK_PLC.-RESPONSE_ON_MEDIA_REPORT__CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "WEMA BANK PLC.-RESPONSE ON MEDIA REPORT CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46950_ROYAL_EXCHANGE_PLC.-2025_AGM_RESOLUTIONS__CORPORATE_ACTIONS_MAY_2026.pdf",
+      "title": "ROYAL EXCHANGE PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS MAY 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47024_GEREGU_POWER_PLC-CONVEYANCE_OF_THE_ANNUAL_GENERAL_MEETING_(“AGM”)_OF_GEREGU_POWER_PLC_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "GEREGU POWER PLC-CONVEYANCE OF THE ANNUAL GENERAL MEETING (“AGM”) OF GEREGU POWER PLC CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46944_NIGERIAN_EXCHANGE_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_65TH_AGM_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "title": "NIGERIAN EXCHANGE GROUP PLC-RESOLUTIONS PASSED AT THE 65TH AGM CORPORATE ACTIONS MAY 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47005_SEPLAT_ENERGY_PLC-CURRENCY_EXCHANGE_RATE_FOR_FY_2025_DIVIDENDS_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "SEPLAT ENERGY PLC-CURRENCY EXCHANGE RATE FOR FY 2025 DIVIDENDS CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46949_MTN_NIGERIA_COMMUNICATIONS_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "title": "MTN NIGERIA COMMUNICATIONS PLC-AGM RESOLUTIONS CORPORATE ACTIONS MAY 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47004_NEM_INSURANCE_PLC.-AGM_2025_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "NEM INSURANCE PLC.-AGM 2025 RESOLUTIONS CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46938_THE_INITIATES_PLC-RESOLUTIONS_OF_THE_27TH_AGM_OF_THE_INITIATES_PLC_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "title": "THE INITIATES PLC-RESOLUTIONS OF THE 27TH AGM OF THE INITIATES PLC CORPORATE ACTIONS MAY 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47002_UNIVERSAL_INSURANCE_PLC-STATUTORY_ADVERT_FOR_RIGHTS_ISSUE_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "UNIVERSAL INSURANCE PLC-STATUTORY ADVERT FOR RIGHTS ISSUE CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46859_SEPLAT_ENERGY_PLC-NOTICE_OF_DECISION_-_Q1_2026_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "SEPLAT ENERGY PLC-NOTICE OF DECISION - Q1 2026 CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46999_CORONATION_INFRASTRUCTURE_FUND-CORONATION_INFRASTRUCTURE_FUND_2025_ANNUAL_REPORT_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "CORONATION INFRASTRUCTURE FUND-CORONATION INFRASTRUCTURE FUND 2025 ANNUAL REPORT CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46783_NASCON_ALLIED_INDUSTRIES_PLC-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "NASCON ALLIED INDUSTRIES PLC-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46998_BETA_GLASS_PLC-BETA_GLASS_PLC_-_NOTICE_OF_52ND_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "BETA GLASS PLC-BETA GLASS PLC - NOTICE OF 52ND ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46771_UNITED_CAPITAL_PLC-UNITED_CAPITAL_PLC_-_2026_AGM_RESOLUTIONS__CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "UNITED CAPITAL PLC-UNITED CAPITAL PLC - 2026 AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46997_ETERNA_PLC.-ETERNA_PLC_33RD_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "ETERNA PLC.-ETERNA PLC 33RD AGM RESOLUTIONS CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46751_NIGERIAN_BREWERIES_PLC.-RESOLUTIONS_PASSED_AT_THE_80TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "NIGERIAN BREWERIES PLC.-RESOLUTIONS PASSED AT THE 80TH ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46996_UPDC_PLC-NOTIFICATION_OF_AGM_OUTCOME_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "UPDC PLC-NOTIFICATION OF AGM OUTCOME CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46750_FCMB_GROUP_PLC-OUTCOME_OF_FCMB_GROUP_PLC_BOARD_OF_DIRECTORS'_MEETING_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "FCMB GROUP PLC-OUTCOME OF FCMB GROUP PLC BOARD OF DIRECTORS' MEETING CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46992_GUARANTY_TRUST_HOLDING_COMPANY_PLC-NOTIFICATION_OF_DIVIDEND_PAYMENT_DATE_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "GUARANTY TRUST HOLDING COMPANY PLC-NOTIFICATION OF DIVIDEND PAYMENT DATE CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46704_CWG_PLC-FY2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "CWG PLC-FY2025 AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46987_ETERNA_PLC.-LIVE_STREAMING_LINKS_FOR_THE_33RD_ANNUAL_GENERAL_MEETING_OF_ETERNA_PLC_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "ETERNA PLC.-LIVE STREAMING LINKS FOR THE 33RD ANNUAL GENERAL MEETING OF ETERNA PLC CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46697_DANGOTE_SUGAR_REFINERY_PLC-OUTCOME_OF_AGM_FOR_DANGOTE_SUGAR_REFINERY_PLC_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "DANGOTE SUGAR REFINERY PLC-OUTCOME OF AGM FOR DANGOTE SUGAR REFINERY PLC CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46979_VETIVA_FUND_MANAGERS_LIMITED-CORPORATE_ACTIONS_-_VETIVA_BANKING_EXCHANGE_TRADED_FUND_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "title": "VETIVA FUND MANAGERS LIMITED-CORPORATE ACTIONS - VETIVA BANKING EXCHANGE TRADED FUND CORPORATE ACTIONS MAY 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46685_GUINNESS_NIG_PLC-GUINNESS_NIGERIA_PLC_-_OUTCOME_OF_THE_2025_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "title": "GUINNESS NIG PLC-GUINNESS NIGERIA PLC - OUTCOME OF THE 2025 ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2026",
       "source": "sharepoint_index"
     }
   ]
