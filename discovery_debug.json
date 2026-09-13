@@ -12,9 +12,9 @@
     "pages": 2,
     "files_seen": 5636,
     "dividend_like": 522,
-    "already_known": 502,
+    "already_known": 521,
     "irrelevant": 1,
-    "new_pdfs": 19,
+    "new_pdfs": 0,
     "errors": []
   },
   "trw_discovery": {
@@ -33,103 +33,7 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 19,
-  "elapsed_seconds": 25.76,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43944_UNITED_BANK_FOR_AFRICA_PLC-UNITED_BANK_FOR_AFRICA_PLC___2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "UNITED BANK FOR AFRICA PLC-UNITED BANK FOR AFRICA PLC 2025 AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43935_RONCHESS_GLOBAL_RESOURCES_PLC-2024_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "RONCHESS GLOBAL RESOURCES PLC-2024 AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43934_RONCHESS_GLOBAL_RESOURCES_PLC-2021,_2022,_2023_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "RONCHESS GLOBAL RESOURCES PLC-2021, 2022, 2023 AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43895_SEPLAT_ENERGY_PLC-NOTICE_OF_DECISION_Q1_2025_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "SEPLAT ENERGY PLC-NOTICE OF DECISION Q1 2025 CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43826_NIGERIAN_BREWERIES_PLC.-RESOLUTIONS_PASSED_AT_THE_79TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "NIGERIAN BREWERIES PLC.-RESOLUTIONS PASSED AT THE 79TH ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43773_NIGERIAN_EXCHANGE_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_64TH_AGM_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "NIGERIAN EXCHANGE GROUP PLC-RESOLUTIONS PASSED AT THE 64TH AGM CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43749_AFRICA_PRUDENTIAL_PLC-RESOLUTIONS_PASSED_AT_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "AFRICA PRUDENTIAL PLC-RESOLUTIONS PASSED AT ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43712_UNITED_CAPITAL_PLC-UNITED_CAPITAL_PLC_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "UNITED CAPITAL PLC-UNITED CAPITAL PLC AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43710_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "ABC TRANSPORT PLC-OUTCOME OF BOARD OF DIRECTORS MEETING CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43493_NOTORE_CHEMICAL_INDUSTRIES_PLC-RESOLUTIONS_PASSED_AT_COURT-ORDERED_MEETING_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "title": "NOTORE CHEMICAL INDUSTRIES PLC-RESOLUTIONS PASSED AT COURT-ORDERED MEETING CORPORATE ACTIONS MARCH 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43366_TRANS-NATIONWIDE_EXPRESS_PLC.-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "title": "TRANS-NATIONWIDE EXPRESS PLC.-OUTCOME OF BOARD OF DIRECTORS MEETING CORPORATE ACTIONS MARCH 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43317_SECURE_ELECTRONIC_TECHNOLOGY_PLC-RESOLUTION_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "title": "SECURE ELECTRONIC TECHNOLOGY PLC-RESOLUTION OF THE BOARD OF DIRECTORS CORPORATE ACTIONS MARCH 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43298_VITAFOAM_NIG_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "title": "VITAFOAM NIG PLC.-AGM RESOLUTIONS CORPORATE ACTIONS MARCH 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43225_FCMB_GROUP_PLC-OUTCOME_OF_FCMB_GROUP_PLC_BOARD_OF_DIRECTORS'_MEETING_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
-      "title": "FCMB GROUP PLC-OUTCOME OF FCMB GROUP PLC BOARD OF DIRECTORS' MEETING CORPORATE ACTIONS FEBRUARY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43217_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
-      "title": "CUTIX PLC.-CUTIX PLC - RESOLUTION OF MEETING OF THE BOARD OF DIRECTORS CORPORATE ACTIONS FEBRUARY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43179_ALUMINIUM_EXTRUSION_IND._PLC.-RESOLUTIONS_PASSED_AT_THE_37TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
-      "title": "ALUMINIUM EXTRUSION IND. PLC.-RESOLUTIONS PASSED AT THE 37TH ANNUAL GENERAL MEETING CORPORATE ACTIONS FEBRUARY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43178_TRANSCORP_POWER_PLC-TRANSCORP_POWER_AGM_RESOLUTIONS_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
-      "title": "TRANSCORP POWER PLC-TRANSCORP POWER AGM RESOLUTIONS CORPORATE ACTIONS FEBRUARY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43156_HONEYWELL_FLOUR_MILL_PLC-RESOLUTIONS_PASSED_AT_HFMP'S_2024_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
-      "title": "HONEYWELL FLOUR MILL PLC-RESOLUTIONS PASSED AT HFMP'S 2024 ANNUAL GENERAL MEETING CORPORATE ACTIONS FEBRUARY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42950_ARADEL_HOLDINGS_PLC-NOTICE_OF_DECISION_CORPORATE_ACTIONS_JANUARY_2025.pdf",
-      "title": "ARADEL HOLDINGS PLC-NOTICE OF DECISION CORPORATE ACTIONS JANUARY 2025",
-      "source": "sharepoint_index"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 27.83,
+  "results": []
 }
