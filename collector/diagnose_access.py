@@ -1,20 +1,19 @@
 """
-collector/diagnose_access.py — one-shot access diagnostic
+collector/diagnose_access.py — access diagnostic, round 2
 
-Answers, with evidence from a GitHub Actions runner, the questions we have
-been guessing about:
+Round 1 proved: direct doclib file reads work (HTTP 200); aggregator
+company pages only go back to June/July; Kobo is JS-only.
 
-  1. Does doclib expose a directory listing?
-  2. Can we HEAD a known-real, never-discovered doclib PDF directly?
-  3. Do AbokiForex per-company pages return 200 or 403, and how far back
-     do they go?
-  4. Do NaijaTicker company pages show anything from April 2026?
+Round 2 tests the two untried enumeration routes:
+  6. SharePoint list/REST/search endpoints on doclib.ngxgroup.com
+  7. Wayback Machine (archive.org) CDX index + archived AbokiForex snapshots
 
 Run manually:  python -u -m collector.diagnose_access
 Read-only. Touches no feed or state files.
 """
 
 import re
+import json
 import requests
 
 HEADERS = {
@@ -23,25 +22,11 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/128.0.0.0 Safari/537.36"
     ),
-    "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9",
+    "Accept": "*/*",
 }
 
-PDF_RE = re.compile(
-    r"https?://doclib\.ngxgroup\.com/Financial_NewsDocs/[^\s\"'<>\]]+?\.pdf", re.I
-)
+PDF_RE = re.compile(r"doclib\.ngxgroup\.com/Financial_NewsDocs/[^\s\"'<>\]]+?\.pdf", re.I)
 NUM_RE = re.compile(r"/Financial_NewsDocs/(\d{4,6})_", re.I)
-
-# Real URLs found via search earlier in this project. Never discovered by
-# the pipeline. If HEAD returns 200 here, direct access works and the gap is
-# purely discovery.
-KNOWN_UNDISCOVERED = [
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/46167_DANGOTE_CEMENT_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/46570_CUSTODIAN_INVESTMENT_PLC-CUSTODIAN_INVESTMENT_PLC_DIVIDEND_CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/NGX_Group_-_Dividend_Announcement.pdf",
-]
-
-COMPANY_TESTS = ["GTCO", "ZENITHBANK", "ACCESSCORP", "UBA"]
 
 
 def section(title):
@@ -50,88 +35,99 @@ def section(title):
     print("=" * 70, flush=True)
 
 
-def get(url, timeout=(8, 15)):
+def get(url, timeout=(10, 25), headers=None):
     try:
-        return requests.get(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
+        return requests.get(url, headers=headers or HEADERS, timeout=timeout, allow_redirects=True)
     except Exception as exc:
-        print(f"  EXC {url[:70]} -> {exc!r}", flush=True)
+        print(f"  EXC {url[:80]} -> {exc!r}", flush=True)
         return None
 
 
-def head(url, timeout=(5, 10)):
-    try:
-        return requests.head(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
-    except Exception as exc:
-        print(f"  EXC {url[:70]} -> {exc!r}", flush=True)
-        return None
-
-
-def summarize_pdfs(html):
-    pdfs = sorted(set(PDF_RE.findall(html or "")))
-    nums = sorted(int(m.group(1)) for u in pdfs for m in [NUM_RE.search(u)] if m)
-    lo = nums[0] if nums else None
-    hi = nums[-1] if nums else None
+def pdf_stats(text):
+    pdfs = sorted(set(PDF_RE.findall(text or "")))
+    nums = sorted(int(m.group(1)) for u in pdfs for m in [NUM_RE.search("/" + u)] if m)
     div = [u for u in pdfs if re.search(r"DIVIDEND|DISTRIBUTION|CORPORATE_ACTION", u, re.I)]
-    return pdfs, lo, hi, div
+    return pdfs, (nums[0] if nums else None), (nums[-1] if nums else None), div
 
 
 def main():
-    section("1. doclib directory listing?")
-    for url in [
-        "https://doclib.ngxgroup.com/",
-        "https://doclib.ngxgroup.com/Financial_NewsDocs/",
-        "https://doclib.ngxgroup.com/Financial_NewsDocs",
-    ]:
-        r = get(url)
+    section("6. SharePoint endpoints on doclib.ngxgroup.com")
+    sp_json = {"Accept": "application/json;odata=verbose", "User-Agent": HEADERS["User-Agent"]}
+    tests = [
+        ("https://doclib.ngxgroup.com/Financial_NewsDocs/Forms/AllItems.aspx", HEADERS),
+        ("https://doclib.ngxgroup.com/_layouts/15/viewlsts.aspx", HEADERS),
+        ("https://doclib.ngxgroup.com/_api/web/lists", sp_json),
+        ("https://doclib.ngxgroup.com/_api/web/GetFolderByServerRelativeUrl('/Financial_NewsDocs')/Files?$top=50", sp_json),
+        ("https://doclib.ngxgroup.com/_api/search/query?querytext='dividend'&rowlimit=50", sp_json),
+        ("https://doclib.ngxgroup.com/_layouts/15/osssearchresults.aspx?k=dividend%202026", HEADERS),
+        ("https://doclib.ngxgroup.com/_vti_bin/listdata.svc/", sp_json),
+    ]
+    for url, hdrs in tests:
+        r = get(url, headers=hdrs)
         if r is None:
             continue
-        body = (r.text or "")[:400].replace("\n", " ")
-        pdf_count = len(PDF_RE.findall(r.text or ""))
-        print(f"  HTTP {r.status_code}  {url}", flush=True)
-        print(f"     content-type={r.headers.get('Content-Type','?')} len={len(r.text or '')} pdf_links={pdf_count}", flush=True)
-        print(f"     body: {body}", flush=True)
+        text = r.text or ""
+        pdfs, lo, hi, div = pdf_stats(text)
+        print(f"  HTTP {r.status_code}  {url[:95]}", flush=True)
+        print(f"     ctype={r.headers.get('Content-Type','?')[:40]} len={len(text)} pdf_links={len(pdfs)} range={lo}-{hi}", flush=True)
+        snippet = text[:300].replace("\n", " ")
+        print(f"     body: {snippet}", flush=True)
 
-    section("2. Direct HEAD on known-real, never-discovered PDFs")
-    for url in KNOWN_UNDISCOVERED:
-        r = head(url)
-        if r is None:
-            continue
-        print(f"  HTTP {r.status_code}  {url.split('/')[-1][:80]}", flush=True)
-        print(f"     content-type={r.headers.get('Content-Type','?')} length={r.headers.get('Content-Length','?')}", flush=True)
+    section("7a. Wayback CDX: every doclib PDF archive.org has ever captured")
+    cdx = (
+        "http://web.archive.org/cdx/search/cdx"
+        "?url=doclib.ngxgroup.com/Financial_NewsDocs/*"
+        "&output=json&fl=original,timestamp&collapse=urlkey&limit=5000"
+    )
+    r = get(cdx, timeout=(15, 60))
+    if r is not None:
+        print(f"  HTTP {r.status_code} len={len(r.text or '')}", flush=True)
+        try:
+            rows = json.loads(r.text)[1:]
+            urls = [row[0] for row in rows]
+            pdfs = [u for u in urls if u.lower().endswith(".pdf")]
+            nums = sorted(int(m.group(1)) for u in pdfs for m in [NUM_RE.search(u)] if m)
+            div = [u for u in pdfs if re.search(r"DIVIDEND|DISTRIBUTION|CORPORATE_ACTION", u, re.I)]
+            in_gap = [n for n in nums if 42000 <= n < 46024]
+            print(f"     captured_pdfs={len(pdfs)} number_range={nums[0] if nums else None}-{nums[-1] if nums else None}", flush=True)
+            print(f"     dividend_like={len(div)}  in_gap_42000_46023={len(in_gap)}", flush=True)
+            for u in div[:10]:
+                print(f"     {u.split('/')[-1][:90]}", flush=True)
+        except Exception as exc:
+            print(f"     parse failed: {exc!r}; body: {(r.text or '')[:300]}", flush=True)
 
-    section("3. AbokiForex per-company pages")
-    for t in COMPANY_TESTS:
-        url = f"https://abokiforex.app/ngx-stocks/disclosures/{t}"
-        r = get(url)
-        if r is None:
-            continue
-        pdfs, lo, hi, div = summarize_pdfs(r.text)
-        print(f"  HTTP {r.status_code}  {t}: total_pdfs={len(pdfs)} range={lo}-{hi} dividend_like={len(div)}", flush=True)
-        for u in div[:5]:
-            print(f"     {u.split('/')[-1][:90]}", flush=True)
+    section("7b. Wayback CDX: snapshots of the AbokiForex listing page, Jan-Jun 2026")
+    cdx2 = (
+        "http://web.archive.org/cdx/search/cdx"
+        "?url=abokiforex.app/ngx-stocks/disclosures"
+        "&output=json&fl=timestamp,statuscode&from=202601&to=202606&limit=200"
+    )
+    r = get(cdx2, timeout=(15, 60))
+    snapshots = []
+    if r is not None:
+        print(f"  HTTP {r.status_code} len={len(r.text or '')}", flush=True)
+        try:
+            rows = json.loads(r.text)[1:]
+            snapshots = [row[0] for row in rows if row[1] == "200"]
+            print(f"     snapshots_200={len(snapshots)}", flush=True)
+            print(f"     first={snapshots[:3]} last={snapshots[-3:]}", flush=True)
+        except Exception as exc:
+            print(f"     parse failed: {exc!r}; body: {(r.text or '')[:300]}", flush=True)
 
-    section("4. NaijaTicker company pages")
-    for t in COMPANY_TESTS:
-        url = f"https://naijaticker.com/stocks/{t.lower()}"
-        r = get(url)
-        if r is None:
-            continue
-        pdfs, lo, hi, div = summarize_pdfs(r.text)
-        print(f"  HTTP {r.status_code}  {t}: total_pdfs={len(pdfs)} range={lo}-{hi} dividend_like={len(div)}", flush=True)
-        for u in div[:5]:
-            print(f"     {u.split('/')[-1][:90]}", flush=True)
-
-    section("5. Kobo Terminal company/disclosure pages")
-    for url in [
-        "https://koboterminal.com/disclosures",
-        "https://koboterminal.com/disclosures?company=GTCO",
-        "https://koboterminal.com/stocks/GTCO",
-    ]:
-        r = get(url)
-        if r is None:
-            continue
-        pdfs, lo, hi, div = summarize_pdfs(r.text)
-        print(f"  HTTP {r.status_code}  {url[:60]}: total_pdfs={len(pdfs)} range={lo}-{hi}", flush=True)
+    section("7c. Fetch one archived AbokiForex snapshot from April 2026 and count doclib links")
+    april = [t for t in snapshots if t.startswith("202604")] or [t for t in snapshots if t.startswith("202605")] or snapshots[:1]
+    if april:
+        ts = april[len(april)//2]
+        url = f"http://web.archive.org/web/{ts}id_/https://abokiforex.app/ngx-stocks/disclosures"
+        r = get(url, timeout=(15, 60))
+        if r is not None:
+            pdfs, lo, hi, div = pdf_stats(r.text)
+            print(f"  HTTP {r.status_code}  snapshot={ts} len={len(r.text or '')}", flush=True)
+            print(f"     pdf_links={len(pdfs)} range={lo}-{hi} dividend_like={len(div)}", flush=True)
+            for u in div[:10]:
+                print(f"     {u.split('/')[-1][:90]}", flush=True)
+    else:
+        print("  no snapshots available to test", flush=True)
 
     print("\nDone. Read-only; nothing was written.", flush=True)
 
