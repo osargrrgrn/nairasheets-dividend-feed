@@ -31,6 +31,10 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
+      - name: Access diagnostic (read-only)
+        run: python -u -m collector.diagnose_access
+        continue-on-error: true
+
       - name: Update feed
         run: python -u -m collector.run
 
