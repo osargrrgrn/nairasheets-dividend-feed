@@ -46,6 +46,51 @@ TRW_BASE = "https://trwsb.wordpress.com"
 TRW_DISCLOSURE_SEARCH = "https://trwsb.wordpress.com/?s=corporate+disclosures+NGX"
 TRW_DIVIDEND_TABLE_SEARCH = "https://trwsb.wordpress.com/?s=NGX+dividend+bonus+table"
 
+# Mansa Markets — comprehensive NGX dividend list with dates
+MANSA_DIVIDEND_URL = "https://www.mansamarkets.com/blog/dividends-declared-2026-nigeria-ngx-companies"
+
+# Additional Mansa ticker mappings
+MANSA_COMPANY_TO_TICKER = {
+    "access holdings": "ACCESSCORP",
+    "access bank": "ACCESSCORP",
+    "airtel africa": "AIRTELAFRI",
+    "bua cement": "BUACEMENT",
+    "bua foods": "BUAFOODS",
+    "dangote cement": "DANGCEM",
+    "dangote sugar": "DANGSUGAR",
+    "fbn holdings": "FBNH",
+    "fcmb group": "FCMB",
+    "fidelity bank": "FIDELITYBK",
+    "first holdco": "FIRSTHOLDCO",
+    "flour mills": "FLOURMILL",
+    "geregu power": "GEREGU",
+    "gtco": "GTCO",
+    "guaranty trust": "GTCO",
+    "guinness nigeria": "GUINNESS",
+    "julius berger": "JBERGER",
+    "lafarge africa": "WAPCO",
+    "mtn nigeria": "MTNN",
+    "nascon": "NASCON",
+    "nem insurance": "NEM",
+    "ngx group": "NGXGROUP",
+    "nigerian breweries": "NB",
+    "okomu oil": "OKOMUOIL",
+    "presco": "PRESCO",
+    "seplat energy": "SEPLAT",
+    "stanbic ibtc": "STANBIC",
+    "transcorp": "TRANSCORP",
+    "uba": "UBA",
+    "united bank": "UBA",
+    "unilever nigeria": "UNILEVER",
+    "united capital": "UCAP",
+    "vfd group": "VFDGROUP",
+    "zenith bank": "ZENITHBANK",
+    "wema bank": "WEMABANK",
+    "berger paints": "BERGER",
+    "eterna": "ETERNA",
+    "aradel": "ARADEL",
+}
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -223,26 +268,129 @@ def _extract_doclib_pdfs_from_text(text: str) -> list[str]:
     return list(set(PDF_URL_RE.findall(normalized)))
 
 
-def _find_latest_dividend_table_url() -> Optional[str]:
-    """Find the most recent TRW NGX Dividend Table post URL."""
-    r = _get(TRW_DIVIDEND_TABLE_SEARCH)
-    if not r:
-        return None
+def _find_all_dividend_table_urls() -> list:
+    """Find ALL TRW NGX Dividend Table post URLs for the current year."""
+    year = date.today().year
+    urls = []
+    
+    # Search for all table versions
+    search_queries = [
+        f"https://trwsb.wordpress.com/?s=NGX+dividend+bonus+table+{year}",
+        f"https://trwsb.wordpress.com/?s=NGX+dividend+table+{year}",
+        TRW_DIVIDEND_TABLE_SEARCH,
+    ]
+    
+    seen = set()
+    for search_url in search_queries:
+        r = _get(search_url)
+        if not r:
+            continue
+        
+        soup = BeautifulSoup(r.text, "html.parser")
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            if href in seen:
+                continue
+            title = (a.get_text() or "").lower()
+            if (
+                "trwsb.wordpress.com" in href
+                and str(year) in href
+                and ("dividend" in href.lower() or "dividend" in title)
+                and ("table" in href.lower() or "table" in title or "bonus" in href.lower())
+            ):
+                urls.append(href)
+                seen.add(href)
+    
+    print(f"[TRW] Found {len(urls)} dividend table versions", flush=True)
+    return urls
 
-    soup = BeautifulSoup(r.text, "html.parser")
-    # Find article links containing "dividend" and "table" and "2026"
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        title = (a.get_text() or "").lower()
-        if (
-            "trwsb.wordpress.com" in href
-            and "2026" in href
-            and ("dividend" in href.lower() or "dividend" in title)
-            and ("table" in href.lower() or "table" in title)
-        ):
-            return href
 
-    return None
+def _parse_mansa_dividend_page(html: str) -> dict:
+    """
+    Parse Mansa Markets dividend page for NGX company dates.
+    Returns dict: {ticker: [{qualification_date, payment_date, dividend_per_share, currency, type}]}
+    """
+    results = {}
+    soup = BeautifulSoup(html, "html.parser")
+    
+    # Mansa Markets uses a table with Company, Ticker, Dividend, Ex-date, Paid columns
+    for table in soup.find_all("table"):
+        headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
+        if not headers:
+            # Try first row as header
+            first_row = table.find("tr")
+            if first_row:
+                headers = [td.get_text(strip=True).lower() for td in first_row.find_all(["th", "td"])]
+        
+        col_company = col_ticker = col_amount = col_exdate = col_pay = -1
+        for i, h in enumerate(headers):
+            if "company" in h:
+                col_company = i
+            elif "ticker" in h or "symbol" in h:
+                col_ticker = i
+            elif "dividend" in h or "amount" in h:
+                col_amount = i
+            elif "ex" in h and "date" in h or "ex-date" in h or "qual" in h:
+                col_exdate = i
+            elif "pay" in h or "paid" in h:
+                col_pay = i
+        
+        if col_company == -1 and col_ticker == -1:
+            continue
+        
+        for row in table.find_all("tr")[1:]:
+            cells = [td.get_text(strip=True) for td in row.find_all("td")]
+            if not cells:
+                continue
+            
+            # Get ticker
+            ticker = ""
+            if col_ticker >= 0 and col_ticker < len(cells):
+                ticker = cells[col_ticker].upper().strip()
+            elif col_company >= 0 and col_company < len(cells):
+                company = cells[col_company].lower().strip()
+                # Try Mansa mapping first, then TRW mapping
+                ticker = MANSA_COMPANY_TO_TICKER.get(company, "")
+                if not ticker:
+                    ticker = _resolve_ticker(company)
+            
+            if not ticker:
+                continue
+            
+            # Get amount
+            amount_str = cells[col_amount] if col_amount >= 0 and col_amount < len(cells) else ""
+            amount, currency = _parse_amount(amount_str)
+            if amount <= 0:
+                continue
+            
+            # Get dates
+            qual_str = cells[col_exdate] if col_exdate >= 0 and col_exdate < len(cells) else ""
+            pay_str = cells[col_pay] if col_pay >= 0 and col_pay < len(cells) else ""
+            
+            qual_date = _parse_date(qual_str)
+            pay_date = _parse_date(pay_str)
+            
+            if not qual_date and not pay_date:
+                continue
+            
+            entry = {
+                "dividend_per_share": amount,
+                "currency": currency,
+                "type": "final",
+            }
+            if qual_date:
+                entry["qualification_date"] = qual_date
+            if pay_date:
+                entry["payment_date"] = pay_date
+            
+            if ticker not in results:
+                results[ticker] = []
+            
+            existing = [e for e in results[ticker] if abs(e.get("dividend_per_share", 0) - amount) < 0.01]
+            if not existing:
+                results[ticker].append(entry)
+    
+    return results
 
 
 def _parse_dividend_table(html: str) -> dict:
@@ -461,57 +609,66 @@ def discover_pdfs_from_trw(known_urls: set, debug: dict, started: float) -> list
 
 def update_known_dates_from_trw(debug: dict) -> int:
     """
-    Patch 49 — Date filling: Fetch TRW's NGX Dividend Table and update
-    known_dates.json with qualification/payment dates.
+    Patch 49b — Date filling: Fetch ALL TRW NGX Dividend Table versions
+    plus Mansa Markets dividend list and update known_dates.json.
 
-    Runs once per pipeline execution. Only fills gaps — never overwrites
-    dates already extracted from official NGX PDFs.
+    Fetches multiple sources:
+    1. All TRW dividend table versions (April 8, April 23, and any updates)
+    2. Mansa Markets comprehensive NGX dividend list
+
+    Only fills gaps — never overwrites dates extracted from official NGX PDFs.
     """
-    print("[TRW] Updating known_dates.json from TRW dividend table", flush=True)
+    print("[TRW] Updating known_dates.json from all sources", flush=True)
 
-    try:
-        # Find the latest dividend table post
-        table_url = _find_latest_dividend_table_url()
-        if not table_url:
-            # Fall back to known URL pattern
-            year = date.today().year
-            r = _get(f"https://trwsb.wordpress.com/?s=NGX+dividend+table+{year}")
-            if r:
-                soup = BeautifulSoup(r.text, "html.parser")
-                for a in soup.find_all("a", href=True):
-                    if f"{year}" in a["href"] and "dividend" in a["href"].lower():
-                        table_url = a["href"]
-                        break
+    total_added = 0
+    all_new_data = {}
 
-        if not table_url:
-            print("[TRW] Could not find dividend table URL", flush=True)
-            debug["trw_known_dates"] = {"status": "no_table_found", "added": 0}
-            return 0
+    # 1. Fetch ALL TRW dividend table versions
+    table_urls = _find_all_dividend_table_urls()
 
-        print(f"[TRW] Fetching dividend table: {table_url}", flush=True)
+    for table_url in table_urls:
+        print(f"[TRW] Fetching: {table_url}", flush=True)
         r = _get(table_url)
         if not r:
-            print("[TRW] Could not fetch dividend table", flush=True)
-            debug["trw_known_dates"] = {"status": "fetch_failed", "added": 0}
-            return 0
+            continue
 
-        # Parse the table
         new_data = _parse_dividend_table(r.text)
-        print(f"[TRW] Parsed {len(new_data)} companies from dividend table", flush=True)
+        print(f"[TRW] Parsed {len(new_data)} companies from {table_url.split('/')[-1]}", flush=True)
 
-        # Update known_dates.json
-        added = _update_known_dates(new_data)
-        print(f"[TRW] Updated known_dates.json: {added} entries added/updated", flush=True)
+        # Merge into all_new_data
+        for ticker, entries in new_data.items():
+            if ticker not in all_new_data:
+                all_new_data[ticker] = []
+            for entry in entries:
+                existing_amounts = [e.get("dividend_per_share", 0) for e in all_new_data[ticker]]
+                if not any(abs(a - entry.get("dividend_per_share", 0)) < 0.01 for a in existing_amounts):
+                    all_new_data[ticker].append(entry)
 
-        debug["trw_known_dates"] = {
-            "status": "ok",
-            "table_url": table_url,
-            "companies_parsed": len(new_data),
-            "entries_added": added,
-        }
-        return added
+    # 2. Fetch Mansa Markets dividend list
+    print("[TRW] Fetching Mansa Markets dividend list", flush=True)
+    r_mansa = _get(MANSA_DIVIDEND_URL)
+    if r_mansa:
+        mansa_data = _parse_mansa_dividend_page(r_mansa.text)
+        print(f"[TRW] Parsed {len(mansa_data)} companies from Mansa Markets", flush=True)
+        for ticker, entries in mansa_data.items():
+            if ticker not in all_new_data:
+                all_new_data[ticker] = []
+            for entry in entries:
+                existing_amounts = [e.get("dividend_per_share", 0) for e in all_new_data[ticker]]
+                if not any(abs(a - entry.get("dividend_per_share", 0)) < 0.01 for a in existing_amounts):
+                    all_new_data[ticker].append(entry)
 
-    except Exception as exc:
-        print(f"[TRW] Error updating known_dates: {exc}", flush=True)
-        debug["trw_known_dates"] = {"status": "error", "error": repr(exc)}
-        return 0
+    # Update known_dates.json with all collected data
+    if all_new_data:
+        total_added = _update_known_dates(all_new_data)
+        print(f"[TRW] Updated known_dates.json: {total_added} entries added/updated from {len(all_new_data)} companies", flush=True)
+    else:
+        print("[TRW] No new data found from any source", flush=True)
+
+    debug["trw_known_dates"] = {
+        "status": "ok",
+        "table_versions_found": len(table_urls),
+        "total_companies": len(all_new_data),
+        "entries_added": total_added,
+    }
+    return total_added
