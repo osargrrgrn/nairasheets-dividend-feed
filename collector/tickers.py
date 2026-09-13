@@ -73,6 +73,18 @@ ALIASES = {
     "SIAML PENSION ETF 40": "SIAML40ETF",
     "CHAPEL HILL DENHAM": "NIDF",
     "TOTALENERGIES MARKETING NIGERIA PLC": "TOTAL",
+    # Listed funds / REITs — often absent from equities-only listings
+    "CORONATION INFRASTRUCTURE FUND": "CNIF",
+    "CORONATION INFRASTRUCTURE DEBT FUND": "CNIF",
+    "CNIF": "CNIF",
+    "CHAPEL HILL DENHAM NIGERIA INFRASTRUCTURE DEBT FUND": "NIDF",
+    "CHAPEL HILL DENHAM NIG INFRAS DEBT FUND": "NIDF",
+    "UPDC REAL ESTATE INVESTMENT TRUST": "UPDCREIT",
+    "UPDC REIT": "UPDCREIT",
+    "SFS REAL ESTATE INVESTMENT TRUST": "SFSREIT",
+    "SFS REIT": "SFSREIT",
+    "MOFI REAL ESTATE INVESTMENT FUND": "MREIF",
+    "MREIF": "MREIF",
 }
 
 def normalize(value: str) -> str:
@@ -90,3 +102,87 @@ def resolve_ticker(company: str, title: str = "") -> str:
         if normalize(name) in hay:
             return ticker
     return ""
+
+
+# ---------------------------------------------------------------------------
+# Patch 53: dynamic aliases from Kobo Terminal's NGX listed-companies table.
+# The static ALIASES above are a floor; this keeps the map current without
+# anyone hand-editing it. Cached to data/aliases_dynamic.json so imports
+# never touch the network; discover.py calls refresh_dynamic_aliases() once
+# per run.
+# ---------------------------------------------------------------------------
+import json as _json
+import re as _re
+from pathlib import Path as _Path
+
+_DYNAMIC_FILE = _Path(__file__).resolve().parents[1] / "data" / "aliases_dynamic.json"
+KOBO_LISTED_URL = "https://koboterminal.com/ngx-listed-companies"
+
+
+def _load_dynamic_aliases() -> None:
+    try:
+        if _DYNAMIC_FILE.exists():
+            extra = _json.loads(_DYNAMIC_FILE.read_text(encoding="utf-8"))
+            for name, ticker in extra.items():
+                ALIASES.setdefault(name, ticker)
+    except Exception:
+        pass
+
+
+def refresh_dynamic_aliases() -> int:
+    """
+    Fetch Kobo Terminal's listed-companies table (Company | Ticker | Sector |
+    Market cap | Price), derive NAME -> TICKER aliases, merge into ALIASES
+    in memory and persist to data/aliases_dynamic.json. Returns count added.
+    """
+    try:
+        import requests
+        from bs4 import BeautifulSoup
+    except Exception:
+        return 0
+    try:
+        r = requests.get(
+            KOBO_LISTED_URL,
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/128.0 Safari/537.36"},
+            timeout=(8, 20),
+        )
+        if r.status_code != 200:
+            return 0
+        soup = BeautifulSoup(r.text, "html.parser")
+        found = {}
+        for table in soup.find_all("table"):
+            for tr in table.find_all("tr"):
+                cells = [td.get_text(" ", strip=True) for td in tr.find_all(["td", "th"])]
+                if len(cells) < 2:
+                    continue
+                company, ticker = cells[0], cells[1]
+                if not _re.fullmatch(r"[A-Z0-9]{2,12}", ticker or ""):
+                    continue
+                base = normalize(company)
+                if len(base) < 3:
+                    continue
+                found[base] = ticker
+                # Also register a PLC-suffixed form and a form without corporate suffixes,
+                # because NGX filenames vary ("X PLC", "X NIGERIA PLC", "X").
+                stripped = _re.sub(r"\b(PLC|LIMITED|LTD|NIGERIA|NIG)\b", " ", base)
+                stripped = " ".join(stripped.split())
+                if len(stripped) >= 4:
+                    found.setdefault(stripped, ticker)
+                    found.setdefault(stripped + " PLC", ticker)
+        if not found:
+            return 0
+        added = 0
+        for name, ticker in found.items():
+            if name not in ALIASES:
+                ALIASES[name] = ticker
+                added += 1
+        _DYNAMIC_FILE.parent.mkdir(parents=True, exist_ok=True)
+        _DYNAMIC_FILE.write_text(_json.dumps(found, indent=2, sort_keys=True), encoding="utf-8")
+        print(f"[Aliases] Kobo listed companies: {len(found)} names, {added} new aliases", flush=True)
+        return added
+    except Exception as exc:
+        print(f"[Aliases] refresh failed: {exc!r}", flush=True)
+        return 0
+
+
+_load_dynamic_aliases()
