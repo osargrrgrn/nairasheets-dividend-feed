@@ -618,6 +618,13 @@ def discover_official_pdfs():
     print(f"Known archive URLs: {len(known)}", flush=True)
     all_found = []
 
+    # Patch 53: refresh company-name -> ticker aliases from Kobo Terminal once per run
+    try:
+        from .tickers import refresh_dynamic_aliases
+        refresh_dynamic_aliases()
+    except Exception as exc:
+        print(f"[Aliases] skipped: {exc!r}", flush=True)
+
     # Primary: AbokiForex listing + detail pages (recent documents)
     with requests.Session() as s:
         all_found.extend(_discover_aboki(s, known, debug, started))
