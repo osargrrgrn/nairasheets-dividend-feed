@@ -1,5 +1,5 @@
 """
-collector/sharepoint_index.py — Patch 51
+collector/sharepoint_index.py — Patch 53b
 
 Primary discovery source: NGX's own document library.
 
@@ -55,20 +55,55 @@ TIMEOUT = (10, 90)
 
 NUM_RE = re.compile(r"^(\d{3,6})_")
 
-# Filenames worth handing to the parser. Case-insensitive.
-DIVIDEND_NAME_RE = re.compile(
-    r"DIVIDEND|DISTRIBUTION|CORPORATE[_ ]ACTION|NGX[_ ]NOTIFICATION|"
-    r"AGM[_ ]RESOLUTION|RESOLUTIONS[_ ]PASSED|OUTCOME[_ ]OF|"
-    r"NOTICE[_ ]OF[_ ]DECISION|QUALIFICATION",
+# NGX filenames: <number>_<COMPANY>-<TITLE>_CORPORATE_ACTIONS_<MONTH>_<YEAR>.pdf
+# The trailing "_CORPORATE_ACTIONS_..." is a *category* present on almost every
+# filing, so it must be stripped before judging relevance.
+CATEGORY_SUFFIX_RE = re.compile(r"_?CORPORATE[_ ]ACTIONS?[_ ][A-Z]+[_ ]20\d\d(?:\.pdf)?$", re.I)
+
+# Titles that are dividend events or contain the dividend decision.
+TIER1_RE = re.compile(
+    r"DIVIDEND|DISTRIBUTION|NGX[_ ]NOTIFICATION|QUALIFICATION|"
+    r"CORPORATE[_ ]ACTIONS?[_ ]ANNOUNCEMENT|CORPORATE[_ ]ACTION[_ ](?:FY|20\d\d|\d{4})|"
+    r"CORPORATE[_ ]ACTION$",
+    re.I,
+)
+TIER2_RE = re.compile(
+    r"AGM[_ ]RESOLUTION|RESOLUTIONS?[_ ]PASSED|RESOLUTIONS?[_ ](?:OF|AT)|OUTCOME[_ ]OF|"
+    r"NOTICE[_ ]OF[_ ]DECISION|POST[_ ]BOARD|BOARD[_ ]APPROVAL",
+    re.I,
+)
+# Never dividend events, whatever the category says.
+NEGATIVE_RE = re.compile(
+    r"BOARD[_ ]CHANGE|TRADING[_ ]SYMBOL|CLOSED?[_ ]PERIOD|RECONSTRUCTION|APPOINTMENT|"
+    r"RESIGNATION|RETIREMENT|UNCLAIMED|TENDER[_ ]OFFER|GOVERNANCE|INSIDER|DEALING|"
+    r"VOTING|LITIGATION|CHANGE[_ ]OF[_ ]NAME|BOARD[_ ]MEETING|NOTICE[_ ]OF[_ ]BOARD|"
+    r"SUSTAINABILITY|COMPLAINT|WHISTLE|RIGHTS[_ ]ISSUE|BONUS[_ ]ISSUE|SHARE[_ ]BUY|"
+    r"CAPITAL[_ ]MARKETS[_ ]DAY|PRESS[_ ]RELEASE|EARNINGS|FINANCIAL[_ ]STATEMENT|QUARTER",
     re.I,
 )
 
-# Highest-value names go first so they get parsed first.
-TIER1_NAME_RE = re.compile(
-    r"DIVIDEND[_ ]ANNOUNCEMENT|CORPORATE[_ ]ACTIONS?[_ ]ANNOUNCEMENT|"
-    r"DISTRIBUTION[_ ]PAYMENT|NGX[_ ]NOTIFICATION|INTERIM[_ ]DIVIDEND|FINAL[_ ]DIVIDEND",
-    re.I,
-)
+
+def _title_of(name: str) -> str:
+    base = re.sub(r"\.pdf$", "", name or "", flags=re.I)
+    base = CATEGORY_SUFFIX_RE.sub("", base)
+    # drop the leading "<number>_" and the company part before the first "-"
+    base = re.sub(r"^\d{3,6}_", "", base)
+    if "-" in base:
+        base = base.split("-", 1)[1]
+    return base.strip("_ -")
+
+
+def _tier(name: str):
+    """0 = dividend title, 1 = resolution/outcome, None = not a candidate."""
+    title = _title_of(name)
+    hay = title if title else name
+    if NEGATIVE_RE.search(hay) and not re.search(r"DIVIDEND|DISTRIBUTION", hay, re.I):
+        return None
+    if TIER1_RE.search(hay):
+        return 0
+    if TIER2_RE.search(hay):
+        return 1
+    return None
 
 
 def _since_iso() -> str:
@@ -147,7 +182,8 @@ def discover_from_sharepoint(known: set, debug: dict, started: float) -> list:
                     name = row.get("Name") or ""
                     if not name.lower().endswith(".pdf"):
                         continue
-                    if not DIVIDEND_NAME_RE.search(name):
+                    tier = _tier(name)
+                    if tier is None:
                         continue
                     dbg["dividend_like"] += 1
 
@@ -159,7 +195,7 @@ def discover_from_sharepoint(known: set, debug: dict, started: float) -> list:
                     if _looks_strongly_irrelevant(title, url):
                         dbg["irrelevant"] += 1
                         continue
-                    candidates.append((name, url, title, row.get("TimeCreated") or ""))
+                    candidates.append((name, url, title, row.get("TimeCreated") or "", tier))
 
                 if len(rows) < PAGE:
                     break
@@ -169,11 +205,11 @@ def discover_from_sharepoint(known: set, debug: dict, started: float) -> list:
 
     # Tier-1 names first, then newest upload first (TimeCreated, ISO string),
     # so unnumbered filings such as NIDF_Q1_2026_... are ordered correctly.
-    candidates.sort(key=lambda c: c[3], reverse=True)                       # newest upload first
-    candidates.sort(key=lambda c: 0 if TIER1_NAME_RE.search(c[0]) else 1)  # stable: Tier-1 first
+    candidates.sort(key=lambda c: c[3], reverse=True)   # newest upload first
+    candidates.sort(key=lambda c: c[4])                 # stable: dividend titles before resolutions
 
     found = []
-    for name, url, title, _created in candidates:
+    for name, url, title, _created, _tier_no in candidates:
         found.append({"url": url, "title": title, "source": "sharepoint_index"})
         known.add(url)
 
@@ -184,6 +220,6 @@ def discover_from_sharepoint(known: set, debug: dict, started: float) -> list:
         f"known={dbg['already_known']} irrelevant={dbg['irrelevant']} new={len(found)}",
         flush=True,
     )
-    for name, _, _, _ in candidates[:8]:
+    for name, _, _, _, _ in candidates[:8]:
         print(f"[SharePoint]   {name[:85]}", flush=True)
     return found
