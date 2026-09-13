@@ -90,7 +90,7 @@ def _to_url(server_relative: str) -> str:
 
 def _doc_number(name: str) -> int:
     m = NUM_RE.match(name or "")
-    return int(m.group(1)) if m else 10**9  # unnumbered files sort last
+    return int(m.group(1)) if m else -1  # unnumbered files sort last (descending order)
 
 
 def _fetch_page(session: requests.Session, since: str, skip: int):
@@ -167,8 +167,9 @@ def discover_from_sharepoint(known: set, debug: dict, started: float) -> list:
     except Exception as exc:
         dbg["errors"].append(repr(exc))
 
-    # Tier-1 names first, then by document number ascending.
-    candidates.sort(key=lambda c: (0 if TIER1_NAME_RE.search(c[0]) else 1, _doc_number(c[0])))
+    # Tier-1 names first, then NEWEST document number first, so the current
+    # year's declarations are parsed before last year's backlog.
+    candidates.sort(key=lambda c: (0 if TIER1_NAME_RE.search(c[0]) else 1, -_doc_number(c[0])))
 
     found = []
     for name, url, title in candidates:
