@@ -12,9 +12,9 @@
     "pages": 2,
     "files_seen": 5636,
     "dividend_like": 522,
-    "already_known": 422,
+    "already_known": 502,
     "irrelevant": 1,
-    "new_pdfs": 99,
+    "new_pdfs": 19,
     "errors": []
   },
   "trw_discovery": {
@@ -33,407 +33,102 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 80,
-  "elapsed_seconds": 28.68,
+  "total_new_pdfs": 19,
+  "elapsed_seconds": 25.76,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45431_CHELLARAMS_PLC.-2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-      "title": "CHELLARAMS PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS NOVEMBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43944_UNITED_BANK_FOR_AFRICA_PLC-UNITED_BANK_FOR_AFRICA_PLC___2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "UNITED BANK FOR AFRICA PLC-UNITED BANK FOR AFRICA PLC 2025 AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45404_REGENCY_ALLIANCE_INSURANCE_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "title": "REGENCY ALLIANCE INSURANCE PLC-AGM RESOLUTIONS CORPORATE ACTIONS OCTOBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43935_RONCHESS_GLOBAL_RESOURCES_PLC-2024_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "RONCHESS GLOBAL RESOURCES PLC-2024 AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45343_RONCHESS_GLOBAL_RESOURCES_PLC-BOARD_RESOLUTION_OF_CHANGE_OF_COMPANY_SECRETARY_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "title": "RONCHESS GLOBAL RESOURCES PLC-BOARD RESOLUTION OF CHANGE OF COMPANY SECRETARY CORPORATE ACTIONS OCTOBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43934_RONCHESS_GLOBAL_RESOURCES_PLC-2021,_2022,_2023_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "RONCHESS GLOBAL RESOURCES PLC-2021, 2022, 2023 AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45341_BUA_FOODS_PLC-RESOLUTIONS_PASSED_AT_BOARD_OF_DIRECTORS'_MEETING_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "title": "BUA FOODS PLC-RESOLUTIONS PASSED AT BOARD OF DIRECTORS' MEETING CORPORATE ACTIONS OCTOBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43895_SEPLAT_ENERGY_PLC-NOTICE_OF_DECISION_Q1_2025_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "SEPLAT ENERGY PLC-NOTICE OF DECISION Q1 2025 CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45261_FCMB_GROUP_PLC-OUTCOME_OF_FCMB_GROUP_PLC_BOARD_OF_DIRECTORS'_MEETING_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "title": "FCMB GROUP PLC-OUTCOME OF FCMB GROUP PLC BOARD OF DIRECTORS' MEETING CORPORATE ACTIONS OCTOBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43826_NIGERIAN_BREWERIES_PLC.-RESOLUTIONS_PASSED_AT_THE_79TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "NIGERIAN BREWERIES PLC.-RESOLUTIONS PASSED AT THE 79TH ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45247_SEPLAT_ENERGY_PLC-NOTICE_OF_DECISION_Q3_2025_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "title": "SEPLAT ENERGY PLC-NOTICE OF DECISION Q3 2025 CORPORATE ACTIONS OCTOBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43773_NIGERIAN_EXCHANGE_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_64TH_AGM_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "NIGERIAN EXCHANGE GROUP PLC-RESOLUTIONS PASSED AT THE 64TH AGM CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45228_ACADEMY_PRESS_PLC.-YEAR_2025_AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "title": "ACADEMY PRESS PLC.-YEAR 2025 AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43749_AFRICA_PRUDENTIAL_PLC-RESOLUTIONS_PASSED_AT_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "AFRICA PRUDENTIAL PLC-RESOLUTIONS PASSED AT ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45205_LASACO_ASSURANCE_PLC.-RESOLUTION_OF_LASACO_ASSURANCE_PLC_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "title": "LASACO ASSURANCE PLC.-RESOLUTION OF LASACO ASSURANCE PLC CORPORATE ACTIONS OCTOBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43712_UNITED_CAPITAL_PLC-UNITED_CAPITAL_PLC_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "UNITED CAPITAL PLC-UNITED CAPITAL PLC AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45132_ROYAL_EXCHANGE_PLC.-2024_AGM_RESOLUTIONS__CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "title": "ROYAL EXCHANGE PLC.-2024 AGM RESOLUTIONS CORPORATE ACTIONS OCTOBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43710_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "title": "ABC TRANSPORT PLC-OUTCOME OF BOARD OF DIRECTORS MEETING CORPORATE ACTIONS APRIL 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45094_MECURE_INDUSTRIES_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "title": "MECURE INDUSTRIES PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43493_NOTORE_CHEMICAL_INDUSTRIES_PLC-RESOLUTIONS_PASSED_AT_COURT-ORDERED_MEETING_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "NOTORE CHEMICAL INDUSTRIES PLC-RESOLUTIONS PASSED AT COURT-ORDERED MEETING CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45042_N_NIG._FLOUR_MILLS_PLC.-NNFM_2025_AGM_RESOLUTION_PASSED_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "N NIG. FLOUR MILLS PLC.-NNFM 2025 AGM RESOLUTION PASSED CORPORATE ACTIONS SEPTEMBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43366_TRANS-NATIONWIDE_EXPRESS_PLC.-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "TRANS-NATIONWIDE EXPRESS PLC.-OUTCOME OF BOARD OF DIRECTORS MEETING CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45040_UNITY_BANK_PLC-RESOLUTIONS_PASSED_AT_THE_COURT_ORDERED_MEETING_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "UNITY BANK PLC-RESOLUTIONS PASSED AT THE COURT ORDERED MEETING CORPORATE ACTIONS SEPTEMBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43317_SECURE_ELECTRONIC_TECHNOLOGY_PLC-RESOLUTION_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "SECURE ELECTRONIC TECHNOLOGY PLC-RESOLUTION OF THE BOARD OF DIRECTORS CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45001_UNIVERSITY_PRESS_PLC.-2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "UNIVERSITY PRESS PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43298_VITAFOAM_NIG_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "VITAFOAM NIG PLC.-AGM RESOLUTIONS CORPORATE ACTIONS MARCH 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44995_RED_STAR_EXPRESS_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "RED STAR EXPRESS PLC-AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43225_FCMB_GROUP_PLC-OUTCOME_OF_FCMB_GROUP_PLC_BOARD_OF_DIRECTORS'_MEETING_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+      "title": "FCMB GROUP PLC-OUTCOME OF FCMB GROUP PLC BOARD OF DIRECTORS' MEETING CORPORATE ACTIONS FEBRUARY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44988_RED_STAR_EXPRESS_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "RED STAR EXPRESS PLC-AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43217_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+      "title": "CUTIX PLC.-CUTIX PLC - RESOLUTION OF MEETING OF THE BOARD OF DIRECTORS CORPORATE ACTIONS FEBRUARY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44964_BUA_FOODS_PLC-RESOLUTIONS_PASSED_AT_THE_FOURTH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "BUA FOODS PLC-RESOLUTIONS PASSED AT THE FOURTH ANNUAL GENERAL MEETING CORPORATE ACTIONS SEPTEMBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43179_ALUMINIUM_EXTRUSION_IND._PLC.-RESOLUTIONS_PASSED_AT_THE_37TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+      "title": "ALUMINIUM EXTRUSION IND. PLC.-RESOLUTIONS PASSED AT THE 37TH ANNUAL GENERAL MEETING CORPORATE ACTIONS FEBRUARY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44960_C_AND_I_LEASING_PLC.-CI_LEASING_PLC-AGM_RESOLUTIONS__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "C AND I LEASING PLC.-CI LEASING PLC-AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43178_TRANSCORP_POWER_PLC-TRANSCORP_POWER_AGM_RESOLUTIONS_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+      "title": "TRANSCORP POWER PLC-TRANSCORP POWER AGM RESOLUTIONS CORPORATE ACTIONS FEBRUARY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44957_GUINEA_INSURANCE_PLC.-AGM_RESOLUTION_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "GUINEA INSURANCE PLC.-AGM RESOLUTION CORPORATE ACTIONS SEPTEMBER 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43156_HONEYWELL_FLOUR_MILL_PLC-RESOLUTIONS_PASSED_AT_HFMP'S_2024_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+      "title": "HONEYWELL FLOUR MILL PLC-RESOLUTIONS PASSED AT HFMP'S 2024 ANNUAL GENERAL MEETING CORPORATE ACTIONS FEBRUARY 2025",
       "source": "sharepoint_index"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44927_MCNICHOLS_CONSOLIDATED_PLC-RESOLUTIONS_PASSED_AT_MCNICHOLS_CONSOLIDATED_PLC_20TH_AGM_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "MCNICHOLS CONSOLIDATED PLC-RESOLUTIONS PASSED AT MCNICHOLS CONSOLIDATED PLC 20TH AGM CORPORATE ACTIONS SEPTEMBER 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44922_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-CHH_AGM_RESOLUTIONS_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "title": "CONSOLIDATED HALLMARK HOLDINGS PLC-CHH AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44912_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_AUGUST_2025.pdf",
-      "title": "CUTIX PLC.-CUTIX PLC - RESOLUTION OF MEETING OF THE BOARD OF DIRECTORS CORPORATE ACTIONS AUGUST 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44889_PRESCO_PLC-PRESCO_PLC_POST_AGM_RESOLUTIONS_CORPORATE_ACTIONS_AUGUST_2025.pdf",
-      "title": "PRESCO PLC-PRESCO PLC POST AGM RESOLUTIONS CORPORATE ACTIONS AUGUST 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44888_JAIZ_BANK_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_AGM_OF_JAIZ_BANK_PLC_CORPORATE_ACTIONS_AUGUST_2025.pdf",
-      "title": "JAIZ BANK PLC-RESOLUTIONS PASSED AT THE 13TH AGM OF JAIZ BANK PLC CORPORATE ACTIONS AUGUST 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44837_MUTUAL_BENEFITS_ASSURANCE_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_AUGUST_2025.pdf",
-      "title": "MUTUAL BENEFITS ASSURANCE PLC.-AGM RESOLUTIONS CORPORATE ACTIONS AUGUST 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44800_FIDSON_HEALTHCARE_PLC-RESOLUTIONS_PASSED_AT_THE_26TH_AGM_OF_FIDSON_HEALTHCARE_PLC_CORPORATE_ACTIONS_AUGUST_2025.pdf",
-      "title": "FIDSON HEALTHCARE PLC-RESOLUTIONS PASSED AT THE 26TH AGM OF FIDSON HEALTHCARE PLC CORPORATE ACTIONS AUGUST 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44789_LINKAGE_ASSURANCE_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "LINKAGE ASSURANCE PLC-AGM RESOLUTIONS CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44780_INTERNATIONAL_BREWERIES_PLC.-2025_AGM_RESOLUTIONS__CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "INTERNATIONAL BREWERIES PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44738_CORNERSTONE_INSURANCE_PLC-RESOLUTIONS_PASSED_AT_THE_33RD_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "CORNERSTONE INSURANCE PLC-RESOLUTIONS PASSED AT THE 33RD AGM CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44658_RONCHESS_GLOBAL_RESOURCES_PLC-CORPORATE_ACTION_-RESOLUTION_OF_THE_BOARD_Q2_2025_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "RONCHESS GLOBAL RESOURCES PLC-CORPORATE ACTION -RESOLUTION OF THE BOARD Q2 2025 CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44638_FCMB_GROUP_PLC-OUTCOME_OF_FCMB_GROUP_PLC_BOARD_OF_DIRECTORS'_MEETING_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "FCMB GROUP PLC-OUTCOME OF FCMB GROUP PLC BOARD OF DIRECTORS' MEETING CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44629_SEPLAT_ENERGY_PLC-NOTICE_OF_DECISION_H1_2025_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "SEPLAT ENERGY PLC-NOTICE OF DECISION H1 2025 CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44615_CHAMS_HOLDING_COMPANY_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "CHAMS HOLDING COMPANY PLC-AGM RESOLUTIONS CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44606_ELLAH_LAKES_PLC.-RESOLUTIONS_PASSED_AT_THE_EGM_HELD_ON_25_JULY_2025_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "ELLAH LAKES PLC.-RESOLUTIONS PASSED AT THE EGM HELD ON 25 JULY 2025 CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44595_CHAMPION_BREW._PLC.-RESOLUTIONS_PASSED_AT_THE_EXTRA-ORDINARY_GENERAL_MEETING_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "CHAMPION BREW. PLC.-RESOLUTIONS PASSED AT THE EXTRA-ORDINARY GENERAL MEETING CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44591_ETERNA_PLC.-RESOLUTIONS_PASSED_AT_THE_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "ETERNA PLC.-RESOLUTIONS PASSED AT THE AGM CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44589_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2025_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2025 AGM CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44565_BUA_CEMENT_PLC-RESOLUTIONS_PASSED_AT_THE_AGM_OF_BUA_CEMENT_PLC__CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "BUA CEMENT PLC-RESOLUTIONS PASSED AT THE AGM OF BUA CEMENT PLC CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44504_AXA_MANSARD_INSURANCE_PLC-AXA_MANSARD_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "AXA MANSARD INSURANCE PLC-AXA MANSARD - AGM RESOLUTIONS CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44497_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "CUTIX PLC.-CUTIX PLC - RESOLUTION OF MEETING OF THE BOARD OF DIRECTORS CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44440_RONCHESS_GLOBAL_RESOURCES_PLC-BOARD_RESOLUTION_OF_CHANGE_OF_COMPANY_SECRETARY_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "RONCHESS GLOBAL RESOURCES PLC-BOARD RESOLUTION OF CHANGE OF COMPANY SECRETARY CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44427_UH_REAL_ESTATE_INVESTMENT_TRUST_(UHREIT)-RESOLUTIONS_PASSED_AT_UH_REIT_GENERAL_MEETING_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "UH REAL ESTATE INVESTMENT TRUST (UHREIT)-RESOLUTIONS PASSED AT UH REIT GENERAL MEETING CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44424_JAPAUL_GOLD_AND_VENTURES_PLC-2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "title": "JAPAUL GOLD AND VENTURES PLC-2025 AGM RESOLUTIONS CORPORATE ACTIONS JULY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44377_SKYWAY_AVIATION_HANDLING_COMPANY_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "SKYWAY AVIATION HANDLING COMPANY PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44355_BETA_GLASS_PLC-BETA_GLASS_PLC_-_FY2024_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "BETA GLASS PLC-BETA GLASS PLC - FY2024 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44353_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "CUTIX PLC.-CUTIX PLC - RESOLUTION OF MEETING OF THE BOARD OF DIRECTORS CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44338_CADBURY_NIGERIA_PLC.-CADBURY_NIGERIA_PLC_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "CADBURY NIGERIA PLC.-CADBURY NIGERIA PLC - AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44329_DANGOTE_CEMENT_PLC-OUTCOME_OF_THE_16TH_AGM_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "DANGOTE CEMENT PLC-OUTCOME OF THE 16TH AGM CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44312_NPF_MICROFINANCE_BANK_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "NPF MICROFINANCE BANK PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44311_TRANS-NATIONWIDE_EXPRESS_PLC.-RESOLUTIONS_PASSED_AT_32ND_AGM_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "TRANS-NATIONWIDE EXPRESS PLC.-RESOLUTIONS PASSED AT 32ND AGM CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44249_MAY_AND_BAKER-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "MAY AND BAKER-AGM RESOLUTION CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44235_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-CAP_PLC_-_2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "CHEMICAL AND ALLIED PRODUCTS PLC-CAP PLC - 2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44232_LIVESTOCK_FEEDS_PLC.-LSF_2025_ANNUAL_GENERAL_MEETING_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "LIVESTOCK FEEDS PLC.-LSF 2025 ANNUAL GENERAL MEETING - AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44229_UAC__OF_NIGERIA_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "title": "UAC OF NIGERIA PLC.-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44190_ARADEL_HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_30TH_AGM_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "ARADEL HOLDINGS PLC-RESOLUTIONS PASSED AT 30TH AGM CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44187_NESTLE_NIGERIA_PLC.-RESOLUTIONS_PASSED_AT_THE_AGM_OF_NESTLE_NIGERIA_PLC_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "NESTLE NIGERIA PLC.-RESOLUTIONS PASSED AT THE AGM OF NESTLE NIGERIA PLC CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44186_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "CUTIX PLC.-CUTIX PLC - RESOLUTION OF MEETING OF THE BOARD OF DIRECTORS CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44172_ABBEY_MORTGAGE_BANK_PLC-RESOLUTIONS_PASSED_AT_THE_33RD_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "ABBEY MORTGAGE BANK PLC-RESOLUTIONS PASSED AT THE 33RD ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44170_AIICO_INSURANCE_PLC.-AIICO_INSURANCE_PLC-_AGM_RESOLUTIONS__CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "AIICO INSURANCE PLC.-AIICO INSURANCE PLC- AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44162_NIGERIAN_AVIATION_HANDLING_COMPANY_PLC-NAHCO_PLC_44TH_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "NIGERIAN AVIATION HANDLING COMPANY PLC-NAHCO PLC 44TH AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44161_OKOMU_OIL_PALM_PLC.-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "OKOMU OIL PALM PLC.-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44160_FIRST_HOLDCO_PLC-FIRST_HOLDCO_PLC_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "FIRST HOLDCO PLC-FIRST HOLDCO PLC - AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44159_BERGER_PAINTS_NIGERIA_PLC-BPN_RESOLUTIONS_PASSED_AT_2025_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "BERGER PAINTS NIGERIA PLC-BPN RESOLUTIONS PASSED AT 2025 ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44151_WEMA_BANK_PLC.-2024_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "WEMA BANK PLC.-2024 AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44147_CHAMPION_BREW._PLC.-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "CHAMPION BREW. PLC.-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44144_NCR_(NIGERIA)_PLC.-NCR_(NIGERIA)_PLC_-_NOTICE_OF_RESOLUTIONS_PASSED_AT_73RD_AGM_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "NCR (NIGERIA) PLC.-NCR (NIGERIA) PLC - NOTICE OF RESOLUTIONS PASSED AT 73RD AGM CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44134_NEM_INSURANCE_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "NEM INSURANCE PLC.-AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44121_HALDANE_MCCALL_PLC-HALDANE_MCCALL_PLC_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "HALDANE MCCALL PLC-HALDANE MCCALL PLC - AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44118_ACCESS_HOLDINGS_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "ACCESS HOLDINGS PLC-AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44116_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_AGM_OF_THE_COMPANY_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 13TH AGM OF THE COMPANY CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44115_UPDC_PLC-NOTIFICATION_OF_OUTCOME_OF_AGM_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "UPDC PLC-NOTIFICATION OF OUTCOME OF AGM CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44114_JOHN_HOLT_PLC.-RESOLUTIONS_AT_JOHN_HOLT_PLC_63RD_AGM_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "JOHN HOLT PLC.-RESOLUTIONS AT JOHN HOLT PLC 63RD AGM CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44100_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC-_NOTIFICATION_OF_AGM_RESOLUTIONS__CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC- NOTIFICATION OF AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44084_NASCON_ALLIED_INDUSTRIES_PLC-RESOLUTIONS_PASSED_AT_THE_AGM_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "NASCON ALLIED INDUSTRIES PLC-RESOLUTIONS PASSED AT THE AGM CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44047_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "title": "ABC TRANSPORT PLC-OUTCOME OF BOARD OF DIRECTORS MEETING CORPORATE ACTIONS MAY 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44016_FIDELITY_BANK_PLC-FIDELITY_BANK_37TH_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "FIDELITY BANK PLC-FIDELITY BANK 37TH AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43996_DANGOTE_SUGAR_REFINERY_PLC-OUTCOME_OF_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "DANGOTE SUGAR REFINERY PLC-OUTCOME OF ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43968_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_12TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 12TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43965_THE_INITIATES_PLC-RESOLUTIONS_OF_THE_26TH_ANNUAL_GENERAL_MEETING_OF_THE_INITIATES_PLC_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "THE INITIATES PLC-RESOLUTIONS OF THE 26TH ANNUAL GENERAL MEETING OF THE INITIATES PLC CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43951_FCMB_GROUP_PLC-OUTCOME_OF_FCMB_GROUP_PLC_BOARD_OF_DIRECTORS'_MEETING_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "FCMB GROUP PLC-OUTCOME OF FCMB GROUP PLC BOARD OF DIRECTORS' MEETING CORPORATE ACTIONS APRIL 2025",
-      "source": "sharepoint_index"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43946_LAFARGE_AFRICA_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "title": "LAFARGE AFRICA PLC.-AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2025",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42950_ARADEL_HOLDINGS_PLC-NOTICE_OF_DECISION_CORPORATE_ACTIONS_JANUARY_2025.pdf",
+      "title": "ARADEL HOLDINGS PLC-NOTICE OF DECISION CORPORATE ACTIONS JANUARY 2025",
       "source": "sharepoint_index"
     }
   ]

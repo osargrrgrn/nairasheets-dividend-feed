@@ -1,312 +1,5 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44589_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2025_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
-    "title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2025 AGM CORPORATE ACTIONS JULY 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "e200ebf569e42d1a",
-      "ticker": "",
-      "company": "E-TRANZACT INTERNATIONAL PLC",
-      "dividend_per_share": 0.125,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44589_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2025_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "source_title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2025 AGM CORPORATE ACTIONS JULY 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44377_SKYWAY_AVIATION_HANDLING_COMPANY_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-    "title": "SKYWAY AVIATION HANDLING COMPANY PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "4dbce6b73a3b47c5",
-      "ticker": "",
-      "company": "SKYWAY AVIATION HANDLING COMPANY PLC",
-      "dividend_per_share": 0.6,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44377_SKYWAY_AVIATION_HANDLING_COMPANY_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "source_title": "SKYWAY AVIATION HANDLING COMPANY PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45094_MECURE_INDUSTRIES_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-    "title": "MECURE INDUSTRIES PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "14e0f1b9fa2199de",
-      "ticker": "MECURE",
-      "company": "MECURE INDUSTRIES PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45094_MECURE_INDUSTRIES_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "source_title": "MECURE INDUSTRIES PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44116_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_AGM_OF_THE_COMPANY_CORPORATE_ACTIONS_MAY_2025.pdf",
-    "title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 13TH AGM OF THE COMPANY CORPORATE ACTIONS MAY 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "8e8e0542cb61378c",
-      "ticker": "STANBIC",
-      "company": "STANBIC IBTC HOLDINGS PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-04-11",
-      "payment_date": "2025-05-16",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44116_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_AGM_OF_THE_COMPANY_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "source_title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 13TH AGM OF THE COMPANY CORPORATE ACTIONS MAY 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44121_HALDANE_MCCALL_PLC-HALDANE_MCCALL_PLC_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2025.pdf",
-    "title": "HALDANE MCCALL PLC-HALDANE MCCALL PLC - AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "771cf7d4118a1eb4",
-      "ticker": "",
-      "company": "HALDANE MCCALL PLC-HALDANE MCCALL PLC",
-      "dividend_per_share": 0.07,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44121_HALDANE_MCCALL_PLC-HALDANE_MCCALL_PLC_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "source_title": "HALDANE MCCALL PLC-HALDANE MCCALL PLC - AGM RESOLUTIONS CORPORATE ACTIONS MAY 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44888_JAIZ_BANK_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_AGM_OF_JAIZ_BANK_PLC_CORPORATE_ACTIONS_AUGUST_2025.pdf",
-    "title": "JAIZ BANK PLC-RESOLUTIONS PASSED AT THE 13TH AGM OF JAIZ BANK PLC CORPORATE ACTIONS AUGUST 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "3cf47ee70089f417",
-      "ticker": "",
-      "company": "JAIZ BANK PLC",
-      "dividend_per_share": 0.07,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44888_JAIZ_BANK_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_AGM_OF_JAIZ_BANK_PLC_CORPORATE_ACTIONS_AUGUST_2025.pdf",
-      "source_title": "JAIZ BANK PLC-RESOLUTIONS PASSED AT THE 13TH AGM OF JAIZ BANK PLC CORPORATE ACTIONS AUGUST 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44249_MAY_AND_BAKER-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2025.pdf",
-    "title": "MAY AND BAKER-AGM RESOLUTION CORPORATE ACTIONS JUNE 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "6d9999bb6149817f",
-      "ticker": "",
-      "company": "MAY AND BAKER",
-      "dividend_per_share": 0.4,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44249_MAY_AND_BAKER-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "source_title": "MAY AND BAKER-AGM RESOLUTION CORPORATE ACTIONS JUNE 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44960_C_AND_I_LEASING_PLC.-CI_LEASING_PLC-AGM_RESOLUTIONS__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "C AND I LEASING PLC.-CI LEASING PLC-AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "0ceb40a57311846f",
-      "ticker": "",
-      "company": "C AND I LEASING PLC.-CI LEASING PLC",
-      "dividend_per_share": 0.1,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2025-09-08",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2025-09-09",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44960_C_AND_I_LEASING_PLC.-CI_LEASING_PLC-AGM_RESOLUTIONS__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "C AND I LEASING PLC.-CI LEASING PLC-AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44312_NPF_MICROFINANCE_BANK_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-    "title": "NPF MICROFINANCE BANK PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "99c52176b619a8b7",
-      "ticker": "",
-      "company": "NPF MICROFINANCE BANK PLC",
-      "dividend_per_share": 0.15,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2025-05-28",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44312_NPF_MICROFINANCE_BANK_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "source_title": "NPF MICROFINANCE BANK PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43274_HALDANE_MCCALL_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
     "title": "HALDANE MCCALL PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
     "reason_codes": [
@@ -406,43 +99,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44944_SOVEREIGN_TRUST_INSURANCE_PLC-SOVEREIGN_TRUST_INSURANCE_PLC_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "14a0a64995f680ee",
-      "ticker": "",
-      "company": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2025-09-25",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44944_SOVEREIGN_TRUST_INSURANCE_PLC-SOVEREIGN_TRUST_INSURANCE_PLC_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44954_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44806_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_AUGUST_2025.pdf",
+    "title": "CONSOLIDATED HALLMARK HOLDINGS PLC-CORPORATE ACTION CORPORATE ACTIONS AUGUST 2025",
     "reason_codes": [
       "ticker_unresolved",
       "payment_date_missing",
@@ -453,20 +111,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "babe331fc7bc5f19",
+      "event_id": "4adc372a2c198070",
       "ticker": "",
-      "company": "C AND I LEASING PLC.",
+      "company": "CONSOLIDATED HALLMARK HOLDINGS PLC",
       "dividend_per_share": 0.1,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-08-05",
+      "dividend_type": "interim",
+      "qualification_date": "2025-08-15",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "",
+      "announcement_date": "2025-08-15",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44954_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44806_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_AUGUST_2025.pdf",
+      "source_title": "CONSOLIDATED HALLMARK HOLDINGS PLC-CORPORATE ACTION CORPORATE ACTIONS AUGUST 2025",
       "last_verified": "2026-09-13",
       "confidence": "review"
     },
@@ -474,170 +132,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44961_REGENCY_ALLIANCE_INSURANCE_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "REGENCY ALLIANCE INSURANCE PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "387fa04e561ea60a",
-      "ticker": "",
-      "company": "REGENCY ALLIANCE INSURANCE PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2025-09-10",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44961_REGENCY_ALLIANCE_INSURANCE_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "REGENCY ALLIANCE INSURANCE PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44980_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "afecbf3d8444717f",
-      "ticker": "UBA",
-      "company": "UNITED BANK FOR AFRICA PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2025-09-18",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44980_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44999_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "payment date before qualification date"
-    ],
-    "parsed": {
-      "event_id": "a4cbbe665efad6ca",
-      "ticker": "GTCO",
-      "company": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2025-10-07",
-      "payment_date": "2025-04-24",
-      "closure_date": "",
-      "announcement_date": "2025-06-30",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44999_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45160_LEGEND_INTERNET_PLC-LEGEND_INTERNET_PLC_-_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-    "title": "LEGEND INTERNET PLC-LEGEND INTERNET PLC - DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "258daca39da33328",
-      "ticker": "",
-      "company": "LEGEND INTERNET PLC-LEGEND INTERNET PLC",
-      "dividend_per_share": 0.06,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-11-07",
-      "payment_date": "2025-11-07",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45160_LEGEND_INTERNET_PLC-LEGEND_INTERNET_PLC_-_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "source_title": "LEGEND INTERNET PLC-LEGEND INTERNET PLC - DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45416_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-    "title": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "adebc793b65efba3",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2025-11-07",
-      "payment_date": "2025-12-12",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45416_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-      "source_title": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45439_LEGEND_INTERNET_PLC-RESOLUTIONS_PASSED_AT_THE_2ND_AGM_OF_LEGEND_INTERNET_PLC_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-    "title": "LEGEND INTERNET PLC-RESOLUTIONS PASSED AT THE 2ND AGM OF LEGEND INTERNET PLC CORPORATE ACTIONS NOVEMBER 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44888_JAIZ_BANK_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_AGM_OF_JAIZ_BANK_PLC_CORPORATE_ACTIONS_AUGUST_2025.pdf",
+    "title": "JAIZ BANK PLC-RESOLUTIONS PASSED AT THE 13TH AGM OF JAIZ BANK PLC CORPORATE ACTIONS AUGUST 2025",
     "reason_codes": [
       "ticker_unresolved",
       "qualification_date_missing",
@@ -650,20 +146,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "7e54c365a06c9025",
+      "event_id": "3cf47ee70089f417",
       "ticker": "",
-      "company": "LEGEND INTERNET PLC",
-      "dividend_per_share": 0.06,
+      "company": "JAIZ BANK PLC",
+      "dividend_per_share": 0.07,
       "currency": "NGN",
-      "dividend_type": "dividend",
+      "dividend_type": "final",
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45439_LEGEND_INTERNET_PLC-RESOLUTIONS_PASSED_AT_THE_2ND_AGM_OF_LEGEND_INTERNET_PLC_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-      "source_title": "LEGEND INTERNET PLC-RESOLUTIONS PASSED AT THE 2ND AGM OF LEGEND INTERNET PLC CORPORATE ACTIONS NOVEMBER 2025",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44888_JAIZ_BANK_PLC-RESOLUTIONS_PASSED_AT_THE_13TH_AGM_OF_JAIZ_BANK_PLC_CORPORATE_ACTIONS_AUGUST_2025.pdf",
+      "source_title": "JAIZ BANK PLC-RESOLUTIONS PASSED AT THE 13TH AGM OF JAIZ BANK PLC CORPORATE ACTIONS AUGUST 2025",
       "last_verified": "2026-09-13",
       "confidence": "review"
     },
