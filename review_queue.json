@@ -99,34 +99,32 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46118_TRANSNATIONAL_CORPORATION_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
-    "title": "TRANSNATIONAL CORPORATION PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46612_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+    "title": "CONSOLIDATED HALLMARK HOLDINGS PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
     "reason_codes": [
       "ticker_unresolved",
-      "qualification_date_missing",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
       "missing ticker",
-      "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "53de390a8a80e4a8",
+      "event_id": "85989c68ef302650",
       "ticker": "",
-      "company": "TRANSNATIONAL CORPORATION PLC",
-      "dividend_per_share": 0.4,
+      "company": "CONSOLIDATED HALLMARK HOLDINGS PLC",
+      "dividend_per_share": 0.15,
       "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "",
+      "dividend_type": "final",
+      "qualification_date": "2026-04-29",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46118_TRANSNATIONAL_CORPORATION_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
-      "source_title": "TRANSNATIONAL CORPORATION PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46612_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "source_title": "CONSOLIDATED HALLMARK HOLDINGS PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
       "last_verified": "2026-09-14",
       "confidence": "review"
     },
@@ -134,32 +132,30 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46163_HALDANE_MCCALL_PLC-DIVIDEND_ANNOUNCEMENT__CORPORATE_ACTIONS_MARCH_2026.pdf",
-    "title": "HALDANE MCCALL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46681_NPF_MICROFINANCE_BANK_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2026.pdf",
+    "title": "NPF MICROFINANCE BANK PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2026",
     "reason_codes": [
       "ticker_unresolved",
-      "qualification_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing ticker",
-      "missing qualification date"
+      "missing ticker"
     ],
     "parsed": {
-      "event_id": "68642a8f60e9b576",
+      "event_id": "3a4e527bbc52d057",
       "ticker": "",
-      "company": "HALDANE MCCALL PLC",
-      "dividend_per_share": 0.05,
+      "company": "NPF MICROFINANCE BANK PLC",
+      "dividend_per_share": 0.2,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "",
-      "payment_date": "2026-06-18",
+      "qualification_date": "2026-05-19",
+      "payment_date": "2026-06-11",
       "closure_date": "",
-      "announcement_date": "",
+      "announcement_date": "2026-05-19",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46163_HALDANE_MCCALL_PLC-DIVIDEND_ANNOUNCEMENT__CORPORATE_ACTIONS_MARCH_2026.pdf",
-      "source_title": "HALDANE MCCALL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46681_NPF_MICROFINANCE_BANK_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "source_title": "NPF MICROFINANCE BANK PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2026",
       "last_verified": "2026-09-14",
       "confidence": "review"
     },
@@ -167,8 +163,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46197_MECURE_INDUSTRIES_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
-    "title": "MECURE INDUSTRIES PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46809_OMATEK_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+    "title": "OMATEK VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -179,53 +175,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "7c50f6f3866cbc61",
-      "ticker": "MECURE",
-      "company": "MECURE INDUSTRIES PLC",
+      "event_id": "a1ecdf3adc221731",
+      "ticker": "OMATEK",
+      "company": "OMATEK VENTURES PLC",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-04-23",
+      "dividend_type": "distribution",
+      "qualification_date": "2026-03-27",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46197_MECURE_INDUSTRIES_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
-      "source_title": "MECURE INDUSTRIES PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
-      "last_verified": "2026-09-14",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46472_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
-    "title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "9397533a3d9d1240",
-      "ticker": "",
-      "company": "E-TRANZACT INTERNATIONAL PLC",
-      "dividend_per_share": 0.125,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-07-07",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46472_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
-      "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46809_OMATEK_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
+      "source_title": "OMATEK VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
       "last_verified": "2026-09-14",
       "confidence": "review"
     },
