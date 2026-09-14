@@ -99,100 +99,67 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47016_C_AND_I_LEASING_PLC.-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
-    "title": "C AND I LEASING PLC.-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "6852a6a0ef2fb7a5",
-      "ticker": "",
-      "company": "C AND I LEASING PLC.",
-      "dividend_per_share": 0.2,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-06-01",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47016_C_AND_I_LEASING_PLC.-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "source_title": "C AND I LEASING PLC.-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
-      "last_verified": "2026-09-14",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47036_JAIZ_BANK_PLC-JAIZ_BANK_PLC_DECLARATION_OF_DIVIDEND_PAYMENT_FOR_2025_FINANCIAL_YEAR_CORPORATE_ACTIONS_MAY_2026.pdf",
-    "title": "JAIZ BANK PLC-JAIZ BANK PLC DECLARATION OF DIVIDEND PAYMENT FOR 2025 FINANCIAL YEAR CORPORATE ACTIONS MAY 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "248d6f76c5e9784a",
-      "ticker": "",
-      "company": "JAIZ BANK PLC-JAIZ BANK PLC DECLARATION OF DIVIDEND PAYMENT FOR 2025 FINANCIAL YEAR CORPORATE ACTIONS MAY 2026",
-      "dividend_per_share": 0.11,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-06-24",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47036_JAIZ_BANK_PLC-JAIZ_BANK_PLC_DECLARATION_OF_DIVIDEND_PAYMENT_FOR_2025_FINANCIAL_YEAR_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "source_title": "JAIZ BANK PLC-JAIZ BANK PLC DECLARATION OF DIVIDEND PAYMENT FOR 2025 FINANCIAL YEAR CORPORATE ACTIONS MAY 2026",
-      "last_verified": "2026-09-14",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47040_CHAMPION_BREW._PLC.-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
-    "title": "CHAMPION BREW. PLC.-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "0516c16e5c0ba6f1",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-06-19",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-09-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47135_MAY_AND_BAKER-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "MAY AND BAKER-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
       "qualification_date_missing",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
+      "missing ticker",
       "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "9c7d4e1cfdf7c6bf",
-      "ticker": "CHAMPION",
-      "company": "CHAMPION BREW. PLC.",
-      "dividend_per_share": 0.0,
+      "event_id": "4fae248392a6e4ba",
+      "ticker": "",
+      "company": "MAY AND BAKER",
+      "dividend_per_share": 0.5,
       "currency": "NGN",
       "dividend_type": "dividend",
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2026-05-21",
+      "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47040_CHAMPION_BREW._PLC.-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "source_title": "CHAMPION BREW. PLC.-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47135_MAY_AND_BAKER-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "MAY AND BAKER-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
       "last_verified": "2026-09-14",
       "confidence": "review"
     },
@@ -200,32 +167,170 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47046_MULTIVERSE_MINING_AND_EXPLORATION_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
-    "title": "MULTIVERSE MINING AND EXPLORATION PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47176_NPF_MICROFINANCE_BANK_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "NPF MICROFINANCE BANK PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
+      "missing ticker",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "045a55319caf7a93",
-      "ticker": "MULTIVERSE",
-      "company": "MULTIVERSE MINING AND EXPLORATION PLC",
-      "dividend_per_share": 0.0,
+      "event_id": "e91d25c5f9d9d3c9",
+      "ticker": "",
+      "company": "NPF MICROFINANCE BANK PLC",
+      "dividend_per_share": 0.2,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-06-29",
+      "dividend_type": "dividend",
+      "qualification_date": "2026-05-19",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47046_MULTIVERSE_MINING_AND_EXPLORATION_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "source_title": "MULTIVERSE MINING AND EXPLORATION PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47176_NPF_MICROFINANCE_BANK_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "NPF MICROFINANCE BANK PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-09-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47188_C_AND_I_LEASING_PLC.-2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "C AND I LEASING PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "3ff88174ec663c80",
+      "ticker": "",
+      "company": "C AND I LEASING PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "dividend_per_share": 0.2,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2026-06-15",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-06-17",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47188_C_AND_I_LEASING_PLC.-2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "C AND I LEASING PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-09-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47226_HALDANE_MCCALL_PLC-HALDANE_MCCALL_PLC_2ND_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "HALDANE MCCALL PLC-HALDANE MCCALL PLC 2ND AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "8dd7cdc787334aab",
+      "ticker": "",
+      "company": "HALDANE MCCALL PLC-HALDANE MCCALL PLC 2ND AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "dividend_per_share": 0.05,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47226_HALDANE_MCCALL_PLC-HALDANE_MCCALL_PLC_2ND_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "HALDANE MCCALL PLC-HALDANE MCCALL PLC 2ND AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-09-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47237_INDUSTRIAL_AND_MEDICAL_GASES_NIGERIA_PLC-2026_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "INDUSTRIAL AND MEDICAL GASES NIGERIA PLC-2026 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "781d26402b8f7544",
+      "ticker": "",
+      "company": "INDUSTRIAL AND MEDICAL GASES NIGERIA PLC-2026 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "dividend_per_share": 0.5,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47237_INDUSTRIAL_AND_MEDICAL_GASES_NIGERIA_PLC-2026_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "INDUSTRIAL AND MEDICAL GASES NIGERIA PLC-2026 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "last_verified": "2026-09-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47262_JAIZ_BANK_PLC-RESOLUTIONS_OF_THE_14TH_AGM_OF_JAIZ_BANK_PLC_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "JAIZ BANK PLC-RESOLUTIONS OF THE 14TH AGM OF JAIZ BANK PLC CORPORATE ACTIONS JUNE 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "a2687ae42f5226dd",
+      "ticker": "",
+      "company": "JAIZ BANK PLC",
+      "dividend_per_share": 0.11,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47262_JAIZ_BANK_PLC-RESOLUTIONS_OF_THE_14TH_AGM_OF_JAIZ_BANK_PLC_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "JAIZ BANK PLC-RESOLUTIONS OF THE 14TH AGM OF JAIZ BANK PLC CORPORATE ACTIONS JUNE 2026",
       "last_verified": "2026-09-14",
       "confidence": "review"
     },
