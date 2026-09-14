@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 74,
-    "detail_pages_completed": 74,
-    "new_pdfs": 0,
+    "detail_pages_found": 75,
+    "detail_pages_completed": 75,
+    "new_pdfs": 1,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5636,
+    "files_seen": 5637,
     "dividend_like": 522,
     "already_known": 521,
     "irrelevant": 1,
@@ -33,7 +33,13 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 31.02,
-  "results": []
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 31.47,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/168_Forecast_Oct_-_Dec_2026.pdf",
+      "title": "Forecast Oct - Dec 2026",
+      "source": "abokiforex_listing"
+    }
+  ]
 }

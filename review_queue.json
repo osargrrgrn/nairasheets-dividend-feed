@@ -99,8 +99,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46612_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
-    "title": "CONSOLIDATED HALLMARK HOLDINGS PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47016_C_AND_I_LEASING_PLC.-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
+    "title": "C AND I LEASING PLC.-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
     "reason_codes": [
       "ticker_unresolved",
       "payment_date_missing",
@@ -111,20 +111,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "85989c68ef302650",
+      "event_id": "6852a6a0ef2fb7a5",
       "ticker": "",
-      "company": "CONSOLIDATED HALLMARK HOLDINGS PLC",
-      "dividend_per_share": 0.15,
+      "company": "C AND I LEASING PLC.",
+      "dividend_per_share": 0.2,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2026-04-29",
+      "qualification_date": "2026-06-01",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46612_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
-      "source_title": "CONSOLIDATED HALLMARK HOLDINGS PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47016_C_AND_I_LEASING_PLC.-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "C AND I LEASING PLC.-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
       "last_verified": "2026-09-14",
       "confidence": "review"
     },
@@ -132,30 +132,32 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46681_NPF_MICROFINANCE_BANK_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2026.pdf",
-    "title": "NPF MICROFINANCE BANK PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47036_JAIZ_BANK_PLC-JAIZ_BANK_PLC_DECLARATION_OF_DIVIDEND_PAYMENT_FOR_2025_FINANCIAL_YEAR_CORPORATE_ACTIONS_MAY_2026.pdf",
+    "title": "JAIZ BANK PLC-JAIZ BANK PLC DECLARATION OF DIVIDEND PAYMENT FOR 2025 FINANCIAL YEAR CORPORATE ACTIONS MAY 2026",
     "reason_codes": [
       "ticker_unresolved",
+      "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing ticker"
+      "missing ticker",
+      "missing payment date"
     ],
     "parsed": {
-      "event_id": "3a4e527bbc52d057",
+      "event_id": "248d6f76c5e9784a",
       "ticker": "",
-      "company": "NPF MICROFINANCE BANK PLC",
-      "dividend_per_share": 0.2,
+      "company": "JAIZ BANK PLC-JAIZ BANK PLC DECLARATION OF DIVIDEND PAYMENT FOR 2025 FINANCIAL YEAR CORPORATE ACTIONS MAY 2026",
+      "dividend_per_share": 0.11,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2026-05-19",
-      "payment_date": "2026-06-11",
+      "qualification_date": "2026-06-24",
+      "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2026-05-19",
+      "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46681_NPF_MICROFINANCE_BANK_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2026.pdf",
-      "source_title": "NPF MICROFINANCE BANK PLC-CORPORATE ACTION CORPORATE ACTIONS APRIL 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47036_JAIZ_BANK_PLC-JAIZ_BANK_PLC_DECLARATION_OF_DIVIDEND_PAYMENT_FOR_2025_FINANCIAL_YEAR_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "JAIZ BANK PLC-JAIZ BANK PLC DECLARATION OF DIVIDEND PAYMENT FOR 2025 FINANCIAL YEAR CORPORATE ACTIONS MAY 2026",
       "last_verified": "2026-09-14",
       "confidence": "review"
     },
@@ -163,8 +165,43 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46809_OMATEK_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
-    "title": "OMATEK VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47040_CHAMPION_BREW._PLC.-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
+    "title": "CHAMPION BREW. PLC.-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "9c7d4e1cfdf7c6bf",
+      "ticker": "CHAMPION",
+      "company": "CHAMPION BREW. PLC.",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-05-21",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47040_CHAMPION_BREW._PLC.-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "CHAMPION BREW. PLC.-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "last_verified": "2026-09-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47046_MULTIVERSE_MINING_AND_EXPLORATION_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
+    "title": "MULTIVERSE MINING AND EXPLORATION PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -175,20 +212,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "a1ecdf3adc221731",
-      "ticker": "OMATEK",
-      "company": "OMATEK VENTURES PLC",
+      "event_id": "045a55319caf7a93",
+      "ticker": "MULTIVERSE",
+      "company": "MULTIVERSE MINING AND EXPLORATION PLC",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-03-27",
+      "dividend_type": "final",
+      "qualification_date": "2026-06-29",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46809_OMATEK_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
-      "source_title": "OMATEK VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47046_MULTIVERSE_MINING_AND_EXPLORATION_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "MULTIVERSE MINING AND EXPLORATION PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
       "last_verified": "2026-09-14",
       "confidence": "review"
     },
