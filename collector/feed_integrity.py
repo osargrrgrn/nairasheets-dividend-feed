@@ -1,5 +1,5 @@
 """
-collector/feed_integrity.py — Patch 52
+collector/feed_integrity.py — Patch 54
 
 Final publication gate for the buyer-facing dividend feed.
 It validates structural integrity, date logic, currency/amount sanity, and
@@ -240,6 +240,18 @@ def finalize_published_rows(rows: Iterable[Mapping]):
             row["resolution"] = bad
             rejected.append(row)
             continue
+
+        # Patch 54: re-key to the current NGX symbol before any comparison,
+        # so a dividend declared as WAPCO matches a portfolio holding HBM and
+        # collapses with any row already published under the new symbol.
+        try:
+            from .symbol_changes import canonical_ticker
+            canon = canonical_ticker(row.get("ticker"))
+            if canon and canon != _text(row.get("ticker")).upper():
+                row["former_ticker"] = _text(row.get("ticker")).upper()
+                row["ticker"] = canon
+        except Exception:
+            pass
 
         row["company"] = _clean_company(row) or row.get("company", "")
 
