@@ -26,7 +26,7 @@
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43274_HALDANE_MCCALL_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
       "source_title": "HALDANE MCCALL PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-13",
+      "last_verified": "2026-09-14",
       "confidence": "review"
     },
     "classification": "review",
@@ -59,7 +59,7 @@
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43307_TRANSNATIONAL_CORPORATION_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
       "source_title": "TRANSNATIONAL CORPORATION PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-13",
+      "last_verified": "2026-09-14",
       "confidence": "review"
     },
     "classification": "review",
@@ -92,112 +92,15 @@
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
       "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-13",
+      "last_verified": "2026-09-14",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45094_MECURE_INDUSTRIES_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-    "title": "MECURE INDUSTRIES PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "14e0f1b9fa2199de",
-      "ticker": "MECURE",
-      "company": "MECURE INDUSTRIES PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45094_MECURE_INDUSTRIES_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "source_title": "MECURE INDUSTRIES PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45160_LEGEND_INTERNET_PLC-LEGEND_INTERNET_PLC_-_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-    "title": "LEGEND INTERNET PLC-LEGEND INTERNET PLC - DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "258daca39da33328",
-      "ticker": "",
-      "company": "LEGEND INTERNET PLC-LEGEND INTERNET PLC",
-      "dividend_per_share": 0.06,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-11-07",
-      "payment_date": "2025-11-07",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45160_LEGEND_INTERNET_PLC-LEGEND_INTERNET_PLC_-_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "source_title": "LEGEND INTERNET PLC-LEGEND INTERNET PLC - DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45416_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-    "title": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "adebc793b65efba3",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2025-11-07",
-      "payment_date": "2025-12-12",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45416_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-      "source_title": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
-      "last_verified": "2026-09-13",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45439_LEGEND_INTERNET_PLC-RESOLUTIONS_PASSED_AT_THE_2ND_AGM_OF_LEGEND_INTERNET_PLC_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-    "title": "LEGEND INTERNET PLC-RESOLUTIONS PASSED AT THE 2ND AGM OF LEGEND INTERNET PLC CORPORATE ACTIONS NOVEMBER 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46118_TRANSNATIONAL_CORPORATION_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
+    "title": "TRANSNATIONAL CORPORATION PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
     "reason_codes": [
       "ticker_unresolved",
       "qualification_date_missing",
@@ -210,21 +113,120 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "7e54c365a06c9025",
+      "event_id": "53de390a8a80e4a8",
       "ticker": "",
-      "company": "LEGEND INTERNET PLC",
-      "dividend_per_share": 0.06,
+      "company": "TRANSNATIONAL CORPORATION PLC",
+      "dividend_per_share": 0.4,
       "currency": "NGN",
-      "dividend_type": "dividend",
+      "dividend_type": "interim",
       "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45439_LEGEND_INTERNET_PLC-RESOLUTIONS_PASSED_AT_THE_2ND_AGM_OF_LEGEND_INTERNET_PLC_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-      "source_title": "LEGEND INTERNET PLC-RESOLUTIONS PASSED AT THE 2ND AGM OF LEGEND INTERNET PLC CORPORATE ACTIONS NOVEMBER 2025",
-      "last_verified": "2026-09-13",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46118_TRANSNATIONAL_CORPORATION_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "source_title": "TRANSNATIONAL CORPORATION PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+      "last_verified": "2026-09-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46163_HALDANE_MCCALL_PLC-DIVIDEND_ANNOUNCEMENT__CORPORATE_ACTIONS_MARCH_2026.pdf",
+    "title": "HALDANE MCCALL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date"
+    ],
+    "parsed": {
+      "event_id": "68642a8f60e9b576",
+      "ticker": "",
+      "company": "HALDANE MCCALL PLC",
+      "dividend_per_share": 0.05,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "2026-06-18",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46163_HALDANE_MCCALL_PLC-DIVIDEND_ANNOUNCEMENT__CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "source_title": "HALDANE MCCALL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+      "last_verified": "2026-09-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46197_MECURE_INDUSTRIES_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
+    "title": "MECURE INDUSTRIES PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "7c50f6f3866cbc61",
+      "ticker": "MECURE",
+      "company": "MECURE INDUSTRIES PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-04-23",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46197_MECURE_INDUSTRIES_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "source_title": "MECURE INDUSTRIES PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+      "last_verified": "2026-09-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46472_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+    "title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "9397533a3d9d1240",
+      "ticker": "",
+      "company": "E-TRANZACT INTERNATIONAL PLC",
+      "dividend_per_share": 0.125,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-07-07",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46472_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
+      "last_verified": "2026-09-14",
       "confidence": "review"
     },
     "classification": "review",

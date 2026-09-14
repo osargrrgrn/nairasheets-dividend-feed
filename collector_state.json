@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 133,
+  "historical_recheck_cursor": 148,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -382,8 +382,8 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46357_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-CAP_PLC_-_CORPORATE_ACTION_ANNOUNCEMENT_-_2026_DIVIDEND_CORPORATE_ACTIONS_MARCH_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46399_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_-_MARCH_2026_CORPORATE_ACTIONS_MARCH_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46414_UAC__OF_NIGERIA_PLC.-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "accepted",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/46424_BUA_FOODS_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "pending",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/46469_BERGER_PAINTS_NIGERIA_PLC-BERGER_PAINTS_NIG_PLC_CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf": "review",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/46424_BUA_FOODS_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "accepted",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/46469_BERGER_PAINTS_NIGERIA_PLC-BERGER_PAINTS_NIG_PLC_CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46472_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf": "review",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46483_JULIUS_BERGER_NIGERIA_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46540_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO_-_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf": "pending",
