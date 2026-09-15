@@ -3,17 +3,15 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43274_HALDANE_MCCALL_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
     "title": "HALDANE MCCALL PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
     "reason_codes": [
-      "ticker_unresolved",
       "dividend_amount_unresolved",
       "validation_failed"
     ],
     "errors": [
-      "missing ticker",
       "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "05a2cc269b289e48",
-      "ticker": "",
+      "event_id": "dd8c7ffc11ca3ab6",
+      "ticker": "HMCALL",
       "company": "HALDANE MCCALL PLC",
       "dividend_per_share": 0.0,
       "currency": "NGN",
@@ -26,39 +24,6 @@
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43274_HALDANE_MCCALL_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
       "source_title": "HALDANE MCCALL PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43307_TRANSNATIONAL_CORPORATION_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-    "title": "TRANSNATIONAL CORPORATION PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "d3e695fb6d5ec298",
-      "ticker": "",
-      "company": "TRANSNATIONAL CORPORATION PLC",
-      "dividend_per_share": 0.6,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2025-03-08",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43307_TRANSNATIONAL_CORPORATION_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "source_title": "TRANSNATIONAL CORPORATION PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
       "last_verified": "2026-09-15",
       "confidence": "review"
     },
@@ -99,74 +64,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/HALDANE_-_DIVIDEND_ANNOUNCEMENT.pdf",
-    "title": "HALDANE - DIVIDEND ANNOUNCEMENT",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date"
-    ],
-    "parsed": {
-      "event_id": "863d69dff87a6302",
-      "ticker": "",
-      "company": "HALDANE",
-      "dividend_per_share": 0.05,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "",
-      "payment_date": "2026-06-18",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/HALDANE_-_DIVIDEND_ANNOUNCEMENT.pdf",
-      "source_title": "HALDANE - DIVIDEND ANNOUNCEMENT",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IHPLC_-_Corporate_Actions_Announcement_May_2026.pdf",
-    "title": "IHPLC - Corporate Actions Announcement May 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "cd2b0a286d5d9fe2",
-      "ticker": "",
-      "company": "IHPLC",
-      "dividend_per_share": 0.03,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2026-05-06",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IHPLC_-_Corporate_Actions_Announcement_May_2026.pdf",
-      "source_title": "IHPLC - Corporate Actions Announcement May 2026",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IMG_Nig_Plc_-_Corporate_Announcement_2025AFS.pdf",
-    "title": "IMG Nig Plc - Corporate Announcement 2025AFS",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43136_HALDANE_MCCALL_PLC-DIVIDEND_ANNOUCEMENT_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+    "title": "HALDANE MCCALL PLC-DIVIDEND ANNOUCEMENT CORPORATE ACTIONS FEBRUARY 2025",
     "reason_codes": [
       "dividend_amount_unresolved",
       "validation_failed"
@@ -175,255 +74,20 @@
       "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "0c4b3627ad486df9",
-      "ticker": "IMG",
-      "company": "IMG Nig Plc - Corporate Announcement 2025AFS",
+      "event_id": "6249de1214b5c114",
+      "ticker": "HMCALL",
+      "company": "HALDANE MCCALL PLC",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2026-06-04",
-      "payment_date": "2026-06-24",
+      "qualification_date": "2024-04-25",
+      "payment_date": "2024-04-25",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IMG_Nig_Plc_-_Corporate_Announcement_2025AFS.pdf",
-      "source_title": "IMG Nig Plc - Corporate Announcement 2025AFS",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Industrial_and_Medical_Gases_Nigeria_Plc_Dividend_Information_.pdf",
-    "title": "Industrial and Medical Gases Nigeria Plc Dividend Information",
-    "reason_codes": [
-      "ticker_unresolved",
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "0cf0e5a115079616",
-      "ticker": "",
-      "company": "Industrial and Medical Gases Nigeria Plc Dividend Information",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-06-05",
-      "payment_date": "2025-06-25",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Industrial_and_Medical_Gases_Nigeria_Plc_Dividend_Information_.pdf",
-      "source_title": "Industrial and Medical Gases Nigeria Plc Dividend Information",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MULTIVERSE_-_AGM_RESOLUTIONS_OUTCOME_JUNE2026.pdf",
-    "title": "MULTIVERSE - AGM RESOLUTIONS OUTCOME JUNE2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "e6f270562ab8164c",
-      "ticker": "MULTIVERSE",
-      "company": "MULTIVERSE",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MULTIVERSE_-_AGM_RESOLUTIONS_OUTCOME_JUNE2026.pdf",
-      "source_title": "MULTIVERSE - AGM RESOLUTIONS OUTCOME JUNE2026",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NGX_Group_-_Dividend_Announcement.pdf",
-    "title": "NGX Group - Dividend Announcement",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "bcc56bcfb6ca2a4c",
-      "ticker": "",
-      "company": "NGX Group",
-      "dividend_per_share": 2.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2026-04-10",
-      "payment_date": "2026-04-29",
-      "closure_date": "2026-04-13",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NGX_Group_-_Dividend_Announcement.pdf",
-      "source_title": "NGX Group - Dividend Announcement",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/TRANSNATIONAL_CORPORATION_PLC_-_Amended_Corporate_Action_Announcement.pdf",
-    "title": "TRANSNATIONAL CORPORATION PLC - Amended Corporate Action Announcement",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "72d5ecc6a2be9d0b",
-      "ticker": "",
-      "company": "TRANSNATIONAL CORPORATION PLC - Amended Corporate Action Announcement",
-      "dividend_per_share": 0.4,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/TRANSNATIONAL_CORPORATION_PLC_-_Amended_Corporate_Action_Announcement.pdf",
-      "source_title": "TRANSNATIONAL CORPORATION PLC - Amended Corporate Action Announcement",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Transnational_Corporation_Plc_-_Corporate_Action_Announcement.pdf",
-    "title": "Transnational Corporation Plc - Corporate Action Announcement",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "c0740e2a3bd9c91e",
-      "ticker": "",
-      "company": "Transnational Corporation Plc",
-      "dividend_per_share": 0.4,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2026-07-22",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Transnational_Corporation_Plc_-_Corporate_Action_Announcement.pdf",
-      "source_title": "Transnational Corporation Plc - Corporate Action Announcement",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Transnational_Corporation_of_Nigeria_-_Corporate_Action_Announcement.pdf",
-    "title": "Transnational Corporation of Nigeria - Corporate Action Announcement",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "f5f6df5e520f3870",
-      "ticker": "",
-      "company": "Transnational Corporation of Nigeria",
-      "dividend_per_share": 0.4,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Transnational_Corporation_of_Nigeria_-_Corporate_Action_Announcement.pdf",
-      "source_title": "Transnational Corporation of Nigeria - Corporate Action Announcement",
-      "last_verified": "2026-09-15",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/UH_REITS_-_Corporate_Actions_for_2025_FY_Distribution.pdf",
-    "title": "UH REITS - Corporate Actions for 2025 FY Distribution",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "24e152f0ccc755af",
-      "ticker": "",
-      "company": "UH REITS",
-      "dividend_per_share": 0.0555,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-05-29",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2025-12-31",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/UH_REITS_-_Corporate_Actions_for_2025_FY_Distribution.pdf",
-      "source_title": "UH REITS - Corporate Actions for 2025 FY Distribution",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43136_HALDANE_MCCALL_PLC-DIVIDEND_ANNOUCEMENT_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+      "source_title": "HALDANE MCCALL PLC-DIVIDEND ANNOUCEMENT CORPORATE ACTIONS FEBRUARY 2025",
       "last_verified": "2026-09-15",
       "confidence": "review"
     },

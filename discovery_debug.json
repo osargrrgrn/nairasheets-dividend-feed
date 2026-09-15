@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 73,
     "detail_pages_completed": 73,
-    "new_pdfs": 6,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -25,46 +25,15 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 534,
+    "pdfs_seen": 533,
     "already_known": 304,
-    "filtered_before_parser": 230,
+    "filtered_before_parser": 229,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 6,
-  "elapsed_seconds": 35.79,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38_INSIDER_DEALING-_CREDITVILLE_2B-_SALE-APPROVED.pdf",
-      "title": "INSIDER DEALING- CREDITVILLE 2B- SALE-APPROVED",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47897_AFRICAN_ALLIANCE_INSURANCE_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2023_FINANCIAL_STATEMENTS_SEPTEMBER_2026.pdf",
-      "title": "AFRICAN ALLIANCE INSURANCE PLC- QUARTER 5 - FINANCIAL STATEMENT FOR 2023 FINANCIAL STATEMENTS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47900_PRESCO_PLC-PRESCO_PLC_-_POST_2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "PRESCO PLC-PRESCO PLC - POST 2025 AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47901_NIGERIAN_ENAMELWARE_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_SEPTEMBER_2026.pdf",
-      "title": "NIGERIAN ENAMELWARE PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47902_LEGEND_INTERNET_PLC-_YEAR_END_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_SEPTEMBER_2026.pdf",
-      "title": "LEGEND INTERNET PLC- YEAR END - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/DANGOTE_CEMENT_PLC_-_CAPITAL_MARKETS_DAY_WEBCAST_INVITATION.pdf",
-      "title": "DANGOTE CEMENT PLC - CAPITAL MARKETS DAY WEBCAST INVITATION",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 32.16,
+  "results": []
 }
