@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 76,
     "detail_pages_completed": 76,
-    "new_pdfs": 4,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -25,36 +25,15 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 534,
-    "already_known": 302,
+    "pdfs_seen": 535,
+    "already_known": 303,
     "filtered_before_parser": 232,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 4,
-  "elapsed_seconds": 32.39,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/244_Notification_of_Share_Dealing_-_Black_Rising_Ltd.pdf",
-      "title": "Notification of Share Dealing - Black Rising Ltd",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47894_INTERNATIONAL_BREWERIES_PLC.-PROPOSED_RECONSTRUCTION_-_RETURN_OF_CAPITAL_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "INTERNATIONAL BREWERIES PLC.-PROPOSED RECONSTRUCTION - RETURN OF CAPITAL CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/98_Notification_of_Insider_Share_Dealing_-_LA_Plc_(Hajia_Binta_Bakari).pdf",
-      "title": "Notification of Insider Share Dealing - LA Plc (Hajia Binta Bakari)",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ROYAL_EXCHANGE_PLC_-_NOTICE_ON_REPRU.pdf",
-      "title": "ROYAL EXCHANGE PLC - NOTICE ON REPRU",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 34.41,
+  "results": []
 }
