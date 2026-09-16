@@ -64,32 +64,61 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43701_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
-    "title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43933_MAY_AND_BAKER-CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
     "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
+      "ticker_unresolved",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
+      "missing ticker"
     ],
     "parsed": {
-      "event_id": "b7c4120ca3509abb",
-      "ticker": "FCMB",
-      "company": "FCMB GROUP PLC-FCMB GROUP PLC",
-      "dividend_per_share": 0.0,
+      "event_id": "fe7ac9da66f5709b",
+      "ticker": "",
+      "company": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "dividend_per_share": 0.4,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-04-16",
-      "payment_date": "",
+      "dividend_type": "dividend",
+      "qualification_date": "2025-05-20",
+      "payment_date": "2025-06-05",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43701_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "source_title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43933_MAY_AND_BAKER-CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "last_verified": "2026-09-16",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44069__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REITS_DISTRIBUTION_PAYMENT_2024_-_FINAL_CORPORATE_ACTIONS_MAY_2025.pdf",
+    "title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "3cdbcabcaf1eb20d",
+      "ticker": "UPDCREIT",
+      "company": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-05-08",
+      "payment_date": "2025-05-15",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44069__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REITS_DISTRIBUTION_PAYMENT_2024_-_FINAL_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "source_title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
       "last_verified": "2026-09-16",
       "confidence": "review"
     },

@@ -4,13 +4,13 @@
     "status": 200,
     "detail_pages_found": 73,
     "detail_pages_completed": 73,
-    "new_pdfs": 0,
+    "new_pdfs": 3,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5649,
+    "files_seen": 5656,
     "dividend_like": 523,
     "already_known": 522,
     "irrelevant": 1,
@@ -33,7 +33,23 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 26.83,
-  "results": []
+  "total_new_pdfs": 3,
+  "elapsed_seconds": 33.37,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/105_INSIDER_DEALING_NOTIFICATION_ASENUGA_2026_.pdf",
+      "title": "INSIDER DEALING NOTIFICATION ASENUGA 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/105_INSIDER_DEALING_NOTIFICATION_OGUNWO_2026_.pdf",
+      "title": "INSIDER DEALING NOTIFICATION OGUNWO 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Sterling_Financial_Holdings_Company_Plc_-_Appointment_and_Retirement_of_Directors_executed.pdf",
+      "title": "Sterling Financial Holdings Company Plc - Appointment and Retirement of Directors executed",
+      "source": "abokiforex_listing"
+    }
+  ]
 }
