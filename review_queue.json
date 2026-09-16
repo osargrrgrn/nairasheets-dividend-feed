@@ -64,39 +64,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43933_MAY_AND_BAKER-CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
-    "title": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "fe7ac9da66f5709b",
-      "ticker": "",
-      "company": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
-      "dividend_per_share": 0.4,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2025-05-20",
-      "payment_date": "2025-06-05",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43933_MAY_AND_BAKER-CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "source_title": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
-      "last_verified": "2026-09-16",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44069__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REITS_DISTRIBUTION_PAYMENT_2024_-_FINAL_CORPORATE_ACTIONS_MAY_2025.pdf",
-    "title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
+    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
     "reason_codes": [
       "dividend_amount_unresolved",
       "validation_failed"
@@ -105,20 +74,20 @@
       "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "3cdbcabcaf1eb20d",
-      "ticker": "UPDCREIT",
-      "company": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+      "event_id": "b00df2a13e68c4e9",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2025-05-08",
-      "payment_date": "2025-05-15",
+      "qualification_date": "2025-06-20",
+      "payment_date": "2025-07-25",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44069__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REITS_DISTRIBUTION_PAYMENT_2024_-_FINAL_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "source_title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
+      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
       "last_verified": "2026-09-16",
       "confidence": "review"
     },
