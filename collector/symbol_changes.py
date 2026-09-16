@@ -1,24 +1,32 @@
 """
-collector/symbol_changes.py — Patch 54
+collector/symbol_changes.py — Patch 54b
 
 NGX ticker renames, learned from NGX's own filings.
 
-When a company changes its trading symbol (Lafarge Africa -> HBM,
-Access Bank -> ACCESSCORP, FBN Holdings -> FIRSTHOLDCO), every dividend
-already published under the old symbol stops matching a portfolio that
-now holds the new one. The dividend is still real; the identifier moved.
+When a company changes its trading symbol (WAPCO -> HBMNG, ACCESS ->
+ACCESSCORP, FBNH -> FIRSTHOLDCO), every dividend already published under
+the old symbol stops matching a portfolio holding the new one. The
+dividend is real; the identifier moved.
 
 NGX announces each change as a filing, e.g.
   47447_HBM_NIGERIA_PLC-NOTICE_OF_CHANGE_IN_TRADING_SYMBOL_...pdf
 
-This module finds those filings via the SharePoint REST API (server-side
-name filter, so it costs two requests), parses OLD -> NEW out of the text,
-and maintains data/ticker_renames.json. feed_integrity applies the map at
-publication time, so historical events are re-keyed to the current symbol
-automatically and collapse with any newer rows for the same event.
+This module finds those filings through the SharePoint REST API (two
+server-side name filters), parses OLD -> NEW, and maintains
+data/ticker_renames.json. feed_integrity applies the map at publication
+time, so historical events re-key to the current symbol automatically and
+collapse with any newer row for the same event.
 
-No hand-maintained list. New renames are picked up the run after NGX
-files them.
+Parsing notes, from the real wording of the WAPCO notice:
+
+    "...the Company's trading symbol on the floor of The Exchange has
+     been changed from WAPCO to HBMNG"
+
+- "symbol" and "from" are fourteen words apart, so they cannot be
+  required to be adjacent; we search a window after each "symbol".
+- The same sentence contains "corporate name from Lafarge Africa Plc to
+  HBM Nigeria Plc". Ticker groups are therefore matched CASE-SENSITIVELY
+  in uppercase, which admits WAPCO and HBMNG while rejecting Lafarge.
 """
 
 from __future__ import annotations
@@ -44,34 +52,38 @@ HEADERS_JSON = {
     ),
 }
 
-# Server-side name filters. Two calls, both cheap.
 NAME_FILTERS = ("SYMBOL", "CHANGE_OF_NAME")
 
-# Local confirmation that a filing really is a rename notice.
 RENAME_NAME_RE = re.compile(
     r"CHANGE[_ ](?:IN|OF)[_ ](?:TRADING[_ ])?(?:SYMBOL|NAME)|"
     r"(?:TRADING[_ ])?SYMBOL[_ ]CHANGE|TICKER[_ ]CHANGE|RE[_ ]?NAMING",
     re.I,
 )
 
-# Ticker-shaped token: NGX symbols are 2-12 chars, upper alnum.
 _T = r"([A-Z][A-Z0-9]{1,11})"
+_Q = "[\"'\u201c\u201d]?"
 
-# Ordered most-specific first.
-PATTERNS = (
-    re.compile(rf"symbol\s+from\s+[\"'\u201c]?{_T}[\"'\u201d]?\s+to\s+[\"'\u201c]?{_T}[\"'\u201d]?", re.I),
-    re.compile(rf"from\s+[\"'\u201c]?{_T}[\"'\u201d]?\s+to\s+[\"'\u201c]?{_T}[\"'\u201d]?\s+with\s+effect", re.I),
-    re.compile(rf"old\s+(?:trading\s+)?symbol[:\s]+[\"'\u201c]?{_T}[\"'\u201d]?.{{0,120}}?new\s+(?:trading\s+)?symbol[:\s]+[\"'\u201c]?{_T}[\"'\u201d]?", re.I | re.S),
-    re.compile(rf"formerly\s+(?:known\s+as\s+)?[\"'\u201c]?{_T}[\"'\u201d]?.{{0,80}}?now\s+[\"'\u201c]?{_T}[\"'\u201d]?", re.I | re.S),
+SYMBOL_WORD_RE = re.compile(r"(?i:\b(?:trading\s+|ticker\s+)?symbol\b)")
+WINDOW = 320
+
+FROM_TO_RE = re.compile(
+    r"(?i:from)\s+" + _Q + _T + _Q + r"\s+(?i:to)\s+" + _Q + _T + _Q
+)
+REPLACED_RE = re.compile(_T + r"[\s,]+(?i:has\s+replaced)\s+" + _T)
+OLD_NEW_RE = re.compile(
+    r"(?i:old)\s+(?i:trading\s+)?(?i:symbol)\s*[:\-]?\s*" + _Q + _T + _Q
+    + r".{0,160}?(?i:new)\s+(?i:trading\s+)?(?i:symbol)\s*[:\-]?\s*" + _Q + _T + _Q,
+    re.S,
 )
 
-# Words that look like tickers but never are.
 _STOPWORDS = {
     "NGX", "PLC", "LTD", "THE", "AND", "FOR", "CBN", "SEC", "AGM", "EGM",
     "PDF", "RC", "NIL", "NOT", "NEW", "OLD", "ALL", "ANY", "WITH", "FROM",
     "THIS", "THAT", "DATE", "NAME", "CODE", "LIST", "NOTE", "PAGE", "LAGOS",
     "NIGERIA", "LIMITED", "COMPANY", "SYMBOL", "TICKER", "TRADING", "SHARES",
-    "EFFECT", "CHANGE", "NOTICE", "PUBLIC", "MEMBERS", "EXCHANGE",
+    "EFFECT", "CHANGE", "NOTICE", "PUBLIC", "MEMBERS", "EXCHANGE", "FLOOR",
+    "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST",
+    "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER",
 }
 
 
@@ -100,11 +112,20 @@ def _load_renames() -> dict:
         return {}
 
 
-def _save_renames(mapping: dict) -> None:
+def _load_seen() -> set:
+    try:
+        raw = json.loads(RENAMES_FILE.read_text(encoding="utf-8"))
+        return set(raw.get("_sources") or [])
+    except Exception:
+        return set()
+
+
+def _save_renames(mapping: dict, seen: set) -> None:
     RENAMES_FILE.parent.mkdir(parents=True, exist_ok=True)
     out = {
         "_comment": "OLD -> NEW NGX trading symbols, parsed from NGX change-of-symbol filings. Auto-generated.",
         "_last_updated": date.today().isoformat(),
+        "_sources": sorted(seen)[-500:],
         **dict(sorted(mapping.items())),
     }
     RENAMES_FILE.write_text(json.dumps(out, indent=2), encoding="utf-8")
@@ -118,36 +139,48 @@ def _plausible(old: str, new: str, listed: set) -> bool:
         return False
     if len(old) < 2 or len(new) < 2:
         return False
-    # If we know the current listing, the NEW symbol should be in it and the
-    # OLD one should not. When the listing is unavailable, accept the pair.
-    if listed:
-        if new not in listed:
-            return False
-        if old in listed:
-            return False
+    # When the current listing is known, the NEW symbol must appear in it.
+    # The OLD symbol is deliberately not tested: a listing can lag a rename
+    # by weeks and still carry the retired symbol, which would otherwise
+    # block the very mapping we need.
+    if listed and new not in listed:
+        return False
     return True
 
 
 def _extract_pair(text: str, listed: set):
-    for pat in PATTERNS:
-        m = pat.search(text or "")
-        if m:
-            old, new = m.group(1), m.group(2)
-            if _plausible(old, new, listed):
-                return old.upper(), new.upper()
+    """
+    Return (old_symbol, new_symbol) or None. Only looks near the word
+    "symbol", so a corporate-name change in the same document cannot be
+    mistaken for a ticker change.
+    """
+    text = text or ""
+
+    m = OLD_NEW_RE.search(text)          # tabulated form, unambiguous
+    if m and _plausible(m.group(1), m.group(2), listed):
+        return m.group(1).upper(), m.group(2).upper()
+
+    for sm in SYMBOL_WORD_RE.finditer(text):
+        window = text[sm.start(): sm.start() + WINDOW]
+
+        m = FROM_TO_RE.search(window)
+        if m and _plausible(m.group(1), m.group(2), listed):
+            return m.group(1).upper(), m.group(2).upper()
+
+        m = REPLACED_RE.search(window)   # groups are (new, old)
+        if m and _plausible(m.group(2), m.group(1), listed):
+            return m.group(2).upper(), m.group(1).upper()
+
     return None
 
 
 def update_ticker_renames(debug: dict) -> int:
-    """
-    Find NGX change-of-symbol filings, parse OLD -> NEW, persist the map.
-    Returns the number of new mappings learned this run.
-    """
+    """Find NGX change-of-symbol filings, parse OLD -> NEW, persist the map."""
     dbg = {"candidates": 0, "parsed": 0, "new": 0, "errors": []}
     print("[Renames] Scanning NGX filings for trading-symbol changes", flush=True)
 
     known = _load_renames()
-    seen_urls = set(known.get("_sources", []) if isinstance(known.get("_sources"), list) else [])
+    seen_urls = _load_seen()
     listed = _listed_tickers()
 
     candidates = {}
@@ -175,11 +208,14 @@ def update_ticker_renames(debug: dict) -> int:
 
     dbg["candidates"] = len(candidates)
     print(f"[Renames] {len(candidates)} change-of-symbol filings found", flush=True)
+    if candidates:
+        print("[Renames] candidates: " + "; ".join(
+            n[:60] for n in list(candidates.values())[:8]), flush=True)
 
     from .pdf_extract import download_pdf_text
 
     learned = {}
-    for url, name in list(candidates.items())[:25]:      # cap work per run
+    for url, name in list(candidates.items())[:25]:
         if url in seen_urls:
             continue
         try:
@@ -187,9 +223,16 @@ def update_ticker_renames(debug: dict) -> int:
         except Exception as exc:
             dbg["errors"].append(f"{name[:40]}: {exc!r}")
             continue
-        pair = _extract_pair(text, listed)
         seen_urls.add(url)
+        pair = _extract_pair(text, listed)
         if not pair:
+            snippet = ""
+            m = SYMBOL_WORD_RE.search(text or "")
+            if m:
+                snippet = " ".join(text[m.start(): m.start() + 180].split())
+            print(f"[Renames] no mapping in {name[:55]}"
+                  + (f" | near 'symbol': {snippet}" if snippet else " | no 'symbol' in text"),
+                  flush=True)
             continue
         old, new = pair
         dbg["parsed"] += 1
@@ -197,17 +240,12 @@ def update_ticker_renames(debug: dict) -> int:
             learned[old] = new
             print(f"[Renames] {old} -> {new}   ({name[:60]})", flush=True)
 
-    if learned:
-        known.update(learned)
-        known["_sources"] = sorted(seen_urls)[-500:]
-        _save_renames(known)
-    elif seen_urls:
-        known["_sources"] = sorted(seen_urls)[-500:]
-        _save_renames(known)
+    known.update(learned)
+    _save_renames(known, seen_urls)
 
     dbg["new"] = len(learned)
     debug["ticker_renames"] = dbg
-    print(f"[Renames] {len(learned)} new mapping(s); {len(_load_renames())} total", flush=True)
+    print(f"[Renames] {len(learned)} new mapping(s); {len(known)} total", flush=True)
     return len(learned)
 
 
