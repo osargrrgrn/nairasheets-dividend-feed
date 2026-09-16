@@ -4,13 +4,13 @@
     "status": 200,
     "detail_pages_found": 72,
     "detail_pages_completed": 72,
-    "new_pdfs": 9,
+    "new_pdfs": 1,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5661,
+    "files_seen": 5663,
     "dividend_like": 525,
     "already_known": 524,
     "irrelevant": 1,
@@ -25,60 +25,23 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 534,
-    "already_known": 307,
-    "filtered_before_parser": 227,
+    "pdfs_seen": 519,
+    "already_known": 301,
+    "filtered_before_parser": 218,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [],
+    "errors": [
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
+    ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 9,
-  "elapsed_seconds": 30.66,
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 43.03,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/105_INSIDER_DEALING_NOTIFICATION_CHARLES_ENTERPRISES_2026_.pdf",
-      "title": "INSIDER DEALING NOTIFICATION CHARLES ENTERPRISES 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/105_INSIDER_DEALING_NOTIFICATION_IBITAYO_2026_.pdf",
-      "title": "INSIDER DEALING NOTIFICATION IBITAYO 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/105_INSIDER_DEALING_NOTIFICATION_OGUNTOLA_2026_.pdf",
-      "title": "INSIDER DEALING NOTIFICATION OGUNTOLA 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/105_INSIDER_DEALING_NOTIFICATION_UDU_2026_.pdf",
-      "title": "INSIDER DEALING NOTIFICATION UDU 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47904_VERITAS_KAPITAL_ASSURANCE_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf",
-      "title": "VERITAS KAPITAL ASSURANCE PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47906_NIGERIAN_ENAMELWARE_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_SEPTEMBER_2026.pdf",
-      "title": "NIGERIAN ENAMELWARE PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47907_MTN_NIGERIA_COMMUNICATIONS_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf",
-      "title": "MTN NIGERIA COMMUNICATIONS PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47908_NORTHERN_NIGERIA_FLOUR_MILLS_PLC-NNFM_2026_AGM_RESOLUTION_PASSED_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "NORTHERN NIGERIA FLOUR MILLS PLC-NNFM 2026 AGM RESOLUTION PASSED CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47909_ABBEY_BANK_PLC-ANNOUNCEMENT_OF_SIGNIFICANT_SHAREHOLDERS_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "ABBEY BANK PLC-ANNOUNCEMENT OF SIGNIFICANT SHAREHOLDERS CORPORATE ACTIONS SEPTEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/244_Notification_of_Share_Dealing_-_Black_Rising_Limited_executed.pdf",
+      "title": "Notification of Share Dealing - Black Rising Limited executed",
       "source": "abokiforex_listing"
     }
   ]

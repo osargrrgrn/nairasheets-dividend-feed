@@ -1,36 +1,5 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43274_HALDANE_MCCALL_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-    "title": "HALDANE MCCALL PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "dd8c7ffc11ca3ab6",
-      "ticker": "HMCALL",
-      "company": "HALDANE MCCALL PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-04-25",
-      "payment_date": "2025-04-25",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43274_HALDANE_MCCALL_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "source_title": "HALDANE MCCALL PLC-CORPORATE ACTION CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-16",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
     "title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
     "reason_codes": [
@@ -64,30 +33,67 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
-    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44448_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+    "title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
+      "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share"
+      "missing ticker",
+      "missing payment date"
     ],
     "parsed": {
-      "event_id": "b00df2a13e68c4e9",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
-      "dividend_per_share": 0.0,
+      "event_id": "babe331fc7bc5f19",
+      "ticker": "",
+      "company": "C AND I LEASING PLC.",
+      "dividend_per_share": 0.1,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2025-06-20",
-      "payment_date": "2025-07-25",
+      "qualification_date": "2025-08-05",
+      "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
-      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44448_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+      "source_title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+      "last_verified": "2026-09-16",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44589_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2025_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
+    "title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2025 AGM CORPORATE ACTIONS JULY 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "e200ebf569e42d1a",
+      "ticker": "",
+      "company": "E-TRANZACT INTERNATIONAL PLC",
+      "dividend_per_share": 0.125,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44589_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2025_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
+      "source_title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2025 AGM CORPORATE ACTIONS JULY 2025",
       "last_verified": "2026-09-16",
       "confidence": "review"
     },
