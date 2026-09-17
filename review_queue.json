@@ -33,8 +33,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44944_SOVEREIGN_TRUST_INSURANCE_PLC-SOVEREIGN_TRUST_INSURANCE_PLC_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44961_REGENCY_ALLIANCE_INSURANCE_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "REGENCY ALLIANCE INSURANCE PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -45,20 +45,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "89845398c888259a",
-      "ticker": "SOVRENINS",
-      "company": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "event_id": "aba6bb213d8da20f",
+      "ticker": "REGALINS",
+      "company": "REGENCY ALLIANCE INSURANCE PLC",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "2025-09-25",
+      "qualification_date": "2025-09-10",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44944_SOVEREIGN_TRUST_INSURANCE_PLC-SOVEREIGN_TRUST_INSURANCE_PLC_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44961_REGENCY_ALLIANCE_INSURANCE_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "REGENCY ALLIANCE INSURANCE PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
       "last_verified": "2026-09-17",
       "confidence": "review"
     },
@@ -66,32 +66,100 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44954_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44980_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "afecbf3d8444717f",
+      "ticker": "UBA",
+      "company": "UNITED BANK FOR AFRICA PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2025-09-18",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44980_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-17",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44999_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "32aa9fbe43517953",
+      "ticker": "GTCO",
+      "company": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2025-10-07",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2025-06-30",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44999_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-17",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45042_N_NIG._FLOUR_MILLS_PLC.-NNFM_2025_AGM_RESOLUTION_PASSED_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "N NIG. FLOUR MILLS PLC.-NNFM 2025 AGM RESOLUTION PASSED CORPORATE ACTIONS SEPTEMBER 2025",
     "reason_codes": [
       "ticker_unresolved",
+      "qualification_date_missing",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
       "missing ticker",
+      "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "babe331fc7bc5f19",
+      "event_id": "5b9586a3d14ee803",
       "ticker": "",
-      "company": "C AND I LEASING PLC.",
-      "dividend_per_share": 0.1,
+      "company": "N NIG. FLOUR MILLS PLC.-NNFM 2025 AGM RESOLUTION PASSED CORPORATE ACTIONS SEPTEMBER 2025",
+      "dividend_per_share": 0.25,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2025-08-05",
+      "qualification_date": "",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "",
+      "announcement_date": "2025-09-29",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44954_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45042_N_NIG._FLOUR_MILLS_PLC.-NNFM_2025_AGM_RESOLUTION_PASSED_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "N NIG. FLOUR MILLS PLC.-NNFM 2025 AGM RESOLUTION PASSED CORPORATE ACTIONS SEPTEMBER 2025",
       "last_verified": "2026-09-17",
       "confidence": "review"
     },
@@ -99,8 +167,43 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44960_C_AND_I_LEASING_PLC.-CI_LEASING_PLC-AGM_RESOLUTIONS__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "C AND I LEASING PLC.-CI LEASING PLC-AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45094_MECURE_INDUSTRIES_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+    "title": "MECURE INDUSTRIES PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "14e0f1b9fa2199de",
+      "ticker": "MECURE",
+      "company": "MECURE INDUSTRIES PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45094_MECURE_INDUSTRIES_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+      "source_title": "MECURE INDUSTRIES PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
+      "last_verified": "2026-09-17",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45121_VETIVA_FUND_MANAGERS_LIMITED-CORPORATE_ACTIONS_-_2025_INTERIM_DISTRIBUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+    "title": "VETIVA FUND MANAGERS LIMITED-CORPORATE ACTIONS - 2025 INTERIM DISTRIBUTION CORPORATE ACTIONS OCTOBER 2025",
     "reason_codes": [
       "ticker_unresolved",
       "payment_date_missing",
@@ -111,20 +214,51 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "0ceb40a57311846f",
+      "event_id": "0630a8f5175cf5d9",
       "ticker": "",
-      "company": "C AND I LEASING PLC.-CI LEASING PLC",
-      "dividend_per_share": 0.1,
+      "company": "VETIVA FUND MANAGERS LIMITED",
+      "dividend_per_share": 0.6,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2025-09-08",
+      "dividend_type": "distribution",
+      "qualification_date": "2025-10-09",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2025-09-09",
+      "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44960_C_AND_I_LEASING_PLC.-CI_LEASING_PLC-AGM_RESOLUTIONS__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "C AND I LEASING PLC.-CI LEASING PLC-AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45121_VETIVA_FUND_MANAGERS_LIMITED-CORPORATE_ACTIONS_-_2025_INTERIM_DISTRIBUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+      "source_title": "VETIVA FUND MANAGERS LIMITED-CORPORATE ACTIONS - 2025 INTERIM DISTRIBUTION CORPORATE ACTIONS OCTOBER 2025",
+      "last_verified": "2026-09-17",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45416_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
+    "title": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "adebc793b65efba3",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2025-11-07",
+      "payment_date": "2025-12-12",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45416_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
+      "source_title": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
       "last_verified": "2026-09-17",
       "confidence": "review"
     },

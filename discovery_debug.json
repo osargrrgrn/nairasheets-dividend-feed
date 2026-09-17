@@ -10,7 +10,7 @@
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5663,
+    "files_seen": 5664,
     "dividend_like": 525,
     "already_known": 524,
     "irrelevant": 1,
@@ -34,11 +34,11 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 1,
-  "elapsed_seconds": 29.55,
+  "elapsed_seconds": 30.23,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/244_Notification_of_Share_Dealing_-_Seven_Degrees_North_Limited_-_executed.pdf",
-      "title": "Notification of Share Dealing - Seven Degrees North Limited - executed",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47912_AFRICAN_ALLIANCE_INSURANCE_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2023_FINANCIAL_STATEMENTS_SEPTEMBER_2026.pdf",
+      "title": "AFRICAN ALLIANCE INSURANCE PLC- QUARTER 5 - FINANCIAL STATEMENT FOR 2023 FINANCIAL STATEMENTS SEPTEMBER 2026",
       "source": "abokiforex_listing"
     }
   ]
