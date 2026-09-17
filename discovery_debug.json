@@ -2,8 +2,8 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 72,
-    "detail_pages_completed": 72,
+    "detail_pages_found": 71,
+    "detail_pages_completed": 71,
     "new_pdfs": 1,
     "errors": []
   },
@@ -25,23 +25,20 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 519,
-    "already_known": 301,
-    "filtered_before_parser": 218,
+    "pdfs_seen": 531,
+    "already_known": 306,
+    "filtered_before_parser": 225,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 1,
-  "elapsed_seconds": 43.03,
+  "elapsed_seconds": 29.55,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/244_Notification_of_Share_Dealing_-_Black_Rising_Limited_executed.pdf",
-      "title": "Notification of Share Dealing - Black Rising Limited executed",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/244_Notification_of_Share_Dealing_-_Seven_Degrees_North_Limited_-_executed.pdf",
+      "title": "Notification of Share Dealing - Seven Degrees North Limited - executed",
       "source": "abokiforex_listing"
     }
   ]
