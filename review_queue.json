@@ -33,8 +33,76 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47414_E-TRANZACT_INTERNATIONAL_PLC-UPDATED_CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "547b1cdb61488338",
+      "ticker": "",
+      "company": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.125,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-07-07",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47414_E-TRANZACT_INTERNATIONAL_PLC-UPDATED_CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-09-18",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47417_INTERNATIONAL_BREWERIES_PLC.-NOTICE_OF_PROPOSED_SHARE_CAPITAL_REDUCTION_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "INTERNATIONAL BREWERIES PLC.-NOTICE OF PROPOSED SHARE CAPITAL REDUCTION CORPORATE ACTIONS JULY 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "8187a3b58b742c89",
+      "ticker": "INTBREW",
+      "company": "INTERNATIONAL BREWERIES PLC.-NOTICE OF PROPOSED SHARE CAPITAL REDUCTION CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47417_INTERNATIONAL_BREWERIES_PLC.-NOTICE_OF_PROPOSED_SHARE_CAPITAL_REDUCTION_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "INTERNATIONAL BREWERIES PLC.-NOTICE OF PROPOSED SHARE CAPITAL REDUCTION CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-09-18",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -45,9 +113,9 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "0516c16e5c0ba6f1",
+      "event_id": "a3298c0867567c80",
       "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
+      "company": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "final",
@@ -57,8 +125,8 @@
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
       "last_verified": "2026-09-18",
       "confidence": "review"
     },
@@ -66,24 +134,57 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47135_MAY_AND_BAKER-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-    "title": "MAY AND BAKER-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47433_E-TRANZACT_INTERNATIONAL_PLC-UPDATED_CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
       "ticker_unresolved",
-      "qualification_date_missing",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
       "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "42c2cdab461f8829",
+      "ticker": "",
+      "company": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.125,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-07-07",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47433_E-TRANZACT_INTERNATIONAL_PLC-UPDATED_CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
+      "last_verified": "2026-09-18",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47446_MECURE_INDUSTRIES_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "MECURE INDUSTRIES PLC-AGM RESOLUTIONS CORPORATE ACTIONS JULY 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
       "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "4fae248392a6e4ba",
-      "ticker": "",
-      "company": "MAY AND BAKER",
-      "dividend_per_share": 0.5,
+      "event_id": "14e0f1b9fa2199de",
+      "ticker": "MECURE",
+      "company": "MECURE INDUSTRIES PLC",
+      "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
       "qualification_date": "",
@@ -91,9 +192,9 @@
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47135_MAY_AND_BAKER-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "source_title": "MAY AND BAKER-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47446_MECURE_INDUSTRIES_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "MECURE INDUSTRIES PLC-AGM RESOLUTIONS CORPORATE ACTIONS JULY 2026",
       "last_verified": "2026-09-18",
       "confidence": "review"
     },
@@ -101,32 +202,32 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47188_C_AND_I_LEASING_PLC.-2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-    "title": "C AND I LEASING PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
+    "title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
     "reason_codes": [
-      "ticker_unresolved",
+      "dividend_amount_unresolved",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing ticker",
+      "missing/invalid dividend per share",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "3ff88174ec663c80",
-      "ticker": "",
-      "company": "C AND I LEASING PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
-      "dividend_per_share": 0.2,
+      "event_id": "ee46aa287fadc313",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
+      "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2026-06-15",
+      "dividend_type": "distribution",
+      "qualification_date": "2026-06-19",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2026-06-17",
+      "announcement_date": "2026-07-23",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47188_C_AND_I_LEASING_PLC.-2025_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2026.pdf",
-      "source_title": "C AND I LEASING PLC.-2025 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
+      "source_title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
       "last_verified": "2026-09-18",
       "confidence": "review"
     },
