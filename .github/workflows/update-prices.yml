@@ -1,0 +1,45 @@
+name: Update NGX prices
+
+# Prices are published by the pipeline rather than scraped inside the
+# spreadsheet, so a source change never reaches a buyer's copy.
+# NGX trades 10:00-14:30 WAT (09:00-13:30 UTC); this runs through that
+# window and once after the close.
+
+on:
+  schedule:
+    - cron: "5,35 9-14 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Fetch and publish prices
+        run: python -u -m collector.publish_prices
+
+      - name: Commit prices
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/prices.csv
+          git diff --cached --quiet && echo "no price change" && exit 0
+          git commit -m "Update NGX prices [skip ci]"
+          git pull --rebase --autostash origin main || true
+          git push
