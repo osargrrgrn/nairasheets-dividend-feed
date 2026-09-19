@@ -33,32 +33,129 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47783_CUTIX_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-    "title": "CUTIX PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/HALDANE_-_DIVIDEND_ANNOUNCEMENT.pdf",
+    "title": "HALDANE - DIVIDEND ANNOUNCEMENT",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date"
+    ],
+    "parsed": {
+      "event_id": "863d69dff87a6302",
+      "ticker": "",
+      "company": "HALDANE",
+      "dividend_per_share": 0.05,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "",
+      "payment_date": "2026-06-18",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/HALDANE_-_DIVIDEND_ANNOUNCEMENT.pdf",
+      "source_title": "HALDANE - DIVIDEND ANNOUNCEMENT",
+      "last_verified": "2026-09-19",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IHPLC_-_Corporate_Actions_Announcement_May_2026.pdf",
+    "title": "IHPLC - Corporate Actions Announcement May 2026",
+    "reason_codes": [
+      "ticker_unresolved",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
+      "missing ticker",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "20d96be782db0fbd",
-      "ticker": "CUTIX",
-      "company": "CUTIX PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "event_id": "cd2b0a286d5d9fe2",
+      "ticker": "",
+      "company": "IHPLC",
+      "dividend_per_share": 0.03,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2026-05-06",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IHPLC_-_Corporate_Actions_Announcement_May_2026.pdf",
+      "source_title": "IHPLC - Corporate Actions Announcement May 2026",
+      "last_verified": "2026-09-19",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IMG_Nig_Plc_-_Corporate_Announcement_2025AFS.pdf",
+    "title": "IMG Nig Plc - Corporate Announcement 2025AFS",
+    "reason_codes": [
+      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "0cf38e37e271271a",
+      "ticker": "",
+      "company": "IMG Nig Plc - Corporate Announcement 2025AFS",
       "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-06-04",
+      "payment_date": "2026-06-24",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IMG_Nig_Plc_-_Corporate_Announcement_2025AFS.pdf",
+      "source_title": "IMG Nig Plc - Corporate Announcement 2025AFS",
+      "last_verified": "2026-09-19",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NGX_Group_-_Dividend_Announcement.pdf",
+    "title": "NGX Group - Dividend Announcement",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "bcc56bcfb6ca2a4c",
+      "ticker": "",
+      "company": "NGX Group",
+      "dividend_per_share": 2.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "2026-08-17",
-      "payment_date": "",
-      "closure_date": "",
+      "qualification_date": "2026-04-10",
+      "payment_date": "2026-04-29",
+      "closure_date": "2026-04-13",
       "announcement_date": "",
       "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47783_CUTIX_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-      "source_title": "CUTIX PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NGX_Group_-_Dividend_Announcement.pdf",
+      "source_title": "NGX Group - Dividend Announcement",
       "last_verified": "2026-09-19",
       "confidence": "review"
     },
@@ -66,34 +163,67 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47916_OANDO_PLC-OANDO_PLC__CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-    "title": "OANDO PLC-OANDO PLC CORPORATE ACTIONS SEPTEMBER 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Seplat_Announcement_on_FY_2025_Final_and_Special_Dividend.pdf",
+    "title": "Seplat Announcement on FY 2025 Final and Special Dividend",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
       "qualification_date_missing",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
+      "missing ticker",
       "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "215d3ef10ac2b1ab",
-      "ticker": "OANDO",
-      "company": "OANDO PLC-OANDO PLC CORPORATE ACTIONS SEPTEMBER 2026",
-      "dividend_per_share": 0.0,
+      "event_id": "1e8c582f6835aad1",
+      "ticker": "",
+      "company": "Seplat Announcement on FY 2025 Final and Special Dividend",
+      "dividend_per_share": 0.033,
+      "currency": "USD",
+      "dividend_type": "final+special",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2026-02-26",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Seplat_Announcement_on_FY_2025_Final_and_Special_Dividend.pdf",
+      "source_title": "Seplat Announcement on FY 2025 Final and Special Dividend",
+      "last_verified": "2026-09-19",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/UH_REITS_-_Corporate_Actions_for_2025_FY_Distribution.pdf",
+    "title": "UH REITS - Corporate Actions for 2025 FY Distribution",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "24e152f0ccc755af",
+      "ticker": "",
+      "company": "UH REITS",
+      "dividend_per_share": 0.0555,
       "currency": "NGN",
       "dividend_type": "distribution",
-      "qualification_date": "",
+      "qualification_date": "2026-05-29",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2026-09-17",
+      "announcement_date": "2025-12-31",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47916_OANDO_PLC-OANDO_PLC__CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "source_title": "OANDO PLC-OANDO PLC CORPORATE ACTIONS SEPTEMBER 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/UH_REITS_-_Corporate_Actions_for_2025_FY_Distribution.pdf",
+      "source_title": "UH REITS - Corporate Actions for 2025 FY Distribution",
       "last_verified": "2026-09-19",
       "confidence": "review"
     },
@@ -101,8 +231,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/DCP_-_DIVIDEND_ANNOUNCEMENT.pdf",
-    "title": "DCP - DIVIDEND ANNOUNCEMENT",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/VETIVA_FUND_-_Notice_of_VSP_ETF_2025_Final_Distribution.pdf",
+    "title": "VETIVA FUND - Notice of VSP ETF 2025 Final Distribution",
     "reason_codes": [
       "ticker_unresolved",
       "payment_date_missing",
@@ -113,55 +243,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "51f814aa414aeabc",
+      "event_id": "887f3004358b68ea",
       "ticker": "",
-      "company": "DCP",
-      "dividend_per_share": 45.0,
+      "company": "VETIVA FUND - Notice of VSP ETF 2025 Final Distribution",
+      "dividend_per_share": 5.0,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-02-27",
+      "dividend_type": "distribution",
+      "qualification_date": "2026-04-17",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/DCP_-_DIVIDEND_ANNOUNCEMENT.pdf",
-      "source_title": "DCP - DIVIDEND ANNOUNCEMENT",
-      "last_verified": "2026-09-19",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/FIDSON_-_CORPORATE_ACTION_2025_ACCOUNTS.pdf",
-    "title": "FIDSON - CORPORATE ACTION 2025 ACCOUNTS",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "e068ebc1ae434f33",
-      "ticker": "",
-      "company": "FIDSON",
-      "dividend_per_share": 0.015,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/FIDSON_-_CORPORATE_ACTION_2025_ACCOUNTS.pdf",
-      "source_title": "FIDSON - CORPORATE ACTION 2025 ACCOUNTS",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/VETIVA_FUND_-_Notice_of_VSP_ETF_2025_Final_Distribution.pdf",
+      "source_title": "VETIVA FUND - Notice of VSP ETF 2025 Final Distribution",
       "last_verified": "2026-09-19",
       "confidence": "review"
     },
