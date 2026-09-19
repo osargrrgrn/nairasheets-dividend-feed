@@ -25,15 +25,15 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 56,
-    "already_known": 31,
-    "filtered_before_parser": 25,
+    "pdfs_seen": 526,
+    "already_known": 303,
+    "filtered_before_parser": 223,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 28.46,
+  "elapsed_seconds": 33.28,
   "results": []
 }
