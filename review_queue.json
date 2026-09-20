@@ -33,8 +33,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44069__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REITS_DISTRIBUTION_PAYMENT_2024_-_FINAL_CORPORATE_ACTIONS_MAY_2025.pdf",
-    "title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
+    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
     "reason_codes": [
       "dividend_amount_unresolved",
       "validation_failed"
@@ -43,20 +43,55 @@
       "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "3cdbcabcaf1eb20d",
-      "ticker": "UPDCREIT",
-      "company": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+      "event_id": "b00df2a13e68c4e9",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2025-05-08",
-      "payment_date": "2025-05-15",
+      "qualification_date": "2025-06-20",
+      "payment_date": "2025-07-25",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44069__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REITS_DISTRIBUTION_PAYMENT_2024_-_FINAL_CORPORATE_ACTIONS_MAY_2025.pdf",
-      "source_title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REITS DISTRIBUTION PAYMENT 2024 - FINAL CORPORATE ACTIONS MAY 2025",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
+      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
+      "last_verified": "2026-09-20",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44249_MAY_AND_BAKER-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2025.pdf",
+    "title": "MAY AND BAKER-AGM RESOLUTION CORPORATE ACTIONS JUNE 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "6d9999bb6149817f",
+      "ticker": "",
+      "company": "MAY AND BAKER",
+      "dividend_per_share": 0.4,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44249_MAY_AND_BAKER-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2025.pdf",
+      "source_title": "MAY AND BAKER-AGM RESOLUTION CORPORATE ACTIONS JUNE 2025",
       "last_verified": "2026-09-20",
       "confidence": "review"
     },
