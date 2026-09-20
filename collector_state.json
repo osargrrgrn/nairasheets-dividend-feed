@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 45,
+  "historical_recheck_cursor": 60,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -197,7 +197,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44063_LEGEND_INTERNET_PLC-GENERAL_ANNOUNCEMENT_-_POST_LISTING_UPDATE_CORPORATE_ACTIONS_MAY_2025.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44066_NESTLE_NIGERIA_PLC.-NOTICE_OF_PUBLICATION_OF_2024_UNCLAIMED_DIVIDEND_CORPORATE_ACTIONS_MAY_2025.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44069__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REITS_DISTRIBUTION_PAYMENT_2024_-_FINAL_CORPORATE_ACTIONS_MAY_2025.pdf": "review",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/44077_UH_REAL_ESTATE_INVESTMENT_TRUST_(UHREIT)-UH_REIT_CORPORATE_ACTIONS_FOR_2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MAY_2025.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/44077_UH_REAL_ESTATE_INVESTMENT_TRUST_(UHREIT)-UH_REIT_CORPORATE_ACTIONS_FOR_2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MAY_2025.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44084_NASCON_ALLIED_INDUSTRIES_PLC-RESOLUTIONS_PASSED_AT_THE_AGM_CORPORATE_ACTIONS_MAY_2025.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44100_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC-_NOTIFICATION_OF_AGM_RESOLUTIONS__CORPORATE_ACTIONS_MAY_2025.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44102_NPF_MICROFINANCE_BANK_PLC-NOTICE_TO_SHAREHOLDERS_ON_UNCLAIMED_DIVIDENDS_CORPORATE_ACTIONS_MAY_2025.pdf": "not_dividend",

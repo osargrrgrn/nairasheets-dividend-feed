@@ -1,9 +1,9 @@
 {
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
-    "status": 200,
-    "detail_pages_found": 70,
-    "detail_pages_completed": 70,
+    "status": 403,
+    "detail_pages_found": 0,
+    "detail_pages_completed": 0,
     "new_pdfs": 0,
     "errors": []
   },
@@ -34,6 +34,6 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 0,
-  "elapsed_seconds": 30.01,
+  "elapsed_seconds": 25.77,
   "results": []
 }
