@@ -31,7 +31,7 @@ PENDING_FEED = DOCS / "pending_dividends.csv"
 # New PDFs are always processed immediately. Older unresolved documents are
 # revisited in a rotating batch so parser/ticker improvements can still
 # recover them over successive runs.
-MAX_HISTORICAL_RECHECK = 15  # Reduced from 30 — OCR makes per-PDF processing slower
+MAX_HISTORICAL_RECHECK = 40  # Reduced from 30 — OCR makes per-PDF processing slower
 
 RECHECKABLE_STATES = {
     "pending",
