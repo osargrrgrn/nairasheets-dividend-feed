@@ -26,15 +26,48 @@
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
       "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-20",
+      "last_verified": "2026-09-21",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44448_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
-    "title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44944_SOVEREIGN_TRUST_INSURANCE_PLC-SOVEREIGN_TRUST_INSURANCE_PLC_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "89845398c888259a",
+      "ticker": "SOVRENINS",
+      "company": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2025-09-25",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44944_SOVEREIGN_TRUST_INSURANCE_PLC-SOVEREIGN_TRUST_INSURANCE_PLC_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-21",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44954_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
     "reason_codes": [
       "ticker_unresolved",
       "payment_date_missing",
@@ -57,44 +90,108 @@
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44448_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "source_title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
-      "last_verified": "2026-09-20",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44954_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-21",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44589_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2025_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
-    "title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2025 AGM CORPORATE ACTIONS JULY 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44960_C_AND_I_LEASING_PLC.-CI_LEASING_PLC-AGM_RESOLUTIONS__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "C AND I LEASING PLC.-CI LEASING PLC-AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
     "reason_codes": [
       "ticker_unresolved",
-      "qualification_date_missing",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
       "missing ticker",
-      "missing qualification date",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "e200ebf569e42d1a",
+      "event_id": "0ceb40a57311846f",
       "ticker": "",
-      "company": "E-TRANZACT INTERNATIONAL PLC",
-      "dividend_per_share": 0.125,
+      "company": "C AND I LEASING PLC.-CI LEASING PLC",
+      "dividend_per_share": 0.1,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "",
+      "qualification_date": "2025-09-08",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2025-09-09",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44960_C_AND_I_LEASING_PLC.-CI_LEASING_PLC-AGM_RESOLUTIONS__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "C AND I LEASING PLC.-CI LEASING PLC-AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-21",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44961_REGENCY_ALLIANCE_INSURANCE_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "REGENCY ALLIANCE INSURANCE PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "aba6bb213d8da20f",
+      "ticker": "REGALINS",
+      "company": "REGENCY ALLIANCE INSURANCE PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2025-09-10",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44589_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2025_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
-      "source_title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2025 AGM CORPORATE ACTIONS JULY 2025",
-      "last_verified": "2026-09-20",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44961_REGENCY_ALLIANCE_INSURANCE_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "REGENCY ALLIANCE INSURANCE PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-21",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44980_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "afecbf3d8444717f",
+      "ticker": "UBA",
+      "company": "UNITED BANK FOR AFRICA PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2025-09-18",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44980_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-21",
       "confidence": "review"
     },
     "classification": "review",
