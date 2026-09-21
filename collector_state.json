@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 105,
+  "historical_recheck_cursor": 120,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -358,7 +358,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/45761_SEPLAT_ENERGY_PLC-CORPORATE_ANNOUNCEMENT_-_ANOH_UPDATE_-_FIRST_GAS_CORPORATE_ACTIONS_JANUARY_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/45771_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-ALLOTMENT_ANNOUNCEMENT_CORPORATE_ACTIONS_JANUARY_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/45787_TRIPPLE_GEE_AND_COMPANY_PLC.-BOARD_RESOLUTION_AT_35TH_AGM_CORPORATE_ACTIONS_JANUARY_2026.pdf": "not_dividend",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/45851_ZENITH_BANK_PLC-ZENITH_BANK_PLC_-_ANNOUNCEMENT__CORPORATE_ACTIONS_JANUARY_2026.pdf": "error",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/45851_ZENITH_BANK_PLC-ZENITH_BANK_PLC_-_ANNOUNCEMENT__CORPORATE_ACTIONS_JANUARY_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/45916_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_CORPORATE_ACTION_ANNOUNCEMENTS_CORPORATE_ACTIONS_JANUARY_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/45960_UNION_DICON_SALT_PLC.-ANNOUNCEMENT_CORPORATE_ACTIONS_FEBRUARY_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/45973_LAFARGE_AFRICA_PLC.-ANNOUNCEMENT_ON_EXPANSION_PROJECTS_CORPORATE_ACTIONS_FEBRUARY_2026.pdf": "not_dividend",
