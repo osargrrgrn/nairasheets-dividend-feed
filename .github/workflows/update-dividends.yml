@@ -31,8 +31,8 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Access diagnostic (read-only)
-        run: python -u -m collector.diagnose_access
+      - name: Pending-date diagnostic (read-only)
+        run: python -u -m collector.diagnose_pending 20 0
         continue-on-error: true
 
       - name: Update feed
