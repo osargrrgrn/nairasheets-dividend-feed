@@ -12,13 +12,13 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "9eb1e5f104691181",
+      "event_id": "9397533a3d9d1240",
       "ticker": "",
       "company": "E-TRANZACT INTERNATIONAL PLC",
       "dividend_per_share": 0.125,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2025-07-08",
+      "qualification_date": "2025-07-07",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
@@ -33,8 +33,70 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46809_OMATEK_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
-    "title": "OMATEK VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47016_C_AND_I_LEASING_PLC.-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
+    "title": "C AND I LEASING PLC.-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "6d94fcca6cf7be69",
+      "ticker": "",
+      "company": "C AND I LEASING PLC.",
+      "dividend_per_share": 0.2,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-06-01",
+      "payment_date": "2026-06-15",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47016_C_AND_I_LEASING_PLC.-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "C AND I LEASING PLC.-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MAY 2026",
+      "last_verified": "2026-09-21",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
+    "title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "661457e6240abb1f",
+      "ticker": "STANBIC",
+      "company": "STANBIC IBTC HOLDINGS PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-05-04",
+      "payment_date": "2026-05-26",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47068_STANBIC_IBTC__HOLDINGS_PLC-RESOLUTIONS_PASSED_AT_THE_14TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf",
+      "source_title": "STANBIC IBTC HOLDINGS PLC-RESOLUTIONS PASSED AT THE 14TH ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2026",
+      "last_verified": "2026-09-21",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
+    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -45,53 +107,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "a1ecdf3adc221731",
-      "ticker": "OMATEK",
-      "company": "OMATEK VENTURES PLC",
+      "event_id": "0516c16e5c0ba6f1",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-03-27",
+      "dividend_type": "final",
+      "qualification_date": "2026-06-19",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46809_OMATEK_VENTURES_PLC-_QUARTER_1_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_APRIL_2026.pdf",
-      "source_title": "OMATEK VENTURES PLC- QUARTER 1 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS APRIL 2026",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46979_VETIVA_FUND_MANAGERS_LIMITED-CORPORATE_ACTIONS_-_VETIVA_BANKING_EXCHANGE_TRADED_FUND_CORPORATE_ACTIONS_MAY_2026.pdf",
-    "title": "VETIVA FUND MANAGERS LIMITED-CORPORATE ACTIONS - VETIVA BANKING EXCHANGE TRADED FUND CORPORATE ACTIONS MAY 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "2ecc241c8e1e1e6e",
-      "ticker": "",
-      "company": "VETIVA FUND MANAGERS LIMITED",
-      "dividend_per_share": 0.21,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-04-17",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46979_VETIVA_FUND_MANAGERS_LIMITED-CORPORATE_ACTIONS_-_VETIVA_BANKING_EXCHANGE_TRADED_FUND_CORPORATE_ACTIONS_MAY_2026.pdf",
-      "source_title": "VETIVA FUND MANAGERS LIMITED-CORPORATE ACTIONS - VETIVA BANKING EXCHANGE TRADED FUND CORPORATE ACTIONS MAY 2026",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47106_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2026.pdf",
+      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2026",
       "last_verified": "2026-09-21",
       "confidence": "review"
     },
