@@ -8,6 +8,86 @@ MONTHS = (
     "January|February|March|April|May|June|July|August|September|October|November|December"
 )
 
+# ---------------------------------------------------------------------------
+# Patch 56: tolerant date tokens.
+#
+# NGX filings write the same date many ways, and OCR of scanned filings splits
+# digits ("2 8 February", "202 5") and drops commas. The old extractors only
+# accepted a weekday prefix on the "24 February 2025" form, so every
+# "Payment Date On Wednesday, April 16, 2025" was missed — which is why most
+# pending events had a qualification date but no payment date.
+#
+# DATE_TOKEN matches the date; date_from_match rebuilds it field by field, so
+# OCR spacing is repaired inside each field and never across two of them.
+# ---------------------------------------------------------------------------
+
+_WEEKDAY = r"(?:mon|tues|wednes|thurs|fri|satur|sun)day"
+_D = r"\d\s?\d?"
+_Y = r"(?:19|20)\s?\d\s?\d"
+
+# 28th day of June, 2025  /  24 February 2025  /  2 8 February 2025
+_DATE_DMY = (
+    rf"(?P<d1>{_D})(?:st|nd|rd|th)?\s*(?:day\s+)?(?:of\s+)?"
+    rf"(?P<m1>{MONTHS})\s*,?\s*(?P<y1>{_Y})"
+)
+# June 28th, 2025  /  May 2 , 2025  /  April 16, 2025
+_DATE_MDY = (
+    rf"(?P<m2>{MONTHS})\s*,?\s*(?P<d2>{_D})(?:st|nd|rd|th)?\s*,?\s*(?P<y2>{_Y})"
+)
+_DATE_NUM = r"(?P<n>\d{1,2}[/-]\d{1,2}[/-]\d{2,4})"
+
+DATE_TOKEN = rf"(?:{_WEEKDAY})?\s*,?\s*(?:{_DATE_DMY}|{_DATE_MDY}|{_DATE_NUM})"
+
+_MONTH_NUM = {m.lower(): i for i, m in enumerate(MONTHS.split("|"), start=1)}
+
+
+def _date_digits(value):
+    return re.sub(r"\s+", "", value or "")
+
+
+def date_from_match(m):
+    """Build an ISO date from a DATE_TOKEN match. Returns '' if implausible."""
+    groups = m.groupdict()
+
+    if groups.get("n"):
+        parts = re.split(r"[/-]", groups["n"])
+        if len(parts) != 3:
+            return ""
+        day, month, year = parts
+        if len(year) != 4:
+            year = "20" + year
+        try:
+            day_i, month_i, year_i = int(day), int(month), int(year)
+        except Exception:
+            return ""
+    else:
+        if groups.get("m1"):
+            day, month, year = groups["d1"], groups["m1"], groups["y1"]
+        else:
+            day, month, year = groups["d2"], groups["m2"], groups["y2"]
+        try:
+            day_i = int(_date_digits(day))
+            month_i = _MONTH_NUM[month.lower()]
+            year_i = int(_date_digits(year))
+        except Exception:
+            return ""
+
+    if not (1 <= day_i <= 31 and 1 <= month_i <= 12 and 1900 <= year_i <= 2100):
+        return ""
+    return f"{year_i:04d}-{month_i:02d}-{day_i:02d}"
+
+
+def first_date(patterns, text):
+    """First pattern that yields a usable date wins."""
+    for pat in patterns:
+        m = re.search(pat, text, re.I | re.S)
+        if m:
+            found = date_from_match(m)
+            if found:
+                return found
+    return ""
+
+
 CORPORATE_ACTION_TITLE_HINTS = (
     "corporate action",
     "dividend announcement",
@@ -494,13 +574,15 @@ def infer_dividend_type(text: str) -> str:
     return "dividend"
 
 def extract_labeled_date(label: str, text: str) -> str:
-    pat = rf"{label}\s*:?\s*(?:is|of|on)?\s*" \
-          rf"((?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?[,]?\s*" \
-          rf"\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}}" \
-          rf"|\d{{1,2}}[/-]\d{{1,2}}[/-]\d{{2,4}}" \
-          rf"|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?[,]?\s+\d{{4}})"
-
-    return iso_date(first_match([pat], text))
+    """
+    Patch 56: a labelled date, tolerant of weekday prefixes, "of"/"day of"
+    wording, spaces before commas, and OCR-split digits.
+    """
+    patterns = [
+        rf"{label}\s*[:\-]?\s*(?:is|of|on)?\s*(?:or\s+before\s+)?{DATE_TOKEN}",
+        rf"{label}[^.]{{0,80}}?(?:will\s+be|shall\s+be|is)\s+{DATE_TOKEN}",
+    ]
+    return first_date(patterns, text)
 
 def extract_qualification_date(text: str) -> str:
     # 1. Highest priority: explicit label
@@ -510,6 +592,20 @@ def extract_qualification_date(text: str) -> str:
     )
     if explicit:
         return explicit
+
+    # 1b. Patch 56: the standard NGX entitlement sentence, using the tolerant
+    # date token. This catches filings where the label sits in a flattened
+    # two-column table ("Qualification Date Payment Date 6th day of June,
+    # 2025 ...") and those that only state the register wording.
+    entitlement = first_date([
+        rf"(?:register\s+of\s+(?:members|shareholders|unit\s*holders)"
+        rf"|names\s+are\s+registered)"
+        rf"[^.]{{0,120}}?"
+        rf"(?:close\s+of\s+business\s+on|as\s+at|as\s+of|on)\s+(?:the\s+)?"
+        rf"{DATE_TOKEN}",
+    ], text)
+    if entitlement:
+        return entitlement
 
     # 2. Standard NGX register-of-members phrasing near dividend language
     entitlement_patterns = [
@@ -585,34 +681,35 @@ def extract_qualification_date(text: str) -> str:
 
 
 def extract_payment_date(text: str) -> str:
-    # Highest priority: an explicitly labelled payment date.
-    explicit = extract_labeled_date(
-        r"(?:payment\s+date|dividend\s+payment\s+date)",
-        text
-    )
-    if explicit:
-        return explicit
+    """
+    Patch 56: the payment date, in order of how trustworthy the wording is.
 
-    # NGX often writes:
-    # "Payment Date On Thursday 24th September 2026"
-    # or:
-    # "payment will be made on Thursday, 24th September 2026"
-    payment_patterns = [
-        rf"(?:payment\s+date)\s*(?:on)?\s*"
-        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
-        rf"\s*,?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+    The sentence "On <date>, dividends will be paid electronically ..." is
+    checked first and deliberately outranks the "Payment Date" label. When a
+    two-column NGX table is flattened into one line of text it can read
+    "Qualification Date Payment Date 6th day of June, 2025 On 4th day of
+    July, 2025 ..." — there the first date after the words "Payment Date" is
+    the qualification date, and anchoring on the label alone reads it wrong.
+    """
+    patterns = [
+        # "On [or before] <date>, [cash] dividend(s)/distribution will be paid"
+        rf"\bon\s+(?:or\s+before\s+)?{DATE_TOKEN}\s*,?\s*"
+        rf"(?:the\s+)?(?:cash\s+|final\s+|interim\s+|total\s+)*"
+        rf"(?:dividends?|distributions?)\s+(?:will\s+be|shall\s+be)\s+paid",
 
-        rf"(?:payment\s+will\s+be\s+made|dividend(?:s)?\s+will\s+be\s+paid|will\s+be\s+paid)"
-        rf"[\s\S]{{0,80}}?"
-        rf"(?:on\s+)?(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
-        rf"\s*,?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+        # "Payment date for unit holders will be <date>"
+        rf"(?:payment|distribution)\s+date[^.]{{0,100}}?"
+        rf"(?:will\s+be|shall\s+be|is)\s+{DATE_TOKEN}",
 
-        rf"(?:payable\s+on)\s*"
-        rf"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)?"
-        rf"\s*,?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+\d{{4}})",
+        # "Payment Date: [On] <date>" — label immediately followed by the date
+        rf"(?:cash\s+dividend\s+)?(?:payment|distribution)\s+date\s*[:\-]?\s*"
+        rf"(?:on\s+)?(?:or\s+before\s+)?{DATE_TOKEN}",
+
+        # "payable on <date>"
+        rf"payable\s+on\s+{DATE_TOKEN}",
     ]
 
-    return iso_date(first_match(payment_patterns, text))
+    return first_date(patterns, text)
 
 
 def extract_announcement_date(text: str) -> str:
