@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 120,
+  "historical_recheck_cursor": 135,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -376,7 +376,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46143_NIGERIAN_EXCHANGE_GROUP_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46146_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_MARCH_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46152_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_MARCH_2026.pdf": "not_dividend",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/46157_FCMB_GROUP_PLC-OUTCOME_OF_FCMB_GROUP_PLC_BOARD_OF_DIRECTORS'_MEETING_CORPORATE_ACTIONS_MARCH_2026.pdf": "error",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/46157_FCMB_GROUP_PLC-OUTCOME_OF_FCMB_GROUP_PLC_BOARD_OF_DIRECTORS'_MEETING_CORPORATE_ACTIONS_MARCH_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46163_HALDANE_MCCALL_PLC-DIVIDEND_ANNOUNCEMENT__CORPORATE_ACTIONS_MARCH_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46167_DANGOTE_CEMENT_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46171_AFRICA_PRUDENTIAL_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "pending",

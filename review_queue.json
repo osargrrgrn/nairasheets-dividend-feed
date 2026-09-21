@@ -33,8 +33,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44999_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46197_MECURE_INDUSTRIES_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
+    "title": "MECURE INDUSTRIES PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -45,79 +45,44 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "32aa9fbe43517953",
-      "ticker": "GTCO",
-      "company": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2025-10-07",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2025-06-30",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44999_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45042_N_NIG._FLOUR_MILLS_PLC.-NNFM_2025_AGM_RESOLUTION_PASSED_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-    "title": "N NIG. FLOUR MILLS PLC.-NNFM 2025 AGM RESOLUTION PASSED CORPORATE ACTIONS SEPTEMBER 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "5b9586a3d14ee803",
-      "ticker": "",
-      "company": "N NIG. FLOUR MILLS PLC.-NNFM 2025 AGM RESOLUTION PASSED CORPORATE ACTIONS SEPTEMBER 2025",
-      "dividend_per_share": 0.25,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2025-09-29",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45042_N_NIG._FLOUR_MILLS_PLC.-NNFM_2025_AGM_RESOLUTION_PASSED_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
-      "source_title": "N NIG. FLOUR MILLS PLC.-NNFM 2025 AGM RESOLUTION PASSED CORPORATE ACTIONS SEPTEMBER 2025",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45094_MECURE_INDUSTRIES_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-    "title": "MECURE INDUSTRIES PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "14e0f1b9fa2199de",
+      "event_id": "7c50f6f3866cbc61",
       "ticker": "MECURE",
       "company": "MECURE INDUSTRIES PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2026-04-23",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46197_MECURE_INDUSTRIES_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "source_title": "MECURE INDUSTRIES PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2026",
+      "last_verified": "2026-09-21",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46399_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_-_MARCH_2026_CORPORATE_ACTIONS_MARCH_2026.pdf",
+    "title": "ABC TRANSPORT PLC-OUTCOME OF BOARD OF DIRECTORS MEETING - MARCH 2026 CORPORATE ACTIONS MARCH 2026",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "7524d7f2d4ffcb5b",
+      "ticker": "ABCTRANS",
+      "company": "ABC TRANSPORT PLC-OUTCOME OF BOARD OF DIRECTORS MEETING - MARCH 2026 CORPORATE ACTIONS MARCH 2026",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
@@ -126,9 +91,9 @@
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45094_MECURE_INDUSTRIES_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "source_title": "MECURE INDUSTRIES PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2025",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46399_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_-_MARCH_2026_CORPORATE_ACTIONS_MARCH_2026.pdf",
+      "source_title": "ABC TRANSPORT PLC-OUTCOME OF BOARD OF DIRECTORS MEETING - MARCH 2026 CORPORATE ACTIONS MARCH 2026",
       "last_verified": "2026-09-21",
       "confidence": "review"
     },
@@ -136,8 +101,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45121_VETIVA_FUND_MANAGERS_LIMITED-CORPORATE_ACTIONS_-_2025_INTERIM_DISTRIBUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-    "title": "VETIVA FUND MANAGERS LIMITED-CORPORATE ACTIONS - 2025 INTERIM DISTRIBUTION CORPORATE ACTIONS OCTOBER 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46472_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+    "title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
     "reason_codes": [
       "ticker_unresolved",
       "payment_date_missing",
@@ -148,51 +113,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "0630a8f5175cf5d9",
+      "event_id": "9397533a3d9d1240",
       "ticker": "",
-      "company": "VETIVA FUND MANAGERS LIMITED",
-      "dividend_per_share": 0.6,
+      "company": "E-TRANZACT INTERNATIONAL PLC",
+      "dividend_per_share": 0.125,
       "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2025-10-09",
+      "dividend_type": "final",
+      "qualification_date": "2025-07-07",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45121_VETIVA_FUND_MANAGERS_LIMITED-CORPORATE_ACTIONS_-_2025_INTERIM_DISTRIBUTION_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
-      "source_title": "VETIVA FUND MANAGERS LIMITED-CORPORATE ACTIONS - 2025 INTERIM DISTRIBUTION CORPORATE ACTIONS OCTOBER 2025",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45416_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-    "title": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "adebc793b65efba3",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2025-11-07",
-      "payment_date": "2025-12-12",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45416_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2025.pdf",
-      "source_title": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2025",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46472_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf",
+      "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2026",
       "last_verified": "2026-09-21",
       "confidence": "review"
     },
