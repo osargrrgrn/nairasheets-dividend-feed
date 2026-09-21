@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 70,
-    "detail_pages_completed": 70,
-    "new_pdfs": 0,
+    "detail_pages_found": 68,
+    "detail_pages_completed": 68,
+    "new_pdfs": 2,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5680,
+    "files_seen": 5682,
     "dividend_like": 528,
     "already_known": 527,
     "irrelevant": 1,
@@ -33,7 +33,18 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 28.49,
-  "results": []
+  "total_new_pdfs": 2,
+  "elapsed_seconds": 26.64,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/105_MBA_PLC_Q4_2026_Forecast.pdf",
+      "title": "MBA PLC Q4 2026 Forecast",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47926_DANGOTE_CEMENT_PLC-CAPITAL_MARKETS_DAY_PRESENTATION_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "DANGOTE CEMENT PLC-CAPITAL MARKETS DAY PRESENTATION CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    }
+  ]
 }
