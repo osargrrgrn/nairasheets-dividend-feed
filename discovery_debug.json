@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 68,
-    "detail_pages_completed": 68,
-    "new_pdfs": 0,
+    "detail_pages_found": 67,
+    "detail_pages_completed": 67,
+    "new_pdfs": 11,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5688,
+    "files_seen": 5700,
     "dividend_like": 528,
     "already_known": 527,
     "irrelevant": 1,
@@ -25,15 +25,71 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 533,
-    "already_known": 309,
-    "filtered_before_parser": 224,
+    "pdfs_seen": 540,
+    "already_known": 315,
+    "filtered_before_parser": 225,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 30.3,
-  "results": []
+  "total_new_pdfs": 11,
+  "elapsed_seconds": 41.66,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47931_AVA_CAPITAL_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf",
+      "title": "AVA CAPITAL PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Admin_Manager_-_Tolaram.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Admin Manager - Tolaram",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_General_Manager_N-SC.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - General Manager N-SC",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_General_Manager_SE-SS_.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - General Manager SE-SS",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Head_of_Marketing_Finance_-_Tolaram.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Head of Marketing Finance - Tolaram",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Head_of_Treasury_-_Tolaram.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Head of Treasury - Tolaram",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_IT_Manager_-_Tolaram.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - IT Manager - Tolaram",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Procurement_Director.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Procurement Director",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Procurement_Officer_-_Tolaram.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Procurement Officer - Tolaram",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Site_Manager.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Site Manager",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Site_Manager_-_GN.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Site Manager - GN",
+      "source": "abokiforex_listing"
+    }
+  ]
 }
