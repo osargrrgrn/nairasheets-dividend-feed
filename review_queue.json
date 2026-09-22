@@ -26,7 +26,7 @@
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
       "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-09-22",
       "confidence": "review"
     },
     "classification": "review",
@@ -57,139 +57,147 @@
       "status": "proposed",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43701_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
       "source_title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-09-22",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43244_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-    "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
+    "title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
     "reason_codes": [
-      "ticker_unresolved",
+      "dividend_amount_unresolved",
       "validation_failed"
     ],
     "errors": [
-      "missing ticker"
+      "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "6e84b8bb8954e205",
-      "ticker": "",
-      "company": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
-      "dividend_per_share": 1.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2025-03-06",
-      "payment_date": "2025-03-20",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43244_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "source_title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43245_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-    "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "fb2a38de01817fcc",
-      "ticker": "",
-      "company": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
-      "dividend_per_share": 0.54,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2025-03-06",
-      "payment_date": "2025-03-20",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43245_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "source_title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43246_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-    "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "9bd7736ef5443ef2",
-      "ticker": "",
-      "company": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
-      "dividend_per_share": 10.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2025-03-06",
-      "payment_date": "2025-03-20",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43246_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "source_title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43250_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf",
-    "title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "2331d01c778fb63d",
-      "ticker": "",
-      "company": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
-      "dividend_per_share": 0.6,
+      "event_id": "b00df2a13e68c4e9",
+      "ticker": "AIRTELAFRI",
+      "company": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
+      "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2025-05-09",
-      "payment_date": "2025-05-21",
+      "qualification_date": "2025-06-20",
+      "payment_date": "2025-07-25",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44207_AIRTEL_AFRICA_PLC-FINAL_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_JUNE_2025.pdf",
+      "source_title": "AIRTEL AFRICA PLC-FINAL DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS JUNE 2025",
+      "last_verified": "2026-09-22",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44249_MAY_AND_BAKER-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2025.pdf",
+    "title": "MAY AND BAKER-AGM RESOLUTION CORPORATE ACTIONS JUNE 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "6d9999bb6149817f",
+      "ticker": "",
+      "company": "MAY AND BAKER",
+      "dividend_per_share": 0.4,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44249_MAY_AND_BAKER-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2025.pdf",
+      "source_title": "MAY AND BAKER-AGM RESOLUTION CORPORATE ACTIONS JUNE 2025",
+      "last_verified": "2026-09-22",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44448_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+    "title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "1f952d53e09f1710",
+      "ticker": "",
+      "company": "C AND I LEASING PLC.",
+      "dividend_per_share": 0.1,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-08-05",
+      "payment_date": "2025-09-12",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43250_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "source_title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-21",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44448_C_AND_I_LEASING_PLC.-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf",
+      "source_title": "C AND I LEASING PLC.-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2025",
+      "last_verified": "2026-09-22",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43253_MECURE_INDUSTRIES_PLC-DECLARATION_OF_DIVIDEND_FOR_THE_YEAR_2024_CORPORATE_ACTIONS_MARCH_2025.pdf",
-    "title": "MECURE INDUSTRIES PLC-DECLARATION OF DIVIDEND FOR THE YEAR 2024 CORPORATE ACTIONS MARCH 2025",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44589_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2025_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
+    "title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2025 AGM CORPORATE ACTIONS JULY 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "e200ebf569e42d1a",
+      "ticker": "",
+      "company": "E-TRANZACT INTERNATIONAL PLC",
+      "dividend_per_share": 0.125,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44589_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2025_AGM_CORPORATE_ACTIONS_JULY_2025.pdf",
+      "source_title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2025 AGM CORPORATE ACTIONS JULY 2025",
+      "last_verified": "2026-09-22",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44944_SOVEREIGN_TRUST_INSURANCE_PLC-SOVEREIGN_TRUST_INSURANCE_PLC_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+    "title": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -200,116 +208,21 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "d816a23d5d44817a",
-      "ticker": "MECURE",
-      "company": "MECURE INDUSTRIES PLC-DECLARATION OF DIVIDEND FOR THE YEAR 2024 CORPORATE ACTIONS MARCH 2025",
+      "event_id": "21b897ca12fc3b9d",
+      "ticker": "SOVRENINS",
+      "company": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-04-18",
+      "dividend_type": "dividend",
+      "qualification_date": "2025-09-08",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43253_MECURE_INDUSTRIES_PLC-DECLARATION_OF_DIVIDEND_FOR_THE_YEAR_2024_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "source_title": "MECURE INDUSTRIES PLC-DECLARATION OF DIVIDEND FOR THE YEAR 2024 CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43261_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CLARIFICATION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-    "title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "b01611f6bfc05e3a",
-      "ticker": "",
-      "company": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
-      "dividend_per_share": 0.06,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-05-09",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43261_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CLARIFICATION_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "source_title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43933_MAY_AND_BAKER-CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
-    "title": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "fe7ac9da66f5709b",
-      "ticker": "",
-      "company": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
-      "dividend_per_share": 0.4,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2025-05-20",
-      "payment_date": "2025-06-05",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43933_MAY_AND_BAKER-CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "source_title": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
-      "last_verified": "2026-09-21",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43968_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_12TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_APRIL_2025.pdf",
-    "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 12TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS APRIL 2025",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "7ca58f6962e87ea3",
-      "ticker": "FCMB",
-      "company": "FCMB GROUP PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2025-04-16",
-      "payment_date": "2025-04-29",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43968_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_12TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_APRIL_2025.pdf",
-      "source_title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 12TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS APRIL 2025",
-      "last_verified": "2026-09-21",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44944_SOVEREIGN_TRUST_INSURANCE_PLC-SOVEREIGN_TRUST_INSURANCE_PLC_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2025.pdf",
+      "source_title": "SOVEREIGN TRUST INSURANCE PLC-SOVEREIGN TRUST INSURANCE PLC CORPORATE ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2025",
+      "last_verified": "2026-09-22",
       "confidence": "review"
     },
     "classification": "review",
