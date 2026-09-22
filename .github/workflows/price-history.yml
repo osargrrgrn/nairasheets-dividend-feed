@@ -1,0 +1,43 @@
+name: Record NGX closing prices
+
+# docs/prices.csv is overwritten every half hour, so it only ever holds "now".
+# This runs once after the close and files that day's prices as the close.
+#
+# NGX trades 10:00-14:30 WAT (09:00-13:30 UTC). The price job's last run of
+# the day is 14:35 UTC, so 15:00 UTC is safely after both.
+
+on:
+  schedule:
+    - cron: "0 15 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: price-history
+  cancel-in-progress: false
+
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Record today's closes
+        run: python -u -m collector.price_history
+
+      - name: Commit history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/price_history.csv docs/price_sparkline.csv
+          git diff --cached --quiet && echo "no new closes" && exit 0
+          git commit -m "Record NGX closing prices [skip ci]"
+          git pull --rebase --autostash origin main || true
+          git push
