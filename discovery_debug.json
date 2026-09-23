@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 67,
     "detail_pages_completed": 67,
-    "new_pdfs": 6,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -25,46 +25,15 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 537,
+    "pdfs_seen": 535,
     "already_known": 312,
-    "filtered_before_parser": 225,
+    "filtered_before_parser": 223,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 6,
-  "elapsed_seconds": 30.93,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47932_SKYWAY_AVIATION_HANDLING_COMPANY_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf",
-      "title": "SKYWAY AVIATION HANDLING COMPANY PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Admin_Manager_Tolaram_NGX.pdf",
-      "title": "Guinness Nigeria Plc - Share Dealing Notification - Admin Manager Tolaram NGX",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Head_of_Commercial_Finance_-_Tolaram_NGX.pdf",
-      "title": "Guinness Nigeria Plc - Share Dealing Notification - Head of Commercial Finance - Tolaram NGX",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Head_of_Procurement_-_Tolaram_-_NGX.pdf",
-      "title": "Guinness Nigeria Plc - Share Dealing Notification - Head of Procurement - Tolaram - NGX",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Head_of_Supply_Finance_-_Tolaram_-_NGX.pdf",
-      "title": "Guinness Nigeria Plc - Share Dealing Notification - Head of Supply Finance - Tolaram - NGX",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Project_Engineer_-_Tolaram_-_NGX.pdf",
-      "title": "Guinness Nigeria Plc - Share Dealing Notification - Project Engineer - Tolaram - NGX",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 34.75,
+  "results": []
 }
