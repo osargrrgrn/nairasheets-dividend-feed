@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 67,
-    "detail_pages_completed": 67,
-    "new_pdfs": 3,
+    "detail_pages_found": 64,
+    "detail_pages_completed": 64,
+    "new_pdfs": 14,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5708,
+    "files_seen": 5723,
     "dividend_like": 529,
     "already_known": 528,
     "irrelevant": 1,
@@ -25,30 +25,85 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 535,
-    "already_known": 312,
+    "pdfs_seen": 545,
+    "already_known": 322,
     "filtered_before_parser": 223,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 3,
-  "elapsed_seconds": 27.42,
+  "total_new_pdfs": 14,
+  "elapsed_seconds": 33.76,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47933_AIRTEL_AFRICA_PLC-AIRTEL_MONEY_INTENTION_TO_FLOAT_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-AIRTEL MONEY INTENTION TO FLOAT ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/249_INSIDER_DEALING_-_-_DR.TONY_ANONYAI.pdf",
+      "title": "INSIDER DEALING - - DR.TONY ANONYAI",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47934_LEARN_AFRICA_PLC-CHANGE_IN_BOARD_COMPOSITION_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "LEARN AFRICA PLC-CHANGE IN BOARD COMPOSITION CORPORATE ACTIONS SEPTEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Insider_Share_Dealing_-_Oyindamola_Olajuwon.pdf",
+      "title": "Insider Share Dealing - Oyindamola Olajuwon",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47935_HALDANE_MCCALL_PLC-HALDANE_MCCALL_PLC_-_NOTIFICATION_OF_EXECUTIVE_DIRECTOR_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "HALDANE MCCALL PLC-HALDANE MCCALL PLC - NOTIFICATION OF EXECUTIVE DIRECTOR CORPORATE ACTIONS SEPTEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Insider_Share_Dealing_-_Samson_Fadahunsi.pdf",
+      "title": "Insider Share Dealing - Samson Fadahunsi",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47936_SEPLAT_ENERGY_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf",
+      "title": "SEPLAT ENERGY PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Manik_Lamba_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Manik Lamba NGX",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Prabakaran_R_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Prabakaran R NGX",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Prabhav_Nandivada_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Prabhav Nandivada NGX",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Rajaseker_B_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Rajaseker B NGX",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Sabyasachi_Sur_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Sabyasachi Sur NGX",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Sainad_B_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Sainad B NGX",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Shubham_K_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Shubham K NGX",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Sujit_M_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Sujit M NGX",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Vipin_Yadav_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Vipin Yadav NGX",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Virender_Pathania_NGX.pdf",
+      "title": "Guinness Nigeria Plc - Share Dealing Notification - Virender Pathania NGX",
       "source": "abokiforex_listing"
     }
   ]
