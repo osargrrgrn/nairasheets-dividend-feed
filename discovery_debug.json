@@ -4,15 +4,15 @@
     "status": 200,
     "detail_pages_found": 67,
     "detail_pages_completed": 67,
-    "new_pdfs": 0,
+    "new_pdfs": 3,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5705,
-    "dividend_like": 528,
-    "already_known": 527,
+    "files_seen": 5708,
+    "dividend_like": 529,
+    "already_known": 528,
     "irrelevant": 1,
     "new_pdfs": 0,
     "errors": []
@@ -33,7 +33,23 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 34.75,
-  "results": []
+  "total_new_pdfs": 3,
+  "elapsed_seconds": 27.42,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47933_AIRTEL_AFRICA_PLC-AIRTEL_MONEY_INTENTION_TO_FLOAT_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "AIRTEL AFRICA PLC-AIRTEL MONEY INTENTION TO FLOAT ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47934_LEARN_AFRICA_PLC-CHANGE_IN_BOARD_COMPOSITION_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "LEARN AFRICA PLC-CHANGE IN BOARD COMPOSITION CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47935_HALDANE_MCCALL_PLC-HALDANE_MCCALL_PLC_-_NOTIFICATION_OF_EXECUTIVE_DIRECTOR_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "HALDANE MCCALL PLC-HALDANE MCCALL PLC - NOTIFICATION OF EXECUTIVE DIRECTOR CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    }
+  ]
 }
