@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 28,
+  "historical_recheck_cursor": 68,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -268,7 +268,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44595_CHAMPION_BREW._PLC.-RESOLUTIONS_PASSED_AT_THE_EXTRA-ORDINARY_GENERAL_MEETING_CORPORATE_ACTIONS_JULY_2025.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44597_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2025.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44606_ELLAH_LAKES_PLC.-RESOLUTIONS_PASSED_AT_THE_EGM_HELD_ON_25_JULY_2025_CORPORATE_ACTIONS_JULY_2025.pdf": "not_dividend",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/44611_ZENITH_BANK_PLC-ZENITH_BANK_PLC_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2025.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/44611_ZENITH_BANK_PLC-ZENITH_BANK_PLC_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2025.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44615_CHAMS_HOLDING_COMPANY_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2025.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44624_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC-_INTERIM_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2025.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44628_UNITED_CAPITAL_PLC-PROPOSED_INTERIM_DIVIDEND_CORPORATE_ACTIONS_JULY_2025.pdf": "accepted",
