@@ -10,11 +10,11 @@
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5730,
-    "dividend_like": 530,
+    "files_seen": 5736,
+    "dividend_like": 531,
     "already_known": 529,
     "irrelevant": 1,
-    "new_pdfs": 0,
+    "new_pdfs": 1,
     "errors": []
   },
   "trw_discovery": {
@@ -25,15 +25,27 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 544,
-    "already_known": 323,
-    "filtered_before_parser": 221,
-    "eligible_candidates": 0,
-    "new_pdfs": 0,
+    "pdfs_seen": 543,
+    "already_known": 322,
+    "filtered_before_parser": 220,
+    "eligible_candidates": 1,
+    "new_pdfs": 1,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 31.14,
-  "results": []
+  "total_new_pdfs": 2,
+  "elapsed_seconds": 29.73,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47948_UNIVERSITY_PRESS_PLC.-2026_AGM_RESOLUTION_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "UNIVERSITY PRESS PLC.-2026 AGM RESOLUTION CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "sharepoint_index"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47942_FCMB_GROUP_PLC-FCMB_GROUP_PLC_PRESS_RELEASE_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "FCMB GROUP PLC-FCMB GROUP PLC PRESS RELEASE CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "naijaticker",
+      "ticker": "FCMB"
+    }
+  ]
 }
