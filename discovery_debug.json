@@ -1,10 +1,10 @@
 {
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
-    "status": 200,
-    "detail_pages_found": 62,
-    "detail_pages_completed": 62,
-    "new_pdfs": 6,
+    "status": 403,
+    "detail_pages_found": 0,
+    "detail_pages_completed": 0,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -25,46 +25,15 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 545,
-    "already_known": 324,
+    "pdfs_seen": 544,
+    "already_known": 323,
     "filtered_before_parser": 221,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 6,
-  "elapsed_seconds": 40.75,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38_INSIDER_DEALING_-_PURCHASE.pdf",
-      "title": "INSIDER DEALING - PURCHASE",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38_INSIDER_DEALING_-_SALE_.pdf",
-      "title": "INSIDER DEALING - SALE",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47937_VERITAS_KAPITAL_ASSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_SEPTEMBER_2026.pdf",
-      "title": "VERITAS KAPITAL ASSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47938_GUARANTY_TRUST_HOLDING_COMPANY_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf",
-      "title": "GUARANTY TRUST HOLDING COMPANY PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47940_CORONATION_INSURANCE_PLC-CORONATION_INSURANCE_PLC_AGM_RESOLUTIONS_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "CORONATION INSURANCE PLC-CORONATION INSURANCE PLC AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47941_UAC__OF_NIGERIA_PLC-UAC_ENTERS_INTO_AN_AGREEMENT_WITH_TGI_GROUP_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "title": "UAC OF NIGERIA PLC-UAC ENTERS INTO AN AGREEMENT WITH TGI GROUP CORPORATE ACTIONS SEPTEMBER 2026",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 29.27,
+  "results": []
 }
