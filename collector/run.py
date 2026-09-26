@@ -1,4 +1,6 @@
 from pathlib import Path
+from datetime import date
+from types import SimpleNamespace
 import json
 import re
 
@@ -112,6 +114,45 @@ def below_ngn_hard_floor(event) -> bool:
         return True
 
     return 0 <= amount < 0.01
+
+
+# Above this many days between qualification and payment, an event is more
+# likely to be two different filings stitched together (e.g. an old interim's
+# qualification date paired with a later final's payment date) than a single
+# unusually slow payout. This does not reject the event or touch its dates —
+# it only stops it from auto-publishing so it gets another look. A found
+# case: AFRIPRUD's 0.10/share interim carried a qualification date from a
+# July 2025 filing against a payment actually made in July 2026 (346 days),
+# while the feed's normal qualification-to-payment gap is under 30 days and
+# the next largest, a REIT's year-end record date, is 164 days.
+QUALIFICATION_TO_PAYMENT_GAP_LIMIT_DAYS = 180
+
+
+def qualification_payment_gap_suspect(event) -> bool:
+    """
+    Flag events whose qualification-to-payment gap is implausibly long.
+
+    Returns False (not suspect) whenever either date is missing or
+    unparsable, so this never manufactures a new failure mode on top of
+    validate_event's own missing-date checks — it only adds scrutiny where
+    both dates parsed and disagree by an unusual amount.
+    """
+    qualification = _safe_iso_date(getattr(event, "qualification_date", ""))
+    payment = _safe_iso_date(getattr(event, "payment_date", ""))
+
+    if not qualification or not payment:
+        return False
+
+    gap_days = (payment - qualification).days
+
+    return gap_days > QUALIFICATION_TO_PAYMENT_GAP_LIMIT_DAYS
+
+
+def _safe_iso_date(value):
+    try:
+        return date.fromisoformat((value or "").strip())
+    except Exception:
+        return None
 
 FINANCIAL_STATEMENT_HINTS = (
     "financial statement",
@@ -576,6 +617,9 @@ def review_reason_codes(provisional, errors):
     if not provisional.payment_date:
         reasons.append("payment_date_missing")
 
+    if qualification_payment_gap_suspect(provisional):
+        reasons.append("qualification_payment_gap_suspect")
+
     if errors:
         reasons.append("validation_failed")
 
@@ -816,6 +860,7 @@ def main():
     cross_document_reconciliations = 0
     agm_rows_demoted = 0
     tiny_amount_rows_held = 0
+    gap_suspect_rows_held = 0
 
     for item in discovered:
         url = item["url"]
@@ -925,6 +970,17 @@ def main():
                 provisional.confidence = "review"
                 tiny_amount_rows_held += 1
 
+            # An implausible qualification-to-payment gap usually means two
+            # filings were merged into one event (see
+            # qualification_payment_gap_suspect). Hold it back from
+            # auto-publishing rather than rejecting it outright — the amount
+            # and payment date can still be correct even when one date isn't.
+            gap_suspect = qualification_payment_gap_suspect(provisional)
+
+            if gap_suspect:
+                provisional.confidence = "review"
+                gap_suspect_rows_held += 1
+
             if provisional.confidence == "high" and not errors:
                 accepted.append(provisional.to_dict())
                 processed[url] = "accepted"
@@ -982,6 +1038,17 @@ def main():
 
     safe_after_tiny = []
     demoted_tiny_rows = []
+    # Rows already published with an implausible qualification-to-payment
+    # gap are NOT removed from the feed here. A payment can be genuinely
+    # confirmed (received, reconciled against a bank statement) while its
+    # qualification date is the one wrong field — pulling the whole row back
+    # to pending would delete a verified payment from the feed to fix an
+    # unrelated date, which is worse than the problem it solves. Instead
+    # these are only surfaced in the quality report below (see
+    # existing_gap_suspect_rows) so a human can correct the specific field.
+    # The forward-looking gate above (gap_suspect_rows_held) is what stops
+    # new events with this problem from reaching the feed in the first place.
+    existing_gap_suspect_rows = []
 
     for row in safe_existing:
         currency = (row.get("currency") or "NGN").upper().strip()
@@ -996,8 +1063,25 @@ def main():
             demoted["confidence"] = "review"
             demoted["hold_reason"] = f"sub_1kobo_ngn:{amount}"
             demoted_tiny_rows.append(demoted)
-        else:
-            safe_after_tiny.append(row)
+            continue
+
+        safe_after_tiny.append(row)
+
+        gap_row = SimpleNamespace(
+            qualification_date=row.get("qualification_date"),
+            payment_date=row.get("payment_date"),
+        )
+        if qualification_payment_gap_suspect(gap_row):
+            qd = row.get("qualification_date")
+            pd = row.get("payment_date")
+            gap_days = (date.fromisoformat(pd) - date.fromisoformat(qd)).days
+            existing_gap_suspect_rows.append({
+                "event_id": row.get("event_id"),
+                "ticker": row.get("ticker"),
+                "qualification_date": qd,
+                "payment_date": pd,
+                "gap_days": gap_days,
+            })
 
     tiny_amount_rows_held += len(demoted_tiny_rows)
 
@@ -1064,7 +1148,21 @@ def main():
         feed_warnings,
         duplicates_removed=published_duplicates_removed,
     )
+    # Surfaced for a human to correct the specific field — these rows stay
+    # published (see existing_gap_suspect_rows above for why).
+    feed_quality["published_rows_with_suspect_qualification_gap"] = (
+        existing_gap_suspect_rows
+    )
     save_json(ROOT / "feed_quality.json", feed_quality)
+
+    if existing_gap_suspect_rows:
+        print(
+            f"[Patch 34] {len(existing_gap_suspect_rows)} published row(s) have an "
+            f"implausible qualification-to-payment gap (>{QUALIFICATION_TO_PAYMENT_GAP_LIMIT_DAYS}d) "
+            "and are listed in feed_quality.json for manual correction. "
+            "They remain published.",
+            flush=True,
+        )
 
     if feed_errors:
         print("[Patch 34] FEED INTEGRITY: FAIL", flush=True)
@@ -1119,6 +1217,7 @@ def main():
     print(f"Cross-document reconciliations: {cross_document_reconciliations}")
     print(f"Uncorroborated AGM rows demoted from published: {agm_rows_demoted}")
     print(f"Sub-1-kobo NGN rows held/demoted: {tiny_amount_rows_held}")
+    print(f"Rows held for implausible qualification-to-payment gap: {gap_suspect_rows_held}")
     print(
         "Pending resolver: "
         f"promoted={pending_resolution_stats['promoted']} "
