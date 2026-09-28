@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 148,
+  "historical_recheck_cursor": 28,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -952,6 +952,8 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47950_EUNISELL_INTERLINKED_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_SEPTEMBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47953_NIGERIAN_AVIATION_HANDLING_COMPANY_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47954_AIICO_INSURANCE_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/47955_UNITED_CAPITAL_PLC-NOTICE_OF_CHANGE_OF_BUSINESS_ADDRESS_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/47958_GUARANTY_TRUST_HOLDING_COMPANY_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_SEPTEMBER_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47_Custodian_Investment_Plc_-_Earnings_forecast_Q4_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/50_Notification_of_Insider_Dealing_-_ISMAIL_BALA_MOHAMMED_-_NGX_Approved_-_Signed.pdf": "not_dividend",
