@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 68,
+  "historical_recheck_cursor": 108,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -948,6 +948,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47942_FCMB_GROUP_PLC-FCMB_GROUP_PLC_PRESS_RELEASE_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47945_SECURE_ELECTRONIC_TECHNOLOGY_PLC-19TH_ANNUAL_GENERAL_MEETING_RESOLUTION_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47948_UNIVERSITY_PRESS_PLC.-2026_AGM_RESOLUTION_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "accepted",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/47949_EUNISELL_INTERLINKED_PLC-_YEAR_END_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/47_Custodian_Investment_Plc_-_Earnings_forecast_Q4_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/50_Notification_of_Insider_Dealing_-_ISMAIL_BALA_MOHAMMED_-_NGX_Approved_-_Signed.pdf": "not_dividend",
