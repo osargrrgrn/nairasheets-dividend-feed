@@ -2,19 +2,19 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 70,
-    "detail_pages_completed": 70,
-    "new_pdfs": 0,
+    "detail_pages_found": 77,
+    "detail_pages_completed": 77,
+    "new_pdfs": 6,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5755,
-    "dividend_like": 532,
-    "already_known": 531,
+    "files_seen": 5770,
+    "dividend_like": 534,
+    "already_known": 532,
     "irrelevant": 1,
-    "new_pdfs": 0,
+    "new_pdfs": 1,
     "errors": []
   },
   "trw_discovery": {
@@ -26,14 +26,50 @@
     "companies_targeted": 68,
     "companies_completed": 68,
     "pdfs_seen": 545,
-    "already_known": 327,
-    "filtered_before_parser": 218,
+    "already_known": 329,
+    "filtered_before_parser": 216,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 89.55,
-  "results": []
+  "total_new_pdfs": 7,
+  "elapsed_seconds": 33.33,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47969_ZENITH_BANK_PLC-ZENITH_BANK_PLC_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "ZENITH BANK PLC-ZENITH BANK PLC ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47971_ARADEL_HOLDINGS_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf",
+      "title": "ARADEL HOLDINGS PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47974_HBM_NIGERIA_PLC-NOTICE_OF_Q3_2026_BOARD_MEETING__CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "HBM NIGERIA PLC-NOTICE OF Q3 2026 BOARD MEETING CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47977_CADBURY_NIGERIA_PLC.-SUSTAINABILITY_REPORT__CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "CADBURY NIGERIA PLC.-SUSTAINABILITY REPORT CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47979_LIVINGTRUST_MORTGAGE_BANK_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2026.pdf",
+      "title": "LIVINGTRUST MORTGAGE BANK PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47981_STANBIC_IBTC__HOLDINGS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_SEPTEMBER_2026.pdf",
+      "title": "STANBIC IBTC HOLDINGS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS SEPTEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47982_STANBIC_IBTC__HOLDINGS_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
+      "title": "STANBIC IBTC HOLDINGS PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2026",
+      "source": "sharepoint_index"
+    }
+  ]
 }
