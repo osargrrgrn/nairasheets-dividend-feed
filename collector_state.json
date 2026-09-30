@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 29,
+  "historical_recheck_cursor": 69,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -166,7 +166,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43673_FIDSON_HEALTHCARE_PLC-ANNOUNCEMENT_OF_DIVIDEND_RECOMMENDATION_CORPORATE_ACTIONS_APRIL_2025.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43676_SUNU_ASSURANCES_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43678_INFINITY_TRUST_MORTGAGE_BANK_PLC-INFINITY_TRUST_-_DIVIDEND_ANNOUNCEMENT_2025_CORPORATE_ACTIONS_APRIL_2025.pdf": "accepted",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/43701_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf": "review",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/43701_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf": "error",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43708_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43710_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_OF_DIRECTORS_MEETING_CORPORATE_ACTIONS_APRIL_2025.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43712_UNITED_CAPITAL_PLC-UNITED_CAPITAL_PLC_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf": "accepted",
