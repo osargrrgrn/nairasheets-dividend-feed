@@ -47,5 +47,10 @@ jobs:
           git config user.name "nairasheets-bot"
           git config user.email "actions@users.noreply.github.com"
           git add docs/dividends.csv docs/pending_dividends.csv docs/index.html disclosure_archive.json discovery_debug.json collector_state.json review_queue.json known_dates.json data/aliases_dynamic.json
-          git diff --cached --quiet || git commit -m "Update NGX dividend feed"
-          git push
+          if git diff --cached --quiet; then
+            echo "No feed changes to commit."
+            exit 0
+          fi
+          git commit -m "Update NGX dividend feed"
+          git pull --rebase origin main
+          git push origin HEAD:main
