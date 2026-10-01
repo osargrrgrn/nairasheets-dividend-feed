@@ -41,6 +41,9 @@ jobs:
       - name: Apply forced document repairs
         run: python -u -m collector.forced_reprocess
 
+      - name: Automatically repair stale scaled amounts
+        run: python -u -m collector.auto_repair_amounts
+
       - name: Run benchmark diagnostic
         run: python -u -m collector.diagnose
         continue-on-error: true
