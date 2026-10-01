@@ -18,48 +18,87 @@ if _parse is not None:
 
     def _normalize_with_naira_colon(text: str) -> str:
         text = _original_normalize(text)
-        # Some NGX notices use a colon as the naira decimal separator:
-        # N1:00 / ₦12:50. This means N1.00 / ₦12.50, not 1 or 12.5 kobo.
-        # Only currency-prefixed amounts with exactly two fractional digits
-        # are touched, so times and ordinary punctuation are unaffected.
+        # NGX notices sometimes print naira decimals with a colon, e.g.
+        # N1:00 or ₦12:50. Convert only explicit currency-prefixed amounts;
+        # this cannot alter times or ordinary punctuation.
         return re.sub(
-            r"(?i)(?P<prefix>₦|\bN(?=\d)|\bNGN\s*)(?P<whole>\d{1,6}):(?P<frac>\d{2})\b",
+            r"(?i)(?P<prefix>₦|\bN(?=\s*\d)|\bNGN\s*)(?P<whole>\d{1,6})\s*:\s*(?P<frac>\d{2})\b",
             lambda m: f"{m.group('prefix')}{m.group('whole')}.{m.group('frac')}",
             text,
         )
 
     _parse.normalize_ngx_dividend_text = _normalize_with_naira_colon
 
-    # Defence in depth. If a filing contains an explicit currency-prefixed
-    # colon amount but the normal parser still returns a one-kobo-style value,
-    # prefer the explicit naira amount. This rule is generic, not GTCO-specific.
+    # Patch the amount inference itself rather than only the final event. This
+    # matters because parse_dividend_pdf validates the inferred amount before
+    # returning an event. It also repairs cases where a naira amount such as
+    # N2.05 was accidentally interpreted as 2.05 kobo (= N0.0205).
+    _original_infer_currency_and_dps = _parse.infer_currency_and_dps
+
+    _NAIRA_AMOUNT = re.compile(
+        r"(?i)(?:₦|\bN(?=\s*\d)|\bNGN\s*)(\d{1,6})(?:\s*([.:])\s*(\d{2}))?\b"
+    )
+
+    def _explicit_naira_dividend_amount(text: str):
+        text = text or ""
+        candidates = []
+        for m in _NAIRA_AMOUNT.finditer(text):
+            # Require dividend/distribution context near the currency amount so
+            # unrelated financial-statement figures cannot become a payout.
+            start = max(0, m.start() - 180)
+            end = min(len(text), m.end() + 180)
+            context = text[start:end].lower()
+            if "dividend" not in context and "distribution" not in context:
+                continue
+            whole = m.group(1)
+            frac = m.group(3)
+            value = float(f"{whole}.{frac}" if frac is not None else whole)
+            if 0 < value <= 500:
+                candidates.append(value)
+        return max(candidates) if candidates else None
+
+    def _infer_currency_and_dps_with_naira_guard(text: str, doc_type: str = "unknown"):
+        normalized = _normalize_with_naira_colon(text)
+        currency, value = _original_infer_currency_and_dps(normalized, doc_type)
+        explicit = _explicit_naira_dividend_amount(normalized)
+
+        # Prefer a clearly printed naira amount when the normal parser found
+        # nothing, or when it produced the exact 1/100-scale signature caused
+        # by treating that same naira figure as kobo.
+        if explicit is not None:
+            try:
+                numeric = float(value) if value is not None else None
+            except Exception:
+                numeric = None
+            if numeric is None or numeric <= 0 or abs(numeric * 100.0 - explicit) < 1e-9:
+                return "NGN", explicit
+        return currency, value
+
+    _parse.infer_currency_and_dps = _infer_currency_and_dps_with_naira_guard
+
+    # Defence in depth for callers that somehow bypass infer_currency_and_dps.
     _original_parse_dividend_pdf = _parse.parse_dividend_pdf
 
-    def _parse_dividend_pdf_with_colon_guard(*args, **kwargs):
+    def _parse_dividend_pdf_with_naira_guard(*args, **kwargs):
         event = _original_parse_dividend_pdf(*args, **kwargs)
         text = kwargs.get("text")
         if text is None and args:
             text = args[0]
-        text = text or ""
+        explicit = _explicit_naira_dividend_amount(_normalize_with_naira_colon(text or ""))
 
         try:
             current = float(getattr(event, "dividend_per_share", 0) or 0)
         except Exception:
             current = 0.0
 
-        if (getattr(event, "currency", "") or "NGN").upper() == "NGN" and current <= 0.01:
-            matches = re.findall(
-                r"(?i)(?:₦|\bN(?=\d)|\bNGN\s*)(\d{1,6}):(\d{2})\b",
-                text,
-            )
-            if matches:
-                values = [float(f"{whole}.{frac}") for whole, frac in matches]
-                explicit = max(values)
-                if explicit > current:
-                    event.dividend_per_share = explicit
+        if explicit is not None and (
+            current <= 0 or abs(current * 100.0 - explicit) < 1e-9
+        ):
+            event.currency = "NGN"
+            event.dividend_per_share = explicit
         return event
 
-    _parse.parse_dividend_pdf = _parse_dividend_pdf_with_colon_guard
+    _parse.parse_dividend_pdf = _parse_dividend_pdf_with_naira_guard
 
 try:
     from collector import feed_integrity as _integrity
