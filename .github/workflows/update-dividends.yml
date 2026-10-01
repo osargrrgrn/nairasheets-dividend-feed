@@ -38,6 +38,9 @@ jobs:
       - name: Update feed
         run: python -u -m collector.run
 
+      - name: Apply forced document repairs
+        run: python -u -m collector.forced_reprocess
+
       - name: Run benchmark diagnostic
         run: python -u -m collector.diagnose
         continue-on-error: true
@@ -46,7 +49,7 @@ jobs:
         run: |
           git config user.name "nairasheets-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/dividends.csv docs/pending_dividends.csv docs/index.html disclosure_archive.json discovery_debug.json collector_state.json review_queue.json known_dates.json data/aliases_dynamic.json
+          git add docs/dividends.csv docs/pending_dividends.csv docs/index.html disclosure_archive.json discovery_debug.json collector_state.json review_queue.json known_dates.json data/aliases_dynamic.json forced_reprocess.json
           if git diff --cached --quiet; then
             echo "No feed changes to commit."
             exit 0
