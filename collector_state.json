@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 147,
+  "historical_recheck_cursor": 26,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -157,7 +157,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43246_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf": "review",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43250_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf": "review",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43251_DANGOTE_CEMENT_PLC-DIVIDEND_ANNOUCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf": "pending",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/43253_MECURE_INDUSTRIES_PLC-DECLARATION_OF_DIVIDEND_FOR_THE_YEAR_2024_CORPORATE_ACTIONS_MARCH_2025.pdf": "review",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/43253_MECURE_INDUSTRIES_PLC-DECLARATION_OF_DIVIDEND_FOR_THE_YEAR_2024_CORPORATE_ACTIONS_MARCH_2025.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43255_BUA_CEMENT_PLC-CORPORATE_ANNOUNCEMENT__CORPORATE_ACTIONS_MARCH_2025.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43261_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CLARIFICATION_CORPORATE_ACTIONS_MARCH_2025.pdf": "review",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43265_SEPLAT_ENERGY_PLC-CORPORATE_ANNOUNCEMENT_ON_FY_2024_FINAL_DIVIDEND__CORPORATE_ACTIONS_MARCH_2025.pdf": "pending",
@@ -1018,6 +1018,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48011_SEPLAT_ENERGY_PLC-NOTIFICATION_OF_SHARE_DEALING_BY_PDMR_-_MR._TONY_ELUMELU_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48014_AIRTEL_AFRICA_PLC-AIRTEL_MONEY_ANNOUNCEMENT_OF_OFFER_PRICE_CORPORATE_ACTIONS_OCTOBER_2026.pdf": "review",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/50_Notification_of_Insider_Dealing_-_ISMAIL_BALA_MOHAMMED_-_NGX_Approved_-_Signed.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/50_Notification_of_Insider_Dealing_-_OMODE_EMMANUEL_OLADIMEJI_-_NGX_Approved_-_Signed.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/60_Earning_Forecasst_2026-4th_Quarter.pdf": "not_dividend",
