@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 28,
+  "historical_recheck_cursor": 68,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -1031,6 +1031,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48034_ECOBANK_TRANSNATIONAL_INCORPORATED-AGM_NOTICE_2026_CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48035_MULTI-TREX_INTEGRATED_FOODS_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2025_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48036_VFD_GROUP_PLC-VFD_GROUP-_NOTICE_OF_DMD_APPOINTMENT_CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48037_AFRICAN_ALLIANCE_INSURANCE_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2025_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/50_Notification_of_Insider_Dealing_-_ISMAIL_BALA_MOHAMMED_-_NGX_Approved_-_Signed.pdf": "not_dividend",
