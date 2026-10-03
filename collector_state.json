@@ -11,7 +11,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 68,
+  "historical_recheck_cursor": 108,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
@@ -419,7 +419,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46167_DANGOTE_CEMENT_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46171_AFRICA_PRUDENTIAL_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46182_UNITED_CAPITAL_PLC-UNITED_CAPITAL_PLC_-_CORPORATE_ACTION_2026_[FINAL]_MARCH_2,_2026_CORPORATE_ACTIONS_MARCH_2026.pdf": "accepted",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/46197_MECURE_INDUSTRIES_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "review",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/46197_MECURE_INDUSTRIES_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46204_UNION_DICON_SALT_PLC.-ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46225_UNION_DICON_SALT_PLC.-ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/46235_VITAFOAM_NIG_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_MARCH_2026.pdf": "pending",
