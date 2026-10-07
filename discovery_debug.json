@@ -4,13 +4,13 @@
     "status": 200,
     "detail_pages_found": 77,
     "detail_pages_completed": 77,
-    "new_pdfs": 3,
+    "new_pdfs": 2,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5843,
+    "files_seen": 5845,
     "dividend_like": 537,
     "already_known": 536,
     "irrelevant": 1,
@@ -26,29 +26,24 @@
     "companies_targeted": 68,
     "companies_completed": 68,
     "pdfs_seen": 547,
-    "already_known": 363,
-    "filtered_before_parser": 184,
+    "already_known": 364,
+    "filtered_before_parser": 183,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 3,
-  "elapsed_seconds": 34.82,
+  "total_new_pdfs": 2,
+  "elapsed_seconds": 41.12,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/215_Notification_of_Share_Dealing_by_Insider-_Moses_Oyerinde.pdf",
-      "title": "Notification of Share Dealing by Insider- Moses Oyerinde",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48050_FIDELITY_BANK_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2026.pdf",
+      "title": "FIDELITY BANK PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48048_MEYER_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
-      "title": "MEYER PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48049_OMATEK_VENTURES_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
-      "title": "OMATEK VENTURES PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48051_GUINNESS_NIGERIA_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
+      "title": "GUINNESS NIGERIA PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
       "source": "abokiforex_listing"
     }
   ]
