@@ -1,402 +1,29 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
-    "title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "9397533a3d9d1240",
-      "ticker": "",
-      "company": "E-TRANZACT INTERNATIONAL PLC",
-      "dividend_per_share": 0.125,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2025-07-07",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
-      "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47389_OANDO_PLC-OANDO_PRESS_RELEASE__CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "OANDO PLC-OANDO PRESS RELEASE CORPORATE ACTIONS JULY 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40659_ACCESS_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MARCH_2024.pdf",
+    "title": "ACCESS HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MARCH 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
+      "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "2c7702823803bd79",
-      "ticker": "OANDO",
-      "company": "OANDO PLC-OANDO PRESS RELEASE CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2026-07-06",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47389_OANDO_PLC-OANDO_PRESS_RELEASE__CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "OANDO PLC-OANDO PRESS RELEASE CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47414_E-TRANZACT_INTERNATIONAL_PLC-UPDATED_CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "e61a3ade9148cca6",
-      "ticker": "",
-      "company": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.125,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-07-06",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47414_E-TRANZACT_INTERNATIONAL_PLC-UPDATED_CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47417_INTERNATIONAL_BREWERIES_PLC.-NOTICE_OF_PROPOSED_SHARE_CAPITAL_REDUCTION_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "INTERNATIONAL BREWERIES PLC.-NOTICE OF PROPOSED SHARE CAPITAL REDUCTION CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "8187a3b58b742c89",
-      "ticker": "INTBREW",
-      "company": "INTERNATIONAL BREWERIES PLC.-NOTICE OF PROPOSED SHARE CAPITAL REDUCTION CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47417_INTERNATIONAL_BREWERIES_PLC.-NOTICE_OF_PROPOSED_SHARE_CAPITAL_REDUCTION_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "INTERNATIONAL BREWERIES PLC.-NOTICE OF PROPOSED SHARE CAPITAL REDUCTION CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "a3298c0867567c80",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-06-19",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47425_AIRTEL_AFRICA_PLC-RESUL_OF_AGM_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-RESUL OF AGM CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47433_E-TRANZACT_INTERNATIONAL_PLC-UPDATED_CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "e61a3ade9148cca6",
-      "ticker": "",
-      "company": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.125,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-07-06",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47433_E-TRANZACT_INTERNATIONAL_PLC-UPDATED_CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "E-TRANZACT INTERNATIONAL PLC-UPDATED CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "ee46aa287fadc313",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-06-19",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2026-07-23",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47526_AIRTEL_AFRICA_PLC-THREE_MONTHS_RESULTS_FOR_PERIOD_ENDED_30_JUNE_2026_CORPORATE_ACTIONS_JULY_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-THREE MONTHS RESULTS FOR PERIOD ENDED 30 JUNE 2026 CORPORATE ACTIONS JULY 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47783_CUTIX_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-    "title": "CUTIX PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "20d96be782db0fbd",
-      "ticker": "CUTIX",
-      "company": "CUTIX PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2026-08-17",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47783_CUTIX_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf",
-      "source_title": "CUTIX PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47916_OANDO_PLC-OANDO_PLC__CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-    "title": "OANDO PLC-OANDO PLC CORPORATE ACTIONS SEPTEMBER 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "215d3ef10ac2b1ab",
-      "ticker": "OANDO",
-      "company": "OANDO PLC-OANDO PLC CORPORATE ACTIONS SEPTEMBER 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2026-09-17",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47916_OANDO_PLC-OANDO_PLC__CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "source_title": "OANDO PLC-OANDO PLC CORPORATE ACTIONS SEPTEMBER 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47933_AIRTEL_AFRICA_PLC-AIRTEL_MONEY_INTENTION_TO_FLOAT_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-AIRTEL MONEY INTENTION TO FLOAT ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "e6e05e9f937fc785",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-AIRTEL MONEY INTENTION TO FLOAT ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-06-19",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47933_AIRTEL_AFRICA_PLC-AIRTEL_MONEY_INTENTION_TO_FLOAT_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-AIRTEL MONEY INTENTION TO FLOAT ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48014_AIRTEL_AFRICA_PLC-AIRTEL_MONEY_ANNOUNCEMENT_OF_OFFER_PRICE_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-    "title": "AIRTEL AFRICA PLC-AIRTEL MONEY ANNOUNCEMENT OF OFFER PRICE CORPORATE ACTIONS OCTOBER 2026",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "6fff4e4728716062",
-      "ticker": "AIRTELAFRI",
-      "company": "AIRTEL AFRICA PLC-AIRTEL MONEY ANNOUNCEMENT OF OFFER PRICE CORPORATE ACTIONS OCTOBER 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-06-19",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48014_AIRTEL_AFRICA_PLC-AIRTEL_MONEY_ANNOUNCEMENT_OF_OFFER_PRICE_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "source_title": "AIRTEL AFRICA PLC-AIRTEL MONEY ANNOUNCEMENT OF OFFER PRICE CORPORATE ACTIONS OCTOBER 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_PLC_-_CLARIFICATION_ON_NON_PAYMENT_OF_DIVIDEND.pdf",
-    "title": "ACCESS HOLDINGS PLC - CLARIFICATION ON NON PAYMENT OF DIVIDEND",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "qualification_date_missing",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing qualification date",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "16efe26ffb116e8b",
+      "event_id": "15375020032eefe4",
       "ticker": "ACCESSCORP",
-      "company": "ACCESS HOLDINGS PLC - CLARIFICATION ON NON PAYMENT OF DIVIDEND",
+      "company": "ACCESS HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "",
-      "payment_date": "",
+      "dividend_type": "final",
+      "qualification_date": "2024-04-10",
+      "payment_date": "2024-04-19",
       "closure_date": "",
       "announcement_date": "2026-05-07",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/ACCESS_HOLDINGS_PLC_-_CLARIFICATION_ON_NON_PAYMENT_OF_DIVIDEND.pdf",
-      "source_title": "ACCESS HOLDINGS PLC - CLARIFICATION ON NON PAYMENT OF DIVIDEND",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40659_ACCESS_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MARCH_2024.pdf",
+      "source_title": "ACCESS HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MARCH 2024",
       "last_verified": "2026-10-08",
       "confidence": "review"
     },
@@ -404,32 +31,32 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/DCP_-_DIVIDEND_ANNOUNCEMENT.pdf",
-    "title": "DCP - DIVIDEND ANNOUNCEMENT",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40848_UNITED_CAPITAL_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+    "title": "UNITED CAPITAL PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
     "reason_codes": [
-      "ticker_unresolved",
+      "dividend_amount_unresolved",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing ticker",
+      "missing/invalid dividend per share",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "b10f59bcc2a1749c",
-      "ticker": "",
-      "company": "DCP",
-      "dividend_per_share": 45.0,
+      "event_id": "e565f3c92fb74b4f",
+      "ticker": "UCAP",
+      "company": "UNITED CAPITAL PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-06-17",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-04-09",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/DCP_-_DIVIDEND_ANNOUNCEMENT.pdf",
-      "source_title": "DCP - DIVIDEND ANNOUNCEMENT",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40848_UNITED_CAPITAL_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+      "source_title": "UNITED CAPITAL PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
       "last_verified": "2026-10-08",
       "confidence": "review"
     },
@@ -437,127 +64,30 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/FIDSON_-_CORPORATE_ACTION_2025_ACCOUNTS.pdf",
-    "title": "FIDSON - CORPORATE ACTION 2025 ACCOUNTS",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40859_NIGERIAN_EXCHANGE_GROUP_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_20241.pdf",
+    "title": "NIGERIAN EXCHANGE GROUP PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 20241",
     "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "71518fb920d2cec1",
-      "ticker": "",
-      "company": "FIDSON",
-      "dividend_per_share": 1.5,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-04-14",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/FIDSON_-_CORPORATE_ACTION_2025_ACCOUNTS.pdf",
-      "source_title": "FIDSON - CORPORATE ACTION 2025 ACCOUNTS",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/HALDANE_-_DIVIDEND_ANNOUNCEMENT.pdf",
-    "title": "HALDANE - DIVIDEND ANNOUNCEMENT",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "312ea4129ce056eb",
-      "ticker": "",
-      "company": "HALDANE",
-      "dividend_per_share": 0.05,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2026-05-28",
-      "payment_date": "2026-06-18",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/HALDANE_-_DIVIDEND_ANNOUNCEMENT.pdf",
-      "source_title": "HALDANE - DIVIDEND ANNOUNCEMENT",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IHPLC_-_Corporate_Actions_Announcement_May_2026.pdf",
-    "title": "IHPLC - Corporate Actions Announcement May 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker"
-    ],
-    "parsed": {
-      "event_id": "29a569e41ff485c0",
-      "ticker": "",
-      "company": "IHPLC",
-      "dividend_per_share": 0.03,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2026-05-08",
-      "payment_date": "2026-06-05",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IHPLC_-_Corporate_Actions_Announcement_May_2026.pdf",
-      "source_title": "IHPLC - Corporate Actions Announcement May 2026",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IMG_Nig_Plc_-_Corporate_Announcement_2025AFS.pdf",
-    "title": "IMG Nig Plc - Corporate Announcement 2025AFS",
-    "reason_codes": [
-      "ticker_unresolved",
       "dividend_amount_unresolved",
       "validation_failed"
     ],
     "errors": [
-      "missing ticker",
       "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "0cf38e37e271271a",
-      "ticker": "",
-      "company": "IMG Nig Plc - Corporate Announcement 2025AFS",
+      "event_id": "77b7e47ec2e04ad9",
+      "ticker": "NGXGROUP",
+      "company": "NIGERIAN EXCHANGE GROUP PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "final",
-      "qualification_date": "2026-06-04",
-      "payment_date": "2026-06-24",
+      "qualification_date": "2024-03-26",
+      "payment_date": "2024-04-29",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/IMG_Nig_Plc_-_Corporate_Announcement_2025AFS.pdf",
-      "source_title": "IMG Nig Plc - Corporate Announcement 2025AFS",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40859_NIGERIAN_EXCHANGE_GROUP_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_20241.pdf",
+      "source_title": "NIGERIAN EXCHANGE GROUP PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 20241",
       "last_verified": "2026-10-08",
       "confidence": "review"
     },
@@ -565,30 +95,257 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NGX_Group_-_Dividend_Announcement.pdf",
-    "title": "NGX Group - Dividend Announcement",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40476_AFRICA_PRUDENTIAL_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MARCH_2024.pdf",
+    "title": "AFRICA PRUDENTIAL PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MARCH 2024",
     "reason_codes": [
-      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing ticker"
+      "missing/invalid dividend per share",
+      "missing payment date"
     ],
     "parsed": {
-      "event_id": "bcc56bcfb6ca2a4c",
-      "ticker": "",
-      "company": "NGX Group",
-      "dividend_per_share": 2.0,
+      "event_id": "63440aa96e9f4b9b",
+      "ticker": "AFRIPRUD",
+      "company": "AFRICA PRUDENTIAL PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "2026-04-10",
-      "payment_date": "2026-04-29",
-      "closure_date": "2026-04-13",
+      "qualification_date": "2024-03-15",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40476_AFRICA_PRUDENTIAL_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MARCH_2024.pdf",
+      "source_title": "AFRICA PRUDENTIAL PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MARCH 2024",
+      "last_verified": "2026-10-08",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40814_UNILEVER_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+    "title": "UNILEVER NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "1883b4aa8f0e90b5",
+      "ticker": "UNILEVER",
+      "company": "UNILEVER NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-04-26",
+      "payment_date": "2024-05-10",
+      "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NGX_Group_-_Dividend_Announcement.pdf",
-      "source_title": "NGX Group - Dividend Announcement",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40814_UNILEVER_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+      "source_title": "UNILEVER NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+      "last_verified": "2026-10-08",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40823_TRANSCORP_HOTELS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+    "title": "TRANSCORP HOTELS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "f82c25cd5bf0ea17",
+      "ticker": "TRANSCOHOT",
+      "company": "TRANSCORP HOTELS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-04-15",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40823_TRANSCORP_HOTELS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+      "source_title": "TRANSCORP HOTELS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+      "last_verified": "2026-10-08",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40821_NIGERIAN_BREWERIES_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+    "title": "NIGERIAN BREWERIES PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "4e62979171813ac1",
+      "ticker": "NB",
+      "company": "NIGERIAN BREWERIES PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-04-02",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40821_NIGERIAN_BREWERIES_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+      "source_title": "NIGERIAN BREWERIES PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+      "last_verified": "2026-10-08",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41175_IKEJA_HOTEL_PLC-IKEJA_HOTEL_PLC_DIVIDEND_ANNOUNCEMENT__CORPORATE_ACTIONS_MAY_2024.pdf",
+    "title": "IKEJA HOTEL PLC-IKEJA HOTEL PLC DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MAY 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "60b5fdc8c0ede847",
+      "ticker": "IKEJAHOTEL",
+      "company": "IKEJA HOTEL PLC-IKEJA HOTEL PLC DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MAY 2024",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2024-07-05",
+      "payment_date": "2024-08-06",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41175_IKEJA_HOTEL_PLC-IKEJA_HOTEL_PLC_DIVIDEND_ANNOUNCEMENT__CORPORATE_ACTIONS_MAY_2024.pdf",
+      "source_title": "IKEJA HOTEL PLC-IKEJA HOTEL PLC DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MAY 2024",
+      "last_verified": "2026-10-08",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40890_GUARANTY_TRUST_HOLDING_COMPANY_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+    "title": "GUARANTY TRUST HOLDING COMPANY PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "46317b6814b1886d",
+      "ticker": "GTCO",
+      "company": "GUARANTY TRUST HOLDING COMPANY PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-04-26",
+      "payment_date": "2024-05-09",
+      "closure_date": "",
+      "announcement_date": "2024-04-12",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40890_GUARANTY_TRUST_HOLDING_COMPANY_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+      "source_title": "GUARANTY TRUST HOLDING COMPANY PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+      "last_verified": "2026-10-08",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40429_BUA_CEMENT_PLC-CORPORATE__DISCLOSURE__CORPORATE_ACTIONS_MARCH_2024.pdf",
+    "title": "BUA CEMENT PLC-CORPORATE DISCLOSURE CORPORATE ACTIONS MARCH 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "8d0f504061cd8b66",
+      "ticker": "BUACEMENT",
+      "company": "BUA CEMENT PLC-CORPORATE DISCLOSURE CORPORATE ACTIONS MARCH 2024",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2024-08-16",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40429_BUA_CEMENT_PLC-CORPORATE__DISCLOSURE__CORPORATE_ACTIONS_MARCH_2024.pdf",
+      "source_title": "BUA CEMENT PLC-CORPORATE DISCLOSURE CORPORATE ACTIONS MARCH 2024",
+      "last_verified": "2026-10-08",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41495_CUSTODIAN_INVESTMENT_PLC-CUSTODIAN_INVESTMENT_PLC_ANNUAL_GENERAL_MEETING_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2024.pdf",
+    "title": "CUSTODIAN INVESTMENT PLC-CUSTODIAN INVESTMENT PLC ANNUAL GENERAL MEETING RESOLUTIONS CORPORATE ACTIONS JUNE 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "b893cbfa1ed38e45",
+      "ticker": "CUSTODIAN",
+      "company": "CUSTODIAN INVESTMENT PLC-CUSTODIAN INVESTMENT PLC ANNUAL GENERAL MEETING RESOLUTIONS CORPORATE ACTIONS JUNE 2024",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "interim",
+      "qualification_date": "2024-06-12",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41495_CUSTODIAN_INVESTMENT_PLC-CUSTODIAN_INVESTMENT_PLC_ANNUAL_GENERAL_MEETING_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2024.pdf",
+      "source_title": "CUSTODIAN INVESTMENT PLC-CUSTODIAN INVESTMENT PLC ANNUAL GENERAL MEETING RESOLUTIONS CORPORATE ACTIONS JUNE 2024",
       "last_verified": "2026-10-08",
       "confidence": "review"
     },
