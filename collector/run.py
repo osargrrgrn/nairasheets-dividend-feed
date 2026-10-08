@@ -10,7 +10,11 @@ from .parse import parse_dividend_pdf, has_dividend_evidence, make_event_id
 from .tickers import resolve_ticker
 from .validate import validate_event
 from .publish import read_csv, merge_events, write_csv, write_html
-from .backfill import BACKFILL_YEARS, discover_year_backfill
+from .backfill import (
+    BACKFILL_YEARS,
+    discover_ngx_api_backfill,
+    discover_year_backfill,
+)
 from .trw_scraper import update_known_dates_from_trw
 from .reconcile import (
     reconcile_evidence,
@@ -41,7 +45,7 @@ RECHECKABLE_STATES = {
     "error",
 }
 
-MAX_BACKFILL_PROCESS_PER_RUN = 20  # Reduced from 40 — OCR makes per-PDF processing slower
+MAX_BACKFILL_PROCESS_PER_RUN = 40  # Reduced from 40 — OCR makes per-PDF processing slower
 
 STABLE_SKIP_STATES = {
     "accepted",
@@ -815,6 +819,35 @@ def main():
                 f"[Backfill {backfill_year}] failed: {repr(exc)}",
                 flush=True,
             )
+
+    # NGX official disclosure API: finds 2024 announcements that the
+    # NaijaTicker pages (recent months only) cannot reach. Runs once.
+    ngx_flag = "ngx_api_backfill_2024_completed"
+
+    if state.get(ngx_flag):
+        print(
+            "[NGX-API 2024] already completed \u2014 skipping sweep",
+            flush=True,
+        )
+    else:
+        try:
+            found, ngx_stats = discover_ngx_api_backfill("2024", known_urls)
+
+            state[ngx_flag] = True
+            state["ngx_api_backfill_2024_candidates_added"] = len(found)
+            state["ngx_api_backfill_2024_stats"] = ngx_stats
+            backfill_discovered.extend(found)
+            known_urls.update(item.get("url", "") for item in found)
+
+            print(
+                f"[NGX-API 2024] added {len(found)} "
+                "historical candidate PDFs",
+                flush=True,
+            )
+
+        except Exception as exc:
+            # Do not mark completed on failure; next run may retry.
+            print(f"[NGX-API 2024] failed: {repr(exc)}", flush=True)
 
     # Merge live + historical discoveries into the persistent archive.
     all_new_discovered = current_discovered + backfill_discovered
