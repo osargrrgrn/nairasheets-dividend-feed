@@ -10,7 +10,7 @@ from .parse import parse_dividend_pdf, has_dividend_evidence, make_event_id
 from .tickers import resolve_ticker
 from .validate import validate_event
 from .publish import read_csv, merge_events, write_csv, write_html
-from .backfill import discover_2026_backfill
+from .backfill import BACKFILL_YEARS, discover_year_backfill
 from .trw_scraper import update_known_dates_from_trw
 from .reconcile import (
     reconcile_evidence,
@@ -771,45 +771,50 @@ def main():
 
     old_archive = load_json(ARCHIVE, [])
 
-    # Patch 31: one-time historical 2026 backfill.
+    # Patch 31 / 56: one-time historical backfills, one per year.
+    # Each year is swept once, then marked completed in collector_state.json.
+    # To go further back, add a year to BACKFILL_YEARS in collector/backfill.py.
     backfill_discovered = []
 
-    if not state.get("backfill_2026_completed"):
-        known_urls = {
-            item.get("url", "")
-            for item in old_archive
-            if isinstance(item, dict) and item.get("url")
-        }
+    known_urls = {
+        item.get("url", "")
+        for item in old_archive
+        if isinstance(item, dict) and item.get("url")
+    }
+
+    for backfill_year in BACKFILL_YEARS:
+        flag = f"backfill_{backfill_year}_completed"
+
+        if state.get(flag):
+            print(
+                f"[Backfill {backfill_year}] already completed — skipping sweep",
+                flush=True,
+            )
+            continue
 
         try:
-            backfill_discovered, backfill_stats = discover_2026_backfill(
-                known_urls
+            found, backfill_stats = discover_year_backfill(
+                backfill_year, known_urls
             )
 
-            state["backfill_2026_completed"] = True
-            state["backfill_2026_candidates_added"] = len(
-                backfill_discovered
-            )
-            state["backfill_2026_stats"] = backfill_stats
+            state[flag] = True
+            state[f"backfill_{backfill_year}_candidates_added"] = len(found)
+            state[f"backfill_{backfill_year}_stats"] = backfill_stats
+            backfill_discovered.extend(found)
+            known_urls.update(item.get("url", "") for item in found)
 
             print(
-                f"[Backfill 2026] added {len(backfill_discovered)} "
+                f"[Backfill {backfill_year}] added {len(found)} "
                 "historical candidate PDFs",
                 flush=True,
             )
 
         except Exception as exc:
             # Do not mark completed on failure; next run may retry.
-            backfill_discovered = []
             print(
-                f"[Backfill 2026] failed: {repr(exc)}",
+                f"[Backfill {backfill_year}] failed: {repr(exc)}",
                 flush=True,
             )
-    else:
-        print(
-            "[Backfill 2026] already completed — skipping sweep",
-            flush=True,
-        )
 
     # Merge live + historical discoveries into the persistent archive.
     all_new_discovered = current_discovered + backfill_discovered
@@ -822,7 +827,7 @@ def main():
 
     if priority_backfill:
         print(
-            f"[Backfill 2026] prioritizing {len(priority_backfill)} "
+            f"[Backfill] prioritizing {len(priority_backfill)} "
             "historical documents this run",
             flush=True,
         )
