@@ -1,4 +1,16 @@
 {
+  "backfill_2024_candidates_added": 0,
+  "backfill_2024_completed": true,
+  "backfill_2024_stats": {
+    "already_known": 369,
+    "companies_completed": 68,
+    "companies_targeted": 68,
+    "errors": 0,
+    "filtered": 0,
+    "new_candidates": 0,
+    "pdfs_seen": 550,
+    "wrong_year": 181
+  },
   "backfill_2026_candidates_added": 4,
   "backfill_2026_completed": true,
   "backfill_2026_stats": {
@@ -11,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 115,
+  "historical_recheck_cursor": 155,
   "processed": {
     "https://doclib.ngxgroup.com/Financial_NewsDocs/100_CERTIFICATION_FOR_EARNINGS_FORECAST_FOR_FOURTH_QUARTER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/103_Q4_2026_EARNINGS_FORECAST-_NGX.pdf": "not_dividend",
