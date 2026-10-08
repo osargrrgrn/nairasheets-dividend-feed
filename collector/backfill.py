@@ -1,9 +1,13 @@
 """
-collector/backfill.py — Patch 31
-One-time 2026 historical discovery backfill.
+collector/backfill.py — Patch 31 / 56
+One-time historical discovery backfills, one per year in BACKFILL_YEARS.
 
 It discovers older official NGX PDFs through the same NaijaTicker stock pages
 already used by the live collector. It does not publish anything itself.
+
+To go further back, add a year to BACKFILL_YEARS. Each year runs once and is
+then marked completed in collector_state.json (backfill_<year>_completed).
+Dates before 2024-01-01 are still rejected by feed_integrity and reconcile.
 """
 
 import concurrent.futures
@@ -16,7 +20,7 @@ from .discover import (
     _title_from_url,
 )
 
-BACKFILL_YEAR = "2026"
+BACKFILL_YEARS = ("2026", "2024")
 BACKFILL_WORKERS = 12
 
 POSITIVE_HINTS = (
@@ -55,10 +59,10 @@ NEGATIVE_HINTS = (
 )
 
 
-def _eligible(url: str) -> bool:
+def _eligible(url: str, year: str) -> bool:
     low = (url or "").lower()
 
-    if BACKFILL_YEAR not in low:
+    if year not in low:
         return False
 
     if any(term in low for term in NEGATIVE_HINTS):
@@ -70,7 +74,7 @@ def _eligible(url: str) -> bool:
     )
 
 
-def discover_2026_backfill(known_urls=None):
+def discover_year_backfill(year, known_urls=None):
     known = set(known_urls or [])
     tickers = _load_naija_tickers()
 
@@ -88,7 +92,7 @@ def discover_2026_backfill(known_urls=None):
     candidates = {}
 
     print(
-        f"[Backfill 2026] scanning {len(tickers)} NaijaTicker company pages",
+        f"[Backfill {year}] scanning {len(tickers)} NaijaTicker company pages",
         flush=True,
     )
 
@@ -113,7 +117,7 @@ def discover_2026_backfill(known_urls=None):
                     stats["already_known"] += 1
                     continue
 
-                if BACKFILL_YEAR not in url.lower():
+                if year not in url.lower():
                     stats["wrong_year"] += 1
                     continue
 
@@ -123,7 +127,7 @@ def discover_2026_backfill(known_urls=None):
                     stats["filtered"] += 1
                     continue
 
-                if not _eligible(url):
+                if not _eligible(url, year):
                     stats["filtered"] += 1
                     continue
 
@@ -140,7 +144,7 @@ def discover_2026_backfill(known_urls=None):
                 item = {
                     "url": url,
                     "title": title,
-                    "source": "naijaticker_2026_backfill",
+                    "source": f"naijaticker_{year}_backfill",
                     "ticker": ticker,
                     "_score": score,
                 }
@@ -162,7 +166,7 @@ def discover_2026_backfill(known_urls=None):
     stats["new_candidates"] = len(items)
 
     print(
-        "[Backfill 2026] "
+        f"[Backfill {year}] "
         f"seen={stats['pdfs_seen']} "
         f"known={stats['already_known']} "
         f"wrong_year={stats['wrong_year']} "
@@ -173,3 +177,7 @@ def discover_2026_backfill(known_urls=None):
     )
 
     return items, stats
+
+
+def discover_2026_backfill(known_urls=None):
+    return discover_year_backfill("2026", known_urls)
