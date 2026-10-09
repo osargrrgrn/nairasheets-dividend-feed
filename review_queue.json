@@ -1,7 +1,7 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41891_NIGERIAN_BREWERIES_PLC.-EARNINGS_RELEASE_QUARTER_2_2024_CORPORATE_ACTIONS_JULY_2024.pdf",
-    "title": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 2 2024 CORPORATE ACTIONS JULY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42285_GUINNESS_NIG_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
+    "title": "GUINNESS NIG PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -12,60 +12,93 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "827c1e8edec1baf1",
+      "event_id": "e1ef0e78d6b8fece",
+      "ticker": "GUINNESS",
+      "company": "GUINNESS NIG PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-10-03",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42285_GUINNESS_NIG_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
+      "source_title": "GUINNESS NIG PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
+      "last_verified": "2026-10-09",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42355_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
+    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "747d6a6ccc0687e3",
+      "ticker": "FBNH",
+      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-08-13",
+      "payment_date": "2024-11-15",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42355_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
+      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
+      "last_verified": "2026-10-09",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42377_NIGERIAN_BREWERIES_PLC.-EARNINGS_RELEASE_QUARTER_3_2024_CORPORATE_ACTIONS_OCTOBER_2024.pdf",
+    "title": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 3 2024 CORPORATE ACTIONS OCTOBER 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "602db4f929ad40fd",
       "ticker": "NB",
-      "company": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 2 2024 CORPORATE ACTIONS JULY 2024",
+      "company": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 3 2024 CORPORATE ACTIONS OCTOBER 2024",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "distribution",
-      "qualification_date": "2024-07-30",
+      "qualification_date": "2024-10-23",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41891_NIGERIAN_BREWERIES_PLC.-EARNINGS_RELEASE_QUARTER_2_2024_CORPORATE_ACTIONS_JULY_2024.pdf",
-      "source_title": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 2 2024 CORPORATE ACTIONS JULY 2024",
-      "last_verified": "2026-10-08",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42377_NIGERIAN_BREWERIES_PLC.-EARNINGS_RELEASE_QUARTER_3_2024_CORPORATE_ACTIONS_OCTOBER_2024.pdf",
+      "source_title": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 3 2024 CORPORATE ACTIONS OCTOBER 2024",
+      "last_verified": "2026-10-09",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "37ec15fac4a392ab",
-      "ticker": "FBNH",
-      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-08-13",
-      "payment_date": "2024-08-23",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
-      "last_verified": "2026-10-08",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42011_RED_STAR_EXPRESS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-    "title": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42569_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+    "title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -76,52 +109,87 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "8203dcbfe31f064a",
-      "ticker": "REDSTAREX",
-      "company": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "event_id": "da825b4324e63d48",
+      "ticker": "PZ",
+      "company": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "2024-08-23",
+      "qualification_date": "2024-11-01",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2024-08-04",
+      "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42011_RED_STAR_EXPRESS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-      "source_title": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
-      "last_verified": "2026-10-08",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42569_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+      "source_title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
+      "last_verified": "2026-10-09",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42591_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+    "title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
+      "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share"
+      "missing/invalid dividend per share",
+      "missing payment date"
     ],
     "parsed": {
-      "event_id": "9f5f2f5c86abdd8f",
-      "ticker": "FBNH",
-      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "event_id": "da825b4324e63d48",
+      "ticker": "PZ",
+      "company": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "2024-08-13",
-      "payment_date": "2024-09-04",
+      "qualification_date": "2024-11-01",
+      "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
-      "last_verified": "2026-10-08",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42591_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+      "source_title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
+      "last_verified": "2026-10-09",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42608_CORONATION_INSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+    "title": "CORONATION INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "46c6172e16552657",
+      "ticker": "WAPIC",
+      "company": "CORONATION INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-11-21",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42608_CORONATION_INSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+      "source_title": "CORONATION INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
+      "last_verified": "2026-10-09",
       "confidence": "review"
     },
     "classification": "review",
