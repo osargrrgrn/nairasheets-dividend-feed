@@ -4,17 +4,17 @@
     "status": 200,
     "detail_pages_found": 78,
     "detail_pages_completed": 78,
-    "new_pdfs": 1,
+    "new_pdfs": 3,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5855,
-    "dividend_like": 541,
-    "already_known": 539,
+    "files_seen": 5857,
+    "dividend_like": 542,
+    "already_known": 541,
     "irrelevant": 1,
-    "new_pdfs": 1,
+    "new_pdfs": 0,
     "errors": []
   },
   "trw_discovery": {
@@ -25,26 +25,31 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 550,
-    "already_known": 370,
-    "filtered_before_parser": 180,
+    "pdfs_seen": 551,
+    "already_known": 372,
+    "filtered_before_parser": 179,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 2,
-  "elapsed_seconds": 38.71,
+  "total_new_pdfs": 3,
+  "elapsed_seconds": 35.24,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48058_FIDELITY_BANK_PLC-FIDELITY_BANK_38TH_AGM_RESOLUTIONS_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "FIDELITY BANK PLC-FIDELITY BANK 38TH AGM RESOLUTIONS CORPORATE ACTIONS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48060_ACCESS_HOLDINGS_PLC-RETIREMENT_OF_MR._OLANREWAJU_BAMISEBI_AS_EXECUTIVE_DIRECTOR_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "ACCESS HOLDINGS PLC-RETIREMENT OF MR. OLANREWAJU BAMISEBI AS EXECUTIVE DIRECTOR CORPORATE ACTIONS OCTOBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48061_AXA_MANSARD_INSURANCE_PLC-AXA_MANSARD_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "AXA MANSARD INSURANCE PLC-AXA MANSARD - AGM RESOLUTIONS CORPORATE ACTIONS OCTOBER 2026",
-      "source": "sharepoint_index"
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48062_ZENITH_BANK_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "ZENITH BANK PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48063_ZENITH_BANK_PLC-ZENITH_BANK_PLC_CORPORATE_ACTION_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "ZENITH BANK PLC-ZENITH BANK PLC CORPORATE ACTION CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
     }
   ]
 }
