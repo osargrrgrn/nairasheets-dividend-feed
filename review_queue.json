@@ -1,170 +1,5 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41122_NASCON_ALLIED_INDUSTRIES_PLC-NOTICE_OF_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_APRIL_2024.pdf",
-    "title": "NASCON ALLIED INDUSTRIES PLC-NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2024",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "99b871d986d98f96",
-      "ticker": "NASCON",
-      "company": "NASCON ALLIED INDUSTRIES PLC-NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2024",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2024-05-03",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41122_NASCON_ALLIED_INDUSTRIES_PLC-NOTICE_OF_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_APRIL_2024.pdf",
-      "source_title": "NASCON ALLIED INDUSTRIES PLC-NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS APRIL 2024",
-      "last_verified": "2026-10-11",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41143_TRANSNATIONAL_CORPORATION_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
-    "title": "TRANSNATIONAL CORPORATION PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "5583a6920d1a150e",
-      "ticker": "TRANSCORP",
-      "company": "TRANSNATIONAL CORPORATION PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-04-24",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41143_TRANSNATIONAL_CORPORATION_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
-      "source_title": "TRANSNATIONAL CORPORATION PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
-      "last_verified": "2026-10-11",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41146_FCMB_GROUP_PLC-FCMBGROUP_PLC_-_NOTICE_OF_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2024.pdf",
-    "title": "FCMB GROUP PLC-FCMBGROUP PLC - NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2024",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "5b9c43ae57512d83",
-      "ticker": "FCMB",
-      "company": "FCMB GROUP PLC-FCMBGROUP PLC - NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2024",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-05-13",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41146_FCMB_GROUP_PLC-FCMBGROUP_PLC_-_NOTICE_OF_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2024.pdf",
-      "source_title": "FCMB GROUP PLC-FCMBGROUP PLC - NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2024",
-      "last_verified": "2026-10-11",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41159_OKOMU_OIL_PALM_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
-    "title": "OKOMU OIL PALM PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "ff3a0d553c695589",
-      "ticker": "OKOMUOIL",
-      "company": "OKOMU OIL PALM PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2024-04-26",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41159_OKOMU_OIL_PALM_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
-      "source_title": "OKOMU OIL PALM PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
-      "last_verified": "2026-10-11",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41315_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
-    "title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "4dbc8a519ae1cac7",
-      "ticker": "CADBURY",
-      "company": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-03-28",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41315_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
-      "source_title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
-      "last_verified": "2026-10-11",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41319_UNITED_BANK_FOR_AFRICA_PLC-UNITED_BANK_FOR_AFRICA_PLC_-_2024_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2024.pdf",
     "title": "UNITED BANK FOR AFRICA PLC-UNITED BANK FOR AFRICA PLC - 2024 AGM RESOLUTIONS CORPORATE ACTIONS MAY 2024",
     "reason_codes": [
@@ -198,8 +33,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41323_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_11TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2024.pdf",
-    "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 11TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41891_NIGERIAN_BREWERIES_PLC.-EARNINGS_RELEASE_QUARTER_2_2024_CORPORATE_ACTIONS_JULY_2024.pdf",
+    "title": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 2 2024 CORPORATE ACTIONS JULY 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -210,20 +45,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "d5bc987b4ce6ea6c",
-      "ticker": "FCMB",
-      "company": "FCMB GROUP PLC",
+      "event_id": "827c1e8edec1baf1",
+      "ticker": "NB",
+      "company": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 2 2024 CORPORATE ACTIONS JULY 2024",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-05-13",
+      "dividend_type": "distribution",
+      "qualification_date": "2024-07-30",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41323_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_11TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2024.pdf",
-      "source_title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 11TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41891_NIGERIAN_BREWERIES_PLC.-EARNINGS_RELEASE_QUARTER_2_2024_CORPORATE_ACTIONS_JULY_2024.pdf",
+      "source_title": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 2 2024 CORPORATE ACTIONS JULY 2024",
       "last_verified": "2026-10-11",
       "confidence": "review"
     },
@@ -231,8 +66,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41382_CUSTODIAN_INVESTMENT_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
-    "title": "CUSTODIAN INVESTMENT PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "validation_failed"
@@ -241,20 +76,117 @@
       "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "138f1cdf8387cf9d",
-      "ticker": "CUSTODIAN",
-      "company": "CUSTODIAN INVESTMENT PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "event_id": "37ec15fac4a392ab",
+      "ticker": "FBNH",
+      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "2024-06-12",
-      "payment_date": "2024-06-21",
+      "qualification_date": "2024-08-13",
+      "payment_date": "2024-08-23",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+      "last_verified": "2026-10-11",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41973_IKEJA_HOTEL_PLC-IKEJA_HOTEL_PLC_-_AGM_RESOLUTIONS_PASSED_CORPORATE_ACTIONS_AUGUST_2024.pdf",
+    "title": "IKEJA HOTEL PLC-IKEJA HOTEL PLC - AGM RESOLUTIONS PASSED CORPORATE ACTIONS AUGUST 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "43794b8ff11a661f",
+      "ticker": "IKEJAHOTEL",
+      "company": "IKEJA HOTEL PLC-IKEJA HOTEL PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2023-07-04",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2024-07-31",
+      "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41382_CUSTODIAN_INVESTMENT_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
-      "source_title": "CUSTODIAN INVESTMENT PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41973_IKEJA_HOTEL_PLC-IKEJA_HOTEL_PLC_-_AGM_RESOLUTIONS_PASSED_CORPORATE_ACTIONS_AUGUST_2024.pdf",
+      "source_title": "IKEJA HOTEL PLC-IKEJA HOTEL PLC - AGM RESOLUTIONS PASSED CORPORATE ACTIONS AUGUST 2024",
+      "last_verified": "2026-10-11",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42011_RED_STAR_EXPRESS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+    "title": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "8203dcbfe31f064a",
+      "ticker": "REDSTAREX",
+      "company": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-08-23",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2024-08-04",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42011_RED_STAR_EXPRESS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+      "source_title": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+      "last_verified": "2026-10-11",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "9f5f2f5c86abdd8f",
+      "ticker": "FBNH",
+      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-08-13",
+      "payment_date": "2024-09-04",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
       "last_verified": "2026-10-11",
       "confidence": "review"
     },
