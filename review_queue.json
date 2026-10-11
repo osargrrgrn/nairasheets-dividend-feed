@@ -33,8 +33,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41891_NIGERIAN_BREWERIES_PLC.-EARNINGS_RELEASE_QUARTER_2_2024_CORPORATE_ACTIONS_JULY_2024.pdf",
-    "title": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 2 2024 CORPORATE ACTIONS JULY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42591_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+    "title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -45,20 +45,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "827c1e8edec1baf1",
-      "ticker": "NB",
-      "company": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 2 2024 CORPORATE ACTIONS JULY 2024",
+      "event_id": "da825b4324e63d48",
+      "ticker": "PZ",
+      "company": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2024-07-30",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-11-01",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41891_NIGERIAN_BREWERIES_PLC.-EARNINGS_RELEASE_QUARTER_2_2024_CORPORATE_ACTIONS_JULY_2024.pdf",
-      "source_title": "NIGERIAN BREWERIES PLC.-EARNINGS RELEASE QUARTER 2 2024 CORPORATE ACTIONS JULY 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42591_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+      "source_title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
       "last_verified": "2026-10-11",
       "confidence": "review"
     },
@@ -66,8 +66,41 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42608_CORONATION_INSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+    "title": "CORONATION INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "46c6172e16552657",
+      "ticker": "WAPIC",
+      "company": "CORONATION INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-11-21",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42608_CORONATION_INSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+      "source_title": "CORONATION INSURANCE PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
+      "last_verified": "2026-10-11",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42626_FBN_HOLDINGS_PLC-FBN_HOLDINGS_PLC_-_RESOLUTIONS_PASSED_AT_THE_12TH_AGM_CORPORATE_ACTIONS_NOVEMBER_2024.pdf",
+    "title": "FBN HOLDINGS PLC-FBN HOLDINGS PLC - RESOLUTIONS PASSED AT THE 12TH AGM CORPORATE ACTIONS NOVEMBER 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "validation_failed"
@@ -76,9 +109,9 @@
       "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "37ec15fac4a392ab",
+      "event_id": "ea63ff12e4e00df1",
       "ticker": "FBNH",
-      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "company": "FBN HOLDINGS PLC-FBN HOLDINGS PLC",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
@@ -87,9 +120,9 @@
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42626_FBN_HOLDINGS_PLC-FBN_HOLDINGS_PLC_-_RESOLUTIONS_PASSED_AT_THE_12TH_AGM_CORPORATE_ACTIONS_NOVEMBER_2024.pdf",
+      "source_title": "FBN HOLDINGS PLC-FBN HOLDINGS PLC - RESOLUTIONS PASSED AT THE 12TH AGM CORPORATE ACTIONS NOVEMBER 2024",
       "last_verified": "2026-10-11",
       "confidence": "review"
     },
@@ -97,8 +130,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41973_IKEJA_HOTEL_PLC-IKEJA_HOTEL_PLC_-_AGM_RESOLUTIONS_PASSED_CORPORATE_ACTIONS_AUGUST_2024.pdf",
-    "title": "IKEJA HOTEL PLC-IKEJA HOTEL PLC - AGM RESOLUTIONS PASSED CORPORATE ACTIONS AUGUST 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42640_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+    "title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -109,20 +142,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "43794b8ff11a661f",
-      "ticker": "IKEJAHOTEL",
-      "company": "IKEJA HOTEL PLC-IKEJA HOTEL PLC",
+      "event_id": "6fee9961a0f78964",
+      "ticker": "PZ",
+      "company": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "2023-07-04",
+      "qualification_date": "2024-11-21",
       "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2024-07-31",
+      "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41973_IKEJA_HOTEL_PLC-IKEJA_HOTEL_PLC_-_AGM_RESOLUTIONS_PASSED_CORPORATE_ACTIONS_AUGUST_2024.pdf",
-      "source_title": "IKEJA HOTEL PLC-IKEJA HOTEL PLC - AGM RESOLUTIONS PASSED CORPORATE ACTIONS AUGUST 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42640_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf",
+      "source_title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
       "last_verified": "2026-10-11",
       "confidence": "review"
     },
@@ -130,32 +163,30 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42011_RED_STAR_EXPRESS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-    "title": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43244_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
     "reason_codes": [
-      "dividend_amount_unresolved",
-      "payment_date_missing",
+      "ticker_unresolved",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
-      "missing payment date"
+      "missing ticker"
     ],
     "parsed": {
-      "event_id": "8203dcbfe31f064a",
-      "ticker": "REDSTAREX",
-      "company": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
+      "event_id": "6e84b8bb8954e205",
+      "ticker": "",
+      "company": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 1.0,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-08-23",
-      "payment_date": "",
+      "dividend_type": "distribution",
+      "qualification_date": "2025-03-06",
+      "payment_date": "2025-03-20",
       "closure_date": "",
-      "announcement_date": "2024-08-04",
+      "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42011_RED_STAR_EXPRESS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-      "source_title": "RED STAR EXPRESS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43244_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
       "last_verified": "2026-10-11",
       "confidence": "review"
     },
@@ -163,30 +194,158 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43245_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share"
+      "missing ticker"
     ],
     "parsed": {
-      "event_id": "9f5f2f5c86abdd8f",
-      "ticker": "FBNH",
-      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
+      "event_id": "fb2a38de01817fcc",
+      "ticker": "",
+      "company": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 0.54,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-08-13",
-      "payment_date": "2024-09-04",
+      "dividend_type": "distribution",
+      "qualification_date": "2025-03-06",
+      "payment_date": "2025-03-20",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43245_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
+      "last_verified": "2026-10-11",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43246_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "9bd7736ef5443ef2",
+      "ticker": "",
+      "company": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 10.0,
+      "currency": "NGN",
+      "dividend_type": "distribution",
+      "qualification_date": "2025-03-06",
+      "payment_date": "2025-03-20",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43246_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
+      "last_verified": "2026-10-11",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43250_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "2331d01c778fb63d",
+      "ticker": "",
+      "company": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 0.6,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-05-09",
+      "payment_date": "2025-05-21",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43250_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
+      "last_verified": "2026-10-11",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43261_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CLARIFICATION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "b01611f6bfc05e3a",
+      "ticker": "",
+      "company": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 0.06,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-05-09",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43261_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CLARIFICATION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
+      "last_verified": "2026-10-11",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "9397533a3d9d1240",
+      "ticker": "",
+      "company": "E-TRANZACT INTERNATIONAL PLC",
+      "dividend_per_share": 0.125,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-07-07",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
       "last_verified": "2026-10-11",
       "confidence": "review"
     },
