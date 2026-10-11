@@ -25,82 +25,41 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 589,
-    "already_known": 297,
-    "filtered_before_parser": 281,
-    "eligible_candidates": 11,
-    "new_pdfs": 11,
-    "errors": [],
+    "pdfs_seen": 341,
+    "already_known": 167,
+    "filtered_before_parser": 174,
+    "eligible_candidates": 0,
+    "new_pdfs": 0,
+    "errors": [
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
+    ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 11,
-  "elapsed_seconds": 56.48,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46739_AFRICA_PRUDENTIAL_PLC-POST_BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_APRIL_2026.pdf",
-      "title": "AFRICA PRUDENTIAL PLC-POST BOARD MEETING NOTIFICATION CORPORATE ACTIONS APRIL 2026",
-      "source": "naijaticker",
-      "ticker": "AFRIPRUD"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46829_DANGOTE_SUGAR_REFINERY_PLC-OUTCOME_OF_BOARD_MEETING_FOR_DANGOTE_SUGAR_REFINERY_PLC_CORPORATE_ACTIONS_APRIL_2026.pdf",
-      "title": "DANGOTE SUGAR REFINERY PLC-OUTCOME OF BOARD MEETING FOR DANGOTE SUGAR REFINERY PLC CORPORATE ACTIONS APRIL 2026",
-      "source": "naijaticker",
-      "ticker": "DANGSUGAR"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45884_SFS_REAL_ESTATE_INVESTMENT_TRUST-SFS_REIT_KEY_PERFORMANCE_METRICS_CORPORATE_ACTIONS_JANUARY_2026.pdf",
-      "title": "SFS REAL ESTATE INVESTMENT TRUST-SFS REIT KEY PERFORMANCE METRICS CORPORATE ACTIONS JANUARY 2026",
-      "source": "naijaticker",
-      "ticker": "SFSREIT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46345_SFS_REAL_ESTATE_INVESTMENT_TRUST-CORPORATE_ACTIONS_CORPORATE_ACTIONS_MARCH_2026.pdf",
-      "title": "SFS REAL ESTATE INVESTMENT TRUST-CORPORATE ACTIONS CORPORATE ACTIONS MARCH 2026",
-      "source": "naijaticker",
-      "ticker": "SFSREIT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46601_OKOMU_OIL_PALM_PLC.-CORPORATE_ACTION_NOTICE_CORPORATE_ACTIONS_APRIL_2026.pdf",
-      "title": "OKOMU OIL PALM PLC.-CORPORATE ACTION NOTICE CORPORATE ACTIONS APRIL 2026",
-      "source": "naijaticker",
-      "ticker": "OKOMUOIL"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46661__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REIT_NOTICE_OF_EGM_-_2026_CORPORATE_ACTIONS_APRIL_2026.pdf",
-      "title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REIT NOTICE OF EGM - 2026 CORPORATE ACTIONS APRIL 2026",
-      "source": "naijaticker",
-      "ticker": "UPDCREIT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46764_SFS_REAL_ESTATE_INVESTMENT_TRUST-SFS_REIT_KEY_PERFORMANCE_METRICS_CORPORATE_ACTIONS_APRIL_2026.pdf",
-      "title": "SFS REAL ESTATE INVESTMENT TRUST-SFS REIT KEY PERFORMANCE METRICS CORPORATE ACTIONS APRIL 2026",
-      "source": "naijaticker",
-      "ticker": "SFSREIT"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45961_VITAFOAM_NIG_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_FEBRUARY_2026.pdf",
-      "title": "VITAFOAM NIG PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) FEBRUARY 2026",
-      "source": "naijaticker",
-      "ticker": "VITAFOAM"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46616_THE_INITIATES_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2026.pdf",
-      "title": "THE INITIATES PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2026",
-      "source": "naijaticker",
-      "ticker": "TIP"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/46991_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
-      "title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
-      "source": "naijaticker",
-      "ticker": "CADBURY"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/47006_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2026.pdf",
-      "title": "CHEMICAL AND ALLIED PRODUCTS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2026",
-      "source": "naijaticker",
-      "ticker": "CAP"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 67.59,
+  "results": []
 }
