@@ -4,13 +4,13 @@
     "status": 200,
     "detail_pages_found": 78,
     "detail_pages_completed": 78,
-    "new_pdfs": 0,
+    "new_pdfs": 2,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5857,
+    "files_seen": 5860,
     "dividend_like": 542,
     "already_known": 541,
     "irrelevant": 1,
@@ -25,38 +25,68 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 481,
-    "already_known": 247,
-    "filtered_before_parser": 233,
-    "eligible_candidates": 1,
-    "new_pdfs": 1,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "pdfs_seen": 714,
+    "already_known": 417,
+    "filtered_before_parser": 290,
+    "eligible_candidates": 7,
+    "new_pdfs": 7,
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 1,
-  "elapsed_seconds": 64.53,
+  "total_new_pdfs": 9,
+  "elapsed_seconds": 50.28,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Transcorp_Hotels_Plc_-_Post_AGM_Notifications.pdf",
-      "title": "Transcorp Hotels Plc - Post AGM Notifications",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48065_BUA_CEMENT_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
+      "title": "BUA CEMENT PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48066_VITAFOAM_NIGERIA_PLC-BOARD_MEETING_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "VITAFOAM NIGERIA PLC-BOARD MEETING CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43176_TRANSCORP_HOTELS_PLC-POST-BOARD_MEETING_NOTIFICATION_CORPORATE_ACTIONS_FEBRUARY_2025.pdf",
+      "title": "TRANSCORP HOTELS PLC-POST-BOARD MEETING NOTIFICATION CORPORATE ACTIONS FEBRUARY 2025",
       "source": "naijaticker",
       "ticker": "TRANSCOHOT"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45949_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_Q1,_2026_POST_BOARD_MEETING_NOTIFICATION__CORPORATE_ACTIONS_FEBRUARY_2026.pdf",
+      "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - Q1, 2026 POST BOARD MEETING NOTIFICATION CORPORATE ACTIONS FEBRUARY 2026",
+      "source": "naijaticker",
+      "ticker": "TRANSCOHOT"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43268_NASCON_ALLIED_INDUSTRIES_PLC-2025_CORPORATE_ACTIONS_NOTICE_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "NASCON ALLIED INDUSTRIES PLC-2025 CORPORATE ACTIONS NOTICE CORPORATE ACTIONS MARCH 2025",
+      "source": "naijaticker",
+      "ticker": "NASCON"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43434_SFS_REAL_ESTATE_INVESTMENT_TRUST-CORPORATE_ACTIONS_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "SFS REAL ESTATE INVESTMENT TRUST-CORPORATE ACTIONS CORPORATE ACTIONS MARCH 2025",
+      "source": "naijaticker",
+      "ticker": "SFSREIT"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43527_FIDELITY_BANK_PLC-FIDELITY_BANK_CORPORATE_ACTIONS_FOR_2024FY_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "title": "FIDELITY BANK PLC-FIDELITY BANK CORPORATE ACTIONS FOR 2024FY CORPORATE ACTIONS MARCH 2025",
+      "source": "naijaticker",
+      "ticker": "FIDELITYBK"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/45157_OKOMU_OIL_PALM_PLC.-CORPORATE_ACTIONS_CORPORATE_ACTIONS_OCTOBER_2025.pdf",
+      "title": "OKOMU OIL PALM PLC.-CORPORATE ACTIONS CORPORATE ACTIONS OCTOBER 2025",
+      "source": "naijaticker",
+      "ticker": "OKOMUOIL"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Transcorp_Plc_-_Post_AGM_Notifications.pdf",
+      "title": "Transcorp Plc - Post AGM Notifications",
+      "source": "naijaticker",
+      "ticker": "TRANSCORP"
     }
   ]
 }
