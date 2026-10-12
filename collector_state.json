@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 190,
+  "historical_recheck_cursor": 230,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1519,6 +1519,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/Sterling_Financial_Holdings_Company_Plc_-_FY2025_AGM_Resolutions_executed.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/TNC_-_2026_Post_Board_Meeting_Notification.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/TRANSNATIONAL_CORPORATION_PLC_-_Amended_Corporate_Action_Announcement.pdf": "accepted",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/Transcorp_Hotels_Plc_-_Post_AGM_Notifications.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/Transnational_Corporation_Plc_-_Corporate_Action_Announcement.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/Transnational_Corporation_of_Nigeria_-_Corporate_Action_Announcement.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/UBA_Potential_Delay_in_Pubication_of_Half-Year_Audited_Financial_Statement.pdf": "not_dividend",
