@@ -7,7 +7,10 @@ name: Update NGX prices
 
 on:
   schedule:
-    - cron: "5,35 9-20 * * 1-5"
+    # Off-peak minutes: GitHub drops many runs scheduled at :00/:05/:30/:35.
+    - cron: "11,41 9-20 * * 1-5"
+    # Extra attempts right after the 14:30 WAT (13:30 UTC) close.
+    - cron: "23,53 13-16 * * 1-5"
   workflow_dispatch:
 
 permissions:
