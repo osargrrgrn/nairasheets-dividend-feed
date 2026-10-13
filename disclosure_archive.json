@@ -544,6 +544,42 @@
   },
   {
     "source": "naijaticker",
+    "ticker": "NB",
+    "title": "NIGERIAN BREWERIES PLC.-FINAL DIVIDEND NOTIFICATION CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37676_NIGERIAN_BREWERIES_PLC.-FINAL_DIVIDEND_NOTIFICATION_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "DANGCEM",
+    "title": "DANGOTE CEMENT PLC-CORPORATE ACTION NOTIFICATION - DIVIDEND PAYMENT CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37685_DANGOTE_CEMENT_PLC-CORPORATE_ACTION_NOTIFICATION_-_DIVIDEND_PAYMENT_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "NASCON",
+    "title": "NASCON ALLIED INDUSTRIES PLC-CORPORATE ACTIONS NOTICE CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37731_NASCON_ALLIED_INDUSTRIES_PLC-CORPORATE_ACTIONS_NOTICE_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "UACN",
+    "title": "UAC OF NIGERIA PLC.-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38049_UAC__OF_NIGERIA_PLC.-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "UNILEVER",
+    "title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC DIVIDEND ANNOUNCEMENT APRIL 2023 CORPORATE ACTIONS APRIL 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38127_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_DIVIDEND_ANNOUNCEMENT_APRIL_2023_CORPORATE_ACTIONS_APRIL_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "ACCESSCORP",
+    "title": "ACCESS HOLDINGS PLC-CORPORATE ACTION ANNOUNCEMENT FOR ACCESS HOLDINGS PLC CORPORATE ACTIONS APRIL 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38275_ACCESS_HOLDINGS_PLC-CORPORATE_ACTION_ANNOUNCEMENT_FOR_ACCESS_HOLDINGS_PLC__CORPORATE_ACTIONS_APRIL_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
     "ticker": "ZENITHBANK",
     "title": "ZENITH BANK PLC-ZENITH BANK PLC - AGM RESOLUTION CORPORATE ACTIONS MAY 2023",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38482_ZENITH_BANK_PLC-ZENITH_BANK_PLC_-_AGM_RESOLUTION__CORPORATE_ACTIONS_MAY_2023.pdf"
@@ -597,6 +633,12 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38900_UNIVERSITY_PRESS_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_JULY_2023.pdf"
   },
   {
+    "source": "naijaticker",
+    "ticker": "REDSTAREX",
+    "title": "RED STAR EXPRESS PLC-CORPORATE ACTION CORPORATE ACTIONS JULY 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38916_RED_STAR_EXPRESS_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_JULY_2023.pdf"
+  },
+  {
     "source": "abokiforex_listing",
     "title": "INSIDER DEALING- CREDITVILLE 2A PURCHASE-APPROVED",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38_INSIDER_DEALING-_CREDITVILLE_2A_PURCHASE-APPROVED.pdf"
@@ -632,6 +674,12 @@
     "ticker": "SEPLAT",
     "title": "SEPLAT ENERGY PLC-CORPORATE ANNOUNCEMENT ON H1 2023 INTERIM DIVIDEND CORPORATE ACTIONS JULY 2023",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39103_SEPLAT_ENERGY_PLC-CORPORATE_ANNOUNCEMENT_ON_H1_2023_INTERIM_DIVIDEND__CORPORATE_ACTIONS_JULY_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "NGXGROUP",
+    "title": "NIGERIAN EXCHANGE GROUP PLC-CORPORATE ACTION ANNOUNCEMENT - INTERIM DIVIDEND CORPORATE ACTIONS JULY 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39115_NIGERIAN_EXCHANGE_GROUP_PLC-CORPORATE_ACTION_ANNOUNCEMENT_-_INTERIM_DIVIDEND_CORPORATE_ACTIONS_JULY_2023.pdf"
   },
   {
     "source": "naijaticker",
@@ -1880,6 +1928,12 @@
     "ticker": "SEPLAT",
     "title": "SEPLAT ENERGY PLC-ANNOUNCEMENT OF CURRENCY EXCHANGE RATE FOR Q1 2024 INTERIM DIVIDEND CORPORATE ACTIONS MAY 2024",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41384_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_OF_CURRENCY_EXCHANGE_RATE_FOR_Q1_2024_INTERIM_DIVIDEND_CORPORATE_ACTIONS_MAY_2024.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "AIICO",
+    "title": "AIICO INSURANCE PLC.-AIICO INSURANCE PLC- CORPORATE ACTION CORPORATE ACTIONS MAY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41387_AIICO_INSURANCE_PLC.-AIICO_INSURANCE_PLC-_CORPORATE_ACTION_CORPORATE_ACTIONS_MAY_2024.pdf"
   },
   {
     "source": "ngx_api_2024_backfill",
@@ -7988,6 +8042,26 @@
   },
   {
     "source": "abokiforex_listing",
+    "title": "SCM CAPITAL ASSET MANAGEMENT LIMITED-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48075_SCM_CAPITAL_ASSET_MANAGEMENT_LIMITED-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2026.pdf"
+  },
+  {
+    "source": "abokiforex_listing",
+    "title": "THOMAS WYATT NIGERIA PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48076_THOMAS_WYATT_NIGERIA_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf"
+  },
+  {
+    "source": "abokiforex_listing",
+    "title": "ETERNA PLC.- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48077_ETERNA_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf"
+  },
+  {
+    "source": "abokiforex_listing",
+    "title": "SCM CAPITAL ASSET MANAGEMENT LIMITED- QUARTER 5 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48078_SCM_CAPITAL_ASSET_MANAGEMENT_LIMITED-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf"
+  },
+  {
+    "source": "abokiforex_listing",
     "title": "Cutix Plc - Notification of Share Dealing by an Insider",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf"
   },
@@ -8391,6 +8465,12 @@
     "source": "abokiforex_listing",
     "title": "Champion Breweries Annoucement of Resumption of Malolan Sampath",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Champion_Breweries_Annoucement_of_Resumption_of_Malolan_Sampath.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "SEPLAT",
+    "title": "Corporate Announcement on Final and Special Dividends SEPLAT",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Corporate_Announcement_on_Final_and_Special_Dividends_SEPLAT.pdf"
   },
   {
     "source": "ngx_api_2024_backfill",
