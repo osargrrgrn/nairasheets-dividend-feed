@@ -1018,6 +1018,12 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40643_ECOBANK_TRANSNATIONAL_INCORPORATED-NOTIFICATION_ON_RELEASE_OF_AUDITED_FINANCIAL_RESULTS_CORPORATE_ACTIONS_MARCH_2024.pdf"
   },
   {
+    "source": "naijaticker",
+    "ticker": "SFSREIT",
+    "title": "SFS REAL ESTATE INVESTMENT TRUST-CORPORATE ACTIONS CORPORATE ACTIONS MARCH 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40653_SFS_REAL_ESTATE_INVESTMENT_TRUST-CORPORATE_ACTIONS_CORPORATE_ACTIONS_MARCH_2024.pdf"
+  },
+  {
     "source": "ngx_api_2024_backfill",
     "ticker": "ACCESSCORP",
     "title": "ACCESS HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MARCH 2024",
@@ -1432,6 +1438,12 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41159_OKOMU_OIL_PALM_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf"
   },
   {
+    "source": "naijaticker",
+    "ticker": "FCMB",
+    "title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41169_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2024.pdf"
+  },
+  {
     "source": "ngx_api_2024_backfill",
     "ticker": "WEMABANK",
     "title": "WEMA BANK PLC.-NOTICE OF 2023 AGM CORPORATE ACTIONS MAY 2024",
@@ -1630,6 +1642,12 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41376_HONEYWELL_FLOUR_MILL_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_BOARD_RESOLUTION_BOARD_MEETING_(BM)_MAY_2024.pdf"
   },
   {
+    "source": "naijaticker",
+    "ticker": "CUSTODIAN",
+    "title": "CUSTODIAN INVESTMENT PLC-CUSTODIAN INVESTMENT PLC CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41380_CUSTODIAN_INVESTMENT_PLC-CUSTODIAN_INVESTMENT_PLC_CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2024.pdf"
+  },
+  {
     "source": "ngx_api_2024_backfill",
     "ticker": "CUSTODIAN",
     "title": "CUSTODIAN INVESTMENT PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
@@ -1706,6 +1724,12 @@
     "ticker": "UACN",
     "title": "UAC OF NIGERIA PLC.-2024 AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2024",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41483_UAC__OF_NIGERIA_PLC.-2024_AGM_RESOLUTIONS__CORPORATE_ACTIONS_JUNE_2024.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "TOTAL",
+    "title": "TOTALENERGIES MARKETING NIGERIA PLC-CORPORATE ACTION CORPORATE ACTIONS JUNE 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41484_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_JUNE_2024.pdf"
   },
   {
     "source": "ngx_api_2024_backfill",
@@ -2014,6 +2038,12 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41778_TRANSNATIONAL_CORPORATION_PLC-NOTIFICATION_OF_OUTCOME_OF_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2024.pdf"
   },
   {
+    "source": "naijaticker",
+    "ticker": "TRANSCORP",
+    "title": "TRANSNATIONAL CORPORATION PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JULY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41781_TRANSNATIONAL_CORPORATION_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2024.pdf"
+  },
+  {
     "source": "ngx_api_2024_backfill",
     "ticker": "TRANSCORP",
     "title": "TRANSNATIONAL CORPORATION PLC-EARNINGS RELEASE INFORMATION CORPORATE ACTIONS JULY 2024",
@@ -2042,6 +2072,18 @@
     "ticker": "TIP",
     "title": "THE INITIATES PLC-RESOLUTIONS OF THE 25TH ANNUAL GENERAL MEETING OF THE INITIATES PLC CORPORATE ACTIONS JULY 2024",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41832_THE_INITIATES_PLC-RESOLUTIONS_OF_THE_25TH_ANNUAL_GENERAL_MEETING_OF_THE_INITIATES_PLC_CORPORATE_ACTIONS_JULY_2024.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "OKOMUOIL",
+    "title": "OKOMU OIL PALM PLC.-CORPORATE ACTION CORPORATE ACTIONS JULY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41839_OKOMU_OIL_PALM_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_JULY_2024.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "AFRIPRUD",
+    "title": "AFRICA PRUDENTIAL PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JULY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41840_AFRICA_PRUDENTIAL_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2024.pdf"
   },
   {
     "source": "ngx_api_2024_backfill",
@@ -2230,6 +2272,12 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42079_CUTIX_PLC.-CUTIX_PLC_-_RESOLUTION_OF_MEETING_OF_THE_BOARD_OF_DIRECTORS_CORPORATE_ACTIONS_AUGUST_2024.pdf"
   },
   {
+    "source": "naijaticker",
+    "ticker": "ZENITHBANK",
+    "title": "ZENITH BANK PLC-ZENITH BANK PLC CORPORATE ACTION CORPORATE ACTIONS AUGUST 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42085_ZENITH_BANK_PLC-ZENITH_BANK_PLC__CORPORATE_ACTION_CORPORATE_ACTIONS_AUGUST_2024.pdf"
+  },
+  {
     "source": "ngx_api_2024_backfill",
     "ticker": "CUTIX",
     "title": "CUTIX PLC.-ANNUAL GENERAL MEETING RESOLUTION CORPORATE ACTIONS SEPTEMBER 2024",
@@ -2254,6 +2302,12 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42116_GUINNESS_NIG_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2024.pdf"
   },
   {
+    "source": "naijaticker",
+    "ticker": "GTCO",
+    "title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42125_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_SEPTEMBER_2024.pdf"
+  },
+  {
     "source": "ngx_api_2024_backfill",
     "ticker": "PZ",
     "title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2024",
@@ -2276,6 +2330,12 @@
     "ticker": "UNIVINSURE",
     "title": "UNIVERSAL INSURANCE PLC-UNIVERSAL INSURANCE PLC - AGM RESOLUTIONS CORPORATE ACTIONS SEPTEMBER 2024",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42146_UNIVERSAL_INSURANCE_PLC-UNIVERSAL_INSURANCE_PLC_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_SEPTEMBER_2024.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "ACCESSCORP",
+    "title": "ACCESS HOLDINGS PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS SEPTEMBER 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42155_ACCESS_HOLDINGS_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_SEPTEMBER_2024.pdf"
   },
   {
     "source": "ngx_api_2024_backfill",
@@ -2356,6 +2416,12 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42223_UNITED_BANK_FOR_AFRICA_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_SEPTEMBER_2024.pdf"
   },
   {
+    "source": "naijaticker",
+    "ticker": "UBA",
+    "title": "UNITED BANK FOR AFRICA PLC-UBA PLC CORPORATE ACTION - H1 2024 CORPORATE ACTIONS SEPTEMBER 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42226_UNITED_BANK_FOR_AFRICA_PLC-UBA_PLC_CORPORATE_ACTION_-_H1_2024_CORPORATE_ACTIONS_SEPTEMBER_2024.pdf"
+  },
+  {
     "source": "ngx_api_2024_backfill",
     "ticker": "AIICO",
     "title": "AIICO INSURANCE PLC.- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) SEPTEMBER 2024",
@@ -2408,6 +2474,12 @@
     "ticker": "FIRSTHOLDCO",
     "title": "FBN HOLDINGS PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2024",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42249_FBN_HOLDINGS_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2024.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "FIDELITYBK",
+    "title": "FIDELITY BANK PLC-FIDELITY BANK CORPORATE ACTION FOR H1 2024 CORPORATE ACTIONS OCTOBER 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42280_FIDELITY_BANK_PLC-FIDELITY_BANK_CORPORATE_ACTION_FOR_H1_2024_CORPORATE_ACTIONS_OCTOBER_2024.pdf"
   },
   {
     "source": "ngx_api_2024_backfill",
@@ -2542,6 +2614,12 @@
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42433_OKOMU_OIL_PALM_PLC.-OUTCOME_OF_BOARD_MEETING_CORPORATE_ACTIONS_OCTOBER_2024.pdf"
   },
   {
+    "source": "naijaticker",
+    "ticker": "OKOMUOIL",
+    "title": "OKOMU OIL PALM PLC.-CORPORATE ACTIONS CORPORATE ACTIONS OCTOBER 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42437_OKOMU_OIL_PALM_PLC.-CORPORATE_ACTIONS_CORPORATE_ACTIONS_OCTOBER_2024.pdf"
+  },
+  {
     "source": "ngx_api_2024_backfill",
     "ticker": "SEPLAT",
     "title": "SEPLAT ENERGY PLC-NOTICE OF DECISION OF BOARD MEETING SEPLAT ENERGY PLC CORPORATE ACTIONS OCTOBER 2024",
@@ -2630,6 +2708,12 @@
     "ticker": "PZ",
     "title": "P Z CUSSONS NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) NOVEMBER 2024",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42569_P_Z_CUSSONS_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2024.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "AIRTELAFRI",
+    "title": "AIRTEL AFRICA PLC-ANNOUNCEMENT OF INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42573_AIRTEL_AFRICA_PLC-ANNOUNCEMENT_OF_INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2024.pdf"
   },
   {
     "source": "ngx_api_2024_backfill",
@@ -7637,6 +7721,11 @@
     "source": "abokiforex_listing",
     "title": "VITAFOAM NIGERIA PLC-BOARD MEETING CORPORATE ACTIONS OCTOBER 2026",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48066_VITAFOAM_NIGERIA_PLC-BOARD_MEETING_CORPORATE_ACTIONS_OCTOBER_2026.pdf"
+  },
+  {
+    "source": "abokiforex_listing",
+    "title": "FIDSON HEALTHCARE PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48067_FIDSON_HEALTHCARE_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf"
   },
   {
     "source": "abokiforex_listing",
