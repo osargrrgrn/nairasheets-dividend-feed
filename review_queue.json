@@ -1,69 +1,5 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Airte_Africa_Plc_Interim_Dividend_Currency_Exchange_Rates.pdf",
-    "title": "Airte Africa Plc Interim Dividend Currency Exchange Rates",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "3a03e875037edb65",
-      "ticker": "AIRTELAFRI",
-      "company": "Airte Africa Plc Interim Dividend Currency Exchange Rates",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "interim",
-      "qualification_date": "2021-11-12",
-      "payment_date": "2021-12-10",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Airte_Africa_Plc_Interim_Dividend_Currency_Exchange_Rates.pdf",
-      "source_title": "Airte Africa Plc Interim Dividend Currency Exchange Rates",
-      "last_verified": "2026-10-14",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48081_E-TRANZACT_INTERNATIONAL_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2026.pdf",
-    "title": "E-TRANZACT INTERNATIONAL PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "2a2e4b2cad0fa485",
-      "ticker": "",
-      "company": "E-TRANZACT INTERNATIONAL PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.125,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2026-07-06",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48081_E-TRANZACT_INTERNATIONAL_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2026.pdf",
-      "source_title": "E-TRANZACT INTERNATIONAL PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2026",
-      "last_verified": "2026-10-14",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38463_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_10TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2023.pdf",
     "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 10TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2023",
     "reason_codes": [
@@ -130,30 +66,30 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43245_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share"
+      "missing ticker"
     ],
     "parsed": {
-      "event_id": "37ec15fac4a392ab",
-      "ticker": "FBNH",
-      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
+      "event_id": "fb2a38de01817fcc",
+      "ticker": "",
+      "company": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 0.54,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-08-13",
-      "payment_date": "2024-08-23",
+      "dividend_type": "distribution",
+      "qualification_date": "2025-03-06",
+      "payment_date": "2025-03-20",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43245_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
       "last_verified": "2026-10-14",
       "confidence": "review"
     },
@@ -161,30 +97,30 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43246_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share"
+      "missing ticker"
     ],
     "parsed": {
-      "event_id": "9f5f2f5c86abdd8f",
-      "ticker": "FBNH",
-      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
+      "event_id": "9bd7736ef5443ef2",
+      "ticker": "",
+      "company": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 10.0,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-08-13",
-      "payment_date": "2024-09-04",
+      "dividend_type": "distribution",
+      "qualification_date": "2025-03-06",
+      "payment_date": "2025-03-20",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
-      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43246_VETIVA_FUND_MANAGERS_LIMITED-2024_FY_DISTRIBUTION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "VETIVA FUND MANAGERS LIMITED-2024 FY DISTRIBUTION CORPORATE ACTIONS MARCH 2025",
       "last_verified": "2026-10-14",
       "confidence": "review"
     },
@@ -192,32 +128,63 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42285_GUINNESS_NIG_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
-    "title": "GUINNESS NIG PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43250_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "2331d01c778fb63d",
+      "ticker": "",
+      "company": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 0.6,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2025-05-09",
+      "payment_date": "2025-05-21",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43250_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CORPORATE ACTIONS MARCH 2025",
+      "last_verified": "2026-10-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43261_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CLARIFICATION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
+    "reason_codes": [
+      "ticker_unresolved",
       "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share",
+      "missing ticker",
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "e1ef0e78d6b8fece",
-      "ticker": "GUINNESS",
-      "company": "GUINNESS NIG PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
+      "event_id": "b01611f6bfc05e3a",
+      "ticker": "",
+      "company": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
+      "dividend_per_share": 0.06,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-10-03",
+      "dividend_type": "final",
+      "qualification_date": "2025-05-09",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42285_GUINNESS_NIG_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
-      "source_title": "GUINNESS NIG PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43261_CHAMPION_BREW._PLC.-FINAL_DIVIDEND_CLARIFICATION_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "CHAMPION BREW. PLC.-FINAL DIVIDEND CLARIFICATION CORPORATE ACTIONS MARCH 2025",
       "last_verified": "2026-10-14",
       "confidence": "review"
     },
@@ -225,30 +192,133 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42355_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
-    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
+    "title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
     "reason_codes": [
-      "dividend_amount_unresolved",
+      "ticker_unresolved",
+      "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing/invalid dividend per share"
+      "missing ticker",
+      "missing payment date"
     ],
     "parsed": {
-      "event_id": "747d6a6ccc0687e3",
-      "ticker": "FBNH",
-      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
-      "dividend_per_share": 0.0,
+      "event_id": "9397533a3d9d1240",
+      "ticker": "",
+      "company": "E-TRANZACT INTERNATIONAL PLC",
+      "dividend_per_share": 0.125,
       "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2024-08-13",
-      "payment_date": "2024-11-15",
+      "dividend_type": "final",
+      "qualification_date": "2025-07-07",
+      "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42355_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
-      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43550_E-TRANZACT_INTERNATIONAL_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2025.pdf",
+      "source_title": "E-TRANZACT INTERNATIONAL PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS MARCH 2025",
+      "last_verified": "2026-10-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43933_MAY_AND_BAKER-CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+    "title": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker"
+    ],
+    "parsed": {
+      "event_id": "fe7ac9da66f5709b",
+      "ticker": "",
+      "company": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "dividend_per_share": 0.4,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2025-05-20",
+      "payment_date": "2025-06-05",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/43933_MAY_AND_BAKER-CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf",
+      "source_title": "MAY AND BAKER-CORPORATE ANNOUNCEMENT CORPORATE ACTIONS APRIL 2025",
+      "last_verified": "2026-10-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44115_UPDC_PLC-NOTIFICATION_OF_OUTCOME_OF_AGM_CORPORATE_ACTIONS_MAY_2025.pdf",
+    "title": "UPDC PLC-NOTIFICATION OF OUTCOME OF AGM CORPORATE ACTIONS MAY 2025",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "4a8f705432cecb1f",
+      "ticker": "UPDC",
+      "company": "UPDC PLC-NOTIFICATION OF OUTCOME OF AGM CORPORATE ACTIONS MAY 2025",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "2025-05-15",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44115_UPDC_PLC-NOTIFICATION_OF_OUTCOME_OF_AGM_CORPORATE_ACTIONS_MAY_2025.pdf",
+      "source_title": "UPDC PLC-NOTIFICATION OF OUTCOME OF AGM CORPORATE ACTIONS MAY 2025",
+      "last_verified": "2026-10-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44249_MAY_AND_BAKER-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2025.pdf",
+    "title": "MAY AND BAKER-AGM RESOLUTION CORPORATE ACTIONS JUNE 2025",
+    "reason_codes": [
+      "ticker_unresolved",
+      "qualification_date_missing",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing ticker",
+      "missing qualification date",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "6d9999bb6149817f",
+      "ticker": "",
+      "company": "MAY AND BAKER",
+      "dividend_per_share": 0.4,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/44249_MAY_AND_BAKER-AGM_RESOLUTION_CORPORATE_ACTIONS_JUNE_2025.pdf",
+      "source_title": "MAY AND BAKER-AGM RESOLUTION CORPORATE ACTIONS JUNE 2025",
       "last_verified": "2026-10-14",
       "confidence": "review"
     },
