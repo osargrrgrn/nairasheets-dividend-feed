@@ -1,62 +1,96 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Corporate_Announcement_on_Final_and_Special_Dividends_SEPLAT.pdf",
-    "title": "Corporate Announcement on Final and Special Dividends SEPLAT",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38570_NESTLE_NIGERIA_PLC.-RESOLUTIONS_PASSED_AT_THE_54TH_AGM_OF_NESTLE_NIGERIA_PLC_CORPORATE_ACTIONS_MAY_2023.pdf",
+    "title": "NESTLE NIGERIA PLC.-RESOLUTIONS PASSED AT THE 54TH AGM OF NESTLE NIGERIA PLC CORPORATE ACTIONS MAY 2023",
     "reason_codes": [
       "dividend_amount_unresolved",
+      "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
       "missing/invalid dividend per share",
-      "payment date before qualification date"
+      "missing payment date"
     ],
     "parsed": {
-      "event_id": "6cf1d339eb44444b",
-      "ticker": "SEPLAT",
-      "company": "Corporate Announcement on Final and Special Dividends SEPLAT",
+      "event_id": "234ce0b29c86a782",
+      "ticker": "NESTLE",
+      "company": "NESTLE NIGERIA PLC.",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "final+special",
-      "qualification_date": "2023-04-18",
-      "payment_date": "2023-02-28",
+      "dividend_type": "interim",
+      "qualification_date": "2023-04-21",
+      "payment_date": "",
       "closure_date": "",
-      "announcement_date": "2023-02-28",
+      "announcement_date": "2023-05-17",
       "registrar": "",
-      "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Corporate_Announcement_on_Final_and_Special_Dividends_SEPLAT.pdf",
-      "source_title": "Corporate Announcement on Final and Special Dividends SEPLAT",
-      "last_verified": "2026-10-13",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38570_NESTLE_NIGERIA_PLC.-RESOLUTIONS_PASSED_AT_THE_54TH_AGM_OF_NESTLE_NIGERIA_PLC_CORPORATE_ACTIONS_MAY_2023.pdf",
+      "source_title": "NESTLE NIGERIA PLC.-RESOLUTIONS PASSED AT THE 54TH AGM OF NESTLE NIGERIA PLC CORPORATE ACTIONS MAY 2023",
+      "last_verified": "2026-10-14",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48075_SCM_CAPITAL_ASSET_MANAGEMENT_LIMITED-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-    "title": "SCM CAPITAL ASSET MANAGEMENT LIMITED-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2026",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38463_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_10TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2023.pdf",
+    "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 10TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2023",
     "reason_codes": [
-      "ticker_unresolved",
+      "dividend_amount_unresolved",
+      "payment_date_missing",
       "validation_failed"
     ],
     "errors": [
-      "missing ticker"
+      "missing/invalid dividend per share",
+      "missing payment date"
     ],
     "parsed": {
-      "event_id": "e16c1a56e4bbe2a7",
-      "ticker": "",
-      "company": "SCM CAPITAL ASSET MANAGEMENT LIMITED",
-      "dividend_per_share": 383.0,
+      "event_id": "b8f2c76eea125b32",
+      "ticker": "FCMB",
+      "company": "FCMB GROUP PLC",
+      "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "distribution",
-      "qualification_date": "2026-10-16",
-      "payment_date": "2026-10-21",
-      "closure_date": "2026-10-16",
+      "dividend_type": "dividend",
+      "qualification_date": "2023-04-13",
+      "payment_date": "",
+      "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48075_SCM_CAPITAL_ASSET_MANAGEMENT_LIMITED-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "source_title": "SCM CAPITAL ASSET MANAGEMENT LIMITED-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2026",
-      "last_verified": "2026-10-13",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38463_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_10TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2023.pdf",
+      "source_title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 10TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2023",
+      "last_verified": "2026-10-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37800_BUA_CEMENT_PLC-DIVIDEND_DECLARATION__CORPORATE_ACTIONS_MARCH_2023.pdf",
+    "title": "BUA CEMENT PLC-DIVIDEND DECLARATION CORPORATE ACTIONS MARCH 2023",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "9bd4cbf5f03c6ab3",
+      "ticker": "BUACEMENT",
+      "company": "BUA CEMENT PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2023-08-11",
+      "payment_date": "2023-08-24",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37800_BUA_CEMENT_PLC-DIVIDEND_DECLARATION__CORPORATE_ACTIONS_MARCH_2023.pdf",
+      "source_title": "BUA CEMENT PLC-DIVIDEND DECLARATION CORPORATE ACTIONS MARCH 2023",
+      "last_verified": "2026-10-14",
       "confidence": "review"
     },
     "classification": "review",
@@ -87,15 +121,15 @@
       "status": "declared",
       "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39280_FBN_HOLDINGS_PLC-FBN_HOLDINGS_PLC_-_RESOLUTIONS_PASSED_AT_AGM_CORPORATE_ACTIONS_AUGUST_2023.pdf",
       "source_title": "FBN HOLDINGS PLC-FBN HOLDINGS PLC - RESOLUTIONS PASSED AT AGM CORPORATE ACTIONS AUGUST 2023",
-      "last_verified": "2026-10-13",
+      "last_verified": "2026-10-14",
       "confidence": "review"
     },
     "classification": "review",
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40821_NIGERIAN_BREWERIES_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
-    "title": "NIGERIAN BREWERIES PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41109_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+    "title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -106,21 +140,151 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "4e62979171813ac1",
-      "ticker": "NB",
-      "company": "NIGERIAN BREWERIES PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "event_id": "4dbc8a519ae1cac7",
+      "ticker": "CADBURY",
+      "company": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "2024-04-02",
+      "qualification_date": "2024-03-28",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/40821_NIGERIAN_BREWERIES_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
-      "source_title": "NIGERIAN BREWERIES PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
-      "last_verified": "2026-10-13",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41109_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
+      "source_title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+      "last_verified": "2026-10-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41146_FCMB_GROUP_PLC-FCMBGROUP_PLC_-_NOTICE_OF_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2024.pdf",
+    "title": "FCMB GROUP PLC-FCMBGROUP PLC - NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "5b9c43ae57512d83",
+      "ticker": "FCMB",
+      "company": "FCMB GROUP PLC-FCMBGROUP PLC - NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2024",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-05-13",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41146_FCMB_GROUP_PLC-FCMBGROUP_PLC_-_NOTICE_OF_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2024.pdf",
+      "source_title": "FCMB GROUP PLC-FCMBGROUP PLC - NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2024",
+      "last_verified": "2026-10-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41169_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2024.pdf",
+    "title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "5b9a16f21a857a23",
+      "ticker": "FCMB",
+      "company": "FCMB GROUP PLC-FCMB GROUP PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "final",
+      "qualification_date": "2024-05-13",
+      "payment_date": "2024-05-24",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41169_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2024.pdf",
+      "source_title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2024",
+      "last_verified": "2026-10-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41315_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
+    "title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "4dbc8a519ae1cac7",
+      "ticker": "CADBURY",
+      "company": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-03-28",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41315_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
+      "source_title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
+      "last_verified": "2026-10-14",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41323_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_11TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2024.pdf",
+    "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 11TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "payment_date_missing",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share",
+      "missing payment date"
+    ],
+    "parsed": {
+      "event_id": "d5bc987b4ce6ea6c",
+      "ticker": "FCMB",
+      "company": "FCMB GROUP PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-05-13",
+      "payment_date": "",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41323_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_11TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2024.pdf",
+      "source_title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 11TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2024",
+      "last_verified": "2026-10-14",
       "confidence": "review"
     },
     "classification": "review",

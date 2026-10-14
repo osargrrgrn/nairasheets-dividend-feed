@@ -4,11 +4,8 @@
     "status": 200,
     "detail_pages_found": 87,
     "detail_pages_completed": 87,
-    "new_pdfs": 4,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='abokiforex.app', port=443): Read timed out. (read timeout=9)\"))",
-      "ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='abokiforex.app', port=443): Read timed out.\"))"
-    ]
+    "new_pdfs": 0,
+    "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
@@ -28,127 +25,141 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 423,
-    "already_known": 271,
-    "filtered_before_parser": 142,
-    "eligible_candidates": 10,
-    "new_pdfs": 10,
+    "pdfs_seen": 837,
+    "already_known": 520,
+    "filtered_before_parser": 297,
+    "eligible_candidates": 20,
+    "new_pdfs": 20,
     "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
       "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
       "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
       "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
       "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
     ],
-    "benchmark_candidates": 1
+    "benchmark_candidates": 0
   },
-  "total_new_pdfs": 14,
-  "elapsed_seconds": 140.16,
+  "total_new_pdfs": 20,
+  "elapsed_seconds": 54.93,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48075_SCM_CAPITAL_ASSET_MANAGEMENT_LIMITED-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "SCM CAPITAL ASSET MANAGEMENT LIMITED-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48076_THOMAS_WYATT_NIGERIA_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
-      "title": "THOMAS WYATT NIGERIA PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48077_ETERNA_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
-      "title": "ETERNA PLC.- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48078_SCM_CAPITAL_ASSET_MANAGEMENT_LIMITED-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "SCM CAPITAL ASSET MANAGEMENT LIMITED- QUARTER 5 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38916_RED_STAR_EXPRESS_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_JULY_2023.pdf",
-      "title": "RED STAR EXPRESS PLC-CORPORATE ACTION CORPORATE ACTIONS JULY 2023",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37800_BUA_CEMENT_PLC-DIVIDEND_DECLARATION__CORPORATE_ACTIONS_MARCH_2023.pdf",
+      "title": "BUA CEMENT PLC-DIVIDEND DECLARATION CORPORATE ACTIONS MARCH 2023",
       "source": "naijaticker",
-      "ticker": "REDSTAREX"
+      "ticker": "BUACEMENT"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37676_NIGERIAN_BREWERIES_PLC.-FINAL_DIVIDEND_NOTIFICATION_CORPORATE_ACTIONS_MARCH_2023.pdf",
-      "title": "NIGERIAN BREWERIES PLC.-FINAL DIVIDEND NOTIFICATION CORPORATE ACTIONS MARCH 2023",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37949_ECOBANK_TRANSNATIONAL_INCORPORATED-DIVIDEND_ANNOUNCEMENT_2022_CORPORATE_ACTIONS_MARCH_2023.pdf",
+      "title": "ECOBANK TRANSNATIONAL INCORPORATED-DIVIDEND ANNOUNCEMENT 2022 CORPORATE ACTIONS MARCH 2023",
       "source": "naijaticker",
-      "ticker": "NB"
+      "ticker": "ETI"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37685_DANGOTE_CEMENT_PLC-CORPORATE_ACTION_NOTIFICATION_-_DIVIDEND_PAYMENT_CORPORATE_ACTIONS_MARCH_2023.pdf",
-      "title": "DANGOTE CEMENT PLC-CORPORATE ACTION NOTIFICATION - DIVIDEND PAYMENT CORPORATE ACTIONS MARCH 2023",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38306_BUA_FOODS_PLC-BUA_FOODS_PLC-_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2023.pdf",
+      "title": "BUA FOODS PLC-BUA FOODS PLC- DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2023",
       "source": "naijaticker",
-      "ticker": "DANGCEM"
+      "ticker": "BUAFOODS"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38127_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_DIVIDEND_ANNOUNCEMENT_APRIL_2023_CORPORATE_ACTIONS_APRIL_2023.pdf",
-      "title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC DIVIDEND ANNOUNCEMENT APRIL 2023 CORPORATE ACTIONS APRIL 2023",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37898_UNITED_CAPITAL_PLC-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MARCH_2023.pdf",
+      "title": "UNITED CAPITAL PLC-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS MARCH 2023",
       "source": "naijaticker",
-      "ticker": "UNILEVER"
+      "ticker": "UCAP"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39115_NIGERIAN_EXCHANGE_GROUP_PLC-CORPORATE_ACTION_ANNOUNCEMENT_-_INTERIM_DIVIDEND_CORPORATE_ACTIONS_JULY_2023.pdf",
-      "title": "NIGERIAN EXCHANGE GROUP PLC-CORPORATE ACTION ANNOUNCEMENT - INTERIM DIVIDEND CORPORATE ACTIONS JULY 2023",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38152_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2023.pdf",
+      "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2023",
       "source": "naijaticker",
-      "ticker": "NGXGROUP"
+      "ticker": "TRANSCOHOT"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Corporate_Announcement_on_Final_and_Special_Dividends_SEPLAT.pdf",
-      "title": "Corporate Announcement on Final and Special Dividends SEPLAT",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38230_DANGOTE_SUGAR_REFINERY_PLC-17TH_AGM_RESOLUTIONS_FOR_DANGOTE_SUGAR_REFINERY_PLC__CORPORATE_ACTIONS_APRIL_2023.pdf",
+      "title": "DANGOTE SUGAR REFINERY PLC-17TH AGM RESOLUTIONS FOR DANGOTE SUGAR REFINERY PLC CORPORATE ACTIONS APRIL 2023",
       "source": "naijaticker",
-      "ticker": "SEPLAT"
+      "ticker": "DANGSUGAR"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37731_NASCON_ALLIED_INDUSTRIES_PLC-CORPORATE_ACTIONS_NOTICE_CORPORATE_ACTIONS_MARCH_2023.pdf",
-      "title": "NASCON ALLIED INDUSTRIES PLC-CORPORATE ACTIONS NOTICE CORPORATE ACTIONS MARCH 2023",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38463_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_10TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2023.pdf",
+      "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 10TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2023",
       "source": "naijaticker",
-      "ticker": "NASCON"
+      "ticker": "FCMB"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38049_UAC__OF_NIGERIA_PLC.-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2023.pdf",
-      "title": "UAC OF NIGERIA PLC.-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MARCH 2023",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38570_NESTLE_NIGERIA_PLC.-RESOLUTIONS_PASSED_AT_THE_54TH_AGM_OF_NESTLE_NIGERIA_PLC_CORPORATE_ACTIONS_MAY_2023.pdf",
+      "title": "NESTLE NIGERIA PLC.-RESOLUTIONS PASSED AT THE 54TH AGM OF NESTLE NIGERIA PLC CORPORATE ACTIONS MAY 2023",
       "source": "naijaticker",
-      "ticker": "UACN"
+      "ticker": "NESTLE"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38275_ACCESS_HOLDINGS_PLC-CORPORATE_ACTION_ANNOUNCEMENT_FOR_ACCESS_HOLDINGS_PLC__CORPORATE_ACTIONS_APRIL_2023.pdf",
-      "title": "ACCESS HOLDINGS PLC-CORPORATE ACTION ANNOUNCEMENT FOR ACCESS HOLDINGS PLC CORPORATE ACTIONS APRIL 2023",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38732_TOTALENERGIES_MARKETING_NIGERIA_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2023.pdf",
+      "title": "TOTALENERGIES MARKETING NIGERIA PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2023",
       "source": "naijaticker",
-      "ticker": "ACCESSCORP"
+      "ticker": "TOTAL"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41387_AIICO_INSURANCE_PLC.-AIICO_INSURANCE_PLC-_CORPORATE_ACTION_CORPORATE_ACTIONS_MAY_2024.pdf",
-      "title": "AIICO INSURANCE PLC.-AIICO INSURANCE PLC- CORPORATE ACTION CORPORATE ACTIONS MAY 2024",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37838_STANBIC_IBTC__HOLDINGS_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2023.pdf",
+      "title": "STANBIC IBTC HOLDINGS PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MARCH 2023",
       "source": "naijaticker",
-      "ticker": "AIICO"
+      "ticker": "STANBIC"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37943_SFS_REAL_ESTATE_INVESTMENT_TRUST-CORPORATE_ACTIONS_CORPORATE_ACTIONS_MARCH_2023.pdf",
+      "title": "SFS REAL ESTATE INVESTMENT TRUST-CORPORATE ACTIONS CORPORATE ACTIONS MARCH 2023",
+      "source": "naijaticker",
+      "ticker": "SFSREIT"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38020_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2023.pdf",
+      "title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MARCH 2023",
+      "source": "naijaticker",
+      "ticker": "UBA"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38038_BETA_GLASS_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2023.pdf",
+      "title": "BETA GLASS PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MARCH 2023",
+      "source": "naijaticker",
+      "ticker": "BETAGLAS"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38094_JULIUS_BERGER_NIGERIA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2023.pdf",
+      "title": "JULIUS BERGER NIGERIA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2023",
+      "source": "naijaticker",
+      "ticker": "JBERGER"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38202_DANGOTE_SUGAR_REFINERY_PLC-CORPORATE_ACTIUONS_ANNOUNCEMENT_-_DANGOTE_SUGAR_REFINERY_PLC_CORPORATE_ACTIONS_APRIL_2023.pdf",
+      "title": "DANGOTE SUGAR REFINERY PLC-CORPORATE ACTIUONS ANNOUNCEMENT - DANGOTE SUGAR REFINERY PLC CORPORATE ACTIONS APRIL 2023",
+      "source": "naijaticker",
+      "ticker": "DANGSUGAR"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38243_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2023.pdf",
+      "title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2023",
+      "source": "naijaticker",
+      "ticker": "GTCO"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39096_CUTIX_PLC.-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2023.pdf",
+      "title": "CUTIX PLC.-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JULY 2023",
+      "source": "naijaticker",
+      "ticker": "CUTIX"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39787_OKOMU_OIL_PALM_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_OCTOBER_2023.pdf",
+      "title": "OKOMU OIL PALM PLC.-CORPORATE ACTION CORPORATE ACTIONS OCTOBER 2023",
+      "source": "naijaticker",
+      "ticker": "OKOMUOIL"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41837_CUTIX_PLC.-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2024.pdf",
+      "title": "CUTIX PLC.-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JULY 2024",
+      "source": "naijaticker",
+      "ticker": "CUTIX"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Nestle_Nigeria_Plc_Corporate_Actions_Announcement.pdf",
+      "title": "Nestle Nigeria Plc Corporate Actions Announcement",
+      "source": "naijaticker",
+      "ticker": "NESTLE"
     }
   ]
 }

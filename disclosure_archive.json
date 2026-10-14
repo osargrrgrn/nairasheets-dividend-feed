@@ -562,9 +562,57 @@
   },
   {
     "source": "naijaticker",
+    "ticker": "BUACEMENT",
+    "title": "BUA CEMENT PLC-DIVIDEND DECLARATION CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37800_BUA_CEMENT_PLC-DIVIDEND_DECLARATION__CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "STANBIC",
+    "title": "STANBIC IBTC HOLDINGS PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37838_STANBIC_IBTC__HOLDINGS_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "UCAP",
+    "title": "UNITED CAPITAL PLC-RESOLUTIONS PASSED AT THE ANNUAL GENERAL MEETING CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37898_UNITED_CAPITAL_PLC-RESOLUTIONS_PASSED_AT_THE_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "SFSREIT",
+    "title": "SFS REAL ESTATE INVESTMENT TRUST-CORPORATE ACTIONS CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37943_SFS_REAL_ESTATE_INVESTMENT_TRUST-CORPORATE_ACTIONS_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "ETI",
+    "title": "ECOBANK TRANSNATIONAL INCORPORATED-DIVIDEND ANNOUNCEMENT 2022 CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/37949_ECOBANK_TRANSNATIONAL_INCORPORATED-DIVIDEND_ANNOUNCEMENT_2022_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "UBA",
+    "title": "UNITED BANK FOR AFRICA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38020_UNITED_BANK_FOR_AFRICA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "BETAGLAS",
+    "title": "BETA GLASS PLC-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS MARCH 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38038_BETA_GLASS_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
     "ticker": "UACN",
     "title": "UAC OF NIGERIA PLC.-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MARCH 2023",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38049_UAC__OF_NIGERIA_PLC.-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MARCH_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "JBERGER",
+    "title": "JULIUS BERGER NIGERIA PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS APRIL 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38094_JULIUS_BERGER_NIGERIA_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2023.pdf"
   },
   {
     "source": "naijaticker",
@@ -574,9 +622,45 @@
   },
   {
     "source": "naijaticker",
+    "ticker": "TRANSCOHOT",
+    "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - AGM RESOLUTIONS CORPORATE ACTIONS APRIL 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38152_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "DANGSUGAR",
+    "title": "DANGOTE SUGAR REFINERY PLC-CORPORATE ACTIUONS ANNOUNCEMENT - DANGOTE SUGAR REFINERY PLC CORPORATE ACTIONS APRIL 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38202_DANGOTE_SUGAR_REFINERY_PLC-CORPORATE_ACTIUONS_ANNOUNCEMENT_-_DANGOTE_SUGAR_REFINERY_PLC_CORPORATE_ACTIONS_APRIL_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "DANGSUGAR",
+    "title": "DANGOTE SUGAR REFINERY PLC-17TH AGM RESOLUTIONS FOR DANGOTE SUGAR REFINERY PLC CORPORATE ACTIONS APRIL 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38230_DANGOTE_SUGAR_REFINERY_PLC-17TH_AGM_RESOLUTIONS_FOR_DANGOTE_SUGAR_REFINERY_PLC__CORPORATE_ACTIONS_APRIL_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "GTCO",
+    "title": "GUARANTY TRUST HOLDING COMPANY PLC-GTCO-CORPORATE ACTIONS ANNOUNCEMENT CORPORATE ACTIONS APRIL 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38243_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO-CORPORATE_ACTIONS_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
     "ticker": "ACCESSCORP",
     "title": "ACCESS HOLDINGS PLC-CORPORATE ACTION ANNOUNCEMENT FOR ACCESS HOLDINGS PLC CORPORATE ACTIONS APRIL 2023",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38275_ACCESS_HOLDINGS_PLC-CORPORATE_ACTION_ANNOUNCEMENT_FOR_ACCESS_HOLDINGS_PLC__CORPORATE_ACTIONS_APRIL_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "BUAFOODS",
+    "title": "BUA FOODS PLC-BUA FOODS PLC- DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS APRIL 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38306_BUA_FOODS_PLC-BUA_FOODS_PLC-_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "FCMB",
+    "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 10TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38463_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_10TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2023.pdf"
   },
   {
     "source": "naijaticker",
@@ -598,6 +682,12 @@
   },
   {
     "source": "naijaticker",
+    "ticker": "NESTLE",
+    "title": "NESTLE NIGERIA PLC.-RESOLUTIONS PASSED AT THE 54TH AGM OF NESTLE NIGERIA PLC CORPORATE ACTIONS MAY 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38570_NESTLE_NIGERIA_PLC.-RESOLUTIONS_PASSED_AT_THE_54TH_AGM_OF_NESTLE_NIGERIA_PLC_CORPORATE_ACTIONS_MAY_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
     "ticker": "NEM",
     "title": "NEM INSURANCE PLC.-NEM INSURANCE PLC - AGM RESOLUTIONS CORPORATE ACTIONS MAY 2023",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38575_NEM_INSURANCE_PLC.-NEM_INSURANCE_PLC_-_AGM_RESOLUTIONS_CORPORATE_ACTIONS_MAY_2023.pdf"
@@ -613,6 +703,12 @@
     "ticker": "WEMABANK",
     "title": "WEMA BANK PLC.-RESOLUTIONS PASSED AT 2022 AGM CORPORATE ACTIONS JUNE 2023",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38724_WEMA_BANK_PLC.-RESOLUTIONS_PASSED_AT_2022_AGM_CORPORATE_ACTIONS_JUNE_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "TOTAL",
+    "title": "TOTALENERGIES MARKETING NIGERIA PLC-AGM RESOLUTIONS CORPORATE ACTIONS JUNE 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38732_TOTALENERGIES_MARKETING_NIGERIA_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2023.pdf"
   },
   {
     "source": "naijaticker",
@@ -668,6 +764,12 @@
     "ticker": "BUACEMENT",
     "title": "BUA CEMENT PLC-DIVIDEND ANNOUNCEMENT CORPORATE ACTIONS JULY 2023",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39004_BUA_CEMENT_PLC-DIVIDEND_ANNOUNCEMENT__CORPORATE_ACTIONS_JULY_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "CUTIX",
+    "title": "CUTIX PLC.-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JULY 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39096_CUTIX_PLC.-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2023.pdf"
   },
   {
     "source": "naijaticker",
@@ -776,6 +878,12 @@
     "ticker": "PRESCO",
     "title": "PRESCO PLC-CORPORATE ACTIONS ANNOUNCEMENT ON PAYMENT OP INTERIM DIVIDEND CORPORATE ACTIONS OCTOBER 2023",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39761_PRESCO_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT_ON_PAYMENT_OP_INTERIM_DIVIDEND_CORPORATE_ACTIONS_OCTOBER_2023.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "OKOMUOIL",
+    "title": "OKOMU OIL PALM PLC.-CORPORATE ACTION CORPORATE ACTIONS OCTOBER 2023",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39787_OKOMU_OIL_PALM_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_OCTOBER_2023.pdf"
   },
   {
     "source": "naijaticker",
@@ -2360,6 +2468,12 @@
     "ticker": "TIP",
     "title": "THE INITIATES PLC-RESOLUTIONS OF THE 25TH ANNUAL GENERAL MEETING OF THE INITIATES PLC CORPORATE ACTIONS JULY 2024",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41832_THE_INITIATES_PLC-RESOLUTIONS_OF_THE_25TH_ANNUAL_GENERAL_MEETING_OF_THE_INITIATES_PLC_CORPORATE_ACTIONS_JULY_2024.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "CUTIX",
+    "title": "CUTIX PLC.-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS JULY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41837_CUTIX_PLC.-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2024.pdf"
   },
   {
     "source": "naijaticker",
@@ -8707,6 +8821,12 @@
     "source": "abokiforex_listing",
     "title": "NREIT Q2 2026 FinancialStatementFull",
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NREIT_Q2_2026_FinancialStatementFull.pdf"
+  },
+  {
+    "source": "naijaticker",
+    "ticker": "NESTLE",
+    "title": "Nestle Nigeria Plc Corporate Actions Announcement",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Nestle_Nigeria_Plc_Corporate_Actions_Announcement.pdf"
   },
   {
     "source": "naijaticker",
