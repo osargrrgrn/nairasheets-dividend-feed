@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 118,
+  "historical_recheck_cursor": 158,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -108,6 +108,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/215_Notification_of_Share_Dealing_by_Insider-_Johnson_Oyewo_.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/215_Notification_of_Share_Dealing_by_Insider-_Moses_Oyerinde.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/215_Notification_of_Share_Dealing_by_Insider-_Olayinka_Jimoh.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/236_Mr._Sehinde_Adenagbe_-_Share_Dealing_Notification.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/236_Share_Dealing_Notification_-_Olayinka_Sodipe.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/236_Share_Dealing_Notification_-_Tolulope_Ajayi.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/236_Share_Dealing_Notification_-_Zayyad_Shittu.pdf": "not_dividend",
@@ -1559,6 +1560,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48086_ABC_TRANSPORT_PLC-NOTICE_OF_EMERGENCY_BOARD_MEETING_CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48089_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_NOTIFICATION_OF_OUTCOME_OF_BOARD_MEETING__CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48090_SFS_REAL_ESTATE_INVESTMENT_TRUST-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48095_TRANSCORP_HOTELS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
