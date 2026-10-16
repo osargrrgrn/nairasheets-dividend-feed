@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 88,
     "detail_pages_completed": 88,
-    "new_pdfs": 2,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -36,18 +36,7 @@
     ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 2,
-  "elapsed_seconds": 50.69,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48084_MUTUAL_BENEFITS_ASSURANCE_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
-      "title": "MUTUAL BENEFITS ASSURANCE PLC.- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48085_DANGOTE_CEMENT_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
-      "title": "DANGOTE CEMENT PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 52.04,
+  "results": []
 }
