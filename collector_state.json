@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 119,
+  "historical_recheck_cursor": 159,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -702,7 +702,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43968_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_12TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_APRIL_2025.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43975_MEYER_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_APRIL_2025.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43987_LIVINGTRUST_MORTGAGE_BANK_PLC-LIVINGTRUST_-_2024_FY_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf": "accepted",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/43990_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/43990_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf": "review",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43996_DANGOTE_SUGAR_REFINERY_PLC-OUTCOME_OF_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_APRIL_2025.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44005_ABBEY_MORTGAGE_BANK_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44016_FIDELITY_BANK_PLC-FIDELITY_BANK_37TH_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf": "pending",
