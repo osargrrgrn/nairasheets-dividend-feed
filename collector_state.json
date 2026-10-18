@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 39,
+  "historical_recheck_cursor": 79,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -411,7 +411,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41461_PRESCO_PLC-2023_ANNUAL_GENERAL_MEETING_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2024.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41476_CUTIX_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_JUNE_2024.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41483_UAC__OF_NIGERIA_PLC.-2024_AGM_RESOLUTIONS__CORPORATE_ACTIONS_JUNE_2024.pdf": "pending",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/41484_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_JUNE_2024.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/41484_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_JUNE_2024.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41488_JAPAUL_GOLD_AND_VENTURES_PLC-2024_AGM_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2024.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41489_JULIUS_BERGER_NIGERIA_PLC-54TH_ANNUAL_GENERAL_MEETING_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2024.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41495_CUSTODIAN_INVESTMENT_PLC-CUSTODIAN_INVESTMENT_PLC_ANNUAL_GENERAL_MEETING_RESOLUTIONS_CORPORATE_ACTIONS_JUNE_2024.pdf": "accepted",
@@ -445,6 +445,10 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41600_BUA_FOODS_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_JULY_2024.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41601_NEM_INSURANCE_PLC.-AGM_RESOLUTIONS_CORPORATE_ACTIONS_JULY_2024.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41608_ECOBANK_TRANSNATIONAL_INCORPORATED-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_JULY_2024.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/41615_CORNERSTONE_INSURANCE_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JULY_2024.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/41620_OKOMU_OIL_PALM_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_JULY_2024.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/41623_THE_INITIATES_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JULY_2024.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/41624_VFD_GROUP_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_JULY_2024.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41625_THE_INITIATES_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_JULY_2024.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41632_DANGOTE_CEMENT_PLC-NOTICE_OF_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2024.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41633_VFD_GROUP_PLC-NOTICE_OF_EMERGENCY_BOARD_MEETING_OUTCOME__CORPORATE_ACTIONS_JULY_2024.pdf": "not_dividend",
