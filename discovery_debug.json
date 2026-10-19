@@ -4,15 +4,15 @@
     "status": 200,
     "detail_pages_found": 87,
     "detail_pages_completed": 87,
-    "new_pdfs": 5,
+    "new_pdfs": 3,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5887,
-    "dividend_like": 543,
-    "already_known": 542,
+    "files_seen": 5890,
+    "dividend_like": 545,
+    "already_known": 544,
     "irrelevant": 1,
     "new_pdfs": 0,
     "errors": []
@@ -25,40 +25,32 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 858,
-    "already_known": 550,
+    "pdfs_seen": 859,
+    "already_known": 551,
     "filtered_before_parser": 308,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [],
+    "errors": [
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
+    ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 5,
-  "elapsed_seconds": 37.11,
+  "total_new_pdfs": 3,
+  "elapsed_seconds": 42.44,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48087_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
-      "title": "CAVERTON OFFSHORE SUPPORT GROUP PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48098_VERITAS_KAPITAL_ASSURANCE_PLC-RESOLUTIONS_AT_THE_49TH_ANNUAL_GENERAL_MEETING_-_VKAP_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "VERITAS KAPITAL ASSURANCE PLC-RESOLUTIONS AT THE 49TH ANNUAL GENERAL MEETING - VKAP CORPORATE ACTIONS OCTOBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48091_SFS_REAL_ESTATE_INVESTMENT_TRUST-SFS_REIT_KEY_PERFORMANCE_METRICS_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "SFS REAL ESTATE INVESTMENT TRUST-SFS REIT KEY PERFORMANCE METRICS CORPORATE ACTIONS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48100_FTN_COCOA_PROCESSORS_PLC-AGM_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "FTN COCOA PROCESSORS PLC-AGM RESOLUTION CORPORATE ACTIONS OCTOBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48093_FORTIS_GLOBAL_INSURANCE_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
-      "title": "FORTIS GLOBAL INSURANCE PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48094_CORONATION_INSURANCE_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
-      "title": "CORONATION INSURANCE PLC- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48096_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_PRESS_RELEASE_ON_Q3_2026_FINANCIALS__CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "TRANSCORP HOTELS PLC-TRANSCORP HOTELS PLC - PRESS RELEASE ON Q3 2026 FINANCIALS CORPORATE ACTIONS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48101_LASACO_ASSURANCE_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "LASACO ASSURANCE PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
       "source": "abokiforex_listing"
     }
   ]
