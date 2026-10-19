@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 239,
+  "historical_recheck_cursor": 3,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1562,9 +1562,14 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48084_MUTUAL_BENEFITS_ASSURANCE_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48085_DANGOTE_CEMENT_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48086_ABC_TRANSPORT_PLC-NOTICE_OF_EMERGENCY_BOARD_MEETING_CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48087_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48089_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_NOTIFICATION_OF_OUTCOME_OF_BOARD_MEETING__CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48090_SFS_REAL_ESTATE_INVESTMENT_TRUST-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48091_SFS_REAL_ESTATE_INVESTMENT_TRUST-SFS_REIT_KEY_PERFORMANCE_METRICS_CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48093_FORTIS_GLOBAL_INSURANCE_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48094_CORONATION_INSURANCE_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48095_TRANSCORP_HOTELS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48096_TRANSCORP_HOTELS_PLC-TRANSCORP_HOTELS_PLC_-_PRESS_RELEASE_ON_Q3_2026_FINANCIALS__CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
