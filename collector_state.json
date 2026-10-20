@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 83,
+  "historical_recheck_cursor": 123,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1689,6 +1689,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_2026_Q2_UFS.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_Nigeria_Board_Meeting_Resolutions_February_2023.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/MULTIVERSE_-_AGM_RESOLUTIONS_OUTCOME_JUNE2026.pdf": "non_actionable_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/NEWGOLD_-_QUARTERLY_UNAUDITED_FINANCIAL_STAEMENTS_FOR_30September2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/NGX_Group_-_Dividend_Announcement.pdf": "review",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/NGX_Group_Dividend_Announcement_Form.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/NIDF_-_Q22024Distribution_Announcement.pdf": "accepted",
