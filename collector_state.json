@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 43,
+  "historical_recheck_cursor": 83,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -468,7 +468,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41788_SUNU_ASSURANCES_NIGERIA_PLC-RESOLUTIONS_OF_THE_BOARD_MEETING_CORPORATE_ACTIONS_JULY_2024.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41809_BUA_CEMENT_PLC-RESOLUTIONS_PASSED_AT_THE_BOARD_MEETING__CORPORATE_ACTIONS_JULY_2024.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41817_BUA_CEMENT_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_JULY_2024.pdf": "pending",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/41832_THE_INITIATES_PLC-RESOLUTIONS_OF_THE_25TH_ANNUAL_GENERAL_MEETING_OF_THE_INITIATES_PLC_CORPORATE_ACTIONS_JULY_2024.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/41832_THE_INITIATES_PLC-RESOLUTIONS_OF_THE_25TH_ANNUAL_GENERAL_MEETING_OF_THE_INITIATES_PLC_CORPORATE_ACTIONS_JULY_2024.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41837_CUTIX_PLC.-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2024.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41839_OKOMU_OIL_PALM_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_JULY_2024.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/41840_AFRICA_PRUDENTIAL_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_JULY_2024.pdf": "accepted",
