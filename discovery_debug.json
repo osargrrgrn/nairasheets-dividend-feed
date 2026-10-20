@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 88,
-    "detail_pages_completed": 88,
-    "new_pdfs": 1,
+    "detail_pages_found": 87,
+    "detail_pages_completed": 87,
+    "new_pdfs": 3,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5891,
+    "files_seen": 5894,
     "dividend_like": 545,
     "already_known": 544,
     "irrelevant": 1,
@@ -30,17 +30,25 @@
     "filtered_before_parser": 308,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 1,
-  "elapsed_seconds": 38.09,
+  "total_new_pdfs": 3,
+  "elapsed_seconds": 41.48,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/NEWGOLD_-_QUARTERLY_UNAUDITED_FINANCIAL_STAEMENTS_FOR_30September2026.pdf",
-      "title": "NEWGOLD - QUARTERLY UNAUDITED FINANCIAL STAEMENTS FOR 30September2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/113_Multiverse_Mining_and_Exploration_Plc-4th_Quarter_Earning_Forecast_2026.pdf",
+      "title": "Multiverse Mining and Exploration Plc-4th Quarter Earning Forecast 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48104_SECURE_ELECTRONIC_TECHNOLOGY_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "SECURE ELECTRONIC TECHNOLOGY PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48106_ABC_TRANSPORT_PLC-NOTIFICATION_OF_CHANGE_IN_BOARD_COMPOSITION_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "ABC TRANSPORT PLC-NOTIFICATION OF CHANGE IN BOARD COMPOSITION CORPORATE ACTIONS OCTOBER 2026",
       "source": "abokiforex_listing"
     }
   ]
