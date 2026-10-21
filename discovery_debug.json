@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 87,
     "detail_pages_completed": 87,
-    "new_pdfs": 3,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -33,23 +33,7 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 3,
-  "elapsed_seconds": 41.48,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/113_Multiverse_Mining_and_Exploration_Plc-4th_Quarter_Earning_Forecast_2026.pdf",
-      "title": "Multiverse Mining and Exploration Plc-4th Quarter Earning Forecast 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48104_SECURE_ELECTRONIC_TECHNOLOGY_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "SECURE ELECTRONIC TECHNOLOGY PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48106_ABC_TRANSPORT_PLC-NOTIFICATION_OF_CHANGE_IN_BOARD_COMPOSITION_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "ABC TRANSPORT PLC-NOTIFICATION OF CHANGE IN BOARD COMPOSITION CORPORATE ACTIONS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 44.0,
+  "results": []
 }
