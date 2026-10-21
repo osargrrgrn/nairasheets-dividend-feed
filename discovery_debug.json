@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 87,
-    "detail_pages_completed": 87,
-    "new_pdfs": 0,
+    "detail_pages_found": 86,
+    "detail_pages_completed": 86,
+    "new_pdfs": 2,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5894,
+    "files_seen": 5896,
     "dividend_like": 545,
     "already_known": 544,
     "irrelevant": 1,
@@ -26,14 +26,25 @@
     "companies_targeted": 68,
     "companies_completed": 68,
     "pdfs_seen": 859,
-    "already_known": 551,
-    "filtered_before_parser": 308,
+    "already_known": 552,
+    "filtered_before_parser": 307,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 44.0,
-  "results": []
+  "total_new_pdfs": 2,
+  "elapsed_seconds": 38.58,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48107_BUA_CEMENT_PLC-REPORT_OF_THE_BOARD_MEETING_OF_BUA_CEMENT_PLC__CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "BUA CEMENT PLC-REPORT OF THE BOARD MEETING OF BUA CEMENT PLC CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48109_BUA_FOODS_PLC-NOTIFICATION_IN_CHANGE_OF_BOARD_MEETING_DATE_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "BUA FOODS PLC-NOTIFICATION IN CHANGE OF BOARD MEETING DATE CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    }
+  ]
 }
