@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 89,
+  "historical_recheck_cursor": 129,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1777,6 +1777,8 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/TNC_-_2026_Post_Board_Meeting_Notification.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/TOTALENERGIES_-_AGM_NOTICE.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/TRANSNATIONAL_CORPORATION_PLC_-_Amended_Corporate_Action_Announcement.pdf": "accepted",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/TRANSNATIONAL_CORPORATION_PLC_-_Press_Release_on_Q3_2026_Financials.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/TRANSNATIONAL_CORPORATION_PLC_-_Q4_2026_Post_Board_Meeting_Notification.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/The_Initiates_Plc_-_Outcome_of_Board_Meeting.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/Transcorp_Hotels_-_Notification_of_Outcome_of_Q2_Board_Meeting.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/Transcorp_Hotels_-_Post_AGM_Announcement.pdf": "pending",
