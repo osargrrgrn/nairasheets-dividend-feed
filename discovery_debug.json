@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 91,
-    "detail_pages_completed": 91,
-    "new_pdfs": 3,
+    "detail_pages_found": 90,
+    "detail_pages_completed": 90,
+    "new_pdfs": 6,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5969,
+    "files_seen": 5978,
     "dividend_like": 553,
     "already_known": 552,
     "irrelevant": 1,
@@ -26,32 +26,44 @@
     "companies_targeted": 68,
     "companies_completed": 68,
     "pdfs_seen": 865,
-    "already_known": 572,
-    "filtered_before_parser": 293,
+    "already_known": 571,
+    "filtered_before_parser": 294,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 3,
-  "elapsed_seconds": 47.35,
+  "total_new_pdfs": 6,
+  "elapsed_seconds": 42.06,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48189_NORTHERN_NIGERIA_FLOUR_MILLS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "NORTHERN NIGERIA FLOUR MILLS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2027 FINANCIAL STATEMENTS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48188_VFD_GROUP_PLC-NOTICE_OF_BOARD_OF_DIRECTORS_MEETING_-Q3_2026_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "VFD GROUP PLC-NOTICE OF BOARD OF DIRECTORS MEETING -Q3 2026 CORPORATE ACTIONS OCTOBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48191_DANGOTE_CEMENT_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "DANGOTE CEMENT PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48190_DANGOTE_CEMENT_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_BOARD_RESOLUTION_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
+      "title": "DANGOTE CEMENT PLC- NOTICES OF BOARD MEETING (BM) - BOARD RESOLUTION BOARD MEETING (BM) OCTOBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48192_FIDSON_HEALTHCARE_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "FIDSON HEALTHCARE PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48193_DANGOTE_CEMENT_PLC-NINE_MONTHS_EARNINGS_RELEASE_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "DANGOTE CEMENT PLC-NINE MONTHS EARNINGS RELEASE CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48195_ABBEY_BANK_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "ABBEY BANK PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48196_ECOBANK_TRANSNATIONAL_INCORPORATED-ETI__9M_2026_ER_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "ECOBANK TRANSNATIONAL INCORPORATED-ETI 9M 2026 ER CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48197_UPDC_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "UPDC PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
       "source": "abokiforex_listing"
     }
   ]
