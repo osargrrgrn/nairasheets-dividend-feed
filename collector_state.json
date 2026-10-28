@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 209,
+  "historical_recheck_cursor": 249,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1640,6 +1640,9 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48184_NIGERIAN_EXCHANGE_GROUP_PLC-NGX_GROUP_-_Q3,_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48185_ECOBANK_TRANSNATIONAL_INCORPORATED-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48186_VERITAS_KAPITAL_ASSURANCE_PLC-RETIREMENT_OF_NON-EXECUTIVE_DIRECTORS_CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48189_NORTHERN_NIGERIA_FLOUR_MILLS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48191_DANGOTE_CEMENT_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48192_FIDSON_HEALTHCARE_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
