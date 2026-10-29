@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 44,
+  "historical_recheck_cursor": 84,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1669,6 +1669,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48213_MECURE_INDUSTRIES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48214_NIGERIAN_BREWERIES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48215_TANTALIZERS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48216_NEM_INSURANCE_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
@@ -1683,6 +1684,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.11.08.2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_Plc_-_Notification_of_Insider_Dealing_-_Calvados-_August_17_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_First_HoldCo_Plc-_Notification_of_Insider_Dealing_-_Calvados-_August__24_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/65_Notification_of_Insider_Dealing_-_Anil_Dua_-_October_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_Notification_of_Insider_Dealing_-_Calvados-_August_07_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/66_NSE_-_FCMB_GROUP_PLC_4Q2026_EARNINGS_FORECAST.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/81_Guinness_Nigeria_Plc_-_Share_Dealing_Notification_-_Admin_Manager_-_Tolaram.pdf": "not_dividend",

@@ -4,13 +4,13 @@
     "status": 200,
     "detail_pages_found": 91,
     "detail_pages_completed": 91,
-    "new_pdfs": 20,
+    "new_pdfs": 2,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5996,
+    "files_seen": 5997,
     "dividend_like": 554,
     "already_known": 553,
     "irrelevant": 1,
@@ -25,117 +25,25 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 866,
-    "already_known": 573,
-    "filtered_before_parser": 293,
+    "pdfs_seen": 865,
+    "already_known": 574,
+    "filtered_before_parser": 291,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 20,
-  "elapsed_seconds": 44.44,
+  "total_new_pdfs": 2,
+  "elapsed_seconds": 36.71,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Insider_Share_Dealing_-_Adedoyin_Adejumo.pdf",
-      "title": "Insider Share Dealing - Adedoyin Adejumo",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48216_NEM_INSURANCE_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "NEM INSURANCE PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Insider_Share_Dealing_-_Adewunmi_Odufalu.pdf",
-      "title": "Insider Share Dealing - Adewunmi Odufalu",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Insider_Share_Dealing_-_Omiwole_Tayo_Femi.pdf",
-      "title": "Insider Share Dealing - Omiwole Tayo Femi",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Insider_Share_Dealing_-_Rachael_Ayorinde.pdf",
-      "title": "Insider Share Dealing - Rachael Ayorinde",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48198_UH_REAL_ESTATE_INVESTMENT_TRUST_(UHREIT)-UH_REIT_KPM_-_SEPTEMBER_2026_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "UH REAL ESTATE INVESTMENT TRUST (UHREIT)-UH REIT KPM - SEPTEMBER 2026 CORPORATE ACTIONS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48199_VITAFOAM_NIGERIA_PLC-_YEAR_END_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "VITAFOAM NIGERIA PLC- YEAR END - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48201_JULIUS_BERGER_NIGERIA_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "JULIUS BERGER NIGERIA PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48202_VFD_GROUP_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "VFD GROUP PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48203_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "CHEMICAL AND ALLIED PRODUCTS PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48204_CHEMICAL_AND_ALLIED_PRODUCTS_PLC-Q3_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "CHEMICAL AND ALLIED PRODUCTS PLC-Q3 2026 EARNINGS RELEASE CORPORATE ACTIONS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48205_THE_OKOMU_OIL_PALM_COMPANY_PLC-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "THE OKOMU OIL PALM COMPANY PLC-CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48206_CHAMS_HOLDING_COMPANY_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "CHAMS HOLDING COMPANY PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48207_VFD_GROUP_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "VFD GROUP PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48208_ZICHIS_AGRO_ALLIED_INDUSTRIES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "ZICHIS AGRO ALLIED INDUSTRIES PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48209_STERLING_FINANCIAL_HOLDINGS_COMPANY_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "STERLING FINANCIAL HOLDINGS COMPANY PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48210_CAVERTON_OFFSHORE_SUPPORT_GROUP_PLC-OUTCOME_OF_CAVERTON_BOARD_MEETING_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "CAVERTON OFFSHORE SUPPORT GROUP PLC-OUTCOME OF CAVERTON BOARD MEETING CORPORATE ACTIONS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48211_AUSTIN_LAZ_AND_COMPANY_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "AUSTIN LAZ AND COMPANY PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48213_MECURE_INDUSTRIES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "MECURE INDUSTRIES PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48214_NIGERIAN_BREWERIES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "NIGERIAN BREWERIES PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48215_TANTALIZERS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "TANTALIZERS PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_Notification_of_Insider_Dealing_-_Anil_Dua_-_October_2026.pdf",
+      "title": "Notification of Insider Dealing - Anil Dua - October 2026",
       "source": "abokiforex_listing"
     }
   ]
