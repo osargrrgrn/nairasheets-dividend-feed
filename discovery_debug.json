@@ -2,17 +2,17 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 91,
-    "detail_pages_completed": 91,
-    "new_pdfs": 2,
+    "detail_pages_found": 93,
+    "detail_pages_completed": 93,
+    "new_pdfs": 20,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 5997,
-    "dividend_like": 554,
-    "already_known": 553,
+    "files_seen": 6018,
+    "dividend_like": 555,
+    "already_known": 554,
     "irrelevant": 1,
     "new_pdfs": 0,
     "errors": []
@@ -25,25 +25,115 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 865,
-    "already_known": 574,
-    "filtered_before_parser": 291,
+    "pdfs_seen": 867,
+    "already_known": 578,
+    "filtered_before_parser": 289,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 2,
-  "elapsed_seconds": 36.71,
+  "total_new_pdfs": 20,
+  "elapsed_seconds": 44.54,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48216_NEM_INSURANCE_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "NEM INSURANCE PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/151_REPLC_Q3_Earnings_Forecast.pdf",
+      "title": "REPLC Q3 Earnings Forecast",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_Notification_of_Insider_Dealing_-_Anil_Dua_-_October_2026.pdf",
-      "title": "Notification of Insider Dealing - Anil Dua - October 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48212_CUTIX_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf",
+      "title": "CUTIX PLC.- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48217_NIGERIAN_BREWERIES_PLC-EARNINGS_RELEASE_Q3_2026_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "NIGERIAN BREWERIES PLC-EARNINGS RELEASE Q3 2026 CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48218_NEM_INSURANCE_PLC.-BOARD_MEETING_RESOLUTION_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "NEM INSURANCE PLC.-BOARD MEETING RESOLUTION CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48219_SEPLAT_ENERGY_PLC-NOTICE_OF_BOARD_DECISION_Q3_2026_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "SEPLAT ENERGY PLC-NOTICE OF BOARD DECISION Q3 2026 CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48220_SEPLAT_ENERGY_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "SEPLAT ENERGY PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48221_SEPLAT_ENERGY_PLC-ANNOUNCEMENT_ON_Q3_2026_INTERIM_DIVIDEND_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "SEPLAT ENERGY PLC-ANNOUNCEMENT ON Q3 2026 INTERIM DIVIDEND CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48222_INTERNATIONAL_ENERGY_INSURANCE_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "INTERNATIONAL ENERGY INSURANCE PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48223_HBM_NIGERIA_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "HBM NIGERIA PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48225_HBM_NIGERIA_PLC-COMPLETION_OF_BOARD_MEETING_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "HBM NIGERIA PLC-COMPLETION OF BOARD MEETING CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48226_HBM_NIGERIA_PLC-PRESS_RELEASE_-_9M_2026_UNAUDITED_FINANCIAL_STATEMENT_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "HBM NIGERIA PLC-PRESS RELEASE - 9M 2026 UNAUDITED FINANCIAL STATEMENT CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48227_MAY_AND_BAKER-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "MAY AND BAKER- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48228_PRESTIGE_ASSURANCE_PLC-BOARD_MEETING_RESOLUTIONS_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "PRESTIGE ASSURANCE PLC-BOARD MEETING RESOLUTIONS CORPORATE ACTIONS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48229_TRANS-NATIONWIDE_EXPRESS_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "TRANS-NATIONWIDE EXPRESS PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48230_LIVESTOCK_FEEDS_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "LIVESTOCK FEEDS PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48234_ROYAL_EXCHANGE_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "ROYAL EXCHANGE PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48235_INDUSTRIAL_AND_MEDICAL_GASES_NIGERIA_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "INDUSTRIAL AND MEDICAL GASES NIGERIA PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48236_THOMAS_WYATT_NIGERIA_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "THOMAS WYATT NIGERIA PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2027 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48237_CADBURY_NIGERIA_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "CADBURY NIGERIA PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48238_JAPAUL_GOLD_AND_VENTURES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
+      "title": "JAPAUL GOLD AND VENTURES PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
       "source": "abokiforex_listing"
     }
   ]
