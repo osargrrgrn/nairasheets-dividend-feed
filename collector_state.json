@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 164,
+  "historical_recheck_cursor": 204,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1707,6 +1707,8 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48253_CADBURY_NIGERIA_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48254_CHAMPION_BREWERIES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48255_SKYWAY_AVIATION_HANDLING_COMPANY_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48259_DANGOTE_SUGAR_REFINERY_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48260_PREMIER_PAINTS_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
