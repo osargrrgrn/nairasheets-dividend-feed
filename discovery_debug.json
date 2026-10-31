@@ -4,15 +4,15 @@
     "status": 200,
     "detail_pages_found": 100,
     "detail_pages_completed": 100,
-    "new_pdfs": 16,
+    "new_pdfs": 3,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6114,
-    "dividend_like": 558,
-    "already_known": 557,
+    "files_seen": 6118,
+    "dividend_like": 559,
+    "already_known": 558,
     "irrelevant": 1,
     "new_pdfs": 0,
     "errors": []
@@ -26,97 +26,29 @@
     "companies_targeted": 68,
     "companies_completed": 68,
     "pdfs_seen": 874,
-    "already_known": 602,
-    "filtered_before_parser": 272,
+    "already_known": 605,
+    "filtered_before_parser": 269,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 16,
-  "elapsed_seconds": 52.0,
+  "total_new_pdfs": 3,
+  "elapsed_seconds": 40.21,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48317_AXA_MANSARD_INSURANCE_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "AXA MANSARD INSURANCE PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48337_ARADEL_HOLDINGS_PLC-PRESS_RELEASE_9M_FINANCIALS_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "ARADEL HOLDINGS PLC-PRESS RELEASE 9M FINANCIALS CORPORATE ACTIONS OCTOBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48318_JAIZ_BANK_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "JAIZ BANK PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48339_ARADEL_HOLDINGS_PLC-CORPORATE_ACTION_ANNOUNCEMENT_ON_INTERIM_DIVIDEND_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "ARADEL HOLDINGS PLC-CORPORATE ACTION ANNOUNCEMENT ON INTERIM DIVIDEND CORPORATE ACTIONS OCTOBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48319_MTN_NIGERIA_COMMUNICATIONS_PLC-NGX_NOTIFICATION_BOARD_MEETING_OUTCOMES_OCTOBER_2026_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "MTN NIGERIA COMMUNICATIONS PLC-NGX NOTIFICATION BOARD MEETING OUTCOMES OCTOBER 2026 CORPORATE ACTIONS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48320_ABC_TRANSPORT_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "ABC TRANSPORT PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48321_MTN_NIGERIA_COMMUNICATIONS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "MTN NIGERIA COMMUNICATIONS PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48323_MORISON_INDUSTRIES_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "MORISON INDUSTRIES PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48324_MCNICHOLS_CONSOLIDATED_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "MCNICHOLS CONSOLIDATED PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48326_MTN_NIGERIA_COMMUNICATIONS_PLC-MTN_NIGERIA_Q3_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_OCTOBER_2026.pdf",
-      "title": "MTN NIGERIA COMMUNICATIONS PLC-MTN NIGERIA Q3 2026 EARNINGS RELEASE CORPORATE ACTIONS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48329_CORONATION_INSURANCE_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "CORONATION INSURANCE PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48330_LIVINGTRUST_MORTGAGE_BANK_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "LIVINGTRUST MORTGAGE BANK PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48332_AIICO_INSURANCE_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "AIICO INSURANCE PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48333_CONSOLIDATED_HALLMARK_HOLDINGS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "CONSOLIDATED HALLMARK HOLDINGS PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48334_ARADEL_HOLDINGS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "ARADEL HOLDINGS PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48335_OMATEK_VENTURES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf",
-      "title": "OMATEK VENTURES PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/MTN_NIGERIA_-_BOARD_MEETING_OUTCOME_OCTOBER_2026.pdf",
-      "title": "MTN NIGERIA - BOARD MEETING OUTCOME OCTOBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/UBA_-_BOARD_MEETING_RESOLUTION_Q32026.pdf",
-      "title": "UBA - BOARD MEETING RESOLUTION Q32026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48340_ARADEL_HOLDINGS_PLC-DECISIONS_FROM_Q3_MEETING__CORPORATE_ACTIONS_OCTOBER_2026.pdf",
+      "title": "ARADEL HOLDINGS PLC-DECISIONS FROM Q3 MEETING CORPORATE ACTIONS OCTOBER 2026",
       "source": "abokiforex_listing"
     }
   ]
