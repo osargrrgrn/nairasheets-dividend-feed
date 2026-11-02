@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 229,
+  "historical_recheck_cursor": 269,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1753,7 +1753,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48298_GUINEA_INSURANCE_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48299_CORNERSTONE_INSURANCE_PLC-THIRD_QUARTER_2026-_EARNINGS_RELEASE_CORPORATE_ACTIONS_OCTOBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48300_E-TRANZACT_INTERNATIONAL_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/48301_THE_INITIATES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48301_THE_INITIATES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48302_BERGER_PAINTS_NIGERIA_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48303_TANTALIZERS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48304_CUSTODIAN_INVESTMENT_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf": "statement_noise",
