@@ -4,15 +4,15 @@
     "status": 200,
     "detail_pages_found": 100,
     "detail_pages_completed": 100,
-    "new_pdfs": 5,
+    "new_pdfs": 6,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6131,
-    "dividend_like": 559,
-    "already_known": 558,
+    "files_seen": 6137,
+    "dividend_like": 561,
+    "already_known": 560,
     "irrelevant": 1,
     "new_pdfs": 0,
     "errors": []
@@ -30,38 +30,40 @@
     "filtered_before_parser": 266,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 5,
-  "elapsed_seconds": 44.53,
+  "total_new_pdfs": 6,
+  "elapsed_seconds": 37.79,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Insider_Share_Dealing_-_Funmilayo_Oyebola.pdf",
-      "title": "Insider Share Dealing - Funmilayo Oyebola",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48354_GUINEA_INSURANCE_PLC.-AGM_NOTICE__CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "GUINEA INSURANCE PLC.-AGM NOTICE CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48348_VFD_GROUP_PLC-VFD_GROUP-Q3-_2026_EARNINGS_PRESS_RELEASE_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "VFD GROUP PLC-VFD GROUP-Q3- 2026 EARNINGS PRESS RELEASE CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48355_OMATEK_VENTURES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
+      "title": "OMATEK VENTURES PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48352_DAAR_COMMUNICATIONS_PLC-DAAR_COMMUNICATIONS_PLC_-_NOTIFICATION_OF_BOARD_MEETING_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "DAAR COMMUNICATIONS PLC-DAAR COMMUNICATIONS PLC - NOTIFICATION OF BOARD MEETING CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48356_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_MEETING_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "ABC TRANSPORT PLC-OUTCOME OF BOARD MEETING CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48353_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_RIGHTS_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "GUARANTY TRUST HOLDING COMPANY PLC-TOTAL VOTING RIGHTS CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48357_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "AIRTEL AFRICA PLC-INTERIM DIVIDEND CURRENCY EXCHANGE RATES CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Critical_Minerals_Financing_Corporation_Q4_Unaudited_Financial_Statement_30_Septemebr_2026_.pdf",
-      "title": "Critical Minerals Financing Corporation Q4 Unaudited Financial Statement 30 Septemebr 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48359_VFD_GROUP_PLC-OUTCOME_OF_Q3_MEETING_OF_THE_BOARD_OF_VFD_GROUP_PLC_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "VFD GROUP PLC-OUTCOME OF Q3 MEETING OF THE BOARD OF VFD GROUP PLC CORPORATE ACTIONS NOVEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48360_RED_STAR_EXPRESS_PLC-CHANGE_OF_SUBSIDIARY_NAME_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "RED STAR EXPRESS PLC-CHANGE OF SUBSIDIARY NAME CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     }
   ]

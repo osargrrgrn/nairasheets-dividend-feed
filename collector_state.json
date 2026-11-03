@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 59,
+  "historical_recheck_cursor": 99,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1797,6 +1797,12 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48351_AIRTEL_AFRICA_PLC-TOTAL_VOTING_RIGHTS_AND_CAPITAL_ANNOUNCEMENT_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48352_DAAR_COMMUNICATIONS_PLC-DAAR_COMMUNICATIONS_PLC_-_NOTIFICATION_OF_BOARD_MEETING_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48353_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_RIGHTS_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48354_GUINEA_INSURANCE_PLC.-AGM_NOTICE__CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48355_OMATEK_VENTURES_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48356_ABC_TRANSPORT_PLC-OUTCOME_OF_BOARD_MEETING_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48357_AIRTEL_AFRICA_PLC-INTERIM_DIVIDEND_CURRENCY_EXCHANGE_RATES_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "accepted",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48359_VFD_GROUP_PLC-OUTCOME_OF_Q3_MEETING_OF_THE_BOARD_OF_VFD_GROUP_PLC_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48360_RED_STAR_EXPRESS_PLC-CHANGE_OF_SUBSIDIARY_NAME_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",

@@ -1,40 +1,5 @@
 [
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Critical_Minerals_Financing_Corporation_Q4_Unaudited_Financial_Statement_30_Septemebr_2026_.pdf",
-    "title": "Critical Minerals Financing Corporation Q4 Unaudited Financial Statement 30 Septemebr 2026",
-    "reason_codes": [
-      "ticker_unresolved",
-      "dividend_amount_unresolved",
-      "payment_date_missing",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing ticker",
-      "missing/invalid dividend per share",
-      "missing payment date"
-    ],
-    "parsed": {
-      "event_id": "9691e64252ce5601",
-      "ticker": "",
-      "company": "Critical Minerals Financing Corporation Q4 Unaudited Financial Statement 30 Septemebr 2026",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2026-09-30",
-      "payment_date": "",
-      "closure_date": "",
-      "announcement_date": "2026-09-30",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Critical_Minerals_Financing_Corporation_Q4_Unaudited_Financial_Statement_30_Septemebr_2026_.pdf",
-      "source_title": "Critical Minerals Financing Corporation Q4 Unaudited Financial Statement 30 Septemebr 2026",
-      "last_verified": "2026-11-03",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
     "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/38463_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_10TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2023.pdf",
     "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 10TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2023",
     "reason_codes": [
@@ -101,39 +66,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39280_FBN_HOLDINGS_PLC-FBN_HOLDINGS_PLC_-_RESOLUTIONS_PASSED_AT_AGM_CORPORATE_ACTIONS_AUGUST_2023.pdf",
-    "title": "FBN HOLDINGS PLC-FBN HOLDINGS PLC - RESOLUTIONS PASSED AT AGM CORPORATE ACTIONS AUGUST 2023",
-    "reason_codes": [
-      "dividend_amount_unresolved",
-      "validation_failed"
-    ],
-    "errors": [
-      "missing/invalid dividend per share"
-    ],
-    "parsed": {
-      "event_id": "ea25281435a26e6a",
-      "ticker": "FBNH",
-      "company": "FBN HOLDINGS PLC-FBN HOLDINGS PLC",
-      "dividend_per_share": 0.0,
-      "currency": "NGN",
-      "dividend_type": "dividend",
-      "qualification_date": "2023-08-08",
-      "payment_date": "2023-08-16",
-      "closure_date": "",
-      "announcement_date": "",
-      "registrar": "",
-      "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/39280_FBN_HOLDINGS_PLC-FBN_HOLDINGS_PLC_-_RESOLUTIONS_PASSED_AT_AGM_CORPORATE_ACTIONS_AUGUST_2023.pdf",
-      "source_title": "FBN HOLDINGS PLC-FBN HOLDINGS PLC - RESOLUTIONS PASSED AT AGM CORPORATE ACTIONS AUGUST 2023",
-      "last_verified": "2026-11-03",
-      "confidence": "review"
-    },
-    "classification": "review",
-    "matched_existing_pending": false
-  },
-  {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41109_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
-    "title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41315_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
+    "title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -156,8 +90,8 @@
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41109_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_APRIL_2024.pdf",
-      "source_title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) APRIL 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41315_CADBURY_NIGERIA_PLC.-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_MAY_2024.pdf",
+      "source_title": "CADBURY NIGERIA PLC.- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) MAY 2024",
       "last_verified": "2026-11-03",
       "confidence": "review"
     },
@@ -165,8 +99,101 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41146_FCMB_GROUP_PLC-FCMBGROUP_PLC_-_NOTICE_OF_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2024.pdf",
-    "title": "FCMB GROUP PLC-FCMBGROUP PLC - NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41323_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_11TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2024.pdf",
+    "title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 11TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "184d081979b9d273",
+      "ticker": "FCMB",
+      "company": "FCMB GROUP PLC",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-05-13",
+      "payment_date": "2024-05-24",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "declared",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41323_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_11TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_MAY_2024.pdf",
+      "source_title": "FCMB GROUP PLC-RESOLUTIONS PASSED AT THE 11TH ANNUAL GENERAL MEETING OF FCMB GROUP PLC CORPORATE ACTIONS MAY 2024",
+      "last_verified": "2026-11-03",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "37ec15fac4a392ab",
+      "ticker": "FBNH",
+      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-08-13",
+      "payment_date": "2024-08-23",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41964_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+      "last_verified": "2026-11-03",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+    "reason_codes": [
+      "dividend_amount_unresolved",
+      "validation_failed"
+    ],
+    "errors": [
+      "missing/invalid dividend per share"
+    ],
+    "parsed": {
+      "event_id": "9f5f2f5c86abdd8f",
+      "ticker": "FBNH",
+      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
+      "dividend_per_share": 0.0,
+      "currency": "NGN",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-08-13",
+      "payment_date": "2024-09-04",
+      "closure_date": "",
+      "announcement_date": "",
+      "registrar": "",
+      "status": "proposed",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42020_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2024.pdf",
+      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) AUGUST 2024",
+      "last_verified": "2026-11-03",
+      "confidence": "review"
+    },
+    "classification": "review",
+    "matched_existing_pending": false
+  },
+  {
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42285_GUINNESS_NIG_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
+    "title": "GUINNESS NIG PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "payment_date_missing",
@@ -177,20 +204,20 @@
       "missing payment date"
     ],
     "parsed": {
-      "event_id": "5b9c43ae57512d83",
-      "ticker": "FCMB",
-      "company": "FCMB GROUP PLC-FCMBGROUP PLC - NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2024",
+      "event_id": "e1ef0e78d6b8fece",
+      "ticker": "GUINNESS",
+      "company": "GUINNESS NIG PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
       "dividend_type": "dividend",
-      "qualification_date": "2024-05-13",
+      "qualification_date": "2024-10-03",
       "payment_date": "",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "declared",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41146_FCMB_GROUP_PLC-FCMBGROUP_PLC_-_NOTICE_OF_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2024.pdf",
-      "source_title": "FCMB GROUP PLC-FCMBGROUP PLC - NOTICE OF ANNUAL GENERAL MEETING CORPORATE ACTIONS MAY 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42285_GUINNESS_NIG_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
+      "source_title": "GUINNESS NIG PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
       "last_verified": "2026-11-03",
       "confidence": "review"
     },
@@ -198,8 +225,8 @@
     "matched_existing_pending": false
   },
   {
-    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41169_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2024.pdf",
-    "title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2024",
+    "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42355_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
+    "title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
     "reason_codes": [
       "dividend_amount_unresolved",
       "validation_failed"
@@ -208,20 +235,20 @@
       "missing/invalid dividend per share"
     ],
     "parsed": {
-      "event_id": "5b9a16f21a857a23",
-      "ticker": "FCMB",
-      "company": "FCMB GROUP PLC-FCMB GROUP PLC",
+      "event_id": "747d6a6ccc0687e3",
+      "ticker": "FBNH",
+      "company": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM)",
       "dividend_per_share": 0.0,
       "currency": "NGN",
-      "dividend_type": "final",
-      "qualification_date": "2024-05-13",
-      "payment_date": "2024-05-24",
+      "dividend_type": "dividend",
+      "qualification_date": "2024-08-13",
+      "payment_date": "2024-11-15",
       "closure_date": "",
       "announcement_date": "",
       "registrar": "",
       "status": "proposed",
-      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/41169_FCMB_GROUP_PLC-FCMB_GROUP_PLC_-CORPORATE_ACTION_ANNOUNCEMENT_CORPORATE_ACTIONS_MAY_2024.pdf",
-      "source_title": "FCMB GROUP PLC-FCMB GROUP PLC -CORPORATE ACTION ANNOUNCEMENT CORPORATE ACTIONS MAY 2024",
+      "source_url": "https://doclib.ngxgroup.com/Financial_NewsDocs/42355_FBN_HOLDINGS_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_OCTOBER_2024.pdf",
+      "source_title": "FBN HOLDINGS PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - ANNUAL GENERAL MEETING (AGM) OCTOBER 2024",
       "last_verified": "2026-11-03",
       "confidence": "review"
     },
