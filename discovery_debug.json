@@ -4,13 +4,13 @@
     "status": 200,
     "detail_pages_found": 100,
     "detail_pages_completed": 100,
-    "new_pdfs": 7,
+    "new_pdfs": 5,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6126,
+    "files_seen": 6131,
     "dividend_like": 559,
     "already_known": 558,
     "irrelevant": 1,
@@ -25,8 +25,8 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 874,
-    "already_known": 608,
+    "pdfs_seen": 871,
+    "already_known": 605,
     "filtered_before_parser": 266,
     "eligible_candidates": 0,
     "new_pdfs": 0,
@@ -36,42 +36,32 @@
     ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 7,
-  "elapsed_seconds": 46.26,
+  "total_new_pdfs": 5,
+  "elapsed_seconds": 44.53,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48342__UPDC_REAL_ESTATE_INVESTMENT_TRUST-UPDC_REIT_KMP-_SEPTEMBER_2026_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "UPDC REAL ESTATE INVESTMENT TRUST-UPDC REIT KMP- SEPTEMBER 2026 CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/261_Insider_Share_Dealing_-_Funmilayo_Oyebola.pdf",
+      "title": "Insider Share Dealing - Funmilayo Oyebola",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48343_MULTI-TREX_INTEGRATED_FOODS_PLC-ANNOUNCEMENT_ON_DELAY_IN_FILING_2026_AFS_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "MULTI-TREX INTEGRATED FOODS PLC-ANNOUNCEMENT ON DELAY IN FILING 2026 AFS CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48348_VFD_GROUP_PLC-VFD_GROUP-Q3-_2026_EARNINGS_PRESS_RELEASE_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "VFD GROUP PLC-VFD GROUP-Q3- 2026 EARNINGS PRESS RELEASE CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48344_ELLAH_LAKES_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "ELLAH LAKES PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48352_DAAR_COMMUNICATIONS_PLC-DAAR_COMMUNICATIONS_PLC_-_NOTIFICATION_OF_BOARD_MEETING_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "DAAR COMMUNICATIONS PLC-DAAR COMMUNICATIONS PLC - NOTIFICATION OF BOARD MEETING CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48345_ACCESS_HOLDINGS_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "ACCESS HOLDINGS PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48353_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_RIGHTS_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "GUARANTY TRUST HOLDING COMPANY PLC-TOTAL VOTING RIGHTS CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48346_ACCESS_HOLDINGS_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "ACCESS HOLDINGS PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48347_UNION_DICON_SALT_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "UNION DICON SALT PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48351_AIRTEL_AFRICA_PLC-TOTAL_VOTING_RIGHTS_AND_CAPITAL_ANNOUNCEMENT_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-TOTAL VOTING RIGHTS AND CAPITAL ANNOUNCEMENT CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/Critical_Minerals_Financing_Corporation_Q4_Unaudited_Financial_Statement_30_Septemebr_2026_.pdf",
+      "title": "Critical Minerals Financing Corporation Q4 Unaudited Financial Statement 30 Septemebr 2026",
       "source": "abokiforex_listing"
     }
   ]
