@@ -4,13 +4,13 @@
     "status": 200,
     "detail_pages_found": 100,
     "detail_pages_completed": 100,
-    "new_pdfs": 3,
+    "new_pdfs": 2,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6144,
+    "files_seen": 6146,
     "dividend_like": 561,
     "already_known": 560,
     "irrelevant": 1,
@@ -26,29 +26,24 @@
     "companies_targeted": 68,
     "companies_completed": 68,
     "pdfs_seen": 871,
-    "already_known": 606,
-    "filtered_before_parser": 265,
+    "already_known": 608,
+    "filtered_before_parser": 263,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 3,
-  "elapsed_seconds": 115.33,
+  "total_new_pdfs": 2,
+  "elapsed_seconds": 44.32,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Share_Dealing_Kennedy_Okwudi_Nov_4_2026.pdf",
-      "title": "ZBPLC Share Dealing Kennedy Okwudi Nov 4 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Share_Dealing_Kennedy_Okwudili_Nov_5_2026.pdf",
+      "title": "ZBPLC Share Dealing Kennedy Okwudili Nov 5 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48366_BRICLINKS_AFRICA_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "BRICLINKS AFRICA PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48367_JULI_PLC.-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "JULI PLC.- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48368_AIRTEL_AFRICA_PLC-COMMENCEMENT_OF_SHARE_BUYBACK_PROGRAMME__CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "AIRTEL AFRICA PLC-COMMENCEMENT OF SHARE BUYBACK PROGRAMME CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     }
   ]
