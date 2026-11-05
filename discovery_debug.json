@@ -4,13 +4,13 @@
     "status": 200,
     "detail_pages_found": 100,
     "detail_pages_completed": 100,
-    "new_pdfs": 2,
+    "new_pdfs": 1,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6146,
+    "files_seen": 6147,
     "dividend_like": 561,
     "already_known": 560,
     "irrelevant": 1,
@@ -33,17 +33,12 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 2,
-  "elapsed_seconds": 44.32,
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 44.0,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Share_Dealing_Kennedy_Okwudili_Nov_5_2026.pdf",
-      "title": "ZBPLC Share Dealing Kennedy Okwudili Nov 5 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48368_AIRTEL_AFRICA_PLC-COMMENCEMENT_OF_SHARE_BUYBACK_PROGRAMME__CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-COMMENCEMENT OF SHARE BUYBACK PROGRAMME CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48369_OMATEK_VENTURES_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_BOARD_RESOLUTION_BOARD_MEETING_(BM)_NOVEMBER_2026.pdf",
+      "title": "OMATEK VENTURES PLC- NOTICES OF BOARD MEETING (BM) - BOARD RESOLUTION BOARD MEETING (BM) NOVEMBER 2026",
       "source": "abokiforex_listing"
     }
   ]
