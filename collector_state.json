@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 87,
+  "historical_recheck_cursor": 127,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -101,6 +101,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/188_PROFIT_FORECAST_FOR_DECEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/197_Insider_Dealing-CEO.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Directors_Share_Trading_Mr_Kennedy_Okwudili.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Share_Dealing_Chuks_Okoh_November_6_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Share_Dealing_Kennedy_Okwudi_Nov_4_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Share_Dealing_Kennedy_Okwudili_Nov_5_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/201_CWG_Plc_-_Notification_of_Insider_Dealing.pdf": "not_dividend",
