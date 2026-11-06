@@ -10,7 +10,7 @@
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6147,
+    "files_seen": 6148,
     "dividend_like": 561,
     "already_known": 560,
     "irrelevant": 1,
@@ -34,11 +34,11 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 1,
-  "elapsed_seconds": 44.0,
+  "elapsed_seconds": 43.26,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48369_OMATEK_VENTURES_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_BOARD_RESOLUTION_BOARD_MEETING_(BM)_NOVEMBER_2026.pdf",
-      "title": "OMATEK VENTURES PLC- NOTICES OF BOARD MEETING (BM) - BOARD RESOLUTION BOARD MEETING (BM) NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48371_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_NOVEMBER_2026.pdf",
+      "title": "UNIVERSITY PRESS PLC.- NOTICES OF BOARD MEETING (BM) - NOTICE BOARD MEETING (BM) NOVEMBER 2026",
       "source": "abokiforex_listing"
     }
   ]
