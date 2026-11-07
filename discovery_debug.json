@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 100,
     "detail_pages_completed": 100,
-    "new_pdfs": 1,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -31,19 +31,11 @@
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
       "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
     ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 1,
-  "elapsed_seconds": 51.34,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Share_Dealing_Chuks_Okoh_November_6_2026.pdf",
-      "title": "ZBPLC Share Dealing Chuks Okoh November 6 2026",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 41.75,
+  "results": []
 }
