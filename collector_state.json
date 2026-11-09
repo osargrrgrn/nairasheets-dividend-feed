@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 116,
+  "historical_recheck_cursor": 156,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -716,7 +716,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43968_FCMB_GROUP_PLC-RESOLUTIONS_PASSED_AT_THE_12TH_ANNUAL_GENERAL_MEETING_OF_FCMB_GROUP_PLC_CORPORATE_ACTIONS_APRIL_2025.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43975_MEYER_PLC-CORPORATE_ACTIONS_ANNOUNCEMENT__CORPORATE_ACTIONS_APRIL_2025.pdf": "pending",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43987_LIVINGTRUST_MORTGAGE_BANK_PLC-LIVINGTRUST_-_2024_FY_DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf": "accepted",
-    "https://doclib.ngxgroup.com/Financial_NewsDocs/43990_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf": "pending",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/43990_TOTALENERGIES_MARKETING_NIGERIA_PLC-CORPORATE_ACTION_CORPORATE_ACTIONS_APRIL_2025.pdf": "review",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/43996_DANGOTE_SUGAR_REFINERY_PLC-OUTCOME_OF_ANNUAL_GENERAL_MEETING__CORPORATE_ACTIONS_APRIL_2025.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44005_ABBEY_MORTGAGE_BANK_PLC-DIVIDEND_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2025.pdf": "accepted",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/44016_FIDELITY_BANK_PLC-FIDELITY_BANK_37TH_AGM_RESOLUTIONS_CORPORATE_ACTIONS_APRIL_2025.pdf": "pending",
@@ -1814,6 +1814,10 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48368_AIRTEL_AFRICA_PLC-COMMENCEMENT_OF_SHARE_BUYBACK_PROGRAMME__CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48369_OMATEK_VENTURES_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_BOARD_RESOLUTION_BOARD_MEETING_(BM)_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48371_UNIVERSITY_PRESS_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48372_ZICHIS_AGRO_ALLIED_INDUSTRIES_PLC-NOTIFICATION_OF_SUBSTANTIAL_SHAREHOLDINGS_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48374_CRITICAL_MINERALS_FINANCING_CORP_PLC-PRESS_RELEASE_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48375_CHAMPION_BREWERIES_PLC-_NOTICES_OF_COURT_ORDER_MEETING_(COM)_-__COURT_ORDER_MEETING_(COM)_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48379_EUNISELL_INTERLINKED_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
