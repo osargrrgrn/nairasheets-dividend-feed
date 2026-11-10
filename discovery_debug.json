@@ -4,15 +4,15 @@
     "status": 200,
     "detail_pages_found": 100,
     "detail_pages_completed": 100,
-    "new_pdfs": 12,
+    "new_pdfs": 3,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6165,
-    "dividend_like": 561,
-    "already_known": 560,
+    "files_seen": 6169,
+    "dividend_like": 562,
+    "already_known": 561,
     "irrelevant": 1,
     "new_pdfs": 0,
     "errors": []
@@ -26,74 +26,34 @@
     "companies_targeted": 68,
     "companies_completed": 68,
     "pdfs_seen": 871,
-    "already_known": 610,
-    "filtered_before_parser": 261,
+    "already_known": 609,
+    "filtered_before_parser": 262,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [],
+    "errors": [
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
+      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
+    ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 12,
-  "elapsed_seconds": 47.38,
+  "total_new_pdfs": 3,
+  "elapsed_seconds": 49.12,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_MR._JOSEPH_OSOGBUE.pdf",
-      "title": "NOTIFICATION OF INSIDER DEALING- MR. JOSEPH OSOGBUE",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48380_VETIVA_FUND_MANAGERS_LIMITED-CORPORATE_ACTIONS_-_VETIVA_BANKING_EXCHANGE_TRADED_FUND_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "VETIVA FUND MANAGERS LIMITED-CORPORATE ACTIONS - VETIVA BANKING EXCHANGE TRADED FUND CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_Mr,_Omolaja.pdf",
-      "title": "NOTIFICATION OF INSIDER DEALING- Mr, Omolaja",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48384_REGENCY_ALLIANCE_INSURANCE_PLC-AGM_RESOLUTIONS_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "REGENCY ALLIANCE INSURANCE PLC-AGM RESOLUTIONS CORPORATE ACTIONS NOVEMBER 2026",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_Mr._Aro.pdf",
-      "title": "NOTIFICATION OF INSIDER DEALING- Mr. Aro",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_Mrs._Inyang_Etim.pdf",
-      "title": "NOTIFICATION OF INSIDER DEALING- Mrs. Inyang Etim",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_Mrs._Tolulope_Adesomoju.pdf",
-      "title": "NOTIFICATION OF INSIDER DEALING- Mrs. Tolulope Adesomoju",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Adebowale_Oyedeji__-_November_2026.pdf",
-      "title": "FirstHoldCo - Notification of Insider Dealing - Adebowale Oyedeji - November 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Biyi_Olagbami_-_November_2026.pdf",
-      "title": "FirstHoldCo - Notification of Insider Dealing - Biyi Olagbami - November 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Fiona_Ahimie_-_November_2026.pdf",
-      "title": "FirstHoldCo - Notification of Insider Dealing - Fiona Ahimie - November 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Ini_Ebong__-_November_2026.pdf",
-      "title": "FirstHoldCo - Notification of Insider Dealing - Ini Ebong - November 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Patrick_Akhidenor_-_November_2026.pdf",
-      "title": "FirstHoldCo - Notification of Insider Dealing - Patrick Akhidenor - November 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Tolulope_Oluwole_-_November_2026.pdf",
-      "title": "FirstHoldCo - Notification of Insider Dealing - Tolulope Oluwole - November 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Wasiu_Shafe_-_November_2026.pdf",
-      "title": "FirstHoldCo - Notification of Insider Dealing - Wasiu Shafe - November 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48385_DANGOTE_CEMENT_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_BOARD_RESOLUTION_BOARD_MEETING_(BM)_NOVEMBER_2026.pdf",
+      "title": "DANGOTE CEMENT PLC- NOTICES OF BOARD MEETING (BM) - BOARD RESOLUTION BOARD MEETING (BM) NOVEMBER 2026",
       "source": "abokiforex_listing"
     }
   ]
