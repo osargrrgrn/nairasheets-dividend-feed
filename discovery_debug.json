@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 99,
-    "detail_pages_completed": 99,
-    "new_pdfs": 0,
+    "detail_pages_found": 100,
+    "detail_pages_completed": 100,
+    "new_pdfs": 1,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6189,
+    "files_seen": 6190,
     "dividend_like": 566,
     "already_known": 565,
     "irrelevant": 1,
@@ -30,13 +30,16 @@
     "filtered_before_parser": 262,
     "eligible_candidates": 0,
     "new_pdfs": 0,
-    "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
-    ],
+    "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 52.62,
-  "results": []
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 43.04,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48401_LASACO_ASSURANCE_PLC.-NOTIFICATION_OF_APPROVED_FREE_FLOAT_COMPLIANCE_EXTENSION_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "LASACO ASSURANCE PLC.-NOTIFICATION OF APPROVED FREE FLOAT COMPLIANCE EXTENSION CORPORATE ACTIONS NOVEMBER 2026",
+      "source": "abokiforex_listing"
+    }
+  ]
 }
