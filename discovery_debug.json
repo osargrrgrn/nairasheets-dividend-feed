@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 100,
     "detail_pages_completed": 100,
-    "new_pdfs": 1,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -33,13 +33,7 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 1,
-  "elapsed_seconds": 43.04,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48401_LASACO_ASSURANCE_PLC.-NOTIFICATION_OF_APPROVED_FREE_FLOAT_COMPLIANCE_EXTENSION_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "LASACO ASSURANCE PLC.-NOTIFICATION OF APPROVED FREE FLOAT COMPLIANCE EXTENSION CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 45.02,
+  "results": []
 }
