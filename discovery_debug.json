@@ -2,9 +2,9 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 100,
-    "detail_pages_completed": 100,
-    "new_pdfs": 5,
+    "detail_pages_found": 99,
+    "detail_pages_completed": 99,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -33,33 +33,7 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 5,
-  "elapsed_seconds": 41.25,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48403_SEPLAT_ENERGY_PLC-NOTIFICATION_OF_SHARE_DEALING_BY_PDMR_-_MR._TONY_ELUMELU_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "SEPLAT ENERGY PLC-NOTIFICATION OF SHARE DEALING BY PDMR - MR. TONY ELUMELU CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48404_SEPLAT_ENERGY_PLC-NOTIFICATION_OF_SECURITIES_DEALING_BY_PDMR-MR_UDOMA_UDO_UDOMA_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "SEPLAT ENERGY PLC-NOTIFICATION OF SECURITIES DEALING BY PDMR-MR UDOMA UDO UDOMA CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48405_UAC__OF_NIGERIA_PLC-UAC_COMPLETES_SALE_OF_LSF_TO_SUNBETH_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "UAC OF NIGERIA PLC-UAC COMPLETES SALE OF LSF TO SUNBETH CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48406_LIVESTOCK_FEEDS_PLC.-LSF_PLC__COMPLETION_AND_BOARD_CHANGES_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "LIVESTOCK FEEDS PLC.-LSF PLC COMPLETION AND BOARD CHANGES CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48409_CRITICAL_MINERALS_FINANCING_CORP_PLC-PRESS_RELEASE_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "CRITICAL MINERALS FINANCING CORP PLC-PRESS RELEASE CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 43.37,
+  "results": []
 }
