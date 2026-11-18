@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 99,
-    "detail_pages_completed": 99,
-    "new_pdfs": 0,
+    "detail_pages_found": 97,
+    "detail_pages_completed": 97,
+    "new_pdfs": 1,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6198,
+    "files_seen": 6200,
     "dividend_like": 566,
     "already_known": 565,
     "irrelevant": 1,
@@ -33,7 +33,13 @@
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 43.37,
-  "results": []
+  "total_new_pdfs": 1,
+  "elapsed_seconds": 43.07,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48412_UAC__OF_NIGERIA_PLC-UAC_COMPLETES_SALE_OF_DP_WORLD_LOGISTICS_TO_TGI_GROUP_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "UAC OF NIGERIA PLC-UAC COMPLETES SALE OF DP WORLD LOGISTICS TO TGI GROUP CORPORATE ACTIONS NOVEMBER 2026",
+      "source": "abokiforex_listing"
+    }
+  ]
 }
