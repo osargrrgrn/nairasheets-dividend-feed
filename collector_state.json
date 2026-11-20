@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 197,
+  "historical_recheck_cursor": 237,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1853,6 +1853,9 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48415_CORNERSTONE_INSURANCE_PLC-EVOLUTION_TO_HOLDING_COMPANY_STRUCTURE_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48416_AIICO_INSURANCE_PLC.-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48417_CORNERSTONE_INSURANCE_PLC-NOTICE_OF_BOARD_MEETING_OF_CORNERSTONE_PLC_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48419_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2026_AGM_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "review",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48421_FCMB_GROUP_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48422_FCMB_GROUP_PLC-FCMB_GROUP_PLC_ANNOUNCES_EARNINGS_RELEASE_FOR_9M_2026_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
