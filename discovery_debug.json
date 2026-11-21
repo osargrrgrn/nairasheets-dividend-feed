@@ -4,7 +4,7 @@
     "status": 200,
     "detail_pages_found": 89,
     "detail_pages_completed": 89,
-    "new_pdfs": 5,
+    "new_pdfs": 0,
     "errors": []
   },
   "sharepoint_index": {
@@ -25,41 +25,15 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 878,
+    "pdfs_seen": 877,
     "already_known": 617,
-    "filtered_before_parser": 261,
+    "filtered_before_parser": 260,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 5,
-  "elapsed_seconds": 47.89,
-  "results": [
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_MR._JOSEPH_OSOGBUE_1_edited.pdf",
-      "title": "NOTIFICATION OF INSIDER DEALING- MR. JOSEPH OSOGBUE 1 edited",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_Mr._Bolarinwa_Animashaun_edited.pdf",
-      "title": "NOTIFICATION OF INSIDER DEALING- Mr. Bolarinwa Animashaun edited",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48423_UNITED_BANK_FOR_AFRICA_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "UNITED BANK FOR AFRICA PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48424_UNITED_BANK_FOR_AFRICA_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "UNITED BANK FOR AFRICA PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48425_MULTI-TREX_INTEGRATED_FOODS_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "MULTI-TREX INTEGRATED FOODS PLC- QUARTER 5 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    }
-  ]
+  "total_new_pdfs": 0,
+  "elapsed_seconds": 43.99,
+  "results": []
 }
