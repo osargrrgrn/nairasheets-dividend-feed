@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 92,
-    "detail_pages_completed": 92,
-    "new_pdfs": 3,
+    "detail_pages_found": 89,
+    "detail_pages_completed": 89,
+    "new_pdfs": 5,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6207,
+    "files_seen": 6213,
     "dividend_like": 567,
     "already_known": 566,
     "irrelevant": 1,
@@ -26,29 +26,39 @@
     "companies_targeted": 68,
     "companies_completed": 68,
     "pdfs_seen": 878,
-    "already_known": 616,
-    "filtered_before_parser": 262,
+    "already_known": 617,
+    "filtered_before_parser": 261,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 3,
-  "elapsed_seconds": 43.34,
+  "total_new_pdfs": 5,
+  "elapsed_seconds": 47.89,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48419_E-TRANZACT_INTERNATIONAL_PLC-RESOLUTIONS_PASSED_AT_THE_2026_AGM_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "E-TRANZACT INTERNATIONAL PLC-RESOLUTIONS PASSED AT THE 2026 AGM CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_MR._JOSEPH_OSOGBUE_1_edited.pdf",
+      "title": "NOTIFICATION OF INSIDER DEALING- MR. JOSEPH OSOGBUE 1 edited",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48421_FCMB_GROUP_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
-      "title": "FCMB GROUP PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_Mr._Bolarinwa_Animashaun_edited.pdf",
+      "title": "NOTIFICATION OF INSIDER DEALING- Mr. Bolarinwa Animashaun edited",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48422_FCMB_GROUP_PLC-FCMB_GROUP_PLC_ANNOUNCES_EARNINGS_RELEASE_FOR_9M_2026_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "FCMB GROUP PLC-FCMB GROUP PLC ANNOUNCES EARNINGS RELEASE FOR 9M 2026 CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48423_UNITED_BANK_FOR_AFRICA_PLC-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
+      "title": "UNITED BANK FOR AFRICA PLC- QUARTER 2 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48424_UNITED_BANK_FOR_AFRICA_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
+      "title": "UNITED BANK FOR AFRICA PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48425_MULTI-TREX_INTEGRATED_FOODS_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf",
+      "title": "MULTI-TREX INTEGRATED FOODS PLC- QUARTER 5 - FINANCIAL STATEMENT FOR 2026 FINANCIAL STATEMENTS NOVEMBER 2026",
       "source": "abokiforex_listing"
     }
   ]
