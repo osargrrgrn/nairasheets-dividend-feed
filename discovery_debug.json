@@ -2,17 +2,17 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 89,
-    "detail_pages_completed": 89,
-    "new_pdfs": 0,
+    "detail_pages_found": 84,
+    "detail_pages_completed": 84,
+    "new_pdfs": 6,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6213,
-    "dividend_like": 567,
-    "already_known": 566,
+    "files_seen": 6220,
+    "dividend_like": 569,
+    "already_known": 568,
     "irrelevant": 1,
     "new_pdfs": 0,
     "errors": []
@@ -25,15 +25,46 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 877,
-    "already_known": 617,
-    "filtered_before_parser": 260,
+    "pdfs_seen": 875,
+    "already_known": 616,
+    "filtered_before_parser": 259,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 0,
-  "elapsed_seconds": 39.83,
-  "results": []
+  "total_new_pdfs": 6,
+  "elapsed_seconds": 45.76,
+  "results": [
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Share_Dealing_ZSPF_Nov_11_2026.pdf",
+      "title": "ZBPLC Share Dealing ZSPF Nov 11 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/198_ZBPLC_Share_Dealing_ZSPF_Nov_20_2026.pdf",
+      "title": "ZBPLC Share Dealing ZSPF Nov 20 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48427_AIICO_INSURANCE_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "AIICO INSURANCE PLC.-CORPORATE ACTION CORPORATE ACTIONS NOVEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48428_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_-_NOTIFICATION_OF_ANNOUNCEMENT_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "UNILEVER NIGERIA PLC.-UNILEVER NIGERIA PLC - NOTIFICATION OF ANNOUNCEMENT CORPORATE ACTIONS NOVEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48435_AIICO_INSURANCE_PLC.-PROPOSED_MERGER_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
+      "title": "AIICO INSURANCE PLC.-PROPOSED MERGER CORPORATE ACTIONS NOVEMBER 2026",
+      "source": "abokiforex_listing"
+    },
+    {
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Babatunde_Lawanson_Saheed__-_November_2026.pdf",
+      "title": "FirstHoldCo - Notification of Insider Dealing - Babatunde Lawanson Saheed - November 2026",
+      "source": "abokiforex_listing"
+    }
+  ]
 }
