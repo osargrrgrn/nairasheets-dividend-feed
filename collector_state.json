@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 182,
+  "historical_recheck_cursor": 222,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1866,6 +1866,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48427_AIICO_INSURANCE_PLC.-CORPORATE_ACTION_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48428_UNILEVER_NIGERIA_PLC.-UNILEVER_NIGERIA_PLC_-_NOTIFICATION_OF_ANNOUNCEMENT_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48435_AIICO_INSURANCE_PLC.-PROPOSED_MERGER_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "accepted",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48439_GUINEA_INSURANCE_PLC.-2025_AGM_RESOLUTION_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
