@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 7,
+  "historical_recheck_cursor": 47,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -116,6 +116,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/215_Notification_of_Share_Dealing_by_Insider-_Johnson_Oyewo_.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/215_Notification_of_Share_Dealing_by_Insider-_Moses_Oyerinde.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/215_Notification_of_Share_Dealing_by_Insider-_Olayinka_Jimoh.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/236_CardinalStone_Partners_Ltd_-_Share_Dealing_Notification.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/236_Mr._Sehinde_Adenagbe_-_Share_Dealing_Notification.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/236_Share_Dealing_Notification_-_Olayinka_Sodipe.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/236_Share_Dealing_Notification_-_Tolulope_Ajayi.pdf": "not_dividend",
@@ -1871,6 +1872,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48439_GUINEA_INSURANCE_PLC.-2025_AGM_RESOLUTION_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48442_SUNU_ASSURANCES_NIGERIA_PLC-BOARD_CHANGES_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48444_NIGERIAN_ENAMELWARE_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf": "statement_noise",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48445_MCNICHOLS_CONSOLIDATED_PLC-PROPOSED_RIGHTS_ISSUE_AND_PUBLIC_OFFER_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
@@ -1883,6 +1885,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.01.06.2026_(TRANS_3).pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.01.06.2026_(TRANS_4).pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_EMMANUEL_OMUOJINE.11.08.2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/61_NOTIFICATION_OF_DIRECTOR_DEALING_OKECHUKWU_ASHIEGBU.25.11.2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Adebowale_Oyedeji__-_November_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Babatunde_Lawanson_Saheed__-_November_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Biyi_Olagbami_-_November_2026.pdf": "not_dividend",
