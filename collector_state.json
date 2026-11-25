@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 262,
+  "historical_recheck_cursor": 7,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -1891,6 +1891,7 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Idris_Ado_Ibrahim_-_November_2026_.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Ike_Onyia__-_November_2026_.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Ini_Ebong__-_November_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Nnaemeka_Ejeh_-_November_2026_.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Patrick_Akhidenor_-_November_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Tolulope_Oluwole_-_November_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/65_FirstHoldCo_-_Notification_of_Insider_Dealing_-_Wasiu_Shafe_-_November_2026.pdf": "not_dividend",
