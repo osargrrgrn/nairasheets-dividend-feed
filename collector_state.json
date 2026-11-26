@@ -23,7 +23,7 @@
     "pdfs_seen": 474,
     "wrong_year": 64
   },
-  "historical_recheck_cursor": 87,
+  "historical_recheck_cursor": 127,
   "ngx_api_backfill_2024_candidates_added": 397,
   "ngx_api_backfill_2024_completed": true,
   "ngx_api_backfill_2024_stats": {
@@ -137,6 +137,8 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/244_Notification_of_Share_Dealing_-_Black_Rising_Ltd.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/244_Notification_of_Share_Dealing_-_Seven_Degrees_North_Limited_-_executed.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/244_Notification_of_Share_Dealing_-_Seven_Degrees_North_Ltd_(1).pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_SELL_26_-_ANCHORIA_SECURITIES_LTD-_Copy_(2)_(1).pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_SELL_26_-_NONSO_OKPALA_-_Copy_(1).pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALING_NONSO_OKPALA_-_Copy.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALING_OKPALA_AKANNAYA_OSINACHI_-Copy.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALING_OKPALA_NNEOMA_CHIZARA_-_Copy.pdf": "not_dividend",
@@ -1873,6 +1875,9 @@
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48442_SUNU_ASSURANCES_NIGERIA_PLC-BOARD_CHANGES_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48444_NIGERIAN_ENAMELWARE_PLC.-_QUARTER_2_-_FINANCIAL_STATEMENT_FOR_2027_FINANCIAL_STATEMENTS_NOVEMBER_2026.pdf": "statement_noise",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48445_MCNICHOLS_CONSOLIDATED_PLC-PROPOSED_RIGHTS_ISSUE_AND_PUBLIC_OFFER_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48449_ABBEY_BANK_PLC-ANNOUNCEMENT_OF_CHANGE_OF_BRAND_IDENTITY_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48450_PRESTIGE_ASSURANCE_PLC-NOTICE_OF_BOARD_MEETING__CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
+    "https://doclib.ngxgroup.com/Financial_NewsDocs/48453_VFD_GROUP_PLC-VFD_GROUP-CORPORATE_DISCLOSURE_CORPORATE_ACTIONS_NOVEMBER_2026.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_-_Notification_of_Share_Dealing_by_an_Insider.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/48_Cutix_Plc_FY_2026_Third_Quarter_Forecast_-_NGX.pdf": "not_dividend",
     "https://doclib.ngxgroup.com/Financial_NewsDocs/4_NOTIFICATION_OF_SHAREDEALING_BY_DIRECTOR.pdf": "not_dividend",
