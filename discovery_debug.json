@@ -2,8 +2,8 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 81,
-    "detail_pages_completed": 81,
+    "detail_pages_found": 76,
+    "detail_pages_completed": 76,
     "new_pdfs": 5,
     "errors": []
   },
@@ -25,13 +25,12 @@
   "naijaticker": {
     "companies_targeted": 68,
     "companies_completed": 68,
-    "pdfs_seen": 877,
-    "already_known": 616,
-    "filtered_before_parser": 261,
+    "pdfs_seen": 879,
+    "already_known": 619,
+    "filtered_before_parser": 260,
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
       "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
       "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
       "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
@@ -39,31 +38,31 @@
     "benchmark_candidates": 0
   },
   "total_new_pdfs": 5,
-  "elapsed_seconds": 54.47,
+  "elapsed_seconds": 48.92,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_SELL_26_-_ANCHORIA_SECURITIES_LTD-_Copy_(2)_(1).pdf",
-      "title": "INSIDER DEALINGS SELL 26 - ANCHORIA SECURITIES LTD- Copy (2) (1)",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS-_MADIBA_CONSTRUCTION_LIMITED.pdf",
+      "title": "INSIDER DEALINGS- MADIBA CONSTRUCTION LIMITED",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_SELL_26_-_NONSO_OKPALA_-_Copy_(1).pdf",
-      "title": "INSIDER DEALINGS SELL 26 - NONSO OKPALA - Copy (1)",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_25th_-_MADIBA_CONSTRUCTION_LIMITED_(1)_-_Copy_(1)_(1).pdf",
+      "title": "INSIDER DEALINGS 25th - MADIBA CONSTRUCTION LIMITED (1) - Copy (1) (1)",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48449_ABBEY_BANK_PLC-ANNOUNCEMENT_OF_CHANGE_OF_BRAND_IDENTITY_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "ABBEY BANK PLC-ANNOUNCEMENT OF CHANGE OF BRAND IDENTITY CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_SELL_-_ANCHORIA__SECURITIES_LTD_-_Copy_1.pdf",
+      "title": "INSIDER DEALINGS SELL - ANCHORIA SECURITIES LTD - Copy 1",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48450_PRESTIGE_ASSURANCE_PLC-NOTICE_OF_BOARD_MEETING__CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "PRESTIGE ASSURANCE PLC-NOTICE OF BOARD MEETING CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_SELL_23-_ANCHORIA_ASSET_MANAGEMENT_LIMITED_-_Copy.pdf",
+      "title": "INSIDER DEALINGS SELL 23- ANCHORIA ASSET MANAGEMENT LIMITED - Copy",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48453_VFD_GROUP_PLC-VFD_GROUP-CORPORATE_DISCLOSURE_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "VFD GROUP PLC-VFD GROUP-CORPORATE DISCLOSURE CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_SELL_25_-_ANCHORIA__SECURITIES_LTD_25_-_Copy_(2)_(1).pdf",
+      "title": "INSIDER DEALINGS SELL 25 - ANCHORIA SECURITIES LTD 25 - Copy (2) (1)",
       "source": "abokiforex_listing"
     }
   ]
