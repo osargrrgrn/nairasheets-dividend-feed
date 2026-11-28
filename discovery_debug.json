@@ -2,15 +2,15 @@
   "method": "patch_51_sharepoint_index",
   "abokiforex": {
     "status": 200,
-    "detail_pages_found": 73,
-    "detail_pages_completed": 73,
-    "new_pdfs": 9,
+    "detail_pages_found": 72,
+    "detail_pages_completed": 72,
+    "new_pdfs": 2,
     "errors": []
   },
   "sharepoint_index": {
     "since": "2025-01-01T00:00:00Z",
     "pages": 2,
-    "files_seen": 6257,
+    "files_seen": 6259,
     "dividend_like": 573,
     "already_known": 572,
     "irrelevant": 1,
@@ -31,59 +31,21 @@
     "eligible_candidates": 0,
     "new_pdfs": 0,
     "errors": [
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
-      "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))",
       "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='naijaticker.com', port=443): Read timed out. (read timeout=9)\"))"
     ],
     "benchmark_candidates": 0
   },
-  "total_new_pdfs": 9,
-  "elapsed_seconds": 51.01,
+  "total_new_pdfs": 2,
+  "elapsed_seconds": 46.95,
   "results": [
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/239_NOTIFICATION_OF_INSIDER_DEALING-_Mr._Gbenga_Babatunde.pdf",
-      "title": "NOTIFICATION OF INSIDER DEALING- Mr. Gbenga Babatunde",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_BUY_26_-_NONSO_OKPALA.pdf",
+      "title": "INSIDER DEALINGS BUY 26 - NONSO OKPALA",
       "source": "abokiforex_listing"
     },
     {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_ANCHORIA_27.pdf",
-      "title": "INSIDER DEALINGS ANCHORIA 27",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/247_INSIDER_DEALINGS_buy_27_-_NONSO_OKPALA_-_Copy_6_-_Copy_(1).pdf",
-      "title": "INSIDER DEALINGS buy 27 - NONSO OKPALA - Copy 6 - Copy (1)",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/3_Notification_of_insider_share_dealing_VFD_27_11_26.pdf",
-      "title": "Notification of insider share dealing VFD 27 11 26",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48448_ABBEY_BANK_PLC-ANNOUNCEMENT_OF_NEW_BRAND_IDENTITY_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "ABBEY BANK PLC-ANNOUNCEMENT OF NEW BRAND IDENTITY CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48456_AIRTEL_AFRICA_PLC-LAUNCH_OF_SHARE_BUYBACK_PROGRAMME_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "AIRTEL AFRICA PLC-LAUNCH OF SHARE BUYBACK PROGRAMME CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48457_OANDO_PLC-OANDO_PLC_-_RIGHTS_ISSUE__CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "OANDO PLC-OANDO PLC - RIGHTS ISSUE CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48459_JAPAUL_GOLD_AND_VENTURES_PLC-ANNOUNCEMENT_OF_CONFIRMATION_OF_SUBSTANTIVE_GMD_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "JAPAUL GOLD AND VENTURES PLC-ANNOUNCEMENT OF CONFIRMATION OF SUBSTANTIVE GMD CORPORATE ACTIONS NOVEMBER 2026",
-      "source": "abokiforex_listing"
-    },
-    {
-      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/48460_CORONATION_INSURANCE_PLC-TRADING_SUSPENSION_CORPORATE_ACTIONS_NOVEMBER_2026.pdf",
-      "title": "CORONATION INSURANCE PLC-TRADING SUSPENSION CORPORATE ACTIONS NOVEMBER 2026",
+      "url": "https://doclib.ngxgroup.com/Financial_NewsDocs/3_2_Notification_of_insider_share_dealing_VFD_26_11_266.pdf",
+      "title": "2 Notification of insider share dealing VFD 26 11 266",
       "source": "abokiforex_listing"
     }
   ]
